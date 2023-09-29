@@ -1,5 +1,3 @@
-import datetime
-
 # Custom configuration for the Sphinx documentation builder.
 # All configuration specific to your project should be done in this file.
 #
@@ -15,7 +13,7 @@ import datetime
 ############################################################
 
 # Product name
-project = 'Documentation starter pack'
+project = 'Launchpad Manual'
 author = 'Canonical Group Ltd'
 
 # Uncomment if your product uses release numbers
@@ -35,11 +33,11 @@ author = 'Canonical Group Ltd'
 #   -H 'Accept: application/vnd.github.v3.raw' \
 #   https://api.github.com/repos/canonical/<REPO> | jq '.created_at'
 
-copyright = '%s, %s' % (datetime.date.today().year, author)
+copyright = '2023, %s' % author
 
 ## Open Graph configuration - defines what is displayed in the website preview
 # The URL of the documentation output
-ogp_site_url = 'https://canonical-starter-pack.readthedocs-hosted.com/'
+ogp_site_url = 'https://canonical-launchpad-manual.readthedocs-hosted.com/'
 # The documentation website name (usually the same as the product name)
 ogp_site_name = project
 # An image or logo that is used in the preview
@@ -53,16 +51,17 @@ html_favicon = '.sphinx/_static/favicon.png'
 html_context = {
 
     # Change to the link to your product website (without "https://")
-    'product_page': 'documentation.ubuntu.com',
+    'product_page': 'launchpad.net',
 
     # Add your product tag to ".sphinx/_static" and change the path
     # here (start with "_static"), default is the circle of friends
+    # XXX 2023-09-29: jugmac00 - currently using the Canonical default image
     'product_tag': '_static/tag.png',
 
     # Change to the discourse instance you want to be able to link to
     # using the :discourse: metadata at the top of a file
     # (use an empty value if you don't want to link)
-    'discourse': 'https://discourse.ubuntu.com',
+    'discourse': '',
 
     # Change to the GitHub info for your project
     'github_url': 'https://github.com/canonical/starter-pack',
@@ -81,6 +80,14 @@ html_context = {
     # Controls the existence of Previous / Next buttons at the bottom of pages
     # Valid options: none, prev, next, both
     'sequential_nav': "none"
+}
+
+# Here we can configure custom theme options.
+html_theme_options = {
+    # `sidebar_hide_name`deactivates the repetitive heading in the side bar.
+    # This configuration option will change soon, see
+    # https://github.com/canonical/sphinx-docs-starter-pack/issues/103.
+    "sidebar_hide_name": True,
 }
 
 # If your project is on documentation.ubuntu.com, specify the project
