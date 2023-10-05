@@ -14,7 +14,7 @@ The most famous software hosted on Launchpad is Ubuntu.
 especially in open-source development.**
 These include build capacities for many different languages and package formats
 across standard architectures, but also including rising stars such as RISC-V
-and ARM. Launchpad also offers unmet tracking capabilities across issue
+and ARM. Launchpad also offers unparalleled tracking capabilities across issue
 trackers to seamlessly communicate with upstream projects.
 
 **With its unique features, Launchpad is the right tool for companies,
