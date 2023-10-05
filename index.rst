@@ -1,20 +1,69 @@
-Starter pack
-============
+.. _home:
 
-This starter pack contains the files you need to quickly set up your Sphinx documentation.
+Launchpad Manual
+================
 
-Before you start, see the information about `Read the Docs at Canonical`_ and the instructions for `How to publish documentation on Read the Docs`_.
+**Launchpad is a collaboration platform for open-source projects.**
 
-Then, to start setting up your docs, check the :doc:`ReadMe <readme>` for instructions.
-The `Example product documentation`_ shows how to set up a Diátaxis structure in Sphinx.
+**Launchpad provides everything necessary to build and publish software,
+including code hosting, issue tracking, translations,
+and bugs and feature request tracking.**
+The most famous software hosted on Launchpad is Ubuntu.
 
-For quick help on reST or MyST syntax, see the :file:`doc-cheat-sheet.rst.txt` or :file:`doc-cheat-sheet-myst.md.txt` files in the repository.
-(Open the files in your text editor; the rendered output is not very useful.)
+**Launchpad provides unique features needed in modern software development,
+especially in open-source development.**
+These include build capacities for many different languages and package formats
+across standard architectures, but also including rising stars such as RISC-V
+and ARM. Launchpad also offers unmet tracking capabilities across issue
+trackers to seamlessly communicate with upstream projects.
 
-More information is available in the `reStructuredText style guide`_.
+**With its unique features, Launchpad is the right tool for companies,
+professionals, open-source maintainers, and hobbyists alike.**
+
+
+
+---------
+
+In this documentation
+---------------------
+
+..  grid:: 1 1 2 2
+
+   ..  grid-item:: :doc:`Tutorials <tutorials/index>`
+
+       **Start here** - hands-on introductions to Launchpad for new developers
+
+   ..  grid-item:: :doc:`How-to guides <how-to/index>`
+
+      **How-to guides** - step-by-step guides covering key operations and common tasks
+
+.. grid:: 1 1 2 2
+   :reverse:
+
+   .. grid-item:: :doc:`Reference <reference/index>`
+
+      **Technical information** - specifications, APIs, architecture
+
+   .. grid-item:: :doc:`Explanation <explanation/index>`
+
+      **Discussion and clarification** of key topics
+
+---------
+
+Project and community
+---------------------
+
+Example Project is a member of the Ubuntu family. It’s an open source project that warmly welcomes community projects, contributions, suggestions, fixes and constructive feedback.
+
+* `Code of conduct <https://ubuntu.com/community/ethos/code-of-conduct>`_
+* `Get support`
+* `Contribute`
 
 .. toctree::
    :hidden:
    :maxdepth: 2
 
-   ReadMe <readme>
+   tutorials/index
+   how-to/index
+   reference/index
+   explanation/index
