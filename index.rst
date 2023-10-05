@@ -7,7 +7,7 @@ Launchpad Manual
 
 **Launchpad provides everything necessary to build and publish software,
 including code hosting, issue tracking, translations,
-and bugs and feature request tracking.**
+and request tracking for bugs and features.**
 The most famous software hosted on Launchpad is Ubuntu.
 
 **Launchpad provides unique features needed in modern software development,
