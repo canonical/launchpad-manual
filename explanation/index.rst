@@ -1,4 +1,17 @@
 Explanation
 ===========
 
-.. XXX 2023-10-05: jugmac00 - add a list of explanation articles
+.. toctree::
+   :maxdepth: 1
+
+   running-details
+   framework
+   navigating
+   postgresql
+   architecture
+   pip
+   favicon
+   charms
+   codeimport
+   performance
+   security

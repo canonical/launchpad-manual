@@ -1,4 +1,12 @@
+:hide-toc:
+
 Tutorials
 =========
 
-.. XXX 2023-10-05: jugmac00 - add a list of tutorials
+Common development tasks
+------------------------
+
+.. toctree::
+   :maxdepth: 1
+
+   creating-a-page-in-launchpad
