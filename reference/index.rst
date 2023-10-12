@@ -1,4 +1,25 @@
 Reference
 =========
 
-.. XXX 2023-10-05: jugmac00 - add list of reference articles
+.. toctree::
+   :maxdepth: 1
+
+   python
+   tests
+
+Services
+--------
+
+.. toctree::
+   :maxdepth: 1
+
+   services/build-farm
+   services/signing
+
+Possibly out-of-date
+--------------------
+
+.. toctree::
+   :maxdepth: 1
+
+   email
