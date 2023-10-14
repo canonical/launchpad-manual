@@ -34,19 +34,15 @@ Create a branch from a reasonable point, such as ``master``.
     git checkout -b my-change
 
 Make your changes on the branch. Be sure to test them locally by setting up a
-local `Launchpad development instance`_.
-
-.. _Launchpad development instance: https://launchpad.readthedocs.io/en/latest/how-to/running.html
+local :doc:`Launchpad development instance <running>`.
 
 Run the pre-commit hook
 -----------------------
 
-If you followed the instructions to `set up and run Launchpad`_, you should
-already have ``pre-commit`` installed and have the ``pre-commit`` git hook
-`installed`_. If not, complete these steps before proceeding.
-
-.. _set up and run Launchpad: https://launchpad.readthedocs.io/en/latest/how-to/running.html
-.. _installed: https://launchpad.readthedocs.io/en/latest/how-to/running.html#installing-the-pre-commit-hook
+If you followed the instructions to :doc:`set up and run Launchpad <running>`,
+you should already have ``pre-commit`` installed and have the
+:ref:`pre-commit git hook <pre-commit>` installed. If not, complete these steps
+before proceeding.
 
 Push your changes
 --------------------
