@@ -11,9 +11,9 @@ To begin with, it is usually helpful to discuss the change you'd like to make,
 in a `bug`_, in the `launchpad-users`_, or `launchpad-dev`_ mailing lists,
 or on IRC (``#launchpad-dev`` on ``irc.libera.chat``).
 
-.. _bug: <https://bugs.launchpad.net/launchpad>
-.. _launchpad-users: <https://launchpad.net/~launchpad-users> 
-.. _launchpad-dev: <https://launchpad.net/~launchpad-dev>
+.. _bug: https://bugs.launchpad.net/launchpad
+.. _launchpad-users: https://launchpad.net/~launchpad-users
+.. _launchpad-dev: https://launchpad.net/~launchpad-dev
 
 Get the Launchpad source
 ----------------------------
@@ -36,7 +36,7 @@ Create a branch from a reasonable point, such as ``master``.
 Make your changes on the branch. Be sure to test them locally by setting up a
 local `Launchpad development instance`_.
 
-.. _Launchpad development instance: <https://launchpad.readthedocs.io/en/latest/how-to/running.html>
+.. _Launchpad development instance: https://launchpad.readthedocs.io/en/latest/how-to/running.html
 
 Run the pre-commit hook
 -----------------------
@@ -45,8 +45,8 @@ If you followed the instructions to `set up and run Launchpad`_, you should
 already have ``pre-commit`` installed and have the ``pre-commit`` git hook
 `installed`_. If not, complete these steps before proceeding.
 
-.. _set up and run Launchpad: <https://launchpad.readthedocs.io/en/latest/how-to/running.html#>
-.. _installed: <https://launchpad.readthedocs.io/en/latest/how-to/running.html#installing-the-pre-commit-hook>
+.. _set up and run Launchpad: https://launchpad.readthedocs.io/en/latest/how-to/running.html
+.. _installed: https://launchpad.readthedocs.io/en/latest/how-to/running.html#installing-the-pre-commit-hook
 
 Push your changes
 --------------------
