@@ -175,8 +175,8 @@ a dependency, upgrading a dependency, adding a script, adding an arbitrary
 file, and working with unreleased packages.
 
 .. _`Zope Toolkit`: https://github.com/zopefoundation/zopetoolkit
-.. _`requirements file`: https://pip.pypa.io/en/stable/reference/pip_install/#requirements-file-format
-.. _`constraints file`: https://pip.pypa.io/en/stable/user_guide/#constraints-files
+.. _`requirements file`: https://pip.pypa.io/en/stable/reference/requirements-file-format/
+.. _`constraints file`: https://pip.pypa.io/en/stable/reference/requirement-specifiers/
 
 Add a Package
 =============
@@ -284,7 +284,7 @@ Let's suppose that we want to add the "lazr.foo" package as a dependency.
 change in version number, or else very bad inconsistencies and
 confusion across build environments will happen.
 
-.. _`requirements specifiers`: https://pip.pypa.io/en/stable/reference/pip_install/#requirement-specifiers
+.. _`requirements specifiers`: https://pip.pypa.io/en/stable/reference/requirement-specifiers/
 
 .. _upgrade-package:
 

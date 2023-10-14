@@ -92,7 +92,7 @@ The basic conventions for testable documentation are:
 * You can use regular Python comments for explanations related to the code
   and not to the documentation.
 * Doctests use Restructured Text (or "ReST", see
-  http://docutils.sourceforge.net/docs/user/rst/quickref.html).
+  https://docutils.sourceforge.net/docs/user/rst/quickref.html).
 
   * We use ReST because it's what the Python community have standardized on
     and because it makes setting up Sphinx to browse all the doctests

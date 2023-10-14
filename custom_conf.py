@@ -110,7 +110,18 @@ redirects = {}
 # Links to ignore when checking links
 
 linkcheck_ignore = [
-    'http://127.0.0.1:8000'
+    'http://127.0.0.1:8000',
+    r'https://app\.diagrams\.net.*',  # ignore, as works in browser, but link checker has some issues
+    'https://archive.ph/CAqQm',  # ignore, as works in browser, but link checker has some issues
+    'https://bazaar.launchpad.net/lp-production-config',  # private
+    'https://bazaar.staging.launchpad.net',  # broken, unclear why XXX 2023-10-14: jugmac00- check with team
+    'https://bugs.launchpad.net/charm-launchpad-buildd-image-modifier',  # private
+    'https://bugs.launchpad.net/launchpad-vbuilder-manage',  # private
+    'https://launchpad.net/canonical-mojo-specs',  # private
+    r'https://launchpad\.test.*',  # ignore, local test setup
+    'https://wiki.canonical.com/InformationInfrastructure/OSA/LaunchpadRollout#Config-only_Rollouts',  # private
+    'https://wiki.canonical.com/Launchpad/FreshLogs',  # private
+    'https://wiki.canonical.com/Launchpad/SupportRotation#Builder',  # private
     ]
 
 # Pages on which to ignore anchors

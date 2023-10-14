@@ -2,7 +2,7 @@ Landing updates for Loggerhead
 ==============================
 
 `Loggerhead <https://launchpad.net/loggerhead/>`_ is a web-based
-`Bazaar <https://bazaar.canonical.com/>`_ code browser.
+`Bazaar <https://en.wikipedia.org/wiki/GNU_Bazaar>`_ code browser.
 
 Landing changes for Loggerhead itself
 -------------------------------------
@@ -19,6 +19,10 @@ Landing changes in Launchpad itself
 
 Performing QA
 -------------
+
+.. The following link does not work.
+
+.. XXX 2023-10-14: jugmac00 - need to verify whether it should actually work
 
 After the changes have landed and passed through buildbot,
 they will be available at https://bazaar.staging.launchpad.net.

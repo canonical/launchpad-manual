@@ -161,4 +161,4 @@ More information
 ----------------
 
 * `Live overview of Launchpad's build farm <https://launchpad.net/builders>`_
-* `Launchpad services diagram <https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1&page-id=14glVH8XSJX-2FxTRWny#G1j-yk3c4mzYfMC79Y-uo9__u93pLWkiMi>`_
+* `Launchpad services diagram <https://app.diagrams.net/?src=about#Uhttps%3A%2F%2Fgit.launchpad.net%2Flaunchpad%2Fplain%2Fdoc%2Fdiagrams%2Farchitecture.html#%7B%22pageId%22%3A%2214glVH8XSJX-2FxTRWny%22%7D>`_

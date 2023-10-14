@@ -24,7 +24,7 @@ Note that our standards differ slightly from PEP-8 in some cases.
 Coding standards other projects use:
 
 * `Twisted Coding Standard
-  <https://twistedmatrix.com/documents/current/core/development/policy/coding-standard.html>`_
+  <https://docs.twistedmatrix.com/en/stable/development/coding-standard.html>`_
 * `Zope developer guidelines
   <https://www.zope.org/developer/guidelines.html>`_
 
@@ -84,7 +84,7 @@ indentation rules that implies) so that tools such as `pydoctor
 API documentation.
 
 You should use field names as defined in the `epydoc
-<http://epydoc.sourceforge.net/fields.html>`_ documentation but with reST
+<https://epydoc.sourceforge.net/fields.html>`_ documentation but with reST
 syntax.
 
 Using \`name\` outputs a link to the documentation of the named object, if
