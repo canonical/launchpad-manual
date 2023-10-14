@@ -20,15 +20,15 @@ Canonical, such as the Snap Models Service.
 
 Documentation
 -------------
-https://lp-signing.readthedocs.io/
+`Official documentation <https://lp-signing.readthedocs.io/>`_
 
 Git repository
 --------------
-https://git.launchpad.net/lp-signing
+`Main repository <https://git.launchpad.net/lp-signing>`_
 
 Bug tracker
 -----------
-https://bugs.launchpad.net/lp-signing
+`Bug tracker <https://bugs.launchpad.net/lp-signing>`_
 
 Deployment
 ----------
@@ -42,7 +42,7 @@ Related specifications
 
 Log files
 ---------
-See https://wiki.canonical.com/Launchpad/FreshLogs.
+See `FreshLogs documentation <https://wiki.canonical.com/Launchpad/FreshLogs>`_.
 
 Production
 ~~~~~~~~~~

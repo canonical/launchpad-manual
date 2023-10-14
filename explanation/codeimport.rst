@@ -24,12 +24,11 @@ per-import basis, that's actually not exposed right now.
 
 The frequency depends on the type of the revision control system, and is set in
 ``effective_update_interval``,
-see https://git.launchpad.net/launchpad/tree/lib/lp/code/model/codeimport.py.
+see `the codeimport module <https://git.launchpad.net/launchpad/tree/lib/lp/code/model/codeimport.py>`_.
 
 As the default intervals in the config schema aren't overridden anywhere right
-now, you can look them up in the ``codeimport`` section in the configuration
-schema:
-https://git.launchpad.net/launchpad/tree/lib/lp/services/config/schema-lazr.conf.
+now, you can look them up in the ``codeimport`` section in the `configuration
+schema <https://git.launchpad.net/launchpad/tree/lib/lp/services/config/schema-lazr.conf>`_.
 
 Trigger code import
 ===================
@@ -52,10 +51,9 @@ in time, as the process works like this:
 
 - cronjobs in ``lp-codeimport`` run workers
 - when the code import worker is looking for work to do, it calls
-  ``getJobForMachine``,
-  see https://git.launchpad.net/launchpad/tree/lib/lp/code/xmlrpc/codeimportscheduler.py
+  ``getJobForMachine`` in the `codeimportscheduler module <https://git.launchpad.net/launchpad/tree/lib/lp/code/xmlrpc/codeimportscheduler.py>_`
 - that calls ``getJobForMachine``
-  in https://git.launchpad.net/launchpad/tree/lib/lp/code/model/codeimportjob.py
+  in the `codeimport module <https://git.launchpad.net/launchpad/tree/lib/lp/code/model/codeimportjob.py>`_
   which makes a DB query to fetch the first job from a table that has
   ``due_date`` not in the future, and that is marked as ``pending``
 - it then triggers the import

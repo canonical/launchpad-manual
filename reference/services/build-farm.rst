@@ -84,7 +84,7 @@ Related specifications
 
 Log files
 ---------
-See https://wiki.canonical.com/Launchpad/FreshLogs.
+See `https://wiki.canonical.com/Launchpad/FreshLogs <https://wiki.canonical.com/Launchpad/FreshLogs>`_.
 
 Production
 ~~~~~~~~~~
