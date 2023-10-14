@@ -1,15 +1,14 @@
 Launchpad pip integration
 *************************
 
-Launchpad uses the pip_ build system for managing Python packages (replacing
-`zc.buildout`, which we used for many years).
+Launchpad uses the pip_ build system for managing Python packages.
 
 We have at least two other ways of managing dependencies.  Apt
 manages our Python language installation, as well as many of our
 non-Python system-level dependencies, such as PostgreSQL.  The
 sourcecode directory is our other way of managing dependencies.  It is
 supposed to only contain dependencies that are not standard Python
-packages.  bzr plugins and Javascript libraries are existing examples.
+packages.  bzr plugins and JavaScript libraries are existing examples.
 
 All developers will at least want to read the very brief sections about the
 `Set Up`_ and the `Everyday Usage`_.
@@ -202,12 +201,16 @@ Let's suppose that we want to add the "lazr.foo" package as a dependency.
     error-prone to fetch the desired package from PyPI along with any new
     dependencies it may have.
 
-3.  Run the following command (or your variation)::
+3.  Run the following command (or your variation):
+
+    .. code-block:: shell
 
         bin/pip install --no-binary :all: lazr.foo
 
     This will either produce some errors which you'll need to fix, or it
-    will succeed and finish with a line such as this::
+    will succeed and finish with a line such as this:
+
+    .. code-block:: shell
 
         Successfully installed lazr-foo-1.1.2 z3c.shazam-2.0.1 zope.bar-3.6.1
 
@@ -220,6 +223,8 @@ Let's suppose that we want to add the "lazr.foo" package as a dependency.
 4.  Add the successfully-installed packages to the shared download cache for
     future use.
 
+    .. code-block:: shell
+
         bin/pip download -d download-cache/dist/ --no-deps \
           --no-binary :all: ...
 
@@ -227,6 +232,8 @@ Let's suppose that we want to add the "lazr.foo" package as a dependency.
     installed" line above, replacing the ``-`` immediately before each
     version number with ``==`` to turn each package/version pair into a
     requirements specifier.  So, in the case above, you would run:
+
+    .. code-block:: shell
 
         bin/pip download -d download-cache/dist/ --no-deps \
           --no-binary :all: \
@@ -242,7 +249,9 @@ Let's suppose that we want to add the "lazr.foo" package as a dependency.
     liable to download too much otherwise.
 
 5.  Add the new versions to ``requirements/launchpad.txt``, still using the
-    requirements specifier syntax::
+    requirements specifier syntax:
+
+    .. code-block:: shell
 
         lazr.foo==1.1.2
         z3c.shazam==2.0.1

@@ -60,9 +60,9 @@ configuration as well as code, and can help to avoid gratuitous differences
 between deployments.  `Jinja <https://jinja.palletsprojects.com/>`_
 templates are widely used in both charms and Mojo specs as part of this.
 
-Keep multi-datacentre operation in mind where possible.  We don't have
+Keep multi-data centre operation in mind where possible.  We don't have
 enough experience with this yet to know what we'll need to do, but it's
-likely to involve deploying parts of an application in different datacentres
+likely to involve deploying parts of an application in different data centres
 from other parts, so loose coupling will help: for example, it may be useful
 to allow configuring connections using explicit configuration as well as or
 instead of Juju integrations.

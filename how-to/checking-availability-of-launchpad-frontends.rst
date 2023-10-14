@@ -30,7 +30,4 @@ Check individual frontend
     $ curl --resolve launchpad.net:443:185.125.189.222 https://launchpad.net/ 
 
 
-Further information
-===================
-
-https://everything.curl.dev/usingcurl/connections/name#provide-a-custom-ip-address-for-a-name
+More infos on `using curl <https://everything.curl.dev/usingcurl/connections/name#provide-a-custom-ip-address-for-a-name>`_.
