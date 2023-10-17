@@ -56,8 +56,8 @@ Project and community
 Example Project is a member of the Ubuntu family. It’s an open source project that warmly welcomes community projects, contributions, suggestions, fixes and constructive feedback.
 
 * `Code of conduct <https://ubuntu.com/community/ethos/code-of-conduct>`_
-* `Get support`
-* `Contribute`
+* `Get support <https://help.launchpad.net/>`_
+* :doc:`Contribute <how-to/contributing-changes>`
 
 .. toctree::
    :hidden:
