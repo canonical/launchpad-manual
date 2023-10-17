@@ -180,7 +180,6 @@ sourcetree
 soyuz
 specialized
 specializes
-SQLObject
 SRE
 SREs
 SSO

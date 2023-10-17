@@ -264,20 +264,10 @@ passes and returns them easier to debug.
 Database-related
 ================
 
-Storm
------
+ORM
+---
 
-We use two database ORM (object-relational mapper) APIs in Launchpad, the
-older and deprecated SQLObject API and the new and improved `Storm
-<https://storm.canonical.com>`_ API.  All new code should use the Storm API,
-and you are encouraged to convert existing code to Storm as part of your
-tech-debt payments.
-
-.. note::
-
-    The SQLObject and Storm ``ResultSet`` interfaces are not compatible, so
-    e.g. if you need to ``UNION`` between these two, you will run into
-    trouble.  We are looking into ways to address this.
+We are using the `Storm <https://storm.canonical.com>`_ ORM.
 
 Field attributes
 ----------------
