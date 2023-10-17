@@ -51,12 +51,15 @@ in time, as the process works like this:
 
 - cronjobs in ``lp-codeimport`` run workers
 - when the code import worker is looking for work to do, it calls
-  ``getJobForMachine`` in the `codeimportscheduler module <https://git.launchpad.net/launchpad/tree/lib/lp/code/xmlrpc/codeimportscheduler.py>_`
+  ``getJobForMachine`` in the `codeimportscheduler module`_
 - that calls ``getJobForMachine``
-  in the `codeimport module <https://git.launchpad.net/launchpad/tree/lib/lp/code/model/codeimportjob.py>`_
-  which makes a DB query to fetch the first job from a table that has
-  ``due_date`` not in the future, and that is marked as ``pending``
+  in the `codeimport module`_ which makes a DB query to fetch the first job
+  from a table that has ``due_date`` not in the future, and that is marked as
+  ``pending``
 - it then triggers the import
+
+.. _codeimportscheduler module: https://git.launchpad.net/launchpad/tree/lib/lp/code/xmlrpc/codeimportscheduler.py
+.. _codeimport module:  https://git.launchpad.net/launchpad/tree/lib/lp/code/model/codeimportjob.py
 
 Conclusion
 ==========
