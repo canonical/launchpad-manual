@@ -22,7 +22,6 @@ Common development tasks
    preserve-query-count
    land-update-for-loggerhead
    update-configuration-for-testing
-   doc-theme
    testing-scripts
    create-job-publish-artifact
 
