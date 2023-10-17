@@ -288,7 +288,7 @@ queries or fragments, e.g.:
         FROM TeamParticipation
         INNER JOIN Person ON TeamParticipation.team = Person.id
         WHERE TeamParticipation.person = %s
-    """ % sqlvalues(personID)
+    """ % sqlvalues(person_id)
 
 This is also easy to cut-and-paste into ``psql`` for interactive testing,
 unlike if you use several lines of single quoted strings.

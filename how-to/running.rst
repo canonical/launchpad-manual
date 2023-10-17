@@ -24,8 +24,8 @@ For the host system, any reasonably modern Ubuntu release should work.
 Other Linux distributions that have LXD should work too, though we don't
 test on them.
 
-For the containers, these instructions should work with Ubuntu 16.04 LTS or
-later.  We currently test on 16.04, 18.04, and 20.04, with the aim of
+For the containers, these instructions should work with Ubuntu 16.04 LTS and
+20.04 LTS.  We currently test on 16.04, 18.04, and 20.04, with the aim of
 upgrading production to 20.04 soon.  22.04 is known not to work yet.
 
 .. note::
