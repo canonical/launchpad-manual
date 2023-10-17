@@ -18,7 +18,7 @@ Common development tasks
    contributing-changes
    exceptions
    security
-   avoid-debugging-issues
+   using-breakpoints
    preserve-query-count
    land-update-for-loggerhead
    update-configuration-for-testing

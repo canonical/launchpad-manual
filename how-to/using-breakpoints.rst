@@ -1,7 +1,6 @@
-=========================
-Avoiding debugging issues
-=========================
-
+=================
+Using breakpoints
+=================
 
 When you set a breakpoint, e.g. via ``import pdb;pdb.set_trace()``
 and run a collection of tests,
