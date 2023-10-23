@@ -117,6 +117,7 @@ linkcheck_ignore = [
     'https://bazaar.staging.launchpad.net',  # broken, unclear why XXX 2023-10-14: jugmac00- check with team
     'https://bugs.launchpad.net/charm-launchpad-buildd-image-modifier',  # private
     'https://bugs.launchpad.net/launchpad-vbuilder-manage',  # private
+    'http://example.com/.*',  # ignore, example links
     'https://launchpad.net/canonical-mojo-specs',  # private
     r'https://launchpad\.test.*',  # ignore, local test setup
     'https://wiki.canonical.com/InformationInfrastructure/OSA/LaunchpadRollout#Config-only_Rollouts',  # private

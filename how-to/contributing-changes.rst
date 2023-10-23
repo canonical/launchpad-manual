@@ -25,7 +25,7 @@ Once you have decided on the change to be made, clone the repository.
     git clone https://git.launchpad.net/launchpad
 
 Make your changes
--------------------
+-----------------
 
 Create a branch from a reasonable point, such as ``master``.
 
