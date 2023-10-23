@@ -24,6 +24,7 @@ Common development tasks
    update-configuration-for-testing
    testing-scripts
    create-job-publish-artifact
+   chameleon
 
 Operating development instances
 -------------------------------

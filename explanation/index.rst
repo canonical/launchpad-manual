@@ -15,3 +15,8 @@ Explanation
    codeimport
    performance
    security
+   malone
+   scope
+   strategy
+   values
+   webapp-process
