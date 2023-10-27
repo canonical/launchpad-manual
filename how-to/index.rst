@@ -7,7 +7,9 @@ Getting started
 .. toctree::
    :maxdepth: 1
 
+   getting
    running
+   database-setup
 
 Common development tasks
 ------------------------
@@ -15,7 +17,9 @@ Common development tasks
 .. toctree::
    :maxdepth: 1
 
+   fixing-bugs
    contributing-changes
+   submitting-a-patch
    exceptions
    security
    using-breakpoints
@@ -25,6 +29,15 @@ Common development tasks
    testing-scripts
    create-job-publish-artifact
    chameleon
+   database-schema-changes-process
+
+Common operational tasks
+------------------------
+
+.. toctree::
+   :maxdepth: 1
+
+   triage-bugs
 
 Operating development instances
 -------------------------------

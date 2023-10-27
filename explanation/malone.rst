@@ -2,10 +2,10 @@
 About Malone
 ============
 
-.. include:: ../includes/attention_out_of_date.rst
+.. include:: ../includes/important_out_of_date.rst
 
 The world has many excellent bug tracking tools already. It would not make
-sense to create another bugtracker unless the vision behind that software
+sense to create another bug tracker unless the vision behind that software
 was substantially different to anything that had gone before it. This
 document outlines that vision, explaining what it is that I hope Malone will
 do for the open source community.

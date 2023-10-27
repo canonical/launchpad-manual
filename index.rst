@@ -53,10 +53,12 @@ In this documentation
 Project and community
 ---------------------
 
-Example Project is a member of the Ubuntu family. It’s an open source project that warmly welcomes community projects, contributions, suggestions, fixes and constructive feedback.
+Launchpad is a member of the Ubuntu family.
+It's an open source project that warmly welcomes community projects,
+contributions, suggestions, fixes and constructive feedback.
 
 * `Code of conduct <https://ubuntu.com/community/ethos/code-of-conduct>`_
-* `Get support <https://help.launchpad.net/>`_
+* :doc:`Get support <help>`
 * :doc:`Contribute <how-to/contributing-changes>`
 
 .. toctree::
@@ -67,3 +69,4 @@ Example Project is a member of the Ubuntu family. It’s an open source project 
    how-to/index
    reference/index
    explanation/index
+   help
