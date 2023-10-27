@@ -211,8 +211,8 @@ to provide charms with database credentials rather than relating them to
 complications when the database is deployed in a different region from some
 of our applications).  As a result, we need to do some manual user
 management in these environments.  On staging and qastaging, developers can
-do most of this themselves when adding new charms to those existing
-deployment environments.
+do this themselves when adding new charms to those existing deployment
+environments.
 
 Taking the librarian as an example: ``charm/launchpad-librarian/layer.yaml``
 lists the ``binaryfile-expire``, ``librarian``, ``librarianfeedswift``, and
@@ -244,24 +244,25 @@ like this, again replacing ``<secret>`` with the generated password:
 .. code-block:: yaml
 
     launchpad_qastaging_librarian:
-      master: "postgresql://juju_launchpad-librarian:<secret>@pamola.internal:6432/launchpad_qastaging?connect_timeout=10"
+      master: "postgresql://juju_launchpad-librarian:<secret>@database-ps5-1.qastaging.lp.internal:6432/launchpad_qastaging?connect_timeout=10"
       standbys: []
 
 In the connection string URL, the database host, port, and name (in this
-case, ``pamola.internal``, ``6432``, and ``launchpad_qastaging``
-respectively) should match those of other entries in ``db_connections``.
+case, ``database-ps5-1.qastaging.lp.internal``, ``6432``, and
+``launchpad_qastaging`` respectively) should match those of other entries in
+``db_connections``.
 
 The configuration for the ``pgbouncer`` connection pooler must also be
-updated to match, which currently requires help from IS.  On
-``pamola.internal``, IS should take the relevant username/password pair from
-the ``deploy-secrets`` file above and add it to
-``/etc/pgbouncer/userlist.txt``.
+updated to match.  For now, take the relevant username/password pair from
+the ``deploy-secrets`` file above; then, on each of the ``postgresql`` units
+in ``stg-launchpad-db@launchpad-bastion-ps5.internal``, add this pair to
+``/etc/pgbouncer/userlist.txt`` and run ``sudo systemctl reload
+pgbouncer.service``.  In the near future this will be turned into a Mojo
+spec.
 
 Staging works similarly with the obvious substitutions of ``staging`` for
-``qastaging``.  The qastaging and staging environments currently share a
-``pgbouncer``; as a result, while the user still has to be created on both
-database clusters, the passwords for a given user on qastaging and staging
-must be identical.
+``qastaging``, and using
+``stg-launchpad-db-qastaging@launchpad-bastion-ps5.internal``.
 
 Production works similarly, except that IS needs to generate the user on the
 production database, add it to the production ``pgbouncer`` by editing
