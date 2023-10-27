@@ -123,6 +123,35 @@ linkcheck_ignore = [
     'https://wiki.canonical.com/InformationInfrastructure/OSA/LaunchpadRollout#Config-only_Rollouts',  # private
     'https://wiki.canonical.com/Launchpad/FreshLogs',  # private
     'https://wiki.canonical.com/Launchpad/SupportRotation#Builder',  # private
+    'PolicyAndProcess/DatabaseSchemaChangesProcess',  # needs update
+    'Trunk/Glue',  # needs update
+    '../Trunk',  # needs update
+    '/Background', 
+    '/Concepts',  # needs update
+    '/HowToUseCodehostingLocally',  # needs update
+    '/Loggerhead',  # needs update
+    'Database/LivePatching',  # needs update
+    'Database/TableRenamePatch',  # needs update
+    'Debugging#Profiling%20page%20requests',  # needs update
+    'Debugging#Special%20URLs',  # needs update
+    'FixBug',  # needs update
+    'Getting',  # needs update
+    'Help',  # needs update
+    'JavaScriptIntegrationTesting',  # needs update
+    'JavascriptUnitTesting',  # needs update
+    'JavascriptUnitTesting/MockIo',  # needs update
+    'PolicyAndProcess/Accessibility',  # needs update
+    'Running',  # needs update
+    'Soyuz',  # needs update
+    'Translations/Specs/UpstreamImportIntoUbuntu/FixingIsImported/setCurrentTranslation',  # needs update
+    'UI/CssSprites',  # needs update
+    'attachment:codehosting.png',  # needs update
+    'https://git.launchpad.net/launchpad-mojo-specs/tree/mojo-lp-git/services',  # private
+    'https://wiki.canonical.com/InformationInfrastructure/OSA/LaunchpadProductionStatus',  # private
+    'https://wiki.canonical.com/Launchpad/PolicyandProcess/ProductionChange',  # private
+    'https://wiki.canonical.com/Launchpad/PolicyandProcess/ProductionChangeApprovalPolicy',  # private
+    'irc.libera.chat',  # this is not an HTTP link
+    'attachment:TranslationsSchema.dia',  # needs update
     ]
 
 # Pages on which to ignore anchors

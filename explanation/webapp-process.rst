@@ -4,7 +4,7 @@ How to go about writing a web application
 
 -- Steve Alexander <steve@z3u.com>
 
-.. include:: ../includes/attention_out_of_date.rst
+.. include:: ../includes/important_out_of_date.rst
 
 
 Introduction
