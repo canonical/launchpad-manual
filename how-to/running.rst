@@ -24,20 +24,10 @@ For the host system, any reasonably modern Ubuntu release should work.
 Other Linux distributions that have LXD should work too, though we don't
 test on them.
 
-For the containers, these instructions should work with Ubuntu 16.04 LTS and
-20.04 LTS.  We currently test on 16.04, 18.04, and 20.04, with the aim of
-upgrading production to 20.04 soon.  22.04 is known not to work yet.
+For the containers, these instructions should work with Ubuntu 20.04 LTS.
+22.04 is known not to work yet.
 
-.. note::
-   Ubuntu 22.04 ships with cgroups v2 enabled by default. Since the 16.04
-   release is too old to support it, the container doesn't get set up properly
-   as per the profile and isn't usable for setting up Launchpad. So to re-enable
-   cgroups v1, set the `systemd.unified_cgroup_hierarchy=0` kernel parameter.
-   For GRUB, this can be done by editing `/etc/default/grub` and
-   appending the parameter to the `GRUB_CMDLINE_LINUX_DEFAULT` value,
-   running `update-grub` after that, and rebooting.
-
-Launchpad requires at least Python 3.5 (i.e. newer than Ubuntu 14.04 LTS).
+Launchpad requires at least Python 3.8 (i.e. at least Ubuntu 20.04 LTS).
 
 We'd like Launchpad to run on other operating systems, especially `Debian
 GNU/Linux <https://www.debian.org/>`_, so that more people can contribute to
@@ -126,14 +116,6 @@ getting it installed and configured on your network.
 .. code-block:: sh
 
     lxc launch ubuntu:20.04 lpdev -p default -p $USER
-
-.. note::
-    Note that as of now, Launchpad still runs on `ubuntu:16.04` in production, 
-    but will be upgraded to `20.04` in the near future.
-
-    You can use `ubuntu:16.04` in the command above instead, but note that for
-    more recent Ubuntu versions (22.04 and above) it might need some extra steps 
-    (see note in :ref: `Supported Operating Systems <supported_operating_systems>`).
 
 .. note::
    If the command above fails with ``Error: No root device could be found``, you may need to run
