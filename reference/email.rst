@@ -176,7 +176,7 @@ for use with Launchpad development (production instances will just use
     5. `MboxMailer` -- stores the email in a Unix mbox file before optionally
        handing the message off to another `IMailer`.
 
-Developers (and production and dogfood server, until we are confident
+Developers (and production server, until we are confident
 messaging is working fine) should use the StubMailer, like in the quickstart
 example.  This causes all emails to be redirected to the specified destination
 address to you can test to your hearts content without spamming other
