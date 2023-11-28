@@ -134,7 +134,7 @@ these guidelines to build your charm for Launchpad:
    default values (ideally, values that would allow a local deployment) - note
    that some config variables might already be set by other layers of your
    charm, if your charm is based on other layers. The actual values that will
-   be running in each environment (production, dogfood, staging, qastaging),
+   be running in each environment (production, staging, qastaging),
    should later be set in the ``lp/bundle.yaml`` file within the
    `launchpad-mojo-specs <https://git.launchpad.net/launchpad-mojo-specs>`_
    repo (you should only worry about these specs after your charm is ready).
