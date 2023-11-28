@@ -11,7 +11,7 @@ example, you will want your code to be published in Swift as a tarball, so
 that the right version of your code is downloaded when building the charm.
 
 We also want the artifact building to be automated. This can be achieved by
-having `Jenkins <https://jenkins.ols.canonical.com/online-services/>`_ jobs
+having `Jenkins <https://jenkins.ols.ps5.canonical.com/>`_ jobs
 building your artifact on code merge.
 
 
