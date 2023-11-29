@@ -48,6 +48,7 @@ configs
 ConfiguringWebApplications
 cron
 cronjobs
+crontab
 crontabs
 cryptographic
 cryptographically
@@ -83,6 +84,7 @@ emphazising
 epydoc
 executables
 facetted
+fastnodowntime
 favicons
 formlib
 FreshLogs
@@ -110,6 +112,7 @@ javascript
 jenkaas
 jenkins
 jinja
+langpack
 lazr
 lifecycle
 logrotate
@@ -124,7 +127,11 @@ lxc
 lxd
 LXD's
 macOS
+macquarie
+Mantic
 matchers
+matic
+matic
 maximize
 mbox
 mboxMailer
@@ -264,6 +271,7 @@ whitespace
 worktrees
 WSGI
 www
+Xenial
 xml
 XML-RPC
 xmlrpc
