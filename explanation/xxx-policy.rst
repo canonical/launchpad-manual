@@ -59,9 +59,3 @@ Scope
 
 -  Affects: All Launchpad Code
 -  Term: Permanent
-
-Supporting Documentation
-------------------------
-
--  `XXX Listing <https://devpad.canonical.com/~curtis/xxxreport.html>`__
-   (python only, doesn't cover TAL comments)
