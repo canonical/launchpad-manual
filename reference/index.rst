@@ -4,6 +4,13 @@ Reference
 These references provide succinct information about Launchpad and its services.
 You will also find style guides on how to work with Launchpad as a developer.
 
+Style guides
+------------
+
+Style guides give a clear guideline how certain aspects of Launchpad's code
+should be formatted, styled and handled, especially for the cases when there is
+no tooling available to enforce those rules.
+
 .. toctree::
    :maxdepth: 1
 
