@@ -296,6 +296,19 @@ need to do ``make schema`` every time, and you should avoid it because it's
 expensive and because it will clean out any data you might have put into
 your test instance (through the web UI or by running other scripts).
 
+CSS Watch
+---------
+
+While running a local instance of Launchpad, if you are interested in updating
+CSS or SCSS files, they will not re-render automatically.
+To enable that and make frontend changes more straight-forward, you can run:
+
+.. code-block:: shell-session
+
+    $ make css_watch
+
+This should be run in a separate terminal session alongside ``make run``.
+
 Accessing your web application
 ==============================
 
