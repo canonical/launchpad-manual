@@ -41,6 +41,14 @@ Translation
 
    services/automatic-translations-export.rst
 
+Ubuntu-related
+~~~~~~~~~~~~~~
+
+.. toctree::
+   :maxdepth: 1
+
+   services/mirror-prober.rst
+
 Possibly out-of-date
 --------------------
 
