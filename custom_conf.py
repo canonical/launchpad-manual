@@ -151,6 +151,7 @@ linkcheck_ignore = [
     'https://wiki.canonical.com/InformationInfrastructure/OSA/LaunchpadProductionStatus',  # private
     'https://wiki.canonical.com/Launchpad/PolicyandProcess/ProductionChange',  # private
     'https://wiki.canonical.com/Launchpad/PolicyandProcess/ProductionChangeApprovalPolicy',  # private
+    'https://deployable.ols.canonical.com/project/launchpad-db',  # private
     'irc.libera.chat',  # this is not an HTTP link
     'attachment:TranslationsSchema.dia',  # needs update
     ]
