@@ -52,7 +52,7 @@ name. For example:
 See `Vanilla accordions <https://vanillaframework.io/docs/patterns/accordion>`_
 as another example.
 
-When it comes to modifiers for a class (classes to change appearance, behavior
+When it comes to modifiers for a class (classes to change appearance, behaviour
 or state), you should use the name of the original class, followed by
 two hyphens (``--``), followed by the modifier name. For example:
 
@@ -74,14 +74,14 @@ as another example.
 CSS and SCSS
 ------------
 
-In general, SCSS files are prefered over CSS files.
+In general, SCSS files are preferred over CSS files.
 
 When adding CSS styling to a new block/section/component, one should create a
 new SCSS file in the `lib/canonical/launchpad/icing/css/components` directory
 named after the new component, and add it to the `_index.scss` file in the
 same directory.
 
-Nesting class styles can be used when writting SCSS when it makes
+Nesting class styles can be used when writing SCSS when it makes
 sense and as long as its nesting is kept to a level or two. For example:
 
 .. code-block:: scss
