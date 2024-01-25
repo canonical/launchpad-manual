@@ -19,6 +19,7 @@ autocert
 backend
 backends
 Becca
+BEM
 Blazingly
 bool
 boolean
@@ -52,6 +53,7 @@ crontab
 crontabs
 cryptographic
 cryptographically
+css
 customize
 CVE
 Dalia
