@@ -50,6 +50,14 @@ Ubuntu-related
 
    services/mirror-prober.rst
 
+Git-related
+~~~~~~~~~~~~~~
+
+.. toctree::
+   :maxdepth: 1
+
+   services/git-hosting.rst
+
 Possibly out-of-date
 --------------------
 
