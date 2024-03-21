@@ -142,6 +142,14 @@ getting it installed and configured on your network.
 
     ssh -A $USER@IP_ADDRESS_FROM_LXC_LS
 
+.. note::
+   LXD provides a way to access the LXD containers using DNS names, for example, ``lpdev.lxd``,
+   where ``.lxd`` is the default base domain name for the LXD bridge and ``lpdev`` is the name of
+   the LXD container. To set this up, follow the instructions in
+   https://documentation.ubuntu.com/lxd/en/latest/howto/network_bridge_resolved/.
+   Once the setup is done, you can use ``lpdev.lxd`` in the above command instead of the
+   IP address of the ``lpdev`` container.
+
 Getting Launchpad
 =================
 
