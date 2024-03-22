@@ -97,6 +97,7 @@ gunicorn
 gzip
 hostnames
 HSTS
+howto
 html
 http
 https
