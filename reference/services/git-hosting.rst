@@ -9,7 +9,6 @@ The major subsystems involved are:
 
 * The git client
 * Hosting service (turnip)
-* The underlying object model
 * The web application (Launchpad)
 * Repository source code browser (cgit)
 
@@ -33,7 +32,7 @@ deprecated since the provision of "smart" HTTP transport in Git v1.6.6 (released
 
 SSL is terminated by haproxy (haproxy has two units haproxy/1* and haproxy/0) for HTTPS, and all the other 
 protocols also pass through haproxy for load balancing (although at the moment we only have a single backend).  
-See the full charm configuration at `launchpad-mojo-specs <https://code.launchpad.net/launchpad-mojo-specs>_`.
+See the full charm configuration at `launchpad-mojo-specs <https://git.launchpad.net/launchpad-mojo-specs/tree/lp-git/bundle.yaml>`_.
 
 The underlying protocol endpoints live in `lp:turnip <https://code.launchpad.net/turnip>`_, 
 which invokes ``git upload-pack`` and ``git receive-pack`` to implement the git protocol itself.
