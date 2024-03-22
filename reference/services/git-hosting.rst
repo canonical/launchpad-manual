@@ -8,10 +8,10 @@ Launchpad has direct Git hosting support alongside its existing Bazaar hosting s
 The major subsystems involved are:
 
 * The git client
-* Hosting service
+* Hosting service (turnip)
 * The underlying object model
-* The web application
-* Repository source code browser 
+* The web application (Launchpad)
+* Repository source code browser (cgit)
 
 Git client
 ----------
@@ -31,8 +31,10 @@ The outside world connects to the Git hosting service using one of several proto
 The Git "dumb" HTTP transport will not be supported, as it has largely been considered 
 deprecated since the provision of "smart" HTTP transport in Git v1.6.6 (released January, 2010).
 
-SSL is terminated by haproxy for HTTPS, and all the other protocols also pass through 
-haproxy for load balancing (although at the moment we only have a single backend).  
+SSL is terminated by haproxy (haproxy has two units haproxy/1* and haproxy/0) for HTTPS, and all the other 
+protocols also pass through haproxy for load balancing (although at the moment we only have a single backend).  
+See the full charm configuration at `launchpad-mojo-specs <https://code.launchpad.net/launchpad-mojo-specs>_`.
+
 The underlying protocol endpoints live in `lp:turnip <https://code.launchpad.net/turnip>`_, 
 which invokes ``git upload-pack`` and ``git receive-pack`` to implement the git protocol itself.
 
@@ -40,9 +42,9 @@ which invokes ``git upload-pack`` and ``git receive-pack`` to implement the git 
 and in turn the Launchpad web application provides an internal XML-RPC interface used by ``turnip`` to translate logical 
 repository paths to filesystem paths and to notify Launchpad of repository changes.
 
-``turnip`` is deployed using Juju, using the `turnip charm <https://git.launchpad.net/turnip/tree/charm>`_.  
+``turnip`` is deployed using Juju, using the `turnip charms <https://git.launchpad.net/turnip/tree/charm>`_.  
 
-See more at `turnip documentation <https://turnip.readthedocs.io/en/latest/index.html>`_ 
+For more details, see the `turnip documentation <https://turnip.readthedocs.io/en/latest/index.html>`_ 
 
 The web application
 -------------------
@@ -52,7 +54,7 @@ Code that is executed as part of the Launchpad web application.  Major features:
  * general information
  * listings for various registry objects - people, teams, projects, packages
  * default repositories for projects and packages
- * privacy
+ * privacy settings
 
 Repository source code browser
 ------------------------------
@@ -77,8 +79,8 @@ Production
 * ``rless turnip-pack-{1,2,3,4}.lp.internal::turnip-logs/turnip-pack-frontend-ssh.log``
 * ``rless turnip-pack-{1,2,3,4}.lp.internal::turnip-logs/turnip-pack-virt.log``
 
-Staging
-~~~~~~~
+Qastaging
+~~~~~~~~~
 
 * ``rless turnip-pack-{1,2}.qastaging.lp.internal::turnip-logs/turnip-access.log``
 * ``rless turnip-pack-{1,2}.qastaging.lp.internal::turnip-logs/turnip-api-access.log``
