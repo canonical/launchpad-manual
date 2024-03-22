@@ -4,6 +4,7 @@ APIs
 balancer
 bugfix
 callables
+cgit
 Charmhub
 CLI
 conf
@@ -18,14 +19,17 @@ dropdown
 EBS
 EKS
 favicon
+filesystem
 FIXME
 fmt
 formatters
 garbo
+git
 Grafana
 IAM
 innerHTML
 installable
+haproxy
 Jira
 JS
 JSON
@@ -55,6 +59,7 @@ RSS
 RTD
 sampledata
 scss
+SSL
 stylesheets
 subdirectories
 subfolders
