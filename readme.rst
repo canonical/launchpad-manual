@@ -1,7 +1,9 @@
 Launchpad Documentation Manual
 ==============================
 
-Welcome to the official Launchpad Documentation Manual. This manual is designed to help users, developers, and contributors understand and utilize the extensive features of Launchpad more effectively. It covers a wide range of topics, from basic navigation within Launchpad to advanced features such as code hosting, bug tracking, and translations. The documentation is structured to provide guidance for all levels of users, whether you are new to Launchpad or an experienced user looking to deepen your knowledge. This manual is continuously updated to reflect the latest features and improvements. You can access the latest version of the documentation at [https://documentation.ubuntu.com/launchpad/en/latest/](https://documentation.ubuntu.com/launchpad/en/latest/).
+Welcome to the official Launchpad Documentation Manual. This manual is designed to help users, developers, and contributors understand and utilize the extensive features of Launchpad more effectively. It covers a wide range of topics, from basic navigation within Launchpad to advanced features such as code hosting, bug tracking, and translations.
+The documentation is structured to provide guidance for all levels of users, whether you are new to Launchpad or an experienced user looking to deepen your knowledge. This manual is continuously updated to reflect the latest features and improvements.
+You can access the latest version of the documentation at [https://documentation.ubuntu.com/launchpad/en/latest/](https://documentation.ubuntu.com/launchpad/en/latest/).
 
 Documentation starter pack
 --------------------------
