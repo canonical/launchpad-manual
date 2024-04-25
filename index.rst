@@ -70,3 +70,4 @@ contributions, suggestions, fixes and constructive feedback.
    reference/index
    explanation/index
    help
+   contribute-to-our-docs
