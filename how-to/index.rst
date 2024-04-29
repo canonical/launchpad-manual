@@ -4,6 +4,8 @@ How-to Guides
 Getting started
 ---------------
 
+To get started with Launchpad, get the source code and run a local development instance.
+
 .. toctree::
    :maxdepth: 1
 
@@ -14,48 +16,48 @@ Getting started
 Common development tasks
 ------------------------
 
+Once you have an instance of Launchpad, you're ready to contribute!
+
 .. toctree::
    :maxdepth: 1
 
+   submitting-a-patch
    fixing-bugs
    contributing-changes
-   submitting-a-patch
-   exceptions
-   security
-   using-breakpoints
-   preserve-query-count
-   land-update-for-loggerhead
-   update-configuration-for-testing
-   testing-scripts
-   create-job-publish-artifact
-   chameleon
-   database-schema-changes-process
-
-Common operational tasks
-------------------------
-
-.. toctree::
-   :maxdepth: 1
-
-   triage-bugs
-
-Operating development instances
--------------------------------
-
-.. toctree::
-   :maxdepth: 1
-
-   new-user
-   apply-schema-changes
    use-updated-dependency
+   database-schema-changes-process
+   apply-schema-changes
    importing-an-ubuntu-package
 
-Operating Canonical's instances
--------------------------------
+Launchpad development tips
+--------------------------
+
+There are some things that can make your journey of contributing to Launchpad much easier.
 
 .. toctree::
    :maxdepth: 1
 
-   deploying-configuration-changes
-   checking-availability-of-launchpad-frontends
+   update-configuration-for-testing
+   using-breakpoints
+   security
+   testing-scripts
+   exceptions
+   preserve-query-count
+   chameleon
+
+Operating Launchpad
+------------------------
+
+If you have a running instance of Launchpad, there are common tasks you might need to perform.
+
+.. toctree::
+   :maxdepth: 1
+
    getting-overview-of-build-farm
+   checking-availability-of-launchpad-frontends
+   new-user
+   create-job-publish-artifact
+   triage-bugs
+   deploying-configuration-changes
+   land-update-for-loggerhead
+

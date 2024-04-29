@@ -59,7 +59,8 @@ contributions, suggestions, fixes and constructive feedback.
 
 * `Code of conduct <https://ubuntu.com/community/ethos/code-of-conduct>`_
 * :doc:`Get support <help>`
-* :doc:`Contribute <how-to/contributing-changes>`
+* :doc:`Contribute to our code <how-to/contributing-changes>`
+* :doc:`Contribute to our docs <contribute-to-our-docs>`
 
 .. toctree::
    :hidden:
@@ -70,3 +71,4 @@ contributions, suggestions, fixes and constructive feedback.
    reference/index
    explanation/index
    help
+   contribute-to-our-docs

@@ -115,6 +115,7 @@ linkcheck_ignore = [
     'https://archive.ph/CAqQm',  # ignore, as works in browser, but link checker has some issues
     'https://bazaar.launchpad.net/lp-production-config',  # private
     'https://bazaar.staging.launchpad.net',  # broken, unclear why XXX 2023-10-14: jugmac00- check with team
+    'https://www.breezy-vcs.org', # broken, returns "Connection refused" on port 443
     'https://bugs.launchpad.net/charm-launchpad-buildd-image-modifier',  # private
     'https://bugs.launchpad.net/launchpad-vbuilder-manage',  # private
     'http://example.com/.*',  # ignore, example links
