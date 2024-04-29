@@ -44,6 +44,7 @@ There are some things that can make your journey of contributing to Launchpad mu
    exceptions
    preserve-query-count
    chameleon
+   debug-tests-with-visual-studio-code
 
 Operating Launchpad
 ------------------------
