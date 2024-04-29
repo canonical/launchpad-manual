@@ -39,6 +39,7 @@ cgroup
 cgroups
 changeset
 charmcraft
+Cmd
 CMDLINE
 codebase
 Codehosting
@@ -54,6 +55,7 @@ crontabs
 cryptographic
 cryptographically
 css
+Ctrl
 customize
 CVE
 Dalia
@@ -119,6 +121,7 @@ jinja
 langpack
 lazr
 lifecycle
+logpoints
 logrotate
 lookup
 lookups
