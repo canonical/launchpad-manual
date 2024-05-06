@@ -214,7 +214,7 @@ installed.
 .. code-block:: shell-session
 
    $ ls
-   launchpad/    lp-sourcedeps/
+   launchpad/    lp-sourcedeps/ rocketfuel-setup
    $ cd launchpad
 
 You are now in a newly-cloned Git repository, with one branch ('master'),
