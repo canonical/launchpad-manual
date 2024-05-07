@@ -31,7 +31,7 @@ important priorities.
 
 For a full understanding of why we triage bugs and how we came to
 develop this process, please read our description of the `background to
-our bug triage process </Background>`__.
+our bug triage process <https://dev.launchpad.net/BugTriage/Background>`__.
 
 How to triage
 -------------
