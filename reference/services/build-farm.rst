@@ -32,7 +32,9 @@ package builds, ``snapcraft`` for snap builds, etc.
 
 Builders do not have direct access to the internet, but rather need to
 acquire an authentication token to be able to access a restricted set of
-URLs on the internet via a squid proxy.
+URLs on the internet via a proxy. This can either be a squid proxy or the
+`fetch service <../fetch-service>`_, determined by a ``use_fetch_service``
+flag. Currently, only snaps can use the fetch service.
 
 Builder regions are physically co-located and consist of machines of the
 same architecture family.
@@ -77,6 +79,7 @@ Deployment
 * `Production deployment notes for launchpad-buildd <https://launchpad-buildd.readthedocs.io/en/latest/explanation/deployment.html>`_
 * `vbuilder Mojo spec <https://git.launchpad.net/~launchpad/launchpad-mojo-specs/+git/private/tree/vbuilder?h=vbuilder>`_
 * `lp-builder-proxy Mojo spec <https://git.launchpad.net/launchpad-mojo-specs/tree/lp-builder-proxy/>`_
+* `lp-fetch-service Mojo spec <https://git.launchpad.net/~launchpad/launchpad-mojo-specs/+git/private/tree/lp-fetch-service>`_
 
 Related specifications
 ----------------------
@@ -122,6 +125,12 @@ builder-proxy (squid)
 * ``rless 10.131.48.24::squid-logs/access.log``
 * ``rless 10.131.48.24::squid-logs/cache.log``
 
+fetch-service
+^^^^^^^^^^^^^
+
+See `Fetch Service logs section <../fetch-service/#log-files>`_.
+
+
 Staging
 ~~~~~~~
 
@@ -146,6 +155,11 @@ builder-proxy (squid)
 * ``rless 10.132.224.179::squid-logs/cache.log``
 * ``rless 10.132.224.16::squid-logs/access.log``
 * ``rless 10.132.224.16::squid-logs/cache.log``
+
+fetch-service
+^^^^^^^^^^^^^
+
+See `Fetch Service logs section <../fetch-service/#log-files>`_.
 
 Monitoring
 ----------

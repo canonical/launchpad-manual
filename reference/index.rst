@@ -33,6 +33,7 @@ Build-related
 
    services/build-farm
    services/signing
+   services/fetch-service
 
 Translation
 ~~~~~~~~~~~
