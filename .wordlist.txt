@@ -33,6 +33,7 @@ haproxy
 Jira
 JS
 JSON
+juju
 Juju
 Kubeflow
 Kubernetes
@@ -60,6 +61,7 @@ RTD
 sampledata
 scss
 SSL
+Starcraft
 stylesheets
 subdirectories
 subfolders
