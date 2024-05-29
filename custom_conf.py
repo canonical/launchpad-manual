@@ -155,6 +155,8 @@ linkcheck_ignore = [
     'https://deployable.ols.canonical.com/project/launchpad-db',  # private
     'irc.libera.chat',  # this is not an HTTP link
     'attachment:TranslationsSchema.dia',  # needs update
+    r'https://github\.com/canonical/fetch-service*',  # private
+    r'https://github\.com/canonical/fetch-operator*',  # private
     ]
 
 # Pages on which to ignore anchors
