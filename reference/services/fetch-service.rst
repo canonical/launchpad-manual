@@ -9,7 +9,7 @@ proxy. When used, it keeps track of requests and dependencies for the build.
 Detailed description
 --------------------
 The fetch service is a proxy service used by Launchpad builders (see
-`Build Farm <../build-farm>`_) that keeps track of dependencies downloaded
+:doc:`Build Farm <../build-farm>`) that keeps track of dependencies downloaded
 during a build. This ensures developers have a trustworthy record of all the
 parts that make up the software being built.
 
@@ -78,8 +78,8 @@ Documentation
 
 Git repositories
 ----------------
-* `Fetch service Snap <https://github.com/canonical/fetch-service>`_
-* `Fetch service Charm <https://github.com/canonical/fetch-operator>`_
+* `Fetch service snap <https://github.com/canonical/fetch-service>`_
+* `Fetch service charm <https://github.com/canonical/fetch-operator>`_
 * `lp-fetch-service Mojo spec <https://git.launchpad.net/~launchpad/launchpad-mojo-specs/+git/private/tree/lp-fetch-service>`_
 
 The following repositories also contain code relevant to how Launchpad uses

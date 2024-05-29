@@ -33,7 +33,7 @@ package builds, ``snapcraft`` for snap builds, etc.
 Builders do not have direct access to the internet, but rather need to
 acquire an authentication token to be able to access a restricted set of
 URLs on the internet via a proxy. This can either be a squid proxy or the
-`fetch service <../fetch-service>`_, determined by a ``use_fetch_service``
+:doc:`fetch service <../fetch-service>`, determined by a ``use_fetch_service``
 flag. Currently, only snaps can use the fetch service.
 
 Builder regions are physically co-located and consist of machines of the
@@ -128,7 +128,7 @@ builder-proxy (squid)
 fetch-service
 ^^^^^^^^^^^^^
 
-See `Fetch Service logs section <../fetch-service/#log-files>`_.
+See :doc:`Fetch Service <../fetch-service>` logs section.
 
 
 Staging
@@ -159,7 +159,7 @@ builder-proxy (squid)
 fetch-service
 ^^^^^^^^^^^^^
 
-See `Fetch Service logs section <../fetch-service/#log-files>`_.
+See :doc:`Fetch Service <../fetch-service>` logs section.
 
 Monitoring
 ----------
