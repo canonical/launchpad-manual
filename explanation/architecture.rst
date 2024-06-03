@@ -58,7 +58,7 @@ The values are:
 Transparency
 ------------
 
-Transparency speaks to the ability to analyse the system without dropping
+Transparency speaks to the ability to analyze the system without dropping
 into ``pdb`` or taking guesses.
 
 Some specific things that aid transparency:
