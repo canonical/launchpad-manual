@@ -159,7 +159,7 @@ builder-proxy (squid)
 fetch-service
 ^^^^^^^^^^^^^
 
-See :doc:`Fetch Service <../fetch-service>` logs section.
+See :doc:`Fetch Service <fetch-service>` logs section.
 
 Monitoring
 ----------
