@@ -30,9 +30,9 @@ The manner in which a build is executed is determined by the build type.
 This typically involves invoking some external tools; ``sbuild`` for Ubuntu
 package builds, ``snapcraft`` for snap builds, etc.
 
-Builders do not have direct access to the internet, but rather need to
+Builders do not have direct access to the Internet, but rather need to
 acquire an authentication token to be able to access a restricted set of
-URLs on the internet via a proxy. This can either be a squid proxy or the
+URLs on the Internet via a proxy. This can either be a squid proxy or the
 :doc:`fetch service <fetch-service>`, determined by a ``use_fetch_service``
 flag. Currently, only snaps can use the fetch service.
 
