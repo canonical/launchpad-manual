@@ -309,7 +309,7 @@ seconds out of date, you should use the slave.
 
 
 If you don't need to update, but require up-to-date data, you should use
-the default flavor. (eg. most views - the object you are viewing might just
+the default flavor. (e.g. most views - the object you are viewing might just
 have been created). This will retrieve the master unless the load balancer
 is sure all changes made by the current client have propagated to the
 replica databases.
@@ -350,7 +350,7 @@ But there is a common pattern you can use: call in that method another method
 on the object passed as parameter.
 That method can be appropriately protected using the current security
 infrastructure.
-Since this auxillary method is part of an object-collaboration scenario, it's
+Since this auxiliary method is part of an object-collaboration scenario, it's
 usually a good idea to start these methods with the **notify** verb.
 The method is notifying the other object that a collaboration is taking place.
 
@@ -524,7 +524,7 @@ What kind of tests should we use?
 
 See the XXX TestsStyleGuide for the complete answer.
 
-Short answer is that we favor the use of doctest in ``lib/lp/*/doc`` for API
+Short answer is that we favour the use of doctest in ``lib/lp/*/doc`` for API
 documentation and XXX PageTests for use-cases documentation. We use doctests and regular python unittest to complete the coverage.
 
 How do I run just one doctest file, e.g. ``lib/lp/*/doc/mytest.txt``?
