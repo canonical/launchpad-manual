@@ -15,7 +15,7 @@ these means:
 - Check the XXX FAQ.
 - Read the `API documentation`_.
 - If you want to discuss a XXX PatchSubmission, find the XXX on-call reviewer
-  (ReviewS) or ask in `#launchpad-dev IRC channel`_.
+  (Reviews) or ask in `#launchpad-dev IRC channel`_.
 
 .. _#launchpad-dev IRC channel: irc://irc.libera.chat/launchpad-dev
 .. _irc.libera.chat: irc.libera.chat

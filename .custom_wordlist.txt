@@ -135,6 +135,8 @@ io
 ip
 IPv
 IPython
+irc
+IRCMeetings
 javascript
 Javadoc
 jenkaas
@@ -145,6 +147,7 @@ langpack
 LaunchpadAuthentication
 LaunchpadPpa
 lazr
+libera
 lifecycle
 listdir
 logpoints
@@ -198,6 +201,7 @@ PageSpeed
 pagetest
 pagetests
 PageTests
+PatchSubmission
 pdb
 pentested
 performant
