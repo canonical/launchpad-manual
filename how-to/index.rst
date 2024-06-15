@@ -45,6 +45,7 @@ There are some things that can make your journey of contributing to Launchpad mu
    preserve-query-count
    chameleon
    debug-tests-with-visual-studio-code
+   debug-buildfarm-builder
 
 Operating Launchpad
 -------------------
