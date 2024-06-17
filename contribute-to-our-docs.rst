@@ -26,7 +26,7 @@ such, we try to use appropriate writing for the subject, to use inclusive
 language, and to assume that the reader has as little prior knowledge as 
 possible.
 
-The nativation, structure, style, and content of our documentation follows the 
+The navigation, structure, style, and content of our documentation follows the 
 `Diátaxis`_ systematic framework for technical documentation authoring. This 
 splits pages into tutorials, how-to guides, reference material, and 
 explanatory text.
