@@ -1,7 +1,7 @@
 Transferring ownership of a Launchpad project
 =============================================
 
-Transferring the ownership of a project in Launchpad, takes more than simply
+Transferring the ownership of a project in Launchpad takes more than simply
 changing the maintainer of a project when there is private content
 associated with it.
 
@@ -9,8 +9,8 @@ This is particularly evident for private projects, when after updating the
 project's maintainer, the maintainer themselves might not be able to see the
 private project they maintain.
 
-This is because the permissions to see and update a project lie on its sharing
-policies, which need updating in such cases.
+This is because the permissions to see and update a project are defined via
+its sharing policies, which need updating in such cases.
 
 How to transfer the ownership of a private project
 --------------------------------------------------
@@ -35,5 +35,5 @@ To transfer the ownership of a project from team A to team B:
 associated with team A are now associated with team B instead.
 
 
-You can find more details about "Sharing Policies" in your project's "Sharing
+You can find more details about "Sharing policies" in your project's "Sharing
 policies" page.
