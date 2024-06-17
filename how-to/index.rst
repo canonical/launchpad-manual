@@ -47,7 +47,7 @@ There are some things that can make your journey of contributing to Launchpad mu
    debug-tests-with-visual-studio-code
 
 Operating Launchpad
-------------------------
+-------------------
 
 If you have a running instance of Launchpad, there are common tasks you might need to perform.
 
@@ -61,4 +61,5 @@ If you have a running instance of Launchpad, there are common tasks you might ne
    triage-bugs
    deploying-configuration-changes
    land-update-for-loggerhead
+   transfer-project-ownership
 

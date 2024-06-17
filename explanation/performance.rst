@@ -41,7 +41,7 @@ whether you optimize for lookups, appending elements, or similar.
 
 You also should be aware of the `runtime complexity (Big O)`_ of your code.
 
-.. _runtime complexity (Big O): https://towardsdatascience.com/understanding-time-complexity-with-python-examples-2bda6e8158a7
+.. _runtime complexity (Big O): https://en.wikipedia.org/wiki/Big_O_notation
 
 Another way to ensure high performance is to use caches. Caches are usually
 used to avoid repeated expensive calculations and database lookups.
