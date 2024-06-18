@@ -112,12 +112,15 @@ formlib
 FreshLogs
 frontend
 frontends
+fsync
+fsyncs
 gangotri
 github
 globals
 gunicorn
 gzip
 HackingLazrLibraries
+hba
 hostnames
 HSTS
 howto
@@ -215,6 +218,7 @@ PolicyandProcess
 PolicyAndProcess
 PolicyForDocumentingCustomDistributions
 pooler
+postgresql
 PostgreSQL
 PostGreSQL
 POSTs
@@ -256,6 +260,7 @@ sdist
 segfaulted
 sendmail
 SendmailMailer
+seqscan
 setuptools
 simplestreams
 Slony
