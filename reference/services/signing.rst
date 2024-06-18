@@ -36,8 +36,8 @@ Deployment
 * `Mojo spec <https://git.launchpad.net/launchpad-mojo-specs/tree/lp-signing/>`_
 * `Deploying lp-signing <https://lp-signing.readthedocs.io/en/latest/how-to/deployment.html>`_
 
-Related specifications
-----------------------
+Related specifications (only accessible for Canonical employees)
+----------------------------------------------------------------
 `Launchpad signing service <https://docs.google.com/document/d/1kCUUVFb1m0-Uo81tHFyYJCxysquMbKgJDMOSF63NWFc>`_
 
 Log files
