@@ -81,8 +81,8 @@ Deployment
 * `lp-builder-proxy Mojo spec <https://git.launchpad.net/launchpad-mojo-specs/tree/lp-builder-proxy/>`_
 * `lp-fetch-service Mojo spec <https://git.launchpad.net/~launchpad/launchpad-mojo-specs/+git/private/tree/lp-fetch-service>`_
 
-Related specifications
-----------------------
+Related specifications (only accessible for Canonical employees)
+----------------------------------------------------------------
 `LP113: Threat model for builds <https://docs.google.com/document/d/1im8CMxLRNxtt5H0zv461kSYSflN-YlxJ1UZG8_53D9A>`_
 
 Log files

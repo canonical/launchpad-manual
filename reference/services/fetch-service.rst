@@ -112,8 +112,8 @@ For production deployment, SSH into
 ``upgrade-production``.
 
 
-Related specifications
-----------------------
+Related specifications (only accessible for Canonical employees)
+----------------------------------------------------------------
 * `LP136 - Integrating the fetch service for snap builds <https://docs.google.com/document/d/1Z2kVh8eGzDV1-zEyTRYbCNQ0fsXJWt9-vutAjZ9Cxck>`_
 * `ST108 - Fetch service control API <https://docs.google.com/document/d/1Ta0THOsHLwbOA6H7ewHa-6s2GtZRWxvvtiMKFk5jiq8>`_
 
