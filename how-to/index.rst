@@ -56,7 +56,7 @@ If you have a running instance of Launchpad, there are common tasks you might ne
 
    getting-overview-of-build-farm
    checking-availability-of-launchpad-frontends
-   new-user
+   manage-users
    create-job-publish-artifact
    triage-bugs
    deploying-configuration-changes

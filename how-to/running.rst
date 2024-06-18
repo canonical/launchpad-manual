@@ -358,7 +358,7 @@ self-signed certificate. You can log in as ``admin@canonical.com`` without
 a password. (This is only for development convenience, and assumes that you
 trust machines that can route to your LXD containers; of course a production
 deployment would need real authentication.). If you want to create more user
-accounts, see :doc:`new-user`.
+accounts, see :doc:`./manage-users`.
 
 Accessing launchpad.test from a single host over SSH
 ----------------------------------------------------
@@ -425,7 +425,7 @@ Email
 Development Launchpads don't send email to the outside world, for obvious
 reasons.  They connect to the local SMTP server and send to root.  To create
 new users, create a new account and check the local mailbox, or see
-:doc:`new-user`.
+:doc:`./manage-users`.
 
 .. _database-permissions:
 
