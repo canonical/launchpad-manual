@@ -12,7 +12,7 @@ appserver started via ``make run``, you can create a new account using the
 ``utilities/make-lp-user`` script and log into that account at
 ``https://launchpad.test/``.
 
-For example, to add user ``test-user``, navigate to your local Launchpad repo 
+For example, to add user ``~test-user``, navigate to your local Launchpad repo 
 and run: ``utilities/make-lp-user test-user``.
 
 Staging/Qastaging
@@ -28,18 +28,15 @@ production to create your user.
 Add user to a team
 ------------------
                     
-Let's say that we created a new user in the previous section, with the 
-following handler ``~test-user``  and we want to add it to a team. In this 
-example let's consider that we want to add it to the Launchpad Admins team,
-so ``~admins``.
-
-We can use the ``utilities/anoint-team-member`` script within the Launchpad 
-repo for this purpose.
+Let's say we created a new ``~test-user`` user in the previous section, and
+we want to add it to the ``~admins`` team. We can use the
+``utilities/anoint-team-member`` script within the Launchpad repo for
+this purpose.
 
 For staging and qastaging we should:
 
-1. Log into ``launchpad-bastion-ps5`` using
-the ``stg-launchpad`` user. 
+1. SSH into ``launchpad-bastion-ps5``, and switch to the ``stg-launchpad``
+user by running ``sudo -iu stg-launchpad``. 
 
 2. SSH into the ``launchpad-scripts`` juju unit, by running 
 ``in-model qastaging juju ssh launchpad-scripts/leader``.
