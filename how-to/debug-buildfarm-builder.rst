@@ -16,6 +16,10 @@ Therefore, to access the builder, one should either:
 Set a builder to manual
 ~~~~~~~~~~~~~~~~~~~~~~~
 
+This requires permissions granted by being part of the ``~admins`` team.
+To anoint yourself to be part of that team in qastaging, see
+:doc:`./manage-users`.
+
 1. Go to https://qastaging.launchpad.net/builders.
 
 2. Click on the builder you want to set to manual.
@@ -45,5 +49,5 @@ From there, you can check the ``launchpad-buildd`` logs in
 
 The build itself should be done within a container within the builder. If you
 need to look into the container, you can ``lxc list`` to list the lxc
-containers present in the builder, and then run ``lxc exec <container name>
-bash`` to start a bash session from within the container.
+containers present in the builder, and then run ``lxc shell`` to start a shell
+session from within the container.
