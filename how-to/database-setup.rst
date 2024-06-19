@@ -84,7 +84,7 @@ following sequence of commands:
    host    all         all         127.0.0.1/32          trust
    host    all         all         ::1/128               trust
 
-``   Note that this gives all accounts on your local box full access to PostgreSQL - if this is a problem talk to StuartBishop for more detailed instructions (this requires occasional maintenance).``
+``   Note that this gives all accounts on your local box full access to PostgreSQL - if this is a problem talk to Stuart Bishop for more detailed instructions (this requires occasional maintenance).``
 
 5. Add the following options to /etc/postgresql/10/main/postgresql.conf:
 
