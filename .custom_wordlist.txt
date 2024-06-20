@@ -147,6 +147,7 @@ jenkaas
 jenkins
 jinja
 kiko
+LandingChanges
 langpack
 LaunchpadAuthentication
 LaunchpadPpa
@@ -235,6 +236,7 @@ py
 pydoctor
 pypa
 PyPI
+QAProcess
 qastaging
 queueddelivery
 queuedDelivery
@@ -256,6 +258,8 @@ rst
 rsync
 runtime
 SafariWebContent
+screencast
+ScreenCasts
 sdist
 segfaulted
 sendmail
@@ -289,6 +293,7 @@ stg
 StormMigrationGuide
 stubmailer
 stubMailer
+StyleGuides
 subclassing
 subdirectory
 subprocess
