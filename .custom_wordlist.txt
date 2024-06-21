@@ -78,6 +78,8 @@ dbschema
 dbupgrade
 ddl
 DebuggingWithGdb
+deployable
+Deployable
 defense
 defense
 deps
@@ -173,6 +175,7 @@ lookup
 lookups
 LOSAs
 lp
+lpbuildbot
 lpci
 LPHowTo
 lpnet
@@ -185,6 +188,7 @@ macquarie
 Mantic
 ManualCdImageMirrorProber
 matchers
+Mattermost
 matic
 matic
 maximize
@@ -255,6 +259,7 @@ pydoctor
 pypa
 PyPI
 qa
+QAing
 QAProcess
 qastaging
 queueddelivery

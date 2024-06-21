@@ -14,6 +14,5 @@ live-patching.rst
 live-patching.rst
 registry.rst
 storm-migration-guide.rst
-submitting-a-patch.rst
 branches.rst
 database-schema-changes-process.rst

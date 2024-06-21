@@ -21,7 +21,6 @@ Once you have an instance of Launchpad, you're ready to contribute!
 .. toctree::
    :maxdepth: 1
 
-   submitting-a-patch
    fixing-bugs
    contributing-changes
    use-updated-dependency

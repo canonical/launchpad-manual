@@ -15,14 +15,28 @@ or on IRC (``#launchpad-dev`` on ``irc.libera.chat``).
 .. _launchpad-users: https://launchpad.net/~launchpad-users
 .. _launchpad-dev: https://launchpad.net/~launchpad-dev
 
-Get the Launchpad source
-----------------------------
+Fork the Launchpad repository
+-----------------------------
 
-Once you have decided on the change to be made, clone the repository.
+Navigate to the Launchpad project page.
+Click "Fork it to your account" to create a copy of the project in your
+Launchpad account.
+
+Then, clone your fork of the repository:
 
 .. code-block:: bash
 
-    git clone https://git.launchpad.net/launchpad
+    git clone git+ssh://~<your-username>@git.launchpad.net/~<your-username>/launchpad
+    cd launchpad
+
+Add the Launchpad repository as a remote
+----------------------------------------
+
+This will be useful to pull in changes from the main Launchpad repository.
+
+.. code-block:: bash
+
+    git remote add launchpad git+ssh://git.launchpad.net/launchpad
 
 Make your changes
 -----------------
@@ -31,7 +45,7 @@ Create a branch from a reasonable point, such as ``master``.
 
 .. code-block:: bash
 
-    git checkout -b my-change
+    git checkout -b <descriptive-branch-name>
 
 Make your changes on the branch. Be sure to test them locally by setting up a
 local :doc:`Launchpad development instance <running>`.
@@ -47,13 +61,8 @@ before proceeding.
 Push your changes
 --------------------
 
-Once you are happy with your changes, stage and commit them, and then push to a
-personal repository.
-
-Next, you need to share your changes with the Launchpad maintainers, but you
-probably don't have permissions to push to the ``master`` branch of the
-Launchpad codebase. To share your changes with the Launchpad maintainers, you
-need to push your commit to a personal git repository.
+Once you are happy with your changes, stage and commit them, and then push to
+your fork.
 
 Create a merge proposal
 -----------------------
@@ -77,8 +86,11 @@ description of your changes.
 What comes next?
 ----------------
 
-Once you have created a merge proposal, a Launchpad maintainer will inspect
-your commit and approve or reject the changes. There may be a comments that
+Once you have created a merge proposal, a Launchpad maintainer will inspect your
+merge proposal and approve or reject the changes. There may be comments that
 require you to make amendments to your proposed changes, which you can do by
 repeating this workflow. However, once your changes are approved, your changes
 will be merged into the ``master`` branch of the Launchpad code base!
+
+Once your changes are merged into the ``master`` branch, they get deployed to
+the QA staging site automatically. You can QA your changes there.
