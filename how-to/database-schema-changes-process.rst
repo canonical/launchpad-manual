@@ -101,7 +101,7 @@ cluster.
 For qa on a cold patch, check the application time from the staging log
 
 -  it must be < 15 seconds [even with cold disk cache], or we will
-   exceed our downtime window. To exceed that window requires signoff by
+   exceed our downtime window. To exceed that window requires sign-off by
    the technical architect or project lead.
 
 If some parts of a change can be applied as a hot patch, it is a good
@@ -194,7 +194,7 @@ want. It should look like this:
 
 ``   1. This will produce a lot of noise. Feel free to ignore it.``
 
-6. Review the sample data changes that occured using \`git diff
+6. Review the sample data changes that occurred using \`git diff
    database/sampledata`. This diff can be hard to review as-is. You
    might want to use a graphical diff viewer like \`kompare\` or
    \`meld\` which will make it easier. Make sure that you understand all
@@ -328,7 +328,7 @@ Notes on Changing security.cfg
 ------------------------------
 
 It is possible to land changes to security.cfg on \`master\` rather than
-\`db-devel`. These changes are deployed during nodowntime rollouts.
+\`db-devel`. These changes are deployed during no-downtime rollouts.
 
 Note that adding new users requires manual DB reconfiguration, so you
 need to file an RT ticket to grant access to relevant machines and make
