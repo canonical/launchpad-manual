@@ -26,7 +26,7 @@ takes priority.
 We are currently reviewing previously-triaged bugs. Prior to 2020, the Critical
 and High queues grew significantly, and many bugs that were marked as such due
 to their urgency are less urgent when assessed today. By significantly pruning
-these lists we can ensure that we're focussing our time and energy on the most
+these lists we can ensure that we're focusing our time and energy on the most
 important priorities.
 
 For a full understanding of why we triage bugs and how we came to
