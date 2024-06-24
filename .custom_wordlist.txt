@@ -59,6 +59,7 @@ configs
 ConfiguringWebApplications
 cron
 cronjobs
+cronspam
 crontab
 crontabs
 cryptographic
@@ -140,6 +141,7 @@ https
 iharness
 IMailDelivery
 IMailer
+importances
 InformationInfrastructure
 infos
 initialized
@@ -319,6 +321,7 @@ StyleGuides
 subclassing
 subdirectory
 subprocess
+subproject
 sudo
 summarized
 svg
@@ -349,6 +352,7 @@ tradeoff
 tradeoffs
 Transactional
 traversers
+triaging
 tsearch
 ubuntu
 Ubuntu
@@ -360,6 +364,7 @@ unittest
 untriaged
 untrusted
 upstreams
+userbase
 vbuilder
 virtualenv
 virtualenvs
@@ -369,6 +374,7 @@ webhook
 webservice
 webservice's
 whitespace
+Wishlist
 worktrees
 WSGI
 www
