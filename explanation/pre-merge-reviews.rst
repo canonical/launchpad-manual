@@ -46,7 +46,7 @@ Working with PreMergeReviews
 For pre-merge reviews to be effective, however, small modifications to
 the development workflow are required. The main modification is, of
 course, requesting peer review of your code changes before merging your
-code into `Trunk <../Trunk>`__. The sections below go into the details
+code into :doc:`Trunk <branches>`__. The sections below go into the details
 of how this is best performed. There is a crib sheet for getting a
 branch merged on the WorkingWithReviews page.
 
