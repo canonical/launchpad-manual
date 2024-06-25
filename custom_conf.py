@@ -126,7 +126,6 @@ linkcheck_ignore = [
     'https://wiki.canonical.com/Launchpad/SupportRotation#Builder',  # private
     'https://wiki.canonical.com/InformationInfrastructure/OSA/LPHowTo/ManualCdImageMirrorProber',  # private
     'Trunk/Glue',  # needs update
-    '../Trunk',  # needs update
     '/Background', 
     '/Concepts',  # needs update
     '/HowToUseCodehostingLocally',  # needs update
