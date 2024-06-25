@@ -125,7 +125,6 @@ linkcheck_ignore = [
     'https://wiki.canonical.com/Launchpad/FreshLogs',  # private
     'https://wiki.canonical.com/Launchpad/SupportRotation#Builder',  # private
     'https://wiki.canonical.com/InformationInfrastructure/OSA/LPHowTo/ManualCdImageMirrorProber',  # private
-    # 'PolicyAndProcess/DatabaseSchemaChangesProcess',  # needs update
     'Trunk/Glue',  # needs update
     '../Trunk',  # needs update
     '/Background', 
