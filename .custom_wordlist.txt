@@ -85,6 +85,8 @@ deps
 dev
 directDelivery
 DirectDelivery
+distro
+Distro
 distroseries
 DistroSeries
 distutils
@@ -127,6 +129,7 @@ functiondef
 gangotri
 github
 globals
+GPG
 gunicorn
 gzip
 HackingLazrLibraries
