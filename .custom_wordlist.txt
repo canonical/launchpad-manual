@@ -117,6 +117,7 @@ favicons
 flavor
 FooBar
 foofunc
+formatter
 formlib
 FreshLogs
 frontend
@@ -234,6 +235,7 @@ pgsql
 pgSQL
 pipx
 plaintext
+png
 po
 PolicyandProcess
 PolicyAndProcess
@@ -252,6 +254,7 @@ preprocessed
 prioritize
 prober
 proc
+programmatically
 prometheus
 proname
 proxied
