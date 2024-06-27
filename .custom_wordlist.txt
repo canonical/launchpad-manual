@@ -1,3 +1,4 @@
+activereviews
 adapter
 adapter's
 AddingLaunchpadCelebrity
@@ -54,6 +55,7 @@ codebase
 Codehosting
 codeimport
 codeimportscheduler
+CodeReviewChecklist
 config
 configs
 ConfiguringWebApplications
@@ -206,6 +208,7 @@ newsampledata
 OAuth
 OEM
 oid
+ok
 ols
 OOPSes
 OpenID
@@ -250,6 +253,7 @@ PPA
 PQM
 psql
 pre
+PreMergeReviews
 preprocessed
 prioritize
 prober
@@ -351,6 +355,7 @@ TestsFromChanges
 TestsStyleGuide
 testtools
 textarea
+TipsForReviewers
 TLS
 todrop
 traceback
@@ -368,6 +373,7 @@ UltimateVimPythonSetup
 unauthorized
 Uncomment
 unittest
+unobvious
 untriaged
 untrusted
 upstreams
@@ -382,6 +388,7 @@ webservice
 webservice's
 whitespace
 Wishlist
+WorkingWithReviews
 worktrees
 WSGI
 www
