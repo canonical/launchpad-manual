@@ -16,6 +16,7 @@ devel
 Diátaxis
 DOM
 dropdown
+ec
 EBS
 EKS
 favicon
@@ -33,6 +34,7 @@ haproxy
 Jira
 JS
 JSON
+jtv
 juju
 Juju
 Kubeflow
@@ -41,6 +43,7 @@ mailinglists
 Makefile
 mltest
 MyST
+myusername
 naïve
 namespace
 namespaces
@@ -54,6 +57,7 @@ portlet
 Post
 postgres
 ReadMe
+rebase
 reST
 reStructuredText
 RSS
