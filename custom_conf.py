@@ -131,7 +131,6 @@ linkcheck_ignore = [
     '/Concepts',  # needs update
     '/HowToUseCodehostingLocally',  # needs update
     '/Loggerhead',  # needs update
-    'Database/LivePatching',  # needs update
     'Database/TableRenamePatch',  # needs update
     'Debugging#Profiling%20page%20requests',  # needs update
     'Debugging#Special%20URLs',  # needs update
