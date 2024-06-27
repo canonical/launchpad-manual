@@ -18,11 +18,14 @@ or on IRC (``#launchpad-dev`` on ``irc.libera.chat``).
 Fork the Launchpad repository
 -----------------------------
 
-Navigate to the Launchpad project page.
+Navigate to the Launchpad project page and go to the tab.
+https://code.launchpad.net/launchpad
+
 Click "Fork it to your account" to create a copy of the project in your
 Launchpad account.
 
-Then, clone your fork of the repository:
+Assuming you have added your SSH keys to launchpad, you can then clone your fork
+of the repository:
 
 .. code-block:: bash
 
@@ -93,4 +96,5 @@ repeating this workflow. However, once your changes are approved, your changes
 will be merged into the ``master`` branch of the Launchpad code base!
 
 Once your changes are merged into the ``master`` branch, they get deployed to
-the QA staging site automatically. You can QA your changes there.
+the QA staging site automatically. You can QA your changes there:
+https://qastaging.launchpad.net/ 
