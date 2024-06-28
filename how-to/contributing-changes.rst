@@ -18,7 +18,7 @@ or on IRC (``#launchpad-dev`` on ``irc.libera.chat``).
 Fork the Launchpad repository
 -----------------------------
 
-Navigate to the Launchpad project page and go to the tab.
+Navigate to the Launchpad project page and go to the "Code" tab.
 https://code.launchpad.net/launchpad
 
 Click "Fork it to your account" to create a copy of the project in your
