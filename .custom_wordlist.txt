@@ -37,6 +37,7 @@ bugtracker
 BugWatch
 BugWatches
 bugzilla
+buildbot
 buildd
 bzr
 bzr's
