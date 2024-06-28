@@ -136,7 +136,6 @@ linkcheck_ignore = [
     'Getting',  # needs update
     'Help',  # needs update
     'JavaScriptIntegrationTesting',  # needs update
-    'JavascriptUnitTesting',  # needs update
     'JavascriptUnitTesting/MockIo',  # needs update
     'PolicyAndProcess/Accessibility',  # needs update
     'Running',  # needs update

@@ -6,7 +6,7 @@ We use the GradedBrowserSupport chart to determine which browsers code should
 be regularly tested in.
 
 Every JavaScript component should be tested first and foremost using
-`unit testing <JavascriptUnitTesting>`__.
+:doc:`unit testing <javascript-unittesting>`.
 
 We have infrastructure to write tests centered on the integration
 between the JavaScript component and the app server (regular API or
