@@ -22,7 +22,7 @@ There are various kinds of emails in Launchpad:
 
 We should document all these kinds of email here, but right now this
 page is really in draft state, so it's just a grab bag of various
-information. We'll continue to improve it; please `help <Help>`__ us if
+information. We'll continue to improve it; please :doc:`../help` us if
 you can.
 
 Configuring Mail
