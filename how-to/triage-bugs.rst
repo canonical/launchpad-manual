@@ -138,8 +138,7 @@ Selecting bugs to work on
 If you are working on Launchpad in your own time you'll most likely want
 to fix those bugs that matter to you, regardless of what importance the
 Launchpad project gives them. That's great and we welcome all bug fixes;
-we encourage you to look at `our page about fixing bugs <FixBugs>`__
-first.
+we encourage you to look at :doc:`our page about fixing bugs <fixing-bugs>` first.
 
 Members of Canonical's Launchpad team will select bugs as seems
 appropriate to them.
