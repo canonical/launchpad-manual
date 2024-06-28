@@ -36,7 +36,6 @@ bugtracker
 BugWatch
 BugWatches
 bugzilla
-buildbot
 buildd
 bzr
 bzr's
@@ -78,7 +77,6 @@ dbschema
 dbupgrade
 ddl
 DebuggingWithGdb
-deployable
 defense
 defense
 deps
