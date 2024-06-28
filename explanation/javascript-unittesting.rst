@@ -147,6 +147,6 @@ correctly updated as a result of a user initiated action such as a
 button click. Sometimes, in production, such a user action may result in
 an XHR call where the response data is used to update the DOM. In such
 cases, you still want to be able to test the interaction within a YUI
-test without having to resort to using an `integration
-test <JavaScriptIntegrationTesting>`__. To make this easy we have
+test without having to resort to using an :doc:`integration
+test <javascript-integration-testing>`. To make this easy we have
 `MockIo class <JavascriptUnitTesting/MockIo>`__ in Launchpad.

@@ -134,7 +134,6 @@ linkcheck_ignore = [
     'Debugging#Profiling%20page%20requests',  # needs update
     'Debugging#Special%20URLs',  # needs update
     'Getting',  # needs update
-    'JavaScriptIntegrationTesting',  # needs update
     'JavascriptUnitTesting',  # needs update
     'JavascriptUnitTesting/MockIo',  # needs update
     'PolicyAndProcess/Accessibility',  # needs update
