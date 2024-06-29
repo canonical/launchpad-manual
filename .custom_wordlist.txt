@@ -183,6 +183,7 @@ lookup
 lookups
 LOSAs
 lp
+Lp's
 lpci
 LPHowTo
 lpnet
@@ -246,6 +247,7 @@ PolicyandProcess
 PolicyAndProcess
 PolicyForDocumentingCustomDistributions
 pooler
+portlets
 postgresql
 PostgreSQL
 PostGreSQL
@@ -264,6 +266,7 @@ programmatically
 prometheus
 proname
 proxied
+px
 py
 pydoctor
 pypa
@@ -330,6 +333,7 @@ StormMigrationGuide
 stubmailer
 stubMailer
 StyleGuides
+stylesheet
 subclassing
 subdirectory
 subprocess

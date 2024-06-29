@@ -111,7 +111,7 @@ Modifier classes should usually live with the class(es) they are
 modifying unless they are very generic. They may be generic typography
 modifiers (which would live in typography.css) or for a specific
 component (which will live in that components .css file). Component
-modifiers should be clearly labelled (using a clearly labeled section at
+modifiers should be clearly labelled (using a clearly labelled section at
 the bottom of the stylesheet may be a good way to do this).
 
 *Examples: a portlet could have a collapsed state which you would
