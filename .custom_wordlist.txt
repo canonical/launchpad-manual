@@ -114,8 +114,10 @@ Epytext
 ExceptionGuidelines
 executables
 facetted
+fastdowntime
 fastnodowntime
 favicons
+FK
 flavor
 FooBar
 foofunc
@@ -342,6 +344,7 @@ synchronizing
 syntax
 syntaxes
 systemd
+TableRenamePatch
 talisker
 TeamEmail
 templating
@@ -387,6 +390,7 @@ webhook
 webservice
 webservice's
 whitespace
+wildcherry
 Wishlist
 WorkingWithReviews
 worktrees
