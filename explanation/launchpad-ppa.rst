@@ -154,4 +154,4 @@ In progress
 -  focal (next, next production LTS?)
 
 When the supported series change, remember to also update
-`Getting <Getting>`__ and `Running <Running>`__.
+:doc:`../how-to/getting` and `Running <Running>`__.
