@@ -7,11 +7,9 @@ Getting started
 To get started with Launchpad, get the source code and run a local development instance.
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
-   getting
-   running
-   database-setup
+   getting-started
 
 Common development tasks
 ------------------------
@@ -19,15 +17,9 @@ Common development tasks
 Once you have an instance of Launchpad, you're ready to contribute!
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
-   submitting-a-patch
-   fixing-bugs
-   contributing-changes
-   use-updated-dependency
-   database-schema-changes-process
-   apply-schema-changes
-   importing-an-ubuntu-package
+   common-development-tasks
 
 Launchpad development tips
 --------------------------
@@ -35,17 +27,9 @@ Launchpad development tips
 There are some things that can make your journey of contributing to Launchpad much easier.
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
-   update-configuration-for-testing
-   using-breakpoints
-   security
-   testing-scripts
-   exceptions
-   preserve-query-count
-   chameleon
-   debug-tests-with-visual-studio-code
-   debug-buildfarm-builder
+   launchpad-development-tips
 
 Operating Launchpad
 -------------------
@@ -53,14 +37,7 @@ Operating Launchpad
 If you have a running instance of Launchpad, there are common tasks you might need to perform.
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
-   getting-overview-of-build-farm
-   checking-availability-of-launchpad-frontends
-   manage-users
-   create-job-publish-artifact
-   triage-bugs
-   deploying-configuration-changes
-   land-update-for-loggerhead
-   transfer-project-ownership
-   create-bot-account
+   operating-launchpad
+
