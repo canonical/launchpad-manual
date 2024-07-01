@@ -183,6 +183,7 @@ lookup
 lookups
 LOSAs
 lp
+lpbuildbot
 lpci
 LPHowTo
 lpnet
