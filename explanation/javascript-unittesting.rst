@@ -22,7 +22,7 @@ was that my extraction of the milestoneoverlay script had failed. This
 was not true as I learned. The Windmill test broke weeks before I
 started my branch because the page layout changed. The second
 problem was the complexity of corner-cases led to unpredictable
-behaviors.
+behaviours.
 
 Day two was a fun roller coaster ride refactoring my script from first
 principles using unit tests. YUI.Test made me write a library, structure

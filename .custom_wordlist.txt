@@ -4,6 +4,7 @@ adapter's
 AddingLaunchpadCelebrity
 analyze
 analyzer
+api
 AppleApplications
 appmanifest
 appserver
@@ -165,6 +166,8 @@ Javadoc
 jenkaas
 jenkins
 jinja
+js
+JScript
 kiko
 kompare
 LandingChanges
@@ -177,6 +180,7 @@ libera
 lifecycle
 listdir
 LivePatching
+LiveScript
 logpoints
 logrotate
 lookup
@@ -202,11 +206,14 @@ maximize
 mbox
 mboxMailer
 memcache
+milestoneoverlay
 minimize
+MockIo
 mockups
 mojo
 mozilla
 natively
+né
 newsampledata
 OAuth
 OEM
@@ -385,6 +392,7 @@ untriaged
 untrusted
 upstreams
 userbase
+VBScript
 vbuilder
 virtualenv
 virtualenvs
@@ -401,11 +409,14 @@ worktrees
 WSGI
 www
 Xenial
+XHR
 xml
 XML-RPC
 xmlrpc
 YAGNI
 yaml
+yui
+yuilibrary
 yy
 zcml
 ZFS
