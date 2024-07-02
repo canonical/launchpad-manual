@@ -135,7 +135,6 @@ linkcheck_ignore = [
     'Debugging#Special%20URLs',  # needs update
     'JavascriptUnitTesting/MockIo',  # needs update
     'PolicyAndProcess/Accessibility',  # needs update
-    'Running',  # needs update
     'Soyuz',  # needs update
     'Translations/Specs/UpstreamImportIntoUbuntu/FixingIsImported/setCurrentTranslation',  # needs update
     'UI/CssSprites',  # needs update

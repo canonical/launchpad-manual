@@ -11,8 +11,8 @@ changes <https://dev.launchpad.net/PolicyAndProcess/DatabaseSchemaChangesProcess
 Alternative trunk
 -----------------
 
-Check out the \`db-devel\` branch in your `existing git
-clone <Running>`__:
+Check out the \`db-devel\` branch in your :doc:`existing git
+clone <../how-to/running>`:
 
 ::
 

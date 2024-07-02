@@ -154,4 +154,4 @@ In progress
 -  focal (next, next production LTS?)
 
 When the supported series change, remember to also update
-:doc:`../how-to/getting` and `Running <Running>`__.
+:doc:`../how-to/getting` and :doc:`../how-to/running`.
