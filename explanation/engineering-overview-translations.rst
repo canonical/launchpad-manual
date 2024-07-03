@@ -28,7 +28,7 @@ Launchpad: the *ubuntu side* and the *upstream side.*
 Where possible, the two sides are unified (in technical terms) and
 integrated (in collaboration terms). But you'll see a lot of cases where
 they are treated somewhat differently. Permissions can differ,
-organizational structures differ, and some processes only exist on one
+organisational structures differ, and some processes only exist on one
 side or the other.
 
 At the most fundamental level, the two sides are integrated through:
@@ -153,7 +153,7 @@ or select a different translation message.
 
 A translation message can be *current* in a given PO file, or not. It's
 an emergent property of more complex shared data structures. So you can
-view a PO file as a customizable “view” on the current translations of a
+view a PO file as a customisable “view” on the current translations of a
 particular template into a given language.
 
 ::
@@ -301,7 +301,7 @@ Soyuz uploads are different in that regard: all its custom logic is
 built into the gardener because the two developed hand in hand. Mainly
 for this reason, the gardener's approval logic is fiendishly complex.
 
-Permissions and organization
+Permissions and organisation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Message sharing
@@ -335,7 +335,7 @@ In a nutshell:
 -  A \`POTranslation\` holds the text of a translated string;
    \`TranslationMessage\` refers to it (once for every plural form in
    the language).
--  A \`TranslationGroup\` is an organizational structure for managing
+-  A \`TranslationGroup\` is an organisational structure for managing
    translations.
 -  A \`Translator\` is an entry in a \`TranslationGroup\` saying who is
    responsible for a particular \`Language`.
@@ -355,7 +355,7 @@ multiple templates. We then call these templates *sharing templates.*
 And that means that a translation message to, say, Italian will be
 available in each of those templates' PO file for Italian.
 
-This is where it gets complicated; please fasten your seatbelts and
+This is where it gets complicated; please fasten your seat belts and
 extinguish smoking motherboards.
 
 A translation message can be in one of three sharing states:
@@ -399,7 +399,7 @@ current translation message? Look for one with:
 -  diverged to your template or, if no message matches, not diverged at
    all.
 
-(On a sidenote, this is why “simple” translation statistics can be quite
+(On a side note, this is why “simple” translation statistics can be quite
 hard to compute.)
 
 Which templates share?
@@ -523,7 +523,7 @@ translation page. Its complexity also makes the SQL logs hard to follow.
 A large part of this query (in terms of SQL text) was involved in
 finding out what templates were eligible for taking suggestions from.
 This part was also completely repetitive, and it doesn't even need to be
-immediately consistent, so we materialized it as a simple cache table
+immediately consistent, so we materialised it as a simple cache table
 called \`SuggestivePOTemplate`.
 
 We refresh this cache all the time by clearing out the table and
