@@ -21,7 +21,7 @@ system. The major sub-systems are:
 -  Email processing
 -  Code imports (from CVS, Subversion, git and Mercurial)
 -  Branch source code browser (`cgit <https://git.zx2c4.com/cgit/>`__
-   for Git; `loggerhead </Loggerhead>`__ for Bazaar)
+   for Git; :doc:`loggerhead <../how-to/land-update-for-loggerhead>` for Bazaar)
 -  Source package recipes (`git-build-recipe`/`bzr-builder\` integration
    with `Soyuz <Soyuz>`__)
 
@@ -208,7 +208,7 @@ branch.
 -  loggerhead itself - community project but with major contributions
    from Canonical
 
-See `Loggerhead for Launchpad developers </Loggerhead>`__ for details on
+See :doc:`Loggerhead for Launchpad developers <../how-to/land-update-for-loggerhead>` for details on
 how to land changes to Launchpad loggerhead.
 
 Source package recipes
