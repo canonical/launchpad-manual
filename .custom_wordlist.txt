@@ -52,6 +52,7 @@ changesets
 charmcraft
 Cmd
 CMDLINE
+Cobol
 codebase
 Codehosting
 codeimport
@@ -69,6 +70,7 @@ cryptographic
 cryptographically
 css
 Ctrl
+customisable
 customize
 CVE
 Dalia
@@ -86,6 +88,7 @@ defense
 defense
 deps
 dev
+dia
 directDelivery
 DirectDelivery
 distro
@@ -133,6 +136,7 @@ ftest
 fti
 functiondef
 gangotri
+gettext
 github
 globals
 GPG
@@ -251,15 +255,28 @@ pipx
 plaintext
 png
 po
+POExport
+POExportRequest
+POFile
+POFiles
+POFileTranslator
 PolicyandProcess
 PolicyAndProcess
 PolicyForDocumentingCustomDistributions
+POMsgID
 pooler
 portlets
 postgresql
 PostgreSQL
 PostGreSQL
 POSTs
+POTs
+POTExport
+POTemplate
+POTemplateSharingSubset
+POTranslation
+POTMsgSet
+POTMsgSets
 ppa
 PPA
 PQM
@@ -270,6 +287,7 @@ preprocessed
 prioritize
 prober
 proc
+ProductSeries
 programmatically
 prometheus
 proname
@@ -322,6 +340,8 @@ SolutionsLog
 sourcecode
 sourceforge
 sourcepackage
+SourcePackage
+SourcePackagename
 sourcetree
 soyuz
 specialized
@@ -347,6 +367,7 @@ subdirectory
 subprocess
 subproject
 sudo
+SuggestivePOTemplate
 summarized
 svg
 symlinked
@@ -377,6 +398,10 @@ traceback
 tradeoff
 tradeoffs
 Transactional
+TranslationGroup
+TranslationImportQueue
+TranslationMessage
+TranslationTemplateItem
 traversers
 triaged
 triaging
@@ -398,6 +423,7 @@ vbuilder
 virtualenv
 virtualenvs
 VPN
+VPOTExport
 webdav
 webhook
 webservice
