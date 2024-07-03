@@ -137,7 +137,6 @@ linkcheck_ignore = [
     'PolicyAndProcess/Accessibility',  # needs update
     'Soyuz',  # needs update
     'Translations/Specs/UpstreamImportIntoUbuntu/FixingIsImported/setCurrentTranslation',  # needs update
-    'UI/CssSprites',  # needs update
     'attachment:codehosting.png',  # needs update
     'https://git.launchpad.net/launchpad-mojo-specs/tree/mojo-lp-git/services',  # private
     'https://wiki.canonical.com/InformationInfrastructure/OSA/LaunchpadProductionStatus',  # private
