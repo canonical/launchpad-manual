@@ -212,6 +212,9 @@ mbox
 mboxMailer
 memcache
 milestoneoverlay
+minified
+minifies
+minify
 minimize
 MockIo
 mockups
@@ -220,6 +223,7 @@ mozilla
 natively
 né
 newsampledata
+NPM
 OAuth
 OEM
 oid
