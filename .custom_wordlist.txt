@@ -8,6 +8,7 @@ api
 AppleApplications
 appmanifest
 appserver
+AppServerLayer
 appservers
 artifact
 artifacts
@@ -151,6 +152,7 @@ html
 http
 https
 https
+iframe
 iharness
 IMailDelivery
 IMailer
@@ -178,6 +180,7 @@ LandingChanges
 langpack
 LaunchpadAuthentication
 LaunchpadDatabaseRevision
+LaunchpadObjectFactory
 LaunchpadPpa
 lazr
 libera
@@ -444,6 +447,7 @@ YAGNI
 yaml
 yui
 yuilibrary
+yuitest
 yy
 zcml
 ZFS
