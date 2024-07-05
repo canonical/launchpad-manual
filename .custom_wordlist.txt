@@ -8,6 +8,7 @@ api
 AppleApplications
 appmanifest
 appserver
+AppServerLayer
 appservers
 artifact
 artifacts
@@ -151,6 +152,7 @@ html
 http
 https
 https
+iframe
 iharness
 IMailDelivery
 IMailer
@@ -166,6 +168,7 @@ IPython
 irc
 IRCMeetings
 javascript
+JavascriptUnitTesting
 Javadoc
 jenkaas
 jenkins
@@ -178,6 +181,7 @@ LandingChanges
 langpack
 LaunchpadAuthentication
 LaunchpadDatabaseRevision
+LaunchpadObjectFactory
 LaunchpadPpa
 lazr
 libera
@@ -211,6 +215,7 @@ maximize
 mbox
 mboxMailer
 memcache
+MemCache
 milestoneoverlay
 minified
 minifies
@@ -333,6 +338,8 @@ sendmail
 SendmailMailer
 seqscan
 setUp
+setupDTCBrowser
+setupRosettaExpertBrowser
 setuptools
 simplestreams
 Slony
@@ -387,8 +394,12 @@ TeamEmail
 templating
 testability
 testbed
+TestingJavaScript
+TestingWebServices
 testMailer
 TestMailer
+testr
+testrepository
 testrunner
 testrunner's
 TestsFromChanges
@@ -424,6 +435,7 @@ upstreams
 userbase
 VBScript
 vbuilder
+ViewTests
 virtualenv
 virtualenvs
 VPN
@@ -431,6 +443,7 @@ VPOTExport
 webdav
 webhook
 webservice
+webservices
 webservice's
 whitespace
 wildcherry
@@ -444,10 +457,13 @@ XHR
 xml
 XML-RPC
 xmlrpc
+xvfb
 YAGNI
 yaml
 yui
 yuilibrary
+yuitest
+yuixhr
 yy
 zcml
 ZFS
