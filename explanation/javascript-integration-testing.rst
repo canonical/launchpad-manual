@@ -1,18 +1,18 @@
 Integration Testing in JavaScript
 =================================
 
-Launchpad's JavaScript testing is built around YUI 3's yuitest library.
-We use the GradedBrowserSupport chart to determine which browsers code should
+Launchpad's JavaScript testing is built around YUI 3's ``yuitest`` library.
+We use the Graded Browser Support chart to determine which browser's code should
 be regularly tested in.
 
 Every JavaScript component should be tested first and foremost using
 :doc:`unit testing <javascript-unittesting>`.
 
-We have infrastructure to write tests centered on the integration
+We have infrastructure to write tests centred on the integration
 between the JavaScript component and the app server (regular API or
 view/++model++ page api.)
 
-These are still written using the \`yuitest\` library, but they are
+These are still written using the ``yuitest`` library, but they are
 loaded and can access a "real" appserver (the one started by the
 AppServerLayer).
 
@@ -32,7 +32,7 @@ Creating the tests
 -  The ``.js`` file contains the tests using the standard ``yuitest`` library.
 -  The ``.py`` file contains fixtures that will operate within the app server.
    They should create content through the standard LaunchpadObjectFactory that
-   will be accessed by the test through. The database is automatically reset
+   will be accessed by the test. The database is automatically reset
    after every test.
 
 Running the tests
