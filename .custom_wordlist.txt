@@ -168,6 +168,7 @@ IPython
 irc
 IRCMeetings
 javascript
+JavascriptUnitTesting
 Javadoc
 jenkaas
 jenkins
@@ -214,6 +215,7 @@ maximize
 mbox
 mboxMailer
 memcache
+MemCache
 milestoneoverlay
 minimize
 MockIo
@@ -332,6 +334,8 @@ sendmail
 SendmailMailer
 seqscan
 setUp
+setupDTCBrowser
+setupRosettaExpertBrowser
 setuptools
 simplestreams
 Slony
@@ -386,8 +390,12 @@ TeamEmail
 templating
 testability
 testbed
+TestingJavaScript
+TestingWebServices
 testMailer
 TestMailer
+testr
+testrepository
 testrunner
 testrunner's
 TestsFromChanges
@@ -423,6 +431,7 @@ upstreams
 userbase
 VBScript
 vbuilder
+ViewTests
 virtualenv
 virtualenvs
 VPN
@@ -430,6 +439,7 @@ VPOTExport
 webdav
 webhook
 webservice
+webservices
 webservice's
 whitespace
 wildcherry
@@ -443,6 +453,7 @@ XHR
 xml
 XML-RPC
 xmlrpc
+xvfb
 YAGNI
 yaml
 yui
