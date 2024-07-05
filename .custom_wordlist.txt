@@ -448,6 +448,7 @@ yaml
 yui
 yuilibrary
 yuitest
+yuixhr
 yy
 zcml
 ZFS
