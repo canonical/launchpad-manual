@@ -137,6 +137,7 @@ ftest
 fti
 functiondef
 gangotri
+getFeatureFlag
 gettext
 github
 globals
@@ -181,6 +182,7 @@ LandingChanges
 langpack
 LaunchpadAuthentication
 LaunchpadDatabaseRevision
+LaunchpadProductionStatus
 LaunchpadObjectFactory
 LaunchpadPpa
 lazr
@@ -193,6 +195,8 @@ logpoints
 logrotate
 lookup
 lookups
+LOSA
+losas
 LOSAs
 lp
 Lp's
@@ -230,6 +234,7 @@ OEM
 oid
 ok
 ols
+omg
 OOPSes
 OpenID
 opstats
@@ -285,9 +290,9 @@ POTMsgSets
 ppa
 PPA
 PQM
-psql
 pre
 PreMergeReviews
+prepending
 preprocessed
 prioritize
 prober
@@ -297,6 +302,7 @@ programmatically
 prometheus
 proname
 proxied
+psql
 px
 py
 pydoctor
@@ -390,6 +396,7 @@ TeamEmail
 templating
 testability
 testbed
+TestCase
 TestingJavaScript
 TestingWebServices
 testMailer
