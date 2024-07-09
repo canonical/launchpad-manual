@@ -34,8 +34,7 @@ Adding a third-party widget
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The current story for adding a third-party widget is to put it in
-``lib/lp/contrib``. You can read the mailing list discussion ( 
-https://lists.launchpad.net/launchpad-dev/msg06474.html ) about the adoption of
+``lib/lp/contrib``. You can read the `mailing list discussion`_ about the adoption of
 this location.
 
 For CSS, follow the rules above to modify the tools. If other assets are
@@ -43,6 +42,8 @@ needed, you'll need to create a link in
 ``lib/canonical/launchpad/icing`` to the proper place in
 ``lib/lp/contrib`` so the assets can be found. See
 ``lib/canonical/launchpad/icing/yui3-gallery`` for an example.
+
+.. _`mailing list discussion`: https://lists.launchpad.net/launchpad-dev/msg06474.html
 
 New Combo loader Setup
 ----------------------
@@ -54,7 +55,7 @@ minified into a build directory ``build/js/``.
 Files are served out of the ``build/js`` directory based on the YUI
 combo loader config that is constructed in the
 ``lib/lp/app/templates/base-layout-macros.pt``. These are combined and
-served out via the convoy wsgi application through Apache.
+served out via the convoy WSGI application through Apache.
 
 Developing Javascript
 ~~~~~~~~~~~~~~~~~~~~~
@@ -85,7 +86,7 @@ include that module name in any YUI block.
    LPJS.use('modulename', function (Y)...
 
 The combo loader will serve your new module when you reload the page
-ith that content on it.
+with that content on it.
 
 Launchpad CSS
 -------------
