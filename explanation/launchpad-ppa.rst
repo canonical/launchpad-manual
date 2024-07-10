@@ -48,7 +48,7 @@ Policy/procedure for updates:
    version number, so if debchange -i adds that for you, take it out
    again and increment the unsuffixed version number instead.
 5. debcommit or bzr commit
-6. Exercise personal judgment on whether your change merits a merge
+6. Exercise personal judgement on whether your change merits a merge
    proposal, or is sufficiently trivial to just be committed directly.
 7. If preparing a merge proposal, please ensure your branch for review
    contains a complete debian/changelog entry ready for release.
@@ -94,13 +94,13 @@ mmm-archive-manager
 Backported or patched Ubuntu packages
 -------------------------------------
 
-postgresql-10, postgresql-common, postgresql-debversion, slony1-2 (trusty, xenial)
+postgresql-10, postgresql-common, postgresql-debversion, slony1-2 (Trusty, Xenial)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Straight backports of PostgreSQL 10 and paraphernalia from bionic to
-trusty. bionic's version is fine.
+Straight backports of PostgreSQL 10 and paraphernalia from Bionic to
+Trusty. Bionic's version is fine.
 
-pgbouncer (trusty)
+pgbouncer (Trusty)
 ~~~~~~~~~~~~~~~~~~
 
 Trusty's pgbouncer with wgrant's ENABLE/DISABLE patch as required by
@@ -108,9 +108,9 @@ full-update.py. For the benefit of launchpad-dependencies, the patched
 package additionally Provides pgbouncer-with-disconnect.
 
 The ENABLE/DISABLE patch is included upstream in pgbouncer 1.6, so
-xenial's version is fine.
+Xenial's version is fine.
 
-libgit2, git (bionic)
+libgit2, git (Bionic)
 ~~~~~~~~~~~~~~~~~~~~~
 
 Various updates backported from focal for use on git.launchpad.net.
@@ -125,7 +125,7 @@ The packaging is based on
 but modified to install Launchpad's convoy.wsgi. Ubuntu's modern
 packaging uses dh-python and supports Python 3.
 
-debian-archive-keyring (xenial, bionic, focal)
+debian-archive-keyring (Xenial, Bionic, Focal)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Straight backport for new Debian archive keys for gina's mirror.
@@ -136,7 +136,7 @@ git-build-recipe
 
 `Daily builds of
 lp:git-build-recipe <https://code.launchpad.net/~launchpad/+recipe/git-build-recipe-daily>`__
-for buildds.
+for builds.
 
 Distro series support
 ---------------------
@@ -144,9 +144,9 @@ Distro series support
 Stable
 ~~~~~~
 
--  trusty (obsolete production LTS, still used by databases)
--  xenial (current production LTS)
--  bionic (next production LTS)
+-  Trusty (obsolete production LTS, still used by databases)
+-  Xenial (current production LTS)
+-  Bionic (next production LTS)
 
 In progress
 ~~~~~~~~~~~
