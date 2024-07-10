@@ -113,7 +113,7 @@ Xenial's version is fine.
 libgit2, git (Bionic)
 ~~~~~~~~~~~~~~~~~~~~~
 
-Various updates backported from focal for use on git.launchpad.net.
+Various updates backported from Focal for use on git.launchpad.net.
 
 convoy
 ~~~~~~
@@ -151,7 +151,7 @@ Stable
 In progress
 ~~~~~~~~~~~
 
--  focal (next, next production LTS?)
+-  Focal (next, next production LTS?)
 
 When the supported series change, remember to also update
 :doc:`../how-to/getting` and :doc:`../how-to/running`.
