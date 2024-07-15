@@ -6,14 +6,14 @@ Launchpad Mail
 There are various kinds of emails in Launchpad:
 
 1. Mailing lists (represented by Launchpad teams). A mailing list has an
-   address \`TEAM_NAME@lists.launchpad.net`, archives
-   (`https://lists.launchpad.net/TEAM_NAME`), and an administrative
-   interface (`https://lists.canonical.com/mailman/admin/TEAM_NAME`).
+   address ``TEAM_NAME@lists.launchpad.net``, archives
+   (``https://lists.launchpad.net/TEAM_NAME``), and an administrative
+   interface (``https://lists.canonical.com/mailman/admin/TEAM_NAME``).
    Launchpad uses `Mailman <http://list.org>`__ to process these kinds
    of mails.
 2. Emails sent from one user to another (that is, an email sent "by"
    Launchpad, but really sent by user Alice when Alice uses the
-   \`https://edge.launchpad.net/~barry/+contactuser\` form to contact
+   ``https://edge.launchpad.net/~barry/+contactuser`` form to contact
    user Barry.
 3. Emails sent by Launchpad itself, such as emails sent to subscribers
    when a bug is changed.
