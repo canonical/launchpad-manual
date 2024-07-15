@@ -303,6 +303,7 @@ POFileTranslator
 PolicyandProcess
 PolicyAndProcess
 PolicyForDocumentingCustomDistributions
+poller
 POMsgID
 pooler
 portlets
@@ -485,6 +486,7 @@ wgrant's
 whitespace
 wildcherry
 Wishlist
+WorkingWithDbDevel
 WorkingWithReviews
 worktrees
 wsgi
