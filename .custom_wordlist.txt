@@ -183,6 +183,7 @@ initialized
 integrations
 io
 ip
+IPerson
 IPv
 IPython
 irc
@@ -255,6 +256,8 @@ mockups
 mojo
 mozilla
 natively
+NavigationMenu
+NavigationMenus
 né
 newsampledata
 NPM
