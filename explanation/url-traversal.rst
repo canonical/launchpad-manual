@@ -42,7 +42,7 @@ This specifies:
 2. attribute_to_parent defines the attribute of this interface that
    refers to the parent interface. Remember, we are starting from a
    leaf, and working back to the root URL.
-3. We are adding comments/${id } to the path of the parent Interface.
+3. We are adding comments/${id} to the path of the parent Interface.
    Where id is the id field of the instance.
 4. rootsite is the subdomain this URL should be rooted at
 
@@ -84,8 +84,8 @@ Next, you need to implement the factory:
 The function decorators helps reduce the ZCML needed for registration,
 they specify:
 
-1. The interface that the adapter will provide: \`ICanonicalUrlData`.
-2. The objects that the adapter works with: \`IBranchTarget`.
+1. The interface that the adapter will provide: ``ICanonicalUrlData``.
+2. The objects that the adapter works with: ``IBranchTarget``.
 
 Note that this is using the context of the view to get the
 ICanonicalUrlData. If it were only using the view, you'd get infinite

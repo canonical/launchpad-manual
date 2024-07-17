@@ -4,9 +4,9 @@ Navigation menus
 .. include:: ../includes/important_not_revised.rst
 
 When linking different views in Launchpad page templates it is recommend
-to use the !NavigationMenu attached to each facet of that object.
+to use the NavigationMenu attached to each facet of that object.
 
-The !NavigationMenus are defined in the *browser* code.
+The NavigationMenus are defined in the *browser* code.
 
 An object can have multiple *facets*. For example IPerson has a 'code',
 'overview', 'translation' .. etc facets.
@@ -37,7 +37,7 @@ An
 
 will only return the text without the anchor tag.
 
-From withing a page template, you can use the following TAL expresion to
+From withing a page template, you can use the following TAL expression to
 generate a link:
 
 ::

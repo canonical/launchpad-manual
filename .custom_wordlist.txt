@@ -57,6 +57,7 @@ changelog
 changeset
 changesets
 charmcraft
+CanonicalUrlData
 Cmd
 CMDLINE
 Cobol
@@ -65,6 +66,8 @@ Codehosting
 codeimport
 codeimportscheduler
 CodeReviewChecklist
+codereviewmessage
+CodeReviewMessageView
 config
 configs
 ConfiguringWebApplications
@@ -174,6 +177,10 @@ https
 https
 iframe
 iharness
+IBranchMergeProposal
+IBranchTarget
+ICanonicalUrlData
+ICodeReviewMessage
 IMailDelivery
 IMailer
 importances
@@ -183,6 +190,7 @@ initialized
 integrations
 io
 ip
+IPerson
 IPv
 IPython
 irc
@@ -202,9 +210,11 @@ LandingChanges
 langpack
 LaunchpadAuthentication
 LaunchpadDatabaseRevision
+LaunchpadFormView
 LaunchpadProductionStatus
 LaunchpadObjectFactory
 LaunchpadPpa
+LaunchpadView
 lazr
 libera
 libgit
@@ -255,6 +265,8 @@ mockups
 mojo
 mozilla
 natively
+NavigationMenu
+NavigationMenus
 né
 newsampledata
 NPM
@@ -357,6 +369,7 @@ RESTful
 rocketfuel
 rollout
 rollouts
+rootsite
 rosetta
 RPC
 rst
@@ -401,6 +414,7 @@ SSO
 StagingServer
 standardized
 stdin
+stepto
 steve
 stg
 StormMigrationGuide
@@ -469,6 +483,8 @@ untriaged
 untrusted
 upstreams
 unsuffixed
+url
+urls
 userbase
 VBScript
 vbuilder
