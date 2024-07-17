@@ -54,9 +54,9 @@ It is also possible to submit directly to the **db-devel** branch.
 Let's Try That in Words
 -----------------------
 
-Database changes can be destabilizing to other work, so we isolate them
+Database changes can be destabilising to other work, so we isolate them
 out into a separate branch (**db-devel**). Then there are two arenas for
-stabilizing changes for deployment: **stable** (which ends up on
+stabilising changes for deployment: **stable** (which ends up on
 `qastaging <https://qastaging.launchpad.net>`__ and is fed from the
 **master** branch), and **db-stable** (which ends up on
 `staging <https://staging.launchpad.net>`__ and is fed from the
@@ -79,7 +79,7 @@ In summary:
    with **db-devel**, sent as if it came from the Launchpad list. The
    Launchpad list will be informed of merge failures, and Launchpad
    developers will collectively be responsible for correcting them.
-   (***TODO: is this some internal list? Hmmm.***)
+   (***TODO: is this some internal list?***)
 
 -  Staging runs **db-stable**; qastaging runs **stable**. We will deploy
    production DB schema changes from **db-stable**. (After a deployment,
@@ -155,8 +155,8 @@ Now create and land a merge proposal.
 FAQ
 ---
 
-Can I land a testfix before buildbot has finished a test run that has failed or will fail?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Can I land a test fix before buildbot has finished a test run that has failed or will fail?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Yes you can, and please do if appropriate, because this will mean that
 other developers will not encounter a broken tree at all.
