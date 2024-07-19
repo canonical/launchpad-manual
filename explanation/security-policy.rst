@@ -7,7 +7,7 @@ Launchpad uses "permission" to control access to views, object
 attributes and object methods.
 
 Permission are granted based on the context object type (its interface)
-by an ``IAuthorization`` adapters. Traditionally these adapters have
+by an ``IAuthorization`` adaptors. Traditionally these adaptors have
 all been defined in the ``canonical.launchpad.security`` module, but
 they are being moved out in the ``security.py`` module of the specific
 application.
@@ -76,7 +76,7 @@ permission is assigned to a given attribute, attempting to access it is
 **forbidden**. If there is a permission assigned to it, and the current
 user does not have that permission, attempting it is **unauthorized**.
 If the current user has the correct permission, then that attribute will
-behave almost exactly the same as it would on an un-proxied object. The
+behave almost exactly the same as it would on an unproxied object. The
 main difference is that any return values may be wrapped in a
 SecurityProxy as well.
 
