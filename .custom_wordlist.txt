@@ -4,6 +4,7 @@ adapter's
 AddingLaunchpadCelebrity
 analyze
 analyzer
+AnyPerson
 api
 AppleApplications
 appmanifest
@@ -15,6 +16,7 @@ artifacts
 aspirational
 AssertionsInLaunchpad
 attrgetter
+AttributeError
 auditable
 auth
 authorization
@@ -148,6 +150,7 @@ fastnodowntime
 favicons
 FK
 flavor
+ForbiddenAttribute
 FooBar
 foofunc
 formatter
@@ -391,6 +394,7 @@ scalability
 screencast
 ScreenCasts
 sdist
+SecurityProxy
 segfaulted
 sendmail
 SendmailMailer
@@ -493,6 +497,7 @@ unauthorized
 Uncomment
 unittest
 unobvious
+unproxied
 untriaged
 untrusted
 upstreams
