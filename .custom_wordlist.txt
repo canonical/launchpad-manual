@@ -160,7 +160,7 @@ ForbiddenAttribute
 FooBar
 foofunc
 foos
-formatter>>>>>>> main
+formatter
 formlib
 FreshLogs
 frontend
