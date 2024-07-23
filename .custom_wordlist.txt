@@ -32,6 +32,8 @@ backported
 backtrace
 Backtraces
 barfunc
+BatchNavigator
+batchnavigator
 Becca
 BEM
 Bionic's
@@ -94,6 +96,7 @@ Dalia's
 Danilo
 DatabaseSchemaChangesProcess
 DatabaseSetup
+DateTimeJSONEncoder
 DatetimeUsageGuide
 DavidAllouche
 dbpatches
@@ -108,9 +111,12 @@ debhelper
 debian
 DebuggingWithGdb
 debversion
+DecoratedResultSet
+DecoratedResultSets
 defense
 defense
 deps
+Desc
 dev
 dh
 dia
@@ -153,7 +159,8 @@ flavor
 ForbiddenAttribute
 FooBar
 foofunc
-formatter
+foos
+formatter>>>>>>> main
 formlib
 FreshLogs
 frontend
@@ -186,6 +193,7 @@ html
 http
 https
 https
+indexable
 iframe
 iharness
 IBranchMergeProposal
@@ -205,7 +213,9 @@ IPerson
 IPv
 IPython
 irc
+IRangeFactory
 IRCMeetings
+iter
 javascript
 JavascriptUnitTesting
 Javadoc
@@ -214,6 +224,7 @@ jenkins
 jinja
 js
 JScript
+JSONEncoder
 keyring
 kiko
 kompare
@@ -230,6 +241,7 @@ lazr
 libera
 libgit
 lifecycle
+ListRangeFactory
 listdir
 LivePatching
 LiveScript
@@ -347,8 +359,13 @@ PPA
 pqm
 PQM
 pre
+pre_iter_hook
+prejoining
+prejoins
 PreMergeReviews
 prepending
+prepopulate
+prepopulation
 preprocessed
 prioritize
 prober
@@ -367,6 +384,7 @@ PyPI
 qa
 QAProcess
 qastaging
+QueryCollector
 queueddelivery
 queuedDelivery
 QueuedDelivery
@@ -379,6 +397,8 @@ realizes
 ReleaseCycles
 repo
 RESTful
+resultset
+ResultSets
 rocketfuel
 rollout
 rollouts
@@ -404,6 +424,7 @@ setupDTCBrowser
 setupRosettaExpertBrowser
 setuptools
 SFTP
+simplejson
 simplestreams
 slony
 Slony
@@ -422,6 +443,8 @@ soyuz
 specialized
 specializes
 sql
+SQLBase
+SQLObjectResultSets
 SRE
 SREs
 srv
@@ -434,6 +457,8 @@ stepto
 steve
 stg
 StormMigrationGuide
+StormRangeFactory
+StormStatementRecorder
 stubmailer
 stubMailer
 StyleGuides
@@ -443,6 +468,7 @@ subdirectory
 subprocess
 subproject
 subvertpy
+subselects
 sudo
 SuggestivePOTemplate
 summarized
@@ -457,6 +483,7 @@ syntaxes
 systemd
 TableRenamePatch
 talisker
+TAs
 TeamEmail
 templating
 testability
@@ -513,6 +540,7 @@ virtualenv
 virtualenvs
 VPN
 VPOTExport
+webapp
 webdav
 webhook
 webservice
