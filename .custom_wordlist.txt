@@ -43,6 +43,7 @@ boolean
 breakpoint
 browserconfig
 BrowserNotificationMessages
+BugSubscription
 bugtracker
 BugWatch
 BugWatches
@@ -95,6 +96,7 @@ DatabaseSetup
 DateTimeJSONEncoder
 DatetimeUsageGuide
 DavidAllouche
+DBEnums
 dbpatches
 dbschema
 dbupgrade
@@ -154,6 +156,8 @@ ForbiddenAttribute
 FooBar
 foofunc
 foos
+FooSet
+ForeignKey
 formatter
 formlib
 FreshLogs
@@ -198,6 +202,7 @@ importances
 InformationInfrastructure
 infos
 initialized
+instantiation
 integrations
 io
 ip
@@ -259,6 +264,7 @@ lxd
 LXD's
 macOS
 macquarie
+MailingListSet
 Mantic
 ManualCdImageMirrorProber
 matchers
@@ -285,6 +291,7 @@ NavigationMenus
 né
 newsampledata
 NPM
+NULLs
 OAuth
 OEM
 oid
@@ -431,7 +438,11 @@ soyuz
 specialized
 specializes
 sql
+sqlbuilder
+SQL's
 SQLBase
+SQLObject
+SQLObject's
 SQLObjectResultSets
 SRE
 SREs
@@ -518,6 +529,10 @@ unsuffixed
 url
 urls
 userbase
+UtcDateTimeCol
+Validators
+validators
+validator
 VBScript
 vbuilder
 ViewTests
