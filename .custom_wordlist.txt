@@ -43,6 +43,7 @@ boolean
 breakpoint
 browserconfig
 BrowserNotificationMessages
+brz
 BugSubscription
 bugtracker
 BugWatch
@@ -67,6 +68,7 @@ Cmd
 CMDLINE
 Cobol
 codebase
+codehosting
 Codehosting
 codeimport
 codeimportscheduler
@@ -83,9 +85,11 @@ crontab
 crontabs
 cryptographic
 cryptographically
+CSCVS
 css
 Ctrl
 customisable
+customisations
 customize
 CVE
 Dalia
@@ -121,6 +125,7 @@ dia
 directDelivery
 DirectDelivery
 distro
+distros
 Distro
 distroseries
 DistroSeries
@@ -136,6 +141,7 @@ doctests
 docutils
 downstreams
 dtrt
+dulwich
 EChangePolicy
 el
 else's
@@ -168,6 +174,7 @@ fsyncs
 ftest
 fti
 functiondef
+ganesha
 gangotri
 gina's
 geoip
@@ -181,6 +188,7 @@ gunicorn
 gzip
 HackingLazrLibraries
 hba
+hg
 hirsute's
 hostnames
 HSTS
@@ -290,6 +298,7 @@ NavigationMenu
 NavigationMenus
 né
 newsampledata
+nfs
 NPM
 NULLs
 OAuth
@@ -354,6 +363,7 @@ POTMsgSet
 POTMsgSets
 ppa
 PPA
+pqm
 PQM
 pre
 pre_iter_hook
@@ -407,6 +417,7 @@ rsync
 rsyncing
 runtime
 SafariWebContent
+scalability
 screencast
 ScreenCasts
 sdist
@@ -419,6 +430,7 @@ setUp
 setupDTCBrowser
 setupRosettaExpertBrowser
 setuptools
+SFTP
 simplejson
 simplestreams
 slony
@@ -466,11 +478,13 @@ subclassing
 subdirectory
 subprocess
 subproject
+subvertpy
 subselects
 sudo
 SuggestivePOTemplate
 summarized
 svg
+svn
 symlinked
 symlinks
 synchronize
@@ -536,6 +550,7 @@ validator
 VBScript
 vbuilder
 ViewTests
+virt
 virtualenv
 virtualenvs
 VPN

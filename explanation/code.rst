@@ -13,7 +13,7 @@ system. The major sub-systems are:
 
 -  The `git` and `bzr` / `brz` clients (neither of which is part of
    Launchpad, but their behaviours are important to us)
--  Connectivity to Launchpad (git, git+ssh, and https for Git; sftp and
+-  Connectivity to Launchpad (git, git+ssh, and https for Git; SFTP and
    bzr+ssh for Bazaar)
 -  Hosting infrastructure
 -  The underlying object model
@@ -29,7 +29,7 @@ Each of these subsystems also have multiple moving parts and some have
 other asynchronous jobs associated with them.
 
 The `codehosting overview diagram <attachment:codehosting.png>`__
-summarizes how some of these systems interact.
+summarises how some of these systems interact.
 
 You can `run the codehosting system
 locally </HowToUseCodehostingLocally>`__.
@@ -86,14 +86,14 @@ Apache handles the HTTP routing using a number of mod-rewrite rules.
 
 '''Parts [and responsibilities] '''
 
--  HTTP apache configuration [shared with LOSAs]
+-  HTTP Apache configuration [shared with LOSAs]
 -  branch location rewrite script (called by mod-rewrite rule)
 -  ssh server
 
    -  
 
       -  authentication
-      -  sftp implementation
+      -  SFTP implementation
       -  smart server launching
 
 -  smart server
@@ -182,7 +182,7 @@ into Git repositories in Launchpad.
 
    -  
 
-      -  cscvs for CVS (and legacy Subversion imports)
+      -  CSCVS for CVS (and legacy Subversion imports)
       -  bzr-svn and subvertpy for all new Subversion imports
       -  bzr-git and dulwich for git
       -  bzr-hg for mercurial imports
@@ -192,7 +192,7 @@ Git repository source code browser (cgit)
 
 Launchpad uses `cgit <https://git.zx2c4.com/cgit/>`__ to provide a web
 view of the repository contents. We use an unmodified package of
-\`cgit`; Launchpad's customizations are in
+\`cgit`; Launchpad's customisations are in
 `turnip.pack.http <https://git.launchpad.net/turnip/tree/turnip/pack/http.py>`__.
 
 Bazaar branch source code browser (loggerhead)
