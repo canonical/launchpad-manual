@@ -265,6 +265,8 @@ Finally, build the database schema (this may take several minutes):
 
     $ make schema
 
+If you encounter an error while building Python wheels, see :ref:`pynacl-fix`.
+
 Running
 =======
 
@@ -416,6 +418,27 @@ the bridge interface on your computer):
 
     sudo ufw allow in on lxdbr0
     sudo ufw route allow in on lxdbr0
+
+.. _pynacl-fix:
+
+Error building Python wheels
+----------------------------
+
+When running ``make schema`` on some machines, ``pynacl`` `fails to build <https://github.com/pyca/pynacl/issues/553>`_, leading to ``ERROR: Failed building wheel for pynacl``.
+
+If you encounter this issue, try running the following:
+
+.. code-block:: shell-session
+
+    $ sudo apt install --yes libsodium-dev
+
+Then add the following line to the ``Makefile`` under the ``PIP_ENV`` commands:
+
+.. code-block:: shell-session
+
+    PIP_ENV += SODIUM_INSTALL=system
+
+Then run `make schema` again.
 
 Email
 -----
