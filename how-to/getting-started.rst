@@ -9,3 +9,4 @@ Getting started
    running
    database-setup
    develop-with-buildd
+   use-soyuz-locally

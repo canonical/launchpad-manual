@@ -8,12 +8,12 @@ This is now on stable and allows for management of VMs with the same LXD CLI.
 
 For now, we need to use the ``images:`` source for images, rather than the ``ubuntu:`` images. The default ubuntu images do not have the LXD agent preinstalled. Once they do, this gets a bit simpler.
 
-It is also slightly simpler to use the ``ubuntu`` user, as it is already available in the image and doesn't require as many hoops jumped to get uid/gid mapping to work.
+It is also slightly simpler to use the ``ubuntu`` user, as it is already available in the image and doesn't require as many hoops jumped to get ``uid``/``gid`` mapping to work.
 
 Create a LXD profile for VMs
 ----------------------------
 
-This is a convenience helper profile for VMs that will add users and run cloud-init for installing the LXD VM agent. It is not required and you can pass the options on the ``lxc`` command.
+This is a convenience helper profile for VMs that will add users and run ``cloud-init`` for installing the LXD VM agent. It is not required and you can pass the options on the ``lxc`` command.
 
 The password for the user can be generated using:
 
@@ -21,9 +21,9 @@ The password for the user can be generated using:
 
     $ mkpasswd -m sha-512 <password>
 
-`mkpasswd` lives in the `whois` package.
+``mkpasswd`` lives in the ``whois`` package.
 
-For now, we are using the LXD provided cloud images as it has the LXD agent and cloud-init preinstalled. This requires a smaller LXD profile, but needs some extra commands afterwards.
+For now, we are using the LXD provided cloud images as it has the LXD agent and ``cloud-init`` preinstalled. This requires a smaller LXD profile, but needs some extra commands afterwards.
 
 To create this run:
 
@@ -125,7 +125,7 @@ Install dependencies
     $ sudo apt build-dep launchpad-buildd fakeroot
     $ sudo apt install -f
 
-Note: if fakeroot can't be found try:
+Note: if ``fakeroot`` can't be found try:
 
 .. code-block:: sh
 
@@ -184,7 +184,7 @@ First, we need a base image to use for the builds. Usually this is pulled as par
 Running a build
 ---------------
 
-You can try running a build via the XML-RPC interface. Start a python/ipython repl and run.
+You can try running a build via the XML-RPC interface. Start a Python/IPython repl and run.
 
 .. code-block:: python
 
@@ -203,7 +203,7 @@ Assuming that works, a sample build can be created using (relying on the OCI cap
 Configuring Launchpad
 ---------------------
 
-Change https://launchpad.test/ubuntu/+pubconf as admin from ``archive.launchpad.test`` to ``archive.ubuntu.com``.
+Change ``https://launchpad.test/ubuntu/+pubconf`` as admin from ``archive.launchpad.test`` to ``archive.ubuntu.com``.
 
 In ``launchpad/launchpad/configs/development/launchpad-lazr.conf`` change:
 
@@ -215,7 +215,7 @@ In ``launchpad/launchpad/configs/development/launchpad-lazr.conf`` change:
 
 4: ``builder_proxy_port`` from ``3128`` to ``none``
 
-In ``launchpad/launchpad/lib/lp/services/config/schema-lazr.conf`` under the ``[oci]`` tag add a pair of private and public keys in order to be able to add oci credentials, valid example below:
+In ``launchpad/launchpad/lib/lp/services/config/schema-lazr.conf`` under the ``[oci]`` tag add a pair of private and public keys in order to be able to add OCI credentials, valid example below:
 
 1: ``registry_secrets_private_key``: ``U6mw5MTwo+7F+t86ogCw+GXjcoOJfK1f9G/khlqhXc4=``
 
@@ -237,7 +237,7 @@ First, you'll need to run some extra bits in Launchpad:
 Image Setup
 -----------
 
-Consult the 'Launchpad Configuration' section of [[Soyuz/HowToUseSoyuzLocally|here]] to do the correct `manage-chroot` dance to register an image with launchpad. Without this, you will have no valid buildable architectures.
+Consult the 'Launchpad Configuration' section of :doc:`use-soyuz-locally` to do the correct ``manage-chroot`` dance to register an image with launchpad. Without this, you will have no valid buildable architectures.
 
 User setup
 ----------
@@ -265,6 +265,6 @@ The buildd that you have just installed needs registering with Launchpad so that
 
     - Most production builders are virtualized, which means that there's machinery to automatically reset them to a clean VM image at the end of each build.  To set this up, ``builddmaster.vm_resume_command`` in your config must be set to a command which ``buildd-manager`` can run to reset the builder.  If the VM reset protocol is 1.1, then the resume command is expected to be synchronous: once it returns, the builder should be running.  If the VM reset protocol is 2.0, then the resume command is expected to be asynchronous, and the builder management code is expected to change the builder's state from ``CLEANING`` to ``CLEAN`` using the webservice once the builder is running.
 
-    - Non-virtualized builders are much simpler: ``launchpad-buildd`` is cleaned synchronously over XML-RPC at the end of each build, and that's it.  If you use this, then you must be careful not to run any untrusted code on the builder (since a chroot or container escape could compromise the builder), and you'll need to uncheck "Require virtualized builders" on any PPAs, live filesystems, recipes, etc. that you want to be allowed to build on this builder.
+    - Non-virtualized builders are much simpler: ``launchpad-buildd`` is cleaned synchronously over XML-RPC at the end of each build, and that's it.  If you use this, then you must be careful not to run any untrusted code on the builder (since a ``chroot`` or container escape could compromise the builder), and you'll need to uncheck "Require virtualized builders" on any PPAs, live file systems, recipes, etc. that you want to be allowed to build on this builder.
 
  4. After 30 seconds or so, the status of the builder on the builders page should be 'Idle'. This page does not auto-update, so refresh!
