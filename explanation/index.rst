@@ -20,7 +20,6 @@ General
    scope
    strategy
    values
-   webapp-process
    hacking
    engineering-overview-translations
    registry
