@@ -1,5 +1,5 @@
-Launchpad Security Policy
-=========================
+Launchpad permissions
+======================
 
 .. include:: ../includes/important_not_revised.rst
 
