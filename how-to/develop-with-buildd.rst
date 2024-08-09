@@ -169,20 +169,43 @@ You probably want the next section (:ref:`Configuring Launchpad <configuring-lau
 Getting a base image
 --------------------
 
-First, we need a base image to use for the builds. Usually this is pulled as part of a build, but if we don't have Launchpad involved, we need to set this up manually.
+First, we need a base image to use for the builds. Usually, this is pulled as part of a build, but if we don't have Launchpad involved, we need to set this up manually.
+To download the image we need to set up the ``ubuntu-archive-tools``.
 
 .. code-block:: sh
 
     $ git clone https://git.launchpad.net/ubuntu-archive-tools
     $ sudo apt install python3-launchpadlib python3-ubuntutools
-    $ ./manage-chroot -s bionic -a amd64 get
-    $ sha256sum livecd.ubuntu-base.rootfs.tar.gz/home/buildd/filecache-default
-    $ mv livecd.ubuntu-base.rootfs.tar.gz <sha256sum from previous line>
-    $ sudo cp <sha256sum named file> /home/buildd/filecache-default
-    $ sudo chown buildd: /home/buildd/filecache-default/<sha256sum named file>
 
-Running a build
----------------
+Now we can download the image, note that there are two types of images: ``chroot`` and ``lxd`` images.
+``chroot`` backend is only used for ``binarypackagebuilds`` and ``sourcepackagerecipebuilds`` while most other build types use a LXD image.
+
+
+To download ``lxd`` image proceed as follows:
+
+.. code-block:: sh
+
+    $ ./manage-chroot -s bionic -a amd64 -i lxd get 
+    $ sha1sum livecd.ubuntu-base.lxd.tar.gz
+    $ mv livecd.ubuntu-base.lxd.tar.gz <sha1sum from previous line>
+
+To download ``chroot`` image proceed as follows:
+
+.. code-block:: sh
+
+    $ ./manage-chroot -s bionic -a amd64 get
+    $ sha1sum livecd.ubuntu-base.rootfs.tar.gz
+    $ mv livecd.ubuntu-base.rootfs.tar.gz <sha1sum from previous line>
+    
+Now we should copy the downloaded image to the builder file cache to be picked up during the build phase if you are running your builder locally.
+
+.. code-block:: sh
+    
+    $ sudo cp <sha1sum named file> /home/buildd/filecache-default
+    $ sudo chown buildd: /home/buildd/filecache-default/<sha1sum named file>
+
+Running a build locally
+-----------------------
 
 You can try running a build via the XML-RPC interface. Start a Python/IPython repl and run.
 
@@ -193,10 +216,11 @@ You can try running a build via the XML-RPC interface. Start a Python/IPython re
   proxy.status()
 
 Assuming that works, a sample build can be created using (relying on the OCI capabilities being merged into launchpad-buildd):
+Note that if we are using the ``lxd`` backend we should specify that in our build ``args`` adding ``"image_type": "lxd"``.
 
 .. code-block:: python
 
-  proxy.build('1-3', 'oci', '<sha256 of base, possibly from previous section>', {}, {'name': 'test-build', 'series': 'bionic', 'arch_tag': 'amd64', 'git_repository': 'https://github.com/tomwardill/test-docker-repo.git', 'archives': ['deb http://archive.ubuntu.com/ubuntu bionic main restricted', 'deb http://archive.ubuntu.com/ubuntu bionic-updates main restricted', 'deb http://archive.ubuntu.com/ubuntu bionic universe']})
+  proxy.build('1-3', 'oci', '<sha1sum of base, possibly from previous section>', {}, {'name': 'test-build', 'series': 'bionic', 'arch_tag': 'amd64', 'git_repository': 'https://github.com/tomwardill/test-docker-repo.git', 'archives': ['deb http://archive.ubuntu.com/ubuntu bionic main restricted', 'deb http://archive.ubuntu.com/ubuntu bionic-updates main restricted', 'deb http://archive.ubuntu.com/ubuntu bionic universe']})
 
 .. _configuring-launchpad:
 
@@ -268,3 +292,88 @@ The buildd that you have just installed needs registering with Launchpad so that
     - Non-virtualized builders are much simpler: ``launchpad-buildd`` is cleaned synchronously over XML-RPC at the end of each build, and that's it.  If you use this, then you must be careful not to run any untrusted code on the builder (since a ``chroot`` or container escape could compromise the builder), and you'll need to uncheck "Require virtualized builders" on any PPAs, live file systems, recipes, etc. that you want to be allowed to build on this builder.
 
  4. After 30 seconds or so, the status of the builder on the builders page should be 'Idle'. This page does not auto-update, so refresh!
+
+Running a build on qastaging
+----------------------------
+
+We can use XML-RPC to interact also with qastaging/staging builders. 
+First of all, we should be able to ssh into our bastion and ssh into the ``launchpad-buildd-manager`` unit since it's the one that has the firewall rules to talk with builders.
+
+Then we should follow the same procedure to get the correct ``sha1sum`` of a backend image.
+
+.. code-block:: sh
+
+    $ ./manage-chroot -s bionic -a amd64 -i lxd get 
+    $ sha1sum livecd.ubuntu-base.lxd.tar.gz
+
+The command above will show us also the link from which the image is retrieved, let's save it since we will use it in our ``ensurepresent`` function.
+At this point we should select the builder that we want to interact with, we can navigate ``https://qastaging.launchpad.net/builders/qastaging-bos03-amd64-001`` and get the builder location.
+In this example ``http://qastaging-bos03-amd64-001.vbuilder.qastaging.bos03.scalingstack:8221``
+
+.. code-block:: python
+
+  import xmlrpclib
+  proxy = xmlrpclib.ServerProxy("http://qastaging-bos03-amd64-001.vbuilder.qastaging.bos03.scalingstack:8221/rpc")
+  proxy.status()
+
+  # Inject the backend image we retrieved before.
+  proxy.ensurepresent("<sha1sum from the previous step>", "<url from the previous step>", "admin", "admin")
+
+  # Start the build.
+  proxy.build('1-3', 'snap', '<sha1sum from the previous step>', {}, {'name': 'test-build', 'image_type': 'lxd', 'series': 'bionic', 'arch_tag': 'amd64', 'git_repository': 'https://github.com/tomwardill/test-docker-repo.git', 'archives': ['deb http://archive.ubuntu.com/ubuntu bionic main restricted', 'deb http://archive.ubuntu.com/ubuntu bionic-updates main restricted', 'deb http://archive.ubuntu.com/ubuntu bionic universe']})
+
+  # After that we can clean the builder.
+  proxy.clean()
+
+Proxy setup
+-----------
+
+Most of the time in our staging environments we will need to set up the proxy for our builders, with the word ``proxy`` we are referring here to both builder proxy and fetch service.
+First of all, we need to pull the token to authenticate our ``launchpad-buildd-manager`` against the proxy.
+
+All these commands should be run on the ``launchpad-build-manager`` unit.
+
+.. code-block:: python
+
+  admin_username = _get_value_from_config(
+      "builder_proxy_auth_api_admin_username"
+  )
+  admin_secret = _get_value_from_config(
+      "builder_proxy_auth_api_admin_secret"
+  )
+  auth_string = f"{admin_username}:{admin_secret}".strip()
+  basic_token = base64.b64encode(auth_string.encode("ASCII"))
+
+The ``_get_value_from_config`` function is a mock function here to indicate that we should retrieve these values from the ``launchpad-buildd-manager`` configuration.
+Once we have the basic token we can call the proxy, asking for a token:
+
+.. code-block:: sh
+
+  $ curl -X POST http://builder-proxy-auth.staging.lp.internal:8080/tokens -H "Authorization: Basic <basic_token>" -H "Content-Type: application/json" -d '{"username": <your_app_name>}'
+
+Now we have all the information that we need to populate the ``args`` that we need in the ``build`` function to use the proxy.
+These ``args`` are ``"proxy_url": "http://<your_app_name>:<token_from_curl>@builder-proxy.staging.lp.internal:3128"`` and ``"revocation_endpoint": "http://builder-proxy-auth.staging.lp.internal:8080/tokens/<your_app_name>"``.
+
+The modified ``build`` call will look like:
+
+.. code-block:: python
+  
+  # Start the build.
+  proxy.build(
+    'app-name',
+    'snap',
+    '<sha1sum from the previous step>',
+    {},
+    {'name': 'app-name',
+    'image_type': 'lxd',
+    'series': 'bionic',
+    'arch_tag': 'amd64',
+    'git_repository': 'https://github.com/tomwardill/test-docker-repo.git', 
+    'archives': [
+      'deb http://archive.ubuntu.com/ubuntu bionic main restricted',
+      'deb http://archive.ubuntu.com/ubuntu bionic-updates main restricted',
+      'deb http://archive.ubuntu.com/ubuntu bionic universe'
+    ],
+    "proxy_url": "http://app-name:<token_from_curl>@builder-proxy.staging.lp.internal:3128",
+    "revocation_endpoint": "http://builder-proxy-auth.staging.lp.internal:8080/tokens/app-name"
+    })
