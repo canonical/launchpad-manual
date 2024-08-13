@@ -44,7 +44,7 @@ user by running ``sudo -iu stg-launchpad``.
 3. Switch to ``launchpad`` user, by running 
 ``sudo su launchpad``.
 
-3. Add the user to the team by running: 
+4. Add the user to the team by running: 
 
 .. code::
      
