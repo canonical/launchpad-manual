@@ -23,7 +23,7 @@ system. The major sub-systems are:
 -  Branch source code browser (`cgit <https://git.zx2c4.com/cgit/>`__
    for Git; :doc:`loggerhead <../how-to/land-update-for-loggerhead>` for Bazaar)
 -  Source package recipes (`git-build-recipe`/`bzr-builder\` integration
-   with `Soyuz <Soyuz>`__)
+   with :doc:`Soyuz ../how-to/use-soyuz-locally`)
 
 Each of these subsystems also have multiple moving parts and some have
 other asynchronous jobs associated with them.
