@@ -39,6 +39,6 @@ Notes & Helpful links
 
 .. code-block:: sh
     
-    mojo upgrade-charm <unit> <charm-location>
+    juju upgrade-charm <unit> <charm-location>
 
 
