@@ -146,6 +146,7 @@ linkcheck_ignore = [
     'attachment:TranslationsSchema.dia',  # needs update
     r'https://github\.com/canonical/fetch-service*',  # private
     r'https://github\.com/canonical/fetch-operator*',  # private
+    'https://git.launchpad.net/charm-launchpad-buildd-image-modifier/tree/files/scripts/setup-ppa-buildd'  # private
     ]
 
 # Pages on which to ignore anchors

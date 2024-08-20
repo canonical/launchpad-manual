@@ -6,7 +6,7 @@ QA Migration & Deployment
 
 There are following steps to porting builders to newer Ubuntu versions.
 
-- Porting `launchpad-buildd <https://code.launchpad.net/~launchpad/launchpad-buildd/>`_ and its dependencies to work on the target Ubuntu version. You can follow `lp-buildd rtd docs <https://launchpad-buildd.readthedocs.io/en/latest/how-to/developing.html>`_ to develop and publish on buildd-staging PPA. 
+- Porting `launchpad-buildd <https://code.launchpad.net/~launchpad/launchpad-buildd/>`_ and its dependencies to work on the target Ubuntu version. You can follow `lp-buildd docs <https://launchpad-buildd.readthedocs.io/en/latest/how-to/developing.html>`_ to develop and publish on buildd-staging PPA. 
     - Apart from the deb dependencies defined in `debian/control <https://git.launchpad.net/launchpad-buildd/tree/debian/control?h=noble>`_ in `launchpad-buildd <https://code.launchpad.net/~launchpad/launchpad-buildd/>`_, you would also need to make sure that deb packages of target ubuntu version are available for ``bzr-builder``, ``git-recipe-builder`` and ``quilt``.
     - These dependencies are defined in `charm-launchpad-buildd-image-modifier <https://git.launchpad.net/charm-launchpad-buildd-image-modifier/tree/files/scripts/setup-ppa-buildd#n111>`_
 
@@ -37,7 +37,7 @@ There are following steps to porting builders to newer Ubuntu versions.
 Notes & Helpful links
 ---------------------
 
-- With Ubuntu Noble, ``lxd`` is no longer a part of the base image and is pre-baked via vendored script. Refer this `MP <https://code.launchpad.net/~tushar5526/charm-launchpad-buildd-image-modifier/+git/charm-launchpad-buildd-image-modifier/+merge/471494>`_ that pre-bakes ``lxd`` if not available. `launchpad-buildd <https://code.launchpad.net/~launchpad/launchpad-buildd/>`_ uses ``lxd`` to run builds. 
+- With Ubuntu Noble, ``lxd`` is no longer a part of the base image and is pre-baked. Refer this `MP <https://code.launchpad.net/~tushar5526/charm-launchpad-buildd-image-modifier/+git/charm-launchpad-buildd-image-modifier/+merge/471494>`_ that pre-bakes ``lxd`` if not available. `launchpad-buildd <https://code.launchpad.net/~launchpad/launchpad-buildd/>`_ uses ``lxd`` to run builds. 
 
 - `Setting up a user on QA staging <https://documentation.ubuntu.com/launchpad/en/latest/how-to/manage-users>`_
 
