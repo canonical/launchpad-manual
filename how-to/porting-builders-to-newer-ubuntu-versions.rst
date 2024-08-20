@@ -2,7 +2,7 @@ Porting builders to newer Ubuntu versions
 =========================================
 
 QA Migration & Deployment
--------------
+-------------------------
 
 There are following steps to porting builders to newer Ubuntu versions.
 
