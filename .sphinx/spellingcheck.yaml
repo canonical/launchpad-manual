@@ -25,4 +25,4 @@ matrix:
       - div.relatedlinks
       - div.visually-hidden
       - img
-      - a.p-navigation__link      
+      - a.p-navigation__link
