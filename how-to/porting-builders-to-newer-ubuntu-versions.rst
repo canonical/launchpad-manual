@@ -8,15 +8,15 @@ There are following steps to porting builders to newer Ubuntu versions.
 
 - Porting `launchpad-buildd <https://code.launchpad.net/~launchpad/launchpad-buildd/>`_ and its dependencies to work on the target Ubuntu version. You can follow `lp-buildd docs <https://launchpad-buildd.readthedocs.io/en/latest/how-to/developing.html>`_ to develop and publish on buildd-staging PPA. 
     - Apart from the deb dependencies defined in `debian/control <https://git.launchpad.net/launchpad-buildd/tree/debian/control?h=noble>`_ in `launchpad-buildd <https://code.launchpad.net/~launchpad/launchpad-buildd/>`_, you would also need to make sure that deb packages of target ubuntu version are available for ``bzr-builder``, ``git-recipe-builder`` and ``quilt``.
-    - These dependencies are defined in `charm-launchpad-buildd-image-modifier <https://git.launchpad.net/charm-launchpad-buildd-image-modifier/tree/files/scripts/setup-ppa-buildd#n111>`_
+    - These dependencies are defined in `charm-launchpad-buildd-image-modifier <https://git.launchpad.net/charm-launchpad-buildd-image-modifier/tree/files/scripts/setup-ppa-buildd#n111>`__
 
-- Update the ``gss_series`` variable in `launchpad-mojo-specs <https://git.launchpad.net/~launchpad/launchpad-mojo-specs/+git/private/tree/vbuilder/bundle.yaml?h=vbuilder>`_. Run ``mojo run`` to deploy the config changes. 
+- Update the ``gss_series`` variable in `launchpad-mojo-specs <https://git.launchpad.net/~launchpad/launchpad-mojo-specs/+git/private/tree/vbuilder/bundle.yaml?h=vbuilder>`__. Run ``mojo run`` to deploy the config changes. 
     - PS: We use ``vbuilder`` branch for build farm mojo specs.
     - You don't have to update the builder config to target Ubuntu version at this step. We first have to build an image and then update the builder configs.  
 
-- Next step is to rebuild images. Currently `launchpad-mojo-specs <https://code.launchpad.net/~launchpad/launchpad-mojo-specs/+git/private>`_ `(vbuilder branch)` uses 2 charms to rebuild images & sync images. You can either trigger a rebuild by following: `testing-on-qastaging <https://launchpad-buildd.readthedocs.io/en/latest/how-to/deployment.html#testing-on-qastaging>`_ or use the ``sync-images`` action.
+- Next step is to rebuild images. Currently `launchpad-mojo-specs <https://code.launchpad.net/~launchpad/launchpad-mojo-specs/+git/private>`__ `(vbuilder branch)` uses 2 charms to rebuild images & sync images. You can either trigger a rebuild by following: `testing-on-qastaging <https://launchpad-buildd.readthedocs.io/en/latest/how-to/deployment.html#testing-on-qastaging>`_ or use the ``sync-images`` action.
     - `charm-glance-simplestreams-sync <https://git.launchpad.net/~launchpad/charm-glance-simplestreams-sync>`_ provides a `sync-images` action that downloads the configured base images and calls a hook to run the image modifier charm. 
-    - `charm-launchpad-buildd-image-modifier <https://git.launchpad.net/charm-launchpad-buildd-image-modifier/tree/files/scripts>`_ has scripts that creates a qemu COW VM image for builders with all the needed dependencies and configuration. 
+    - `charm-launchpad-buildd-image-modifier <https://git.launchpad.net/charm-launchpad-buildd-image-modifier/tree/files/scripts>`__ has scripts that creates a qemu COW VM image for builders with all the needed dependencies and configuration. 
 
 .. code-block:: sh
 
