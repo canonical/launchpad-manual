@@ -134,7 +134,6 @@ linkcheck_ignore = [
     'Debugging#Special%20URLs',  # needs update
     'JavascriptUnitTesting/MockIo',  # needs update
     'PolicyAndProcess/Accessibility',  # needs update
-    'Soyuz',  # needs update
     'Translations/Specs/UpstreamImportIntoUbuntu/FixingIsImported/setCurrentTranslation',  # needs update
     'attachment:codehosting.png',  # needs update
     'https://git.launchpad.net/launchpad-mojo-specs/tree/mojo-lp-git/services',  # private
@@ -146,6 +145,7 @@ linkcheck_ignore = [
     'attachment:TranslationsSchema.dia',  # needs update
     r'https://github\.com/canonical/fetch-service*',  # private
     r'https://github\.com/canonical/fetch-operator*',  # private
+    'https://git.launchpad.net/charm-launchpad-buildd-image-modifier/tree/files/scripts/setup-ppa-buildd',  # private
     ]
 
 # Pages on which to ignore anchors

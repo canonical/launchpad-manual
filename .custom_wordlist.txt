@@ -397,6 +397,7 @@ PyPI
 qa
 QAProcess
 qastaging
+qemu
 QueryCollector
 QueuedDelivery
 queuedDelivery
