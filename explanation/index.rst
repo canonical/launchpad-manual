@@ -57,31 +57,22 @@ JavaScript
 ----------
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
-   javascript-integration-testing
-   javascript-unittesting
-   javascript-buildsystem
+   javascript
 
 Static assets
 -------------
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
-   css
-   css-sprites
-   images
-   favicon
+   static-assets
 
 Database
 --------
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
-   postgresql
-   working-with-db-devel
-   live-patching
-   storm-migration-guide
-   database-performance
+   database
