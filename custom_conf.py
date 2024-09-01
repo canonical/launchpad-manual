@@ -130,8 +130,6 @@ linkcheck_ignore = [
     '/Concepts',  # needs update
     '/HowToUseCodehostingLocally',  # needs update
     'Database/TableRenamePatch',  # needs update
-    'Debugging#Profiling%20page%20requests',  # needs update
-    'Debugging#Special%20URLs',  # needs update
     'JavascriptUnitTesting/MockIo',  # needs update
     'PolicyAndProcess/Accessibility',  # needs update
     'Translations/Specs/UpstreamImportIntoUbuntu/FixingIsImported/setCurrentTranslation',  # needs update
