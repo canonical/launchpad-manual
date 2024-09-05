@@ -119,6 +119,7 @@ DecoratedResultSet
 DecoratedResultSets
 defense
 defense
+del
 deps
 Desc
 dev
@@ -159,6 +160,7 @@ fastdowntime
 fastnodowntime
 favicons
 FK
+fk
 flavor
 FooBar
 foofunc
@@ -203,6 +205,7 @@ IBranchMergeProposal
 IBranchTarget
 ICanonicalUrlData
 ICodeReviewMessage
+idx
 iframe
 iharness
 IMailDelivery
@@ -222,7 +225,11 @@ IPv
 IPython
 IRangeFactory
 irc
+IrcId
+ircid
 IRCMeetings
+IrcNickname
+ircnickname
 iter
 Javadoc
 javascript
@@ -300,6 +307,7 @@ natively
 NavigationMenu
 NavigationMenus
 newsampledata
+nextval
 nfs
 NPM
 NTP
@@ -340,6 +348,7 @@ pgbouncer
 pgSQL
 pgsql
 pipx
+pkey
 plaintext
 png
 po
@@ -548,6 +557,8 @@ unproxied
 unsuffixed
 untriaged
 untrusted
+upd
+updatable
 upstreams
 url
 urls
