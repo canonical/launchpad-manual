@@ -7,7 +7,7 @@ by intercepting those calls and providing a server response of your own.
 Files and namespaces
 --------------------
 
-!MockiIo is found in
+!MockIo is found in
 
 ::
 
