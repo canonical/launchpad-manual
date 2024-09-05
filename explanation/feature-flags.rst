@@ -3,7 +3,7 @@ Feature Flags
 
 .. include:: ../includes/important_not_revised.rst
 
-**FeatureFlags allow Launchpad's configuration to be changed while it's
+**Feature Flags allow Launchpad's configuration to be changed while it's
 running, and for particular features or behaviours to be exposed to only
 a subset of users or requests.**
 
@@ -23,15 +23,15 @@ Scenarios
 
 -  Dark launches (aka embargoes: land code first, turn it on later)
 -  Closed betas
--  Scram switches (eg "omg daily builds are killing us, make it stop")
+-  Scram switches (e.g. "omg daily builds are killing us, make it stop")
 -  Soft/slow launch (let just a few users use it and see what happens)
 -  Site-wide notification
 -  Show an 'alpha', 'beta' or 'new!' badge next to a UI control, then
    later turn it off without a new rollout
--  Show developer-oriented UI only to developers (eg the query count)
+-  Show developer-oriented UI only to developers (e.g. the query count)
 -  Control page timeouts (or other resource limits) either per page id,
    or per user group
--  Set resource limits (eg address space cap) for jobs.
+-  Set resource limits (e.g. address space cap) for jobs.
 
 Concepts
 --------
@@ -40,7 +40,7 @@ A **feature flag** has a string name, and has a dynamically-determined
 value within a particular context such as a web or api request. The
 value in that context depends on determining which **scopes** are
 relevant to the context, and what **rules** exist for that flag and
-scopes. The rules are totally ordered and the highest-prority rule
+scopes. The rules are totally ordered and the highest-priority rule
 determines the relevant value.
 
 Flags values are strings; or if no value is specified, \`None`. (If an
@@ -128,7 +128,7 @@ Flags should be named as
 where each of the parts is a legal Python name (so use underscores to
 join words, not dashes.)
 
-The **area** is the general area of Launchpad this relates to: eg
+The **area** is the general area of Launchpad this relates to: e.g.
 'code', 'librarian', ...
 
 The **feature** is the particular thing that's being controlled, such as
@@ -218,7 +218,7 @@ Adding and documenting a new feature flag
 -----------------------------------------
 
 If you introduce a new feature flag, as well as reading it from
-whereever is useful, you should also:
+wherever is useful, you should also:
 
 -  Add a section in lib/lp/services/features/flags.py flag_info
    describing the flag, including documentation that will make sense to
@@ -236,7 +236,7 @@ whereever is useful, you should also:
         ''),
 
 The last item in that list is descriptive, not prescriptive: it
-*documents the code's default behavior* if no value is specified. The
+*documents the code's default behaviour* if no value is specified. The
 flag's value will still read as None if no value is specified, and
 setting it to an empty value still returns the empty string.
 
@@ -267,7 +267,7 @@ and/or
 
    SCRIPT_SCOPE_HANDLERS
 
-depending on whether it applies to webapp requests, scripts, or both).
+depending on whether it applies to web app requests, scripts, or both).
 
 Testing
 -------

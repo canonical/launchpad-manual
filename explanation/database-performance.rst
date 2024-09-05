@@ -88,7 +88,7 @@ can be used to do this in combination with a
 
 Be sure to clear these caches with a Storm invalidation hook, to avoid
 test suite fallout. Objects are not reused between requests on the
-appservers, so we're generally safe there. (Our storm and sqlbase
+appservers, so we're generally safe there. (Our storm and SQLBase
 classes within the Launchpad tree have these hooks, so you only need to
 manually invalidate if you are using storm directly).
 
@@ -137,7 +137,7 @@ one of these tools.
     
 
 -  StormStatementRecorder, LP_DEBUG_SQL=1, LP_DEBUG_SQL_EXTRA=1,
-   QueryCollector. In extremis you can also turn on statement logging in
+   QueryCollector. In extremes you can also turn on statement logging in
    postgresql. [Note: please add more detail if you are reading this and
    have the time and knowledge.]
 -  Raise an exception at a convenient point, to cause a real OOPS.
@@ -146,7 +146,7 @@ Efficient batching of SQL result sets: StormRangeFactory
 --------------------------------------------------------
 
 Batched result sets are rendered via the class
-canonical.launchpad.webapp.bachting.BatchNavigator. (This class is a
+canonical.launchpad.webapp.batching.BatchNavigator. (This class is a
 thin wrapper around lazr.batchnavigator.BatchNavigator.)
 
 BatchNavigator delegates the retrieval of batches from a result set to

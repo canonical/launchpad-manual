@@ -8,3 +8,5 @@ Getting started
    getting
    running
    database-setup
+   develop-with-buildd
+   use-soyuz-locally

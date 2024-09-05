@@ -6,7 +6,7 @@ Storm Migration Guide
 This guide explains how certain SQLObject concepts map to equivalent
 Storm concepts. It expects a level of familiarity in how SQLObject works
 (or at least how it is used in Launchpad). It is not a full tutorial on
-how to use Storm either – see https://storm.canonical.com/Tutorial for
+how to use Storm either - see https://storm.canonical.com/Tutorial for
 that.
 
 Differences
@@ -30,8 +30,8 @@ can be used to refer to objects in multiple databases (or to objects in
 the same database over different DB connections, as you might want to do
 in tests).
 
-There are two main ways to access the main store. One is explicitely via
-the \`IStoreSelector\` utility:
+There are two main ways to access the main store. One is explicitly via
+the ``IStoreSelector`` utility:
 
 ::
 
@@ -48,7 +48,7 @@ Use the master flavor if you need to update the objects. Use the slave
 flavor to offload a search to a replica database and don't mind the
 search being made on data a few seconds out of date. Use the default
 flavor if you don't need to make changes, but need an up to date copy of
-the database (eg. most views, as the object you are viewing might just
+the database (e.g. most views, as the object you are viewing might just
 have been created) - Launchpad will choose an appropriate flavor.
 
 The other method is from an existing object:
@@ -62,7 +62,7 @@ The other method is from an existing object:
 
 The second form is often more convenient, and is preferred if you don't
 need to make updates and want them to play nicely with objects from an
-unknown store (eg. passed in via your method parameters).
+unknown store (e.g. passed in via your method parameters).
 
 Utility methods and Stores
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -77,9 +77,7 @@ uses the master store:
 -  If you are doing a POST (which means your overall operation may
    write)
 -  If you are doing a GET, but have recently written (which means the
-   slaves may
-
-``not have your latest changes).``
+   slaves may not have your latest changes).
 
 So the only times you'll run into trouble are if:
 
@@ -87,9 +85,7 @@ So the only times you'll run into trouble are if:
 -  a GET operation relies on data that was written to the database by
    another GET
 -  a GET operation relies on data that was written to the database by
-   another browser
-
-``instance.``
+   another browser instance.
 
 We plan to address these issues better once we're using Python 2.5 and
 its support for **with** statements / context management.
@@ -152,9 +148,9 @@ takes the class and the primary key of the object as arguments:
 Querying Objects
 ~~~~~~~~~~~~~~~~
 
-The equivalent of SQLObject's \`select`, \`selectBy`, \`selectOne`,
-\`selectOneBy`, \`selectFirst\` and \`selectFirstBy\` methods is
-\`Store.find()`. It acts quite similar to the equivalent SQLObject
+The equivalent of SQLObject's ``select``, ``selectBy``, ``selectOne``,
+``selectOneBy``, ``selectFirst`` and ``selectFirstBy`` methods is
+``Store.find()``. It acts quite similar to the equivalent SQLObject
 methods, and the following are equivalent:
 
 ::
@@ -167,12 +163,12 @@ methods, and the following are equivalent:
 Note that the "`.q.`" bit is not required in the second example. The
 first two versions are preferred to direct SQL since they allow Storm to
 determine which tables are being used in the query automatically. As
-with SQLObject, no query is issued when executing \`find()`: that is
+with SQLObject, no query is issued when executing ``find()``: that is
 delayed until you try to access the result set.
 
-The behaviour of \`selectOne\` and \`selectFirst\` are covered by the
-\`one\` and \`first\` methods on the result set. You can chain them with
-the \`find\` call if it is appropriate:
+The behaviour of ``selectOne`` and ``selectFirst`` are covered by the
+``one`` and ``first`` methods on the result set. You can chain them with
+the ``find`` call if it is appropriate:
 
 ::
 
@@ -199,9 +195,9 @@ Unlike SQLObject, the ordering is applied to the result set rather than
 creating another one. The method does return the result set though, to
 make it possible to chain the calls when constructing a result set.
 Similar to SQLObject, a table can specify the default ordering for
-results with the \`__storm_order__\` class attribute.
+results with the ``__storm_order__`` class attribute.
 
-See the \`storm.store.ResultSet\` doc strings and the Storm tutorial for
+See the ``storm.store.ResultSet`` doc strings and the Storm tutorial for
 more details on what is possible.
 
 Defining Tables
@@ -210,12 +206,12 @@ Defining Tables
 Some of the primary differences between SQLObject and Storm database
 class definitions are:
 
--  Subclass from \`lp.services.database.stormbase.StormBase\` instead of
-   \`lp.services.database.sqlbase.SQLBase`. (Subclassing
-   \`storm.base.Storm\` also works in most cases, but \`StormBase\` adds
-   a \`storm_invalidate\` hook for cached properties.)
--  Use the \`__storm_table__\` attribute to set the table name instead
-   of \`_table`.
+-  Subclass from ``lp.services.database.stormbase.StormBase`` instead of
+   ``lp.services.database.sqlbase.SQLBase``. (Subclassing
+   ``storm.base.Storm`` also works in most cases, but ``StormBase`` adds
+   a ``storm_invalidate`` hook for cached properties.)
+-  Use the ``__storm_table__`` attribute to set the table name instead
+   of ``_table``.
 -  The primary key must be defined explicitly. This will usually look
    like:
 
@@ -229,35 +225,35 @@ class definitions are:
    id = Int(primary=True)
 
 -  The class should have a constructor if appropriate (some classes like
-   \`BugSubscription\` may not need one). Note that the constructor
+   ``BugSubscription`` may not need one). Note that the constructor
    should not usually add the object to a store -- leave that for a
-   \`FooSet.new()\` method, or let it be inferred by a relation.
-   **BarryWarsaw: what if there is no \`FooSet\` or relation? See
+   ``FooSet.new()`` method, or let it be inferred by a relation.
+   **Barry Warsaw: what if there is no ``FooSet`` or relation? See
    question below.**
 -  Default result set ordering should be set using the
-   \`__storm_order__\` property rather than \`_defaultOrder`.
+   ``__storm_order__`` property rather than ``_defaultOrder``.
 -  Use the column definition classes are found in \`storm.properties`,
-   and do not use the \`Col\` suffix. In general, they will follow
+   and do not use the ``Col`` suffix. In general, they will follow
    Python's type naming conventions rather than SQL's (e.g. TimeDelta
    rather than Interval).
--  There is no equivalent of \`alternateID=True`. The \`Store.find()\`
-   method provides equivalent functionality to the \`byColumnName\`
+-  There is no equivalent of ``alternateID=True``. The ``Store.find()``
+   method provides equivalent functionality to the ``byColumnName``
    methods generated by this argument.
 -  To specify that a column can not contain NULLs, use
-   \`allow_none=False\` rather than \`notNull=True`. Note that if NULLs
-   are found in such columns, \`NoneError\` will be raised.
--  If no \`default\` is specified for a column, the database default
-   will be used. So \`default=DEFAULT\` or similar can be removed.
--  Be sure your table has a \`PRIMARY KEY\` constraint defined,
-   otherwise your \`id\` column will not get set automatically and you
-   will get an \`IntegrityError\` from PostgreSQL.
+   ``allow_none=False`` rather than ``notNull=True``. Note that if NULLs
+   are found in such columns, ``NoneError`` will be raised.
+-  If no ``default`` is specified for a column, the database default
+   will be used. So ``default=DEFAULT`` or similar can be removed.
+-  Be sure your table has a ``PRIMARY KEY`` constraint defined,
+   otherwise your ``id`` column will not get set automatically and you
+   will get an ``IntegrityError`` from PostgreSQL.
 
 Foreign Key References
 ^^^^^^^^^^^^^^^^^^^^^^
 
-The equivalent of SQLObject's \`ForeignKey\` class is \`Reference`. A
-Storm \`Reference\` property creates a relationship between a local
-column and a remote column. Unlike \`ForeignKey`, it does not implicitly
+The equivalent of SQLObject's ``ForeignKey`` class is ``Reference``. A
+Storm ``Reference`` property creates a relationship between a local
+column and a remote column. Unlike ``ForeignKey``, it does not implicitly
 create the FK column. So the following definitions are equivalent:
 
 ::
@@ -273,8 +269,8 @@ create the FK column. So the following definitions are equivalent:
 The columns can be passed directly to Reference(), or can be passed as
 strings that are looked up on first use.
 
-The \`Reference\` class is also used to replace SQLObject's
-\`SingleJoin\` class:
+The ``Reference`` class is also used to replace SQLObject's
+``SingleJoin`` class:
 
 ::
 
@@ -288,8 +284,8 @@ The \`Reference\` class is also used to replace SQLObject's
 Reference Sets
 ^^^^^^^^^^^^^^
 
-The \`SQLMultipleJoin\` and \`SQLRelatedJoin\` classes are replaced by
-Storm's \`ReferenceSet`:
+The ``SQLMultipleJoin`` and ``SQLRelatedJoin`` classes are replaced by
+Storm's ``ReferenceSet``:
 
 ::
 
@@ -307,16 +303,16 @@ Storm's \`ReferenceSet`:
                               order_by=Person.name)
 
 While the SQLObject properties return plain result sets, the Storm
-properties return \`BoundReferenceSet\` objects. Some differences
+properties return ``BoundReferenceSet`` objects. Some differences
 include:
 
--  \`add(obj)\` and \`remove(obj)\` methods are provided for adding and
+-  ``add(obj)`` and ``remove(obj)`` methods are provided for adding and
    removing objects from the set. These are roughly equivalent to the
-   automatic \`addFoo()\` and \`removeFoo()\` methods that SQLObject
+   automatic ``addFoo()`` and ``removeFoo()`` methods that SQLObject
    generates. For reference sets that join through a third table, Storm
    will take care of inserting and deleting rows as needed.
--  A \`find()\` method is provided for searching for objects within the
-   reference set. This behaves a lot like \`Store.find()\` without the
+-  A ``find()`` method is provided for searching for objects within the
+   reference set. This behaves a lot like ``Store.find()`` without the
    first argument.
 
 Property Setters / Validators
@@ -324,20 +320,20 @@ Property Setters / Validators
 
 SQLObject provided two ways of controlling how variables were set:
 
-1. magic \`_set_columnName()\` methods.
+1. magic ``_set_columnName()`` methods.
 2. the validator argument on column definitions.
 
 Storm does not support magic methods but does have validators (albeit in
 a simpler form than SQLObject). A validator is a function that takes
-\`(object, attr_name, new_value)\` as arguments and returns the value
+``(object, attr_name, new_value)`` as arguments and returns the value
 that should be set. This allows validation to be performed on the new
 value (by raising an exception on bad values), and transformation of the
-value if appropriate (by returning something other than \`new_value`).
+value if appropriate (by returning something other than ``new_value``).
 
-A validator can be set for a column with the \`validator\` argument in
+A validator can be set for a column with the ``validator`` argument in
 the column definition.
 
-You may notice some uses of \`storm_validator\` in code using the
+You may notice some uses of ``storm_validator`` in code using the
 compatibility layer. As the compatibility layer does not implement the
 either of the SQLObject validation APIs, this was done to allow use of
 Storm validators without completely rewriting the definitions.
@@ -346,7 +342,7 @@ Prejoins
 ^^^^^^^^
 
 Storm's equivalent of prejoins is tuple finds. To select all products
-that are part of \`launchpad-project\` and their owners, we can do:
+that are part of ``launchpad-project`` and their owners, we can do:
 
 ::
 
@@ -389,14 +385,14 @@ This result set will return (product, owner, driver) tuples.
 Direct SQL Queries
 ~~~~~~~~~~~~~~~~~~
 
-To perform direct SQL queries, we previously used the \`cursor()\`
-function from \`lp.services.database.sqlbase\` to get a cursor on the
+To perform direct SQL queries, we previously used the ``cursor()``
+function from ``lp.services.database.sqlbase`` to get a cursor on the
 connection being used by SQLObject. These uses should be converted to
-use \`Store.execute()`, which will make sure pending changes have been
+use ``Store.execute()``, which will make sure pending changes have been
 flushed to the database first in order to stay consistent.
 
-This method returns a result object with \`get_one\` and \`get_all\`
-methods that act like a cursor's \`fetchone\` and \`fetchall\` methods.
+This method returns a result object with ``get_one`` and ``get_all``
+methods that act like a cursor's ``fetchone`` and ``fetchall`` methods.
 It also supports iteration.
 
 ::
@@ -412,18 +408,18 @@ A good order to migrate code is:
 
 1. Convert column properties to use the Storm syntax. This should be a
    no-op change, and not affect external code.
-2. Convert \`ForeignKey()\` definitions to an appropriate pair of
-   \`Int()\` and \`Reference()\` definitions.
-3. Convert \`sync()`, \`syncUpdate()`, \`destroySelf()`, etc calls to
+2. Convert ``ForeignKey()`` definitions to an appropriate pair of
+   ``Int()`` and ``Reference()`` definitions.
+3. Convert ``sync()``, ``syncUpdate()``, ``destroySelf()``, etc calls to
    Storm equivalents.
-4. Convert uses of \`Class.select*()\` to use \`find()`. Note that you
+4. Convert uses of ``Class.select*()`` to use ``find()``. Note that you
    lose prejoins support here, so use tuple finds as appropriate. Change
    queries to use Storm expressions rather than sqlbuilder expressions.
-5. Convert \`SQLMultipleJoin\` and \`SQLRelatedJoin\` to
-   \`ReferenceSet()`. As this changes the API of the class a bit, it
+5. Convert ``SQLMultipleJoin`` and ``SQLRelatedJoin`` to
+   ``ReferenceSet()``. As this changes the API of the class a bit, it
    will probably require changes external to the class.
 6. Change the class to derive from
-   \`lp.services.database.stormbase.StormBase\` instead of \`SQLBase`.
+   ``lp.services.database.stormbase.StormBase`` instead of ``SQLBase``.
 
 This list is roughly ordered based on the locality of changes and based
 on dependencies between changes.
@@ -532,45 +528,41 @@ Questions
 
 12-Aug-2008
 
--  Some of our ForeignKey columns had notNull=True but Storm's Reference
-   class
+-  Some of our ForeignKey columns had ``notNull=True`` but Storm's Reference
+   class does not accept ``allow_none=False`` keyword argument. 
 
-``does not accept allow_none=False keyword argument.``
-
--  
-
-   -  Put the \`allow_none=False\` on the \`Int\` rather than on the
-      \`Reference`.
+   -  Put the ``allow_none=False`` on the ``Int`` rather than on the
+      ``Reference``.
 
 .. raw:: html
 
    <!-- end list -->
 
 -  How to actually convert a UtcDateTimeCol to a DateTime? For now, I'm
-   using
+   using a DateTime with ``tzinfo=pytz.timezone('UTC')`` keyword argument. 
+   Also, does ``default=UTC_NOW`` still work?
 
-| ``a DateTime with tzinfo=pytz.timezone('UTC') keyword arg.  Also, does``
-| ``default=UTC_NOW still work?``
+   - Use ``default_factory=datetime.utcnow`` instead.
 
-:literal:`bigjools: use `default_factory=datetime.utcnow` instead.`
+.. raw:: html
 
--  Can I still use EnumCol, or is there a better way to hook up with our
+   <!-- end list -->
 
-``DBEnums?``
+-  Can I still use EnumCol, or is there a better way to hook up with our DBEnums?
 
--  
+   -  Try ``lp.services.database.enumcol.DBEnum``.
 
-   -  Try lp.services.database.enumcol.DBEnum.
+.. raw:: html
 
+   <!-- end list -->
+   
 03-Oct-2008
 
--  I'm still confused about the right way to add an object to a store.
-   If I'm
-
-| ``using native Storm APIs (as all new code should, right?) should I add a``
-| :literal:`Store.add() call my database object's `__init__()`?  That seems to be the`
-| ``most straightforward translation of the SQLObject compatibility layer.  And``
-| ``if the answer is "yes", then how do I get the Store to use?  I could use``
-| :literal:`\`Store.of(someobj).add(self)` but `someobj` might not be in the right store.`
-| :literal:`I could use the `getUtility()` trick, but it seems wrong that a database`
-| :literal:`module should be importing an interface from `webapp`.`
+-  I'm still confused about the right way to add an object to a store. 
+   If I'm using native Storm APIs (as all new code should, right?) should 
+   I add a ``Store.add()`` call my database object's ``__init__()``? 
+   That seems to be the most straightforward translation of the SQLObject compatibility layer. 
+   And if the answer is "yes", then how do I get the Store to use?
+   I could use ``Store.of(someobj).add(self)`` but ``someobj`` might not be in the right store. 
+   I could use the ``getUtility()`` trick, but it seems wrong that a database 
+   module should be importing an interface from ``webapp``.

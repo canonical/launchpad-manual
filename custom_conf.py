@@ -129,14 +129,10 @@ linkcheck_ignore = [
     '/Background', 
     '/Concepts',  # needs update
     '/HowToUseCodehostingLocally',  # needs update
-    '/Loggerhead',  # needs update
     'Database/TableRenamePatch',  # needs update
     'Debugging#Profiling%20page%20requests',  # needs update
     'Debugging#Special%20URLs',  # needs update
     'JavascriptUnitTesting/MockIo',  # needs update
-    'Soyuz',  # needs update
-    'UI/CssSprites',  # needs update
-    'attachment:codehosting.png',  # needs update
     'https://git.launchpad.net/launchpad-mojo-specs/tree/mojo-lp-git/services',  # private
     'https://wiki.canonical.com/InformationInfrastructure/OSA/LaunchpadProductionStatus',  # private
     'https://wiki.canonical.com/Launchpad/PolicyandProcess/ProductionChange',  # private
@@ -145,6 +141,7 @@ linkcheck_ignore = [
     'irc.libera.chat',  # this is not an HTTP link
     r'https://github\.com/canonical/fetch-service*',  # private
     r'https://github\.com/canonical/fetch-operator*',  # private
+    'https://git.launchpad.net/charm-launchpad-buildd-image-modifier/tree/files/scripts/setup-ppa-buildd',  # private
     ]
 
 # Pages on which to ignore anchors

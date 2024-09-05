@@ -99,6 +99,11 @@ Deployment
 We deploy the fetch service using the specs defined in
 `fetch service mojo specs <https://git.launchpad.net/~launchpad/launchpad-mojo-specs/+git/private/+ref/master>`_.
 
+In order to be able to evaluate new fetch service versions, we use different
+Snap channels for qastaging and production, so we are able to
+test new releases. This information is both defined in above mentioned mojo
+specs, and in `ST118 fetch service release process <https://docs.google.com/document/d/1HZvFo78LqFGgdpM7v3teG9gV-pMyvXpXTD1vcLLv_d0/>`_.
+
 Qastaging
 ~~~~~~~~~
 For qastaging deployment, SSH into

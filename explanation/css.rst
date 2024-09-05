@@ -39,7 +39,7 @@ If you are dealing with sprites you may also have to run:
 
    make sprite_image
 
-`More info on sprites <UI/CssSprites>`__
+:doc:`More info on sprites <css-sprites>`.
 
 Fonts
 -----
