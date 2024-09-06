@@ -105,7 +105,7 @@ A quick sketch of how to read core files produced from production machines by IS
 1. Have core dump files moved to osageorang
 2. Ensure you have access to osageorange. You'll need to ping a member of IS on #launchpad-ops to get access; you cannot ssh from devpad to osageorange.
 3. Get pygdb (lp:pygdb) in your $HOME on osageorang
-4. ssh to orageorange, and do:
+4. ssh to osageorange, and do:
 ```
 schroot -c lucid-cat-amd64
 ```
