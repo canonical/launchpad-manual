@@ -130,8 +130,6 @@ linkcheck_ignore = [
     '/Concepts',  # needs update
     '/HowToUseCodehostingLocally',  # needs update
     'Database/TableRenamePatch',  # needs update
-    'Debugging#Profiling%20page%20requests',  # needs update
-    'Debugging#Special%20URLs',  # needs update
     'JavascriptUnitTesting/MockIo',  # needs update
     'https://git.launchpad.net/launchpad-mojo-specs/tree/mojo-lp-git/services',  # private
     'https://wiki.canonical.com/InformationInfrastructure/OSA/LaunchpadProductionStatus',  # private
