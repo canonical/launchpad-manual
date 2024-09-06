@@ -30,6 +30,7 @@ There are some things that can make your journey of contributing to Launchpad mu
    :maxdepth: 2
 
    launchpad-development-tips
+   mockio
 
 Operating Launchpad
 -------------------
