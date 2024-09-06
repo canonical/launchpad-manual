@@ -95,9 +95,27 @@ Debugging With GDB
 
 Some kinds of bugs (segfaults, hung processes, out-of-control daemons)
 are hard to debug from within Python. See
-`Debugging/GDB <Debugging/GDB>`__ for how to debug them.
+`Debugging with GDB <https://wiki.python.org/moin/DebuggingWithGdb>` for how to debug them.
 
-There's also a doc on `Debugging Core Dumps <Debugging/CoreDumps>`__.
+Debugging Core Dumps 
+====================
+
+A quick sketch of how to read core files produced from production machines by IS:
+
+1. Have core dump files moved to osageorang
+2. Ensure you have access to osageorange. You'll need to ping a member of IS on #launchpad-ops to get access; you cannot ssh from devpad to osageorange.
+3. Get pygdb (lp:pygdb) in your $HOME on osageorang
+4. ssh to orageorange, and do:
+```
+schroot -c lucid-cat-amd64
+```
+This puts you in a chroot with the same packages installed as on production
+5. Then cd into pygdb dir and do something like:
+```
+python backtrace.py -c $PATH_TO_FILE/core.XXX > ~/core.XXX-out.txt
+```
+6. Read output and profit! 
+
 
 Debugging Buildd with the Visual Studio Code IDE
 ================================================
@@ -436,11 +454,11 @@ nasty-looking tracebacks that says something about
      LocationError: (<lazr.restful.tales.WebLayerAPI object at 0xd932ccc>, 'json')
 
 then try visiting the corresponding URL in the web services API. For
-example, if https://bugs.launchpad.test/redfish gets an `unwieldy
-traceback <http://paste.ubuntu.com/355733/>`__, then try
-https://launchpad.test/api/beta/redfish instead; you'll often get a
-*much* more `comprehensible error
-trace <http://paste.ubuntu.com/355734/>`__ that way.
+example, if https://bugs.launchpad.net/launchpad gets an unwieldy
+traceback, then try
+https://launchpad.net/api/beta/launchpad instead; you'll often get a
+*much* more comprehensible error
+trace that way.
 
 Using iharness for digging error tracebacks
 ===========================================
