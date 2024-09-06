@@ -307,7 +307,7 @@ matic
 maximize
 mbox
 mboxMailer
-Meinel’s
+Meinel's
 meliae
 MemCache
 memcache
@@ -352,6 +352,7 @@ orm
 os
 OSA
 osageorang
+osageorange
 OWASP
 OWASP's
 PageSpeed
