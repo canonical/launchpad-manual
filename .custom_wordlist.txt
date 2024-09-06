@@ -70,6 +70,7 @@ Cmd
 CMDLINE
 Cobol
 codebase
+codebrowse
 Codehosting
 codehosting
 codeimport
@@ -296,6 +297,7 @@ MockIo
 mockups
 mojo
 mozilla
+mta
 natively
 NavigationMenu
 NavigationMenus
@@ -355,6 +357,7 @@ poller
 POMsgID
 pooler
 portlets
+postfix
 PostGreSQL
 PostgreSQL
 postgresql
@@ -522,6 +525,7 @@ testtools
 textarea
 TipsForReviewers
 TLS
+tmp
 todrop
 traceback
 tradeoff
