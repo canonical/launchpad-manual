@@ -40,12 +40,14 @@ Bionic's
 Blazingly
 bool
 boolean
+borked
 breakpoint
 browserconfig
 BrowserNotificationMessages
 brz
 BugSubscription
 bugtracker
+BugTask
 BugWatch
 BugWatches
 bugzilla
@@ -55,8 +57,13 @@ buildd
 builddeb
 bzr
 bzr's
+callgrind
 Canonical's
 CanonicalUrlData
+capitalization
+CategoryTesting
+CategoryTipsAndTricks
+cd
 Centralized
 centralized
 cfg
@@ -66,6 +73,7 @@ changelog
 changeset
 changesets
 charmcraft
+chroot
 Cmd
 CMDLINE
 Cobol
@@ -89,9 +97,11 @@ cryptographic
 cryptographically
 CSCVS
 css
+ctl
 Ctrl
 customisable
 customisations
+customizations
 customize
 CVE
 Dalia
@@ -120,10 +130,13 @@ DecoratedResultSets
 defense
 defense
 deps
+deryck
 Desc
 dev
+devpad
 dh
 dia
+dir
 DirectDelivery
 directDelivery
 Distro
@@ -149,7 +162,9 @@ el
 else's
 emphasizes
 emphazising
+ENOSPC
 EnumCol
+environ
 epydoc
 Epytext
 ExceptionGuidelines
@@ -178,6 +193,7 @@ fti
 functiondef
 ganesha
 gangotri
+GDB
 geoIP
 geoip
 getFeatureFlag
@@ -224,6 +240,7 @@ IRangeFactory
 irc
 IRCMeetings
 iter
+iterable
 Javadoc
 javascript
 JavascriptUnitTesting
@@ -232,7 +249,10 @@ jenkins
 jinja
 js
 JScript
+json
 JSONEncoder
+KCacheGrind
+kcachegrind
 keyring
 kiko
 kompare
@@ -244,6 +264,7 @@ LaunchpadFormView
 LaunchpadObjectFactory
 LaunchpadPpa
 LaunchpadProductionStatus
+LaunchpadStatementTracer
 LaunchpadView
 lazr
 libera
@@ -253,6 +274,7 @@ listdir
 ListRangeFactory
 LivePatching
 LiveScript
+LocationError
 logpoints
 logrotate
 lookup
@@ -265,6 +287,7 @@ Lp's
 lpbuildbot
 lpbuildd
 lpci
+LPCONFIG
 LPHowTo
 lpnet
 lpreview
@@ -284,6 +307,8 @@ matic
 maximize
 mbox
 mboxMailer
+Meinel’s
+meliae
 MemCache
 memcache
 milestoneoverlay
@@ -294,6 +319,7 @@ minimize
 mmm
 MockIo
 mockups
+moin
 mojo
 mozilla
 natively
@@ -302,6 +328,7 @@ NavigationMenus
 newsampledata
 nfs
 NPM
+normalized
 NTP
 NULLs
 né
@@ -324,6 +351,7 @@ organizing
 orm
 os
 OSA
+osageorang
 OWASP
 OWASP's
 PageSpeed
@@ -336,6 +364,7 @@ PatchSubmission
 pdb
 pentested
 performant
+PerLanguageStatisticsView
 pgbouncer
 pgSQL
 pgsql
@@ -388,10 +417,12 @@ programmatically
 prometheus
 proname
 proxied
+pstats
 psql
 px
 py
 pydoctor
+pygdb
 pypa
 PyPI
 qa
@@ -439,6 +470,7 @@ setupDTCBrowser
 setupRosettaExpertBrowser
 setuptools
 SFTP
+SIGHUP
 simplejson
 simplestreams
 Slony
@@ -464,6 +496,7 @@ sqlbuilder
 SQLObject
 SQLObject's
 SQLObjectResultSets
+sqltrace
 SRE
 SREs
 srv
@@ -471,7 +504,9 @@ SshConnectionMultiplexing
 SSO
 StagingServer
 standardized
+stderr
 stdin
+stdout
 stepto
 steve
 stg
@@ -499,8 +534,10 @@ synchronize
 synchronizing
 syntax
 syntaxes
+sysctl
 systemd
 TableRenamePatch
+tal
 talisker
 TAs
 TeamEmail
@@ -520,10 +557,13 @@ TestsFromChanges
 TestsStyleGuide
 testtools
 textarea
+thusly
 TipsForReviewers
 TLS
+tmp
 todrop
 traceback
+tracebacks
 tradeoff
 tradeoffs
 Transactional
@@ -531,10 +571,12 @@ TranslationGroup
 TranslationImportQueue
 TranslationMessage
 TranslationTemplateItem
+traveled
 traversers
 triaged
 triaging
 tsearch
+txt
 Ubuntu
 ubuntu
 UCT
@@ -543,6 +585,7 @@ unauthorized
 uncheck
 Uncomment
 unittest
+unittests
 unobvious
 unproxied
 unsuffixed
@@ -567,12 +610,14 @@ VM
 VMs
 VPN
 VPOTExport
+VSCode
 webapp
 webdav
 webhook
 webservice
 webservice's
 webservices
+wget
 wgrant's
 whitespace
 wildcherry

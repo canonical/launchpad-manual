@@ -139,7 +139,7 @@ F1 to open the command palette and type
 
    Remote-SSH: Open SSH Configuration file
 
-. From the drop-down choose your home ssh cofing file (~/.ssh/config -
+. From the drop-down choose your home ssh config file (~/.ssh/config -
 if you don't have one create it and add your configuration). Add the
 following entry to it (for Host I have the name of my Buildd VM and for
 
@@ -355,7 +355,7 @@ capitalization and space normalized. For example,
    StormStatementRecorder(lambda sql: 'STRUCTURALSUBSCRIPTION' in sql)
 
 would get you tracebacks when the SQL has something to do with
-structural subscriptons.
+structural subscriptions.
 
 Getting more information in your tracebacks
 -------------------------------------------
@@ -537,7 +537,7 @@ or
    qastaging
 
 , this is already set up for you. You may need to ask a LOSA to
-temporaily increase the timeout for the page that you want to analyze
+temporarily increase the timeout for the page that you want to analyze
 using the feature flags mechanism (e.g., if you want to profile
 BugTask:+index pages, you'll need to ask LOSAs to add something like
 
