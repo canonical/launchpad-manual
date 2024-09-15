@@ -10,3 +10,4 @@ Setting up and understanding Launchpad
    pip
    launchpad-ppa
    testing
+   concepts

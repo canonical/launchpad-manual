@@ -46,15 +46,15 @@ Parts of Launchpad
 
 After understanding the goals and approaches of the project, dive into the details by exploring the below components of the application.
 
-
 .. toctree::
    :maxdepth: 2
 
    parts-of-launchpad
 
-
 JavaScript
 ----------
+
+These pages explain how to develop, test, and build using the YUI Test framework.
 
 .. toctree::
    :maxdepth: 2
@@ -64,6 +64,8 @@ JavaScript
 Static assets
 -------------
 
+Launchpad's visual style is controlled by CSS and images that you set up and build. 
+
 .. toctree::
    :maxdepth: 2
 
@@ -71,6 +73,8 @@ Static assets
 
 Database
 --------
+
+This section gives an overview of how Launchpad interacts with the PostgreSQL database.
 
 .. toctree::
    :maxdepth: 2
