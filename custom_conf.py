@@ -101,7 +101,12 @@ slug = ""
 # Set up redirects (https://documatt.gitlab.io/sphinx-reredirects/usage.html)
 # For example: 'explanation/old-name.html': '../how-to/prettify.html',
 
-redirects = {}
+redirects = {
+    '/tutorials': '/developing-launchpad/tutorials',
+    '/how-to': '/developing-launchpad/how-to',
+    '/explanation': '/developing-launchpad/explanation',
+    '/reference': '/developing-launchpad/reference',
+}
 
 ############################################################
 ### Link checker exceptions
