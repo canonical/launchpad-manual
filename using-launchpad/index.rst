@@ -1,7 +1,5 @@
-.. _home:
-
-Launchpad Manual
-================
+Using Launchpad
+===============
 
 **Launchpad is a collaboration platform for open-source projects.**
 
@@ -27,7 +25,26 @@ professionals, open-source maintainers, and hobbyists alike.**
 In this documentation
 ---------------------
 
-We have documentation for Launchpad users and developers.
+..  grid:: 1 1 2 2
+
+   ..  grid-item:: :doc:`Tutorials <tutorials/index>`
+
+       **Start here** - hands-on introductions to Launchpad for new developers
+
+   ..  grid-item:: :doc:`How-to guides <how-to/index>`
+
+      **How-to guides** - step-by-step guides covering key operations and common tasks
+
+.. grid:: 1 1 2 2
+   :reverse:
+
+   .. grid-item:: :doc:`Reference <reference/index>`
+
+      **Technical information** - specifications, APIs, architecture
+
+   .. grid-item:: :doc:`Explanation <explanation/index>`
+
+      **Discussion and clarification** of key topics
 
 ---------
 
@@ -45,17 +62,9 @@ contributions, suggestions, fixes and constructive feedback.
 
 .. toctree::
    :hidden:
+   :maxdepth: 2
 
-   developing-launchpad/index
-
-.. toctree::
-   :hidden:
-
-   using-launchpad/index
-
-.. toctree::
-   :hidden:
-   
-   help
-   contribute-to-our-docs
-   
+   tutorials/index
+   how-to/index
+   reference/index
+   explanation/index
