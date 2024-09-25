@@ -28,6 +28,7 @@ garbo
 git
 Grafana
 IAM
+IntelliSense
 innerHTML
 installable
 haproxy
@@ -79,6 +80,8 @@ UI
 undercommunication
 updateable
 VM
+VSCode
+VSCode's
 xUnit
 XXXes
 YAML
