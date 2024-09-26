@@ -206,7 +206,7 @@ want. It should look like this:
 8. If you have removed or renamed a table or column, ensure that your
    patch includes appropriate ``COMMENT`` statements.
 
-9. **Run ``make schema`` again to ensure that it works, and that you now
+9. **Run** ``make schema`` **again to ensure that it works, and that you now
    have a pristine database with the new sample data.** If you don't
    want to blow away your ``launchpad_dev`` database, then you can use
    ``make -C database/schema test`` instead to update only the test
@@ -245,8 +245,8 @@ Rules for patches
    extraordinarily small (< 100's of rows).
 
 5. When changing existing DB functions, start your patch with the
-   original version (`SELECT pg_get_functiondef(oid) FROM pg_proc WHERE
-   proname IN ('foofunc', 'barfunc') ORDER BY proname;`). This makes it
+   original version (``SELECT pg_get_functiondef(oid) FROM pg_proc WHERE
+   proname IN ('foofunc', 'barfunc') ORDER BY proname;``). This makes it
    much easier to review the diff.
 
 Sample data
