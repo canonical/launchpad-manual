@@ -9,8 +9,6 @@ Step-by-step procedure
 1. Prepare a branch containing just `your database
    patch <#Making_a_database_patch>`__ for review.
 
--  
-
    -  The patch must either be a hot patch (function / trigger / index)
       or a cold patch (model change / model change + function/trigger).
       If you need both hot and cold changes, you require multiple
@@ -18,7 +16,7 @@ Step-by-step procedure
 
 2. Submit a merge proposal for your branch, requesting a **db** review
    from launchpad-reviewers. For hot patches the target branch is
-   \`master`, but for cold patches it should be \`db-devel`.
+   ``master``, but for cold patches it should be ``db-devel``.
 
 3. Iterate on the branch as needed. The DB review process can sometimes
    require significant changes to achieve acceptable performance on
@@ -35,7 +33,7 @@ Step-by-step procedure
    in stable and not yet deployed to all affected service instances.
 
 
-6. Land the branch on \`master\` (for hot patches) or \`db-devel\` (for
+6. Land the branch on ``master`` (for hot patches) or ``db-devel`` (for
    cold patches) by setting the merge proposal to Approved as usual,
    unless someone has stated it is being landed it on your behalf. (Only
    Canonical staff can do the landing step).
@@ -47,7 +45,7 @@ Step-by-step procedure
 
 8. [Cold patches] After the branch reaches staging check the duration
    that the patch took to apply by rsyncing
-   \`pamola.internal::staging-logs/dbupgrade.log\` from carob. If it
+   ``pamola.internal::staging-logs/dbupgrade.log`` from carob. If it
    took more than 15 seconds, mark the revision bad and revert it.
 
 9. [Cold patches] QA the patch as usual, check things still work on
@@ -81,8 +79,8 @@ other. Test \*only\* code may be included if absolutely necessary.
 Exceptions to this rule require approval from the project lead, because
 deploying them will require a 1 hour plus complete downtime window.
 
-Cold schema patches always land on \`db-devel`. After they are made live
-they will be promoted to \`master\` as part of the go-live process.
+Cold schema patches always land on ``db-devel``. After they are made live
+they will be promoted to ``master`` as part of the go-live process.
 
 Hot Patches
 ~~~~~~~~~~~
@@ -120,15 +118,15 @@ Reviews
 -------
 
 All schema changes should have reviews of type "db" requested from the
-regular review team (`launchpad-reviewers`). An approve vote from any DB
+regular review team (``launchpad-reviewers``). An approve vote from any DB
 reviewer is sufficient to land the patch.
 
 As schema changes have no appserver code changes landed at the same
 time, no other reviews are needed (unless an exception to the no-mixing
 rule has been granted, in which case a normal review is also needed).
 
-Changes to the permissions in \`database/schema/security.cfg\` or the
-comments in \`database/schema/comments.sql\` are not schema patches and
+Changes to the permissions in ``database/schema/security.cfg`` or the
+comments in ``database/schema/comments.sql`` are not schema patches and
 do not require db review when done on their own. If they are included in
 a schema patch then the db reviewer will review them.
 
@@ -138,7 +136,7 @@ Patch ids
 The schema application code needs a unique id for each patch. This is
 allocated by editing a shared document stored in the `dbpatches
 repository <https://code.launchpad.net/~launchpad/+git/dbpatches>`__. If
-you are in \`~launchpad\` please allocate this yourself. Other
+you are in ``~launchpad`` please allocate this yourself. Other
 developers can ask any ~launchpad member to allocate a patch number for
 them.
 
@@ -153,16 +151,16 @@ Making a database patch
 
 You need to run these steps whenever you make a schema change,
 regardless of whether you intend to delete sample data or not. For
-example, if you are adding a new column to the \`Person\` table, these
+example, if you are adding a new column to the ``Person`` table, these
 steps ensure that the sample data will include this new column.
 
-1. **Run \`make schema\` to get a pristine database of sample data.**
+1. Run ``make schema`` to get a pristine database of sample data.
 
 2. Claim a patch number in `the dbpatches
    repository <https://code.launchpad.net/~launchpad/+git/dbpatches>`__
-   (be sure to commit and push back to the \`main\` branch).
+   (be sure to commit and push back to the ``main`` branch).
 
-# Create a SQL file in \`database/schema/\` containing the changes you
+# Create a SQL file in ``database/schema/`` containing the changes you
 want. It should look like this:
 
 ::
@@ -177,54 +175,54 @@ want. It should look like this:
    INSERT INTO LaunchpadDatabaseRevision VALUES (XXXX, YY, Z);
 
 3. Run your new SQL patch on the development database to ensure that it
-   works. Do this by running \`psql launchpad_dev -1 -f your-patch.sql\`
+   works. Do this by running ``psql launchpad_dev -1 -f your-patch.sql``
 
-4. Run \`psql launchpad_ftest_playground -f your-patch.sql\` as the
+4. Run ``psql launchpad_ftest_playground -f your-patch.sql`` as the
    ftest playground db is used to regenerate sampledata snapshots in the
-   following step. (Also be sure you ran \`psql launchpad_dev -f
-   your-patch.sql\` in the previous step-- this updates the dev
+   following step. (Also be sure you ran ``psql launchpad_dev -f
+   your-patch.sql`` in the previous step-- this updates the dev
    database's sampledata. Note that this is *not* sufficient to let the
    test suite see your changes: for that, you'll need to update
-   \`launchpad_ftest_template`, though it's simplest to run \`make
-   schema\` or \`make -C database/schema test\` as described below.)
+   ``launchpad_ftest_template``, though it's simplest to run ``make
+   schema`` or ``make -C database/schema test`` as described below.)
 
-5. You may wish to run \`make newsampledata`, although it isn't
+5. You may wish to run ``make newsampledata``, although it isn't
    critical; this will let you see what changes your patch would make to
    initial setups.
 
-``   1. This will produce a lot of noise. Feel free to ignore it.``
+   - This will produce a lot of noise. Feel free to ignore it.
 
-6. Review the sample data changes that occurred using \`git diff
-   database/sampledata`. This diff can be hard to review as-is. You
-   might want to use a graphical diff viewer like \`kompare\` or
-   \`meld\` which will make it easier. Make sure that you understand all
+6. Review the sample data changes that occurred using ``git diff
+   database/sampledata``. This diff can be hard to review as-is. You
+   might want to use a graphical diff viewer like ``kompare`` or
+   ``meld`` which will make it easier. Make sure that you understand all
    the changes you see.
 
-7. Move your pending SQL file into \`database/schema/\` with a name like
-   \`patch-xx-yy-zz.sql\` (where *xx* matches the existing patches), and
-   ending with the line \`INSERT INTO LaunchpadDatabaseRevision VALUES
-   (xx, yy, zz);`.
+7. Move your pending SQL file into ``database/schema/`` with a name like
+   ``patch-xx-yy-zz.sql`` (where *xx* matches the existing patches), and
+   ending with the line ``INSERT INTO LaunchpadDatabaseRevision VALUES
+   (xx, yy, zz);``.
 
 8. If you have removed or renamed a table or column, ensure that your
-   patch includes appropriate \`COMMENT\` statements.
+   patch includes appropriate ``COMMENT`` statements.
 
-9. **Run \`make schema\` again to ensure that it works, and that you now
+9. **Run ``make schema`` again to ensure that it works, and that you now
    have a pristine database with the new sample data.** If you don't
-   want to blow away your \`launchpad_dev\` database, then you can use
-   \`make -C database/schema test\` instead to update only the test
+   want to blow away your ``launchpad_dev`` database, then you can use
+   ``make -C database/schema test`` instead to update only the test
    databases.
 
-10. New tables and columns need corresponding \`COMMENT\` statements in
+10. New tables and columns need corresponding ``COMMENT`` statements in
     your patch.
 
-11. Make any necessary changes to \`database/schema/fti.py`,
-    \`database/schema/security.cfg`.
+11. Make any necessary changes to ``database/schema/fti.py``,
+    ``database/schema/security.cfg``.
 
 12. **Run the full test suite to ensure that your new schema doesn't
     break any existing tests/code by side effect.**
 
 13. Commit without sample data changes, push and propose for merging to
-    \`db-devel\`
+    ``db-devel``
 
 Rules for patches
 ~~~~~~~~~~~~~~~~~
@@ -232,9 +230,9 @@ Rules for patches
 1. Don't use the TRUNCATE or DROP TABLE statements as they don't work
    with Slony-I replication.
 
-2. To drop a table, move it into the \`todrop\` namespace using a
-   statement like \`ALTER TABLE FooBar SET SCHEMA todrop`. Then
-   \`upgrade.py\` will automatically drop these tables during the
+2. To drop a table, move it into the ``todrop`` namespace using a
+   statement like ``ALTER TABLE FooBar SET SCHEMA todrop``. Then
+   ``upgrade.py`` will automatically drop these tables during the
    downtime. Be careful about foreign keys: the drop order is undefined
    so foreign keys between the tables must be dropped explicitly, and
    foreign keys handled specially by application code (most branch and
@@ -242,7 +240,6 @@ Rules for patches
 
 3. Do not migrate data in schema patches unless the data size is
    extraordinarily small (< 100's of rows).
-
 
 4. Similarly, new columns must default NULL unless the data size is
    extraordinarily small (< 100's of rows).
@@ -266,7 +263,7 @@ In fact, there are now two sets of sampledata that need to be updated.
 
 We use sample data to provide well-known baseline data for the test
 suite, and to populate a developer's Launchpad instance so that
-\`launchpad.dev\` can display interesting stuff. There are some
+``launchpad.dev`` can display interesting stuff. There are some
 guidelines and recommendations you should be aware of before you make
 changes to the test suite sample data, or you may break the tests for
 yourself or others.
@@ -279,25 +276,25 @@ test's harness instead of adding new sample data. This will often make
 the tests themselves more readable because you're not relying on magical
 values in the sample database. Doing it this way also reduces the chance
 that your changes will break other tests by side-effect. Add the new
-data in your test's \`setUp()\` or in the narrative of your doctest.
-Because the test suite uses the \`launchpad_ftest_template\` database,
+data in your test's ``setUp()`` or in the narrative of your doctest.
+Because the test suite uses the ``launchpad_ftest_template`` database,
 there is no chance that running the test suite will accidentally alter
 the sample data.
 
-However, if you interact with the web U/I for \`launchpad.dev\` your
-changes will end up in the \`launchpad_dev\` database. This database is
+However, if you interact with the web U/I for ``launchpad.dev`` your
+changes will end up in the ``launchpad_dev`` database. This database is
 used to create the new sample data, so it is imperative that you run
-\`make schema\` to start with a pristine database before generating new
+``make schema`` to start with a pristine database before generating new
 sample data. If in fact you do want the effects of your u/i interactions
 to land in the new sample data, then the general process is to
 
--  run \`make schema\`
--  interact with \`launchpad.dev\`
--  follow the \`make newsampledata\` steps above.
+-  run ``make schema``
+-  interact with ``launchpad.dev``
+-  follow the ``make newsampledata`` steps above.
 
 **Be aware though that your generation of new sample data will probably
 have an effect on tests not related to your changes!** For example, if
-you generate new karma events, you will break the \`karma_sample_data\`
+you generate new karma events, you will break the ``karma_sample_data``
 tests because they expect all karma events to be dated prior to the year
 2002. If you make changes to the sample data, you **must** run the full
 test suite and ensure that you get no failures, otherwise there is a
@@ -306,9 +303,9 @@ very high likelihood that you will break the trunk.
 Resolving schema conflicts
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Resolving conflicts in \`current.sql\` manually is usually more trouble
+Resolving conflicts in ``current.sql`` manually is usually more trouble
 than it's worth. Instead, first resolve any conflicts in
-\`comments.sql`, then:
+``comments.sql``, then:
 
 ::
 
@@ -327,8 +324,8 @@ than it's worth. Instead, first resolve any conflicts in
 Notes on Changing security.cfg
 ------------------------------
 
-It is possible to land changes to security.cfg on \`master\` rather than
-\`db-devel`. These changes are deployed during no-downtime rollouts.
+It is possible to land changes to security.cfg on ``master`` rather than
+``db-devel``. These changes are deployed during no-downtime rollouts.
 
 Note that adding new users requires manual DB reconfiguration, so you
 need to file an RT ticket to grant access to relevant machines and make
