@@ -58,7 +58,7 @@ Code that is executed as part of the Launchpad web application.  Major features:
 Repository source code browser
 ------------------------------
 
-Launchpad uses the external `cgit <http://git.zx2c4.com/cgit/about/>`_ project to provide a web view of the repository contents.  
+Launchpad uses the external `cgit <https://git.zx2c4.com/cgit/>`_ project to provide a web view of the repository contents.  
 This is invoked by ``turnip`` when it receives HTTPS requests that don't correspond 
 to git smart HTTP protocol, and ``turnip``` deals with configuring ``cgit`` appropriately for each repository.
 
