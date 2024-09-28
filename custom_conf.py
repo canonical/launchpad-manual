@@ -141,6 +141,7 @@ linkcheck_ignore = [
     r'https://github\.com/canonical/fetch-service*',  # private
     r'https://github\.com/canonical/fetch-operator*',  # private
     'https://git.launchpad.net/charm-launchpad-buildd-image-modifier/tree/files/scripts/setup-ppa-buildd',  # private
+    'https://git.zx2c4.com/cgit/', # unfortunately very flaky
     ]
 
 # Pages on which to ignore anchors
