@@ -39,19 +39,16 @@ For staging and qastaging we should:
 user by running ``sudo -iu stg-launchpad``. 
 
 2. SSH into the ``launchpad-admin`` juju unit, by running 
-``in-model qastaging juju ssh launchpad-scripts/leader``.
+``in-model qastaging juju ssh launchpad-admin/leader``.
 
-3. Switch to ``launchpad`` user, by running 
-``sudo su launchpad``.
-
-4. Add the user to the team by running: 
+3. Add the user to the team by running: 
 
 .. code::
      
-     LPCONFIG=launchpad-admin /srv/launchpad/code/utilities/anoint-team-member <username> <team-name>
+     /srv/launchpad/code/utilities/anoint-team-member <username> <team-name>
 
 In our example:
 
 .. code::
      
-     LPCONFIG=launchpad-admin /srv/launchpad/code/utilities/anoint-team-member test-user admins
+     /srv/launchpad/code/utilities/anoint-team-member test-user admins
