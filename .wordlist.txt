@@ -80,7 +80,7 @@ URL
 undercommunication
 updateable
 VM
-xls
+xsl
 xUnit
 XXXes
 YAML

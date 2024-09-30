@@ -15,7 +15,12 @@ generate the documentation under ``lib/canonical/launchpad/apidoc``.
 Note that we should delete the aforementioned folder in order to generate
 fresh docs. 
 
-The command above is responsible to call the 
+..  code-block:: bash
+
+    $ rm -rf lib/canonical/launchpad/apidoc
+    $ make apidoc
+
+The command above is responsible for calling the 
 ``utilities/create-lp-wadl-and-apidoc.py`` script and generate the related
 documentation using the ``lp.services.webservice.wadl`` module utilities.
 
@@ -32,14 +37,14 @@ Example
 For example for the ``SocialAccount`` webservice we used the
 ``@exported_as_webservice_entry("social_account", as_of="beta")`` decorator.
 Thanks to that the ``social_account`` entry is created.
-We can use the aforementioned id to refer this ``wadl`` entry in the ``wadl-to-refhtml.xls`` file.
+We can use the aforementioned id to refer this ``wadl`` entry in the ``wadl-to-refhtml.xsl`` file.
 
 Let's say that we want to change the entry URL
 from ``URL: https://api.launchpad.net/beta/``
 to ``URL: https://api.launchpad.net/beta/<person.name>/+socialaccount/<id>``:
 we should create an entry inside the ``find-entry-uri`` template inside the 
-``wadl-to-refhtml.xls`` file and we should search our ``wadl`` entry using the 
-``social_account`` id. After that we can write ``xls`` code that will append the
+``wadl-to-refhtml.xsl`` file and we should search for ``wadl`` entry using the 
+``social_account`` id. After that we can write ``xsl`` code that will append the
 right string to the ``$base`` URL:
 
 ..  code-block:: html
