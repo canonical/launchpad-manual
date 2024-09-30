@@ -1,74 +1,82 @@
 Explanation
 ===========
 
-General
--------
+The ideas behind Launchpad
+---------------------------
+
+Explore these pages for an overview of the concepts and motivations behind the Launchpad project. 
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
-   running-details
-   framework
-   navigating
-   architecture
-   pip
-   charms
-   codeimport
-   performance
-   security
-   malone
-   scope
-   strategy
-   values
-   webapp-process
-   hacking
-   engineering-overview-translations
-   registry
-   code
-   url-traversal
-   template-reuse
-   navigation-menus
-   mail
-   feature-flags
-   branches
-   pre-merge-reviews
-   launchpad-ppa
-   testing
-   datetime-usage
-   error-explanations
-   security-policy
-   xxx-policy
-   concepts
+   ideas-behind-launchpad
+
+Setting up and understanding Launchpad
+---------------------------------------
+
+Understanding how to install and configure Launchpad, navigate the codebase, and test your changes will help you make meaningful contributions to the project. 
+
+.. toctree::
+   :maxdepth: 2
+
+   setting-up-and-understanding-launchpad
+
+Best practices for development
+-------------------------------
+
+By using these principled approaches to development, you can improve Launchpad in a way that is sustainable and maintainable.
+
+.. toctree::
+   :maxdepth: 2
+
+   best-practices-for-development
+
+Developing the Launchpad project
+--------------------------------
+
+These pages help explain important aspects of the developer experience.
+
+.. toctree::
+   :maxdepth: 2
+
+   developing-the-launchpad-project
+
+Parts of Launchpad
+------------------
+
+After understanding the goals and approaches of the project, dive into the details by exploring the below components of the application.
+
+.. toctree::
+   :maxdepth: 2
+
+   parts-of-launchpad
 
 JavaScript
 ----------
 
-.. toctree::
-   :maxdepth: 1
+These pages explain how to develop, test, and build using the YUI Test framework.
 
-   javascript-integration-testing
-   javascript-unittesting
-   javascript-buildsystem
+.. toctree::
+   :maxdepth: 2
+
+   javascript
 
 Static assets
 -------------
 
-.. toctree::
-   :maxdepth: 1
+Launchpad's visual style is controlled by CSS and images that you set up and build. 
 
-   css
-   css-sprites
-   images
-   favicon
+.. toctree::
+   :maxdepth: 2
+
+   static-assets
 
 Database
 --------
 
-.. toctree::
-   :maxdepth: 1
+This section gives an overview of how Launchpad interacts with the PostgreSQL database.
 
-   postgresql
-   working-with-db-devel
-   live-patching
-   storm-migration-guide
-   database-performance
+.. toctree::
+   :maxdepth: 2
+
+   database
