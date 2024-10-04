@@ -30,7 +30,7 @@ documentation using the ``lp.services.webservice.wadl`` module utilities.
 This script will create the related ``wadl`` file and then it will translated to
 ``HTML``. During this process ``generate_html`` function will be called: this
 function is responsible to map ``wadl`` entries to ``HTML``.
-To do that we use as template the file called ``wadl-to-refhtml.xsl``: in 
+For that we use ``wadl-to-refhtml.xsl`` template. In 
 this file we can also apply patches to fix not-well generated entry points
 for given ``wadl`` entries.
 
