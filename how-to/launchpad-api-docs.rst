@@ -24,7 +24,7 @@ generate the documentation under ``lib/canonical/launchpad/apidoc``.
     $ make apidoc
 
 The command above is responsible for calling the 
-``utilities/create-lp-wadl-and-apidoc.py`` script and generate the related
+``utilities/create-lp-wadl-and-apidoc.py`` script and generating the related
 documentation using the ``lp.services.webservice.wadl`` module utilities.
 
 This script will create the related ``wadl`` file and then it will translated to
