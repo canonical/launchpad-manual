@@ -10,7 +10,7 @@ To define our web resources we are using the
 decorators and capabilities. These decorators are also responsible to generate
 the related documentation for the exported fields.
 
-We can build Api Docs using ``make apidoc`` command: this command will 
+We can build API docs using ``make apidoc`` command: this command will 
 generate the documentation under ``lib/canonical/launchpad/apidoc``. 
 
 .. note::
