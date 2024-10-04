@@ -12,8 +12,11 @@ the related documentation for the exported field.
 
 We can build Api Docs using ``make apidoc`` command: this command will 
 generate the documentation under ``lib/canonical/launchpad/apidoc``. 
-Note that we should delete the aforementioned folder in order to generate
-fresh docs. 
+
+.. note::
+
+    Note that we should delete the aforementioned folder in order to generate
+    fresh docs. 
 
 ..  code-block:: bash
 
@@ -24,7 +27,7 @@ The command above is responsible for calling the
 ``utilities/create-lp-wadl-and-apidoc.py`` script and generate the related
 documentation using the ``lp.services.webservice.wadl`` module utilities.
 
-This scripts will create the related ``wadl`` and then it will translated to
+This script will create the related ``wadl`` file and then it will translated to
 ``HTML``. During this process ``generate_html`` function will be called: this
 function is responsible to map ``wadl`` entries to ``HTML``.
 To do that we use as template the file called ``wadl-to-refhtml.xsl``: in 
