@@ -8,7 +8,7 @@ web service versions, and links to version-specific documents.
 To define our web resources we are using the 
 `lazr.restful <https://lazrrestful.readthedocs.io/en/latest/webservice-declarations.html>`_ 
 decorators and capabilities. These decorators are also responsible to generate
-the related documentation for the exported field.
+the related documentation for the exported fields.
 
 We can build Api Docs using ``make apidoc`` command: this command will 
 generate the documentation under ``lib/canonical/launchpad/apidoc``. 
