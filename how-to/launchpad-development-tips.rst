@@ -14,3 +14,4 @@ Launchpad development tips
    chameleon
    debug-tests-with-visual-studio-code
    debug-buildfarm-builder
+   launchpad-api-docs
