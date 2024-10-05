@@ -27,7 +27,7 @@ The command above is responsible for calling the
 ``utilities/create-lp-wadl-and-apidoc.py`` script and generating the related
 documentation using the ``lp.services.webservice.wadl`` module utilities.
 
-This script will create the related ``wadl`` file and then it will translated to
+This script will create the related ``wadl`` file and translate it to
 ``HTML``. During this process ``generate_html`` function will be called: this
 function is responsible to map ``wadl`` entries to ``HTML``.
 For that we use ``wadl-to-refhtml.xsl`` template. In 
