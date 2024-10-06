@@ -9,6 +9,7 @@ Charmhub
 CLI
 conf
 contactuser
+cronscripts
 datetime
 DateTime
 DBA

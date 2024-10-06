@@ -199,6 +199,8 @@ hba
 hg
 hirsute's
 hostnames
+hotfix
+hotfixes
 howto
 HSTS
 html
@@ -429,6 +431,7 @@ realizes
 ReleaseCycles
 repl
 repo
+RequestLogging
 RESTful
 resultset
 ResultSets
