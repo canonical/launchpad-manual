@@ -77,13 +77,16 @@ TODO
 Triaging
 tzinfo
 UI
+URL
 undercommunication
 updateable
 VM
 VSCode
 VSCode's
+xsl
 xUnit
 XXXes
 YAML
 YUI
+wadl
 zpt
