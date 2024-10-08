@@ -52,3 +52,13 @@ In our example:
 .. code::
      
      /srv/launchpad/code/utilities/anoint-team-member test-user admins
+
+.. note::
+
+    Note that for running some of these scripts, it is common to need to add a
+    ``LPCONFIG=launchpad-admin`` at the start of the command to set the needed
+    evironmental variable. This is not necessary here because it is already
+    set in the environment within the ``launchpad-admin`` unit.
+    Running this command in another unit (for example, ``launchpad-scripts``)
+    would require running as ``LPCONFIG=launchpad-admin
+    /srv/launchpad/code/utilities/anoint-team-member <username> <team-name>``.
