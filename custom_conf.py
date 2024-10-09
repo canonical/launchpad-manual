@@ -127,7 +127,7 @@ linkcheck_ignore = [
     'https://wiki.canonical.com/InformationInfrastructure/OSA/LPHowTo/ManualCdImageMirrorProber',  # private
     'Trunk/Glue',  # needs update
     '/Background', 
-    '/HowToUseCodehostingLocally',  # needs update
+    '/Concepts',  # needs update
     'Database/TableRenamePatch',  # needs update
     'Debugging#Profiling%20page%20requests',  # needs update
     'Debugging#Special%20URLs',  # needs update
