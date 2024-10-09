@@ -38,8 +38,8 @@ For staging and qastaging we should:
 1. SSH into ``launchpad-bastion-ps5``, and switch to the ``stg-launchpad``
 user by running ``sudo -iu stg-launchpad``. 
 
-2. SSH into the ``launchpad-scripts`` juju unit, by running 
-``in-model qastaging juju ssh launchpad-scripts/leader``.
+2. SSH into the ``launchpad-admin`` juju unit, by running 
+``in-model qastaging juju ssh launchpad-admin/leader``.
 
 3. Add the user to the team by running: 
 
@@ -52,3 +52,13 @@ In our example:
 .. code::
      
      /srv/launchpad/code/utilities/anoint-team-member test-user admins
+
+.. note::
+
+    Note that for running some of these scripts, it is common to need to add a
+    ``LPCONFIG=launchpad-admin`` at the start of the command to set the needed
+    environmental variable. This is not necessary here because it is already
+    set in the environment within the ``launchpad-admin`` unit.
+    Running this command in another unit (for example, ``launchpad-scripts``)
+    would require running as ``LPCONFIG=launchpad-admin
+    /srv/launchpad/code/utilities/anoint-team-member <username> <team-name>``.

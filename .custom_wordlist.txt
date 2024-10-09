@@ -1,5 +1,6 @@
 activereviews
 adapter
+adapters
 adapter's
 AddingLaunchpadCelebrity
 analyze
@@ -40,6 +41,7 @@ Bionic's
 Blazingly
 bool
 boolean
+BranchMergeProposal
 breakpoint
 browserconfig
 BrowserNotificationMessages
@@ -70,6 +72,7 @@ Cmd
 CMDLINE
 Cobol
 codebase
+codebrowse
 Codehosting
 codehosting
 codeimport
@@ -103,6 +106,7 @@ DateTimeJSONEncoder
 DatetimeUsageGuide
 DavidAllouche
 DBEnums
+DistributionSourcePackage
 dbpatches
 dbschema
 dbupgrade
@@ -303,6 +307,7 @@ MockIo
 mockups
 mojo
 mozilla
+mta
 natively
 NavigationMenu
 NavigationMenus
@@ -334,6 +339,7 @@ os
 OSA
 OWASP
 OWASP's
+PackageBranchTarget
 PageSpeed
 pagespeed
 pagetest
@@ -342,6 +348,7 @@ pagetests
 pamola
 PatchSubmission
 pdb
+PersonBranchTarget
 pentested
 performant
 pgbouncer
@@ -364,6 +371,7 @@ poller
 POMsgID
 pooler
 portlets
+postfix
 PostGreSQL
 PostgreSQL
 postgresql
@@ -392,6 +400,7 @@ pre_iter_hook
 prioritize
 prober
 proc
+ProductBranchTarget
 ProductSeries
 programmatically
 prometheus
@@ -531,6 +540,7 @@ testtools
 textarea
 TipsForReviewers
 TLS
+tmp
 todrop
 traceback
 tradeoff
