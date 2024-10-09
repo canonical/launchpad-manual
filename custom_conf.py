@@ -132,19 +132,16 @@ linkcheck_ignore = [
     'Debugging#Profiling%20page%20requests',  # needs update
     'Debugging#Special%20URLs',  # needs update
     'JavascriptUnitTesting/MockIo',  # needs update
-    'PolicyAndProcess/Accessibility',  # needs update
-    'Translations/Specs/UpstreamImportIntoUbuntu/FixingIsImported/setCurrentTranslation',  # needs update
-    'attachment:codehosting.png',  # needs update
     'https://git.launchpad.net/launchpad-mojo-specs/tree/mojo-lp-git/services',  # private
     'https://wiki.canonical.com/InformationInfrastructure/OSA/LaunchpadProductionStatus',  # private
     'https://wiki.canonical.com/Launchpad/PolicyandProcess/ProductionChange',  # private
     'https://wiki.canonical.com/Launchpad/PolicyandProcess/ProductionChangeApprovalPolicy',  # private
     'https://deployable.ols.canonical.com/project/launchpad-db',  # private
     'irc.libera.chat',  # this is not an HTTP link
-    'attachment:TranslationsSchema.dia',  # needs update
     r'https://github\.com/canonical/fetch-service*',  # private
     r'https://github\.com/canonical/fetch-operator*',  # private
     'https://git.launchpad.net/charm-launchpad-buildd-image-modifier/tree/files/scripts/setup-ppa-buildd',  # private
+    'https://git.zx2c4.com/cgit/', # unfortunately very flaky
     ]
 
 # Pages on which to ignore anchors

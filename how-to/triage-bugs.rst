@@ -16,8 +16,8 @@ We want:
    are dependencies of other critical bugs.
 -  The *High* bugs list to be our main set of top priorities. Some
    specific sorts of bugs we always treat as high. Right now: OOPSes,
-   timeouts, A and AA `treat accessibility
-   bugs <PolicyAndProcess/Accessibility>`__.
+   timeouts, A and AA treat accessibility
+   bugs.
 
 We would prefer to be able to treat OOPSes and timeouts as critical, as it
 was the case until 2020, but having a practically-usable Critical queue
@@ -95,8 +95,8 @@ High
 These are bugs that will be our main focus in normal operation, timeouts
 (tagged "timeout"), OOPSes (thanks to our `zero OOPS
 policy <https://dev.launchpad.net/PolicyAndProcess/ZeroOOPSPolicy>`__,
-and tagged "oops"), and A and AA conformance `accessibility
-bugs <PolicyAndProcess/Accessibility>`__.
+and tagged "oops"), and A and AA conformance accessibility
+bugs.
 
 Low
 ~~~
@@ -104,8 +104,8 @@ Low
 We mark as *Low* any bug that we recognise as legitimate but that is
 **not** a priority for Canonical staff to fix. This is not the same as
 planning not to fix the bug; it means that we don't know when we will
-fix it, if at all. This includes AAA conformance `accessibility
-bugs <PolicyAndProcess/Accessibility>`__.
+fix it, if at all. This includes AAA conformance accessibility
+bugs.
 
 Others
 ~~~~~~
