@@ -55,10 +55,14 @@ In our example:
 
 .. note::
 
-    Note that for running some of these scripts, it is common to need to add a
-    ``LPCONFIG=launchpad-admin`` at the start of the command to set the needed
-    environmental variable. This is not necessary here because it is already
-    set in the environment within the ``launchpad-admin`` unit.
-    Running this command in another unit (for example, ``launchpad-scripts``)
-    would require running as ``LPCONFIG=launchpad-admin
-    /srv/launchpad/code/utilities/anoint-team-member <username> <team-name>``.
+    While running Launchpad scripts, it is often necessary to specify the
+    ``LPCONFIG`` environment variable with an appropriate value, for example
+    ``LPCONFIG=launchpad-admin``, before the invocation to use the right
+    Launchpad configuration for the current unit. This is not necessary here
+    because it is already set in the environment within the ``launchpad-admin``
+    unit. Running this command in another unit, say ``launchpad-scripts``,
+    would require running it as
+
+    .. code::
+
+         LPCONFIG=launchpad-scripts /srv/launchpad/code/utilities/anoint-team-member <username> <team-name>
