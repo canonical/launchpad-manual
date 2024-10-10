@@ -15,3 +15,5 @@ Launchpad development tips
    debug-tests-with-visual-studio-code
    debug-buildfarm-builder
    launchpad-api-docs
+   codehosting-locally.rst
+   rename-database-table
