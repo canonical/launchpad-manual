@@ -30,7 +30,6 @@ There are some things that can make your journey of contributing to Launchpad mu
    :maxdepth: 2
 
    launchpad-development-tips
-   codehosting-locally
 
 Operating Launchpad
 -------------------
@@ -41,5 +40,3 @@ If you have a running instance of Launchpad, there are common tasks you might ne
    :maxdepth: 2
 
    operating-launchpad
-   rename-database-table
-
