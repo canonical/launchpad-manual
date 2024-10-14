@@ -14,6 +14,7 @@ Launchpad development tips
    chameleon
    debug-tests-with-visual-studio-code
    debug-buildfarm-builder
+   debugging
    launchpad-api-docs
    codehosting-locally
    rename-database-table
