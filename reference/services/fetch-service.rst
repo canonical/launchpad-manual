@@ -124,6 +124,8 @@ Related specifications (only accessible for Canonical employees)
 
 Log files
 ---------
+See `FreshLogs documentation <https://wiki.canonical.com/Launchpad/FreshLogs>`_.
+
 Production
 ~~~~~~~~~~
 
@@ -132,7 +134,7 @@ Production
 Qastaging
 ~~~~~~~~~
 
-* ``rless fetch-service.qastaging.lp.internal::fetch-service-logs/fetch-service.log`
+* ``rless fetch-service.qastaging.lp.internal::fetch-service-logs/fetch-service.log``
 
 Alternatively, to access the fetch-service internal logs, one needs to:
 
