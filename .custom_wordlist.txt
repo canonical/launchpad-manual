@@ -1,5 +1,6 @@
 activereviews
 adapter
+adapters
 adapter's
 AddingLaunchpadCelebrity
 analyze
@@ -41,6 +42,7 @@ Blazingly
 bool
 boolean
 borked
+BranchMergeProposal
 breakpoint
 browserconfig
 BrowserNotificationMessages
@@ -78,6 +80,7 @@ Cmd
 CMDLINE
 Cobol
 codebase
+codebrowse
 Codehosting
 codehosting
 codeimport
@@ -113,6 +116,7 @@ DateTimeJSONEncoder
 DatetimeUsageGuide
 DavidAllouche
 DBEnums
+DistributionSourcePackage
 dbpatches
 dbschema
 dbupgrade
@@ -129,6 +133,7 @@ DecoratedResultSet
 DecoratedResultSets
 defense
 defense
+del
 deps
 deryck
 Desc
@@ -174,6 +179,7 @@ fastdowntime
 fastnodowntime
 favicons
 FK
+fk
 flavor
 FooBar
 foofunc
@@ -209,6 +215,8 @@ hba
 hg
 hirsute's
 hostnames
+hotfix
+hotfixes
 howto
 HSTS
 html
@@ -219,6 +227,7 @@ IBranchMergeProposal
 IBranchTarget
 ICanonicalUrlData
 ICodeReviewMessage
+idx
 iframe
 iharness
 IMailDelivery
@@ -238,7 +247,11 @@ IPv
 IPython
 IRangeFactory
 irc
+IrcId
+ircid
 IRCMeetings
+IrcNickname
+ircnickname
 iter
 iterable
 Javadoc
@@ -322,10 +335,12 @@ mockups
 moin
 mojo
 mozilla
+mta
 natively
 NavigationMenu
 NavigationMenus
 newsampledata
+nextval
 nfs
 NPM
 normalized
@@ -355,6 +370,7 @@ osageorang
 osageorange
 OWASP
 OWASP's
+PackageBranchTarget
 PageSpeed
 pagespeed
 pagetest
@@ -363,6 +379,7 @@ pagetests
 pamola
 PatchSubmission
 pdb
+PersonBranchTarget
 pentested
 performant
 PerLanguageStatisticsView
@@ -370,6 +387,7 @@ pgbouncer
 pgSQL
 pgsql
 pipx
+pkey
 plaintext
 png
 po
@@ -385,6 +403,7 @@ poller
 POMsgID
 pooler
 portlets
+postfix
 PostGreSQL
 PostgreSQL
 postgresql
@@ -413,6 +432,7 @@ pre_iter_hook
 prioritize
 prober
 proc
+ProductBranchTarget
 ProductSeries
 programmatically
 prometheus
@@ -443,6 +463,7 @@ realizes
 ReleaseCycles
 repl
 repo
+RequestLogging
 RESTful
 resultset
 ResultSets
@@ -592,6 +613,8 @@ unproxied
 unsuffixed
 untriaged
 untrusted
+upd
+updatable
 upstreams
 url
 urls

@@ -124,21 +124,31 @@ Related specifications (only accessible for Canonical employees)
 
 Log files
 ---------
+See `FreshLogs documentation <https://wiki.canonical.com/Launchpad/FreshLogs>`_.
+
 Production
 ~~~~~~~~~~
-Not set up.
+
+* ``rless fetch-service.lp.internal::fetch-service-logs/fetch-service.log``
 
 Qastaging
 ~~~~~~~~~
-Currently, to access the fetch-service internal logs, one needs to:
 
-1. SSH into ``stg-lp-fetch-service-qastaging@launchpad-bastion-ps5``.
+* ``rless fetch-service.qastaging.lp.internal::fetch-service-logs/fetch-service.log``
 
-2. SSH into the fetch-service juju unit by running ``juju ssh <unit>``, for
-   example ``juju ssh fetch-service/2``.
+Alternatively, to access the fetch-service internal logs, one needs to:
+
+1. SSH into Launchpad's bastion and switch to the following user: 
+   ``stg-lp-fetch-service-qastaging@launchpad-bastion-ps5``.
+
+2. SSH into the fetch-service juju unit by running
+   ``juju ssh fetch-service/leader``.
 
 3. Run ``sudo snap logs fetch-service -n 100 -f`` (where ``-n`` sets the number
    of log lines, and ``-f`` keeps up the latest logs up-to-date).
+
+You can also check the logs in the following directory:
+``/var/snap/fetch-service/current``.
 
 Monitoring
 ----------
