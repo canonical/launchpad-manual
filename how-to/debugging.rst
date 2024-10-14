@@ -1,5 +1,5 @@
-Debugging stories/pagetests
-===========================
+Debug Stories/Pagetests
+=======================
 
 Debugging stories (a.k.a. pagetests) can be kind of a pain because they
 build up state as they go. So if a test fails down deep in the doctest,
@@ -15,7 +15,7 @@ Just add this at the point where your pagetest is failing:
 
        >>> stop()
 
-This is just a convenience wrapper around \``pdb.set_trace()`\` except
+This is just a convenience wrapper around ``pdb.set_trace()`` except
 that it also redirects stdout back to your console. When your pagetest
 hits this line, you'll be dropped into the debugger. Now, go to a
 different shell and type:
@@ -29,7 +29,7 @@ use the value in os.environ['LPCONFIG'] obtained at the pdb prompt,
 rather than just "testrunner"*)
 
 This starts up the appserver, except that it will use the
-\``testrunner`\` configuration. What's cool about that is that this
+``testrunner`` configuration. What's cool about that is that this
 configuration attaches to the same database as the pagetest you're now
 stopped inside of. Meaning, all that state your doctest has built up, is
 available to your browser. So just hit the URL of the page that your
@@ -45,14 +45,14 @@ the page test is using.
 
 However, uncommitted transactions will not be visible in the database.
 So if there is something particular you are trying to query, like a bug
-subscription, you may need to add the following to the page test.
+subscription, you may need to add the following to the page test:
 
 ::
 
        >>> transaction.commit()
 
 Debugging memory leaks
-======================
+----------------------
 
 The app servers and the Librarian install a signal handler to dump their
 memory using `meliae <https://launchpad.net/meliae>`__. To make use of
@@ -74,7 +74,7 @@ is how you load it:
        >>> s = om.summarize(); s
 
 This will give you a nice summary of the kinds of objects that consume
-the most memory. Something like
+the most memory. Something like:
 
 ::
 
@@ -91,34 +91,39 @@ post <http://jam-bazaar.blogspot.com/2010/01/meliae-020.html>`__, and
 hopefully find what's leaking.
 
 Debugging With GDB
-==================
+------------------
 
 Some kinds of bugs (segfaults, hung processes, out-of-control daemons)
 are hard to debug from within Python. See
-`Debugging with GDB <https://wiki.python.org/moin/DebuggingWithGdb>` for how to debug them.
+`Debugging with GDB <https://wiki.python.org/moin/DebuggingWithGdb>`__ for how to debug them.
 
 Debugging Core Dumps 
-====================
+--------------------
 
 A quick sketch of how to read core files produced from production machines by IS:
 
 1. Have core dump files moved to osageorang
 2. Ensure you have access to osageorange. You'll need to ping a member of IS on #launchpad-ops to get access; you cannot ssh from devpad to osageorange.
 3. Get pygdb (lp:pygdb) in your $HOME on osageorang
-4. ssh to osageorange, and do:
-```
-schroot -c lucid-cat-amd64
-```
+4. Ssh to osageorange, and do:
+
+::
+
+   schroot -c lucid-cat-amd64
+
 This puts you in a chroot with the same packages installed as on production
+
 5. Then cd into pygdb dir and do something like:
-```
-python backtrace.py -c $PATH_TO_FILE/core.XXX > ~/core.XXX-out.txt
-```
+
+::
+
+   python backtrace.py -c $PATH_TO_FILE/core.XXX > ~/core.XXX-out.txt
+
 6. Read output and profit! 
 
 
 Debugging Buildd with the Visual Studio Code IDE
-================================================
+------------------------------------------------
 
 Although we `set up Buildd in a
 VM <https://dev.launchpad.net/Soyuz/HowToDevelopWithBuildd>`__, Unit
@@ -133,21 +138,21 @@ Launch VSCode and install the "Python" and "Remote - SSH" extensions.
 For the Python extension perform the install on the remote host (your
 Buildd VM) as well.
 
-F1 to open the command palette and type
+F1 to open the command palette and type:
 
 ::
 
    Remote-SSH: Open SSH Configuration file
 
-. From the drop-down choose your home ssh config file (~/.ssh/config -
+From the drop-down choose your home ssh config file (~/.ssh/config -
 if you don't have one create it and add your configuration). Add the
 following entry to it (for Host I have the name of my Buildd VM and for
+the IP of my Buildd VM):
 
 ::
 
    HostName
 
-the IP of my Buildd VM):
 
 ::
 
@@ -165,10 +170,8 @@ Folder" -> launchpad-buildd (the git clone of the buildd repo on your
 VM).
 
 Configure the test framework (visual examples
-`\|here <https://code.visualstudio.com/docs/python/testing#_configure-tests>`__)
-
--  for buildd choose unittests for the lpbuildd folder and the test*.py
-   file pattern.
+`\here <https://code.visualstudio.com/docs/python/testing#_configure-tests>`__). 
+For buildd choose unittests for the lpbuildd folder and the test*.py file pattern.
 
 Tips:
 
@@ -176,13 +179,13 @@ Tips:
 
 2. When the workspace is large and contains many files VS Code file
 watcher is running out of handles (ENOSPC Error visible is you start
-VSCode in terminal with
+VSCode in terminal with): 
 
 ::
 
    code --verbose
 
-). Solution to this is: to see your current limit:
+Solution to this is: to see your current limit:
 
 ::
 
@@ -194,7 +197,7 @@ Add this line:
 
    fs.inotify.max_user_watches=524288
 
-to /etc/sysctl.conf and then
+to /etc/sysctl.conf and then:
 
 ::
 
@@ -203,7 +206,7 @@ to /etc/sysctl.conf and then
 .
 
 Special URLs
-============
+------------
 
 Launchpad provides special URLs that can be used to help with debugging.
 
@@ -248,59 +251,59 @@ https://qastaging.launchpad.net/++oops++ \|\| \|\| \``++form++`\` \|\|
 Not a debug tool. Used for JS. Gives inner form HTML. \|\| ALL \|\|
 \|||||\| Example: https://launchpad.test/~/+edit/++form++ \|\|
 
-Some of those can combined, like: \``++debug++tal,source`\` or
-\``++profile++show,pstats``.
+Some of those can combined, like: ``++debug++tal,source`` or
+``++profile++show,pstats``.
 
-\``++debug++errors`\` is not working currently, probably because of
+``++debug++errors`` is not working currently, probably because of
 Launchpad customizations. It is supposed to show tracebacks of errors
 handled in the template.
 
 Tracing SQL statements through STORM
-====================================
+------------------------------------
 
 These can be useful when optimising pages to run fewer queries, as you
 can see exactly when and what is executed rather than pulled from cache.
 
 Tracing a full request
-----------------------
+~~~~~~~~~~~~~~~~~~~~~~
 
-Set \``LP_DEBUG_SQL=1`\` environment variable before running \``make
-harness`\` or \``make run`\` to get the SQL statements as they are run,
+Set ``LP_DEBUG_SQL=1`` environment variable before running ``make
+harness`` or ``make run`` to get the SQL statements as they are run,
 along with the start and stop times and the name of the database on
 which the statement was run. Note that in a request the times are
-relative to the start of the request. For scripts and \``make harness``,
+relative to the start of the request. For scripts and ``make harness``,
 the start time is always 0 and the stop time is the duration of the SQL
 call.
 
-Set \``LP_DEBUG_SQL_EXTRA=1`\` to get all of the above, plus tracebacks
+Set ``LP_DEBUG_SQL_EXTRA=1`` to get all of the above, plus tracebacks
 for every query execution, including template and traversal information.
 
-When using \``make run``, these affect all requests while the server is
+When using ``make run``, these affect all requests while the server is
 running, and output the value in the console.
 
 Alternatively, to only look at a *single* request's values in the
-browser, use \``++profile++sql`\` instead, which includes the
-information equivalent to \``LP_DEBUG_SQL=1``; or use
-\``++profile++sqltrace``, which gives you all of the information
-equivalent to \``LP_DEBUG_SQL_EXTRA=1``. These are described above in
+browser, use ``++profile++sql`` instead, which includes the
+information equivalent to ``LP_DEBUG_SQL=1``; or use
+``++profile++sqltrace``, which gives you all of the information
+equivalent to ``LP_DEBUG_SQL_EXTRA=1``. These are described above in
 the "Special URLs" section.
 
 Tracing a part of a request
----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-\`from storm.tracer import debug; debug(True)\` will cause all
-statements run by Storm to be written to stderr. \`debug(False)\`
+``from storm.tracer import debug; debug(True)`` will cause all
+statements run by Storm to be written to stderr. ``debug(False)``
 disables this behaviour.
 
-Alternatively, if you find \``LP_DEBUG_SQL=1`\` and/or
-\``LP_DEBUG_SQL_EXTRA=1`\` handy but want more control turning it on and
+Alternatively, if you find ``LP_DEBUG_SQL=1`` and/or
+``LP_DEBUG_SQL_EXTRA=1`` handy but want more control turning it on and
 off within a request, in the debugger you can make sure the
-\`LaunchpadStatementTracer\` is the first in the results of
-\`get_tracers\` and modify as needed. For instance, you can do the
+``LaunchpadStatementTracer`` is the first in the results of
+``get_tracers`` and modify as needed. For instance, you can do the
 following.
 
-This gives output equivalent to \``LP_DEBUG_SQL=1`\` but for only as
-long as \``_debug_sql = True``.
+This gives output equivalent to ``LP_DEBUG_SQL=1`` but for only as
+long as ``_debug_sql = True``.
 
 ::
 
@@ -316,11 +319,11 @@ as long as \``_debug_sql_extra = True``.
    get_tracers()[0]._debug_sql_extra = True
 
 Tracing a code snippet
-----------------------
+~~~~~~~~~~~~~~~~~~~~~~
 
 Similar to the previous section, sometimes you want to look at the SQL
-of just a certain slice of code, such as within \``make harness``. The
-\``StormStatementRecorder`\` can be a useful tool for this.
+of just a certain slice of code, such as within ``make harness``. The
+``StormStatementRecorder`` can be a useful tool for this.
 
 Basic usage will get you the SQL run while the recorder is used:
 
@@ -358,10 +361,10 @@ would get you tracebacks when the SQL has something to do with
 structural subscriptions.
 
 Getting more information in your tracebacks
--------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The tracebacks from \``LP_DEBUG_SQL_EXTRA=1`\` and
-\``++profile++sqltrace`\` include extra information from page templates
+The tracebacks from ``LP_DEBUG_SQL_EXTRA=1`` and
+``++profile++sqltrace`` include extra information from page templates
 and traversals to tell you the expressions and values being processed.
 If you have functions or loops for which you'd also like to add your own
 extra debugging information to the tracebacks, here is how.
@@ -419,12 +422,12 @@ attributes:
 | ``getInfo:: a callable that returns some extra string.``
 
 Tracing SQL statements with PostgreSQL
-======================================
+--------------------------------------
 
-Statement logging can be configured in \`postgresql.conf`, by setting
-\`log_statement\` to one of \`none`, \`ddl`, \`mod\` or \`all\`
+Statement logging can be configured in ``postgresql.conf``, by setting
+``log_statement`` to one of ``none``, ``ddl``, ``mod`` or ``all``
 (`docs <http://www.postgresql.org/docs/8.3/static/runtime-config-logging.html#GUC-LOG-STATEMENT>`__).
-The server needs to be reloaded (by \`SIGHUP\` or \`pg_ctl reload`) for
+The server needs to be reloaded (by ``SIGHUP`` or ``pg_ctl reload``) for
 changes to take effect.
 
 It can also be set for a session, user or database:
@@ -439,12 +442,12 @@ It can also be set for a session, user or database:
 \`(\ `docs <http://www.postgresql.org/docs/8.3/static/sql-alterdatabase.html>`__)
 
 Once enabled, statements will be logged to
-\`/var/log/postgresql/postgresql-*-main.log`.
+``/var/log/postgresql/postgresql-*-main.log``.
 
 <<Anchor(tal-template-tracebacks)>>
 
 Getting past "LocationError: 'json'" in TAL template tracebacks
-===============================================================
+---------------------------------------------------------------
 
 If you're testing with a new TAL template (.pt file) and you get
 nasty-looking tracebacks that says something about
@@ -461,7 +464,7 @@ https://launchpad.net/api/beta/launchpad instead; you'll often get a
 trace that way.
 
 Using iharness for digging error tracebacks
-===========================================
+-------------------------------------------
 
 If you are reading this, most probably you have noticed that when things
 get wrong, ZOPE and TAL will rather give you a pointless
@@ -504,7 +507,7 @@ example we were trying to get the *!PerLanguageStatisticsView* for
 Now you should see a more meaningful message.
 
 Profiling page requests
-=======================
+-----------------------
 
 You can generate
 `KCacheGrind <http://kcachegrind.sourceforge.net/html/Home.html>`__ and
@@ -549,7 +552,7 @@ to https://qastaging.launchpad.net/+feature-rules. That sets a timeout
 of 30 seconds (30000 milliseconds).
 
 You can also turn on a configuration variable to profile *every*
-request. Edit \`configs/development/launchpad-lazr.conf\` and add the
+request. Edit ``configs/development/launchpad-lazr.conf`` and add the
 following section:
 
 ::
@@ -570,7 +573,7 @@ or similar):
    # or
    $ wget --no-check-certificate https://launchpad.test
 
-You can now load the resulting \`*.prof\` file into KCacheGrind
+You can now load the resulting ``*.prof`` file into KCacheGrind
 
 ::
 
@@ -581,7 +584,7 @@ The doc for these features is lib/canonical/launchpad/doc/profiling.txt
 instructions, if you use that approach.
 
 Profiling one part of your page
--------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you are working on a developer instance of Launchpad, you can also
 insert calls directly in your code to profile certain code paths when
@@ -599,7 +602,7 @@ This will then generate a pstats file for you on the filesystem at the
 end of the request, and give you the data in the browser as well.
 
 Debugging production OpenID problems
-====================================
+------------------------------------
 
 You can use the production OpenID provider to debug problems that can't
 be reproduced with the test provider by changing
@@ -612,7 +615,7 @@ configs/development/launchpad-lazr.conf thusly:
    +hostname: login.launchpad.net
 
 Debugging security proxy problems
-=================================
+---------------------------------
 
 Ever wondered which attributes are protected on an instance and by which
 permission? You can use debug_proxy to get the information you need.
