@@ -125,6 +125,15 @@ If you intend to make any changes to Launchpad, you should also set up
 Running
 =======
 
+Before running Launchpad, its best to sync your local Launchpad repo with remote hosts because the images are pre-seeded with a Launchpad clone that might not be up to date. 
+On your local system, go to the workspace directory you specified during setup and sync your local repo. 
+
+.. code-block:: shell-session
+    
+    $ git remote -v
+    $ git fetch 
+    $ git pull upstream master
+
 Now you should be able to start up Launchpad:
 
 .. code-block:: shell-session
