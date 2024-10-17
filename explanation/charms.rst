@@ -17,7 +17,7 @@ with one or more `units <https://juju.is/docs/olm/unit>`_.  The layers
 provide common code used by multiple charms.  The specs are used with `Mojo
 <https://mojo.canonical.com/>`_ to coordinate whole deployments of multiple
 applications; they contain configuration of individual applications and
-`integrations <https://juju.is/docs/olm/integration>`_ between applications.
+`integrations <https://juju.is/docs/juju/relation>`_ between applications.
 
 Principles
 ==========
@@ -71,7 +71,7 @@ Creating a Launchpad charm
 --------------------------
 
 If you don't already have a suitable testbed, then see the `Juju tutorial
-<https://juju.is/docs/olm/get-started-with-juju>`_ for how to set one up;
+<https://juju.is/docs/juju/tutorial>`_ for how to set one up;
 you should use the non-Kubernetes approach here.
 
 Assuming you have a suitable testbed to deploy charms with Juju, you can follow

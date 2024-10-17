@@ -40,3 +40,13 @@ please run the following command:
 .. code-block:: bash
 
     make -C database/schema test
+
+If you only want to apply one specific patch for testing purposes, you can
+run the following command:
+
+.. code-block: bash
+
+    psql launchpad_dev -1 -f <your-patch>.sql
+
+This comment will apply file (``-f``) ``<your-patch>.sql`` as a single
+transaction (``-1``) to the database named ``launchpad_dev``.

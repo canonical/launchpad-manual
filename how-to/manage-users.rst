@@ -39,19 +39,30 @@ For staging and qastaging we should:
 user by running ``sudo -iu stg-launchpad``. 
 
 2. SSH into the ``launchpad-admin`` juju unit, by running 
-``in-model qastaging juju ssh launchpad-scripts/leader``.
+``in-model qastaging juju ssh launchpad-admin/leader``.
 
-3. Switch to ``launchpad`` user, by running 
-``sudo su launchpad``.
-
-4. Add the user to the team by running: 
+3. Add the user to the team by running: 
 
 .. code::
      
-     LPCONFIG=launchpad-admin /srv/launchpad/code/utilities/anoint-team-member <username> <team-name>
+     /srv/launchpad/code/utilities/anoint-team-member <username> <team-name>
 
 In our example:
 
 .. code::
      
-     LPCONFIG=launchpad-admin /srv/launchpad/code/utilities/anoint-team-member test-user admins
+     /srv/launchpad/code/utilities/anoint-team-member test-user admins
+
+.. note::
+
+    While running Launchpad scripts, it is often necessary to specify the
+    ``LPCONFIG`` environment variable with an appropriate value, for example
+    ``LPCONFIG=launchpad-admin``, before the invocation to use the right
+    Launchpad configuration for the current unit. This is not necessary here
+    because it is already set in the environment within the ``launchpad-admin``
+    unit. Running this command in another unit, say ``launchpad-scripts``,
+    would require running it as
+
+    .. code::
+
+         LPCONFIG=launchpad-scripts /srv/launchpad/code/utilities/anoint-team-member <username> <team-name>

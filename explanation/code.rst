@@ -31,8 +31,7 @@ other asynchronous jobs associated with them.
 The `codehosting overview diagram :attachment:../images/codehosting.png`
 summarises how some of these systems interact.
 
-You can `run the codehosting system
-locally </HowToUseCodehostingLocally>`__.
+You can :doc:`run the codehosting system locally <../how-to/codehosting-locally>`.
 
 We no longer put significant effort into bzr hosting beyond making sure
 it remains functional. The future of bzr is

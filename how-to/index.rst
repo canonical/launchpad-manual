@@ -40,4 +40,3 @@ If you have a running instance of Launchpad, there are common tasks you might ne
    :maxdepth: 2
 
    operating-launchpad
-

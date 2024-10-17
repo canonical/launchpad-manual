@@ -127,10 +127,7 @@ linkcheck_ignore = [
     'https://wiki.canonical.com/InformationInfrastructure/OSA/LPHowTo/ManualCdImageMirrorProber',  # private
     'Trunk/Glue',  # needs update
     '/Background', 
-    '/HowToUseCodehostingLocally',  # needs update
-    'Database/TableRenamePatch',  # needs update
-    'Debugging#Profiling%20page%20requests',  # needs update
-    'Debugging#Special%20URLs',  # needs update
+    '/Concepts',  # needs update
     'JavascriptUnitTesting/MockIo',  # needs update
     'https://git.launchpad.net/launchpad-mojo-specs/tree/mojo-lp-git/services',  # private
     'https://wiki.canonical.com/InformationInfrastructure/OSA/LaunchpadProductionStatus',  # private
@@ -142,6 +139,7 @@ linkcheck_ignore = [
     r'https://github\.com/canonical/fetch-operator*',  # private
     'https://git.launchpad.net/charm-launchpad-buildd-image-modifier/tree/files/scripts/setup-ppa-buildd',  # private
     'https://git.zx2c4.com/cgit/', # unfortunately very flaky
+    'https://wiki.canonical.com/InformationInfrastructure/OSA/RequestLogging/LP/Cowboys',  # private
     ]
 
 # Pages on which to ignore anchors
