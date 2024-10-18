@@ -41,6 +41,7 @@ juju
 Juju
 Kubeflow
 Kubernetes
+lpdev
 mailinglists
 Makefile
 mltest
