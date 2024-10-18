@@ -1,7 +1,7 @@
 Building and publishing Launchpad Development LXD Images
 ========================================================
 
-A rebuild of images are are required if we introduce new external dependencies in `lp:lp-source-deps`. Also, its recommended to rebuild the image atleast once every month so that the launchpad clone in the image is relatively updated. Currently, we only build Launchpad LXD Dev Images for ``Focal (amd64)``. As there are no community LXD servers
+A rebuild of images are are required if we introduce new external dependencies in `lp:lp-source-deps`. Also, its recommended to rebuild the image at least once every month so that the launchpad clone in the image is relatively updated. Currently, we only build Launchpad LXD Dev Images for ``Focal (amd64)``. As there are no community LXD servers
 or Launchpad team's self hosted servers to publish the LXD images. We are currently using Google Drive to 
 build and publish images. 
 
