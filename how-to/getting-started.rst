@@ -6,6 +6,7 @@ Getting started
 
 
    getting
+   running-quickstart
    running
    database-setup
    develop-with-buildd
