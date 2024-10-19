@@ -16,3 +16,4 @@ Operating Launchpad
    create-bot-account
    porting-builders-to-newer-ubuntu-versions
    applying-a-cowboy-to-qastaging
+   building-lpdev-images

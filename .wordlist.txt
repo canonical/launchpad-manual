@@ -29,6 +29,7 @@ garbo
 git
 Grafana
 IAM
+IntelliSense
 innerHTML
 installable
 haproxy
@@ -40,6 +41,7 @@ juju
 Juju
 Kubeflow
 Kubernetes
+lpdev
 mailinglists
 Makefile
 mltest
@@ -81,6 +83,8 @@ URL
 undercommunication
 updateable
 VM
+VSCode
+VSCode's
 xsl
 xUnit
 XXXes
