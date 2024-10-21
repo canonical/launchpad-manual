@@ -212,6 +212,7 @@ gunicorn
 gzip
 HackingLazrLibraries
 hba
+helloworld
 hg
 hirsute's
 hostnames
