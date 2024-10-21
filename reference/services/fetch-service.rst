@@ -142,12 +142,18 @@ Configuration example:
 
 
 Moreover, the fetch service snap require certificates to work properly.
-This is something that the snap can create when it's installed. 
+This is something that the snap can create when it's installed: the snap will 
+call the related hook available `here <https://github.com/canonical/fetch-service/blob/49f7382262da4aa71d931130524315c07f4be28d/snap/hooks/install#L20>`_.
 
 These certificates are also configurable from the charm itself if we have the need to
 change them, using the following command:
 
 ``juju config fetch-service proxy.certificate="$(cat certs/ca.pem)" proxy.key="$(cat certs/ca.key.pem)"``
+
+.. note::
+
+   If you want to create them, you can follow the process described in the install hook:
+   `certificate creation <https://github.com/canonical/fetch-service/blob/49f7382262da4aa71d931130524315c07f4be28d/snap/hooks/install#L20>`_.
 
 The certificates are stored in the ``${SNAP_DATA}/certs`` directory inside the fetch-service
 charm unit.
