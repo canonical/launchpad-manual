@@ -4,7 +4,7 @@ Creating a Rock build using APIs
 
 In this tutorial, we will be creating a new ``Rock`` build in Launchpad that points to
 an existing repository using APIs (no UI). Note that this tutorial can be used also to
-crete other kinds of builds.
+create other kinds of builds.
 
 Pre-requisites
 ==============
@@ -12,7 +12,7 @@ Pre-requisites
 1. You have ``lp-shell`` installed. Can be installed using ``sudo apt-get install lptools``.
 2. You have a Launchpad account.
 3. You have a test project in Launchpad. You can create one `here <https://launchpad.net/projects/+new>`_.
-4. You have a repository containing a Rock recipe. You can fork the `hellowork-rock <https://launchpad.net/~pelpsi/+git/helloworld-rock>`_ repository.
+4. You have a repository containing a Rock recipe. You can fork the `helloworld-rock <https://launchpad.net/~pelpsi/+git/helloworld-rock>`_ repository.
 
 If you want to create a new repository from scratch, you can start from `there <https://documentation.ubuntu.com/rockcraft/en/latest/how-to/get-started>`_.
 
