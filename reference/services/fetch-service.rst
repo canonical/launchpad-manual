@@ -111,7 +111,7 @@ downloads that are made during the build. The inspector is also responsible
 for making sure that the requests are allowed to be made.
 Every inspector is fully configurable and the ``allowlist`` is specified in the configuration
 file.
-This configuration is stored in the aforementioned specs.
+This configuration is managed by the aforementioned mojo specs.
 
 Configuration example:
 
