@@ -139,6 +139,7 @@ deps
 deryck
 Desc
 dev
+devops
 devpad
 dh
 dia
