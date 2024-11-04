@@ -140,6 +140,7 @@ linkcheck_ignore = [
     'https://git.launchpad.net/charm-launchpad-buildd-image-modifier/tree/files/scripts/setup-ppa-buildd',  # private
     'https://git.zx2c4.com/cgit/', # unfortunately very flaky
     'https://wiki.canonical.com/InformationInfrastructure/OSA/RequestLogging/LP/Cowboys',  # private
+    'https://wiki.canonical.com/Launchpad/SupportRotation/CodeImportStuck',  # private
     ]
 
 # Pages on which to ignore anchors
