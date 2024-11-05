@@ -2,7 +2,7 @@ Debug Stories/Pagetests
 =======================
 
 Debugging stories (a.k.a. pagetests) can be kind of a pain because they
-build up state as they go. So if a test fails down deep in the doctest,
+build up state as they go. If a test fails down deep in the doctest,
 and you want to see what the page really looks like at that point, you'd
 normally have to manually click through each step in the doctest until
 you get to the place that's broken.
@@ -16,7 +16,7 @@ Just add this at the point where your pagetest is failing:
        >>> stop()
 
 This is just a convenience wrapper around ``pdb.set_trace()`` except
-that it also redirects stdout back to your console. When your pagetest
+that it also redirects ``stdout`` back to your console. When your pagetest
 hits this line, you'll be dropped into the debugger. Now, go to a
 different shell and type:
 
@@ -63,7 +63,7 @@ This will create a file named /tmp/launchpad-memory.dump (or
 later.
 
 In general, though, the leaks will happen in production, so the LOSAs
-will give us a memory dump. Assuming you've got a memory.dump file, this
+will give us a memory dump. Assuming you've got a ``memory.dump`` file, this
 is how you load it:
 
 ::
@@ -102,16 +102,16 @@ Debugging Core Dumps
 
 A quick sketch of how to read core files produced from production machines by IS:
 
-1. Have core dump files moved to osageorang
-2. Ensure you have access to osageorange. You'll need to ping a member of IS on #launchpad-ops to get access; you cannot ssh from devpad to osageorange.
-3. Get pygdb (lp:pygdb) in your $HOME on osageorang
-4. Ssh to osageorange, and do:
+1. Have core dump files moved to ``osageorang``
+2. Ensure you have access to ``osageorange``. You'll need to ping a member of IS on #launchpad-ops to get access; you cannot ssh from ``devpad`` to ``osageorange``.
+3. Get ``pygdb`` (``lp:pygdb``) in your ``$HOME`` on ``osageorang``
+4. Ssh to ``osageorange``, and do:
 
 ::
 
    schroot -c lucid-cat-amd64
 
-This puts you in a chroot with the same packages installed as on production
+This puts you in a chroot with the same packages installed as on production.
 
 5. Then cd into pygdb dir and do something like:
 
@@ -144,7 +144,7 @@ F1 to open the command palette and type:
 
    Remote-SSH: Open SSH Configuration file
 
-From the drop-down choose your home ssh config file (~/.ssh/config -
+From the drop-down choose your home ssh config file (``~/.ssh/config`` -
 if you don't have one create it and add your configuration). Add the
 following entry to it (for Host I have the name of my Buildd VM and for
 the IP of my Buildd VM):
@@ -165,8 +165,8 @@ F1 to open the command palette and type "Remote-SSH: Connect to Host..."
 and choose "buildd" from the drop-down. You might be prompted for the
 password for the "ubuntu" user.
 
-Once the ssh connection is established go to the Explorer and "Open
-Folder" -> launchpad-buildd (the git clone of the buildd repo on your
+Once the ssh connection is established, go to the Explorer and "Open
+Folder" -> ``launchpad-buildd`` (the git clone of the buildd repo on your
 VM).
 
 Configure the test framework (visual examples
@@ -210,48 +210,58 @@ Special URLs
 
 Launchpad provides special URLs that can be used to help with debugging.
 
-\|\| *URL element* \|\| *Description* \|\| "Availability" \|\| \|\|
-\``++debug++tal`\` \|\| show the TAL declarations *in the HTML source
-code* \|\| developer box \|\| \|||||\| Example:
-https://launchpad.test/++debug++tal \|\| \|\| \``++debug++source`\` \|\|
-show path to templates for a given view *in the HTML source code* \|\|
-developer box \|\| \|||||\| Example:
-https://launchpad.test/++debug++source \|\| \|\| \``++profile++`\` \|\|
-Get help on how to use the ++profile++ option. \|\| developer box,
-[qa]staging \|\| \|||||\| Example: https://launchpad.test/++profile++ or
-https://qastaging.launchpad.net/++profile++ \|\| \|\|
-\``++profile++sql`\` \|\| See SQL queries used by the page. \|\|
-developer box, [qa]staging \|\| \|||||\| Example:
-https://launchpad.test/++profile++sql or
-https://qastaging.launchpad.net/++profile++sql \|\| \|\|
-\``++profile++sqltrace`\` \|\| See SQL queries and Python stack traces
-that led to them. \|\| developer box, [qa]staging \|\| \|||||\| Example:
-https://launchpad.test/++profile++sqltrace or
-https://qastaging.launchpad.net/++profile++sqltrace \|\| \|\|
-\``++profile++show`\` \|\| Show Python profile data and OOPS data,
-including SQL queries and timing. \|\| developer box, [qa]staging \|\|
-\|||||\| Example: https://launchpad.test/++profile++show or
-https://qastaging.launchpad.net/++profile++show \|\| \|\|
-\``++profile++pstats`\` \|\| Generate a pstats (Python standard library)
-profile file on the file system. Browser page gives you full path to
-generated file. **Note that, on [qa]staging, you will need to ask LOSAs
-to get you the file.** \|\| developer box, [qa]staging \|\| \|||||\|
-Example: https://launchpad.test/++profile++pstats or
-https://qastaging.launchpad.net/++profile++pstats \|\| \|\|
-\``++profile++callgrind`\` \|\| Generate a KCacheGrind profile file on
-the file system. Browser page gives you full path to generated file.
-**Note that, on [qa]staging, you will need to ask LOSAs to get you the
-file.** \|\| developer box, [qa]staging \|\| \|||||\| Example:
-https://launchpad.test/++profile++callgrind or
-https://qastaging.launchpad.net/++profile++callgrind \|\| \|\|
-\``++oops++`\` \|\| record an OOPS report while still rendering the page
-correctly. The OOPS id is provided in the HTML source code \|\| ALL \|\|
-\|||||\| Example: https://launchpad.test/++oops++ or
-https://qastaging.launchpad.net/++oops++ \|\| \|\| \``++form++`\` \|\|
-Not a debug tool. Used for JS. Gives inner form HTML. \|\| ALL \|\|
-\|||||\| Example: https://launchpad.test/~/+edit/++form++ \|\|
+.. list-table:: URL Debug Options
+   :header-rows: 1
+   :widths: 10 100 10 10
 
-Some of those can combined, like: ``++debug++tal,source`` or
+   * - **URL element**
+     - **Description**
+     - **Availability**
+     - **Example**
+   * - ``++debug++tal``
+     - Show the TAL declarations *in the HTML source code*
+     - developer box
+     - https://launchpad.test/++debug++tal
+   * - ``++debug++source``
+     - Show path to templates for a given view *in the HTML source code*
+     - developer box
+     - https://launchpad.test/++debug++source
+   * - ``++profile++``
+     - Get help on how to use the ++profile++ option.
+     - developer box, [qa]staging
+     - https://launchpad.test/++profile++ or https://qastaging.launchpad.net/++profile++
+   * - ``++profile++sql``
+     - See SQL queries used by the page.
+     - developer box, [qa]staging
+     - https://launchpad.test/++profile++sql or https://qastaging.launchpad.net/++profile++sql
+   * - ``++profile++sqltrace``
+     - See SQL queries and Python stack traces that led to them.
+     - developer box, [qa]staging
+     - https://launchpad.test/++profile++sqltrace or https://qastaging.launchpad.net/++profile++sqltrace
+   * - ``++profile++show``
+     - Show Python profile data and OOPS data, including SQL queries and timing.
+     - developer box, [qa]staging
+     - https://launchpad.test/++profile++show or https://qastaging.launchpad.net/++profile++show
+   * - ``++profile++pstats``
+     - Generate a pstats (Python standard library) profile file on the file system. Browser page gives you full path to generated file. **Note that, on [qa]staging, you will need to ask LOSAs to get you the file.**
+     - developer box, [qa]staging
+     - https://launchpad.test/++profile++pstats or https://qastaging.launchpad.net/++profile++pstats
+   * - ``++profile++callgrind``
+     - Generate a KCacheGrind profile file on the file system. Browser page gives you full path to generated file. **Note that, on [qa]staging, you will need to ask LOSAs to get you the file.**
+     - developer box, [qa]staging
+     - https://launchpad.test/++profile++callgrind or https://qastaging.launchpad.net/++profile++callgrind
+   * - ``++oops++``
+     - Record an OOPS report while still rendering the page correctly. The OOPS id is provided in the HTML source code.
+     - ALL
+     - https://launchpad.test/++oops++ or https://qastaging.launchpad.net/++oops++
+   * - ``++form++``
+     - Not a debug tool. Used for JS. Gives inner form HTML.
+     - ALL
+     - https://launchpad.test/~/+edit/++form++
+
+
+
+Some of those can be combined, like: ``++debug++tal,source`` or
 ``++profile++show,pstats``.
 
 ``++debug++errors`` is not working currently, probably because of
@@ -303,15 +313,15 @@ off within a request, in the debugger you can make sure the
 following.
 
 This gives output equivalent to ``LP_DEBUG_SQL=1`` but for only as
-long as ``_debug_sql = True``.
+long as ``_debug_sql = True``:
 
 ::
 
    from storm.tracer import get_tracers
    get_tracers()[0]._debug_sql = True
 
-This gives output equivalent to \``LP_DEBUG_SQL_EXTRA=1`\` but for only
-as long as \``_debug_sql_extra = True``.
+This gives output equivalent to ``LP_DEBUG_SQL_EXTRA=1`` but for only
+as long as ``_debug_sql_extra = True``:
 
 ::
 
@@ -337,21 +347,21 @@ Basic usage will get you the SQL run while the recorder is used:
    print recorder
 
 Printing the recorder gives you a full output of what happened. You can
-also look at .statements, .count, and so on (use dir!).
+also look at ``.statements``, ``.count``, and so on (use dir!).
 
-You can get all tracebacks by passing True when you instantiate the
-recorder (
+You can get all tracebacks by passing ``True`` when you instantiate the
+recorder:
 
 ::
 
    StormStatementRecorder(True)
 
-). Again, print the recorder to see the results.
+Again, print the recorder to see the results.
 
 You can conditionally get tracebacks by passing a callable that receives
 a SQL query string and returns a boolean True if a traceback should be
 collected, and False if it should not. The SQL will be normalized to
-capitalization and space normalized. For example,
+capitalization and space normalized. For example:
 
 ::
 
@@ -371,13 +381,13 @@ extra debugging information to the tracebacks, here is how.
 
 If you don't plan on checking the change in, or if the string you want
 already exists and does not need to be generated, just assign the string
-with the extra information you want to the variable name
+with the extra information you want to the variable name.
 
 ::
 
    __traceback_info__
 
-. That string will then be included in the information for that frame in
+That string will then be included in the information for that frame in
 tracebacks generated by this machinery, as well as in renderings of
 tracebacks from the appserver.
 
@@ -385,41 +395,22 @@ If you plan on checking the change in, you should be more careful: we
 only want to do the work if a traceback is rendered, not every time the
 code path is traveled. Then you have two options. The first is to create
 an object that will do the work only when it is cast to a string (in
-
-::
-
-   __str__
-
-) and assign it to a variable named
-
-::
-
-   __traceback_info__
-
-, as above.
+``__str__``) and assign it to a variable named ``__traceback_info__``,
+as above.
 
 The second, more involved option is to assign a two-tuple to
+``__traceback_supplement__`` . The first element of the tuple should be
+a factory, and the second argument should be an iterable that is passed
+to the factory as ``*args``. The factory should produce an object with
+any or all of the following attributes:
 
-::
+- ``source_url``: Some string that represents a source. For page templates, this is the path to the template file.
+- ``line``: A value castable to ``str`` that is presented as a line number.
+- ``column``: A value castable to ``str`` that is presented as a column number.
+- ``expression``: A value castable to ``str`` that is presented as an expression currently being processed (like a TALES expression).
+- ``warnings``: An iterable of strings that represent some warning to communicate.
+- ``getInfo``: A callable that returns some extra string.
 
-   __traceback_supplement__
-
-. The first element of the tuple should be a factory, and the second
-argument should be an iterable that is passed to the factory as
-
-::
-
-   *args
-
-. The factory should produce an object with any or all of the following
-attributes:
-
-| ``source_url:: Some string that represents a source.  For page templates, this is the path to the template file.``
-| ``line:: value castable to str that is presented as a line number.``
-| ``column:: value castable to str that is presented as a column number.``
-| ``expression:: value castable to str that is presented as an expression currently being processed (like a TALES expression).``
-| ``warnings:: an iterable of strings that represent some warning to communicate.``
-| ``getInfo:: a callable that returns some extra string.``
 
 Tracing SQL statements with PostgreSQL
 --------------------------------------
@@ -430,21 +421,25 @@ Statement logging can be configured in ``postgresql.conf``, by setting
 The server needs to be reloaded (by ``SIGHUP`` or ``pg_ctl reload``) for
 changes to take effect.
 
-It can also be set for a session, user or database:
+It can also be set for a session, user, or database:
 
-\` SET log_statement TO 'all'; --
-\`(\ `docs <http://www.postgresql.org/docs/8.3/static/sql-set.html>`__)
+.. code-block:: sql
 
-\` ALTER ROLE launchpad SET log_statement TO 'all'; --
-\`(\ `docs <http://www.postgresql.org/docs/8.3/static/sql-alterrole.html>`__)
+   SET log_statement TO 'all';  -- 
+   `docs <http://www.postgresql.org/docs/8.3/static/sql-set.html>`__
 
-\` ALTER DATABASE launchpad_dev SET log_statement TO 'all'; --
-\`(\ `docs <http://www.postgresql.org/docs/8.3/static/sql-alterdatabase.html>`__)
+   ALTER ROLE launchpad SET log_statement TO 'all';  -- 
+   `docs <http://www.postgresql.org/docs/8.3/static/sql-alterrole.html>`__
+
+   ALTER DATABASE launchpad_dev SET log_statement TO 'all';  -- 
+   `docs <http://www.postgresql.org/docs/8.3/static/sql-alterdatabase.html>`__
 
 Once enabled, statements will be logged to
 ``/var/log/postgresql/postgresql-*-main.log``.
 
-<<Anchor(tal-template-tracebacks)>>
+.. _tal-template-tracebacks:
+
+
 
 Getting past "LocationError: 'json'" in TAL template tracebacks
 ---------------------------------------------------------------
@@ -468,12 +463,12 @@ Using iharness for digging error tracebacks
 
 If you are reading this, most probably you have noticed that when things
 get wrong, ZOPE and TAL will rather give you a pointless
-**LocationError** without to much information about what is causing it.
+``**LocationError**`` without to much information about what is causing it.
 
-To find out what exactly went wrong you can use *make iharness* and
-investigate that specific **LocationError**
+To find out what exactly went wrong you can use ``make iharness`` and
+investigate that specific ``LocationError``
 
-Let's say that you got this error for *language_translation_statistics*:
+Let's say that you got this error for ``language_translation_statistics``:
 
 ::
 
@@ -527,22 +522,11 @@ filesystem ready for kcachegrind (++profile++callgrind), profiles on the
 filesystem ready for pstats (++profile++pstats),or combinations (such as
 ++profile++show,pstats).
 
-If you want to use this on
-
-::
-
-   staging
-
-or
-
-::
-
-   qastaging
-
-, this is already set up for you. You may need to ask a LOSA to
+If you want to use this on ``staging`` or ``qastaging``, this is
+already set up for you. You may need to ask a LOSA to
 temporarily increase the timeout for the page that you want to analyze
 using the feature flags mechanism (e.g., if you want to profile
-BugTask:+index pages, you'll need to ask LOSAs to add something like
+BugTask:+index pages, you'll need to ask LOSAs to add something like:
 
 ::
 
