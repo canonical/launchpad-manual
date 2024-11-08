@@ -11,6 +11,7 @@ conf
 contactuser
 cronscripts
 datetime
+debootstrap
 DateTime
 DBA
 devel
