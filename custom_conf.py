@@ -141,6 +141,12 @@ linkcheck_ignore = [
     'https://git.zx2c4.com/cgit/', # unfortunately very flaky
     'https://wiki.canonical.com/InformationInfrastructure/OSA/RequestLogging/LP/Cowboys',  # private
     'https://wiki.canonical.com/Launchpad/SupportRotation/CodeImportStuck',  # private
+    'https://wiki.canonical.com/InformationInfrastructure/OSA/LaunchpadRollout#Fastdowntime_db_update',  # private
+    'https://wiki.canonical.com/InformationInfrastructure/OSA/LaunchpadRollout#Production_nodowntime_Rollout',  # private
+    r'https://deployable\.ols\.canonical\.com.*',  # private
+    r'https://jenkins\.ols\.canonical\.com.*',  # private
+    '../branches',  # relative link to a page in the same documentation
+    '../live-patching',  # relative link to a page in the same documentation
     ]
 
 # Pages on which to ignore anchors

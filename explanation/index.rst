@@ -41,6 +41,16 @@ These pages help explain important aspects of the developer experience.
 
    developing-the-launchpad-project
 
+Deploying Launchpad changes
+---------------------------
+
+These pages help explain the important aspects of deploying Launchpad changes.
+
+.. toctree::
+   :maxdepth: 1
+
+   deploying-launchpad-changes
+
 Parts of Launchpad
 ------------------
 
