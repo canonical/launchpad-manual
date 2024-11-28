@@ -16,3 +16,5 @@ registry.rst
 storm-migration-guide.rst
 branches.rst
 database-schema-changes-process.rst
+# Has multiple unavoidable uses of 'master'
+journey-of-a-change-to-production.rst

@@ -2,6 +2,11 @@
 The journey of a Launchpad change from a developer's branch to production
 =========================================================================
 
+.. warning::
+
+   This document contains many links that are Canonical-internal and only
+   accessible to those who work for Canonical.
+
 ##########
 Characters
 ##########
@@ -9,147 +14,304 @@ Characters
 * The Launchpad developer.
 * Launchpad's branches.
 * Launchpad itself.
-* Jenkins jobs (https://jenkins.ols.ps5.canonical.com).
-* Buildbot (http://lpbuildbot.canonical.com).
-* Deployable (https://deployable.ols.canonical.com).
-* Launchpad qastaging and staging environments.
+* Jenkins jobs.
+* Buildbot.
+* Deployable.
+* Launchpad ``qastaging`` and ``staging`` environments.
 * Scripts from the ``lp:launchpad-bastion-scripts`` repository.
-* Juju and mojo
-* Fragile Launchpad jobs
-* Launchpad production environment
+* Juju and mojo.
+* Fragile Launchpad jobs.
+* Launchpad production environment.
 
-===========
+###########
 The journey
-===========
+###########
 
-* **What type of change do I want to contribute to Launchpad? Does this involve
-  any database schema changes?**
+What VCS branches does Launchpad use?
+-------------------------------------
 
-  Launchpad has 4 master branches, each with its own purpose and role (for more details, see :doc: `branches </explanation/branches>`_). If the change
-  inolves making database schema changes along with some related code changes, the
-  two have to done separately.
+The `main Launchpad repository <https://git.launchpad.net/launchpad>`_ has 4
+main (or "trunk") branches. These are ``master``, ``stable``, ``db-devel``,
+and ``db-stable``. For more details see `branches <explanation/branches>`_.
 
-  The database changes should be targetting the ``db-devel`` branch whereas the code
-  changes need to target the ``master`` branch. This is because database changes
-  can be destabilising to other work, so we isolate them into a separate branch.
-  Since Launchpad has a large database and codebase with strict uptime requirements,
-  we want to deploy changes to only one of these at a time and this separation
-  helps that as well.
+How to contribute a change to Launchpad?
+----------------------------------------
 
-* **If I need to separate the code and database changes, how do I get them in the
-  same place to test them together?**
+If the change includes code and database schema changes, both have to be done
+separately and target different branches. The database patch needs to be based
+on and target the ``db-devel`` branch, whereas the code changes need to be based
+on and target the ``master`` branch. This is because database changes can be
+destabilising to other work, so we isolate them into a separate branch. Since
+Launchpad has a large database and codebase with strict uptime requirements,
+we want to deploy changes to only one of these at a time and this separation
+helps that as well.
 
-  The database changes need to go through a different journey to end up in the ``master``
-  branch where the code changes get merged to. So it is important to start with the
-  database schema changes first, get them reviewed and merged to the ``db-devel`` branch.
-  Some types of database changes are applied through cold patches (with downtime) and other
-  types of database changes are applied through hot patches. There are some differences
-  between these and let us focus on the cold patches for the time being.
+How to test the code and database changes together?
+---------------------------------------------------
 
-* **So what happens after the database schema changes submitted in a merge proposal, reviewed, and
-  approved?**
+It is important to get the database patches submitted and merged to the
+``db-devel`` branch as early as possible. This is because those changes get
+merged to the ``master`` branch only after they are deployed to production
+(the details will be explained in a later question) and it is a pre-requisite
+to get the code changes merged.
 
-  Once a database patch is approved and the status of the corresponding merge proposal is set
-  to "Approved", a `Jenkins trigger <https://jenkins.ols.ps5.canonical.com/job/trigger-launchpad/>`_
-  runs a `Jenkins job <https://jenkins.ols.ps5.canonical.com/job/launchpad/>`_ that checks for
-  unmerged merge proposals that are approved, and merges them to their target branch. So this
-  job will merge the approved database merge proposal. The Jenkins jobs are defined in the
-  `ols-jenkaas-jobs <https://git.launchpad.net/ols-jenkaas-jobs>`_ repository.
+While the database patches make their way to production and to the ``master``
+branch, it is okay to copy the database patch from the ``db-devel``
+branch manually and apply it locally in the development environment to
+implement and test the code changes.
 
-* **Now my changes are merged, how can I deploy them to production?**
+How to deploy the database changes to the production environment?
+-----------------------------------------------------------------
 
-  There are multiple steps/processes that need to happen before a database patch can be
-  deployed to production. Now that the database patch has been merged to the ``db-devel``
-  branch, the ``lp-db-devel-focal`` job on buildbot runs the full Launchpad test suite
-  on the ``db-devel`` branch. Once the tests pass, there is a cron job (TODO: add more details)
-  that runs on the buildbot master unit which checks for new commits that have completed
-  a successful buildbot run and merges them to the ```db-stable`` branch.
+The database patches should be submitted to the ``db-devel`` branch and once
+they are approved, they get merged by a landing (aka "merging") bot which
+performs the merge. The trunk branches of Launchpad have ACLs to only allow
+the landing bot to push changes to the trunk branches.
 
-  Once this is done, the new commits to the ``db-stable`` branch that have not yet been
-  deployed to production show up on the Deployable page, https://deployable.ols.canonical.com/projects/launchpad-db.
+Then the `Launchpad buildbot <http://lpbuildbot.canonical.com>`_, runs the
+full Launchpad test suite on the ``db-devel`` branch and if it passes, the new
+changes get merged to the ``db-stable`` branch.
 
-  There is yet another Jenkins job on the OLS Jenkins instance that checks for new commits
-  to the ``db-stable`` branch and builds a new Launchpad payload for the latest revision in
-  the ``db-stable`` branch, and publishes to Swift, at a well-known location whose path contains
-  the hash of the commit that the tarball was built for.
+Once this is done, the changes show up on the `launchpad-db deployable page`_
+and there is a periodic cron job that automatically deploys the new database
+patches, if any, to the `Launchpad staging environment`_.
 
-* **How can I test my database schema changes before attempting to deploy them to production?**
+The patch application times can be checked from the ``staging`` deployment logs.
+Launchpad has strict requirements about the patch application time and it should
+be under 10 seconds.
 
-  Launchpad as 2 pre-production environments, ``qastaging`` and ``staging``. The former is primarily
-  used for testing code changes whereas the latter is used for testing the database changes.
+After confirming the patch application time, the instructions in the
+`fastdowntime deployment process documentation`_ can be used to deploy the
+database patch to production. Our database deployment policy requires
+deploying only one database patch per deployment. If there are multiple patches
+to deploy, they should be deployed separately. Since there are some fragile
+jobs (for example, the PPA and ``ftpmaster`` publishers, librarian garbage
+collector) that shouldn't be interrupted by a database downtime, the deployment
+process ensures that there are no such jobs running before applying the patch
+with a small downtime. At the end of this process, the database changes will get
+merged to the ``master`` branch.
 
-  Launchpad is deployed using Juju charms using ``mojo``, a convenience wrapper around Juju that provides
-  a lot of useful functionality. The ``mojo`` configuration for deploying Launchpad to various environments
-  is defined in the ``lp:launchpad-mojo-specs`` repository, under the ``lp`` subdirectory. The ``bundle.yaml``
-  file in that directory is a Jinja2 template that gets rendered to an appropriate Juju bundle.yaml for each
-  environment. This ``bundle.yaml`` file contains 2 different ``build_label`` values - the hash of the ``stable``
-  branch commit that is deployed to production and also the hash of the ``db-stable`` branch commit that is
-  deployed to production.
+.. _fastdowntime deployment process documentation: https://wiki.canonical.com/InformationInfrastructure/OSA/LaunchpadRollout#Fastdowntime_db_update
+.. _launchpad-db deployable page: https://deployable.ols.canonical.com/project/launchpad-db
+.. _Launchpad staging environment: https://staging.launchpad.net
 
-  There is an ``auto-upgrade-staging`` script in the ``lp:launchpad-bastion-scripts`` repository that
-  runs periodically on the launchpad bastion as the ``stg-launchpad`` user. It finds the latest
-  undeployed commit in the ``db-stable`` branch and attempts to deploy it to the staging Launchpad environment.
-  The scripts logs its output to a file like with a name like ``~/logs/2024-10-11-staging.log``.
+What is the landing bot?
+------------------------
+When a Launchpad merge proposal is approved and its status is set to
+``Approved``, there is a `Launchpad Jenkins trigger`_ that runs and
+triggers the `Launchpad merge Jenkins job`_ to merge the changes to
+the appropriate target branch. This job is often called as the landing
+bot. This and the other Jenkins jobs that we use are defined in the
+`ols-jenkaas-jobs repository`_.
 
-  The Launchpad charms have a ``build_label`` configuration option, which accepts the hash of the
-  commit to be deployed. The ``auto-upgrade-staging`` script adds local overrides for the production build label
-  values and replaces them with the latest commit in the ``db-stable`` branch. It then attempts to
-  deploy that using ``mojo``.
+.. _Launchpad Jenkins trigger: https://jenkins.ols.ps5.canonical.com/job/trigger-launchpad/
+.. _Launchpad merge Jenkins job: https://jenkins.ols.ps5.canonical.com/job/launchpad/
+.. _ols-jenkaas-jobs repository: https://git.launchpad.net/ols-jenkaas-jobs
 
-  The Launchpad mojo spec performs that Launchpad deployment in 3 stages. You can learn more about these stages,
-  which applications are deployed in each stage and the reasons for doing so in
-  https://git.launchpad.net/launchpad-mojo-specs/tree/lp/predeploy.
+What is buildbot?
+-----------------
 
-  Once this deployment completes successfully, all the Launchpad units in the staging environment have the latest
-  changes from the ``db-stable`` branch. But the new database patches are not applied by the ``auto-upgrade-staging``
-  script because its responsibility stops with updating the code.
+`Buildbot <https://buildbot.net>`_ is a continuous integration system that we
+use for running the Launchpad test suite before promoting the changes in the
+``master``, ``db-devel`` branches to the ``stable``, ``db-stable`` branches
+(changes to production are deployed from these branches) respectively.
 
-  There is another script in the ``launchpad-bastion-scripts`` repository, ``staging-restore/staging_restore.sh``,
-  which has a cron job in the bastion, that invokes it with an argument ``full``. This script does a lot of things
-  including running the database update to apply any unapplied patches. It logs its output to a file with a name
-  like ``~/logs/2024-10-11-staging_restore.log``.
+Our deployment of buildbot has 2 or more build configurations defined and these
+configurations have names like ``lp-devel-focal`` and ``lp-db-devel-focal``,
+where the former runs the test suite on the ``master`` branch (code changes)
+and the latter runs the test suite on the ``db-devel`` branch (database
+changes).
 
-  After your patch has been applied, you can find the time it took to apply it on staging from the above log file.
-  This is very important to check and it should be under 10s.
+There is a `buildbot poller script`_ that runs on the buildbot buildmaster and
+merges new commits that have completed a successful Launchpad test suite run
+into the appropriate stable branch.
 
-  You can then proceed to the ``launchpad-db`` deployable queue and mark your database patch commit as deployable.
-  Also mark all the auto-merge commits deployable. Since a database deployment should only deploy at most one
-  patch, only verify and mark the commits till the first patch in the queue deployable. Additional patches, if any,
-  should be deployed separately.
+.. _buildbot poller script: https://bazaar.launchpad.net/~canonical-launchpad-branches/lpbuildbot/public/view/head:/buildbot-poll.py
 
-* **Can I deploy my patch to production now?**
+What is deployable?
+-------------------
 
-  Yes. For that you have to follow the instructions in https://wiki.canonical.com/InformationInfrastructure/OSA/LaunchpadRollout#Fastdowntime_db_update. But before you do that
-  here is a high-level explanation of how things are deployed in production and the process.
+`Deployable <https://launchpad.net/isitdeployable>`_ is the web application that
+we use to track each revision of code, whether it is ready to be deployed, and
+the details of the commits included in each deployment. There is a
+`Launchpad deployable project`_ (tracking the ``stable`` branch) and a
+`Launchpad DB deployable project`_ (tracking the ``db-stable`` branch.)
 
-  In production, all units except the ``launchpad-db-update`` unit run the commit specified in the ``build_label`` commit
-  without the ``-db`` suffix, that points to a commit from the ``stable`` branch. The ``launchpad-db-update`` unit runs
-  code corresponding to the commit in the ``build_label`` configuration option with the ``-db`` suffix and this commit is
-  from the ``db-stable`` branch.
+.. _Launchpad deployable project: https://deployable.ols.canonical.com/project/launchpad
+.. _Launchpad DB deployable project: https://deployable.ols.canonical.com/project/launchpad-db
 
-  So before we can apply the new DB patch, we need to update the code on the ``launchpad-db-update`` unit to a commit on the
-  ``db-stable`` branch that contains DB patch. This is done in the
-  https://wiki.canonical.com/InformationInfrastructure/OSA/LaunchpadRollout#Prepare_code step.
+The deployable page lists the commits in the corresponding stable branch that
+haven't been deployed to the production environment. To deploy a specific
+commit, that commit and all its ancestors that are listed in that page should
+be tested by a Launchpad engineer (usually the author of the commit) in the
+``staging`` or ``qastaging`` environments and marked as deployable using the
+button under each commit.
 
-  Then after performing the subsequent steps in that documentation, we run the pre-flight checks to ensure that there
-  are no fragile Launchpad jobs running (examples: database backup, ftpmaster and PPA publishers, librarian-gc). Once
-  the pre-flight checks pass, we apply the pending database patch by running the command that invokes the ``db-update``
-  action on the production ``launchpad-db-update`` unit.
+Then during the deployment process, a deployment request is created on this
+web application to track the commits that are included in that deployment. And
+after the deployment is completed, the deployment request is marked as deployed.
 
-  When this command has finished execution, you will see log output indicating that the patch was applied and how long
-  it took to apply.
+The deployment requests on this application are solely used for tracking and do
+not affect the actual deployment process in any way.
 
-  Proceed with the remaining steps in the ``fastdowntime`` deployment documentation and complete them. One of the last
-  steps involves manually merging the deployed database commit back to the ``master`` branch. This is the step that
-  brings the database patch changes back to the ``master`` branch where we target the code changes.
+What are the Launchpad pre-production environments?
+---------------------------------------------------
 
-  Once this merge is done, ``lp-devel-focal`` buildbot run happens and if it passes, the merged changes get merged to
-  the ``stable`` branch by the same cron job running on the ``buildbot`` master node.
+At the time of writing, Launchpad has 2 pre-production environments,
+`staging`_ and `qastaging`_. The ``staging`` environment is primarily used to
+test the database changes whereas the ``qastaging`` environment is used to
+test the code changes. These are deployed on a Canonical ProdStack environment
+and the Launchpad team members have shell access to these environments via the
+VPN.
 
-* **So we merged the database changes from** ``db-stable`` **to** ``master`` **which brings the database patch to the** ``master``
-  **branch. But how do we get the latest code changes to the** ``db-*`` **branches?**
+We have cron jobs in the Launchpad bastion environment to automatically deploy
+new changes in the ``db-stable`` branch to the ``staging`` environment and
+new changes in the ``stable`` branch to the ``qastaging`` environment.
 
-  There is a periodic merge of the code changes from the ``stable`` branch back to the ``db-devel`` branch, which makes its
-  way to the ``db-stable`` branch after a successfull buildbot run.
+Shell access to these environment is available after connecting to the VPN,
+logging in to the Launchpad bastion, and switching to the ``stg-launchpad``
+user. This user has access to the ``staging`` and ``qastaging`` Juju models.
 
-  **TODO:** Find and document what job does this.
+Even though these environments are mainly used by the Launchpad team, there are
+other Canonical teams (IS, Store, Kernel, for example) that use these
+environments in limited ways too.
+
+.. _staging: https://staging.launchpad.net
+.. _qastaging: https://qastaging.launchpad.net
+
+How to check the database patch application time in the ``staging`` environment?
+--------------------------------------------------------------------------------
+
+The automatic deployment and application of the database patches to the
+``staging`` environment is done using the `auto-upgrade-staging script`_,
+which uses `mojo <https://mojo.canonical.com>`_ and the `Launchpad mojo specs`_
+to do its job, and the `staging_restore.sh script`_. These scripts are run
+periodically as cron jobs under the ``stg-launchpad`` account on the Launchpad
+bastion.
+
+The database patch application times can be found from files in the ``~/logs``
+directory with a name like ``2024-11-17-staging_restore.log``. If the database
+patch application failed with an error, it is possible to apply it manually
+by running the ``preflight`` juju action on the ``staging``
+``launchpad-db-update`` unit to verify that there are fragile jobs running and
+then running the ``db-update`` juju action to apply the patch. The output of
+the ``db-update`` juju action will show the patch application time.
+
+.. _auto-upgrade-staging script: https://git.launchpad.net/launchpad-bastion-scripts/tree/auto-upgrade-staging
+.. _Launchpad mojo specs: https://git.launchpad.net/launchpad-mojo-specs
+.. _staging_restore.sh script: https://git.launchpad.net/launchpad-bastion-scripts/tree/staging-restore/staging_restore.sh
+
+What is the ``fastdowntime`` deployment process?
+------------------------------------------------
+
+Deploying cold database patches to the production Launchpad database requires
+having a very short downtime (usually < 10 seconds). That is why the process
+to deploy such cold database patches is called ``fastdowntime``. For details
+about hot and cold database patches, see `Live Patching`_.
+
+.. _Live Patching: explanation/live-patching
+
+How do code changes in the ``stable`` branch get added to the ``db-stable`` branch?
+-----------------------------------------------------------------------------------
+
+The same buildbot poller script takes care of periodically merging the latest
+changes in the ``stable`` branch to the ``db-devel`` branch. Then the changes
+get tested on buildbot before they get merged to the ``db-stable`` branch.
+
+As mentioned in the explanation of the database deployment process, the changes
+in the ``db-stable`` branch get submitted for merge to the ``master`` branch
+by a Launchpad developer after deploying a database patch. Once the merge
+proposal gets approved and merged, buildbot runs the test suite and if it
+passes, the changes then get merged to the ``stable`` branch.
+
+How does a Launchpad branch get deployed?
+-----------------------------------------
+
+When a change is merged to the ``master`` branch, there is a
+`launchpad-build-charm Jenkins job`_ that builds a Launchpad deployment tarball
+of the latest commit in that branch and publishes it to a well-known bucket
+on the ProdStack SWIFT storage. All the Launchpad charms use these tarballs
+to deploy the Launchpad source and its dependencies.
+
+Similarly, there is a `launchpad-build-db-charm Jenkins job`_ that builds a
+tarball of the latest commit in the ``db-devel`` branch and publishes it to
+SWIFT.
+
+In the production environment, all the Launchpad units except the
+``launchpad-db-update`` unit run the tarball of a specified commit in the
+``stable`` branch. The ``launchpad-db-update`` unit runs the tarball of the
+latest commit in the ``db-stable`` branch because it is used to apply the
+database patches.
+
+In the ``staging`` environment, all the Launchpad units run the tarball of the
+latest commit in the ``db-stable`` branch and in the ``qastaging`` environment,
+all the Launchpad units run the tarball of the latest commit in the ``stable``
+branch. Due to this, database changes can be deployed to the qastaging
+environment only after they have been merged to the ``master`` after the
+production deployment and promoted to the ``stable`` branch after a successful
+buildbot run.
+
+The database changes have to be deployed in the ``qastaging`` environment
+manually by following a process similar to the production ``fastdowntime``
+deployment.
+
+.. _launchpad-build-charm Jenkins job: https://jenkins.ols.ps5.canonical.com/job/launchpad-build-charm/
+.. _launchpad-build-db-charm Jenkins job: https://jenkins.ols.ps5.canonical.com/job/launchpad-build-db-charm/
+
+How does the Launchpad deployment process work?
+-----------------------------------------------
+
+Launchpad is deployed to a Canonical ProdStack environment using Juju charms
+and ``mojo``. We use the ``lp`` spec in the `launchpad-mojo-specs repository`_
+to define the Juju bundle (see ``lp/bundle.yaml``) used to deploy the Launchpad
+stack.
+
+For deploying changes to the pre-production environments, we directly invoke
+the ``mojo run`` command from the ``stg-launchpad`` account on the Launchpad
+bastion. This is usually only needed when the automatic deployment cron jobs
+did not work.
+
+For deploying changes to the production environment, we use the
+``upgrade-production`` command from the ``stg-launchpad`` account on the
+Launchpad bastion to invoke the appropriate ``mojo`` commands on the production
+bastion that only IS have access to.
+
+.. _launchpad-mojo-specs repository: https://git.launchpad.net/launchpad-mojo-specs_
+
+How to deploy code changes to the production environment?
+---------------------------------------------------------
+
+The code changes must be made on a branch based on the ``master`` branch
+and a merge proposal with the changes must be submitted to the ``master``
+branch.
+
+If the code changes require some related database changes, those must be
+deployed to production and merged back to the ``master`` branch before
+the code changes can be merged to the ``master`` branch.
+
+Similar to the process for deploying the database patch, there is a landing
+bot to merge the approved code merge proposals to the ``master`` branch.
+After that, buildbot runs the full Launchpad test suite on the ``master``
+branch and if it passes, the new changes get merged to the ``stable`` branch.
+
+Once this is done, the changes show up on the `launchpad deployable page`_
+and there is a periodic cron job that automatically deploys the new changes
+in the ``stable`` branch to the ``qastaging`` environment.
+
+The code changes must be tested and verified in the ``qastaging`` environment
+the related commits must be marked as deployable in the deployable site.
+
+Then the changes can be deployed to the production environment by following the
+instructions in the `nodowntime deployment process documentation`_.
+
+.. _launchpad deployable page: https://deployable.ols.canonical.com/project/launchpad
+.. _nodowntime deployment process documentation: https://wiki.canonical.com/InformationInfrastructure/OSA/LaunchpadRollout#Production_nodowntime_Rollout
+
+What is the ``nodowntime`` deployment process?
+----------------------------------------------
+
+Code changes can be deployed to the Launchpad production environment without
+causing any user-visible downtime. That is why the process is called the
+``nodowntime`` deployment process. This is achieved by deploying the new code
+on all the Launchpad units and performing a coordinated rolling restart of the
+Launchpad appserver units.

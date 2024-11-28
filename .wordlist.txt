@@ -1,8 +1,10 @@
 addons
+ACLs
 API
 APIs
 balancer
 bugfix
+buildmaster
 callables
 cgit
 Charmhub
@@ -14,6 +16,8 @@ datetime
 debootstrap
 DateTime
 DBA
+Deployable
+deployable
 devel
 Diátaxis
 DOM
@@ -52,6 +56,7 @@ naïve
 namespace
 namespaces
 NodePort
+nodowntime
 observability
 OLM
 overcommunication
@@ -60,6 +65,7 @@ Permalink
 portlet
 Post
 postgres
+ProdStack
 ReadMe
 rebase
 reST
@@ -83,6 +89,8 @@ UI
 URL
 undercommunication
 updateable
+uptime
+VCS
 VM
 VSCode
 VSCode's
