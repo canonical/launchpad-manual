@@ -145,8 +145,8 @@ linkcheck_ignore = [
     'https://wiki.canonical.com/InformationInfrastructure/OSA/LaunchpadRollout#Production_nodowntime_Rollout',  # private
     r'https://deployable\.ols\.canonical\.com.*',  # private
     r'https://jenkins\.ols\.canonical\.com.*',  # private
-    'explanation/branches',  # link to a page in the same documentation
-    'explanation/live-patching',  # link to a page in the same documentation
+    '../branches',  # relative link to a page in the same documentation
+    '../live-patching',  # relative link to a page in the same documentation
     ]
 
 # Pages on which to ignore anchors
