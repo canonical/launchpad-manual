@@ -49,7 +49,7 @@ These pages help explain the important aspects of deploying Launchpad changes.
 .. toctree::
    :maxdepth: 1
 
-   journey-of-a-change-to-production
+   deploying-launchpad-changes
 
 Parts of Launchpad
 ------------------
