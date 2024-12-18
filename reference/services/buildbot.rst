@@ -17,9 +17,9 @@ There are the following main components in the Launchpad Buildbot
 setup. 
 
 1. `lpbuildbot <https://code.launchpad.net/~canonical-launchpad-branches/lpbuildbot/>`__:
-   This contains the \`master.cfg\` file and the related Python code
+   This contains the ``master.cfg`` file and the related Python code
    which powers the
-   `buildmaster <https://docs.buildbot.net/0.8.12/manual/introduction.html#system-architecture>`__
+   `buildmaster <https://docs.buildbot.net/0.8.12/manual/introduction.html>`__
    in our buildbot setup. There is a public bazaar branch and a private
    production branch, which contains some secrets related to our
    production deployment. We add changes to the public branch via merge
@@ -29,14 +29,13 @@ setup.
    buildbot. 
 
    1. The buildmaster has a custom ``buildbot-poll.py`` cron script
-      which is responsible for merging the commits in the
-      \`master`/\`db-devel\` branches, that have completed a successful
-      buildbot run, to the \`stable`/\`db-stable\` branches
+      which is responsible for merging the commits within the main Launchpad repository in the
+      ``master``/``db-devel`` branches, that have completed a successful
+      buildbot run, to the ``stable``/``db-stable`` branches
       respectively. It also periodically merges the changes from the
-      \`stable\` branch to the \`db-devel\` branch, which then
-      propagates to the \`db-stable\` branch after a successful buildbot
-      run. updating and managing the following 4 branches. For this, the
-      secrets to push to these branches are present in the buildmaster
+      ``stable`` branch to the ``db-devel`` branch, which then
+      propagates to the ``db-stable`` branch after a successful buildbot
+      run. For this, the secrets to push to these branches are present in the buildmaster
       unit.
 
  
@@ -44,7 +43,7 @@ setup.
 2. `Buildbot Worker Charm and Deb
    Package <https://launchpad.net/~launchpad/lpbuildbot-worker/+charm/lpbuildbot-worker>`__:
    This repository contains the code for the
-   `buildslave <https://docs.buildbot.net/0.8.12/manual/introduction.html#system-architecture>`__
+   `buildslave <https://docs.buildbot.net/0.8.12/manual/introduction.html>`__
    which is deployed using the `lpbuildbot-worker
    charm <https://charmhub.io/lpbuildbot-worker/>`__ and the
    `lpbuildbot-worker debian
@@ -78,7 +77,7 @@ following steps.
 
 1. SSH into your bastion account.
 
-2. Run ``pe`` and select the corresponding number ID of the buildbot
+2. Run ``sudo -iu stg-launchpad-buildbot`` or you can also run ``pe`` and select the corresponding number ID of the buildbot
    account. 
 
 3. ``juju status``
@@ -100,10 +99,6 @@ that adds the missing units in the spec.
   configurations are created manually. The actual process is running as
   a systemd service called ``buildmaster``. 
 
-.. raw:: html
-
-   <!---->
-
 ::
 
    systemctl status buildmaster.service
@@ -111,7 +106,7 @@ that adds the missing units in the spec.
 - **Buildbot Worker:** For worker units, the deployment process looks as
   follows:
 
-  - For charms, you can build and upload the charm to charmhub via the
+  - For charms, you can build and upload the charm to Charmhub via the
     charm recipe. You can deploy a new charm version via the mojo
     specs. 
 
@@ -120,10 +115,6 @@ that adds the missing units in the spec.
     package <https://git.launchpad.net/lpbuildbot-worker/tree/debian/install>`__.
     You can either update the package manually or ``apt-upgrade``
     happens only on charm upgrades
-
-.. raw:: html
-
-   <!---->
 
 ::
 
