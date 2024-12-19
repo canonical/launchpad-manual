@@ -111,9 +111,69 @@ We deploy the fetch service using the specs defined in
 `fetch service mojo specs <https://git.launchpad.net/~launchpad/launchpad-mojo-specs/+git/private/+ref/master>`_.
 
 In order to be able to evaluate new fetch service versions, we use different
-Snap channels for qastaging and production, so we are able to
+Snap channels and revisions for qastaging and production, so we are able to
 test new releases. This information is both defined in above mentioned mojo
 specs, and in `ST118 fetch service release process <https://docs.google.com/document/d/1HZvFo78LqFGgdpM7v3teG9gV-pMyvXpXTD1vcLLv_d0/>`_.
+
+The fetch service uses various inspectors: we have the inspector for ``git``, ``craft`` builds
+and other will be released in future. 
+The inspector is responsible for inspecting the requests and the various
+downloads that are made during the build. The inspector is also responsible
+for making sure that the requests are allowed to be made.
+Every inspector is fully configurable and the ``allowlist`` is specified in the configuration
+file.
+This configuration is managed by the aforementioned mojo specs.
+
+Configuration example:
+
+.. code-block:: yaml
+
+   git:
+     urls:
+       - https://test.com/**
+
+   crafts:
+     urls:
+      - https://test.com/**
+
+   snap:
+     snap-declaration:
+       - name: publisher-id
+         value: [canonical]
+
+   apt:
+     repositories:
+       default:
+         urls:
+           - http://archive.ubuntu.com/ubuntu
+         dists:
+           - "*"
+         components:
+           - "*"
+
+
+Moreover, the fetch service snap require certificates to work properly.
+This is something that the snap can create when it's installed: the snap will 
+call the related hook available `here <https://github.com/canonical/fetch-service/blob/49f7382262da4aa71d931130524315c07f4be28d/snap/hooks/install#L20>`_.
+
+These certificates are also configurable from the charm itself if we have the need to
+change them, using the following command:
+
+``juju config fetch-service proxy.certificate="$(cat certs/ca.pem)" proxy.key="$(cat certs/ca.key.pem)"``
+
+.. note::
+
+   If you want to create them, you can follow the process described in the install hook:
+   `certificate creation <https://github.com/canonical/fetch-service/blob/49f7382262da4aa71d931130524315c07f4be28d/snap/hooks/install#L20>`_.
+
+The certificates are stored in the ``${SNAP_DATA}/certs`` directory inside the fetch-service
+charm unit.
+
+In order to configure properly our builders and the ``launchpad-buildd-manager`` we should 
+pass the ``base64`` encoded ``ca.pem`` certificate to the ``launchpad-buildd-manager`` charm 
+using the following command, making sure that is passed as a one-line value:
+
+``juju config launchpad-buildd-manager fetch_service_mitm_certificate=<encoded-one-line-value>``
 
 Qastaging
 ~~~~~~~~~
