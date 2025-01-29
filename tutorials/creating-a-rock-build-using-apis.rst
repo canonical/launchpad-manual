@@ -12,7 +12,7 @@ Pre-requisites
 1. You have ``lp-shell`` installed. Can be installed using ``sudo apt-get install lptools``.
 2. You have a Launchpad account.
 3. You have a test project in Launchpad. You can create one `here <https://launchpad.net/projects/+new>`_.
-4. You have a repository containing a Rock recipe. You can fork the `helloworld-rock <https://launchpad.net/~pelpsi/+git/helloworld-rock>`_ repository.
+4. You have a repository containing a Rock recipe. You can fork the `helloworld-rock <https://launchpad.net/~launchpad/launchpad-tutorials/+git/helloworld-rock>`_ repository.
 
 If you want to create a new repository from scratch, you can start from `there <https://documentation.ubuntu.com/rockcraft/en/latest/how-to/get-started>`_.
 
@@ -38,17 +38,17 @@ We are pointing to ``production`` and we want to use the ``devel`` APIs.
     >>> lp.me
     <person at https://api.launchpad.net/devel/~pelpsi>
     # let's load the repository we want to use
-    >>> gitref = lp.load("~pelpsi/+git/helloworld-rock/+ref/main")
+    >>> gitref = lp.load("~launchpad/launchpad-tutorials/+git/helloworld-rock/+ref/main")
     >>> gitref
-    <git_ref at https://api.launchpad.net/devel/~pelpsi/+git/helloworld-rock/+ref/main>
+    <git_ref at https://api.launchpad.net/devel/~launchpad/launchpad-tutorials/+git/helloworld-rock/+ref/main>
     # let's load the project created before, in this case I will use mine.
-    >>> project = lp.load("pelpsi-testing")
+    >>> project = lp.load("launchpad-tutorials")
     >>> project
-    <project at https://api.launchpad.net/devel/pelpsi-testing>
+    <project at https://api.launchpad.net/devel/launchpad-tutorials>
     # Now we are able to create a new Rock recipe
     >>> recipe = lp.rock_recipes.new(owner=lp.me, project=project, name="testrockpelpsi", git_ref=gitref)
     >>> recipe
-    <rock_recipe at https://api.launchpad.net/devel/~pelpsi/pelpsi-testing/+rock/testrockpelpsi>
+    <rock_recipe at https://api.launchpad.net/devel/~pelpsi/launchpad-tutorials/+rock/rocktutorial>
 
 Build the recipe
 ================
@@ -60,14 +60,14 @@ Once we have our recipe we should be able to build it.
     # Let's create a build request for that recipe
     >>> br = recipe.requestBuilds()
     >>> br
-    <rock_recipe_build_request at https://api.launchpad.net/devel/~pelpsi/pelpsi-testing/+rock/testrockpelpsi/+build-request/93165288>
+    <rock_recipe_build_request at https://api.launchpad.net/devel/~pelpsi/launchpad-tutorials/+rock/rocktutorial/+build-request/95583976>
     # After that we can query the builds collection that will contain the builds scheduled for that recipe.
     >>> br.builds[0]
-    <rock_recipe_build at https://api.launchpad.net/devel/~pelpsi/pelpsi-testing/+rock/testrockpelpsi/+build/65>
+    <rock_recipe_build at https://api.launchpad.net/devel/~pelpsi/launchpad-tutorials/+rock/rocktutorial/+build/291>
 
 .. note:: 
 
-    You can check your build at `https://launchpad.net/~pelpsi/pelpsi-testing/+rock/testrockpelpsi/+build/65 <https://launchpad.net/~pelpsi/pelpsi-testing/+rock/testrockpelpsi/+build/65>`_
+    You can check your build at `https://launchpad.net/~pelpsi/launchpad-tutorials/+rock/rocktutorial/+build/291 <https://launchpad.net/~pelpsi/launchpad-tutorials/+rock/rocktutorial/+build/291>`_
 
 
 Fetch service
