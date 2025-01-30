@@ -73,7 +73,7 @@ Structure and terminology
 -------------------------
 
 Essentially all translations in Launchpad are based on
-`gettext <http://www.gnu.org/software/gettext/manual/>`__. Software
+`gettext <https://www.gnu.org/software/gettext/manual/>`__. Software
 authors mark strings in their codebase as translatable; they then use
 the gettext tools to extract these and get them into Launchpad in one of
 several ways. We also call the translatable strings *messages.*
