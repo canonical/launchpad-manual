@@ -71,12 +71,12 @@ Operations
 ----------
 
 A change to a flag in production counts as a production change: it is
-made by IS on request. Make the change `on the appropriate wiki
+made by the launchpad team on request. Make the change `on the appropriate wiki
 page <https://wiki.canonical.com/InformationInfrastructure/OSA/LaunchpadProductionStatus>`__
 (sorry, company internal), including `an approval per the usual
 policy <https://wiki.canonical.com/Launchpad/PolicyandProcess/ProductionChangeApprovalPolicy>`__,
 and then ask in
-`~launchpad <https://chat.canonical.com/canonical/channels/launchpad>`__
+`~launchpad-private <https://chat.canonical.com/canonical/channels/launchpad-private>`__
 or ``#launchpad-dev``.
 
 Feature rules are loosely coupled to code changes: you can activate
