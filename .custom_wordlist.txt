@@ -63,6 +63,7 @@ callgrind
 Canonical's
 CanonicalUrlData
 capitalization
+castable
 CategoryTesting
 CategoryTipsAndTricks
 cd
@@ -138,6 +139,7 @@ deps
 deryck
 Desc
 dev
+devops
 devpad
 dh
 dia

@@ -121,18 +121,11 @@ linkcheck_ignore = [
     'http://example.com/.*',  # ignore, example links
     'https://launchpad.net/canonical-mojo-specs',  # private
     r'https://launchpad\.test.*',  # ignore, local test setup
-    'https://wiki.canonical.com/InformationInfrastructure/OSA/LaunchpadRollout#Config-only_Rollouts',  # private
-    'https://wiki.canonical.com/Launchpad/FreshLogs',  # private
-    'https://wiki.canonical.com/Launchpad/SupportRotation#Builder',  # private
-    'https://wiki.canonical.com/InformationInfrastructure/OSA/LPHowTo/ManualCdImageMirrorProber',  # private
     'Trunk/Glue',  # needs update
     '/Background', 
     '/Concepts',  # needs update
     'JavascriptUnitTesting/MockIo',  # needs update
     'https://git.launchpad.net/launchpad-mojo-specs/tree/mojo-lp-git/services',  # private
-    'https://wiki.canonical.com/InformationInfrastructure/OSA/LaunchpadProductionStatus',  # private
-    'https://wiki.canonical.com/Launchpad/PolicyandProcess/ProductionChange',  # private
-    'https://wiki.canonical.com/Launchpad/PolicyandProcess/ProductionChangeApprovalPolicy',  # private
     'https://deployable.ols.canonical.com/project/launchpad-db',  # private
     'irc.libera.chat',  # this is not an HTTP link
     r'https://github\.com/canonical/fetch-service*',  # private
@@ -141,6 +134,7 @@ linkcheck_ignore = [
     'https://git.zx2c4.com/cgit/', # unfortunately very flaky
     'https://wiki.canonical.com/InformationInfrastructure/OSA/RequestLogging/LP/Cowboys',  # private
     'https://staging.launchpad.net',  # ignore, staging launchpad
+    r'https://wiki\.canonical\.com/*'  # private
     ]
 
 # Pages on which to ignore anchors

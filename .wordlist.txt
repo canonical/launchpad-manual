@@ -3,6 +3,8 @@ API
 APIs
 balancer
 bugfix
+buildmaster
+buildslave
 callables
 cgit
 Charmhub
@@ -11,6 +13,7 @@ conf
 contactuser
 cronscripts
 datetime
+debootstrap
 DateTime
 DBA
 devel
@@ -22,6 +25,7 @@ EBS
 EKS
 favicon
 filesystem
+flavors
 FIXME
 fmt
 formatters
@@ -44,6 +48,7 @@ Kubernetes
 lpdev
 mailinglists
 Makefile
+Mattermost
 mltest
 MyST
 myusername
@@ -59,6 +64,7 @@ Permalink
 portlet
 Post
 postgres
+QAStaging
 ReadMe
 rebase
 reST

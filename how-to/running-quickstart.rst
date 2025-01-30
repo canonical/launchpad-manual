@@ -9,7 +9,8 @@ Setting up and running Launchpad (Quickstart)
 
 This page explains how to quickly set up and run Launchpad (for development) on your
 own machine, using a `LXD
-<https://documentation.ubuntu.com/lxd/en/latest/>`_-managed container.
+<https://documentation.ubuntu.com/lxd/en/latest/>`_-managed container. You can 
+`install <https://canonical.com/lxd/install>`_ LXD as a snap. 
 
 After you've done this, you may want to read about
 :doc:`../explanation/navigating`.
@@ -47,7 +48,7 @@ on a single machine.
 
 LXD also has some nice snapshotting and ZFS capabilities, and is what other
 Launchpad developers use, so other people will be able to help you debug
-your setup if needed.
+your setup if needed. 
 
 Setting up Launchpad Development Container
 ==========================================

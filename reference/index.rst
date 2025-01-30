@@ -34,6 +34,7 @@ Build-related
    services/build-farm
    services/signing
    services/fetch-service
+   services/buildbot
 
 Translation
 ~~~~~~~~~~~
@@ -58,6 +59,7 @@ Git-related
    :maxdepth: 1
 
    services/git-hosting.rst
+   services/code-import.rst
 
 Possibly out-of-date
 --------------------
