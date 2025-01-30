@@ -69,6 +69,7 @@ ReadMe
 rebase
 reST
 reStructuredText
+rocktutorial
 RSS
 RTD
 sampledata

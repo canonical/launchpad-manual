@@ -214,6 +214,7 @@ gunicorn
 gzip
 HackingLazrLibraries
 hba
+helloworld
 hg
 hirsute's
 hostnames
@@ -382,6 +383,7 @@ pamola
 PatchSubmission
 pdb
 PersonBranchTarget
+pelpsi
 pentested
 performant
 PerLanguageStatisticsView
@@ -575,6 +577,7 @@ TestMailer
 testMailer
 testr
 testrepository
+testrockpelpsi
 testrunner
 testrunner's
 TestsFromChanges
