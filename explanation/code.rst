@@ -28,11 +28,10 @@ system. The major sub-systems are:
 Each of these subsystems also have multiple moving parts and some have
 other asynchronous jobs associated with them.
 
-The `codehosting overview diagram <attachment:codehosting.png>`__
+The `codehosting overview diagram :attachment:../images/codehosting.png`
 summarises how some of these systems interact.
 
-You can `run the codehosting system
-locally </HowToUseCodehostingLocally>`__.
+You can :doc:`run the codehosting system locally <../how-to/codehosting-locally>`.
 
 We no longer put significant effort into bzr hosting beyond making sure
 it remains functional. The future of bzr is
@@ -136,9 +135,7 @@ kicked off.
 The web application
 -------------------
 
-Code that is executed as part of the Launchpad web application. The core
-`concepts </Concepts>`__ are documented on the
-`Code/Concepts </Concepts>`__ page.
+Code that is executed as part of the Launchpad web application. The core concepts are documented on the :doc:`Code Concepts <./concepts>` page.
 
 **Major features**
 

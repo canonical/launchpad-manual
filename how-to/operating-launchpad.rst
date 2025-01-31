@@ -15,4 +15,5 @@ Operating Launchpad
    transfer-project-ownership
    create-bot-account
    porting-builders-to-newer-ubuntu-versions
-
+   applying-a-cowboy-to-qastaging
+   building-lpdev-images

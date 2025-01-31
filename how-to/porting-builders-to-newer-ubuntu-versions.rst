@@ -7,7 +7,7 @@ QA Migration & Deployment
 There are following steps to porting builders to newer Ubuntu versions.
 
 - Porting `launchpad-buildd <https://code.launchpad.net/~launchpad/launchpad-buildd/>`_ and its dependencies to work on the target Ubuntu version. You can follow `lp-buildd docs <https://launchpad-buildd.readthedocs.io/en/latest/how-to/developing.html>`_ to develop and publish on buildd-staging PPA. 
-    - Apart from the deb dependencies defined in `debian/control <https://git.launchpad.net/launchpad-buildd/tree/debian/control?h=noble>`_ in `launchpad-buildd <https://code.launchpad.net/~launchpad/launchpad-buildd/>`_, you would also need to make sure that deb packages of target ubuntu version are available for ``bzr-builder``, ``git-recipe-builder`` and ``quilt``.
+    - Apart from the deb dependencies defined in `debian/control <https://git.launchpad.net/launchpad-buildd/tree/debian/control>`_ in `launchpad-buildd <https://code.launchpad.net/~launchpad/launchpad-buildd/>`_, you would also need to make sure that deb packages of target ubuntu version are available for ``bzr-builder``, ``git-recipe-builder`` and ``quilt``.
     - These dependencies are defined in `charm-launchpad-buildd-image-modifier <https://git.launchpad.net/charm-launchpad-buildd-image-modifier/tree/files/scripts/setup-ppa-buildd#n111>`__
 
 - Update the ``gss_series`` variable in `launchpad-mojo-specs <https://git.launchpad.net/~launchpad/launchpad-mojo-specs/+git/private/tree/vbuilder/bundle.yaml?h=vbuilder>`__. Run ``mojo run`` to deploy the config changes. 

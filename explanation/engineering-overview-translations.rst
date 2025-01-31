@@ -73,7 +73,7 @@ Structure and terminology
 -------------------------
 
 Essentially all translations in Launchpad are based on
-`gettext <http://www.gnu.org/software/gettext/manual/>`__. Software
+`gettext <https://www.gnu.org/software/gettext/manual/>`__. Software
 authors mark strings in their codebase as translatable; they then use
 the gettext tools to extract these and get them into Launchpad in one of
 several ways. We also call the translatable strings *messages.*
@@ -315,9 +315,6 @@ Message sharing
 Objects and schema
 ------------------
 
-See my horrible `schema overview <attachment:TranslationsSchema.dia>`__
-(dia format).
-
 In a nutshell:
 
 -  A \`POTemplate\` lives in either a \`ProductSeries\` or a
@@ -370,9 +367,7 @@ A translation message can be in one of three sharing states:
 3. **Tracking.** The translation is not only shared on one translation
    side, but between both translation sides.
 
-We have a `design
-document <Translations/Specs/UpstreamImportIntoUbuntu/FixingIsImported/setCurrentTranslation>`__
-that specifies how messages in these states respond to changes. We try
+We have a design document that specifies how messages in these states respond to changes. We try
 to make it easy to move a translation down this list (towards tracking)
 and hard to move up the list (towards diverged).
 

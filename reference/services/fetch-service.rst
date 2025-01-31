@@ -53,11 +53,22 @@ The life-cycle of a fetch-service session within Launchpad goes as follows:
 
 Using the fetch service
 ~~~~~~~~~~~~~~~~~~~~~~~
-Currently, only snaps can use the fetch service.
+Currently, the fetch service can only be used for building snaps, rocks and
+source packages.
 
 To do so, a Launchpad admin is required to set the
-``use_fetch_service`` flag within a snap to ``true``, either in the API or in
-the UI by accessing the Admin area of a snap.
+``use_fetch_service`` flag for the recipe to ``true``, either in the API or in
+the UI by accessing the admin area. The UI option may not be available for all
+build types the fetch service supports.
+
+The fetch service can be run in two modes, "strict" and "permissive", where it
+defaults to the former on production. The "strict" mode only allows certain
+resources and formats, and errors out in any case the restrictions are
+violated. The "permissive" mode works similar, but only logs a warning when
+encountering any violations.
+
+The mode can be configured using the ``fetch_service_policy`` option via API,
+with the currently two possible values ``permissive`` and ``strict``.
 
 Requests to use the fetch service shall be made to the Launchpad team through
 the usual channels (by
@@ -100,9 +111,69 @@ We deploy the fetch service using the specs defined in
 `fetch service mojo specs <https://git.launchpad.net/~launchpad/launchpad-mojo-specs/+git/private/+ref/master>`_.
 
 In order to be able to evaluate new fetch service versions, we use different
-Snap channels for qastaging and production, so we are able to
+Snap channels and revisions for qastaging and production, so we are able to
 test new releases. This information is both defined in above mentioned mojo
 specs, and in `ST118 fetch service release process <https://docs.google.com/document/d/1HZvFo78LqFGgdpM7v3teG9gV-pMyvXpXTD1vcLLv_d0/>`_.
+
+The fetch service uses various inspectors: we have the inspector for ``git``, ``craft`` builds
+and other will be released in future. 
+The inspector is responsible for inspecting the requests and the various
+downloads that are made during the build. The inspector is also responsible
+for making sure that the requests are allowed to be made.
+Every inspector is fully configurable and the ``allowlist`` is specified in the configuration
+file.
+This configuration is managed by the aforementioned mojo specs.
+
+Configuration example:
+
+.. code-block:: yaml
+
+   git:
+     urls:
+       - https://test.com/**
+
+   crafts:
+     urls:
+      - https://test.com/**
+
+   snap:
+     snap-declaration:
+       - name: publisher-id
+         value: [canonical]
+
+   apt:
+     repositories:
+       default:
+         urls:
+           - http://archive.ubuntu.com/ubuntu
+         dists:
+           - "*"
+         components:
+           - "*"
+
+
+Moreover, the fetch service snap require certificates to work properly.
+This is something that the snap can create when it's installed: the snap will 
+call the related hook available `here <https://github.com/canonical/fetch-service/blob/49f7382262da4aa71d931130524315c07f4be28d/snap/hooks/install#L20>`_.
+
+These certificates are also configurable from the charm itself if we have the need to
+change them, using the following command:
+
+``juju config fetch-service proxy.certificate="$(cat certs/ca.pem)" proxy.key="$(cat certs/ca.key.pem)"``
+
+.. note::
+
+   If you want to create them, you can follow the process described in the install hook:
+   `certificate creation <https://github.com/canonical/fetch-service/blob/49f7382262da4aa71d931130524315c07f4be28d/snap/hooks/install#L20>`_.
+
+The certificates are stored in the ``${SNAP_DATA}/certs`` directory inside the fetch-service
+charm unit.
+
+In order to configure properly our builders and the ``launchpad-buildd-manager`` we should 
+pass the ``base64`` encoded ``ca.pem`` certificate to the ``launchpad-buildd-manager`` charm 
+using the following command, making sure that is passed as a one-line value:
+
+``juju config launchpad-buildd-manager fetch_service_mitm_certificate=<encoded-one-line-value>``
 
 Qastaging
 ~~~~~~~~~
@@ -124,21 +195,31 @@ Related specifications (only accessible for Canonical employees)
 
 Log files
 ---------
+See `FreshLogs documentation <https://wiki.canonical.com/Launchpad/FreshLogs>`_.
+
 Production
 ~~~~~~~~~~
-Not set up.
+
+* ``rless fetch-service.lp.internal::fetch-service-logs/fetch-service.log``
 
 Qastaging
 ~~~~~~~~~
-Currently, to access the fetch-service internal logs, one needs to:
 
-1. SSH into ``stg-lp-fetch-service-qastaging@launchpad-bastion-ps5``.
+* ``rless fetch-service.qastaging.lp.internal::fetch-service-logs/fetch-service.log``
 
-2. SSH into the fetch-service juju unit by running ``juju ssh <unit>``, for
-   example ``juju ssh fetch-service/2``.
+Alternatively, to access the fetch-service internal logs, one needs to:
+
+1. SSH into Launchpad's bastion and switch to the following user: 
+   ``stg-lp-fetch-service-qastaging@launchpad-bastion-ps5``.
+
+2. SSH into the fetch-service juju unit by running
+   ``juju ssh fetch-service/leader``.
 
 3. Run ``sudo snap logs fetch-service -n 100 -f`` (where ``-n`` sets the number
    of log lines, and ``-f`` keeps up the latest logs up-to-date).
+
+You can also check the logs in the following directory:
+``/var/snap/fetch-service/current``.
 
 Monitoring
 ----------
