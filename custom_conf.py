@@ -124,6 +124,13 @@ linkcheck_ignore = [
     'Trunk/Glue',  # needs update
     '/Background', 
     '/Concepts',  # needs update
+    '/HowToUseCodehostingLocally',  # needs update
+    'Database/TableRenamePatch',  # needs update
+    'Debugging#Profiling%20page%20requests',  # needs update
+    'Debugging#Special%20URLs',  # needs update
+    'PolicyAndProcess/Accessibility',  # needs update
+    'Translations/Specs/UpstreamImportIntoUbuntu/FixingIsImported/setCurrentTranslation',  # needs update
+    'attachment:codehosting.png',  # needs update
     'JavascriptUnitTesting/MockIo',  # needs update
     'https://git.launchpad.net/launchpad-mojo-specs/tree/mojo-lp-git/services',  # private
     'https://deployable.ols.canonical.com/project/launchpad-db',  # private
