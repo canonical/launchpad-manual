@@ -71,7 +71,7 @@ Operations
 ----------
 
 A change to a flag in production counts as a production change: it is
-made by the launchpad team on request. Make the change `on the appropriate wiki
+made by the Launchpad team on request. Make the change `on the appropriate wiki
 page <https://wiki.canonical.com/InformationInfrastructure/OSA/LaunchpadProductionStatus>`__
 (sorry, company internal), including `an approval per the usual
 policy <https://wiki.canonical.com/Launchpad/PolicyandProcess/ProductionChangeApprovalPolicy>`__,
