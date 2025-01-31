@@ -76,8 +76,7 @@ page <https://wiki.canonical.com/InformationInfrastructure/OSA/LaunchpadProducti
 (sorry, company internal), including `an approval per the usual
 policy <https://wiki.canonical.com/Launchpad/PolicyandProcess/ProductionChangeApprovalPolicy>`__,
 and then ask in
-`~launchpad-private <https://chat.canonical.com/canonical/channels/launchpad-private>`__
-or ``#launchpad-dev``.
+`~launchpad-private <https://chat.canonical.com/canonical/channels/launchpad-private>`__.
 
 Feature rules are loosely coupled to code changes: you can activate
 rules before the code they control is live.
