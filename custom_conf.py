@@ -188,5 +188,3 @@ disable_feedback_button = False
 ############################################################
 
 ## Add any configuration that is not covered by the common conf.py file.
-
-linkcheck_allow_redirects = True
