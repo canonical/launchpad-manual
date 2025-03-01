@@ -149,4 +149,4 @@ an XHR call where the response data is used to update the DOM. In such
 cases, you still want to be able to test the interaction within a YUI
 test without having to resort to using an :doc:`integration
 test <javascript-integration-testing>`. To make this easy we have the 
-:doc:`MockIo class <../how-to/mockio>` in Launchpad.
+:doc:`MockIo class </how-to/mockio>` in Launchpad.
