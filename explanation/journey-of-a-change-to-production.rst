@@ -34,8 +34,8 @@ The `main Launchpad repository <https://git.launchpad.net/launchpad>`_ has 4
 main (or "trunk") branches. These are ``master``, ``stable``, ``db-devel``,
 and ``db-stable``. For more details see `branches <../branches>`_.
 
-How to contribute a change to Launchpad?
-----------------------------------------
+How to contribute a code change or a database schema change to Launchpad?
+-------------------------------------------------------------------------
 
 If the change includes code and database schema changes, both have to be done
 separately and target different branches. The database patch needs to be based
@@ -65,11 +65,12 @@ How to deploy the database changes to the production environment?
 
 The database patches should be submitted to the ``db-devel`` branch and once
 they are approved, they get merged by a landing (aka "merging") bot which
-performs the merge. The trunk branches of Launchpad have ACLs to only allow
-the landing bot to push changes to the trunk branches.
+performs the merge. The trunk branches of Launchpad have ACLs so that only
+the landing bot can push changes to them.
 
-Then the `Launchpad buildbot <http://lpbuildbot.canonical.com>`_, runs the
-full Launchpad test suite on the ``db-devel`` branch and if it passes, the new
+Once the changes are merged to the ``db-devel branch``, the
+`Launchpad buildbot <http://lpbuildbot.canonical.com>`_, runs the full
+Launchpad test suite on the ``db-devel`` branch and if it passes, the new
 changes get merged to the ``db-stable`` branch.
 
 Once this is done, the changes show up on the `launchpad-db deployable page`_
