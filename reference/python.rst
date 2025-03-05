@@ -267,7 +267,7 @@ Database-related
 ORM
 ---
 
-We are using the `Storm <https://storm.canonical.com>`_ ORM.
+We are using the `Storm <https://storm-orm.readthedocs.io/en/latest/index.html>`_ ORM.
 
 Field attributes
 ----------------
