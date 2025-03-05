@@ -308,6 +308,7 @@ LPHowTo
 lpnet
 lpreview
 lpsetup
+lptools
 LTS
 lxc
 lxd
@@ -462,6 +463,7 @@ quickref
 quickstart
 rc
 rctp
+readthedocs
 realfavicongenerator
 realizes
 ReleaseCycles
