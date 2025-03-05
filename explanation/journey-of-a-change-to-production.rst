@@ -271,7 +271,11 @@ stack.
 For deploying changes to the pre-production environments, we directly invoke
 the ``mojo run`` command from the ``stg-launchpad`` account on the Launchpad
 bastion. This is usually only needed when the automatic deployment cron jobs
-did not work.
+did not work. Since this account has access to both the staging and qastaging
+environments, we have to source either ``.mojorc.staging`` or
+``.mojorc.qastaging`` before running ``mojo run``. Alternatively, we can also
+prefix environment-specific commands with ``in-model staging`` or
+``in-model qastaging`` to run them in the context of that environment.
 
 For deploying changes to the production environment, we use the
 ``upgrade-production`` command from the ``stg-launchpad`` account on the
