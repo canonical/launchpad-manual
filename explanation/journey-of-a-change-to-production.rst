@@ -166,7 +166,9 @@ VPN.
 
 We have cron jobs in the Launchpad bastion environment to automatically deploy
 new changes in the ``db-stable`` branch to the ``staging`` environment and
-new changes in the ``stable`` branch to the ``qastaging`` environment.
+new changes in the ``stable`` branch to the ``qastaging`` environment. These
+jobs are added to the ``stg-launchpad`` user's crontab and the scripts used
+in these jobs are present in the ``lp:launchpad-bastion-scripts`` repository.
 
 Shell access to these environment is available after connecting to the VPN,
 logging in to the Launchpad bastion, and switching to the ``stg-launchpad``
