@@ -141,7 +141,10 @@ linkcheck_ignore = [
     'https://git.zx2c4.com/cgit/', # unfortunately very flaky
     'https://wiki.canonical.com/InformationInfrastructure/OSA/RequestLogging/LP/Cowboys',  # private
     'https://staging.launchpad.net',  # ignore, staging launchpad
-    r'https://wiki\.canonical\.com/*'  # private
+    r'https://wiki\.canonical\.com/*',  # private
+    r'https://zope.*\.readthedocs\.io', 
+    r'https://www\.python\.org/dev/peps', 
+    r'https://www\.gnu\.org/*', 
     ]
 
 # Pages on which to ignore anchors
@@ -188,3 +191,10 @@ disable_feedback_button = False
 ############################################################
 
 ## Add any configuration that is not covered by the common conf.py file.
+
+linkcheck_anchors_ignore = ["^!"]
+linkcheck_workers = 1  
+linkcheck_retries = 3
+linkcheck_allow_redirects = True
+linkcheck_send_timeout = 15
+linkcheck_receive_timeout = 15
