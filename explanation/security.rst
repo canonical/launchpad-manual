@@ -55,7 +55,7 @@ Code
 We do not use direct SQL statements, but rather use the
 `Storm ORM`_. This prevents SQL injection issues.
 
-.. _Storm ORM: https://storm.canonical.com/
+.. _Storm ORM: https://storm-orm.readthedocs.io/en/latest/index.html
 
 We are using Zope's mighty and fine-grained security framework which provides
 a generic mechanism to implement security policies on Python objects.

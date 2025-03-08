@@ -6,7 +6,7 @@ Storm Migration Guide
 This guide explains how certain SQLObject concepts map to equivalent
 Storm concepts. It expects a level of familiarity in how SQLObject works
 (or at least how it is used in Launchpad). It is not a full tutorial on
-how to use Storm either - see https://storm.canonical.com/Tutorial for
+how to use Storm either - see https://storm-orm.readthedocs.io/en/latest/tutorial.html for
 that.
 
 Differences
