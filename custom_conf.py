@@ -124,6 +124,13 @@ linkcheck_ignore = [
     'Trunk/Glue',  # needs update
     '/Background', 
     '/Concepts',  # needs update
+    '/HowToUseCodehostingLocally',  # needs update
+    'Database/TableRenamePatch',  # needs update
+    'Debugging#Profiling%20page%20requests',  # needs update
+    'Debugging#Special%20URLs',  # needs update
+    'PolicyAndProcess/Accessibility',  # needs update
+    'Translations/Specs/UpstreamImportIntoUbuntu/FixingIsImported/setCurrentTranslation',  # needs update
+    'attachment:codehosting.png',  # needs update
     'JavascriptUnitTesting/MockIo',  # needs update
     'https://git.launchpad.net/launchpad-mojo-specs/tree/mojo-lp-git/services',  # private
     'https://deployable.ols.canonical.com/project/launchpad-db',  # private
@@ -134,7 +141,10 @@ linkcheck_ignore = [
     'https://git.zx2c4.com/cgit/', # unfortunately very flaky
     'https://wiki.canonical.com/InformationInfrastructure/OSA/RequestLogging/LP/Cowboys',  # private
     'https://staging.launchpad.net',  # ignore, staging launchpad
-    r'https://wiki\.canonical\.com/*'  # private
+    r'https://wiki\.canonical\.com/*',  # private
+    r'https://zope.*\.readthedocs\.io', 
+    r'https://www\.python\.org/dev/peps', 
+    r'https://www\.gnu\.org/*', 
     ]
 
 # Pages on which to ignore anchors

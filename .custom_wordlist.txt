@@ -191,6 +191,7 @@ ForbiddenAttribute
 ForeignKey
 formatter
 formlib
+FormOverlay
 FreshLogs
 frontend
 frontends
