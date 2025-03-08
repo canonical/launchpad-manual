@@ -192,9 +192,9 @@ disable_feedback_button = False
 
 ## Add any configuration that is not covered by the common conf.py file.
 
-linkcheck_anchors_ignore = ["^!"]
-linkcheck_workers = 1  
-linkcheck_retries = 3
-linkcheck_allow_redirects = True
-linkcheck_send_timeout = 15
-linkcheck_receive_timeout = 15
+# linkcheck_anchors_ignore = ["^!"]
+# linkcheck_workers = 1  
+# linkcheck_retries = 3
+# linkcheck_allow_redirects = True
+# linkcheck_send_timeout = 15
+# linkcheck_receive_timeout = 15
