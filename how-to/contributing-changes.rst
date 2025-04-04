@@ -53,6 +53,26 @@ Create a branch from a reasonable point, such as ``master``.
 Make your changes on the branch. Be sure to test them locally by setting up a
 local :doc:`Launchpad development instance <running>`.
 
+When it comes to commit messages, please follow these guidelines:
+
+Commit title
+~~~~~~~~~~~~
+
+* short, but descriptive
+* uses imperative wording, e.g. "Add character limit to bug title's summary
+  field".
+* always starts with a capitalized word
+* no dot at the end
+
+
+Commit body
+~~~~~~~~~~~
+* gives more context about the motivation of the change
+* line length should not exceed 72 characters for better readability, with the
+  exception for hyperlinks
+* could contain a reference to a Launchpad bug, e.g. `LP: #2086655`
+
+
 Run the pre-commit hook
 -----------------------
 
