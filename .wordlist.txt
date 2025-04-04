@@ -5,6 +5,7 @@ balancer
 bugfix
 buildmaster
 buildslave
+capitalized
 callables
 cgit
 Charmhub
