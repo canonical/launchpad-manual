@@ -135,7 +135,9 @@ linkcheck_ignore = [
     'https://wiki.canonical.com/InformationInfrastructure/OSA/RequestLogging/LP/Cowboys',  # private
     'https://staging.launchpad.net',  # ignore, staging launchpad
     r'https://wiki\.canonical\.com/*',  # private
-    'https://launchpad.net/canonical-is-firewalls' # private
+    'https://launchpad.net/canonical-is-firewalls', # private
+    'https://drive.google.com/file/d/1hUivL07Msoyej3wd_T4hMAX61EJzfE38/view', #private
+    'https://www.gnu.org/software/gettext/manual/' # unfortunately very flaky
     ]
 
 # Pages on which to ignore anchors
