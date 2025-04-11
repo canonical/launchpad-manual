@@ -134,7 +134,8 @@ linkcheck_ignore = [
     'https://git.zx2c4.com/cgit/', # unfortunately very flaky
     'https://wiki.canonical.com/InformationInfrastructure/OSA/RequestLogging/LP/Cowboys',  # private
     'https://staging.launchpad.net',  # ignore, staging launchpad
-    r'https://wiki\.canonical\.com/*'  # private
+    r'https://wiki\.canonical\.com/*',  # private
+    'https://launchpad.net/canonical-is-firewalls' # private
     ]
 
 # Pages on which to ignore anchors
