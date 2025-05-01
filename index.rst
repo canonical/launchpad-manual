@@ -67,10 +67,6 @@ contributions, suggestions, fixes and constructive feedback.
    :maxdepth: 2
 
    User documentatoin <docs-user/index>
-   Developer documentation <index-dev>
-   tutorials/index
-   how-to/index
-   reference/index
-   explanation/index
+   Developer documentation <docs-developer/index>
    help
    contribute-to-our-docs
