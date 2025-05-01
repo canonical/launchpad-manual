@@ -66,8 +66,8 @@ contributions, suggestions, fixes and constructive feedback.
    :hidden:
    :maxdepth: 2
 
-   User documentatoin <docs-user/index>
-   Developer documentation <docs-developer/index>
+   User documentatoin <user/index>
+   Developer documentation <developer/index>
    help
    release-notes
    contribute-to-our-docs
