@@ -73,6 +73,6 @@ Once we have our recipe we should be able to build it.
 Fetch service
 =============
 
-If you want to use our fetch service for your builds, you can reach out the Launchpad team
+If you want to use our fetch service for your builds, you can reach out to the Launchpad team
 and ask them to enabled it for your recipe! 
 

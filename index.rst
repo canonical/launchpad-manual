@@ -66,6 +66,8 @@ contributions, suggestions, fixes and constructive feedback.
    :hidden:
    :maxdepth: 2
 
+   User documentatoin <docs-user/index>
+   Developer documentation <index-dev>
    tutorials/index
    how-to/index
    reference/index
