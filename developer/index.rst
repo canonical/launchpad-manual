@@ -29,22 +29,22 @@ In this documentation
 
 ..  grid:: 1 1 2 2
 
-   ..  grid-item:: :doc:`Tutorials <developer/tutorials/index>`
+   ..  grid-item:: :doc:`Tutorials <tutorials/index>`
 
        **Start here** - hands-on introductions to Launchpad for new developers
 
-   ..  grid-item:: :doc:`How-to guides <developer/how-to/index>`
+   ..  grid-item:: :doc:`How-to guides <how-to/index>`
 
       **How-to guides** - step-by-step guides covering key operations and common tasks
 
 .. grid:: 1 1 2 2
    :reverse:
 
-   .. grid-item:: :doc:`Reference <developer/reference/index>`
+   .. grid-item:: :doc:`Reference <reference/index>`
 
       **Technical information** - specifications, APIs, architecture
 
-   .. grid-item:: :doc:`Explanation <developer/explanation/index>`
+   .. grid-item:: :doc:`Explanation <explanation/index>`
 
       **Discussion and clarification** of key topics
 
@@ -59,15 +59,13 @@ contributions, suggestions, fixes and constructive feedback.
 
 * `Code of conduct <https://ubuntu.com/community/ethos/code-of-conduct>`_
 * :doc:`Get support <help>`
-* :doc:`Contribute to our code <developer/how-to/contributing-changes>`
+* :doc:`Contribute to our code <how-to/contributing-changes>`
 * :doc:`Contribute to our docs <contribute-to-our-docs>`
 
 .. toctree::
    :hidden:
-   :maxdepth: 2
 
-   User documentatoin <user/index>
-   Developer documentation <developer/index>
-   help
-   release-notes
-   contribute-to-our-docs
+   tutorials/index
+   how-to/index
+   reference/index
+   explanation/index
