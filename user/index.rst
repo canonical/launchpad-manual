@@ -35,7 +35,6 @@ In this documentation
 
 .. toctree::
    :hidden:
-   :maxdepth: 2
    
    Get started <get-started>
    How-to guides <how-to/index>
