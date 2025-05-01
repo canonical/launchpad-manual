@@ -3,7 +3,6 @@ Explanation
 
 .. toctree::
     :hidden:
-    :maxdepth: 2
 
     What is Launchpad? <what-is-launchpad>
     Your Launchpad account <your-launchpad-account>
