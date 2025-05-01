@@ -3,7 +3,6 @@ Reference
 
 .. toctree::
    :hidden:
-   :maxdepth: 2
 
    Bugs <bugs/index>
    Bug tracker API <bug-tracker-api/index>
