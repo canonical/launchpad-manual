@@ -1,7 +1,7 @@
 How to use Soyuz locally
 ========================
 
-.. include:: ../includes/important_not_revised.rst
+.. include:: ../../includes/important_not_revised.rst
 
 You're going to run Soyuz in a branch you create for the purpose.  To get the whole experience, you'll also be installing the builder-side ``launchpad-buildd`` package on your system.
 

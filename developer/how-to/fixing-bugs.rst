@@ -1,7 +1,7 @@
 Fixing Bugs
 ===========
 
-.. include:: ../includes/important_not_revised.rst
+.. include:: ../../includes/important_not_revised.rst
 
 So you want to fix a bug?
 -------------------------

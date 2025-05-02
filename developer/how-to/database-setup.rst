@@ -1,7 +1,7 @@
 Launchpad Database Setup
 ========================
 
-.. include:: ../includes/important_not_revised.rst
+.. include:: ../../includes/important_not_revised.rst
 
 There are two ways to set up your launchpad database.
 

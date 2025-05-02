@@ -1,7 +1,7 @@
 About Launchpad branches
 ========================
 
-.. include:: ../includes/important_not_revised.rst
+.. include:: ../../includes/important_not_revised.rst
 
 Where's trunk?
 --------------

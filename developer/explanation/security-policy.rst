@@ -1,7 +1,7 @@
 Launchpad permissions
 ======================
 
-.. include:: ../includes/important_not_revised.rst
+.. include:: ../../includes/important_not_revised.rst
 
 Launchpad uses "permission" to control access to views, object
 attributes and object methods.
