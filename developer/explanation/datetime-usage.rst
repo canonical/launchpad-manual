@@ -1,7 +1,7 @@
 Datetime Usage Guide
 ====================
 
-.. include:: ../includes/important_not_revised.rst
+.. include:: ../../includes/important_not_revised.rst
 
 There are a number of places in Launchpad where ``datetime`` types are used:
 

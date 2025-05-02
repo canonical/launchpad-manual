@@ -1,7 +1,7 @@
 Getting the source code
 =======================
 
-.. include:: ../includes/important_not_revised.rst
+.. include:: ../../includes/important_not_revised.rst
 
 Getting the Launchpad source code is fairly simple, but it's not the usual
 process of "download a package, unpack, build, and install".  Since we do new

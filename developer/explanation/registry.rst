@@ -1,7 +1,7 @@
 Launchpad Registry
 ==================
 
-.. include:: ../includes/important_not_revised.rst
+.. include:: ../../includes/important_not_revised.rst
 
 The registry is a core domain that most all Launchpad applications
 require. The code is primarily located in lp.registry and

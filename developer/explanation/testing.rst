@@ -1,7 +1,7 @@
 Testing
 =======
 
-.. include:: ../includes/important_not_revised.rst
+.. include:: ../../includes/important_not_revised.rst
 
 Testing Your Launchpad Changes
 ------------------------------

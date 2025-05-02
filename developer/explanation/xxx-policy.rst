@@ -1,7 +1,7 @@
 XXX policy
 ==========
 
-.. include:: ../includes/important_not_revised.rst
+.. include:: ../../includes/important_not_revised.rst
 
 Policy Statement
 ----------------
