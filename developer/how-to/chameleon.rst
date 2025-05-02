@@ -1,7 +1,7 @@
 Running Launchpad with Chameleon Template Engine
 ================================================
 
-.. include:: ../includes/important_out_of_date.rst
+.. include:: ../../includes/important_out_of_date.rst
 
 - Uncomment ``<include package="z3c.ptcompat" />`` in ``zcml/zopeapp.zcml``
   to enable ``z3c.pt``.

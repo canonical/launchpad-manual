@@ -1,7 +1,7 @@
 Hacking
 =======
 
-.. include:: ../includes/important_not_revised.rst
+.. include:: ../../includes/important_not_revised.rst
 
 .. note::
 

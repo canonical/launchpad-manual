@@ -2,7 +2,7 @@
 Using CSS sprites
 =================
 
-.. include:: ../includes/important_not_revised.rst
+.. include:: ../../includes/important_not_revised.rst
 
 We've introduced CSS sprites into Launchpad. This is a technique that
 uses a single image containing all the icons for a website. Icons are
