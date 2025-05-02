@@ -1,6 +1,8 @@
 Naming conventions for daily builds
 ====================================
 
+.. include:: /includes/important_not_revised_help.rst
+
 It would be nice if we had a nice agreeable way to name daily builds so
 we don't confuse users. Here are some recommendations. These are still
 draft, so please leave a comment.

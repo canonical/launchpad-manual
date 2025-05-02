@@ -1,6 +1,8 @@
 Tracking bugs across multiple projects
 ======================================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Launchpad's bug tracker is unique in that it allows you to track the
 status of **the same bug as it affects multiple different communities**.
 This gives you a one-page overview of the work that is ongoing in all of

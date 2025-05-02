@@ -1,6 +1,8 @@
 Milestones
 ==========
 
+.. include:: /includes/important_not_revised_help.rst
+
 We've discussed projects and series, which are the major ways in which
 we keep track of the progress of a free software project in Launchpad.
 

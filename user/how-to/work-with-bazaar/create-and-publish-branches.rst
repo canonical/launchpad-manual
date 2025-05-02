@@ -1,6 +1,8 @@
 Create and Publish branches
 ===========================
 
+.. include:: /includes/important_not_revised_help.rst
+
 For this section of the feature highlights guide, you might like to
 actually create and publish a branch or two. You'll need to have Bazaar
 installed and to have registered SSH keys with Launchpad, which you can

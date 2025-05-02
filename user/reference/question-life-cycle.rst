@@ -1,6 +1,8 @@
 Question Life-cycle
 ===================
 
+.. include:: /includes/important_not_revised_help.rst
+
 The question ``Status`` attribute describes the current state of the
 question. This attribute is displayed on the question's main page (well
 hidden in the question portlet) as well as in most questions listing.

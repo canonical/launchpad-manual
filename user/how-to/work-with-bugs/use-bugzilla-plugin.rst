@@ -1,6 +1,8 @@
 Use the Bugzilla plugin
 =======================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Launchpad can communicate directly with bug trackers that use Bugzilla
 through the
 `bugzilla-launchpad <http://launchpad.net/bugzilla-launchpad>`__ plugin.

@@ -1,6 +1,8 @@
 
 Your account karma
 ==================
+.. include:: /includes/important_not_revised_help.rst
+
 
 Karma is one way of showing how large a contribution someone has made in Launchpad.
 

@@ -1,6 +1,8 @@
 Plural forms information for languages
 ======================================
 
+.. include:: /includes/important_not_revised_help.rst
+
 When you ask that a new language be added to Launchpad or you see that
 the information Launchpad has about a language is incomplete, you will
 need to provide plural form information. As many are not familiar with

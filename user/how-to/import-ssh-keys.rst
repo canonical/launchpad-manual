@@ -1,6 +1,8 @@
 Import your SSH keys
 ====================
 
+.. include:: /includes/important_not_revised_help.rst
+
 To push code branches to Launchpad you first need to generate your SSH key. The key is made up of two parts: a private key that stays on your computer and a public key that you register with Launchpad. As you might expect, you shouldn't share the private key with anyone.
 
 Why you need an SSH key

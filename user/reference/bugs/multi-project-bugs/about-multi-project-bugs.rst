@@ -1,6 +1,8 @@
 Multi-project bugs
 ==================
 
+.. include:: /includes/important_not_revised_help.rst
+
 As we saw in the `introduction <Bugs/YourProject>`__ to the bugs section
 of this user guide, Launchpad's bug tracker is special.
 

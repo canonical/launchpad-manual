@@ -1,6 +1,8 @@
 Team branches
 =============
 
+.. include:: /includes/important_not_revised_help.rst
+
 The combination of Bazaar branch hosting and teams gives you a very
 powerful capability to collaborate on code. Essentially, you can push a
 branch into a shared space, and anyone on that team can then commit to

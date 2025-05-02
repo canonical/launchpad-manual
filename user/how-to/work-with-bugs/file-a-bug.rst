@@ -1,6 +1,8 @@
 File a bug in Launchpad
 =======================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Prior to filing a bug the extra data file needs to be stored in
 Launchpad. This can be done via the page
 https://launchpad.net/+storeblob. Upon successful storing of the file a

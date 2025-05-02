@@ -1,6 +1,8 @@
 Publishing project announcements
 ================================
 
+.. include:: /includes/important_not_revised_help.rst
+
 `Terminator <https://launchpad.net/terminator>`__ is a project dedicated
 to concurrently displaying multiple terminal sessions as efficiently as
 possible. Like most projects, Terminator tells the world about its

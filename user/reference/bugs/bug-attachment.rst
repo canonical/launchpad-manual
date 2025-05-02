@@ -1,6 +1,8 @@
 Bug Attachment
 ==============
 
+.. include:: /includes/important_not_revised_help.rst
+
 A bug attachment has two purposes:
 
 - It may contain data that is useful to describe a bug, like a screenshot or data needed to reproduce the bug.

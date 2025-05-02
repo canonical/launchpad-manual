@@ -1,6 +1,8 @@
 Series: major stable and development branches
 =============================================
 
+.. include:: /includes/important_not_revised_help.rst
+
 When we think of the way a project organises itself, there are some
 special branches: they represent major lines of development, and
 releases are "cut" from them. Typically these branches represent:

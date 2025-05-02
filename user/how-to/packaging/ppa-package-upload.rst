@@ -1,6 +1,8 @@
 Upload a package to a PPA
 =========================
 
+.. include:: /includes/important_not_revised_help.rst
+
 How you upload a source package to a PPA depends on two things:
 
 -  whether you're using a recent version of Ubuntu (Ubuntu 9.10 and

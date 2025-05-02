@@ -1,6 +1,8 @@
 Create and manage a merge proposal
 ==================================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Thanks to Bazaar's distributed model, you can `get full access to the
 code of any branch <Code/FindingAndDownloading>`__ hosted in Launchpad,
 with version control and history, right on your own machine.

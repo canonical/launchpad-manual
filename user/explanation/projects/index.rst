@@ -1,6 +1,8 @@
 Projects in Launchpad
 =====================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Registering your project in Launchpad is quick and easy. Once
 registered, people can work on your project using Launchpad and can also
 find out where to find the project's code, bugs and other information.

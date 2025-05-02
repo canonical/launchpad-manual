@@ -1,6 +1,8 @@
 Planning and recording releases
 ===============================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Let's look at how you can use Launchpad to plan your project's development and to record releases:
 
 

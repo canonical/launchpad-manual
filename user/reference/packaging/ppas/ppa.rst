@@ -1,6 +1,8 @@
 Personal Package Archive
 ========================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Using a Personal Package Archive (PPA), you can distribute software and
 updates directly to Ubuntu users. Create your source package, upload it
 and Launchpad will build binaries and then host them in your own apt

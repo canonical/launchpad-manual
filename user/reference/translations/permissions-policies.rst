@@ -1,6 +1,8 @@
 Choosing a permissions policy
 =============================
 
+.. include:: /includes/important_not_revised_help.rst
+
 When opening your project for translation in Launchpad, you need to
 decide how you want to balance openness with quality control.
 

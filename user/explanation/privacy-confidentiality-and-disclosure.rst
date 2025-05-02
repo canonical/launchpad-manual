@@ -1,6 +1,8 @@
 Privacy, confidentiality and disclosure
 ---------------------------------------
 
+.. include:: /includes/important_not_revised_help.rst
+
 Launchpad considers personal user data, unfixed software security issues
 and proprietary information as confidential knowledge. Launchpad limits
 who may know about it. Project maintainers and users can choose who to

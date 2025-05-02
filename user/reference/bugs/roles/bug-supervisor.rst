@@ -1,6 +1,8 @@
 Bug Supervisor
 ==============
 
+.. include:: /includes/important_not_revised_help.rst
+
 The bug supervisor is a person or team that is responsible for bug
 management in a project or in a distribution.
 

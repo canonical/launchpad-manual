@@ -1,6 +1,8 @@
 ##################
 Help the community
 ##################
+.. include:: /includes/important_not_revised_help.rst
+
 
 You can help other members of the free software community quickly and with
 little effort by answering support questions in `Launchpad Answers

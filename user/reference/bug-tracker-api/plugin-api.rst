@@ -1,6 +1,8 @@
 Bug tracker API plugin
 ======================
 
+.. include:: /includes/important_not_revised_help.rst
+
 We want Launchpad to share bug reports, comments, statuses and other
 information with as many bug trackers as possible. We've already
 produced plugins that enable `Bugzilla <Bugs/BugzillaPlugin>`__ and

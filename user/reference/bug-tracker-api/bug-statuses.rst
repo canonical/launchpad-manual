@@ -1,6 +1,8 @@
 Bug statuses in Launchpad
 =========================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Launchpad's bug tracker offers you seven main bug statuses that reflect
 each stage of a bug's lifecycle, from initial report to resolution.
 

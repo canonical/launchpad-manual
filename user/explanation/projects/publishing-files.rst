@@ -1,6 +1,8 @@
 Making your project files available for download
 ================================================
 
+.. include:: /includes/important_not_revised_help.rst
+
 After all the work that's gone into a release, you want to make sure
 people can get hold of it. One way to distribute your software through
 Launchpad is to publish files for download.

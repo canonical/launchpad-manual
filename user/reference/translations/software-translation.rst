@@ -1,6 +1,8 @@
 Translating your software
 =========================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Launchpad has unique infrastructure to support the translation of free
 software into many languages. It enables translation communities to form
 and organise themselves, leveraging the `Team

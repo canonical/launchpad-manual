@@ -1,6 +1,8 @@
 Import your project's translation templates
 ===========================================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Before anyone can help translate your project, you need to tell
 Launchpad which English strings appear in your software's interface.
 

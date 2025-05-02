@@ -1,6 +1,8 @@
 Hosting Git repositories
 ========================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Launchpad supports hosting `Git <http://git-scm.com/>`__ repositories.
 This is distinct from the `code import <Code/Imports>`__ facility that
 Launchpad has included for many years; it is now possible to host Git

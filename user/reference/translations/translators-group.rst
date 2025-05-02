@@ -1,6 +1,8 @@
 Launchpad translators group
 ===========================
 
+.. include:: /includes/important_not_revised_help.rst
+
 The `Launchpad Translators
 group <https://translations.launchpad.net/+groups/launchpad-translators/>`__
 is a set of teams and individuals working on translating software hosted

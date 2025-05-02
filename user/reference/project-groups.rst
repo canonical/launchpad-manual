@@ -1,6 +1,8 @@
 Project Groups
 ==============
 
+.. include:: /includes/important_not_revised_help.rst
+
 Project groups allow an organisation to manage several projects from a
 single place.
 

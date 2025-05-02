@@ -1,6 +1,8 @@
 Consumer hosting
 ================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Projects with prior approval from Canonical can use additional privacy
 features. Proprietary projects may only use Launchpad with such
 approval. Details are found on the project's "Sharing" page.

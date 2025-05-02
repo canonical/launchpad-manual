@@ -1,6 +1,8 @@
 Translation guidelines
 ======================
 
+.. include:: /includes/important_not_revised_help.rst
+
 In Launchpad, each administrator of a localization team can inform
 Launchpad about the team's guidelines.
 

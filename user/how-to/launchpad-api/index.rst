@@ -1,6 +1,8 @@
 Launchpad web services API
 ==========================
 
+.. include:: /includes/important_not_revised_help.rst
+
 The Launchpad website lets you learn about and manage bugs, projects,
 questions, and other artefacts of software development. These same
 objects are gradually being exposed through a web service, so that you

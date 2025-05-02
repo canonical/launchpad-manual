@@ -1,6 +1,8 @@
 Blueprints: lightweight specifications
 ======================================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Planning isn't quite the least-favorite thing for most free software
 developers - but it's more or less in the same region as dealing with
 spam.

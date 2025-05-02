@@ -1,6 +1,8 @@
 Use the Trac plugin
 ===================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Launchpad can communicate directly with bug trackers that use Trac
 through the `trac-launchpad <https://launchpad.net/trac-launchpad>`__
 plugin.

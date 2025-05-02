@@ -1,6 +1,8 @@
 Email interface command reference
 =================================
 
+.. include:: /includes/important_not_revised_help.rst
+
 You must write one email command per line. Remember that you need to
 start the line with a space, otherwise it will be treated as part of
 your comment.

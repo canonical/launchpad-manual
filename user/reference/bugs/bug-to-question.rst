@@ -1,6 +1,8 @@
 Turning a bug into a question
 =============================
 
+.. include:: /includes/important_not_revised_help.rst
+
 A bug must meet a few conditions to be convertible to a question. Its
 status must be either New, Incomplete, Confirmed, or Wont Fix. The bug's
 project must use Launchpad to track bugs.

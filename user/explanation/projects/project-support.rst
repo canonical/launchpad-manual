@@ -1,6 +1,8 @@
 Providing support throughLaunchpad
 ==================================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Helping other users is a great way to make a contribution to free
 software projects. To this end, Launchpad offers tools to assist in the
 creation of a user support community around hosted projects.

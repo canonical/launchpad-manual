@@ -1,6 +1,8 @@
 Indirect team members
 =====================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Teams can be members of other teams.
 
 If Team A joins Team B, all of Team A's members become indirect members

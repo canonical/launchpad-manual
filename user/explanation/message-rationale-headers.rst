@@ -1,6 +1,8 @@
 Rationale headers in Launchpad email
 ====================================
 
+.. include:: /includes/important_not_revised_help.rst
+
 When sending out most email, Launchpad will include
 ``X-Launchpad-Message-Rationale`` and ``X-Launchpad-Notification-Type``
 headers which you can filter with.

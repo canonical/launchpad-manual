@@ -1,6 +1,8 @@
 Your Launchpad account
 ======================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Before you start using Launchpad, you need to `set up a Launchpad
 account <YourAccount/NewAccount>`__. With your new Launchpad account,
 you'll be able to:
