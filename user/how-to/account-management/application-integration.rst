@@ -1,6 +1,8 @@
 #######################
 Application integration
 #######################
+.. include:: /includes/important_not_revised_help.rst
+
 
 Third-party developers have written applications like Ground Control
 that let you use Launchpad from the desktop, rather than through a web

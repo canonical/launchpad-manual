@@ -1,6 +1,8 @@
 Use the Python API
 ==================
 
+.. include:: /includes/important_not_revised_help.rst
+
 This page has a bunch of examples of how to use \`launchpadlib\` and the
 Python APIs. Think of it like a cookbook that you can add your favourite
 recipe to.

@@ -1,6 +1,8 @@
 Import your project's bug history
 =================================
 
+.. include:: /includes/important_not_revised_help.rst
+
 You can move your project's bug history to Launchpad by converting the
 history into Launchpad's import format.
 

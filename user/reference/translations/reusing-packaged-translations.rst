@@ -1,6 +1,8 @@
 Reusing packaged translations
 =============================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Reusing translations from different projects might lead to licensing
 issues. Since it's hard to determine compatibility between different
 projects, Launchpad leaves the responsibility with the translator to

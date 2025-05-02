@@ -1,6 +1,8 @@
 Bug expiry
 ==========
 
+.. include:: /includes/important_not_revised_help.rst
+
 While we all have the best of intentions to at least triage every bug
 that is reported against a project we're involved with, there are just
 some bugs that never get looked at.

@@ -1,6 +1,8 @@
 Track bugs with Mantis
 ======================
 
+.. include:: /includes/important_not_revised_help.rst
+
 If you want to use Launchpad to monitor the status of bugs in a Mantis
 bug tracker, you need to let Launchpad know where the bug tracker is
 hosted.

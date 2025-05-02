@@ -1,6 +1,8 @@
 Answer Tracker for building community support
 =============================================
 
+.. include:: /includes/important_not_revised_help.rst
+
 In free software projects, the best "support" is often available
 directly from your own community. However, that support happens on
 informal channels - such as IRC, mailing lists and web forums. It can be

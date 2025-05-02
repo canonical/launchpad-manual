@@ -1,6 +1,8 @@
 Translation groups
 ==================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Launchpad makes it easy for anyone to make or suggest translations for a
 free software project. Each project can choose a `review
 policy <Translations/YourProject#review-policy>`__ that lets them find a

@@ -1,6 +1,8 @@
 Licenses
 ========
 
+.. include:: /includes/important_not_revised_help.rst
+
 This page divides the licenses that have been reviewed by the Launchpad
 staff into open and proprietary groups. Licenses that comply with
 `Legal#Project_eligibility <Legal#Project_eligibility>`__ are considered

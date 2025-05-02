@@ -1,6 +1,8 @@
 Set up daily builds with ``bzr-builder``
 ========================================
 
+.. include:: /includes/important_not_revised_help.rst
+
 ``bzr-builder`` is the Bazaar plugin that helps you set up `daily builds in
 Launchpad <Packaging/SourceBuilds>`__. You need to install it locally to
 test your recipes and builds before you send them to Launchpad.

@@ -1,6 +1,8 @@
 Prioritising builds
 ===================
 
+.. include:: /includes/important_not_revised_help.rst
+
 When you upload a source package to Launchpad, it assigns the package a
 priority -- a "score" -- and then uses that score to decide when the
 package should be sent to Launchpad's

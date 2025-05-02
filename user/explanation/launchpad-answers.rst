@@ -1,6 +1,8 @@
 #####################
 Launchpad Answers
 #####################
+.. include:: /includes/important_not_revised_help.rst
+
 
 Using Launchpad to find help is easy. First off, visit the Answers page
 for the project or distribution you're using.

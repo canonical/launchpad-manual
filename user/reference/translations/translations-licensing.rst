@@ -1,6 +1,8 @@
 Translations licensing
 ======================
 
+.. include:: /includes/important_not_revised_help.rst
+
 We have now updated the "Translations copyright" section of the
 `Launchpad terms of use <Legal>`__ to require that translations
 submitted in Launchpad licensed using the `BSD

@@ -1,6 +1,8 @@
 What is Launchpad?
 ==================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Launchpad is a suite of web-based tools that help people and projects to
 collaborate in the creation of free software.
 

@@ -1,6 +1,8 @@
 Install software from private PPAs
 ==================================
 
+.. include:: /includes/important_not_revised_help.rst
+
 .. WARNING::
     THIS IS A DRAFT RELATING TO FUNCTIONALITY NOT YET AVAILABLE IN
     LAUNCHPAD

@@ -1,6 +1,8 @@
 Branch imports
 ==============
 
+.. include:: /includes/important_not_revised_help.rst
+
 There's a lot of free software code available in CVS or Subversion (SVN)
 repositories. as their primary revision control system. They are
 well-understood and fast - for the core developers - systems. While they

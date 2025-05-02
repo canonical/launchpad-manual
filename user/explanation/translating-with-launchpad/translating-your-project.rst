@@ -1,6 +1,8 @@
 Translating your project
 ========================
 
+.. include:: /includes/important_not_revised_help.rst
+
 While development usually takes place in English, free software is used
 by people in hundreds of different languages across the globe.
 

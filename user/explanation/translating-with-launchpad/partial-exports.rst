@@ -1,6 +1,8 @@
 Exporting partial gettext PO files
 ==================================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Distributions, such as Ubuntu, use Launchpad to translate the free
 software packages that make up the operating system. Where an upstream
 project has an existing translation effort, the distribution's

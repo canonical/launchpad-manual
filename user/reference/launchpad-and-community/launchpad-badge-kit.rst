@@ -1,6 +1,8 @@
 Launchpad Badges
 ================
 
+.. include:: /includes/important_not_revised_help.rst
+
 If you or your project uses `Launchpad <https://launchpad.net>`__,
 display one of these badges to let people know!
 

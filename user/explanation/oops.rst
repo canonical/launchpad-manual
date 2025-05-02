@@ -1,6 +1,8 @@
 What is an OOPS?
 ================
 
+.. include:: /includes/important_not_revised_help.rst
+
 When Launchpad suffers an error that prevents it doing what you
 requested, it will log the error and some diagnostic detail, so that a
 developer or system administrator can figure out what has happened and

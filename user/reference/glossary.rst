@@ -1,6 +1,8 @@
 Glossary
 ========
 
+.. include:: /includes/important_not_revised_help.rst
+
 - **Bugtask:** A bug tracked in Launchpad can appear
 in different projects and releases of a project, enabling different
 teams to work together on solving that bug. We call each appearance of a

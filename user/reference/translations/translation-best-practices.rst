@@ -1,6 +1,8 @@
 Launchpad project translation Best Practices
 ============================================
 
+.. include:: /includes/important_not_revised_help.rst
+
 This page provides a set of recommendations for managing translations
 for your project on Launchpad.
 

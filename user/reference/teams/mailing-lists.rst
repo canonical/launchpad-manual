@@ -1,6 +1,8 @@
 Launchpad mailing lists
 =======================
 
+.. include:: /includes/important_not_revised_help.rst
+
 *Having a problem with mailing lists? See
 the* `troubleshooting <#troubleshooting>`__ *section below.*
 

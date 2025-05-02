@@ -1,6 +1,8 @@
 Branch information types
 ========================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Launchpad uses "information type" to determine who can know about a
 branch. Anyone can see a branch that is Public or Public Security.
 Private Security and Proprietary information types restrict who may know

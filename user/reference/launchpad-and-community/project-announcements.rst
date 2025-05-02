@@ -1,6 +1,8 @@
 Project Announcements
 =====================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Launchpad publishes news feeds for your project. You can make
 announcements through Launchpad, and the 5 most recent headlines will be
 displayed on your project home page. Each project now also has a feed

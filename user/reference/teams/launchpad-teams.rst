@@ -1,6 +1,8 @@
 Launchpad Teams
 ===============
 
+.. include:: /includes/important_not_revised_help.rst
+
 There are more than 2,000 teams registered in Launchpad, covering
 activities as diverse as `translating Ubuntu into
 Esperanto <https://launchpad.net/~ubuntu-l10n-eo>`__ and `Zope 3

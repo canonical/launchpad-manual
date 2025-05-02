@@ -1,6 +1,8 @@
 Link code to bug reports and blueprints
 =======================================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Launchpad is much like a fancy china dinner service: you can get a great
 deal of use and contentment from just one or two pieces. However, the
 really exciting - and sometimes unexpected, in a good way - things start

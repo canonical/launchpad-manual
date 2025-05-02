@@ -1,6 +1,8 @@
 Translation sharing and suggestions
 ===================================
 
+.. include:: /includes/important_not_revised_help.rst
+
 The same messages crop up in many places. For a simple example, think of
 how often you've seen the phrase "Save as" in many different
 applications.

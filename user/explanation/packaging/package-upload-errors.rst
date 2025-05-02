@@ -1,6 +1,8 @@
 Troubleshoot package upload errors
 ==================================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Once you've made an upload either to your PPA or the official Ubuntu
 archive, Launchpad will send you a success or failure notice by email.
 

@@ -1,6 +1,8 @@
 Subscribe and unsubscribe to bugs
 =================================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Launchpad uses notification emails and Atom feeds to help you stay on
 top of the bugs that interest you.
 

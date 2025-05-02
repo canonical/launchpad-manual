@@ -1,6 +1,8 @@
 Settings and preferences
 ========================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Logging in
 ----------
 

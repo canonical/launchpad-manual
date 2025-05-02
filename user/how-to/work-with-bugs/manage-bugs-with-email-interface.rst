@@ -1,6 +1,8 @@
 Managing bugs through email
 ===========================
 
+.. include:: /includes/important_not_revised_help.rst
+
 If you prefer, you can entirely manage bugs using email.
 
 Using the email interface you can:

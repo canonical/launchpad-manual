@@ -1,6 +1,8 @@
 Language-specific translation guides
 ====================================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Below, you will find a list of translation guides used by the persons
 translating software using Launchpad Translations (Rosetta).
 

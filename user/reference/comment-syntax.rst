@@ -1,6 +1,8 @@
 Launchpad Comment Parsing
 =========================
 
+.. include:: /includes/important_not_revised_help.rst
+
 This page aims to introduce the most important elements of comment's
 syntax on Launchpad at a glance.
 

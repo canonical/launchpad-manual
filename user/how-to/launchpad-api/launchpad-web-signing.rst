@@ -1,6 +1,8 @@
 #################
 Sign web requests
 #################
+.. include:: /includes/important_not_revised_help.rst
+
 
 The `Launchpad web service hacking document <launchpad-web>`__ describes a
 lot of requests you can send to launchpad.net. But if you send them in

@@ -1,6 +1,8 @@
 
 Import an OpenGPG key
 =====================
+.. include:: /includes/important_not_revised_help.rst
+
 
 OpenPGP allows you to sign documents, such as emails or text files, using a digital key. Launchpad uses this key during a small number of tasks where it's important to confirm your identity.
 

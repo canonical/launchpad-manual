@@ -1,6 +1,8 @@
 Support in your native language
 ===============================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Many software users aren't fluent in communicating in English. It is
 common that a user has enough understanding of English to find his or
 her way around Launchpad, but not enough to explain in detail a problem

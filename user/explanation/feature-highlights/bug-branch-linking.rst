@@ -1,6 +1,8 @@
 Linking bugs to dedicated branches
 ==================================
 
+.. include:: /includes/important_not_revised_help.rst
+
 If you create a Bazaar branch to fix a specific bug, and that branch is
 registered in Launchpad, you can link the bug report and the branch.
 

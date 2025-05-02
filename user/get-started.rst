@@ -1,6 +1,7 @@
-
 Get started with Launchpad
 ==========================
+
+.. include:: /includes/important_not_revised_help.rst
 
 Welcome to Launchpad! If you're here because you've just created your Launchpad account, here are some suggestions for what you might want to do next:
 

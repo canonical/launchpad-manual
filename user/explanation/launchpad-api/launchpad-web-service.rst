@@ -1,6 +1,8 @@
 The Launchpad web service
 =========================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Canonical provides a Python client, `launchpadlib <../launchpadlib>`__,
 for reading and writing to Launchpad's web service. But there are many
 situations where you wouldn't use ``launchpadlib``: if you're not a Python

@@ -1,6 +1,8 @@
 Find and download code hosted on Launchpad
 ==========================================
 
+.. include:: /includes/important_not_revised_help.rst
+
 So, what does it mean to have code registered in Launchpad? Well, it can
 be one of four things:
 

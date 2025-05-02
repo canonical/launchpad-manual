@@ -1,6 +1,8 @@
 
 Close your account
 ==================
+.. include:: /includes/important_not_revised_help.rst
+
 
 If you no longer want or need your Launchpad account, you can deactivate it.
 

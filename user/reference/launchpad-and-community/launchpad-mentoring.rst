@@ -1,6 +1,8 @@
 Mentoring in Launchpad
 ======================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Getting involved in a free software project can be quite intimidating:
 not only is there a great deal of technical detail to learn but it can
 also take a while to learn the social side of a project.

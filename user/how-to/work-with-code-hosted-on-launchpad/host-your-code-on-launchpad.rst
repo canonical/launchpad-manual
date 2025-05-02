@@ -1,6 +1,8 @@
 Host your project's code on Launchpad
 =====================================
 
+.. include:: /includes/important_not_revised_help.rst
+
 .. toctree::
     :hidden:
     :maxdepth: 2
