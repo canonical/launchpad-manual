@@ -1,6 +1,8 @@
 Host your project on Launchpad with Bazaar
 ==========================================
 
+.. include:: /includes/important_not_revised_help.rst
+
 First step would be to install ``bzr``.
 
 Open up a terminal and type:

@@ -1,6 +1,8 @@
 Filing a new support request
 ============================
 
+.. include:: /includes/important_not_revised_help.rst
+
 So, you are going to file a new support request. Before you proceed, you
 should look at existing tickets in order to find similar requests who
 fit your needs. You can do so by looking at `support requests

@@ -1,6 +1,8 @@
 Bug heat
 ========
 
+.. include:: /includes/important_not_revised_help.rst
+
 Ascertaining the importance of a bug can be one of the harder parts of
 bug triage, right?
 

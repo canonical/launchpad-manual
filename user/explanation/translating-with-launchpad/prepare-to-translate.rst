@@ -1,6 +1,8 @@
 Preparing to translate
 ======================
 
+.. include:: /includes/important_not_revised_help.rst
+
 You can use Launchpad to help translate free software, both directly
 with upstream projects, (such as
 `Limewire <https://translations.launchpad.net/limewire>`__), and also as

@@ -1,6 +1,8 @@
 Copying packages
 ================
 
+.. include:: /includes/important_not_revised_help.rst
+
 You can copy packages from other PPAs into any PPA that you can upload
 to. You also have the option of copying packages between distro-series
 (i.e different distribution releases).

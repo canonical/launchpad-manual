@@ -1,6 +1,8 @@
 Monitoring bugs in other bug trackers
 =====================================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Look at the "Assigned To" column for `bug
 #86103 <https://launchpad.net/bugs/86103>`__ again:
 

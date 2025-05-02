@@ -1,6 +1,8 @@
 
 Interoperability with external bug trackers
 ===========================================
+.. include:: /includes/important_not_revised_help.rst
+
 
 You can link bug reports in Launchpad to reports in tracked elsewhere.
 

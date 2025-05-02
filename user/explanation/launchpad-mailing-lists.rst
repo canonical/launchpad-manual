@@ -1,6 +1,8 @@
 Launchpad mailing lists
 =======================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Launchpad allows a team to set up a discussion mailing list which is
 open to all members of the team. For the technically minded, Launchpad
 mailing lists are managed by `GNU Mailman <http://www.list.org>`__

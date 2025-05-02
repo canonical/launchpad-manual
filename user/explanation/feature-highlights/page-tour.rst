@@ -1,6 +1,8 @@
 Launchpad's page layout
 =======================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Launchpad is a tool that links communities together and makes them more
 productive. It gives you a window into the activity of each of those
 communities and allows you to connect with them and collaborate with

@@ -1,6 +1,8 @@
 Link a bug reports to a branch
 ==============================
 
+.. include:: /includes/important_not_revised_help.rst
+
 If your project uses both Launchpad Bugs and Launchpad Code -- whether
 directly hosting Bazaar or Git branches on Launchpad or importing from
 elsewhere -- you can link bug reports directly to the code where someone

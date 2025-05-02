@@ -1,6 +1,8 @@
 Branch hosting with Bazaar
 ==========================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Launchpad can host branches of your project's code, using a revision
 control system called Bazaar. Since Bazaar is entirely distributed, it
 also allows you to register branches that are actually hosted elsewhere.

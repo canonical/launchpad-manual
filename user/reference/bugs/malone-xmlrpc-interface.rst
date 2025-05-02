@@ -1,6 +1,8 @@
 The Malone xmlrpc interface
 ===========================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Malone currently provides an XML-RPC interface for filing bugs.
 
 Synopsis

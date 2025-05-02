@@ -1,6 +1,8 @@
 Import code into Launchpad
 ==========================
 
+.. include:: /includes/important_not_revised_help.rst
+
 There's a lot of free software code available in CVS, Subversion (SVN)
 and Git repositories, or Bazaar repositories that aren't hosted on
 Launchpad. Sometimes you're going to want to have this code available on

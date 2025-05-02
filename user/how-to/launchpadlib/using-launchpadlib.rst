@@ -1,6 +1,8 @@
 Get started with launchpadlib
 =============================
 
+.. include:: /includes/important_not_revised_help.rst
+
 This document shows how to use a Python client to read and write Launchpad's
 data using the launchpadlib library. It doesn't cover the HTTP requests and
 responses that go back and forth behind the scenes: for that, see `the

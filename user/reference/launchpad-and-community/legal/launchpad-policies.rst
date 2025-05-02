@@ -1,6 +1,8 @@
 Launchpad policies
 ==================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Trademark and logo licence
 --------------------------
 

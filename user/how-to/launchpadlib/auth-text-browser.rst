@@ -1,6 +1,8 @@
 
 Authenticate launchpadlib from a text-based browser
 ===================================================
+.. include:: /includes/important_not_revised_help.rst
+
 
 Sometimes you may want to use launchpadlib-based applications without
 benefit of a graphical browser. As of this writing, the Canonical

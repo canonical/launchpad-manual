@@ -1,6 +1,8 @@
 Using Rosetta
 =============
 
+.. include:: /includes/important_not_revised_help.rst
+
 Rosetta is an easy-to-use web interface allowing translation of many
 software projects.
 

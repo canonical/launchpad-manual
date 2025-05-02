@@ -1,6 +1,8 @@
 Use the Malone (Launchpad) XMLRPC Interface
 ===========================================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Malone currently provides an XML-RPC interface for filing bugs.
 
 Report a product bug

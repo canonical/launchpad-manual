@@ -1,6 +1,8 @@
 
 Launchpad's email interface
 ===========================
+.. include:: /includes/important_not_revised_help.rst
+
 
 Launchpad's bug tracker sends you `email <Bugs/Subscriptions>`__ about
 the bugs you're interested in. If you see something that requires your

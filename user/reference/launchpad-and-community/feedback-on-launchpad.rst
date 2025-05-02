@@ -1,6 +1,8 @@
 Talk to us about Launchpad
 ==========================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Whether you need advice on using Launchpad or you want to help improve
 Launchpad itself, we're always keen to hear from you.
 

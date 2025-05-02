@@ -1,6 +1,8 @@
 The Launchpad bug tracker
 =========================
 
+.. include:: /includes/important_not_revised_help.rst
+
 This document describes the extra data interface to
 the bug tracker in Launchpad that can be used by bug reporting tools
 such as `Apport <https://launchpad.net/Apport>`__. If you have questions

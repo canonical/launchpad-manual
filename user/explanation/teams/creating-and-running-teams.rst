@@ -1,6 +1,8 @@
 Creating and running Launchpad teams
 ====================================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Building a strong community around your project or a particular effort
 within a project is often crucial to its success. Launchpad teams help
 you to bring people together by offering:

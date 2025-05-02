@@ -1,6 +1,8 @@
 Upload your Bazaar branch to Launchpad
 ======================================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Just as it's easy to `create your own Bazaar
 branch <Code/FindingAndDownloading>`__ of code that's registered in
 Launchpad, you can also host your code on Launchpad. It's free and means

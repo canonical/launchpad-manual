@@ -1,6 +1,8 @@
 ########
 Webhooks
 ########
+.. include:: /includes/important_not_revised_help.rst
+
 
 Some objects in Launchpad support
 `webhooks <https://en.wikipedia.org/wiki/Webhook>`__. When these objects

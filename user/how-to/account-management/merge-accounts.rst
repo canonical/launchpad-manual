@@ -1,6 +1,8 @@
 
 Merging accounts
 ================
+.. include:: /includes/important_not_revised_help.rst
+
 
 If you find that you have more than one Launchpad account, in most cases you can easily merge them together. How easy it is depends on whether you still have access to the primary email address registered in the duplicate account.
 

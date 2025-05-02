@@ -1,6 +1,8 @@
 
 External bug statuses
 =====================
+.. include:: /includes/important_not_revised_help.rst
+
 
 Bugs in free software projects are often tracked in more than one place. For example: a bug in OpenOffice.org may be tracked in Launchpad by Ubuntu's OpenOffice.org team and in OpenOffice.org's own Bugzilla instance.  
 

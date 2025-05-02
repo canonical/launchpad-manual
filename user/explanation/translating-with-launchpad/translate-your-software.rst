@@ -1,6 +1,8 @@
 Translating your software
 =========================
 
+.. include:: /includes/important_not_revised_help.rst
+
 This section contains specific information about translating software into
 your language. It contains details about what strings should be
 translated and what not, what are plural forms and other things you

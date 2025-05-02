@@ -1,6 +1,8 @@
 Closing your project
 ====================
 
+.. include:: /includes/important_not_revised_help.rst
+
 If you own a project in Launchpad and either no longer need it or don't
 have time to run it, you could consider:
 

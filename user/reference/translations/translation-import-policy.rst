@@ -1,6 +1,8 @@
 Translation import policy
 =========================
 
+.. include:: /includes/important_not_revised_help.rst
+
 When you start using Launchpad to translate a project, you need to
 import the project's translation templates. Optionally, you may also
 want to import any existing translations.

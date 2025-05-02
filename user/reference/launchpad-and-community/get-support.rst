@@ -1,6 +1,8 @@
 Getting support in Launchpad
 ============================
 
+.. include:: /includes/important_not_revised_help.rst
+
 When you're having a problem with a project hosted in Launchpad, you can
 use the Answer Tracker to request help from the community.
 

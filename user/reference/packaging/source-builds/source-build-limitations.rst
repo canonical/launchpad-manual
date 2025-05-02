@@ -1,6 +1,8 @@
 Known source build limitations
 ==============================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Here are the significant limitations that we anticipate affect a large
 number of users:
 

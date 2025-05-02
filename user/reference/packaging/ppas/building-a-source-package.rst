@@ -1,6 +1,8 @@
 Building a source package
 =========================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Ubuntu uses Debian's system of packaging software. To get software into
 a PPA, you need to build a source package. That includes the source code
 for the software you want to distribute, along with the instructions for

@@ -1,6 +1,8 @@
 Continuous Integration
 ======================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Launchpad CI tries to make software development and collaboration
 easier.
 

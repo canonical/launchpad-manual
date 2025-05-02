@@ -1,6 +1,8 @@
 Staging — Launchpad's sandbox
 =============================
 
+.. include:: /includes/important_not_revised_help.rst
+
 If you want to try Launchpad out, you can use the `staging environment
 <https://staging.launchpad.net/>`_ to experiment with real data and
 functionality, but without affecting the day-to-day work of other

@@ -1,6 +1,8 @@
 Loggerhead
 ==========
 
+.. include:: /includes/important_not_revised_help.rst
+
 `Loggerhead <https://launchpad.net/loggerhead>`__ is the code that runs
 the 'browse code' pages on Launchpad.
 

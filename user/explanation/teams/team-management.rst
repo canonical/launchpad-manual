@@ -1,6 +1,8 @@
 Team management
 ===============
 
+.. include:: /includes/important_not_revised_help.rst
+
 Strong communities are built on teams. Launchpad has a very rich
 infrastructure to support the creation of teams, which allows
 communities to develop in a sophisticated fashion around projects or

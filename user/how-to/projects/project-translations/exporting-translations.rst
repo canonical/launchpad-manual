@@ -1,6 +1,8 @@
 Export translations
 ===================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Just as with `importing
 templates <Translations/YourProject/ImportingTemplates>`__ and
 `translations <Translations/YourProject/ImportingTranslations>`__, there

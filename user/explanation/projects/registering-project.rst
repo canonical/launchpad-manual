@@ -1,6 +1,8 @@
 Registering your project
 ========================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Let's have a quick recap of how you can use Launchpad for your project:
 
 -  **Use Launchpad's applications directly:** bug tracker, code hosting,

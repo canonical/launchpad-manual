@@ -1,6 +1,8 @@
 
 launchpadlib API compatibility
 ==============================
+.. include:: /includes/important_not_revised_help.rst
+
 
 The API compatibility of the launchpadlib Python library has not always
 been maintained as well as an author of a program using it would hope.

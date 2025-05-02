@@ -1,6 +1,8 @@
 SSH fingerprints
 ================
 
+.. include:: /includes/important_not_revised_help.rst
+
 This page lists the SSH fingerprints of Launchpad's various SSH
 endpoints. It is a stopgap measure until we have signed DNS records.
 

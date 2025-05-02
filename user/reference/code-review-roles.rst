@@ -1,6 +1,8 @@
 Roles in code review
 ====================
 
+.. include:: /includes/important_not_revised_help.rst
+
 This is a description of the various people who may be involved in code
 review, their capabilities and the kinds of email they receive. There
 may be considerable overlap. For example, a branch's review team will

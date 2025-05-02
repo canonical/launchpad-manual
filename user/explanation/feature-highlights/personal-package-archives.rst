@@ -1,6 +1,8 @@
 Personal Package Archives
 =========================
 
+.. include:: /includes/important_not_revised_help.rst
+
 Personal Package Archives (PPAs) are one of Launchpad's most popular
 and exceptional features. Using a PPA you can publish your own software
 packages that are installable in Ubuntu. They can be based on existing

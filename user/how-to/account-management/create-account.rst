@@ -1,6 +1,8 @@
 Create and personalise your Launchpad account
 =============================================
 
+.. include:: /includes/important_not_revised_help.rst
+
 To create a new Launchpad account, visit the `account sign-up <https://launchpad.net/+login>`_ page. All you need is an email address that Launchpad can use to contact you.
 
 A few things to note:

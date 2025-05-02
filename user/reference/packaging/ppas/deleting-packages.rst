@@ -1,6 +1,8 @@
 ~- `Launchpad Help <FrontPage>`__ > `Packaging <Packaging>`__ >
 `PPAs <PPA>`__ > Deleting packages -~
 
+.. include:: /includes/important_not_revised_help.rst
+
 Package deletion
 ================
 
