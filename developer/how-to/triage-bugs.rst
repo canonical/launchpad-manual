@@ -51,17 +51,19 @@ These are the questions we ask when triaging bug reports about
    as a duplicate of the older bug.
 4. **Is it something we will not do and would not accept a patch to
    do?** If so, mark it as *Won't Fix*.
-5. **Is it an operational request?** If yes, convert it to a question.
-6. **When are we likely to fix this?** Set the importance to show when
+5. **Is it something we will not now and defer to a later date?** If so, mark
+   it as *Deferred*.
+6. **Is it an operational request?** If yes, convert it to a question.
+7. **When are we likely to fix this?** Set the importance to show when
    we'll get to fixing this bug (`read more about choosing an
    importance <#importance>`__).
-7. **Does the report have enough detail?** If we couldn't replicate or
+8. **Does the report have enough detail?** If we couldn't replicate or
    otherwise begin work on the bug with the information provided,
    request further information from the reporter and mark it as
    *Incomplete* and move to the next bug. If someone has already asked
    for more info and the reporter has replied, change the status from
    *Incomplete* to *Triaged*.
-8. **Set the status to Triaged**.
+9. **Set the status to Triaged**.
 
 If you're uncertain what importance to give a bug, chat with another
 engineer. If there's a disagreement, let common sense and courtesy take
