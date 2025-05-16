@@ -11,7 +11,7 @@ want to add an extra layer of quality control to your bug triage.
 Whereas anyone can set most of the bug statuses, which makes it easy for
 new contributors to get involved, there are two additional bug statuses
 
--  *Triaged* and *Won't Fix* - that are available only to your project's
+-  *Triaged*, *Won't Fix* and *Deferred* - that are available only to your project's
    owner, bug supervisor and the relevant drivers.
 
 Available to everyone
@@ -46,6 +46,8 @@ Only available to the bug supervisor
    contains all information a developer needs to start work on a fix.
 -  **Won't Fix:** this is acknowledged as a genuine bug but the project
    has no plans to fix it.
+-  **Deferred:** the bug supervisor considers that the bug fix will be deferred
+   to a later date.
 
 Translating external bug statuses
 ---------------------------------
