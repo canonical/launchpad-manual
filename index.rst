@@ -71,4 +71,5 @@ contributions, suggestions, fixes and constructive feedback.
    reference/index
    explanation/index
    help
+   release-notes
    contribute-to-our-docs
