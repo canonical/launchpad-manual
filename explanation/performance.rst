@@ -72,12 +72,8 @@ When changing code, it can easily happen to increase the query count. You can
 avoid this by using a helper to
 :doc:`preserve query count <../how-to/preserve-query-count>`.
 
-When you face performance or even timeout issues, you should learn more about
-`timeout analysis`_ (internal video).
-
 PostGreSQL comes with a `builtin tool`_ to analyze SQL queries.
 
-.. _timeout analysis: https://drive.google.com/file/d/1hUivL07Msoyej3wd_T4hMAX61EJzfE38/view?usp=drive_link
 .. _builtin tool: https://www.postgresql.org/docs/current/sql-explain.html
 .. _write efficient queries: https://dev.launchpad.net/Database/Performance
 
