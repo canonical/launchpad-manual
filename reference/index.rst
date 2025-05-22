@@ -61,6 +61,14 @@ Git-related
    services/git-hosting.rst
    services/code-import.rst
 
+Network-related
+~~~~~~~~~~~~~~~
+
+.. toctree::
+   :maxdepth: 1
+
+   services/firewall.rst
+
 Possibly out-of-date
 --------------------
 

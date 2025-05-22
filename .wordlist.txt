@@ -15,6 +15,7 @@ contactuser
 cronscripts
 datetime
 debootstrap
+Defs
 DateTime
 DBA
 devel
@@ -37,6 +38,7 @@ IAM
 IntelliSense
 innerHTML
 installable
+iptables
 haproxy
 Jira
 JS
@@ -59,6 +61,7 @@ namespaces
 NodePort
 observability
 OLM
+OpenStack
 overcommunication
 params
 Permalink
@@ -81,6 +84,8 @@ stylesheets
 subdirectories
 subfolders
 subtree
+subnet
+subnets
 TAL
 TimeDelta
 TODO
