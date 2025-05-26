@@ -1,3 +1,5 @@
+.. _contribute-to-our-docs:
+
 Contribute to our docs
 ======================
 

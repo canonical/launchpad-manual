@@ -277,6 +277,7 @@ langpack
 LaunchpadAuthentication
 LaunchpadDatabaseRevision
 LaunchpadFormView
+launchpadlib
 LaunchpadObjectFactory
 LaunchpadPpa
 LaunchpadProductionStatus
@@ -360,6 +361,7 @@ ols
 omg
 OOPSes
 OpenID
+OpenPGP
 opstats
 optimization
 optimize
@@ -591,6 +593,7 @@ TipsForReviewers
 TLS
 tmp
 todrop
+Trac
 traceback
 tracebacks
 tradeoff
@@ -645,6 +648,7 @@ VSCode
 webapp
 webdav
 webhook
+Webhooks
 webservice
 webservice's
 webservices

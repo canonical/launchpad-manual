@@ -1,4 +1,6 @@
-Getting Help
+.. _getting-help:
+
+Getting help
 ============
 
 **We're here to help you hack on Launchpad.**
