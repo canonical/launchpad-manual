@@ -1,3 +1,5 @@
+.. _prioritising-builds:
+
 Prioritising builds
 ===================
 
@@ -6,14 +8,14 @@ Prioritising builds
 When you upload a source package to Launchpad, it assigns the package a
 priority -- a "score" -- and then uses that score to decide when the
 package should be sent to Launchpad's
-`build-farm <https://launchpad.net/builders>`__.
+`build-farm <https://launchpad.net/builders>`_.
 
 Launchpad calculates the score based on various attributes (described
 below). The higher the score, the sooner the build is dispatched to one
 of the available build machines.
 
 There are separate build queues for
-`distributions <https://launchpad.net/ubuntu/+builds>`__ and PPAs (PPA →
+`distributions <https://launchpad.net/ubuntu/+builds>`_ and PPAs (PPA →
 View package details → View all builds).
 
 How Launchpad calculates the score
@@ -22,8 +24,8 @@ How Launchpad calculates the score
 Launchpad uses the following attributes of a package to calculate its
 priority:
 
--  target `pocket <Glossary#pocket>`__ -- e.g. security
--  target `component <Glossary#component>`__ -- e.g. universe
+-  target ``pocket`` -- e.g. security
+-  target ``component`` -- e.g. universe
 -  source urgency -- defined by the packager
 -  package sets containing the package
 -  archive containing the package
@@ -42,7 +44,7 @@ Target pocket
      - Score
    * - -backports
      - 0
-   * - \<release&gt;
+   * - release
      - 1500
    * - -proposed
      - 3000
@@ -167,7 +169,7 @@ Translation template builds get a score of 2515.
 Source package recipe builds get a score of 2510 plus any relative build
 score for their target archive.
 
-`Live filesystem <LiveFilesystem>`__ builds get a score of 2510, plus
+:ref:`live-file-systems` builds get a score of 2510, plus
 any relative build score for their source archive, plus any relative
 build score for their live filesystem.
 

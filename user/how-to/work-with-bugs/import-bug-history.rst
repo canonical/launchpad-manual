@@ -32,25 +32,21 @@ Launchpad tree before requesting an import.
 
 To do this:
 
-1. Download
-   `bug-export.rnc <https://git.launchpad.net/launchpad/tree/doc/bug-export.rnc>`__
+1. Download `bug-export.rnc <https://git.launchpad.net/launchpad/tree/doc/bug-export.rnc>`_
 2. Install ``jing``
 3. Run:
 
-.. terminal::
-    jing -c bug-export.rnc your-export-file.xml
+    .. terminal::
 
-``jing`` must not report any errors before we can attempt an import of
-your bugs into Launchpad. Consult the format spec below to understand
-any errors that ``jing`` reports.
+        jing -c bug-export.rnc your-export-file.xml
 
-1. 
+    ``jing`` must not report any errors before we can attempt an import of
+    your bugs into Launchpad. Consult the format spec below to understand
+    any errors that ``jing`` reports.
 
-   1. Really? We don't change this format ever, as far as I can tell.
-      --deryck
-.. note::
-    this format is a draft and may change. Subscribe tothis page if you
-    want to receive an email when we make updates.
+    .. note::
+
+        This format is a draft and may change. Subscribe to this page if you want to receive an email when we make updates.
 
 The format
 ----------

@@ -1,3 +1,5 @@
+.. _troubleshoot-package-upload-errors:
+
 Troubleshoot package upload errors
 ==================================
 
@@ -11,12 +13,7 @@ archive, Launchpad will send you a success or failure notice by email.
     you have correctly signed your package and have used your corresponding
     email address in ``debian/changelog``.
 
-Once a package is accepted you can check the status of your builds on
-your PPA's package listing (navigate to the relevant PPA from `your
-Launchpad page <https://launchpad.net/~>`__ and then "View package
-details"), or the `Ubuntu build
-queue <https://launchpad.net/ubuntu/+builds?build_text=&build_state=all>`__
-if you're producing official Ubuntu packages.
+Once a package is accepted you can check the status of your builds on your PPA's package listing (navigate to the relevant PPA from `your Launchpad page <https://launchpad.net/~>`_ and then "View package details"), or the `Ubuntu build queue <https://launchpad.net/ubuntu/+builds?build_text=&build_state=all>`_ if you're producing official Ubuntu packages.
 
 Common errors
 -------------
@@ -26,29 +23,22 @@ The upload appears to work but I don't get any email about it
 
 There are two main reasons for this:
 
-1. You failed to sign the .changes file on the source package that you
-   uploaded
-2. The signing key that you used is not known to Launchpad, `you need to
-   add it to your account <https://launchpad.net/~/+editpgpkeys>`__
+1. You failed to sign the .changes file on the source package that you uploaded.
+2. The signing key that you used is not known to Launchpad, `you need to add it to your account <https://launchpad.net/~/+editpgpkeys>`_.
 
 clearsign failed: secret key not available
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you get an error when signing the changes file (``clearsign failed:
-secret key not available``), pass an additional option
-``-k[key_id]`` to debuild. You can use ``gpg --list-keys`` to
-get the key ID. Look for line similar to ``pub 12345/12ABCDEF``; the
-key is the alphanumeric section after the forward slash.
+If you get an error when signing the changes file (``clearsign failed: secret key not available``), pass an additional option ``-k[key_id]`` to debuild. You can use ``gpg --list-keys`` to get the key ID. Look for line similar to ``pub 12345/12ABCDEF``; the key is the alphanumeric section after the forward slash.
 
 Source/binary (i.e. mixed) uploads are not allowed
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you get the following error when uploading the packages:
 
-``Rejected: Source/binary (i.e. mixed) uploads are not allowed. This
-upload queue does not permit SECURITY uploads.``
+``Rejected: Source/binary (i.e. mixed) uploads are not allowed. This upload queue does not permit SECURITY uploads.``
 
-pass the ``-S\`` flag to ``debuild``.
+pass the ``-S`` flag to ``debuild``.
 
 Apparently successful upload followed by a rejection email
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -65,7 +55,7 @@ followed by an email with the following:
 This means that you forgot to specify your PPA's name on the
 command-line (that is, the "my-ppa" part) and dput sent your upload to
 the primary Ubuntu archive, for which you don't have authorisation. You
-can disable that behaviour by adding these lines to your ~/.dput.cf:
+can disable that behaviour by adding these lines to your ``~/.dput.cf``:
 
 ::
 
@@ -92,19 +82,13 @@ contents. Please note that you **must** give every upload a new version
 number; Launchpad never permits reusing version numbers in the same
 archive, even if they have been deleted.
 
-If you did change the version number, this usually happens for
-re-packaged ``orig.tar.gz``. The
-`Gzip <http://en.wikipedia.org/wiki/Gzip>`__ header includes a
-timestamp, resulting in files with different checksums for each
-individual compression step.
+If you did change the version number, this usually happens for re-packaged ``orig.tar.gz``. The
+`Gzip <http://en.wikipedia.org/wiki/Gzip>`_ header includes a timestamp, resulting in files with different checksums for each individual compression step.
 
 The solution for this problem consists of:
 
--  downloading the pristine original tarball from the location pointed
-   in the rejection message;
--  regenerate the source upload using it, ``debuild -S`` will do it,
-   note that there is no need to include the original tarball in the
-   upload, a reference to the right file will suffice;
+-  downloading the pristine original tarball from the location pointed in the rejection message;
+-  regenerate the source upload using it, ``debuild -S`` will do it, note that there is no need to include the original tarball in the upload, a reference to the right file will suffice;
 -  reupload the just created source package as usual, ``dput \``.
 
 Or, the rejection e-mail may say something like:
@@ -134,5 +118,4 @@ Other errors
 ------------
 
 If you come across other errors when uploading a package to Launchpad,
-find us in #launchpad on irc.libera.chat or `get in touch by
-email <Feedback>`__.
+find us in #launchpad on irc.libera.chat or :ref:`get in touch by email <talk-to-us-about-launchpad>`.

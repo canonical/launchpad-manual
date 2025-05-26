@@ -1,10 +1,12 @@
+.. _launchpad-email-interface:
 
-Launchpad's email interface
+Launchpad email interface
 ===========================
+
 .. include:: /includes/important_not_revised_help.rst
 
 
-Launchpad's bug tracker sends you `email <Bugs/Subscriptions>`__ about
+Launchpad's bug tracker sends you :ref:`email <bug-subscription>` about
 the bugs you're interested in. If you see something that requires your
 attention - for example, you want to comment on a bug - rather than
 leaving your email client to fire up a web browser, all you need to do
@@ -20,17 +22,13 @@ Anatomy of an email to the bug tracker
 
 Let's look at the elements of a bug report email:
 
--  **From address:** the address from which you send the email must be
-   `registered in your Launchpad
-   account <https://launchpad.net/people/+me/+editemails>`__.
--  **To address:** new@bugs.launchpad.net for new bugs;
-   \```bugnumber@bugs.launchpad.net``\` to manipulate an existing bug
-   report; \```edit@bugs.launchpad.net``\` for bulk edits.
--  **Subject:** Launchpad uses this as the bug report or comment
-   summary.
--  **Email body:** the text of your email forms the bug report or
-   comment detail. This is also where you can supply commands to
-   manipulate the bug.
+-  **From address:** the address from which you send the email must be `registered in your Launchpad account <https://launchpad.net/people/+me/+editemails>`_.
+
+-  **To address:** new@bugs.launchpad.net for new bugs; ``bugnumber@bugs.launchpad.net`` to manipulate an existing bug report; ``edit@bugs.launchpad.net`` for bulk edits.
+
+-  **Subject:** Launchpad uses this as the bug report or comment summary.
+
+-  **Email body:** the text of your email forms the bug report or comment detail. This is also where you can supply commands to manipulate the bug.
 
 That last item, the email body, needs a little more explanation. When
 you want to use one of the email interface's commands, **you need to
@@ -38,4 +36,5 @@ start the line with a space**. Otherwise, Launchpad will treat your
 command as a comment only and not as a command.
 
 .. note::
+
     All commands are also posted as a comment to the bug. This is something we plan to fix.

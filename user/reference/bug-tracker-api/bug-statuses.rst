@@ -20,7 +20,7 @@ Available to everyone
 -  **New**
 -  **Incomplete:** the bug report is incomplete and needs more
    information before it can be triaged. Bugs in this state are
-   considered for `expiry <Bugs/Expiry>`__.
+   considered for :ref:`expiry <bug-expiry>`.
 -  **Invalid:** the report describes the software's normal behaviour, or
    is unsuitable for any other reason.
 -  **Confirmed:** a member of the community other than the original
@@ -56,10 +56,8 @@ When Launchpad watches a bug report in an external tracker - such as
 Bugzilla or Sourceforge - it translates that bug's status information
 into the equivalent Launchpad status.
 
-See our `page on external bug statuses <external-bug-statuses>`__.
+See our :ref:`page on external bug statuses <external-bug-statuses>`.
 
 Further information
 -------------------
-If you're working on a fix to a bug and hosting that code in Launchpad,
-you can `link from the bug report directly to the branch of
-code <Bugs/BugBranchLinks>`__.
+If you're working on a fix to a bug and hosting that code in Launchpad, you can :ref:`link from the bug report directly to the branch of code <link-a-bug-reports-to-a-branch>`.

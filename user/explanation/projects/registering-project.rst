@@ -1,3 +1,5 @@
+.. _registering-your-project:
+
 Registering your project
 ========================
 
@@ -150,5 +152,4 @@ Other roles that we'll look at in detail later on include:
 Further information
 -------------------
 
-Tell Launchpad how your project `organises its
-different lines of development and releases <series-milestones-releases>`__.
+Tell Launchpad how your project :ref:`organises its different lines of development and releases <planning-and-recording-releases>`.

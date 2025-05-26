@@ -1,3 +1,5 @@
+.. _launchpad-mailing-lists:
+
 Launchpad mailing lists
 =======================
 
@@ -5,7 +7,7 @@ Launchpad mailing lists
 
 Launchpad allows a team to set up a discussion mailing list which is
 open to all members of the team. For the technically minded, Launchpad
-mailing lists are managed by `GNU Mailman <http://www.list.org>`__
+mailing lists are managed by `GNU Mailman <http://www.list.org>`_
 although we have simplified the web interface, allowing you to more
 easily administer your mailing lists. Using Launchpad alleviates the
 need for external mail hosting and simplifies life for users and
@@ -54,7 +56,7 @@ Automatic archiving and distribution
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Launchpad lists are automatically archived for history, in a format that is easily cataloged by
-search engines. Copies are also archived on `The Mail Archive <http://www.mail-archive.com/>`__,
+search engines. Copies are also archived on `The Mail Archive <http://www.mail-archive.com/>`_,
 a popular long-term list archive site.
 
 Sophisticated membership management
@@ -99,18 +101,17 @@ address* and have mail from that list sent to your current preferred
 email address, whatever that happens to be at the time.
 
 .. note::
-    
+
     All Launchpad mailing list messages are publicly archived, and **the
     archives are open to everyone**, not just Launchpad or team members.
     If you have any issues with information available in the archives,
-    you should contact `the Launchpad
-    administrators <http://help.launchpad.net/#head-9562b4c8ee3bbaca8f0d0719f973269f13539ced>`__,
+    you should contact `the Launchpad administrators <http://help.launchpad.net/#head-9562b4c8ee3bbaca8f0d0719f973269f13539ced>`_,
     however our general policy is **never to remove archive messages or
     information contained therein.**
 
 Subscribed team members may post their messages to
 ``myteam@lists.launchpad.net`` and the archives for the team mailing
-list is always available at ``http://lists.launchpad.net/myteam``.
+list is always available at ``http://lists.launchpad.net/<myteam>``.
 
 Establishing a mailing list
 ---------------------------
@@ -134,7 +135,8 @@ will see an action called ``Configure mailing list``:
    use to configure your mailing list.  ``
 
 .. note::
-  You can also set your Launchpad mailing list to be your team's contact address.
+
+    You can also set your Launchpad mailing list to be your team's contact address.
 
 Subscribing to a mailing list
 -----------------------------
@@ -166,9 +168,7 @@ If you're already a member of the team, you can still join its mailing
 list from the team's overview page, or you can manage all your team
 mailing list subscriptions in one place:
 
--  Go to your
-
-:literal:`personal list subscriptions page <https://launchpad.net/people/+me/+editemails>__`.
+-  Go to your `personal list subscriptions page <https://launchpad.net/people/+me/+editemails>`_.
 
 -  Toward the bottom of the page, you will see a list of all teams that
    you are a member of and that have a mailing list.
@@ -190,21 +190,13 @@ latencies, you should receive your message in your inbox, and the
 message will appear in the archive.
 
 .. note::
-    
-    If you use Gmail and you do not see your own posts arrive in
-your inbox, it is probably because of `this
-issue <http://www.python.org/cgi-bin/faqw-mm.py?req=show&file=faq02.008.htp>`__.
-Unfortunately there is nothing we can do about it, but if you check your
-list's archive, your message should appear there.
+
+    If you use Gmail and you do not see your own posts arrive in your inbox, it is probably because of `this issue <http://www.python.org/cgi-bin/faqw-mm.py?req=show&file=faq02.008.htp>`_. Unfortunately there is nothing we can do about it, but if you check your list's archive, your message should appear there.
 
 Unsubscribing
 -------------
 
-Unsubscribing is easy. Just visit your `Launchpad mailing list
-subscriptions <https://launchpad.net/people/+me/+editemails>`__ page,
-scroll down to the list of teams you're subscribed to, and chose ``Don't
-Subscribe`` for any list you want to get off of. Click ``Update
-Subscriptions``.
+Unsubscribing is easy. Just visit your `Launchpad mailing list subscriptions <https://launchpad.net/people/+me/+editemails>`_ page, scroll down to the list of teams you're subscribed to, and chose ``Don't Subscribe`` for any list you want to get off of. Click ``Update Subscriptions``.
 
 Posting to lists without subscribing
 ------------------------------------

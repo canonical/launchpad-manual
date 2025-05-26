@@ -23,7 +23,7 @@ As a compromise, `your Launchpad profile page <https://launchpad.net/people/+me>
 When someone contacts you in this way they can:
 
 
-* send no more than three emails that way each day, whether they're to the same or three different recipients  
+* send no more than three emails that way each day, whether they're to the same or three different recipients
 * choose which of their confirmed email addresses the message comes from.
 
 .. note::

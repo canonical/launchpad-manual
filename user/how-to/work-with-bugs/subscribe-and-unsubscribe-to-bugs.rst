@@ -1,3 +1,5 @@
+.. _subscribe-and-unsubscribe-to-bugs:
+
 Subscribe and unsubscribe to bugs
 =================================
 
@@ -26,10 +28,7 @@ person or team members are happy for you to do so.
 Subscribe to an entire milestone, project, package or distribution
 ------------------------------------------------------------------
 
-To receive notifications about a milestone in a project, a distribution
-(e.g. Ubuntu) or a package or project, click ``Subscribe to
-bugmail`` on the milestone, project, package or distribution bugs
-overview page.
+To receive notifications about a milestone in a project, a distribution (e.g. Ubuntu) or a package or project, click ``Subscribe to bugmail`` on the milestone, project, package or distribution bugs overview page.
 
 What you'll receive
 ~~~~~~~~~~~~~~~~~~~
@@ -52,36 +51,32 @@ reported bugs from updates about previous bugs.
 
 Launchpad uses email headers to help you automatically filter bug mail.
 
--  **X-Launchpad-Bug:** See
-   `X-Launchpad-Bug <Bugs/Subscriptions#x-launchpad-bug>`__ section
-   below.
--  **X-Launchpad-Bug-Private:** ``yes`` or ``no``
--  **X-Launchpad-Bug-Security-Vulnerability:** ``yes`` or ``no``
--  **X-Launchpad-Bug-Commenters:** An alphabetical, space separated,
+-  ``X-Launchpad-Bug``: See the :ref:`X-Launchpad-Bug <x-launchpad-bug>` section.
+-  ``X-Launchpad-Bug-Private``: ``yes`` or ``no``
+-  ``X-Launchpad-Bug-Security-Vulnerability``: ``yes`` or ``no``
+-  ``X-Launchpad-Bug-Commenters``: An alphabetical, space separated,
    list of everyone who has commented on the bug.
--  **X-Launchpad-Bug-Reporter:** The username of the person who reported
+-  ``X-Launchpad-Bug-Reporter``: The username of the person who reported
    the bug and created its first bug task.
--  **X-Launchpad-Bug-Modifier:** The display name and username of the
+-  ``X-Launchpad-Bug-Modifier``: The display name and username of the
    person who modified the bug, in the form *Display Name (username)*.
--  **X-Launchpad-Bug-Tags:** An alphabetical, space separated, list of
+-  ``X-Launchpad-Bug-Tags``: An alphabetical, space separated, list of
    tags the bug currently possesses.
--  **X-Launchpad-Bug-Duplicate:** If the bug is a duplicate, this header
+-  ``X-Launchpad-Bug-Duplicate``: If the bug is a duplicate, this header
    is set to the number of the duplicate target bug.
--  **X-Launchpad-Message-Rationale:** See `Bug mail
-   rationale <Bugs/Subscriptions#rationale>`__ section below.
+-  ``X-Launchpad-Message-Rationale``: See the :ref:`bug-mail-rationale` section.
 
 Unsubscribe from bug notifications
 ----------------------------------
 
 You can unsubscribe from bug notifications at any time.
 
--  **Individual bugs**: visit the bug report and click
-   ``Unsubscribe``.
+-  **Individual bugs**: visit the bug report and click ``Unsubscribe``.
 -  **All bugs in a particular context**: visit the context's overview
-   page - such as a project's overview page - and select ``Subscribe
-   to bug mail``.
+   page - such as a project's overview page - and select ``Subscribe to bug mail``.
 
 .. note::
+
     If you receive bug mail because you're in a team that is a
     reporter, commenter or assignee, you must leave that team to stop
     receiving the notifications.
@@ -98,29 +93,29 @@ distribution overview page.
 
 Alternatively, you can build the bug feed URL by hand:
 
-**Individual bugs:** ``http://feeds.launchpad.net/bugs//bug.atom``
+**Individual bugs:**
+    ``http://feeds.launchpad.net/bugs/<bug>/bug.atom``
 
-Replace ``//`` with the bug number.
+    Replace ``<bug>`` with the bug number.
 
-For example: http://feeds.launchpad.net/bugs/1/bug.atom
+    For example: http://feeds.launchpad.net/bugs/1/bug.atom
 
 **Projects and distributions:**
-``http://feeds.launchpad.net//latest-bugs.atom``
+    ``http://feeds.launchpad.net/<project>/latest-bugs.atom``
 
-Replace ``//`` accordingly.
+    Replace ``<project>`` accordingly.
 
-For example: http://feeds.launchpad.net/ubuntu/latest-bugs.atom
+    For example: http://feeds.launchpad.net/ubuntu/latest-bugs.atom
 
 **People and teams:**
-``http://feeds.launchpad.net/~/latest-bugs.atom``
+    ``http://feeds.launchpad.net/~<id>/latest-bugs.atom``
 
-Replace ``/~/`` accordingly.
+    Replace ``<id>`` accordingly.
 
-For example: http://feeds.launchpad.net/~bzr/latest-bugs.atom
+    For example: http://feeds.launchpad.net/~bzr/latest-bugs.atom
 
 Next step
 ---------
 
 As well as using email to send updates about the status of bugs,
-Launchpad gives you a full :doc:`email interface to the bug
-tracker <../../explanation/feature-highlights/email-interface>`.
+Launchpad gives you a full :doc:`email interface to the bug tracker <../../explanation/feature-highlights/email-interface>`.

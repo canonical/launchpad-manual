@@ -29,7 +29,7 @@ question at the Launchpad project. Explain why you need a project group,
 listing the projects that will be in the group. The request should
 include:
 
--  
+-
 
    -  The name of the project group.
    -  The desired Launchpad ID (http://launchpad.net/).

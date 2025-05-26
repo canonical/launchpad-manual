@@ -1,6 +1,6 @@
 .. _home:
 
-Launchpad Manual
+Launchpad manual
 ================
 
 **Launchpad is a collaboration platform for open-source projects.**
@@ -27,13 +27,13 @@ professionals, open-source maintainers, and hobbyists alike.**
 In this documentation
 ---------------------
 
-..  grid:: 1 1 2 2
+.. grid:: 1 1 2 2
 
-   ..  grid-item:: :doc:`Tutorials <developer/tutorials/index>`
+   .. grid-item:: :doc:`Tutorials <developer/tutorials/index>`
 
        **Start here** - hands-on introductions to Launchpad for new developers
 
-   ..  grid-item:: :doc:`How-to guides <developer/how-to/index>`
+   .. grid-item:: :doc:`How-to guides <developer/how-to/index>`
 
       **How-to guides** - step-by-step guides covering key operations and common tasks
 
@@ -66,7 +66,7 @@ contributions, suggestions, fixes and constructive feedback.
    :hidden:
    :maxdepth: 2
 
-   User documentatoin <user/index>
+   User documentation <user/index>
    Developer documentation <developer/index>
    help
    release-notes

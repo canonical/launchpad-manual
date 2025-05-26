@@ -11,9 +11,7 @@ those communities to engineer a fix to the problem.
 Bugs that affect multiple communities
 -------------------------------------
 
-Here's an example:
-
-`` ``\ https://launchpad.net/bugs/86103
+Here's an example: https://launchpad.net/bugs/86103
 
 The screen-shot shows that this bug currently affects at least three
 communities:
@@ -37,9 +35,7 @@ Several occurrences of the same bug in one project
 --------------------------------------------------
 
 It's possible for a bug to appear in many places in the same project.
-For example, this bug affects fifteen different packages in Ubuntu:
-
-`` ``\ https://launchpad.net/bugs/85124
+For example, this bug affects fifteen different packages in Ubuntu: https://launchpad.net/bugs/85124
 
 You can see that the issue has now been addressed in all packages. As a
 team works on a bug like that, they will fix different packages at
@@ -54,9 +50,7 @@ versions of the software, perhaps as a security fix or an update to the
 stable and supported releases.
 
 Here's an example of a bug that was deemed important enough to go back
-and fix in Dapper and Edgy (two previous releases of Ubuntu):
-
-`` ``\ https://launchpad.net/bugs/81782
+and fix in Dapper and Edgy (two previous releases of Ubuntu): https://launchpad.net/bugs/81782
 
 Note that this bug needed to be fixed in two packages: in the current
 development release and two stable releases of the distribution. This
@@ -65,5 +59,4 @@ gives us a total of six rows in the table.
 It's clear, however, that many of the projects we need to collaborate
 with already have their own bug trackers, and many will continue to use
 those rather than adopt Launchpad. How can we coordinate with them? That
-takes us to the next step in our tour - `monitoring bugs in other bug
-trackers <FeatureHighlights/BugWatches>`__.
+takes us to the next step in our tour - :ref:`monitoring-bugs-in-other-bug-trackers`.

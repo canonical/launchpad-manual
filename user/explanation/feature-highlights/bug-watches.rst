@@ -1,10 +1,11 @@
+.. _monitoring-bugs-in-other-bug-trackers:
+
 Monitoring bugs in other bug trackers
 =====================================
 
 .. include:: /includes/important_not_revised_help.rst
 
-Look at the "Assigned To" column for `bug
-#86103 <https://launchpad.net/bugs/86103>`__ again:
+Look at the "Assigned To" column for `bug #86103 <https://launchpad.net/bugs/86103>`_ again:
 
 The top two rows don't have a "person" assigned to fix them. Instead,
 because they refer to instances of the bug in external communities, they
@@ -16,9 +17,7 @@ Automatically monitor the status of external bugs
 -------------------------------------------------
 
 Open the bug in a new tab in your browser using this link, so you can
-interact with it more directly:
-
-   https://launchpad.net/bugs/86103
+interact with it more directly: https://launchpad.net/bugs/86103
 
 Mouse over those two links in the "assignee" column and you will see
 URLs for the SUN Java and Debian bug trackers respectively:
@@ -57,9 +56,4 @@ Incidentally, you can subscribe to any bug, and if you are the assignee
 or the bug contact for this package or project then you will also be
 treated as a subscriber, and hence also notified:
 
-Now, scroll further down the page for `Bug
-#86103 <https://launchpad.net/bugs/86103>`__. You may notice that some
-of the comments on the bug look like emails. That's because Launchpad's
-bug tracker allows you to interact with it completely via email. That's
-the next stop on our tour: `the bug tracker email
-interface <FeatureHighlights/BugsByEmail>`__.
+Now, scroll further down the page for `Bug #86103 <https://launchpad.net/bugs/86103>`_. You may notice that some of the comments on the bug look like emails. That's because Launchpad's bug tracker allows you to interact with it completely via email. That's the next stop on our tour: `the bug tracker email interface <FeatureHighlights/BugsByEmail>`_.

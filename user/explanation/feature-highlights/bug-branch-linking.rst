@@ -1,3 +1,5 @@
+.. _linking-bugs-to-dedicated-branches:
+
 Linking bugs to dedicated branches
 ==================================
 
@@ -31,5 +33,4 @@ teams can have multiple branches too. How do you know which branch to
 use when starting new work?
 
 For this, we have major branches in the project, which we call "Series",
-and that's what we will `show you
-next <FeatureHighlights/ProductSeries>`__.
+and that's what we will :ref:`show you next <series-major-stable-and-development-branches>`.

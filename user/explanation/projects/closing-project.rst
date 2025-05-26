@@ -1,3 +1,5 @@
+.. _closing-your-project:
+
 Closing your project
 ====================
 
@@ -9,10 +11,7 @@ have time to run it, you could consider:
 -  finding someone else who wants to run it and handing control to them
 -  leaving the project in Launchpad as a historical record.
 
-However, if the project has remained inactive and you're certain that
-you no longer want it in Launchpad, please `file a project closure
-request in Launchpad
-Answers <https://answers.launchpad.net/launchpad/+addquestion>`__.
+However, if the project has remained inactive and you're certain that you no longer want it in Launchpad, please `file a project closure request in Launchpad Answers <https://answers.launchpad.net/launchpad/+addquestion>`_.
 
 .. note::
     If there is a significant amount of work associated with a

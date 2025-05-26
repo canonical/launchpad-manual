@@ -23,9 +23,9 @@ Synopsis
 For the truly interested
 ------------------------
 
-``   >>> from canonical.launchpad.xmlrpc import FileBugAPI``
-
-``   >>> filebug_api = FileBugAPI(None, None)``
+::
+    >>> from canonical.launchpad.xmlrpc import FileBugAPI``
+    >>> filebug_api = FileBugAPI(None, None)``
 
 The filebug API
 ~~~~~~~~~~~~~~~
@@ -36,24 +36,22 @@ The filebug API is:
 
        filebug_api.filebug(params)
 
-params is a dict, with the following keys:
+``params`` is a dict, with the following keys:
 
-| `` REQUIRED ARGS:``
-| ``   *  summary: A string``
-| ``   *  comment: A string``
+REQUIRED ARGS
+    *  summary: A string
+    *  comment: A string
 
-| `` OPTIONAL ARGS:``
-| ``   *  product: The product name, as a string. Default None.``
-| ``   * distro: The distro name, as a string. Default None.``
-| ``   * package: A string, allowed only if distro is specified. Default None.``
-| ``   * security_related: Is this a security vulnerability?  Default False.``
-| ``   * subscribers: A list of email addresses. Default None.``
+OPTIONAL ARGS
+    * product: The product name, as a string. Default None.
+    * distro: The distro name, as a string. Default None.
+    * package: A string, allowed only if distro is specified. Default None.
+    * security_related: Is this a security vulnerability?  Default False.
+    * subscribers: A list of email addresses. Default None.
 
 Either product or distro must be provided. The bug owner is the
 currently authenticated user, taken from the request. The return value
-is the bug URL, in short form, e.g.:
-
-``   ``\ http://launchpad.net/bugs/42
+is the bug URL, in short form, e.g.: http://launchpad.net/bugs/42
 
 Examples
 --------
@@ -74,7 +72,7 @@ the XML-RPC interface.
        >>> on_created_listener = TestEventListener(
        ...     IBug, ISQLObjectCreatedEvent, on_created_event)
 
-Error Handling
+Error handling
 --------------
 
 Malone's xmlrpc interface provides extensive error handling. The various

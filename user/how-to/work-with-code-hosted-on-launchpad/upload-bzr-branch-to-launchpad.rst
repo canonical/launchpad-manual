@@ -1,12 +1,11 @@
+.. _upload-your-bazaar-branch-to-launchpad:
+
 Upload your Bazaar branch to Launchpad
 ======================================
 
 .. include:: /includes/important_not_revised_help.rst
 
-Just as it's easy to `create your own Bazaar
-branch <Code/FindingAndDownloading>`__ of code that's registered in
-Launchpad, you can also host your code on Launchpad. It's free and means
-that your code is:
+Just as it's easy to :ref:`create your own Bazaar branch <find-and-download-code-hosted-on-launchpad>` of code that's registered in Launchpad, you can also host your code on Launchpad. It's free and means that your code is:
 
 -  available for anyone else to download and work with
 -  publicly associated with the project it relates to
@@ -46,13 +45,10 @@ one) and add the following:
        IdentityFile ~/.ssh/your_launchpad_key
        User your-launchpad-user-name
 
-You should check the `fingerprint <SSHFingerprints>`__ of
+You should check the :ref:`fingerprint <ssh-fingerprints>` of
 bazaar.launchpad.net when prompted to do so by SSH.
 
-Bazaar will now push your branch up to Launchpad. You can then view the
-branch on your own `Launchpad branches
-page <https://code.launchpad.net/people/+me>`__ and also on the
-project's branches page.
+Bazaar will now push your branch up to Launchpad. You can then view the branch on your own `Launchpad branches page <https://code.launchpad.net/people/+me>`_ and also on the project's branches page.
 
 Pushing subsequent changes to Launchpad
 ---------------------------------------
@@ -77,4 +73,4 @@ Next steps
 ----------
 
 If you need to work on the same branch of code with a group of people,
-you can `create a team branch <Code/TeamBranches>`__.
+you can :ref:`create a team branch <team-branches>`.
