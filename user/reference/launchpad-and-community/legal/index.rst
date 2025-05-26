@@ -1,5 +1,7 @@
-Reference
-=========
+.. _legal:
+
+Legal
+=====
 
 .. include:: /includes/important_not_revised_help.rst
 

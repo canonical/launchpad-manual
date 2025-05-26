@@ -81,9 +81,10 @@ Launchpad's branch scanner will find the templates and then add them to
 the import queue. Once approved, the template will appear in the
 translation tab for the product series.
 
-.. important:
-You should follow our `translations import policy <Translations/ImportPolicy>`__
-when creating and adding your templates.
+.. important::
+
+    You should follow our `translations import policy <Translations/ImportPolicy>`_
+    when creating and adding your templates.
 
 Name template
 -------------

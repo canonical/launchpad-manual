@@ -17,9 +17,7 @@ In this documentation
 
 .. grid:: 1 1 2 2
 
-   .. grid-item:: :doc:`Tutorials <tutorial/index>`
-
-      **Start here**: hands-on introductions to Launchpad for new users.
+   .. grid-item::
 
    .. grid-item:: :doc:`How-to guides <how-to/index>`
 
@@ -35,7 +33,7 @@ In this documentation
 
 .. toctree::
    :hidden:
-   
+
    Get started <get-started>
    How-to guides <how-to/index>
    Reference <reference/index>

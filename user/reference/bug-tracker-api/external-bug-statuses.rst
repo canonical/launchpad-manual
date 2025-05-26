@@ -1,15 +1,17 @@
+.. _external-bug-statuses:
 
 External bug statuses
 =====================
+
 .. include:: /includes/important_not_revised_help.rst
 
 
-Bugs in free software projects are often tracked in more than one place. For example: a bug in OpenOffice.org may be tracked in Launchpad by Ubuntu's OpenOffice.org team and in OpenOffice.org's own Bugzilla instance.  
+Bugs in free software projects are often tracked in more than one place. For example: a bug in OpenOffice.org may be tracked in Launchpad by Ubuntu's OpenOffice.org team and in OpenOffice.org's own Bugzilla instance.
 
 Translating the status of external bug watches
 ----------------------------------------------
 
-Launchpad can track the status of the bug in OpenOffice.org's external tracker and display its current status on the Ubuntu team's bug report.  
+Launchpad can track the status of the bug in OpenOffice.org's external tracker and display its current status on the Ubuntu team's bug report.
 
 Bugzilla and Launchpad use different statuses to describe the stages of a bug's lifecycle. It could quickly become confusing to use two different sets of bug statuses on the same page. Instead, Launchpad translates the status of the external bug report.
 

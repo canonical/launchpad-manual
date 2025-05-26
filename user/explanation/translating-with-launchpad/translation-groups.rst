@@ -1,3 +1,5 @@
+.. _translation-groups:
+
 Translation groups
 ==================
 
@@ -50,8 +52,7 @@ Working with an existing translation group
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Let's take a look at an example translation group, the default choice
-for most new projects: `Launchpad
-Translators <https://translations.launchpad.net/+groups/launchpad-translators>`__.
+for most new projects: `Launchpad Translators <https://translations.launchpad.net/+groups/launchpad-translators>`__.
 
 By visiting the group's overview page, you can see which:
 
@@ -61,11 +62,10 @@ By visiting the group's overview page, you can see which:
    Launchpad Translators.
 
 In most circumstances, the Launchpad Translators group will suit your
-needs. You can learn more about Launchpad Translators in the `help
-article about the group <Translations/LaunchpadTranslators>`__.
+needs. You can learn more about Launchpad Translators in the :ref:`help article about the group <launchpad-translators-group>`.
 
 To choose Launchpad Translators, or any other existing translation
-group, visit \```https://translations.launchpad.net//+settings```.
+group, visit ``https://translations.launchpad.net//+settings``.
 
 Although many projects find that people spontaneously contribute
 translations to their projects, you now need to encourage the teams
@@ -115,20 +115,12 @@ work with, you have two options:
 Choosing a translation group to join
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can see which translation groups are active in Launchpad, and which
-projects they work with, on the `translation groups
-page <https://translations.launchpad.net/+groups>`__. Click on any of
-the groups to see:
+You can see which translation groups are active in Launchpad, and which projects they work with, on the `translation groups page <https://translations.launchpad.net/+groups>`__. Click on any of the groups to see:
 
 -  who owns them
 -  which teams and individuals are responsible for which languages.
 
-You should choose the translation group you want to join based on which
-project(s) you're most interested in working with. For example: if you
-want to help translate `Avant Window
-Navigator <https://launchpad.net/awn>`__, you'd join the `Ubuntu
-Translators <https://translations.launchpad.net/+groups/ubuntu-translators>`__
-group.
+You should choose the translation group you want to join based on which project(s) you're most interested in working with. For example: if you want to help translate `Avant Window Navigator <https://launchpad.net/awn>`__, you'd join the `Ubuntu Translators <https://translations.launchpad.net/+groups/ubuntu-translators>`__ group.
 
 What you do next depends on whether that group has already appointed a
 team or individual for your chosen language:
@@ -179,11 +171,10 @@ requires your review.
 Further information
 -------------------
 
-Let `Launchpad and local translators know about your team
-guidelines <https://help.launchpad.net/Translations/Guidelines>`__
+Let `Launchpad and local translators know about your team guidelines <https://help.launchpad.net/Translations/Guidelines>`__
 
 Once people start using Launchpad to translate your project, you'll want
-to `export those translations <Translations/YourProject/Exports>`__ for
+to :ref:`export those translations <exporting-translations-from-launchpad>` for
 use in your software.
 
-For Lunchpad translators, find out more `here <Translations/LaunchpadTranslators>`__.
+For Lunchpad translators, find out more: :ref:`launchpad-translators-group`.

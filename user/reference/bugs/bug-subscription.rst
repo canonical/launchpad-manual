@@ -1,3 +1,5 @@
+.. _bug-subscription:
+
 Bug subscription
 ================
 
@@ -39,28 +41,29 @@ You can filter bug mail based on both the subject and headers. A prefix
 of ``[NEW]`` in the subject lets you distinguish emails about newly
 reported bugs from updates about previous bugs.
 
+.. _bug-mail-headers:
+
 Bug mail headers
 ~~~~~~~~~~~~~~~~
 
 Launchpad uses email headers to help you automatically filter bug mail.
 
--  **X-Launchpad-Bug:** See
-   `X-Launchpad-Bug <Bugs/Subscriptions#x-launchpad-bug>`__ section
-   below.
--  **X-Launchpad-Bug-Private:** ``yes`` or ``no``
--  **X-Launchpad-Bug-Security-Vulnerability:** ``yes`` or ``no``
--  **X-Launchpad-Bug-Commenters:** An alphabetical, space separated,
+-  ``X-Launchpad-Bug``: See the :ref:`x-launchpad-bug` section below.
+-  ``X-Launchpad-Bug-Private``: ``yes`` or ``no``
+-  ``X-Launchpad-Bug-Security-Vulnerability``: ``yes`` or ``no``
+-  ``X-Launchpad-Bug-Commenters``: An alphabetical, space separated,
    list of everyone who has commented on the bug.
--  **X-Launchpad-Bug-Reporter:** The username of the person who reported
+-  ``X-Launchpad-Bug-Reporter``: The username of the person who reported
    the bug and created its first bug task.
--  **X-Launchpad-Bug-Modifier:** The display name and username of the
+-  ``X-Launchpad-Bug-Modifier``: The display name and username of the
    person who modified the bug, in the form *Display Name (username)*.
--  **X-Launchpad-Bug-Tags:** An alphabetical, space separated, list of
+-  ``X-Launchpad-Bug-Tags``: An alphabetical, space separated, list of
    tags the bug currently possesses.
--  **X-Launchpad-Bug-Duplicate:** If the bug is a duplicate, this header
+-  ``X-Launchpad-Bug-Duplicate``: If the bug is a duplicate, this header
    is set to the number of the duplicate target bug.
--  **X-Launchpad-Message-Rationale:** See `Bug mail
-   rationale <Bugs/Subscriptions#rationale>`__ section below.
+-  ``X-Launchpad-Message-Rationale``: See the :ref:`bug-mail-rationale` section below.
+
+.. _x-launchpad-bug:
 
 X-Launchpad-Bug
 ^^^^^^^^^^^^^^^
@@ -89,9 +92,9 @@ Package
 -  ``status``
 -  ``importance``
 -  ``assignee``
--  **For example:** ``X-Launchpad-Bug: distribution=ubuntu;
-   sourcepackage=exaile; component=universe; status=Confirmed;
-   importance=Medium; assignee=None;``
+-  **For example:** ``X-Launchpad-Bug: distribution=ubuntu; sourcepackage=exaile; component=universe; status=Confirmed; importance=Medium; assignee=None;``
+
+.. _bug-mail-rationale:
 
 Bug mail rationale
 ~~~~~~~~~~~~~~~~~~
@@ -133,6 +136,8 @@ This makes it easy to filter out bug mail about duplicate bugs. For
 example: let's say this bug notification is for bug 2129. This header
 means you are the assignee of bug 1332, of which 2129 is a duplicate.
 
+.. _atom-feeds:
+
 Atom feeds
 ----------
 
@@ -145,29 +150,29 @@ distribution overview page.
 
 Alternatively, you can build the bug feed URL by hand:
 
-**Individual bugs:** ``http://feeds.launchpad.net/bugs//bug.atom``
+**Individual bugs:**
+    ``http://feeds.launchpad.net/bugs/<bug>/bug.atom``
 
-Replace ``//`` with the bug number.
+    Replace ``<bug>`` with the bug number.
 
-For example: http://feeds.launchpad.net/bugs/1/bug.atom
+    For example: http://feeds.launchpad.net/bugs/1/bug.atom
 
 **Projects and distributions:**
-``http://feeds.launchpad.net//latest-bugs.atom``
+    ``http://feeds.launchpad.net/<project>/latest-bugs.atom``
 
-Replace ``//`` accordingly.
+    Replace ``<project>`` accordingly.
 
-For example: http://feeds.launchpad.net/ubuntu/latest-bugs.atom
+    For example: http://feeds.launchpad.net/ubuntu/latest-bugs.atom
 
 **People and teams:**
-``http://feeds.launchpad.net/~/latest-bugs.atom``
+    ``http://feeds.launchpad.net/~<project>/latest-bugs.atom``
 
-Replace ``/~/`` accordingly.
+    Replace ``<project>`` accordingly.
 
-For example: http://feeds.launchpad.net/~bzr/latest-bugs.atom
+    For example: http://feeds.launchpad.net/~bzr/latest-bugs.atom
 
 Further information
 -------------------
 
 As well as using email to send updates about the status of bugs,
-Launchpad gives you a full `email interface to the bug
-tracker <Bugs/EmailInterface>`__.
+Launchpad gives you a full :ref:`email interface to the bug tracker <launchpad-email-interface>`.

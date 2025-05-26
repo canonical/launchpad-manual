@@ -1,3 +1,5 @@
+.. _code-imports:
+
 Code imports
 ============
 
@@ -23,7 +25,7 @@ If any of this is striking a chord, then you probably want to know about
 Launchpad's code import system.
 
 Launchpad provides a free service which imports the trunk of a project
-from Subversion, CVS, or Git to `Bazaar <http://bazaar-vcs.org>`__, or
+from Subversion, CVS, or Git to `Bazaar <http://bazaar-vcs.org>`_, or
 from Git to Git, and then keeps that import up to date. This allows you
 to make your own branches from the project trunk, and keep them up to
 date by merging from trunk over time as you develop your feature.
@@ -33,8 +35,7 @@ Trunk imports
 
 Launchpad supports the import of the primary development trunk of a
 project from CVS, SVN or Git. A good example is the Drupal project.
-Launchpad imports Drupal's trunk as `its "head"
-series <https://launchpad.net/drupal/head>`__ in Launchpad.
+Launchpad imports Drupal's trunk as `its "head" series <https://launchpad.net/drupal/head>`_ in Launchpad.
 
 As you can see, there's a Bazaar branch of Drupal's code. Launchpad
 updates that branch regularly by importing the latest from Drupal's
@@ -47,11 +48,8 @@ Requesting an import
 
 To request an import, please:
 
-- Make sure the project is `registered in
-  Launchpad <https://launchpad.net/products>`__, or register it yourself.
-- Then visit the `page for requesting a code
-  import <https://code.launchpad.net/+code-imports/+new>`__ and fill
-  out the details.
+- Make sure the project is `registered in Launchpad <https://launchpad.net/products>`_, or register it yourself.
+- Then visit the `page for requesting a code import <https://code.launchpad.net/+code-imports/+new>`_ and fill out the details.
 
 This will:
 
@@ -80,8 +78,7 @@ Unfortunately, the initial import process is not an exact science. CVS
 and Subversion don't record enough information for a deterministic
 import into Bazaar, which is more rigorous about things like renames and
 changesets. (Git mostly does, but sometimes represents that information
-`quite
-differently <http://blog.launchpad.net/code/git-branch-imports-now-in-public-beta>`__
+`quite differently <http://blog.launchpad.net/code/git-branch-imports-now-in-public-beta>`_
 from how Bazaar does.)
 
 In most cases, where the CVS and SVN repositories have not been manually
@@ -100,8 +97,7 @@ Bazaar branch is identical to a checkout of the CVS branch. But getting
 it to that point may well require inspection and custom work.
 
 For this reason, we don't have an automated process for the import.
-Instead, you `request
-one <https://code.launchpad.net/+code-imports/+new>`__ and we put it in
+Instead, you `request one <https://code.launchpad.net/+code-imports/+new>`_ and we put it in
 a queue. Sometimes it takes just an hour or two, sometimes it can take
 days to get a good import together. In very few cases, the old
 repositories are so wedged that we can't get all the history exactly
@@ -119,4 +115,4 @@ More information
 
 Informal support happens in many different places in the free software
 world. Launchpad aims to bring bug tracker-like qualities to giving and
-asking for help. Let's look at `Launchpad Answers <Answers>`__.
+asking for help. Let's look at :ref:`Launchpad Answers <launchpad-answer-tracker>`.

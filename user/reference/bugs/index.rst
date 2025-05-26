@@ -1,5 +1,7 @@
-Reference
-=========
+.. _bugs:
+
+Bugs
+====
 
 .. include:: /includes/important_not_revised_help.rst
 
@@ -16,4 +18,3 @@ Reference
      Roles <roles/index>
      The Malone xmlrpc interface <malone-xmlrpc-interface>
      Turning a bug into a question <bug-to-question>
-     

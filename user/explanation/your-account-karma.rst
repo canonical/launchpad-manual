@@ -1,6 +1,8 @@
+.. _your-account-karma:
 
 Your account karma
 ==================
+
 .. include:: /includes/important_not_revised_help.rst
 
 
@@ -18,7 +20,7 @@ Different sorts of work are often valued differently by the projects you work wi
 Then, once a day, Launchpad looks at all of the work you've done and gives each action a score. The score it gives depends on:
 
 
-* what sort of work you did - e.g. work on blueprints may result in more karma than some other types of work  
+* what sort of work you did - e.g. work on blueprints may result in more karma than some other types of work
 * when you did the work.
 
 **For example:** if you answer a support request today, Launchpad will give you the full score. If you answered a support request six months ago, Launchpad would award you half the score. After twelve months an action no longer counts towards your karma.
@@ -33,7 +35,7 @@ Over time, particularly if you're not as active as you used to be, you may notic
 Launchpad reduces the karma it gives to older actions for two reasons:
 
 
-* to reflect each individual's current work  
+* to reflect each individual's current work
 * and to give newer users the opportunity to catch up with longer-term users.
 
 How Launchpad calculates the score for each type of work
@@ -48,9 +50,9 @@ Viewing your karma
 
 You can see your own karma in the summary section of your Launchpad profile page.
 
-You can also view a `breakdown of where you earned your karma <https://launchpad.net/~/+karma>`_\ , along with a log of recent activities that will count towards your score. (At present Launchpad only shows the last 25 karma-earning activities, and only the type of activity, not the specific action: see `bug 275938 <https://bugs.launchpad.net/launchpad/+bug/275938>`_\ ).
+You can also view a `breakdown of where you earned your karma <https://launchpad.net/~/+karma>`_, along with a log of recent activities that will count towards your score. (At present Launchpad only shows the last 25 karma-earning activities, and only the type of activity, not the specific action: see `bug 275938 <https://bugs.launchpad.net/launchpad/+bug/275938>`_).
 
 Next step
 ---------
 
-You can use your Launchpad identity to log into thousands of other websites through `OpenID <https://help.launchpad.net/YourAccount/OpenID>`_.
+You can use your Launchpad identity to log into thousands of other websites through :ref:`OpenID <log-into-websites-with-openid>`.

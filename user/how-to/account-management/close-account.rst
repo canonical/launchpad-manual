@@ -11,10 +11,10 @@ If you no longer want or need your Launchpad account, you can deactivate it.
   Deactivating your account will remove your Launchpad profile and permanently delete all of your:
 
 
-* bug and blueprint subscriptions - assignments will be set to "none"  
-* team memberships - ownership of teams, projects and project groups will be reassigned to the Registry Administrators team  
-* Ubuntu Code of Conduct signatures  
-* assignments as bug contact for a package  
+* bug and blueprint subscriptions - assignments will be set to "none"
+* team memberships - ownership of teams, projects and project groups will be reassigned to the Registry Administrators team
+* Ubuntu Code of Conduct signatures
+* assignments as bug contact for a package
 * assignments as an answer contact for a project or distribution.
 
 You will still be credited for any work that you have done that is recorded in Launchpad. For example: if you reported a bug, you will still be shown as its reporter. You will however not receive any mail regarding it.
@@ -25,7 +25,7 @@ Alternatives to deactivating your account
 If you want to keep your Launchpad account but would prefer to reduce the amount of email you receive, try removing your bug and blueprint subscriptions.
 
 
-* `View your bug subscriptions <https://bugs.launchpad.net/~/+subscribedbugs>`_.  
+* `View your bug subscriptions <https://bugs.launchpad.net/~/+subscribedbugs>`_.
 * `View your blueprint subscriptions <https://blueprints.launchpad.net/~/+specs?role=subscriber>`_.
 
 If you want to reduce the amount of information about you in Launchpad, you can `edit your personal details <https://launchpad.net/~/+edit>`_.

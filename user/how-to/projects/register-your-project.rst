@@ -1,3 +1,5 @@
+.. _register-your-project:
+
 Register your project
 =====================
 
@@ -24,21 +26,20 @@ allows you to use Launchpad to do all or any of the following:
 {i} **Quick tip:** If you want to register a translation or Ubuntu loco
 team in Launchpad, please create a new team, not a project.
 
-**Step 1:** Log in to Launchpad and visit
-https://launchpad.net/projects/
+**Step 1:** Log in to Launchpad and visit https://launchpad.net/projects/
 
-**Step 2:** Click \```Register a project``\` in the left-hand
-\```Actions``\` menu.
+**Step 2:** Click ``Register a project`` in the left-hand
+``Actions`` menu.
 
-**Step 3:** Complete the \```Name```, \```Display Name``\` and
-\```Title``\` fields.
+**Step 3:** Complete the \```Name```, ``Display Name`` and
+``Title`` fields.
 
 Launchpad uses these three different names for your project in different
 contexts:
 
 -  **Name:** This is the short name that Launchpad will use for your
    project in URLs. For example: "blueprint" in
-   \```https://launchpad.net/blueprint``\` for Launchpad's Blueprint
+   ``https://launchpad.net/blueprint`` for Launchpad's Blueprint
    Tracker.
 -  **Display name:** This is the name Launchpad uses for your project in
    the breadcrumb at the top of the screen. For example: "Blueprint".
@@ -54,9 +55,8 @@ In this screen-shot of the Blueprint Tracker's project page, the summary
 is highlighted with a red line and the description with a blue line.
 
 **Step 5:** If your project is part of a wider project group, you can
-tell Launchpad by entering the project group's name in the \```Part
-of``\` text-box. If you're not sure of the project group's exact
-Launchpad name, click \```Choose...``\` to search for it.
+tell Launchpad by entering the project group's name in the ``Part of`` text-box. If you're not sure of the project group's exact
+Launchpad name, click ``Choose...`` to search for it.
 
 For example: Blueprint is part of the launchpad-project group.
 
@@ -75,8 +75,8 @@ about your project and are not used by Launchpad itself.
 
 {i} **Quick tip:** Once you've registered your project, you can use
 Launchpad to host your project's downloadable files. Find out more about
-`file downloads <FileDownloadsOverview>`__.
+:ref:`file downloads <making-your-project-files-available-for-download>`.
 
-**Step 7:** When you're ready, click the \```Add``\` button to create
+**Step 7:** When you're ready, click the ``Add`` button to create
 your project in Launchpad. Launchpad will now take you straight to your
 new project page.

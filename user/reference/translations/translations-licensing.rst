@@ -3,12 +3,7 @@ Translations licensing
 
 .. include:: /includes/important_not_revised_help.rst
 
-We have now updated the "Translations copyright" section of the
-`Launchpad terms of use <Legal>`__ to require that translations
-submitted in Launchpad licensed using the `BSD
-licence <#license-text>`__, but also that groups of strings from one
-project which are a derivative work of the project are licensed under
-the licence of the project.
+We have now updated the "Translations copyright" section of the :ref:`Launchpad terms of use <legal>` to require that translations submitted in Launchpad licensed using the :ref:`BSD licence <what-is-the-exact-text-of-the-bsd-license>`, but also that groups of strings from one project which are a derivative work of the project are licensed under the licence of the project.
 
 Why was this needed?
 --------------------
@@ -31,7 +26,7 @@ Why not public domain like the FSF's Translation Project?
 ---------------------------------------------------------
 
 For all practical purposes, BSD license is very much like
-`disclaiming <http://translationproject.org/html/whydisclaim.html>`__
+`disclaiming <http://translationproject.org/html/whydisclaim.html>`_
 any copyrights, similar to what Translation Project does by asking for
 disclaimers in writing. However, you still get to keep your copyright,
 which is slightly easier to manage.
@@ -79,7 +74,7 @@ will retain their original copyright license. The BSD licence only
 applies to translations that are (as far as the system knows) original
 to Launchpad.
 
-<<Anchor(license-text)>>
+.. _what-is-the-exact-text-of-the-bsd-license:
 
 What is the exact text of the BSD license?
 ------------------------------------------
@@ -117,10 +112,6 @@ minor and the variants should be legally equivalent:
         (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
         OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-(In the third clause, "**the **" would be replaced with your name.)
+(In the third clause, ``the ORGANIZATION`` would be replaced with your name.)
 
-Note that this is the modern, simplified BSD license, that is, without
-the advertising clause (see `the full history of the
-license <http://en.wikipedia.org/wiki/BSD_license>`__ for more
-information). In modern times, this simplified, three-clause version is
-the most widely used.
+Note that this is the modern, simplified BSD license, that is, without the advertising clause (see `the full history of the license <http://en.wikipedia.org/wiki/BSD_license>`_ for more information). In modern times, this simplified, three-clause version is the most widely used.

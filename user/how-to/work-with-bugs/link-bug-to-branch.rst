@@ -1,3 +1,5 @@
+.. _link-a-bug-reports-to-a-branch:
+
 Link a bug reports to a branch
 ==============================
 
@@ -11,11 +13,7 @@ is working on a fix.
 Fix a bug in a dedicated branch
 -------------------------------
 
-Let's say you're new to a project. You spot a bug report and you're
-pretty certain you can fix it. You `pull down your own
-branch <Code/FindingAndDownloading>`__ of the project's trunk and hack
-away. Every now and then, you `push your branch up to
-Launchpad <Code/UploadingABranch>`__.
+Let's say you're new to a project. You spot a bug report and you're pretty certain you can fix it. You :ref:`pull down your own branch <find-and-download-code-hosted-on-launchpad>` of the project's trunk and hack away. Every now and then, you :ref:`push your branch up to Launchpad <upload-your-bazaar-branch-to-launchpad>`.
 
 You can tell everyone who's interested in the bug about your work by
 linking your branch to the report. Now, anyone looking at the bug report
@@ -26,7 +24,7 @@ Create a link to the branch
 
 Using the Launchpad web interface:
 
-First, visit your bug report in Launchpad. Click on ``Link to related branch``,
+First, visit your bug report in Launchpad. Click ``Link to related branch``,
 then select the branch.
 
 Create a link using Bazaar
@@ -54,11 +52,9 @@ your commit message might look like this:
 
    LP: #12345
 
-Note that Git bug links will only be recorded once you `propose a
-merge <Code/Review>`__ that includes such commits.
+Note that Git bug links will only be recorded once you :ref:`propose a merge <create-and-manage-a-merge-proposal>` that includes such commits.
 
-See `Launchpad's Git hosting documentation <Code/Git#Linking_to_bugs>`__
-for more details.
+See :ref:`Launchpad's Git hosting documentation <linking-to-bugs>` for more details.
 
 Find links to branches
 ----------------------
@@ -75,4 +71,4 @@ Launchpad helps you to stay on top of the bugs you're interested in,
 both by email and Atom feeds. Let's take a look at `bug
 subscriptions <Bugs/Subscriptions>`__.
 
-Read more about :doc:`linking bugs to dedicated branches <../../explanation/feature-highlights/bug-branch-linking>`.
+Read more about :ref:`linking bugs to dedicated branches <linking-bugs-to-dedicated-branches>`.

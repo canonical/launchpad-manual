@@ -1,10 +1,12 @@
+.. _host-a-git-repository-on-launchpad:
+
 Host a Git repository on Launchpad
 ==================================
 
 .. include:: /includes/important_not_revised_help.rst
 
-Launchpad supports hosting `Git <http://git-scm.com/>`__ repositories.
-This is distinct from the `code import <Code/Imports>`__ facility that
+Launchpad supports hosting `Git <http://git-scm.com/>`_ repositories.
+This is distinct from the :ref:`code import <import-code-into-launchpad>` facility that
 Launchpad has included for many years; it is now possible to host Git
 repositories on Launchpad directly.
 
@@ -33,7 +35,7 @@ clone git+ssh://git.launchpad.net/REPOSITORY``.
 The rest of this documentation assumes that you have configured Git this
 way.
 
-You should check the `fingerprint <SSHFingerprints>`__ of
+You should check the :ref:`fingerprint <ssh-fingerprints>` of
 git.launchpad.net when prompted to do so by SSH.
 
 Get code
@@ -136,7 +138,7 @@ Via API
 ^^^^^^^
 
 Alternatively, you can generate access tokens using the `Launchpad
-API <API>`__, as follows:
+API <API>`_, as follows:
 
 ::
 
@@ -167,8 +169,7 @@ You can use access tokens as HTTPS passwords, in conjunction with your
 Launchpad username. For one-off testing you can just enter these when
 ``git`` prompts you to do so. However, if you're using them more
 seriously then you will probably want to store them somewhere; for that,
-see the advice from "Pro Git" on `credential
-storage <https://git-scm.com/book/en/v2/Git-Tools-Credential-Storage>`__.
+see the advice from "Pro Git" on `credential storage <https://git-scm.com/book/en/v2/Git-Tools-Credential-Storage>`_.
 
 Revoking access tokens
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -214,8 +215,8 @@ because individual branches within a Git repository are often much more
 ephemeral than Bazaar branches.
 
 If you need a more advanced bug-handling workflow for your project, you
-can use a `webhook <API/Webhooks>`__ to help. See
-`kicad-git-hook <https://git.launchpad.net/kicad-git-hook>`__ for an
+can use a `webhook <API/Webhooks>`_ to help. See
+`kicad-git-hook <https://git.launchpad.net/kicad-git-hook>`_ for an
 example contributed by a Launchpad user.
 
 Mirror repositories from other sites
@@ -227,11 +228,6 @@ some other site. There are two ways to set this up.
 1. This method is preferred in the common case of importing the upstream
    repository for a project.
 
-.. raw:: html
-
-   <!-- end list -->
-
--  
    -  Go to the main page in Launchpad for a project you maintain, and
       follow the "Code" link under "Configuration options".
    -  Set "Version control system" to "Git" if necessary.
@@ -244,21 +240,10 @@ some other site. There are two ways to set this up.
    -  Launchpad will create the repository, set it as the default for
       your project, and schedule an import.
 
-.. raw:: html
-
-   <!-- end list -->
-
 2. This method is useful for other cases, such as importing repositories
    that are not the primary upstream repository for a project.
 
-.. raw:: html
-
-   <!-- end list -->
-
--  
-
-   -  Go to the "`Request a code
-      import <https://code.launchpad.net/+code-imports/+new>`__" page.
+   -  Go to the `Request a code import <https://code.launchpad.net/+code-imports/+new>`_ page.
    -  Select "Git" for both the version control system and the target
       version control system.
    -  Fill in the other details as above.
@@ -281,10 +266,10 @@ Convert from Bazaar to Git
 --------------------------
 
 There
-`are <https://www.google.com/search?%7Bgoogle:acceptedSuggestion%7Doq=convert&sourceid=chrome&client=ubuntu&channel=cs&ie=UTF-8&q=convert+from+bzr+to+git>`__
-`several <https://astrofloyd.wordpress.com/2012/09/06/convert-bzr-to-git/>`__
-`useful <http://www.fusonic.net/en/blog/2013/03/26/migrating-from-bazaar-to-git/>`__
-`recommendations <http://blog.timmattison.com/archives/2011/06/13/how-to-convert-from-bzr-to-git-on-debianubuntu/>`__
+`are <https://www.google.com/search?%7Bgoogle:acceptedSuggestion%7Doq=convert&sourceid=chrome&client=ubuntu&channel=cs&ie=UTF-8&q=convert+from+bzr+to+git>`_
+`several <https://astrofloyd.wordpress.com/2012/09/06/convert-bzr-to-git/>`_
+`useful <http://www.fusonic.net/en/blog/2013/03/26/migrating-from-bazaar-to-git/>`_
+`recommendations <http://blog.timmattison.com/archives/2011/06/13/how-to-convert-from-bzr-to-git-on-debianubuntu/>`_
 online for how to convert from Bazaar to Git. Here's one way that
 preserves tags and does a pretty good job for relatively simple Bazaar
 branches.
@@ -307,14 +292,14 @@ If you have several different Bazaar branches that form part of the same
 project, or if your Bazaar branches constitute packaging for a project
 whose upstream is in revision control elsewhere, then you may well want
 to do a more careful conversion. For this,
-`reposurgeon <http://www.catb.org/~esr/reposurgeon/>`__ is an excellent
+`reposurgeon <http://www.catb.org/~esr/reposurgeon/>`_ is an excellent
 tool: it gives you a language for describing the transformations you
 want to make to your input branches, so you can run the migration
 several times with different tweaks before deciding that the result is
 the one you want to publish to the world.
 
 Once you're ready to use Git by default for your project, you can
-configure this from https://launchpad.net/PROJECT/+configure-code (which
+configure this from ``https://launchpad.net/PROJECT/+configure-code`` (which
 is linked from the "Configuration Progress" section of the main project
 page on Launchpad).
 
@@ -327,8 +312,7 @@ In order to delete a Git repository, you need to follow these steps:
 - scroll down to the "Code" section
 - click on repository listed as "lp:"
 - on the right hand side click on "Delete repository"
-- confirm the deletion on the next page.
-As an alternative you can also use "lp-shell" to delete the repository:
+- confirm the deletion on the next page. As an alternative you can also use "lp-shell" to delete the repository:
 
 ::
 
@@ -337,4 +321,4 @@ As an alternative you can also use "lp-shell" to delete the repository:
 Next steps
 ----------
 
-Read more about Git hosting in the explanation section, :doc: `here <../../explanation/working-with-code/githosting>`_. 
+Read more about Git hosting in the explanation section, :ref:`hosting-git-repositories`.

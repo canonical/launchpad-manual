@@ -9,7 +9,7 @@ Import your project's translations
 
     Import your project's translation templates <import-translation-templates>
     Exporting translations <exporting-translations>
-    
+
 Just as with translation templates, you can import translation files
 (``.po``) in two ways:
 

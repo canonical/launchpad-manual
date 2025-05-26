@@ -1,3 +1,5 @@
+.. _copying-packages:
+
 Copying packages
 ================
 
@@ -7,9 +9,7 @@ You can copy packages from other PPAs into any PPA that you can upload
 to. You also have the option of copying packages between distro-series
 (i.e different distribution releases).
 
-For example: take a look at the `Launchpad team's PPA copy
-packages <https://launchpad.net/~launchpad/+archive/ubuntu/ppa/+copy-packages>`__
-page.
+For example: take a look at the `Launchpad team's PPA copy packages <https://launchpad.net/~launchpad/+archive/ubuntu/ppa/+copy-packages>`_ page.
 
 Here you can:
 

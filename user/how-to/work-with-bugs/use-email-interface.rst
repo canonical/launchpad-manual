@@ -1,9 +1,11 @@
+.. _use-the-launchapd-email-interface:
+
 Use the Launchapd email interface
 =================================
 
 .. include:: /includes/important_not_revised_help.rst
 
-Launchpad's bug tracker sends you `email <Bugs/Subscriptions>`__ about
+Launchpad's bug tracker sends you :ref:`email <bug-subscription>` about
 the bugs you're interested in. If you see something that requires your
 attention - for example, you want to comment on a bug - rather than
 leaving your email client to fire up a web browser, all you need to do
@@ -33,6 +35,8 @@ Let's take a look at an imaginary scenario, in which someone reports a
 bug requesting a screen cast to help demonstrate the bug tracker's email
 interface.
 
+.. _report-a-bug:
+
 Report a bug
 ------------
 
@@ -42,6 +46,7 @@ Launchpad which project, distribution or distribution package the bug
 affects by using the ```affects`` command.
 
 .. important::
+
     *Affects* must be the first command you give in the email
     when reporting a new bug.
 
@@ -61,14 +66,12 @@ Here's an example bug report email:
     affects launchpad-documentation
 
 If the bug affects a distribution package, state the distribution name
-followed by a slash and the package name. For example: \```affects
-ubuntu/firefox".
+followed by a slash and the package name. For example: ``affects ubuntu/firefox``.
 
 Similarly, if the bug affects more than one project or package, use a
 new line for each project/package:
 
 ::
-
 
     affects exaile
     affects ubuntu/exaile
@@ -132,8 +135,7 @@ way you must place it before the other commands.
 
 Matthew could just as easily have left out the ``affects`` command
 and Launchpad would have selected the most likely project that bug is
-reported against. See the `affects command
-reference <Bugs/EmailInterface#affects>`__ for details.
+reported against. See the :ref:`affects command reference <affects>` for details.
 
 Attach a files to a bug
 -----------------------
@@ -164,7 +166,7 @@ Edit a bug that affects multiple contexts
 -----------------------------------------
 
 Every package or project affected by a bug has its own fix status,
-assignee, milestone and so on. Use the `affects command <#affects>`__ to
+assignee, milestone and so on. Use the :ref:`affects command <affects>` to
 edit each of these as it affects a particular context.
 
 For example:
@@ -178,7 +180,7 @@ For example:
     affects ubuntu/flash-player
     status fixreleased
 
-When a bug affects only one package or product, the \`affects\` command
+When a bug affects only one package or product, the ``affects`` command
 is unnecessary.
 
 What to expect when you submit an email
@@ -262,7 +264,7 @@ you'll receive an error message similar to:
    or send an email to help@launchpad.net
 
 If you've waited several minutes and still not received either a change
-notification or an error message, please `let us know <Feedback>`__.
+notification or an error message, please :ref:`let us know <talk-to-us-about-launchpad>`.
 
 Filter bug mail
 ---------------
@@ -271,5 +273,5 @@ If you deal with a large number of bug reports by email, you may find
 that you want to filter them to stop them cluttering your in-box.
 Launchpad appends custom headers to bug emails to help you filter them.
 
-You can find out `more about the headers <Bugs/Subscriptions#headers>`__
+You can find out :ref:`more about the headers <bug-mail-headers>`
 that Launchpad uses in our article on bug subscriptions.

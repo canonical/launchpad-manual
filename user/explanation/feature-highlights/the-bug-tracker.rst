@@ -381,7 +381,7 @@ Launchpad has a general mechanism to describe the overall structure of
 the project:
 
 - The **product** is the overall application or library. For example,
-:literal:`you will find products registered in Launchpad for Python, Zope, PyCrypto, Firefox, etc.`
+  :literal:`you will find products registered in Launchpad for Python, Zope, PyCrypto, Firefox, etc.`
 
 - A **series** is a "series of releases" and generally represents a:
 

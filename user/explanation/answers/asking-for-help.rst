@@ -1,3 +1,5 @@
+.. _asking-for-help:
+
 Asking for help
 ===============
 
@@ -7,12 +9,13 @@ Using Launchpad to find help is easy. First, visit the Answers page
 for the project or distribution you're using.
 
 For example, if you want help with the NULL project, visit
-https://answers.launchpad.net/null
+`<https://answers.launchpad.net/null>`_
 
 Follow the ``Ask a question`` link and choose the language with
 which you're most comfortable.
 
 .. tip::
+
     To improve your chances of getting an answer, choose a
     language that is marked with an asterisk. These languages have support
     volunteers whom Launchpad will notify of your question.
@@ -46,6 +49,8 @@ Based on your actions and theirs, Launchpad will change the question's
 status, to help other people to see what action, if any, they should
 take.
 
+.. _question-statuses:
+
 Question statuses
 ~~~~~~~~~~~~~~~~~
 
@@ -71,37 +76,42 @@ Actions that change a question's status
 
     When the question's status is ``Open``, this will change it to
     ``Needs information``.
+
 -  The reporter provides more information on the problem.
 
     When the   status of the question is ``Needs information``,
     this will change it back to ``Open``.
+
 -  Someone answers a question.
 
     When the status of the question is ``Open`` or ``Needs information``,
     this will change it to ``Answered``.
+
 -  The original reporter tells Launchpad they have found a solution.
 
     The status moves to ``Solved``.
+
 -  The reporter confirms an answer given by another user.
 
     The status moves to ``Solved``.
+
 -  After receiving an answer, the reporter replies that the problem
    still occurs.
-   
+
     This reverts status to ``Open``.
+
 -  Two weeks have passed without a change to the question.
 
     If the question is in the ``Open`` or ``Needs information`` state,
     Launchpad's robot - the Launchpad Janitor - will automatically mark
     the question as ``Expired``.
+
 -  An answer contact or administrator rejects a question which
    contains spam or is a duplicate.
-   
+
     This changes the status to ``Invalid``.
 
 More information
 ----------------
 
-If you're already familiar with a piece of software, and want to help
-other people use it, you can `offer support <Answers/OfferingHelp>`__
-using Launchpad.
+If you're already familiar with a piece of software, and want to help other people use it, you can :ref:`offer support <offering-help>` using Launchpad.

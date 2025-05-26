@@ -1,3 +1,5 @@
+.. _bug-expiry:
+
 Bug expiry
 ==========
 
@@ -7,9 +9,7 @@ While we all have the best of intentions to at least triage every bug
 that is reported against a project we're involved with, there are just
 some bugs that never get looked at.
 
-Rather than allowing stale bugs to clutter your project's bugs list,
-Launchpad offers you a pragmatic way of dealing with moribund bugs:
-`old, unattended <Bugs/Expiry#definition>`__ bugs that have the ``Incomplete`` status are expired.
+Rather than allowing stale bugs to clutter your project's bugs list, Launchpad offers you a pragmatic way of dealing with moribund bugs: :ref:`old, unattended <old-unattended-and-incomplete>` bugs that have the ``Incomplete`` status are expired.
 
 This gives you three benefits:
 
@@ -28,16 +28,12 @@ Disabling bug expiry
 You can choose to have Launchpad automatically expire bugs that have
 become stale. Bug expiry is automatically enabled when you mark your project as using
 Launchpad to track its bugs. However, if bug expiry doesn't suit your
-project, visit
+project, visit ``https://launchpad.net/<yourproject>/+edit`` to disable it.
 
-::
+.. _old-unattended-and-incomplete:
 
-   "https://launchpad.net/<yourproject>/+edit"
-
-to disable it.
-
-Old, unattended and incomplete?
--------------------------------
+Old, unattended, and incomplete?
+--------------------------------
 
 Launchpad consider bugs ready for expiry if it appears that they have
 been abandoned. It considers a bug to be abandoned if:

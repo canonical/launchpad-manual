@@ -1,3 +1,5 @@
+.. _team-branches:
+
 Team branches
 =============
 
@@ -15,8 +17,7 @@ commit to.
 Bazaar checkouts
 ----------------
 
-It is possible for multiple people in a team each to ``bzr push`` their branches to the same location in the team space. For example,
-``~team/gnuhello/newfeature``.
+It is possible for multiple people in a team each to ``bzr push`` their branches to the same location in the team space. For example, ``~team/gnuhello/newfeature``.
 
 Bazaar will make sure that each push doesn't overwrite the work that is
 already there. Instead, it must extend that work. However, this is not
@@ -75,9 +76,7 @@ version of the relevant code.
 
 The best example is the Ubuntu Core Development Team. It has branches
 for many projects that are shared and to which any team member can
-commit:
-
-    https://code.launchpad.net/~ubuntu-core-dev
+commit: https://code.launchpad.net/~ubuntu-core-dev
 
 Here's a snippet from that page showing some of their branches:
 
@@ -121,5 +120,5 @@ For example, if your branch fixes a bug, link the branch to the bug
 report! And if it's a new feature, track that feature in Launchpad (we
 call it a Blueprint) and link the branch to that.
 
-That's the `next stop <FeatureHighlights/BugBranchLinking>`__ in our
+That's the :ref:`next stop <linking-bugs-to-dedicated-branches>` in our
 review of Launchpad.

@@ -10,81 +10,23 @@ hosted.
 Register a Mantis bug tracker
 ------------------------------
 
-1. 
+1. Visit https://launchpad.net/bugs/bugtrackers
 
-   1. Visit https://launchpad.net/bugs/bugtrackers
+2. Follow the ``Register bug tracker`` link.
 
-.. raw:: html
+3. Enter a name for the bug tracker. The name you choose should use alphanumeric characters and hyphens only so that it can form part of a URL. For example: if the project is called ``Jeff's Text Editor``, you might enter the name ``jeffs-text-editor``.
 
-   <!-- end list -->
+4. Select ``Mantis`` from the ``Bug Tracker Type`` drop-down list.
 
-1. 
+5. Use the ``Title`` text-box to enter a descriptive, human-readable name for the bug tracker. In our example from step 2, you could use ``Jeff's Text Editor Mantis Tracker`` here.
 
-   1. Follow the ``Register bug tracker`` link.
+6. Enter a summary of the bug tracker's purpose and the sort of bugs that it tracks.
 
-.. raw:: html
+7. Enter the base URL of your bug tracker. For example: ``https://www.example.com/jeffs-mantis``
 
-   <!-- end list -->
+8. Describe how people can contact you.
 
-1. 
-
-   1. Enter a name for the bug tracker. The name you choose should use
-      alphanumeric characters and hyphens only so that it can form part
-      of a URL. For example: if the project is called ``Jeff's Text
-      Editor``, you might enter the name ``jeffs-text-editor``.
-
-.. raw:: html
-
-   <!-- end list -->
-
-1. 
-
-   1. Select ``Mantis`` from the ``Bug Tracker Type`` drop-down list.
-
-.. raw:: html
-
-   <!-- end list -->
-
-1. 
-
-   1. Use the ``Title`` text-box to enter a descriptive, human-readable
-      name for the bug tracker. In our example from step 2, you could
-      use ``Jeff's Text Editor Mantis Tracker`` here.
-
-.. raw:: html
-
-   <!-- end list -->
-
-1. 
-
-   1. Enter a summary of the bug tracker's purpose and the sort of bugs
-      that it tracks.
-
-.. raw:: html
-
-   <!-- end list -->
-
-1. 
-
-   1. Enter the base URL of your bug tracker. For example:
-      ``https://www.example.com/jeffs-mantis``
-
-.. raw:: html
-
-   <!-- end list -->
-
-1. 
-
-   1. Describe how people can contact you.
-
-.. raw:: html
-
-   <!-- end list -->
-
-1. 
-
-   1. When you are ready, click the ``Add`` button to register your bug
-      tracker with Launchpad.
+9. When you are ready, click the ``Add`` button to register your bug tracker with Launchpad.
 
 Watch Mantis bugs
 -----------------

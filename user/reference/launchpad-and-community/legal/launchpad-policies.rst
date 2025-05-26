@@ -1,3 +1,5 @@
+.. _launchpad-policies:
+
 Launchpad policies
 ==================
 
@@ -9,15 +11,11 @@ Trademark and logo licence
 “Launchpad” and the Launchpad "Gem" logo are trademarks of
 Canonical Ltd.
 
-The Launchpad "Gem" logo was created by `Eugene
-Tretyak <https://launchpad.net/~etretyak>`__ as part of the `Launchpad
-Logo Contest <logo>`__. The copyright in the Launchpad logo is owned by
-Canonical Ltd. and is licensed under a `Creative Commons Attribution-No
-Derivative Works 2.0 UK: England & Wales
-License <http://creativecommons.org/licenses/by-nd/2.0/uk/>`__.
+The Launchpad "Gem" logo was created by `Eugene Tretyak <https://launchpad.net/~etretyak>`_ as part of the Launchpad Logo Contest. The copyright in the Launchpad logo is owned by
+Canonical Ltd. and is licensed under a `Creative Commons Attribution-No Derivative Works 2.0 UK: England & Wales License <http://creativecommons.org/licenses/by-nd/2.0/uk/>`_.
 
 You can use one of the images from the `Launchpad Badge
-Kit <BadgeKit>`__ to show that your project uses Launchpad. Canonical
+Kit <BadgeKit>`_ to show that your project uses Launchpad. Canonical
 may revoke your permission to use these images if you make modifications
 to the images or use them incorrectly (e.g., on a project that does not
 use Launchpad.net).
@@ -25,15 +23,10 @@ use Launchpad.net).
 Help, Dev, and News Content Licence
 -----------------------------------
 
-The documentation contained in the `Launchpad Help
-wiki <https://help.launchpad.net/>`__, the `Launchpad Development
-wiki <https://dev.launchpad.net/>`__, and on the `Launchpad
-blog <http://blog.launchpad.net/>`__ is owned by Canonical Ltd. and is
-licensed under a `Creative Commons Attribution 2.0 UK: England & Wales
-License <http://creativecommons.org/licenses/by/2.0/uk/>`__.
+The documentation contained in the `Launchpad Help wiki <https://help.launchpad.net/>`_, the `Launchpad Development wiki <https://dev.launchpad.net/>`_, and on the `Launchpad blog <http://blog.launchpad.net/>`_ is owned by Canonical Ltd. and is licensed under a `Creative Commons Attribution 2.0 UK: England & Wales License <http://creativecommons.org/licenses/by/2.0/uk/>`_.
 
 For information about the licence of the Launchpad source code itself,
-please see https://dev.launchpad.net/LaunchpadLicense.
+please see `<https://dev.launchpad.net/LaunchpadLicense>`_.
 
 Copyright
 ---------
@@ -60,9 +53,7 @@ these translations as sources for their own translations, without
 suffering licensing incompatibilities. Translations of groups of strings
 from the same project, to the extent forming a derivative work of the
 project, are made available to Canonical and in turn to you under the
-licence applicable to the project. See the `Translations Licensing
-FAQ <https://help.launchpad.net/Translations/LicensingFAQ>`__ for
-details.
+licence applicable to the project. See the `Translations Licensing FAQ <https://help.launchpad.net/Translations/LicensingFAQ>`_ for details.
 
 Bugs copyright
 ~~~~~~~~~~~~~~
@@ -90,13 +81,12 @@ are given along with the data.
 Automated querying
 ------------------
 
-We provide `data feeds <https://help.launchpad.net/Feeds>`__ and a `web
-service API <https://help.launchpad.net/API>`__ for automated access to
+We provide :ref:`data feeds <atom-feeds>` and a :ref:`web service API <launchpad-web-service>` for automated access to
 Launchpad's dataset. We strongly recommend you use the feeds and the web
 service API in preference to screen-scraping or other techniques. If you
 can't do what you need to do through the feeds and the API,
 
--  please `file a bug <https://launchpad.net/launchpad/+filebug>`__ so
+-  please `file a bug <https://launchpad.net/launchpad/+filebug>`_ so
    we can improve our service
 -  we will allow the use of custom scripts and robots that access the
    data on the Launchpad web site
@@ -120,6 +110,8 @@ give its name.
 We reserve the right to limit the access of individual users who make
 requests too often; and of applications that cause problems for
 Launchpad due to bugs, inefficiency, or malicious intent.
+
+.. _project-eligibility:
 
 Project eligibility
 -------------------
@@ -157,33 +149,28 @@ following criteria:
    licence must explicitly permit distribution of software built from
    modified source code.
 
-Personal Package Archive eligibility
+Personal package archive eligibility
 ------------------------------------
 
 Content may be hosted in a Personal Package Archive ("PPA") on Launchpad
 if it is approved by Canonical or released under a license which falls
 under one or more of the following:
 
--  `OSI Approved <http://opensource.org/licenses/category>`__
--  `FSF Approved <http://www.fsf.org/licensing/licenses/>`__
--  `DFSG Compliant <http://www.debian.org/social_contract#guidelines>`__
+-  `OSI Approved <http://opensource.org/licenses/category>`_
+-  `FSF Approved <http://www.fsf.org/licensing/licenses/>`_
+-  `DFSG Compliant <http://www.debian.org/social_contract#guidelines>`_
 -  `Ubuntu "main" and "restricted" Component License Policy
-   Compliant <https://ubuntu.com/licensing>`__
+   Compliant <https://ubuntu.com/licensing>`_
 -  Select Creative Commons Licenses
 
-   -  `CC PD <http://creativecommons.org/licenses/publicdomain/>`__
-   -  `CC-BY <http://creativecommons.org/licenses/by/3.0/>`__
-   -  `CC BY-ND <http://creativecommons.org/licenses/by-nd/3.0/>`__
-   -  `CC BY-NC <http://creativecommons.org/licenses/by-nc/3.0/>`__
-   -  `CC
-      BY-NC-SA <http://creativecommons.org/licenses/by-nc-sa/3.0/>`__
-   -  `CC
-      BY-NC-ND <http://creativecommons.org/licenses/by-nc-nd/3.0/>`__
+   -  `CC PD <http://creativecommons.org/licenses/publicdomain/>`_
+   -  `CC-BY <http://creativecommons.org/licenses/by/3.0/>`_
+   -  `CC BY-ND <http://creativecommons.org/licenses/by-nd/3.0/>`_
+   -  `CC BY-NC <http://creativecommons.org/licenses/by-nc/3.0/>`_
+   -  `CC BY-NC-SA <http://creativecommons.org/licenses/by-nc-sa/3.0/>`_
+   -  `CC BY-NC-ND <http://creativecommons.org/licenses/by-nc-nd/3.0/>`_
 
-To request approval to host content on Launchpad under a license not
-covered by the list above, bring it up on the `Launchpad users mailing
-list <https://lists.ubuntu.com/mailman/listinfo/launchpad-users>`__ for
-consideration before uploading it.
+To request approval to host content on Launchpad under a license not covered by the list above, bring it up on the `Launchpad users mailing list <https://lists.ubuntu.com/mailman/listinfo/launchpad-users>`_ for consideration before uploading it.
 
 Canonical reserves the right (but shall have no obligation) to
 pre-screen, review, flag, filter, modify, refuse, or remove any or all
@@ -197,7 +184,7 @@ You may not sell, resell, or exploit any portion of the Launchpad
 service, use of the Launchpad service, or access to the Launchpad
 service.
 
-Privacy Policy and Data Retention Statement
+Privacy policy and data retention statement
 -------------------------------------------
 
 Privacy Policy and Data Retention Statement for Launchpad.net
@@ -214,7 +201,7 @@ The statement explains to contributors to projects hosted by Launchpad
 the steps that Launchpad and Canonical take to ensure the security of
 the data submitted and used by Launchpad.
 
-Launchpad Overview
+Launchpad overview
 ------------------
 
 Launchpad stores and processes contributions to open source software and
@@ -227,7 +214,7 @@ If you feel that Launchpad fails to follow this Privacy Policy and Data
 Retention Statement or if you wish to give feedback on it, please
 contact us at feedback@launchpad.net.
 
-Launchpad Accounts
+Launchpad accounts
 ------------------
 
 You may have a Launchpad account, which you use to log into Launchpad
@@ -269,7 +256,7 @@ display it on your profile page. Until you set that location yourself,
 other registered Launchpad users can set it on your behalf. Once your
 location is set, you can hide it from other users.
 
-Other Collected Data
+Other collected data
 ~~~~~~~~~~~~~~~~~~~~
 
 Launchpad does collect other data that is not displayed publicly. We
@@ -289,17 +276,17 @@ please look at the help menu on your browser. However, note that you
 need to accept cookies from our website in order to use all its
 features.
 
-Data Security
+Data security
 -------------
 
-Physical Data Security
+Physical data security
 ~~~~~~~~~~~~~~~~~~~~~~
 
 We have appropriate security measures in place in our physical
 facilities to protect against the loss, misuse or alteration of
 information that we have collected from you.
 
-Data Usage
+Data usage
 ~~~~~~~~~~
 
 We process data collected via this website for the purposes of:
@@ -309,7 +296,7 @@ We process data collected via this website for the purposes of:
 -  Maintaining information as a reference tool or general resource.
 -  Providing you with information about products and services.
 
-Unanticipated Usage
+Unanticipated usage
 ~~~~~~~~~~~~~~~~~~~
 
 From time to time, we may use visitor information for new, unanticipated
@@ -318,12 +305,12 @@ practices change at some time in the future we will post the policy
 changes to our web site to notify you of these changes. If you are
 concerned about how your information is used, you should check back at
 our web site periodically. We will also announce these changes on the
-Launchpad Users mailing list and on http://blog.launchpad.net.
+Launchpad Users mailing list and on `<http://blog.launchpad.net>`_.
 
-Data Retention
+Data retention
 --------------
 
-General Data Retention Statement
+General data retention statement
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Launchpad retains all data submitted by users permanently.
@@ -337,7 +324,7 @@ defamation are considered inappropriate. Where data is deleted, it will
 be removed from the Launchpad database but it may continue to exist in
 backup archives which are maintained by Canonical.
 
-Projects and Project Groups
+Projects and project groups
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Projects and project groups may be deleted at the project owner's
@@ -350,7 +337,7 @@ test project or a project containing only spam). In cases where the
 status of a project/project group is unknown, we may contact the project
 registrant for clarification prior to deleting it.
 
-File Downloads and Personal Package Archives (PPA)
+File downloads and personal package archives (PPA)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 We provide a mechanism for users to delete their own PPA submissions as

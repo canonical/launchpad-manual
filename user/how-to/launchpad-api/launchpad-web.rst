@@ -1,10 +1,12 @@
-###################
+.. _access-web-services:
+
 Access web services
 ###################
+
 .. include:: /includes/important_not_revised_help.rst
 
 
-Canonical provides a Python client, `launchpadlib <../launchpadlib>`__,
+Canonical provides a Python client, :ref:`launchpadlib`,
 for reading and writing to Launchpad's web service. But there are many
 situations where you wouldn't use launchpadlib: if you're not a Python
 programmer, if you want to write an Ajax client that runs in a web
@@ -46,8 +48,7 @@ anything, and of course they have no concept of a "me" resource to start
 from. Trying to access a private resource will give you a "401
 Unauthenticated" error.
 
-To see how to sign a request, see `"Signing
-Requests" <../SigningRequests>`__.
+To see how to sign a request, see :ref:`Signing Requests <sign-web-requests>`.
 
 The homepage
 ============
@@ -57,7 +58,7 @@ projects, bugs, people, answers, and so on. The web service has a
 homepage, too. It's a lot more sparse than the web site's homepage but
 it also makes a good jumping-off point.
 
-The root of the web service is http://api.launchpad.net/1.0/. I'll show
+The root of the web service is `<http://api.launchpad.net/1.0/>`_. I'll show
 you the staging server for these examples so you don't accidentally
 change something you don't mean to change. To get the service's
 homepage, just sent an HTTP GET request to /1.0.
@@ -76,7 +77,7 @@ The response you get back will look something like this:
 
        {"people_collection_link": "http:\/\/api.staging.launchpad.net\/1.0\/people", "bugs_collection_link": "http:\/\/api.staging.launchpad.net\/1.0\/bugs", "me_link": "http:\/\/api.staging.launchpad.net\/people/+me"}
 
-That's a `JSON <http://json.org/>`__ document, which you can turn into a
+That's a `JSON <http://json.org/>`_ document, which you can turn into a
 native-language data structure using whatever libraries are available
 for the programming language you're using. (In launchpadlib, we use the
 Python simplejson library to process JSON documents.) Process it and
@@ -92,7 +93,7 @@ you'll have something like this Python data structure:
            "http://api.staging.launchpad.net/people/+me"}
 
 (**Note:** If you're following along and you sent a GET to /1.0/, you'll
-see that the "me_link" isn't actually present yet. The URL works, it's
+see that the ``me_link`` isn't actually present yet. The URL works, it's
 just that the web service homepage doesn't link to it yet. We're going
 to add that link soon, and it's very useful for purposes of discussion,
 so for now just pretend it's there.)
@@ -111,10 +112,10 @@ This document contains three links, and by following the links you can
 explore the web service. As we expose more of Launchpad through the web
 service, you'll see more links added to this document.
 
--  people_collection_link: This is the list of people tracked by
+-  ``people_collection_link``: This is the list of people tracked by
    Launchpad.
--  bugs_collection_link: This is the list of bugs tracked by Launchpad.
--  me_link: This is a link to your user account.
+-  ``bugs_collection_link``: This is the list of bugs tracked by Launchpad.
+-  ``me_link``: This is a link to your user account.
 
 By convention, all fields that are links to other parts of the Launchpad
 web service have names ending in '_link'. Other fields might have URLs
@@ -125,14 +126,14 @@ Apart from the homepage, which you've just seen, there are two basic
 types of objects in launchpad: *entries* and *collections*. An entry is
 a single object, like a bug or your user account; a collection is a
 group of entries. Links to collections always have names that end in
-"_collection_link"; links to entries always have names that just end in
-"_link".
+``_collection_link``; links to entries always have names that just end in
+``_link``.
 
 An entry: your user account
 ===========================
 
-If you follow the "me_link" by making a GET request to
-http://api.staging.launchpad.net/people/+me...
+If you follow the ``me_link`` by making a GET request to
+``http://api.staging.launchpad.net/people/+me...``
 
 ::
 
@@ -149,7 +150,7 @@ account.
 
 Note the symmetry with the Launchpad website. If you visit
 http://www.launchpad.net/people/+me in your web browser, you'll be
-redirected to http://www.launchpad.net/~your-user-name.
+redirected to ``http://www.launchpad.net/~your-user-name``.
 
 Your user account is an entry-type resource. It responds to a specific
 HTTP interface that's common to all entry resources exposed by the
@@ -212,63 +213,40 @@ looks like when I convert it to a Python dictionary.
     u'visibility': u'Public',
     u'wiki_names_collection_link': u'http://api.staging.launchpad.net/1.0/~your-user-name/wiki_names'}
 
-That's a lot of information. You can consult `the reference
-documentation <https://launchpad.net/+apidoc>`__ for more information on
-what each of the fields of this hash mean. What's important is that
-there are three and only three kinds of fields:
+That's a lot of information. You can consult `the reference documentation <https://launchpad.net/+apidoc>`_ for more information on what each of the fields of this hash mean. What's important is that there are three and only three kinds of fields:
 
-1. Atomic chunks of data. Examples here include 'date_created',
-   'display_name', and 'time_zone'. These may be of any JSON data type.
+1. Atomic chunks of data. Examples here include ``date_created``,
+   ``display_name``, and ``time_zone``. These may be of any JSON data type.
    Some of these can be modified: you can change your own
-   'display_name', but you can't change 'date_created'. (How do you know
+   ``display_name``, but you can't change ``date_created``. (How do you know
    which fields can be modified? See "WADL Description" below.)
 
-.. raw:: html
-
-   <!-- end list -->
-
-1. Links to other entry-type resources. These work the same way as the
-   "me_link" in the JSON representation of the Launchpad server root.
-   'mugshot_link' points to your mugshot image.
-   'preferred_email_address_link' points to a resource that represents
+2. Links to other entry-type resources. These work the same way as the
+   ``me_link`` in the JSON representation of the Launchpad server root.
+   ``mugshot_link`` points to your mugshot image.
+   ``preferred_email_address_link`` points to a resource that represents
    your preferred email address. Remember, every object in Launchpad has
    its own URL, even tiny objects like email addresses and languages.
    Again, by Launchpad convention, all links between resources have
-   field names that end in '_link'. Two of these links are especially
+   field names that end in ``_link``. Two of these links are especially
    important, and you'll find them present in every representation of an
    entry-type resource.
 
-.. raw:: html
-
-   <!-- end list -->
-
--
-
-   -  'self_link' is the URL to the resource itself. You can keep track
+   -  ``self_link`` is the URL to the resource itself. You can keep track
       of this URL and come back to it later to find this resource again.
       It's just like bookmarking a web page.
 
-.. raw:: html
-
-   <!-- end list -->
-
--
-
-   -  'resource_type_link' is a link to a machine-readable description
+   -  ``resource_type_link`` is a link to a machine-readable description
       of this resource. You can use this to do introspection on the
       resource, finding out what special operations are available, or
       which of the fields in the representation can be modified. For
       more on this see "WADL Description" below.
 
-.. raw:: html
-
-   <!-- end list -->
-
-1. Links to collection-type resources. A person in Launchpad can be
+3. Links to collection-type resources. A person in Launchpad can be
    associated with more than one email address, but only one of those
-   can be the 'preferred' address at any one time. The
-   'preferred_email_address_link' field points to whatever address is
-   currently preferred. The 'confirmed_email_addresses_collection_link'
+   can be the ``preferred`` address at any one time. The
+   ``preferred_email_address_link`` field points to whatever address is
+   currently preferred. The ``confirmed_email_addresses_collection_link``
    field points to a list containing all the addresses. For more on
    collections, see "The list of bugs" below.
 
@@ -365,7 +343,7 @@ your preferred email address.
        # http://api.staging.launchpad.net/~your-username/+email/your.address@foo.com
 
 Since the value is shown as a URL, you change the value by changing the
-URL. In this PATCH request I change my preferred_email_address_link so
+URL. In this PATCH request I change my ``preferred_email_address_link`` so
 that it points to another of the 'email address' type resources
 associated with my user account.
 
@@ -380,12 +358,12 @@ associated with my user account.
 
 How did I find that link? Well, you can get a collection of all your
 confirmed email addresses by following the
-"confirmed_email_addresses_collection_link". (See "the list of bugs"
+``confirmed_email_addresses_collection_link``. (See "the list of bugs"
 below to learn what a collection looks like.) Each email address has its
-own permanent URL, accessible as its 'self_link' field. Look through the
-collection, find the address you want, and stick its 'self_link' URL
+own permanent URL, accessible as its ``self_link`` field. Look through the
+collection, find the address you want, and stick its ``self_link`` URL
 into the document describing your user account. Then you can make a
-request that changes which email address is your 'preferred' one. In
+request that changes which email address is your ``preferred`` one. In
 Python code the link change might look like this:
 
 ::
@@ -400,7 +378,7 @@ documentation.
 
 You can never change a link to a collection. The link to the collection
 of your confirmed email addresses will always be
-"http://api.staging.launchpad.net/1.0/\ ~{your-user-name}/confirmed_email_addresses".
+``http://api.staging.launchpad.net/1.0/~{your-user-name}/confirmed_email_addresses``.
 
 Error handling
 --------------
@@ -440,7 +418,7 @@ you can bookmark or pass around. Send a GET request to a container
 resource, and you'll get you a JSON document describing the collection.
 
 One interesting collection is the collection of filed bugs. Remember the
-homepage of the Launchpad web service? The 'bugs_collection_link' there
+homepage of the Launchpad web service? The ``bugs_collection_link`` there
 is the URL to the collection of bugs.
 
 Send a GET request to that URL...
@@ -465,31 +443,31 @@ Send a GET request to that URL...
 All collection resources serve JSON documents that look like this,
 whether they're collections of bugs, people, bug tasks, email addresses
 languages, or whatever. It's always a JSON hash with keys called
-'total_size', 'resource_type_link', and 'entries'. The 'total_size'
-field is the number of items in the collection, 'resource_type_link' is
+``total_size``, ``resource_type_link``, and ``entries``. The ``total_size``
+field is the number of items in the collection, ``resource_type_link`` is
 a machine-readable description of the collection (see "WADL Description"
-below). The 'entries' field contains the actual entries.
+below). The ``entries`` field contains the actual entries.
 
 Except of course it doesn't contain \*all\* the entries. Putting over
 250,000 bugs in one document would be crazy. Launchpad's web service
 does the same thing as the Launchpad website: it sends you one page of
 bugs at a time, and includes links (where appropriate) to the next and
-previous pages. So the 'entries' field here is a JSON list containing 75
+previous pages. So the ``entries`` field here is a JSON list containing 75
 JSON hashes, each describing one bug. Each hash contains the same
-information as if you'd sent a GET request to that bug's 'self_link'.
+information as if you'd sent a GET request to that bug's ``self_link``.
 
 If you need more than 75 bugs, you can send a GET request to the
-'next_collection_link'. If you need some other number of bugs, or you
+``next_collection_link``. If you need some other number of bugs, or you
 want to start from item 20 in the list instead of the first item, you
-can manually vary the 'ws.start' and 'ws.size' parameters. Sending a GET
+can manually vary the ``ws.start`` and ``ws.size`` parameters. Sending a GET
 request to
 http://api.staging.launchpad.net/1.0/bugs?ws.start=9&ws.size=3 would get
 you three bugs: the ones that would be accessible from
-"collection['entries'][9:12]" if you'd sent GET to
+``collection['entries'][9:12]`` if you'd sent GET to
 http://api.staging.launchpad.net/1.0/bugs and retrieved the first 75.
 
-For consistency's sake, \_all\_ collection resources serve JSON hashes
-with 'total_size' and the rest, even collections which are very unlikely
+For consistency's sake, *all* collection resources serve JSON hashes
+with ``total_size`` and the rest, even collections which are very unlikely
 to have more than 75 entries, like someone's list of spoken languages.
 
 Named operations
@@ -515,9 +493,9 @@ Read operations (GET)
 
 The person search operation is a good example of a read operation.
 Launchpad exposes a list of people at
-http://api.staging.launchpad.net/1.0/people, but for most applications
+`<http://api.staging.launchpad.net/1.0/people>`_, but for most applications
 you don't want to page through the user accounts the way you would on
-the Launchpad person list. Usually you want to \_filter\_ that huge list
+the Launchpad person list. Usually you want to *filter* that huge list
 to find specific people.
 
 To invoke the person search operation you make a GET request to this
@@ -527,7 +505,7 @@ URL:
 
        http://api.staging.launchpad.net/1.0/people?ws.op=find&text={text}
 
-where "{text}" is the text you want to search for.
+where ``{text}`` is the text you want to search for.
 
 (Again, you can find out about this named operation by reading the
 reference documentation or the WADL definition of
@@ -535,17 +513,17 @@ http://api.staging.launchpad.net/1.0/people. There's no secret here.)
 
 The response to a read operation can be any JSON document, but it's
 usually a JSON hash that looks exactly like the JSON representation of a
-collection resource. It's got 'total_size', 'entries', possibly
-'next_collection_link', and so on. So getting
-http://api.staging.launchpad.net/1.0/people?ws.op=find&text=foo gives
+collection resource. It's got ``total_size``, ``entries``, possibly
+``next_collection_link``, and so on. So getting
+``http://api.staging.launchpad.net/1.0/people?ws.op=find&text=foo`` gives
 you the same kind of document as getting
-http://api.staging.launchpad.net/1.0/people, but there'll be a lot less
+``http://api.staging.launchpad.net/1.0/people``, but there'll be a lot less
 data to process.
 
 In general, you invoke a named operation on a resource by tacking the
-query parameter "ws.op={operation name}" onto the resource's URL. In
+query parameter ``ws.op={operation name}`` onto the resource's URL. In
 this case, the resource was the collection of people and the name of the
-operation was "find". It's just like calling a method in a programming
+operation was ``find``. It's just like calling a method in a programming
 language: the resource is the object and the operation is the method.
 Any arguments to the method are appended as additional query parameters.
 
@@ -582,7 +560,7 @@ to create a team you'll see a response that looks like this:
        Location: http://api.staging.launchpad.net/1.0/~{name}
 
 That's your indication that the team was created, and that you can find
-the new team at http://api.staging.launchpad.net/1.0/\ ~{name}. Now you
+the new team at ``http://api.staging.launchpad.net/1.0/~{name}``. Now you
 can go over to the new team and make additional HTTP requests to
 customize it, add memberships, and so on. In general, Launchpad's web
 service gives you the URLs to newly minted resources, rather than making
@@ -594,8 +572,8 @@ A hosted file: a user's mugshot
 The fourth type of resource is the hosted file. This resource is a
 front-end to a file stored in Launchpad's file library. The example I'll
 use is a person's mugshot image. You can find the URL to this resource
-by looking under 'mugshot_link' in the JSON representation of a person.
-It should look like "/1.0/~{person}/mugshot".
+by looking under ``mugshot_link`` in the JSON representation of a person.
+It should look like ``/1.0/~{person}/mugshot``.
 
 Read (GET)
 ----------
@@ -634,7 +612,7 @@ Write (PUT)
 -----------
 
 To modify a hosted file resource, send a PUT request to its URL. (This
-is the "/1.0/~{person}" URL on api.*.launchpad.net, not the library URL
+is the ``/1.0/~{person}`` URL on api.*.launchpad.net, not the library URL
 you get back as a redirect.) Make sure to set the Content-Type header to
 the MIME type of the file you're writing. You can also set the
 Content-Disposition header to specify the server-side filename of the
@@ -678,7 +656,7 @@ This will not necessarily delete the file from the Launchpad library,
 because there might be other references to it within Launchpad. But the
 file will be disassociated from the hosted-file resource. In this case,
 the "salgado" user will stop having a mugshot, and any future attempts
-to GET /1.0/~salgado/mugshot will return HTTP 404 ("Not Found").
+to GET ``/1.0/~salgado/mugshot`` will return HTTP 404 ("Not Found").
 
 Using the reference documentation
 =================================
@@ -694,16 +672,16 @@ you supposed to know that you're allowed to modify a person's "latitude"
 but not their "karma"?
 
 If you don't know the capabilities of a resource, you can look it up in
-`the reference documentation <https://launchpad.net/+apidoc>`__. First,
-look at the resource's 'resource_type_link'. It'll be something like
-"http://api.launchpad.dev/1.0/#bugs". Take the anchor part of that URL
+`the reference documentation <https://launchpad.net/+apidoc>`_. First,
+look at the resource's ``resource_type_link``. It'll be something like
+``http://api.launchpad.dev/1.0/#bugs``. Take the anchor part of that URL
 (here, "#bugs"), and use it as an anchor into the reference
 documentation.
 
-That is, if the 'resource_type_link' is
-"http://api.launchpad.dev/1.0/#bugs", you can find human-readable
+That is, if the ``resource_type_link`` is
+``http://api.launchpad.dev/1.0/#bugs``, you can find human-readable
 documentation about that resource by going to
-https://launchpad.net/+apidoc/devel.html#bugs in your web browser.
+`<https://launchpad.net/+apidoc/devel.html#bugs>`_ in your web browser.
 
 The reference documentation will tell you about all the fields in an
 object's JSON representation, and all the HTTP methods it will respond
@@ -719,14 +697,8 @@ Launchpad's web service serves XML and JSON documents that compress very
 well. You'll get the documents faster and save bandwidth if you ask
 Launchpad to compress documents before sending them over the network.
 
-You do this by specifying a compression algorithm in the "TE" request
-header. Launchpad's web service supports two compression algorithms:
-"gzip", the standard gzip algorithm handled by `Python's gzip
-module <http://www.python.org/doc/lib/module-gzip.html>`__, and
-"deflate", the algorithm handled by `Python's zlib
-module <http://www.python.org/doc/lib/module-zlib.html>`__. Both of
-these are as defined in `the HTTP
-standard. <http://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.5>`__
+You do this by specifying a compression algorithm in the "TE" request header. Launchpad's web service supports two compression algorithms: "gzip", the standard gzip algorithm handled by `Python's gzip module <http://www.python.org/doc/lib/module-gzip.html>`_, and "deflate", the algorithm handled by `Python's zlib module <http://www.python.org/doc/lib/module-zlib.html>`_. Both of
+these are as defined in `the HTTP standard. <http://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.5>`_.
 
 So your TE header will look like this:
 
@@ -765,7 +737,7 @@ It's important that you cache the documents you get from Launchpad,
 especially documents like the WADL file that are large and don't change
 very often.
 
-Here's how `httplib2 <http://code.google.com/p/httplib2/>`__ does
+Here's how `httplib2 <http://code.google.com/p/httplib2/>`_ does
 caching (launchpadlib is based on httplib2). When it makes a GET request
 and gets a document back, it stores the document in a file, along with
 all of the HTTP response headers. The next time it needs to make that
@@ -838,16 +810,7 @@ to make, and re-submit with the new ETag.
 WADL Description
 ================
 
-Like most web service providers we publish `a prose
-document <http://launchpad.net/+apidoc/>`__ describing the capabilities
-of all our resources. But we also publish a machine-readable document
-containing the same information. It's written in
-`WADL <https://wadl.dev.java.net/>`__ format, and you can use it as a
-basis for tools that interact with the web service. In fact, the
-reference documentation is just a human-readable transformation of the
-WADL document. The launchpadlib Python library is a thin wrapper on top
-of a generic WADL library: it becomes a Launchpad library when it reads
-in Launchpad's WADL file.
+Like most web service providers we publish `a prose document <http://launchpad.net/+apidoc/>`_ describing the capabilities of all our resources. But we also publish a machine-readable document containing the same information. It's written in `WADL <https://wadl.dev.java.net/>`_ format, and you can use it as a basis for tools that interact with the web service. In fact, the reference documentation is just a human-readable transformation of the WADL document. The launchpadlib Python library is a thin wrapper on top of a generic WADL library: it becomes a Launchpad library when it reads in Launchpad's WADL file.
 
 Almost every interesting aspect of the web service is described in this
 document. You can use it as a basis for your own tools that talk to
@@ -856,7 +819,7 @@ site, and it makes it possible to build tools that are loosely coupled
 to the design of the web service.
 
 The WADL document that describes Launchpad's resources is located at the
-root of the web service: https://api.staging.launchpad.net/1.0/. You'll
+root of the web service: `<https://api.staging.launchpad.net/1.0/>`_. You'll
 need to request a WADL representation instead of the JSON one we
 retrieved in the first part of this tutorial:
 
@@ -866,18 +829,18 @@ retrieved in the first part of this tutorial:
        Host: api.staging.launchpad.net
        Accept: application/vd.sun.wadl+xml
 
-By Launchpad convention, every entry resource has a 'resource_type_link'
+By Launchpad convention, every entry resource has a ``resource_type_link``
 that's an index into this document.
-"http://api.staging.launchpad.net/1.0/#person", for instance, is a
+``http://api.staging.launchpad.net/1.0/#person``, for instance, is a
 reference to the XML tag in this document with the ID "person". That's
 the tag describing the capabilities of a "person" resource, and it's
-what you'll find as 'resource_type_link' in the JSON representation of
+what you'll find as ``resource_type_link`` in the JSON representation of
 every "person"-type resource.
 
 What's not defined in this file? Mainly, there's a lack of information
 about our URL structure. You've already seen that you can get a
 description of any person in Launchpad by sending GET to
-http://api.staging.launchpad.net/1.0/\ ~{name} and plugging in the name.
+``http://api.staging.launchpad.net/1.0/~{name}`` and plugging in the name.
 This is a useful shortcut that can often save you a few HTTP requests,
 but the WADL file doesn't say anything about that. It's possible to put
 this information into WADL; we just haven't implemented it yet.
@@ -894,7 +857,7 @@ sending an appropriate GET request to the resource's URL:
 You'll get back a small WADL document that contains a reference to the
 large WADL document at the service root. This can be useful if you're
 lost and need to get back on track, or if you don't want to rely on the
-Launchpad-specific 'resource_type_link' convention.
+Launchpad-specific ``resource_type_link`` convention.
 
 Miscellaneous tips and traps
 ============================
@@ -903,4 +866,3 @@ Miscellaneous tips and traps
    lazr.restful's data type marshalling - basically, data is represented
    as if it were fragments of JSON, which means string parameters need
    quotes around them.
-

@@ -1,3 +1,5 @@
+.. _bug-tracker-api-plugin:
+
 Bug tracker API plugin
 ======================
 
@@ -5,8 +7,8 @@ Bug tracker API plugin
 
 We want Launchpad to share bug reports, comments, statuses and other
 information with as many bug trackers as possible. We've already
-produced plugins that enable `Bugzilla <Bugs/BugzillaPlugin>`__ and
-`Trac <Bugs/TracPlugin>`__ to communicate directly with Launchpad.
+produced plugins that enable :ref:`Bugzilla <use-the-bugzilla-plugin>` and
+:ref:`Trac <use-the-trac-plugin>` to communicate directly with Launchpad.
 
 Here you can find the details of Launchpad bug tracker plugin API. This
 gives you all the information you need to write a Launchpad plugin for
@@ -21,7 +23,7 @@ authenticate with that bug tracker.
 An account should automatically be created for Launchpad to use. The
 user name need not be the same on all bug trackers the API gets
 installed in, however we recommend that the default be "launchpad" with
-email address "`noreply-$bugtracker@launchpad.net`".
+email address ``noreply-$bugtracker@launchpad.net``.
 
 Launchpad can authenticate with a remote tracker using any number of
 mechanisms, depending on the underlying protocols chosen for the API.
@@ -35,7 +37,7 @@ should authenticate like this:
 1. Launchpad gives the remote tracker a random token, $token. For
    example, it might call an unauthenticated API passing it that value
    as a parameter. Before it replies:
-2. The remote tracker checks if `https://launchpad.net/tokens/$token`
+2. The remote tracker checks if ``https://launchpad.net/tokens/$token``
    exists (200 HTTP reply status)
 3. If the URL above exists, the remote tracker knows that it's Launchpad
    talking to it.
@@ -69,8 +71,8 @@ REST interface or some other interface as long as it's structured,
 stable, and easy to parse. Using a protocol built on top of HTTP is
 preferred. Possible alternatives include:
 
-| ``   * XML-RPC``
-| ``   * REST (XML, JSON)``
+| ``* XML-RPC``
+| ``* REST (XML, JSON)``
 
 XML-RPC is the preferred method if no API exists already.
 
@@ -95,21 +97,13 @@ trackers:
    time zone it is in, and each API should document whether times are
    given in local time or UTC.
 
-.. raw:: html
-
-   <!-- end list -->
-
-1. **Bugs have unique IDs**. We assume that every bug has a unique ID,
+2. **Bugs have unique IDs**. We assume that every bug has a unique ID,
    and that the ID is immutable. A given ID refers to a given bug all
    the time. Note - we DO NOT assume that the title and description of a
    bug are immutable. Thus, a bug with ID "qwerty" may have a title
    "foo" today, and a title "bar" tomorrow.
 
-.. raw:: html
-
-   <!-- end list -->
-
-1. **Bugs are ordinal**. We assume that Bug ID's have some ordinality
+3. **Bugs are ordinal**. We assume that Bug ID's have some ordinality
    that is immutable. This means that we assume bugs can be ordered in a
    given sequence which does not change. We allow for bugs to be
    *inserted into that sequence* because of issues with database
@@ -123,11 +117,11 @@ trackers:
    that "xyz" will *always* precede "abc", and any bug which lies in
    the range from "xyz" to "abc" today will always lie in that range.
 
-``Note, we do not assume that bugs have integer ID's. The bug ID can be something like "issue56" or "ticket2576", or literally "abc" or "qwe". Note that we don't assume we can always see a particular ID - bugs in the bugtracker can be deleted or marked confidential after Launchpad has previously seen them. Also, we don't assume that we can see a bug which looks like it logically should exist - if we have been told about a bug "90" and another bug "100", and we ask for information about bugs between them, it's fine for us to be told that there are bugs "90", "93" and "100" only. Tomorrow, we might see but "96" because it is no longer confidential.``
+    Note, we do not assume that bugs have integer ID's. The bug ID can be something like "issue56" or "ticket2576", or literally "abc" or "qwe". Note that we don't assume we can always see a particular ID - bugs in the bugtracker can be deleted or marked confidential after Launchpad has previously seen them. Also, we don't assume that we can see a bug which looks like it logically should exist - if we have been told about a bug "90" and another bug "100", and we ask for information about bugs between them, it's fine for us to be told that there are bugs "90", "93" and "100" only. Tomorrow, we might see but "96" because it is no longer confidential.
 
-``This "belated insertion" happens in real life. Say I start a transaction to file a bug which will have ID X. For whatever reason, the transaction to do so takes a minute. A second after my transaction starts, someone files a bug with ID X+1. A second later, Launchpad asks for the top bug and is told X+1 (which has been filed).  But at this stage, bug X is still in its transaction. If Launchpad asks for Bug X, it does not yet actually exist in the database, it's still in its transaction. So, while the bugs are ordered, bug X can show up after bug X+1, which is why I say we assume ordinality but allow for insertions.``
+    This "belated insertion" happens in real life. Say I start a transaction to file a bug which will have ID X. For whatever reason, the transaction to do so takes a minute. A second after my transaction starts, someone files a bug with ID X+1. A second later, Launchpad asks for the top bug and is told X+1 (which has been filed).  But at this stage, bug X is still in its transaction. If Launchpad asks for Bug X, it does not yet actually exist in the database, it's still in its transaction. So, while the bugs are ordered, bug X can show up after bug X+1, which is why I say we assume ordinality but allow for insertions.
 
-1. **Bugs can be specified in ranges**. We assume that we can refer to
+4. **Bugs can be specified in ranges**. We assume that we can refer to
    sets of bugs by the range between two bug ID's. We might have to
    limit this to the idea that bugs have a "date filed". We want this so
    that we can talk to big bugtrackers in sets of queries rather than in
@@ -135,11 +129,7 @@ trackers:
    on bugs with the ability to express ranges of them, i.e. "from bug
    '100000' to bug '200000'".
 
-.. raw:: html
-
-   <!-- end list -->
-
-1. **Launchpad can push and pull information**. By enabling this API in
+5. **Launchpad can push and pull information**. By enabling this API in
    the remote tracker, the admin of the instance trusts Launchpad to
    pull and push information, and to relay information to users in
    Launchpad.
@@ -226,9 +216,9 @@ levels should be 'bug ids only', 'metadata about the bug only',
    to handle non-existent bugs internally rather than having to deal
    with errors over-the-wire.
 
-**Note**: It may be possible to overload `get_bugs()` to include the
-functionality of `get_all_bugs()`, `get_bugs_changed_since()` and
-`get_new_bugs_since()`, below.
+**Note**: It may be possible to overload ``get_bugs()`` to include the
+functionality of ``get_all_bugs()``, ``get_bugs_changed_since()`` and
+``get_new_bugs_since()``, below.
 
 get_all_bugs(): Get all bugs in the bug tracker
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -305,12 +295,12 @@ Synchronising comments
 
 For a comment we need to know:
 
-| ``   * who added the comment``
-| ``       * A unique identifier is necessary. Preferably an e-mail address.``
-| ``   * when was the comment added``
-| ``   * title/body``
-| ``   * unique, immutable comment id``
-| ``   * in-reply-to, if available``
+* who added the comment
+    * A unique identifier is necessary. Preferably an e-mail address.
+* when was the comment added
+* title/body
+* unique, immutable comment id
+* in-reply-to, if available
 
 The comment id is important, so that we can identify the comment. It
 should be unique across the bug tracker.
@@ -334,31 +324,19 @@ the following assumptions:
    positive integer, and reflect the database primary key on the
    BugComment table."
 
-.. raw:: html
-
-   <!-- end list -->
-
-1. **Immutable comments**. We assume that comments are immutable. I.e.,
+2. **Immutable comments**. We assume that comments are immutable. I.e.,
    the comment text and title never change. So, as long as we know we
    have the comment corresponding to a particular ID on their side, we
    don't need to ask for that comment again.
 
-.. raw:: html
-
-   <!-- end list -->
-
-1. **Comment on one and only one bug**. We assume that a particular
+3. **Comment on one and only one bug**. We assume that a particular
    comment applies to a particular bug, and that each comment applies to
    only one bug, and that comments do not move from one bug to another.
    In other words, if we have been told that comment with ID "xyz" is
    for bug "qwerty", we never expect to see a comment with id "xyz" on
    any other bug.
 
-.. raw:: html
-
-   <!-- end list -->
-
-1. **There is a "Launchpad" user in the remote bug tracker**. We assume
+4. **There is a "Launchpad" user in the remote bug tracker**. We assume
    that there will be a "user" in the remote bug tracker which denotes
    "Launchpad". That user may have an email address assigned to it. We
    do not assume any particular value for the email address, but we
@@ -369,7 +347,7 @@ the following assumptions:
    in turn choose to forward email sent to that address to
    `noreply-$bugtracker@launchpad.net`, or `feedback@launchpad.net`.
 
-``The user of Launchpad in that bugtracker is generally used as the "user" who makes comments on bugs, or files new bugs.``
+    The user of Launchpad in that bugtracker is generally used as the "user" who makes comments on bugs, or files new bugs.
 
 Required API Methods
 ~~~~~~~~~~~~~~~~~~~~
@@ -445,9 +423,7 @@ information is getting "unset".
 
 The corresponding Launchpad bug should be displayed on the remote bug
 page, as a number linked to the relevant bug at Launchpad.net, for
-example:
-
-:literal:`LP #12345`
+example: :literal:`LP #12345`
 
 It may also be appropriate to display the corresponding Launchpad bug
 number in other reports and pages. It should be possible for users of

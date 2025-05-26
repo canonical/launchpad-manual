@@ -1,11 +1,11 @@
+.. _create-and-manage-a-merge-proposal:
+
 Create and manage a merge proposal
 ==================================
 
 .. include:: /includes/important_not_revised_help.rst
 
-Thanks to Bazaar's distributed model, you can `get full access to the
-code of any branch <Code/FindingAndDownloading>`__ hosted in Launchpad,
-with version control and history, right on your own machine.
+Thanks to Bazaar's distributed model, you can :ref:`get full access to the code of any branch <find-and-download-code-hosted-on-launchpad>` hosted in Launchpad, with version control and history, right on your own machine.
 
 That flexibility means you can start work on a project without having to
 get special permissions to commit code. Of course, if you make changes
@@ -16,8 +16,7 @@ Launchpad and Bazaar make that easy. Bazaar was made to merge: even
 complex merges can be relatively easy. Launchpad helps look after the
 community process of discussing whether a proposed merge is a good idea.
 
-See also this description `Code review
-relationships <Code/Review/Relationships>`__.
+See also this description :ref:`code-review relationships <roles-in-code-review>`.
 
 Propose a merge
 ---------------
@@ -37,9 +36,7 @@ proposal.
 use the email interface
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-You can also propose a merge by email by sending a `merge
-directive <http://doc.bazaar.canonical.com/bzr.dev/en/user-guide/sending_changes.html>`__
-to ``merge@code.launchpad.net``.
+You can also propose a merge by email by sending a `merge directive <http://doc.bazaar.canonical.com/bzr.dev/en/user-guide/sending_changes.html>`_ to ``merge@code.launchpad.net``.
 
 In your email, you can ask for particular people to do the review by
 adding lines that say:
@@ -50,8 +47,8 @@ adding lines that say:
 You can ask for as many reviewers as you like.
 
 .. note::
-    You **must** start the command line with a space or your command will not be
-recognized.
+
+    You **must** start the command line with a space or your command will not be recognized.
 
 The flow of this process
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -67,11 +64,11 @@ really easy. If you're new to this process, this is how it works:
 
    -  Accept your code, and it will be merged.
    -  Modify your code slightly, then merge it.
-   -  Tell you what to do with a `comment <Comments>`__, marking your
+   -  Tell you what to do with a :ref:`comment <launchpad-comment-parsing>`, marking your
       review as "Needs Fixing".
 
       -  If you're happy to, you do make the changes requested and push
-         them into your branch. Then `comment <Comments>`__ back on your
+         them into your branch. Then :ref:`comment <launchpad-comment-parsing>` back on your
          proposal that you have done that. You should now await further
          action.
 
@@ -95,7 +92,7 @@ Code review
 -----------
 
 Once you've proposed a merge, anyone who has a Launchpad account can
-`comment <Comments>`__ and vote on the proposal. Taking part in a code
+:ref:`comment <launchpad-comment-parsing>` and vote on the proposal. Taking part in a code
 review is virtually hassle-free:
 
 -  **No barriers:** anyone can take part, so long as they have a
@@ -105,7 +102,7 @@ review is virtually hassle-free:
 
 Each review consists of votes - approve, abstain or disapprove - and a
 threaded conversation much as you might find on a web forum or a mailing
-list. If you're already familiar with `Launchpad Bugs <Bugs>`__, you'll
+list. If you're already familiar with :ref:`Launchpad Bugs <bugs>`, you'll
 be right at home with code reviews.
 
 As a subscriber to the branch or a participant in the code review,
@@ -119,14 +116,13 @@ If you want to make your vote specific to one aspect of the proposed
 merge, you can add a tag. For example: if you wanted to vote disapprove,
 based on the user interface, you could add a tag of *ui*.
 
-For an example of a review, take a look at a `code review in the Storm
-project <https://code.launchpad.net/~therve/storm/binary-and/+merge/387>`__.
+For an example of a review, take a look at a `code review in the Storm project <https://code.launchpad.net/~therve/storm/binary-and/+merge/387>`_.
 
 Use the email interface
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 Using the code review email interface is straightforward. Reply to an
-email from the code review and your `comment <Comments>`__ is added to
+email from the code review and your :ref:`comment <launchpad-comment-parsing>` is added to
 the discussion in Launchpad.
 
 If you want to include commands to modify the approval or status of the
@@ -137,48 +133,36 @@ sender such as GMail.
 Here is the list of available commands:
 
 .. note::
-    You **must** start the command line with a space or your command will not be
-recognized.
+    You **must** start the command line with a space or your command will not be recognized.
 
 -  ``review`` - inform the developer what you think of their changes
 
-   -  
+   -  ``review approve`` - approve the change (`alias <http://www.python.org/dev/peps/pep-0010/>`_: ``+1``)
 
-      -  ``review approve`` - approve the change
-         (`alias <http://www.python.org/dev/peps/pep-0010/>`__: ``+1``)
-      -  ``review disapprove`` - disapprove of the change
-         (`alias <http://www.python.org/dev/peps/pep-0010/>`__: ``-1``)
-      -  ``review abstain`` - abstain from deciding
-         (`alias <http://www.python.org/dev/peps/pep-0010/>`__: ``-0``
-         and ``+0``)
-      -  ``review resubmit`` - tell the developer to rework the change
-      -  ``review needs-fixing`` - tell the developer that a few things
-         need improvement (alias: ``needsfixing`` and ``needs_fixing``)
-      -  ``review needs-info`` - tell the developer that you need more
-         information (alias: ``needsinfo`` and ``needs-information`` and
-         ``needsinformation``)
+   -  ``review disapprove`` - disapprove of the change (`alias <http://www.python.org/dev/peps/pep-0010/>`_: ``-1``)
+
+   -  ``review abstain`` - abstain from deciding (`alias <http://www.python.org/dev/peps/pep-0010/>`_: ``-0`` and ``+0``)
+
+   -  ``review resubmit`` - tell the developer to rework the change
+
+   -  ``review needs-fixing`` - tell the developer that a few things need improvement (alias: ``needsfixing`` and ``needs_fixing``)
+
+   -  ``review needs-info`` - tell the developer that you need more information (alias: ``needsinfo`` and ``needs-information`` and ``needsinformation``)
 
 -  ``merge`` - either approve or reject the proposed change
 
-   -  
-
-      -  ``merge approved`` - approve of the merge proposal (alias:
-         ``approve``)
-      -  ``merge rejected`` - reject the merge proposal (alias:
-         ``reject``)
+   - ``merge approved`` - approve of the merge proposal (alias: ``approve``)
+   -  ``merge rejected`` - reject the merge proposal (alias: ``reject``)
 
 -  ``reviewer`` - add a new reviewer to the merge proposal
 
-   -  
-
-      -  ``reviewer <name>`` where ``<name>`` is the Launchpad user name or email
-         address of the new reviewer.
+   - ``reviewer <name>`` where ``<name>`` is the Launchpad user name or email address of the new reviewer.
 
 -  ``vote`` (deprecated: use ``review``)
 -  ``status`` (deprecated: use ``merge``)
 
 You can combine commands, so if you wanted to vote ``disapprove``, add a
-tag of ``UI``, leave a `comment <Comments>`__, and reject the merge
+tag of ``UI``, leave a :ref:`comment <launchpad-comment-parsing>`, and reject the merge
 proposal, you'd write:
 
 ::
@@ -201,7 +185,4 @@ instructions on the page, either for ``bzr`` or for ``git`` respectively.
 Next steps
 ----------
 
-You can pick choose which parts of Launchpad you want to use. However,
-when you use different parts of Launchpad together you can make them
-work together. Let's look at how you can `link bug report and blueprints
-to branches of code <Code/BugAndBlueprintLinks>`__.
+You can pick choose which parts of Launchpad you want to use. However, when you use different parts of Launchpad together you can make them work together. Let's look at how you can :ref:`link bug report and blueprints to branches of code <link-a-bug-reports-to-a-branch>`.

@@ -1,3 +1,5 @@
+.. _creating-and-running-launchpad-teams:
+
 Creating and running Launchpad teams
 ====================================
 
@@ -9,38 +11,27 @@ you to bring people together by offering:
 
 -  a focal point of collaboration.
 -  tools for members to communicate, such as mailing lists
--  the ability for many people to share a role, such as a project's
-   maintainer or driver.
+-  the ability for many people to share a role, such as a project's maintainer or driver.
 
 Teams are easy to use: Launchpad doesn't impose rules or a particular
 workflow on how you use your teams. Although most teams are associated
 with a particular project, there isn't a formal link.
 
-Anyone can create a team. To get going, visit the `new
-team <https://launchpad.net/people/+newteam>`__ page. You'll probably
-notice that creating a team is very similar to `registering a user
-account <YourAccount/NewAccount>`__. This isn't a coincidence: teams and
-people work in the same way throughout most of Launchpad.
+Anyone can create a team. To get going, visit the `new team <https://launchpad.net/people/+newteam>`__ page. You'll probably notice that creating a team is very similar to :ref:`registering a user account <create-and-personalise-your-launchpad-account>`. This isn't a coincidence: teams and people work in the same way throughout most of Launchpad.
 
 Of course, there are some differences. When you first register a team,
 keep an eye out for:
 
--  **Membership policies**: whether you want the team inclusive to
-   anyone or exclusive to a few people control something in Launchpad.
--  **Subscription period**: (optional) Set a period when membership
-   expires.
--  **Membership renewals**: (optional) Choose how expired members renew
-   their membership.
+-  **Membership policies**: whether you want the team inclusive to anyone or exclusive to a few people control something in Launchpad.
+-  **Subscription period**: (optional) Set a period when membership expires.
+-  **Membership renewals**: (optional) Choose how expired members renew their membership.
 
-You can change any of these details later using the ``Change
-details`` link on your team's overview page.
+You can change any of these details later using the ``Change details`` link on your team's overview page.
 
 Private (proprietary) teams
 ---------------------------
 
-When you maintain a `project with a commercial
-subscription <CommercialHosting>`__, you will see the visibility field
-on the team registration and ``Change details`` pages.
+When you maintain a :ref:`project with a commercial subscription <consumer-hosting>`, you will see the visibility field on the team registration and ``Change details`` pages.
 
 Visibility
 ~~~~~~~~~~
@@ -59,16 +50,13 @@ but doing so requires the team to agree to reveal its Launchpad Id and
 other unique attributes. This rule ensures that no one can spy on
 others. Private teams have additional privileges:
 
--  **Mailing List**: the team can have a private mailing list that has a
-   private list archive that only team members can view.
--  **P3A**: the team can have many private personal package archives
-   (sometimes called ``P3As``) to distribute packages.
-   
+-  **Mailing List**: the team can have a private mailing list that has a private list archive that only team members can view.
+-  **P3A**: the team can have many private personal package archives (sometimes called ``P3As``) to distribute packages.
+
    Non-member subscribers to an archive may know the team's Launchpad-Id``
 
--  **Branches**: code branches pushed to the team's personal repository
-   are Proprietary, visible only to the team.
-   
+-  **Branches**: code branches pushed to the team's personal repository are Proprietary, visible only to the team.
+
    Branches pushed to a project may also be visible to anyone that the project shares Proprietary information with.
 
 Branding your team
@@ -78,11 +66,8 @@ Branding is one of the ways in which teams are similar to people.
 Similar to your own Launchpad account, you can upload images to help
 others identify pages associated with your team:
 
--  **Icon**: this shows up in listings wherever your team's name is
-   mentioned - e.g. on a team member's profile. Must be 14x14 pixels and
-   no more than 5KB.
--  **Mugshot** appears on the team's profile page. Must be 192x192
-   pixels and no more than 100KB.
+-  **Icon**: this shows up in listings wherever your team's name is mentioned - e.g. on a team member's profile. Must be 14x14 pixels and   no more than 5KB.
+-  **Mugshot** appears on the team's profile page. Must be 192x192 pixels and no more than 100KB.
 
 What team membership means
 --------------------------
@@ -96,8 +81,7 @@ In general, members of your team get:
 -  Upload rights for all of the team's code branches
 -  Permission to upload and build Ubuntu packages in the team's PPA
 -  Optional access to the team's mailing list
--  Any access that comes with a role taken by the team (e.g. project
-   maintainer).
+-  Any access that comes with a role taken by the team (e.g. project maintainer).
 -  Disclosure of all confidential information shared with the team
 
 Roles
@@ -106,12 +90,9 @@ Roles
 There are also two special types of membership for people who run your
 team:
 
--  **Administrator**: can add, approve or reject members.
-  They can subscribe the team to bugs, branches, and blueprints.
+-  **Administrator**: can add, approve or reject members. They can subscribe the team to bugs, branches, and blueprints.
 
--  **Owner**: the owner can change the team's description and membership
-   rules, and appoint team admins. The owner is also an administrator by default,
-   but can choose to leave the team.``
+-  **Owner**: the owner can change the team's description and membership rules, and appoint team admins. The owner is also an administrator by default, but can choose to leave the team.``
 
 These roles can be held by other teams, as well as by people.
 
@@ -154,12 +135,9 @@ have three components:
 
 -  **From**: the team's display name (e.g. Launchpad Beta Testers)
 -  **Reply address**: the prospective member's primary email address
--  **Subject**: `` `their Launchpad system name` wants to join``.
+-  **Subject**: ``<their Launchpad system name>`` wants to join.
 
-Let's take a look at the `membership list for the Launchpad Beta Testers
-team <https://launchpad.net/~launchpad-beta-testers/+members>`__. As a
-team administrator, you'll see a pencil icon beside each member's name.
-This allows you to edit existing memberships and new applications.
+Let's take a look at the `membership list for the Launchpad Beta Testers team <https://launchpad.net/~launchpad-beta-testers/+members>`_. As a team administrator, you'll see a pencil icon beside each member's name. This allows you to edit existing memberships and new applications.
 
 This is Chris Jones' application.
 
@@ -186,18 +164,14 @@ reminder to review their membership.
 
 You can both:
 
--  set all subsequent memberships to expire after a specified number of
-   days, on your team's ``Change details`` page
--  and choose a membership expiry date for individual members, when
-   approving or editing that person's membership.
+-  set all subsequent memberships to expire after a specified number of days, on your team's ``Change details`` page
+-  and choose a membership expiry date for individual members, when approving or editing that person's membership.
 
 Launchpad emails anyone who has a team membership that is about to
 expire. How they renew their membership is up to you:
 
--  the member must apply to renew: if you want to review someone's
-   contribution to the team
--  allow the member to renew: if you're happy for existing members to
-   remain in the team but you want to ensure they're still interested
+-  the member must apply to renew: if you want to review someone's contribution to the team
+-  allow the member to renew: if you're happy for existing members to remain in the team but you want to ensure they're still interested
 -  automatic renewal.
 
 Bulk moderation
@@ -210,14 +184,7 @@ members`` link below the ``Proposed members`` list.
 Teams joining teams
 -------------------
 
-`Pyroom <https://launchpad.net/pyroom>`__ is a simple text editor
-designed to minimise distractions. The Pyroom developers use Launchpad
-to track bugs, host code and make translations. In addition to a general
-`Pyroom team <https://launchpad.net/~pyroom-team>`__, they also have a
-`bug team <https://launchpad.net/~pyroom-bugsquad>`__ that acts as the
-project's bug contact and a `dev
-team <https://launchpad.net/~pyroom-dev>`__ that has owns its trunk
-development branch.
+`Pyroom <https://launchpad.net/pyroom>`_ is a simple text editor designed to minimise distractions. The Pyroom developers use Launchpad to track bugs, host code and make translations. In addition to a general `Pyroom team <https://launchpad.net/~pyroom-team>`_, they also have a `bug team <https://launchpad.net/~pyroom-bugsquad>`_ that acts as the project's bug contact and a `dev team <https://launchpad.net/~pyroom-dev>`_ that has owns its trunk development branch.
 
 Because teams behave just like people in Launchpad, the Pyroom bug and
 dev teams can join the main Pyroom team. Thanks to that, members of
@@ -227,10 +194,8 @@ they have access to everything that a direct member has.
 There are two ways for one team to join another team and which you use
 depends on your role:
 
--  **Your team is joining another**: visit the team you want your team
-   to join, and choose the ``Add one of my teams`` link.
--  **You're adding another team to yours**: Use the ``Add member``
-   link, then add the team just as you would a person.
+-  **Your team is joining another**: visit the team you want your team to join, and choose the ``Add one of my teams`` link.
+-  **You're adding another team to yours**: Use the ``Add member`` link, then add the team just as you would a person.
 
 If you add another team to your own, you're actually inviting that team
 to join. Launchpad will email the other team's admins with your
@@ -240,6 +205,4 @@ yours.
 Further information
 -------------------
 
-Good communication within a team is essential. Let's set up a team
-`mailing list <Teams/MailingLists>`__ to help members discuss their
-work.
+Good communication within a team is essential. Let's set up a team :ref:`launchpad-mailing-lists` to help members discuss their work.

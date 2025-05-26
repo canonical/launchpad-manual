@@ -311,6 +311,8 @@ Launchpad <https://launchpad.net/~launchpad-translators>`__ and
 subscribe to the mailing list. On this list you can announce your new
 project and ask people to translate it.
 
+.. _exporting-translations-from-launchpad:
+
 Exporting translations from Launchpad
 -------------------------------------
 

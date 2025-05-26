@@ -1,3 +1,5 @@
+.. _launchpad-web-services-api:
+
 Launchpad web services API
 ==========================
 
@@ -11,64 +13,38 @@ addition to accessing them through the Launchpad website. The service is
 designed around the principles of REST, with the goals of simplicity and
 transparency.
 
--  If you're the end-user of an application like Ground Control, you
-   don't need to know about the API at all: you just need to know `how
-   to integrate your Launchpad account with a third-party
-   application <API/ThirdPartyIntegration>`__.
+-  If you're the end-user of an application like Ground Control, you don't need to know about the API at all: you just need to know `how to integrate your Launchpad account with a third-party application <use-the-python-api>`.
 
-.. raw:: html
-
-   <!-- end list -->
-
--  `launchpadlib <API/launchpadlib>`__ is the official Python client
+-  :ref:`launchpadlib` is the official Python client
    library for Launchpad's web service.
 
-.. raw:: html
+    ::
 
-   <!-- end list -->
-
-::
-
-      >>> me = launchpad.me
-      >>> me.display_name = 'My new display name'
-      >>> me.lp_save()
+        >>> me = launchpad.me
+        >>> me.display_name = 'My new display name'
+        >>> me.lp_save()
 
 -  Developers who aren't Python programmers, or who are interested in
-   the inner workings of the web service, should read `the hacking
-   document <API/Hacking>`__.
+   the inner workings of the web service, should read :ref:`the hacking document <developing-the-launchpad-project>`.
 
-.. raw:: html
+    ::
 
-   <!-- end list -->
+        PATCH /beta/+me HTTP/1.1
+        Host: api.launchpad.net
+        Content-type: application/json
 
-::
+        { "display_name" : "My new display name" }
 
-      PATCH /beta/+me HTTP/1.1
-      Host: api.launchpad.net
-      Content-type: application/json
-
-      { "display_name" : "My new display name" }
-
--  See our directory of `clients <Clients>`__ and `code that uses the
-   Launchpad APIs <API/Uses>`__ for examples. Also, we have a page of
-   `example code <API/Examples>`__.
-
-.. raw:: html
-
-   <!-- end list -->
+-  See our directory of :ref:`code that uses the Launchpad APIs <table-of-applications-using-the-api>` for examples. Also, we have a page of :ref:`example code <use-the-python-api>`.
 
 -  If you're writing your own interface to Launchpad, instead of using
-   launchpadlib, you'll need to know how `OAuth <http://oauth.net/>`__
-   works. `Signing Requests <API/SigningRequests>`__ explains how to
+   launchpadlib, you'll need to know how `OAuth <http://oauth.net/>`_
+   works. :ref:`Signing Requests <sign-web-requests>` explains how to
    walk your end-users through the process of getting a set of OAuth
    credentials that you can use to make Launchpad web service requests
    on their behalf.
 
-.. raw:: html
-
-   <!-- end list -->
-
--  The `reference documentation <http://launchpad.net/+apidoc/>`__
+-  The `reference documentation <http://launchpad.net/+apidoc/>`_
    describes every published object and operation in a language-neutral
    form.
 

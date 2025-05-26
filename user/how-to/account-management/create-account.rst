@@ -1,3 +1,5 @@
+.. _create-and-personalise-your-launchpad-account:
+
 Create and personalise your Launchpad account
 =============================================
 
@@ -7,8 +9,8 @@ To create a new Launchpad account, visit the `account sign-up <https://launchpad
 
 A few things to note:
 
-* **Confirmation email:** If you don't receive a confirmation email from Launchpad it may have been incorrectly trapped by a spam filter. If you think this has happened, try registering using a `Gmail <http://mail.google.com/>`_ address. You can always change your registered email address later on. If that still doesn't work, `let us know <https://help.launchpad.net/Feedback>`_.  
-* **Display name:** Launchpad will ask you for a display name. This is the name people will see on your profile page and next to work that you do. Many people choose to use their real name or a widely recognised pseudonym here.  
+* **Confirmation email:** If you don't receive a confirmation email from Launchpad it may have been incorrectly trapped by a spam filter. If you think this has happened, try registering using a `Gmail <http://mail.google.com/>`_ address. You can always change your registered email address later on. If that still doesn't work, :ref:`let us know <talk-to-us-about-launchpad>`.
+* **Display name:** Launchpad will ask you for a display name. This is the name people will see on your profile page and next to work that you do. Many people choose to use their real name or a widely recognised pseudonym here.
 * **Protecting your email address:** Your email address is only visible to registered Launchpad users and not search engine spiders or spam bots. However, you can hide it from everyone at any time.
 
 Once you've created your account, it's time to tell other Launchpad users a bit about yourself.
@@ -20,10 +22,10 @@ When you first create your account, your profile looks pretty bare. You can add 
 
 You can personalise your profile in a few different ways:
 
-* `add a personal message <https://launchpad.net/~/+edithomepage>`_ to your profile  
-* `register additional email addresses <https://launchpad.net/~/+editemails>`_  
-* `link to your project wiki pages <https://launchpad.net/~/+editwikinames>`_  
-* publish your `IRC nicks <https://launchpad.net/~/+editircnicknames>`_ and `Jabber identities <https://launchpad.net/~/+editjabberids>`_  
+* `add a personal message <https://launchpad.net/~/+edithomepage>`_ to your profile
+* `register additional email addresses <https://launchpad.net/~/+editemails>`_
+* `link to your project wiki pages <https://launchpad.net/~/+editwikinames>`_
+* publish your `IRC nicks <https://launchpad.net/~/+editircnicknames>`_ and `Jabber identities <https://launchpad.net/~/+editjabberids>`_
 * tell Launchpad `your location and timezone <https://launchpad.net/~/+editlocation>`_.
 
 One of the easiest ways to stamp your mark on Launchpad is to `upload a profile picture <https://launchpad.net/~/+edit>`_. It should be 192x192 and no more than 100 KB.
@@ -35,18 +37,15 @@ You've already chosen your display name - i.e. the name other people will see ne
 
 Launchpad refers to this as your name and it's mostly used in URLs. If you're an Ubuntu member, it also forms part of your Ubuntu.com email address in the format name@ubuntu.com.
 
-**For example:** If your Launchpad name were matthew.revell, your Launchpad home page would be `https://launchpad.net/\~matthew.revell <https://launchpad.net/~matthew.revell>`_ and your Ubuntu email address matthew.revell@ubuntu.com.
+**For example:** If your Launchpad name were ``matthew.revell``, your Launchpad home page would be ``https://launchpad.net/~matthew.revell``, and your Ubuntu email address ``matthew.revell@ubuntu.com``.
 
 If you're unhappy with your automatically generated Launchpad name, now's a good time to `change it <https://launchpad.net/~/+edit>`_. Changing it once you've started using Launchpad in full may be awkward as it will also change the URLs of some of your work.
+
+See :ref:`your-email-address-is-already-in-launchpad`.
 
 Next step
 ---------
 
 Launchpad trusts that you are who you claim to be. Later, such as when you're using the bug tracker's email interface, you'll need to use an electronic signature to prove your identity.
 
-Setting up such a signature is easy and that's what we're doing next: `uploading an OpenPGP key <https://help.launchpad.net/YourAccount/ImportingYourPGPKey>`_.
-
-Read more about troubleshooting account creation errors:
-
-* `Your email address is already in use <Creating a new account/YourAccount/NewAccount/Your email address
-  is already in use>`__
+Setting up such a signature is easy and that's what we're doing next: :ref:`uploading an OpenPGP key <import-an-opengpg-key>`.

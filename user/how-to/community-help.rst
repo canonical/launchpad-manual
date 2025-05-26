@@ -1,16 +1,16 @@
 ##################
 Help the community
 ##################
+
 .. include:: /includes/important_not_revised_help.rst
 
 
 You can help other members of the free software community quickly and with
-little effort by answering support questions in `Launchpad Answers
-</explanation/launchpad-answers>`_.
+little effort by answering support questions in `Launchpad Answers <https://answers.launchpad.net>`_.
 
 Anyone can answer any question in Launchpad. However, if you're keen to
 help out on an on-going basis, you can make sure you stay up to date
-with new questions by becoming an \``answer contact``.
+with new questions by becoming an ``answer contact``.
 
 Answer contacts
 ===============
@@ -21,11 +21,11 @@ As an answer contact, you have two main jobs:
 -  creating stock answers to frequently asked questions.
 
 You or anyone else can volunteer to become an answer contact for a
-project. All you have to do is click the \```Set answer contact``\` link
+project. All you have to do is click the ``Set answer contact`` link
 on a project or distro's Answers overview page. If you're the admin of a
 team, you can also set that team to be an answer contact.
 
-/!\\ **Important:** when you become an answer contact, you're asking
+**Important:** when you become an answer contact, you're asking
 Launchpad to send you an email each time someone asks a question about
 that project or distro. If you make one of your teams an answer contact,
 you're subscribing each member to also receive that email. You should
@@ -48,7 +48,7 @@ Once you're an answer contact, Launchpad will email you each time
 someone posts a new question to your chosen project or distribution.
 
 You can also see a list of questions awaiting an answer by using the
-\```Open``\` filter towards the top of the page.
+``Open`` filter towards the top of the page.
 
 Handling frequently asked questions
 -----------------------------------
@@ -73,16 +73,12 @@ list.
 
 **Step 3:** Click **This is a FAQ** in the menu.
 
-\||<tablestyle="font-size: 0.8em; width:30%; background:#F1F1ED; margin:
-1em 1em 1em 0;" style="padding:0.5em;">|\| \||<style="text-align:
-center;">\ **This is a FAQ**\ \|\|
-
 **Step 4:** Launchpad will search for any existing FAQ answers that
 appear to be relevant. If you see a relevant answer, select the radio
 button beside. Otherwise, you can enter your own search terms to look
 for other FAQ answers that may be useful to the original questioner.
 
-{i} **Note:** If you can't find a relevant answer but think that the
+**Note:** If you can't find a relevant answer but think that the
 question should be considered a FAQ, skip to the next section *Creating
 a new FAQ*.
 
@@ -104,12 +100,7 @@ Creating a new FAQ
 FAQ answer, only answer contacts for the project can create a new FAQ
 answer.
 
-**Step 5:** If you can't find a suitable FAQ answer, click **create a
-new FAQ** in the page's introductory text.
-
-\||<tablestyle="font-size: 0.8em; width:30%; background:#F1F1ED; margin:
-1em 1em 1em 0;" style="padding:0.5em;">|\| \||<style="text-align:
-center;">\ **Create a new FAQ**\ \|\|
+**Step 5:** If you can't find a suitable FAQ answer, click **create a new FAQ** in the page's introductory text.
 
 **Step 6:** Specify relevant keywords to improve the chances of your FAQ
 being found in searches.
@@ -135,7 +126,7 @@ headers to help you filter incoming messages.
 Rationale
 ---------
 
-The \```X-Launchpad-Message-Rationale``\` header appears in all email
+The ``X-Launchpad-Message-Rationale`` header appears in all email
 that Launchpad sends you. This tells you why Launchpad sent you the
 email, which is particularly useful if you want to find the quickest way
 to stop that type of email.
@@ -147,12 +138,12 @@ to stop that type of email.
 X-Launchpad-Question
 --------------------
 
-Emails from Launchpad Answers have the \```X-Launchpad-Question``\`
+Emails from Launchpad Answers have the ``X-Launchpad-Question``
 header, which is made up of:
 
 -  **Product:** the project that the question is about.
 -  **Status:** open, needs info, answered, solved, invalid or expired -
-   more `question statuses <Answers/AskingForHelp#Question_statuses>`__.
+   more: :ref:`question-statuses`.
 -  **Assignee:** the person assigned to work on the question, if any.
 -  **Priority:** always set to normal.
 -  **Language:** the language the questioner chose when asking their
@@ -169,7 +160,7 @@ Next step
 =========
 
 Different projects favour different ways of planning future releases and
-organising chunks of work. `Blueprint <Blueprint>`__ is Launchpad's
+organising chunks of work. `Blueprint <https://launchpad.net/blueprint>`_ is Launchpad's
 light-touch specification tracker that makes it easy to organise and
 follow future work.
 
