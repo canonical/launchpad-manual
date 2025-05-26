@@ -1,12 +1,14 @@
-#######################
+.. _application-integration:
+
 Application integration
 #######################
+
 .. include:: /includes/important_not_revised_help.rst
 
 
 Third-party developers have written applications like Ground Control
 that let you use Launchpad from the desktop, rather than through a web
-browser. You can also use the \`launchpadlib\` library to write your own
+browser. You can also use the ``launchpadlib`` library to write your own
 scripts that automate common tasks.
 
 To use these scripts and desktop applications, you'll need to grant them
@@ -82,7 +84,7 @@ application can't communicate with the GNOME keyring.
      File "/usr/lib/python2.7/dist-packages/keyring/backend.py", line 139, in get_password
        items = gnomekeyring.find_network_password_sync(username, service)
    gnomekeyring.IOError
-      
+
 
 This is because your SSH session doesn't have access to the dbus used
 for inter-process communication. You can work around it by adding this
@@ -93,7 +95,7 @@ to your .bashrc:
    if test -z "$DBUS_SESSION_BUS_ADDRESS" ; then
        export `dbus-launch`
    fi
-      
+
 
 Put that in your .bashrc, and you should be able to use applications
 that feature Launchpad integration over an X forwarded session.
@@ -162,13 +164,7 @@ detects when you've authorized the integration.
 If your credential is compromised
 =================================
 
-If you give some computer access to your Launchpad account, and the
-computer is stolen, then you should (among other things) revoke that
-computer's Launchpad authorization. You can do that from the Launchpad
-website: visit `your list of authorized
-applications <https://launchpad.net/people/+me/+oauth-tokens>`__, find
-the "System-wide" authorization for the computer that was stolen, and
-click the "Revoke authorization" button underneath it.
+If you give some computer access to your Launchpad account, and the computer is stolen, then you should (among other things) revoke that computer's Launchpad authorization. You can do that from the Launchpad website: visit `your list of authorized applications <https://launchpad.net/people/+me/+oauth-tokens>`_, find the "System-wide" authorization for the computer that was stolen, and click the "Revoke authorization" button underneath it.
 
 Of course, "your computer gets stolen" is just one extreme way a
 Launchpad integration credential might be compromised. Instead of
@@ -179,7 +175,4 @@ only to find that website acquired by a company you don't trust. Or you
 might accidentally choose to permanently integrate your Launchpad
 account into someone else's computer while using it.
 
-However it happens: if you ever need to stop a computer, application, or
-website from using your Launchpad account, you can revoke its
-authorization from `your list of authorized
-applications <https://launchpad.net/people/+me/+oauth-tokens>`__.
+However it happens: if you ever need to stop a computer, application, or website from using your Launchpad account, you can revoke its authorization from `your list of authorized applications <https://launchpad.net/people/+me/+oauth-tokens>`_.

@@ -1,10 +1,12 @@
+.. _use-the-trac-plugin:
+
 Use the Trac plugin
 ===================
 
 .. include:: /includes/important_not_revised_help.rst
 
 Launchpad can communicate directly with bug trackers that use Trac
-through the `trac-launchpad <https://launchpad.net/trac-launchpad>`__
+through the `trac-launchpad <https://launchpad.net/trac-launchpad>`_
 plugin.
 
 If you run a Trac instance, you can use the plugin to:
@@ -24,18 +26,16 @@ following:
 
 -  Trac 0.10.x or 0.11
 -  Setuptools for Python
--  `TracXMLRPC Plugin <http://trac-hacks.org/wiki/XmlRpcPlugin>`__ (this
+-  `TracXMLRPC Plugin <http://trac-hacks.org/wiki/XmlRpcPlugin>`_ (this
    must be installed for any Trac instance to which you wish to add the
    Launchpad plugin).
 -  (for Trac 0.11+) Genshi 0.5 or better
--  (for Trac 0.10) a couple of patches to the Trac core (see
-   `below <#patching-0.10>`__).
+-  (for Trac 0.10) a couple of patches to the Trac core
 
 Get the plugin
 --------------
 
-You can download the plugin from its `Launchpad project
-page <https://launchpad.net/trac-launchpad/+download>`__.
+You can download the plugin from its `Launchpad project page <https://launchpad.net/trac-launchpad/+download>`_.
 
 Patch Trac ``0.10``
 -------------------
@@ -51,8 +51,7 @@ Trac installation:
 System-wide installation
 ------------------------
 
-To install the plugin, unpack the tarball to ``/tmp`` and run ``python
-setup.py install`` in the unpacked directory:
+To install the plugin, unpack the tarball to ``/tmp`` and run ``python setup.py install`` in the unpacked directory:
 
 ::
 
@@ -98,16 +97,13 @@ bugtracker with Launchpad, if it isn't already registered.
 
 **Step 1:** Visit https://launchpad.net/bugs/bugtrackers
 
-**Step 2:** Check to see if your bugtracker is registered. If it isn't,
-click the `Register another
-bugtracker <https://launchpad.net/bugs/bugtrackers/+newbugtracker>`__
-link at the bottom of the page.
+**Step 2:** Check to see if your bugtracker is registered. If it isn't, click the `Register another bugtracker <https://launchpad.net/bugs/bugtrackers/+newbugtracker>`_ link at the bottom of the page.
 
 **Step 3:** Enter your bugtracker's details and click the ``Add``
 button.
 
 **Step 4:** Your bug tracker should now show up in the list of
-`registered bugtrackers <http://launchpad.net/bugs/bugtrackers>`__.
+`registered bugtrackers <http://launchpad.net/bugs/bugtrackers>`_.
 
 **Step 5:** Look through Launchpad to find bugs that are being tracked
 in Launchpad that are also tracked in your instance of Trac and then
@@ -118,9 +114,7 @@ bugs filed against that package that you're also tracking upstream.
 Can't find suitable bugs in Launchpad?
 --------------------------------------
 
-If you can't see any suitable bugs already in Launchpad, you can create
-some test bugs in Launchpad's `staging
-environment <https://staging.launchpad.net>`__.
+If you can't see any suitable bugs already in Launchpad, you can create some test bugs in Launchpad's `staging environment <https://staging.launchpad.net>`_.
 
 .. note::
     The database for staging is reset every day with a fresh copy
@@ -160,10 +154,7 @@ user.
 Next steps
 ----------
 
-Once you've installed the plugin, `file a question using Launchpad
-Answers <https://answers.launchpad.net/malone>`__ to let the Launchpad
-team know that you're running the plugin. This will allow the Launchpad
-Bugs developers and sys admins to finish the setup from their end.
+Once you've installed the plugin, `file a question using Launchpad Answers <https://answers.launchpad.net/malone>`_ to let the Launchpad team know that you're running the plugin. This will allow the Launchpad Bugs developers and sys admins to finish the setup from their end.
 
 If you'd like to write a Launchpad plugin for another bug tracker,
-follow our `plugin API spec <Bugs/PluginAPISpec>`__.
+follow our :ref:`plugin API spec <bug-tracker-api-plugin>`.

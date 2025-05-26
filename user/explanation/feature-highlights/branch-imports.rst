@@ -1,3 +1,5 @@
+.. _branch-imports:
+
 Branch imports
 ==============
 
@@ -24,8 +26,7 @@ Trunk imports
 
 Launchpad supports the import of the primary development trunk of a
 project from CVS or SVN. A good example is the Drupal project. Launchpad
-imports Drupal's trunk as `its "main"
-series <https://launchpad.net/drupal/main>`__ in Launchpad.
+imports Drupal's trunk as `its "main" series <https://launchpad.net/drupal/main>`_ in Launchpad.
 
 As you can see, there's a Bazaar branch of Drupal's code. Launchpad
 updates that branch regularly by importing the latest from Drupal's
@@ -35,7 +36,7 @@ Bazaar branch of it and then upload it back to Launchpad.
 
 Perhaps the most visible difference between a branch that's the result
 of an import from CVS or Subversion is that the branch's owner is the
-`VCS imports <https://code.launchpad.net/~vcs-imports>`__ team/
+`VCS imports <https://code.launchpad.net/~vcs-imports>`_ team.
 
 Requesting an import
 --------------------
@@ -64,8 +65,7 @@ Bazaar branch is identical to a checkout of the CVS branch. But getting
 it to that point may well require inspection and custom work.
 
 For this reason, we don't have an automated process for the import.
-Instead, you `request
-one <https://code.launchpad.net/+code-imports/+new>`__ and we put it in
+Instead, you `request one <https://code.launchpad.net/+code-imports/+new>`_ and we put it in
 a queue. Sometimes it takes just an hour or two, sometimes it can take
 days to get a good import together. In a very few cases, the old
 repositories are so wedged that we can't get all the history exactly

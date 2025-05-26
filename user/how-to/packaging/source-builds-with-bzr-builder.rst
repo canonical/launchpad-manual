@@ -1,3 +1,5 @@
+.. _set-up-daily-builds-with-bzr-builder:
+
 Set up daily builds with ``bzr-builder``
 ========================================
 
@@ -10,8 +12,7 @@ test your recipes and builds before you send them to Launchpad.
 Installation
 ------------
 
-The easiest way to install ``bzr-builder`` is to run ``apt-get install
-bzr-builder``.
+The easiest way to install ``bzr-builder`` is to run ``apt-get install bzr-builder``.
 
 Alternatively, if you find you need a newer version than is packaged in
 Ubuntu, you can pull down the branch from Launchpad and install it in
@@ -46,13 +47,15 @@ Help for the individual commands is available as:
    $ bzr help build
    $ bzr help dailydeb
 
+.. _recipes:
+
 Recipes
 -------
 
 ``bzr-builder`` works with "recipes" that are descriptions of the steps
 needed to construct a package from the various Bazaar branches.
 
-`Read our guide to writing recipes <Packaging/SourceBuilds/Recipes>`__.
+:ref:`Read our guide to writing recipes <create-a-source-package-recipe>`.
 
 Running commands in recipes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -99,7 +102,7 @@ building of the package.
 Building the recipe
 ~~~~~~~~~~~~~~~~~~~
 
-In order to build the recipe you need to use the \`bzr dailydeb\`
+In order to build the recipe you need to use the ``bzr dailydeb``
 command.
 
 ::
@@ -116,5 +119,4 @@ package and install the results.
 Next steps
 ----------
 
-There's more in the `daily builds knowledge
-base <Packaging/SourceBuilds>`__.
+There's more in the :ref:`daily builds knowledge base <building-a-source-package>`.

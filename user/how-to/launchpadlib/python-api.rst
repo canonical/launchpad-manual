@@ -1,15 +1,13 @@
+.. _use-the-python-api:
+
 Use the Python API
 ==================
 
 .. include:: /includes/important_not_revised_help.rst
 
-This page has a bunch of examples of how to use \`launchpadlib\` and the
+This page has a bunch of examples of how to use ``launchpadlib`` and the
 Python APIs. Think of it like a cookbook that you can add your favourite
 recipe to.
-
-If this duplicates `launchpadlib <API/launchpadlib>`__ or
-`API/Uses <API/Uses>`__ too much, then please merge or edit pages as
-needed.
 
 Find out if your launchpadlib version is recent enough (>= 1.5.1)
 -----------------------------------------------------------------
@@ -44,7 +42,7 @@ in the comfort of your own home.
       launchpad = Launchpad.login_with('hello-world', 'production')
       print('Hello, %s!' % launchpad.me.display_name)
 
-The \`hello-world\` bit is the name of the application and 'production'
+The ``hello-world`` bit is the name of the application and 'production'
 means connect to the production server.
 
 If your app is only going to read public data from launchpad, and not
@@ -56,7 +54,7 @@ Launchpad that you only care about reading public data.
       from launchpadlib.launchpad import Launchpad
       launchpad = Launchpad.login_anonymously('just testing', 'production')
 
-See also `guide to app login <API/launchpadlib#Getting_started>`__.
+See also :ref:`guide to app login <launchpadlib>`.
 
 Does a bug have a release target?
 ---------------------------------
@@ -64,14 +62,14 @@ Does a bug have a release target?
 ::
 
       from launchpadlib.launchpad import Launchpad
-      
+
       def has_target(bug, series):
           series_url = str(series)
           for task in bug.bug_tasks:
               if str(task).startswith(series_url):
                   return True
           return False
-      
+
       launchpad = Launchpad.login_with('hello-world', 'production')
       b = launchpad.bugs[324614]
       ubuntu = launchpad.distributions["ubuntu"]
@@ -85,7 +83,7 @@ Listing the current package versions in a particular distroseries
 ::
 
       from launchpadlib.launchpad import Launchpad
-      
+
       launchpad = Launchpad.login_with('hello-world', 'production')
       ubuntu = launchpad.distributions["ubuntu"]
       archive = ubuntu.main_archive
@@ -121,7 +119,7 @@ re-published.
 ::
 
       from launchpadlib.launchpad import Launchpad
-      
+
       launchpad = Launchpad.login_with('hello-world', 'production')
       ubuntu = launchpad.distributions["ubuntu"]
       archive = ubuntu.main_archive
@@ -142,9 +140,9 @@ Cache Launchpad credentials per application
 -------------------------------------------
 
 *This one is for older launchpadlibs. If you are using a current
-version, just replace the code below with \`Launchpad.login_with`.*
+version, just replace the code below with ``Launchpad.login_with.*``
 
-From <https://launchpad.net/hydrazine> - use your own application name.
+From `<https://launchpad.net/hydrazine>`_ - use your own application name.
 
 ::
 
@@ -206,7 +204,7 @@ Turn on debugging output
 
 This enables detailed traces of requests launchpadlib makes. This can be
 worthwhile for debugging issues or optimizing performance. (See also
-`bug 520219 <http://launchpad.net/bugs/520219>`__ asking for better
+`bug 520219 <http://launchpad.net/bugs/520219>`_ asking for better
 logging here.)
 
 Get a useful error message from launchpadlib
@@ -233,15 +231,15 @@ Fetching an object's raw JSON
 
 Launchpadlib provides a nice Python wrapper around JSON objects, but it
 does allow you to directly access the JSON itself. Each launchpadlib
-object has a \`[Iself_link\` property which you can use to view the JSON
+object has a ``[Iself_link`` property which you can use to view the JSON
 in a regular web brower, but you can not do this while using
 launchpadlib's access permissions. This recipe shows you how to fetch
 the JSON for an object with the same permissions as the currently
 running script.
 
-We can use the semi-private \`_browser\` member of the current
-\`Launchpad\` object to grab the raw JSON using the current
-authentication. We can pass a launchpadlib object's \`self_link\` URL to
+We can use the semi-private ``_browser`` member of the current
+``Launchpad`` object to grab the raw JSON using the current
+authentication. We can pass a launchpadlib object's ``self_link`` URL to
 the browser, the same as launchpadlib itself does.
 
 ::
@@ -260,13 +258,13 @@ the browser, the same as launchpadlib itself does.
        if not person:
            # Oops, this person does not exist.
            return None
-       
+
        return browser.get(person.self_link)
 
 Get the type of requested code review
 -------------------------------------
 
-The trick here (`bug 526362 <https://bugs.launchpad.net/bugs/526362>`__)
+The trick here (`bug 526362 <https://bugs.launchpad.net/bugs/526362>`_)
 is that the review type is actually an attribute of the pending review,
 and the pending review is recorded as a 'vote' with no vote or comment.
 So you need to iterate the

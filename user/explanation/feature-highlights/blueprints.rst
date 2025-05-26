@@ -1,3 +1,5 @@
+.. _blueprints-lightweight-specifications:
+
 Blueprints: lightweight specifications
 ======================================
 
@@ -26,7 +28,7 @@ lists of all the ideas, proposals or suggestions that are "out there"
 for a given project. For example, Ubuntu has more than 1,000 such
 blueprints, in various states of completion or discussion:
 
-`` ``\ https://blueprints.launchpad.net/ubuntu
+https://blueprints.launchpad.net/ubuntu
 
 At the time of writing, the most "important" of these blueprints were:
 
@@ -100,7 +102,7 @@ project thinks are important to track for the next major series.
 
 Here is the list for the Gutsy (7.10) release of Ubuntu:
 
-`` ``\ https://blueprints.launchpad.net/ubuntu/gutsy
+https://blueprints.launchpad.net/ubuntu/gutsy
 
 As you can see, this is a much shorter list of around 100 blueprints,
 instead of 1100. These are blueprints that have been reviewed by the

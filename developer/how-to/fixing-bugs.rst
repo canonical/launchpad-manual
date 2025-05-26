@@ -23,7 +23,7 @@ Discuss It
 ----------
 
 Don't just start hacking away. First, discuss the bug and your proposed fix in
-one of our :doc:`channels<../help>`.
+one of our :ref:`channels <getting-help>`.
 
 Once you have a plan of attack, please mention in the bug that you've started
 on it, that is mark it as "In Progress" and describe your plan there.

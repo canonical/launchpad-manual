@@ -1,3 +1,5 @@
+.. _packaging:
+
 Packaging
 =========
 
@@ -18,45 +20,26 @@ Launchpad can help you build and distribute two types of Ubuntu package:
 official packages and your own packages in your personal package archive
 (PPA), which is your own apt repository.
 
--  `Personal package archives <Packaging/PPA>`__: build and
-   distribute Ubuntu packages in your apt repository.
+-  :ref:`personal-package-archive`: build and distribute Ubuntu packages in your apt repository.
 
-   -  `Installing software from a
-      PPA <Packaging/PPA/InstallingSoftware>`__: how to get and
-      use software from a PPA.
-   -  `Building a source
-      package: <Packaging/PPA/BuildingASourcePackage>`__ how to adapt
-      your Ubuntu package building skills to your PPA
-   -  `Uploading a source package <Packaging/PPA/Uploading>`__
+   -  :ref:`Installing software from a PPA <install-software-from-ppas>`: how to get and use software from a PPA.
+   -  :ref:`Building a source package: <building-a-source-package>` how to adapt your Ubuntu package building skills to your PPA
+   -  :ref:`Uploading a source package <upload-a-package-to-a-ppa>`
 
--  `Common package upload errors <Packaging/UploadErrors>`__
--  `Prioritising package builds <Packaging/BuildScores>`__: find
-   out how Launchpad calculates the priority of package builds (i.e.
-   build scores)
--  `Builder specifiction <Packaging/BuilderSpecs>`__
--  `Official Ubuntu
-   packages <https://wiki.ubuntu.com/MOTU/GettingStarted>`__: find
-   out about becoming an Ubuntu packager with the MOTU team
+-  :ref:`Common package upload errors <troubleshoot-package-upload-errors>`
 
-.. raw:: html
+-  :ref:`Prioritising package builds <prioritising-builds>`: find out how Launchpad calculates the priority of package builds (i.e. build scores)
 
-   <!-- end list -->
+-  `Official Ubuntu packages <https://wiki.ubuntu.com/MOTU/GettingStarted>`_: find out about becoming an Ubuntu packager with the MOTU team
 
--  `package
-   recipes <https://help.launchpad.net/Packaging/SourceBuilds/Recipes>`__:
-   automatically assemble a package from bzr branches (beta)
+-  :ref:`package recipes <source-package-recipes>`: automatically assemble a package from bzr branches (beta)
 
-.. raw:: html
-
-   <!-- end list -->
-
--  `Packaging
-   binaries <https://wiki.ubuntu.com/MOTU/School/PackagingWithoutCompiling>`__:
-   how to go about packaging software which is only available as a
-   binary.
+-  `Packaging binaries <https://wiki.ubuntu.com/MOTU/School/PackagingWithoutCompiling>`_: how to go about packaging software which is only available as a binary.
 
 To get started with your own source package recipes, you'll need source code in Launchpad,
 packaging information and a recipe that brings them all together.
+
+.. _source-package-recipes:
 
 Source package recipes
 ----------------------
@@ -186,11 +169,9 @@ two ways to include those branches additional branches:
 Merging
 ~~~~~~~
 
-.. list-table::
-   :header-rows: 1
+::
 
-   * - merge SHORT-NAME URL [REVISION]
-   * - 
+    merge SHORT-NAME URL [REVISION]
 
 Most often you'll use the "merge" command:
 
@@ -228,11 +209,9 @@ use the following and only have to adjust some variable references:
 Nesting
 ~~~~~~~
 
-.. list-table::
-   :header-rows: 1
+::
 
-   * - nest SHORT-NAME URL TARGET-DIRECTORY [REVISION]
-   * - 
+    nest SHORT-NAME URL TARGET-DIRECTORY [REVISION]
 
 Nesting works in a similar way but has more scope:
 
@@ -257,7 +236,7 @@ Here's how:
 ::
 
    nest pyfoo lp:pyfoo foo
-     merge branding lp:~bob/pyfoo/ubuntu-branding
+   merge branding lp:~bob/pyfoo/ubuntu-branding
 
 If you're using git, then the format is similar, but you should normally
 provide a branch name as a revision specifier:
@@ -265,7 +244,7 @@ provide a branch name as a revision specifier:
 ::
 
    nest pyfoo lp:pyfoo foo master
-     merge branding lp:~bob/pyfoo ubuntu-branding
+   merge branding lp:~bob/pyfoo ubuntu-branding
 
 Be careful not to confuse the short name used for substitution variables
 (here, ``branding``) with the git branch name (here, ``ubuntu-branding``).
@@ -278,11 +257,9 @@ it is nested in your primary branch.
 nest-part
 ^^^^^^^^^
 
-.. list-table::
-   :header-rows: 1
+::
 
-   * - nest-part SHORT-NAME URL SOURCE-DIRECTORY [TARGET-DIRECTORY [REVISION]]
-   * - 
+    nest-part SHORT-NAME URL SOURCE-DIRECTORY [TARGET-DIRECTORY [REVISION]]
 
 If you want to nest only one directory from another branch, you can use
 ``nest-part``. It works in the same way as ``nest``, except that
@@ -497,9 +474,5 @@ strings. At best, this may be useful for information.
 Further information
 -------------------
 
-Let's look at `bzr-builder in more detail <https://help.launchpad.net/Packaging/SourceBuilds/BzrBuilder>`_.
-
-| `\< Daily builds getting started <https://help.launchpad.net/Packaging/SourceBuilds/GettingStarted>`_ | `bzr-builder in detail &gt; <https://help.launchpad.net/Packaging/SourceBuilds/BzrBuilder>`_ |
-
-
-
+- :ref:`Daily builds getting started <building-a-source-package>`
+- :ref:`bzr-builder in detail <set-up-daily-builds-with-bzr-builder>`

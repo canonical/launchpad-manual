@@ -1,3 +1,5 @@
+.. _translating-your-software:
+
 Translating your software
 =========================
 
@@ -11,13 +13,13 @@ should be aware while translating software using Launchpad Translations
 
 This guide does not include hint and tips about using Launchpad
 Translations (Rosetta) as a translation tool. For such information
-please read
-`Translations/StartingToTranslate <Translations/StartingToTranslate>`__.
+please read :ref:`preparing-to-translate`.
 
 List of language-specific guidelines
 ------------------------------------
 
-.. info::
+.. note::
+
     Before reading your language specific guide, please take a moment and
     read this general translation guide first
 
@@ -39,44 +41,20 @@ translation work in order to improve the translation quality:
 -  Pay attention to all section from the guidelines and always keep in
    touch with other translators
 
-.. raw:: html
-
-   <!-- end list -->
-
 -  When you have translated a string, read it again and see if there are
    any error or the translations sound right in your language.
-
-.. raw:: html
-
-   <!-- end list -->
 
 -  If the translated string does not make sense for you (or your
    mother/father), definitely it is wrong and you should redo/rephrase
    it.
 
-.. raw:: html
-
-   <!-- end list -->
-
 -  If it feasible, always ask another team member to review your
    translations.
-
-.. raw:: html
-
-   <!-- end list -->
 
 -  Translations consistency is an important aspect of translation
    quality.
 
-.. raw:: html
-
-   <!-- end list -->
-
 -  Terminology dictionary
-
-.. raw:: html
-
-   <!-- end list -->
 
 -  Before allowing new members in your team make sure they have
    previously done good translations and are aware of the team
@@ -161,9 +139,8 @@ sensitive: Example:
 
 menuchoice tag
 ~~~~~~~~~~~~~~
-"menuchoice" tag should include only "guibutton \| guiicon \| guilabel
-\| guimenu \| guimenuitem \| guisubmenu \| interface" tags. Don't
-include other tags or text outside of these tags.
+
+Don't include other tags or text outside of these tags.
 
 Example:
 
@@ -349,10 +326,6 @@ Here is a description of the most common scenarios:
    exactly the same translation or because the translator sent the
    translations back to upstream.
 
-.. raw:: html
-
-   <!-- end list -->
-
 -  **Red > Purple > Blue > Green**. The string was untranslated (Red),
    the translator translated it in Launchpad and there was no
    translation upstream (Purple). In the next translation import, the
@@ -366,16 +339,8 @@ Here is a description of the most common scenarios:
    Launchpad or upstream, depending on which one they might want to
    adopt.
 
-.. raw:: html
-
-   <!-- end list -->
-
 -  **Red > Green**. The translation has been done upstream and it has
    been imported into Launchpad.
-
-.. raw:: html
-
-   <!-- end list -->
 
 -  **Green > Blue**. A translator deliberately overrode an upstream
    translation. Upstream and Launchpad translations differ. These should
@@ -391,55 +356,27 @@ Below are some ideas, hints, for some information that could be included
 into the guidelines for your language:
 
 -  A section describing the current focus for translations. What
-   packages should be translated, their priority, due date... etc
-
-.. raw:: html
-
-   <!-- end list -->
+   packages should be translated, their priority, due date... etc.
 
 -  Create or provide a communication channel for all translators. It can
    be a forum, mailing list, IRC channel. The main usage of this channel
    is to support team work, ask for help or suggestions.
 
-.. raw:: html
-
-   <!-- end list -->
-
 -  Provide information about other team working on translations, links
    to other upstream projects. Try to keep in touch/sync with their
    work.
 
-.. raw:: html
-
-   <!-- end list -->
-
 -  Decide what grammatical mode or tense is used when translating into
    your language.
-
-.. raw:: html
-
-   <!-- end list -->
 
 -  Decide grammatical person and if you are going to use a formal or
    informal approach when translating software. T-V distinction.
 
-.. raw:: html
-
-   <!-- end list -->
-
 -  Decide a common set of terminology or dictionary to be used by all
    translators. This will help creating uniform translations.
 
-.. raw:: html
-
-   <!-- end list -->
-
 -  A section, or a dedicated page, containing examples of common errors,
-   together with an explanation of the error and the suggested solution
-
-.. raw:: html
-
-   <!-- end list -->
+   together with an explanation of the error and the suggested solution.
 
 -  A section, or a dedicated page, containing examples of strings that
    should not be translated.
@@ -458,13 +395,7 @@ Below you will find a set of common practices for running a team
    for your language and use it for talking about important aspect that
    affect all translations.
 
-.. raw:: html
-
-   <!-- end list -->
-
 -  Define a procedure for accepting new team members.
-
-   -  
 
       -  The acceptance level may vary according to the percentage of
          already finished translations. For languages with few
@@ -478,14 +409,8 @@ Below you will find a set of common practices for running a team
          are not good is a great help. Try to use a forum, mailinglist
          or IRC channel for giving feedback to potential new members.
 
-.. raw:: html
-
-   <!-- end list -->
-
 -  Create a webpage/wikipage for the translations guide. This guide
    should contain:
-
-   -  
 
       -  First rule: "If a translation does not make sense for you /
          your grandmother, definitely it is wrong!".
@@ -494,12 +419,7 @@ Below you will find a set of common practices for running a team
          example "Tile children" may sound funny in many languages so
          try "Arrange windows as tile". The original text is not always
          the correct one.
-      -  a common terminology or a link to a common terminology
-         dictionary or glossary. Don't forget about
-         `open-tran.eu <http://open-tran.eu>`__ . You can also install
-         `the glossary used by Romanian
-         teams <http://www.i18n.ro/glosar>`__ (`here is the
-         code <http://diacritice.svn.sourceforge.net/viewvc/diacritice/trunk/>`__)
+      -  a common terminology or a link to a common terminology dictionary or glossary. Don't forget about `open-tran.eu <http://open-tran.eu>`__ . You can also install `the glossary used by Romanian teams <http://www.i18n.ro/glosar>`__ (`here is the code <http://diacritice.svn.sourceforge.net/viewvc/diacritice/trunk/>`__)
       -  information about what should be translated and what not
       -  specific rules for translating into your language
       -  a list of frequent errors.
@@ -509,23 +429,11 @@ Below you will find a set of common practices for running a team
       -  inform the translators about other translation project and how
          we should cooperate and work together
 
-.. raw:: html
-
-   <!-- end list -->
-
 -  Make sure you have a good communication channel for all members of
    the team or subteam. Try to reach all communication types:
    mailinglist, forum, IRC channel.
 
-.. raw:: html
-
-   <!-- end list -->
-
 -  Let Launchpad know about your translation guide
-
-.. raw:: html
-
-   <!-- end list -->
 
 -  Create a webpage / wiki where people could find general information
    about your team, such as:
@@ -537,10 +445,6 @@ Below you will find a set of common practices for running a team
       dictionary)
    -  how to get in contact with the team (team contact or team members)
 
-.. raw:: html
-
-   <!-- end list -->
-
 -  Make sure the team act as a team.
 
    -  Keep the team members up to date with the latest actions
@@ -550,10 +454,6 @@ Below you will find a set of common practices for running a team
       translation work
    -  try to recruit new members into your translation team.
 
-.. raw:: html
-
-   <!-- end list -->
-
 -  From time to time take a look at what other people are doing. In many
    cases you are not the only team/person translating software in your
    language.
@@ -561,5 +461,4 @@ Below you will find a set of common practices for running a team
 Next steps
 ----------
 
-Find more about joining and creating `translations groups and
-teams <Translations/Groups>`__
+Find more about joining and creating :ref:`translations groups and teams <translation-groups>`

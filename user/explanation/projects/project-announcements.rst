@@ -1,9 +1,11 @@
+.. _publishing-project-announcements:
+
 Publishing project announcements
 ================================
 
 .. include:: /includes/important_not_revised_help.rst
 
-`Terminator <https://launchpad.net/terminator>`__ is a project dedicated
+`Terminator <https://launchpad.net/terminator>`_ is a project dedicated
 to concurrently displaying multiple terminal sessions as efficiently as
 possible. Like most projects, Terminator tells the world about its
 progress through regular announcements.
@@ -12,14 +14,9 @@ Using Launchpad, Terminator can publish their announcements in several
 places:
 
 -  on the project's overview page
--  on a dedicated `announcement page for
-   Terminator <https://launchpad.net/terminator/+announcements>`__
--  on a `Launchpad-wide announcements
-   page <https://launchpad.net/+announcements>`__
--  in Atom feeds both for `Terminator's
-   announcements <http://feeds.launchpad.net/terminator/announcements.atom>`__
-   and `all Launchpad project
-   announcements <http://feeds.launchpad.net/announcements.atom>`__.
+-  on a dedicated `announcement page for Terminator <https://launchpad.net/terminator/+announcements>`_
+-  on a `Launchpad-wide announcements page <https://launchpad.net/+announcements>`_
+-  in Atom feeds both for `Terminator's announcements <http://feeds.launchpad.net/terminator/announcements.atom>`_ and `all Launchpad project announcements <http://feeds.launchpad.net/announcements.atom>`_.
 
 
 In effect, Launchpad provides Terminator with a lightweight blog; the
@@ -43,5 +40,4 @@ Further information
 -------------------
 
 Now that you've registered your project, you can pick and choose which
-parts of Launchpad you want to use. Let's take a look at the `bug
-tracker <Bugs/YourProject>`__.
+parts of Launchpad you want to use. Let's take a look at the :ref:`bug tracker <bugs>`.

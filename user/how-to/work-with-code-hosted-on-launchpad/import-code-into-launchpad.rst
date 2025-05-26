@@ -1,3 +1,5 @@
+.. _import-code-into-launchpad:
+
 Import code into Launchpad
 ==========================
 
@@ -16,7 +18,7 @@ If any of this is striking a chord, then you probably want to know about
 Launchpad's code import system.
 
 Launchpad provides a free service which imports the trunk of a project
-from Subversion, CVS, or Git to `Bazaar <http://bazaar-vcs.org>`__, or
+from Subversion, CVS, or Git to `Bazaar <http://bazaar-vcs.org>`_, or
 from Git to Git, and then keeps that import up to date. This allows you
 to make your own branches from the project trunk, and keep them up to
 date by merging from trunk over time as you develop your feature.
@@ -26,11 +28,8 @@ Requesting an import
 
 To request an import, please:
 
-- Make sure the project is `registered in
-  Launchpad <https://launchpad.net/products>`__, or register it yourself.
-- Then visit the `page for requesting a code
-  import <https://code.launchpad.net/+code-imports/+new>`__ and fill
-  out the details.
+- Make sure the project is `registered in Launchpad <https://launchpad.net/products>`_, or register it yourself.
+- Then visit the `page for requesting a code import <https://code.launchpad.net/+code-imports/+new>`_ and fill out the details.
 
 This will:
 
@@ -60,14 +59,7 @@ will not lose data - we can verify that the result of a checkout of the
 Bazaar branch is identical to a checkout of the CVS branch. But getting
 it to that point may well require inspection and custom work.
 
-For this reason, we don't have an automated process for the import.
-Instead, you `request
-one <https://code.launchpad.net/+code-imports/+new>`__ and we put it in
-a queue. Sometimes it takes just an hour or two, sometimes it can take
-days to get a good import together. In very few cases, the old
-repositories are so wedged that we can't get all the history exactly
-right. It's best just to get started and see how it goes. We are
-constantly improving the voodoo.
+For this reason, we don't have an automated process for the import. Instead, you `request one <https://code.launchpad.net/+code-imports/+new>`_ and we put it in a queue. Sometimes it takes just an hour or two, sometimes it can take days to get a good import together. In very few cases, the old repositories are so wedged that we can't get all the history exactly right. It's best just to get started and see how it goes. We are constantly improving the voodoo.
 
 The initial import can take a long time—up to several days, depending on
 the number of revisions that need to be converted. Once the import is
@@ -80,4 +72,4 @@ More information
 
 Informal support happens in many different places in the free software
 world. Launchpad aims to bring bug tracker-like qualities to giving and
-asking for help. Let's look at `Launchpad Answers <Answers>`__.
+asking for help. Let's look at :ref:`Launchpad Answers <asking-for-help>`.

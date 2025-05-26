@@ -1,11 +1,12 @@
+.. _use-the-bugzilla-plugin:
+
 Use the Bugzilla plugin
 =======================
 
 .. include:: /includes/important_not_revised_help.rst
 
 Launchpad can communicate directly with bug trackers that use Bugzilla
-through the
-`bugzilla-launchpad <http://launchpad.net/bugzilla-launchpad>`__ plugin.
+through the `bugzilla-launchpad <http://launchpad.net/bugzilla-launchpad>`_ plugin.
 
 If you run a Bugzilla instance, you can use the plugin to:
 
@@ -25,9 +26,8 @@ The version number of the plugin shows two things:
 
    <plugin version>-<bugzilla version>
 
-``<plugin version>`` is the version of the plugin.
-
-``<bugzilla version>`` is the version of Bugzilla that the plugin is compatible with.
+- ``<plugin version>`` is the version of the plugin.
+- ``<bugzilla version>`` is the version of Bugzilla that the plugin is compatible with.
 
 So, a plugin instance with a version number of ``0.9-3.2`` means that
 this is version 0.9 of the plugin and it is compatible with Bugzilla
@@ -36,9 +36,7 @@ version 3.2.
 Get the plugin
 --------------
 
-You can download the plugin from its `Launchpad project
-page <https://launchpad.net/bugzilla-launchpad/+download>`__. Make sure
-you get the right plugin `for your version <#versioning>`__ of Bugzilla.
+You can download the plugin from its `Launchpad project page <https://launchpad.net/bugzilla-launchpad/+download>`_. Make sure you get the right plugin for your version of Bugzilla.
 
 Install the plugin
 ------------------
@@ -104,16 +102,13 @@ This is really simple to do:
 
 **Step 1:** Visit https://launchpad.net/bugs/bugtrackers
 
-**Step 2:** Check to see if your bugtracker is registered. If it isn't,
-click the `Register another
-bugtracker <https://launchpad.net/bugs/bugtrackers/+newbugtracker>`__
-link at the bottom of the page.
+**Step 2:** Check to see if your bugtracker is registered. If it isn't, click the `Register another bugtracker <https://launchpad.net/bugs/bugtrackers/+newbugtracker>`_ link at the bottom of the page.
 
 **Step 3:** Enter your bugtracker's details and click the ``Add``
 button.
 
 **Step 4:** Your bug tracker should now show up in the list of
-`registered bugtrackers <http://launchpad.net/bugs/bugtrackers>`__.
+`registered bugtrackers <http://launchpad.net/bugs/bugtrackers>`_.
 
 **Step 5:** Look through Launchpad to find bugs that are being tracked
 in Launchpad that are also tracked in your instance of Bugzilla and then
@@ -124,9 +119,7 @@ any bugs filed against that package that you're also tracking upstream.
 Can't find suitable bugs in Launchpad?
 --------------------------------------
 
-If you can't see any suitable bugs already in Launchpad, you can create
-some test bugs in Launchpad's `staging
-environment <https://staging.launchpad.net>`__.
+If you can't see any suitable bugs already in Launchpad, you can create some test bugs in Launchpad's `staging environment <https://staging.launchpad.net>`_.
 
 .. note::
     The database for staging is reset every day with a fresh copy
@@ -140,10 +133,7 @@ environment <https://staging.launchpad.net>`__.
 Next steps
 ----------
 
-Once you've installed the plugin, `file a question using Launchpad
-Answers <https://answers.launchpad.net/malone>`__ to let the Launchapd
-team know that you're running the plugin. This will allow the Launchpad
-Bugs developers and sys admins to finish the setup from their end.
+Once you've installed the plugin, `file a question using Launchpad Answers <https://answers.launchpad.net/malone>`_ to let the Launchapd team know that you're running the plugin. This will allow the Launchpad Bugs developers and sys admins to finish the setup from their end.
 
 If you'd like to write a Launchpad plugin for another bug tracker,
-follow our `plugin API spec <Bugs/PluginAPISpec>`__.
+follow our :ref:`plugin API spec <bug-tracker-api-plugin>`.

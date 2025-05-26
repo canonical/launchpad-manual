@@ -1,3 +1,5 @@
+.. _find-and-download-code-hosted-on-launchpad:
+
 Find and download code hosted on Launchpad
 ==========================================
 
@@ -20,15 +22,9 @@ that out for you.
 Get code
 --------
 
-`GnomeDo <https://launchpad.net/do>`__ is an application launcher for
-Gnome desktops. You can create your own branch of Gnome Do's ``trunk``
-`line of development <Projects/SeriesMilestonesReleases#Series>`__ with
-just a few keystrokes and without even having to visit Launchpad's web
-interface.
+`GnomeDo <https://launchpad.net/do>`_ is an application launcher for Gnome desktops. You can create your own branch of Gnome Do's ``trunk`` :ref:`line of development <series>` with just a few keystrokes and without even having to visit Launchpad's web interface.
 
-Once you've `got Bazaar on your
-system <http://doc.bazaar-vcs.org/latest/en/mini-tutorial/index.html#installation>`__,
-open a terminal and type the following:
+Once you've `got Bazaar on your system <http://doc.bazaar-vcs.org/latest/en/mini-tutorial/index.html#installation>`_, open a terminal and type the following:
 
 ::
 
@@ -45,8 +41,8 @@ to your machine.
    Branched 524 revision(s).
 
 .. note::
-   Don't worry about the login notice, as you're not yet uploading anything
-   to Launchpad.
+
+    Don't worry about the login notice, as you're not yet uploading anything to Launchpad.
 
 Now you have your own local branch of the Gnome Do trunk, complete with
 full version control. You can commit any changes you like to that branch
@@ -57,7 +53,7 @@ You can use this hassle-free way of obtaining branches for any project
 that has code registered in Launchpad. All you need is the Launchpad
 name of the project, which you can find by looking at the final portion
 of the URL to the project's Launchpad overview page. For example: in
-Gnome Do's case that's ``https://launchpad.net/do``.
+Gnome Do's case that's `<https://launchpad.net/do>`_.
 
 Other branches associated with a project
 ----------------------------------------
@@ -65,9 +61,7 @@ Other branches associated with a project
 If you want to download something other than a project's main line of
 development, you need to visit the project's code overview page.
 
-Let's visit `Gnome Do's code overview
-page <https://code.launchpad.net/do>`__. Here you can see a list of all
-the Gnome Do-related branches that Launchpad knows about.
+Let's visit `Gnome Do's code overview page <https://code.launchpad.net/do>`_. Here you can see a list of all the Gnome Do-related branches that Launchpad knows about.
 
 Launchpad lists the branches in order of likely importance. So, the
 branch that the Gnome Do team have marked as their trunk comes first and
@@ -97,7 +91,7 @@ Launchpad. Hosting on Launchpad is a quick and free way to publish your
 branch. However, as we saw in the introduction, you can use Launchpad to
 get hold of code that's hosted elsewhere too.
 
-`Bitlbee <https://launchpad.net/bitlbee>`__ is a gateway between various
+`Bitlbee <https://launchpad.net/bitlbee>`_ is a gateway between various
 IM networks and IRC. The bitlbee trunk branch is hosted by Bitlebee
 themselves and mirrored by Launchpad. That makes no difference to
 actually getting hold of that branch. Simply type:
@@ -107,7 +101,7 @@ actually getting hold of that branch. Simply type:
    $ bzr branch lp:bitlbee
 
 Similarly, you can get hold of code from the
-`Banshee <https://launchpad.net/banshee>`__ music player's Subversion
+`Banshee <https://launchpad.net/banshee>`_ music player's Subversion
 repository as a Bazaar branch with:
 
 ::
@@ -140,6 +134,4 @@ feed icon in your browser's address bar.
 Next steps
 ----------
 
-Now that you've created your own branch of code from Launchpad you can
-`upload it back to Launchpad <Code/UploadingABranch>`__ to appear
-alongside all the other code associated with that project.
+Now that you've created your own branch of code from Launchpad you can :ref:`upload it back to Launchpad <upload-your-bazaar-branch-to-launchpad>` to appear alongside all the other code associated with that project.

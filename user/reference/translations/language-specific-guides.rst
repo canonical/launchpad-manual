@@ -10,7 +10,7 @@ General guide
 -------------
 
 Before reading your language specific guide please take a moment and
-read the `general translation guide <Translations/Guide>`__.
+read the :ref:`general translation guide <translating-your-software>`.
 
 This guides contains information about what strings should be translated
 and what not, what are plurar forms and other general things about

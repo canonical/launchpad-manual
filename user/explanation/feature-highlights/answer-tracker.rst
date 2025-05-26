@@ -20,7 +20,7 @@ Tracking questions
 Questions show up in lists for each project in the system. For example,
 here are the latest questions for Ubuntu:
 
-`` ``\ https://answers.launchpad.net/ubuntu
+https://answers.launchpad.net/ubuntu
 
 And here's a snapshot of those at the time of writing:
 

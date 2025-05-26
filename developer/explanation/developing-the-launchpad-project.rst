@@ -1,3 +1,5 @@
+.. _developing-the-launchpad-project:
+
 Developing the Launchpad project
 ================================
 

@@ -5,11 +5,10 @@ Licenses
 
 This page divides the licenses that have been reviewed by the Launchpad
 staff into open and proprietary groups. Licenses that comply with
-`Legal#Project_eligibility <Legal#Project_eligibility>`__ are considered
+:ref:`project-eligibility` are considered
 to be open, and the projects that use them are free to use Launchpad.
 Licenses that do not comply are considered to be proprietary. Projects
-with proprietary licenses can `seek approval from
-Canonical <CommercialHosting>`__ or change to an open license.
+with proprietary licenses can :ref:`seek approval from Canonical <consumer-hosting>` or change to an open license.
 
 Open
 ----
@@ -61,8 +60,7 @@ Proprietary
 
 - Creative Commons Noncommercial licenses (by-nc, by-nc-nd, by-nc-sa)
     - http://creativecommons.org/
-    - The noncommercial restrictions discriminate against a field of use
-  (commercial edeavors).
+    - The noncommercial restrictions discriminate against a field of use (commercial edeavors).
 
 - Creative Commons No-Derivatives licenses (by-nd, by-nc-nd)
     - http://creativecommons.org/

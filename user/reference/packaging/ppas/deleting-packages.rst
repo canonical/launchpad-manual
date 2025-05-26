@@ -1,10 +1,9 @@
-~- `Launchpad Help <FrontPage>`__ > `Packaging <Packaging>`__ >
-`PPAs <PPA>`__ > Deleting packages -~
-
-.. include:: /includes/important_not_revised_help.rst
+.. _package-deletion:
 
 Package deletion
 ================
+
+.. include:: /includes/important_not_revised_help.rst
 
 You can delete any package from your PPA. However, it can take some time
 before the package is removed from the listing on your PPA overview page

@@ -1,6 +1,8 @@
-##############################
+.. _create-a-source-package-recipe:
+
 Create a source package recipe
 ##############################
+
 .. include:: /includes/important_not_revised_help.rst
 
 
@@ -23,18 +25,15 @@ more detail later on.
 Watch the screencast
 --------------------
 
-If you prefer, you can `watch our
-screencast <http://youtu.be/_bG-SXNX9Ww>`__, which will take you through
-each of the steps you need to get a source package recipe up and
-running.
+If you prefer, you can `watch our screencast <http://youtu.be/_bG-SXNX9Ww>`_, which will take you through each of the steps you need to get a source package recipe up and running.
 
 Code in Launchpad
 =================
 
 The code that you want to use for your source package recipe must be in
-Launchpad, either as a `Bazaar <Code/UploadingABranch>`__ or
-`Git <Code/Git>`__ branch that you have uploaded to Launchpad (easier)
-or as `an import from elsewhere <Code/Imports>`__.
+Launchpad, either as a :ref:`Bazaar <upload-your-bazaar-branch-to-launchpad>` or
+:ref:`Git <host-a-git-repository-on-launchpad>` branch that you have uploaded to Launchpad (easier)
+or as :ref:`an import from elsewhere <code-imports>`.
 
 You can import code that is hosted anywhere on the internet, so long as
 Launchpad can reach it and it is available without needing a username
@@ -55,13 +54,11 @@ information and you're pretty much sorted.
 Similarly, if there's a branch in Launchpad that contains packaging
 information for your software, you can use that.
 
-If there's no existing packaging, either for Debian or Ubuntu, you'll
-need to create your own. You should `read the Ubuntu community's guide
-to packaging <http://packaging.ubuntu.com/html/>`__ to get started.
+If there's no existing packaging, either for Debian or Ubuntu, you'll need to create your own. You should `read the Ubuntu community's guide to packaging <http://packaging.ubuntu.com/html/>`_ to get started.
 
 **Note:** you need to make sure that the build process specified by your
 packaging and deal with what's in your branch. For example, if you work
-on a C project with autotools, you might have to run \`autoreconf -i\`
+on a C project with autotools, you might have to run ``autoreconf -i``
 at some stage during the build to make sure that all the auto-generated
 files (which are not in version control) are present.
 
@@ -90,21 +87,17 @@ Git.
 Getting bzr-builder
 -------------------
 
-On recent Ubuntu releases you can `install the bzr-builder
-package <http://apt.ubuntu.com/p/bzr-builder>`__ to run tests locally.
+On recent Ubuntu releases you can `install the bzr-builder package <http://apt.ubuntu.com/p/bzr-builder>`_ to run tests locally.
 
-Read more about `bzr-builder <Packaging/SourceBuilds/BzrBuilder>`__.
+Read more about :ref:`bzr-builder <set-up-daily-builds-with-bzr-builder>`.
 
 Getting git-build-recipe
 ------------------------
 
-As of Ubuntu 16.04, you can `install the git-build-recipe
-package <http://apt.ubuntu.com/p/git-build-recipe>`__ to run tests
-locally.
+As of Ubuntu 16.04, you can `install the git-build-recipe package <http://apt.ubuntu.com/p/git-build-recipe>`_ to run tests locally.
 
 On previous releases of Ubuntu, you can get the version running on
-Launchpad's builders from the `buildd
-PPA <https://launchpad.net/~canonical-is-sa/+archive/ubuntu/buildd>`__.
+Launchpad's builders from the `buildd PPA <https://launchpad.net/~canonical-is-sa/+archive/ubuntu/buildd>`_.
 
 Writing a basic recipe
 ----------------------
@@ -114,11 +107,9 @@ going to use the simplest: you use the project's trunk, which contains
 no packaging, and nest another branch that contains only packaging
 information.
 
-For other recipe types, see the `recipe
-guide <Packaging/SourceBuilds/Recipes>`__.
+For other recipe types, see the :ref:`recipes`.
 
-For this example, we'll use the `Wikkid
-wiki <https://launchpad.net/wikkid>`__ project.
+For this example, we'll use the `Wikkid wiki `<https://launchpad.net/wikkid>`_ project.
 
 The anatomy of a recipe
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -162,7 +153,7 @@ Let's start by testing the recipe itself. For now, we'll assume you're
 running the Ubuntu version that you want to test against.
 
 **Note:** if you want to test a specific version, see the `Ubuntu
-guide <http://wiki.ubuntu.com/UsingDevelopmentReleases>`__.
+guide `<http://wiki.ubuntu.com/UsingDevelopmentReleases>`_.
 
 The bzr-builder plugin adds a *dailydeb* command to Bazaar.
 
@@ -173,11 +164,11 @@ Let's try it out in your terminal:
    $ bzr dailydeb --allow-fallback-to-native wikkid.recipe working-dir
 
 This processes your recipe and creates a directory called
-\```working-dir```, into which it places the resulting source tree and
+``working-dir``, into which it places the resulting source tree and
 source package.
 
-Things are similar for git, but use \`git-build-recipe\` instead of
-\`bzr dailydeb`.
+Things are similar for git, but use ``git-build-recipe`` instead of
+``bzr dailydeb``.
 
 Testing the build
 ~~~~~~~~~~~~~~~~~
@@ -190,15 +181,15 @@ minimal environment for the build. This ensures that the build will work
 everywhere and that it's not dependent on something unusual in your own
 environment.
 
-**Step 1:** Install pbuilder with \```sudo apt-get install pbuilder``\`
+**Step 1:** Install pbuilder with ``sudo apt-get install pbuilder``
 
-**Step 2:** Edit \`~/.pbuilderrc\` and add:
+**Step 2:** Edit ``~/.pbuilderrc`` and add:
 
 ::
 
    COMPONENTS="main universe multiverse restricted"
 
-**Step 3:** \```sudo pbuilder create``\`
+**Step 3:** ``sudo pbuilder create``
 
 Now, kick off the test build with:
 
@@ -207,7 +198,7 @@ Now, kick off the test build with:
    sudo pbuilder build <working-dir>/<project>_<version>.dsc
 
 If the build succeeds, you can test-install the resulting package from
-\```/var/cache/pbuilder/result/```.
+``/var/cache/pbuilder/result/``.
 
 Setting up the recipe in Launchpad
 ==================================
@@ -215,12 +206,10 @@ Setting up the recipe in Launchpad
 Now that you've confirmed that both the recipe and build work, the rest
 is very simple.
 
-Browse to the branch you want to build in Launchpad and click *(+)
-Create packaging recipe*.
+Browse to the branch you want to build in Launchpad and click
+**Create packaging recipe**.
 
-\||<tablestyle="font-size: 0.8em; width:30%; background:#F1F1ED; margin:
-1em 1em 1em 0;" style="padding:0.5em;">|\| \||<style="text-align:
-center;">\ **Create the build in Launchpad**\ \|\|
+**Create the build in Launchpad**
 
 Now fill in all the necessary details:
 
@@ -244,15 +233,11 @@ If you have checked "built daily", Launchpad will automatically schedule
 a build of your recipe once every day, if any of the branches specified
 have changed since the last build. However, it's a good idea to try
 building it yourself first, to make sure that everything is working
-correctly. You can use the "Request build(s)" link for this:
-
-\||<tablestyle="font-size: 0.8em; width:30%; background:#F1F1ED; margin:
-1em 1em 1em 0;" style="padding:0.5em;">|\| \||<style="text-align:
-center;">\ **Manually request a build**\ \|\|
+correctly. You can use the "Request build(s)" link for this: **Manually request a build**
 
 Next steps
 ==========
 
 Now that you've tried a simple example, let's take a more detailed look
-at `writing recipes <Packaging/SourceBuilds/Recipes>`__.
+at :ref:`recipes`.
 

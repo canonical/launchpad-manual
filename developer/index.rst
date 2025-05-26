@@ -1,7 +1,7 @@
-.. _home:
+.. _launchpad-manual-for-developers:
 
-Launchpad Manual
-================
+Launchpad manual for developers
+===============================
 
 **Launchpad is a collaboration platform for open-source projects.**
 
@@ -58,9 +58,9 @@ It's an open source project that warmly welcomes community projects,
 contributions, suggestions, fixes and constructive feedback.
 
 * `Code of conduct <https://ubuntu.com/community/ethos/code-of-conduct>`_
-* :doc:`Get support <help>`
+* :ref:`Get support <getting-help>`
 * :doc:`Contribute to our code <how-to/contributing-changes>`
-* :doc:`Contribute to our docs <contribute-to-our-docs>`
+* :ref:`contribute-to-our-docs`
 
 .. toctree::
    :hidden:

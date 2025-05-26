@@ -1,18 +1,20 @@
+.. _merging-accounts:
 
 Merging accounts
 ================
+
 .. include:: /includes/important_not_revised_help.rst
 
 
 If you find that you have more than one Launchpad account, in most cases you can easily merge them together. How easy it is depends on whether you still have access to the primary email address registered in the duplicate account.
 
-
 .. note::
-   When you merge two accounts, the primary account's personalisation (home page, branding, display name, etc) will remain in place. However, all the work and team memberships associated with the second account will merge with the primary account.
+
+    When you merge two accounts, the primary account's personalisation (home page, branding, display name, etc) will remain in place. However, all the work and team memberships associated with the second account will merge with the primary account.
 
 **Step 1:** Log into your primary Launchpad account and visit the `account merger page <https://launchpad.net/people/+requestmerge>`_.
 
-**Step 2:** Enter the Launchpad name of the duplicate account. This is the name that appears in the URL of your profile page: e.g. https://launchpad.net/matthew.revell
+**Step 2:** Enter the Launchpad name of the duplicate account. This is the name that appears in the URL of your profile page: e.g. ``https://launchpad.net/matthew.revell``.
 
 If you're not sure what the account's name is, click :kbd:`Choose` to search.
 

@@ -1,10 +1,12 @@
-#################
+.. _sign-web-requests:
+
 Sign web requests
 #################
+
 .. include:: /includes/important_not_revised_help.rst
 
 
-The `Launchpad web service hacking document <launchpad-web>`__ describes a
+The :ref:`Launchpad web service hacking document <access-web-services>` describes a
 lot of requests you can send to launchpad.net. But if you send them in
 the simple form presented in that document, you'll get a response code
 of 401 ("Unauthorized"). Launchpad's web service only responds to
@@ -22,12 +24,12 @@ revoke that program's key.
 
 The standard HTTP authentication mechanisms (Basic and Digest) aren't
 sophisticated enough to handle these cases. That's why Launchpad has
-adopted the `OAuth standard <http://oauth.net>`__ for authentication.
+adopted the `OAuth standard <http://oauth.net>`_ for authentication.
 It's more work to set up than just sending your Launchpad username and
 password to the web service, but it's safer and more versatile.
 
 If you're writing a console-based script based on
-`launchpadlib <../launchpadlib>`__, you don't have to worry much about
+:ref:`launchpadlib`, you don't have to worry much about
 this. Launchpadlib will automatically open a browser window for your
 end-user and ask them to hit Return once they've granted your program
 access. All you have to worry about is putting the resulting credentials
@@ -68,7 +70,7 @@ is a multi-step process. The request token is a unique string that
 Launchpad uses to keep track of your program between steps.
 
 To obtain a request token, send a POST request to
-https://launchpad.net/+request-token. (Note: *not* api.launchpad.net!)
+`<https://launchpad.net/+request-token>`_. (Note: *not* api.launchpad.net!)
 This is the same kind of POST a web browser does when it submits a form.
 You should submit the following values in form-URL-encoded format.
 
@@ -135,7 +137,7 @@ So, something like this:
 Once the user delegates some of their privileges to your website
 Launchpad will redirect the user back to that URL, so that they can
 resume using your site. In the example above, that would be
-"http://www.mysite.com/oauth-callback".
+`<http://www.mysite.com/oauth-callback>`_.
 
 Step 2b: If you're writing a stand-alone program
 ------------------------------------------------
@@ -143,7 +145,7 @@ Step 2b: If you're writing a stand-alone program
 If your program runs on the clients' computer rather than through their
 web browser, you don't have to worry about redirecting back to your web
 page. You can just open
-https://launchpad.net/+authorize-token?oauth_token=%7Boauth_token%7D in
+`<https://launchpad.net/+authorize-token?oauth_token=%7Boauth_token%7D>`_ in
 the end-user's web browser. But you do have to worry about opening the
 Launchpad page in their web browser in the first place. Take a look at
 the open_url_in_browser() function defined in launchpadlib's
@@ -180,18 +182,17 @@ If you're writing a client-side program, you'll know when your user
 clicks the "Complete Authorization" button or hits enter or whatever it
 was you told them to do when they were done on the Launchpad side.
 
-Now you make a POST request to https://launchpad.net/+access-token
+Now you make a POST request to `<https://launchpad.net/+access-token>`_
 (again, *not* api.launchpad.net!). The body should be a set of
 form-encoded parameters, as in Step 1. You need to provide the following
 parameters:
 
--  
+-
 
    -  oauth_token: The same as *oauth_token* from step 1
    -  oauth_consumer_key: The consumer key you chose in step 0
    -  oauth_signature_method: The string "PLAINTEXT"
-   -  oauth_signature: The OAuth signature, calculated using `the
-      PLAINTEXT algorithm <http://oauth.net/core/1.0/#anchor22>`__ and
+   -  oauth_signature: The OAuth signature, calculated using `the PLAINTEXT algorithm <http://oauth.net/core/1.0/#anchor22>`_ and
       the *oauth_token_secret* from step 1
 
 The last one is the tricky one. The OAuth standard has the details, but
@@ -243,8 +244,7 @@ with that token.
 
 The process of getting credentials is pretty specific to Launchpad, but
 the process of digitally signing a request is completely standardized
-and mechanical. The mechanics are covered in detail in `the OAuth
-standard <http://oauth.net/core/1.0/>`__, and there are also OAuth
+and mechanical. The mechanics are covered in detail in `the OAuth standard <http://oauth.net/core/1.0/>`_, and there are also OAuth
 libraries in most popular programming languages that can sign an HTTP
 request given an *oauth_token* and an *oauth_token_secret*. It's also
 very similar to the request signing you did in step 3. So I'm not going
@@ -252,13 +252,7 @@ to go into much detail on how to actually sign a request. It's a general
 problem and there are plenty of places to go if you need help, and lots
 of sample code to look at.
 
-I will say that right now, Launchpad only supports the first of OAuth's
-`three ways of encoding the consumer request
-parameters <http://oauth.net/core/1.0/#consumer_req_param>`__. You'll
-need to put your digital signatures into the Authorization header, using
-the `OAuth HTTP Authorization
-Scheme <http://oauth.net/core/1.0/#auth_header>`__. That means making
-HTTP requests that look like this:
+I will say that right now, Launchpad only supports the first of OAuth's `three ways of encoding the consumer request parameters <http://oauth.net/core/1.0/#consumer_req_param>`_. You'll need to put your digital signatures into the Authorization header, using the `OAuth HTTP Authorization Scheme <http://oauth.net/core/1.0/#auth_header>`_. That means making HTTP requests that look like this:
 
 ::
 
@@ -287,6 +281,6 @@ What does all that data in the Authorization header mean?
 -  The *oauth_signature* is generated using the same PLAINTEXT algorithm
    as in step 3, but using the *oauth_token_secret* you got in step 3,
    rather than the now-abandoned *oauth_token_secret* you got in step 1.
--  The *oauth_nonce* and *oauth_timestamp* are as defined
-   `here <http://oauth.net/core/1.0/#nonce>`__.
+-  The *oauth_nonce* and *oauth_timestamp* are as defined in
+   `OAuth docs <http://oauth.net/core/1.0/#nonce>`_.
 

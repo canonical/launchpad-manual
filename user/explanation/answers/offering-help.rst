@@ -1,3 +1,5 @@
+.. _offering-help:
+
 Offering help
 =============
 
@@ -15,7 +17,7 @@ Answer contacts
 
 As an answer contact, you have two main jobs:
 
-* reviewing new questions  
+* reviewing new questions
 * creating stock answers to frequently asked questions.
 
 You or anyone else can volunteer to become an answer contact for a project.
@@ -135,20 +137,20 @@ X-Launchpad-Question
 
 Emails from Launchpad Answers have the ``X-Launchpad-Question`` header, which is made up of:
 
-* **Product:** the project that the question is about.  
+* **Product:** the project that the question is about.
 * **Status:** open, needs info, answered, solved, invalid or expired-
-  more `question statuses <https://help.launchpad.net/Answers/AskingForHelp#Question_statuses>`_.  
-* **Assignee:** the person assigned to work on the question, if any.  
-* **Priority:** always set to normal.  
+  more :ref:`question-statuses`.
+* **Assignee:** the person assigned to work on the question, if any.
+* **Priority:** always set to normal.
 * **Language:** the language the questioner chose when asking their question.
 
-Here's an example:
+Here's an example::
 
-``X-Launchpad-Question: product=launchpad; status=Open; assignee=None; priority=Normal; language=en``
+    X-Launchpad-Question: product=launchpad; status=Open; assignee=None; priority=Normal; language=en
 
 More information
 ----------------
 
 Different projects favour different ways of planning future releases and organising
-chunks of work. `Blueprint <https://help.launchpad.net/Blueprint>`_ is Launchpad's
+chunks of work. :ref:`Blueprint <blueprints-lightweight-specifications>` is Launchpad's
 light-touch specification tracker that makes it easy to organise and follow future work.

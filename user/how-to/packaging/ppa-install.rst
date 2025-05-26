@@ -1,5 +1,7 @@
-Install software fromm PPAs
-===========================
+.. _install-software-from-ppas:
+
+Install software from PPAs
+==========================
 
 .. include:: /includes/important_not_revised_help.rst
 
@@ -10,7 +12,7 @@ Install software fromm PPAs
     Install software from private PPAs <private-ppa-install>
     Set up daily builds with bzr-builder <source-builds-with-bzr-builder>
     Upload a package to a PPA <ppa-package-upload>
-   
+
 PPAs work like normal Ubuntu archives. You can install software in the
 usual way -- for example, through ``apt-get`` or ``synaptic`` --
 and whenever there's an update Ubuntu will prompt you to install it.
@@ -146,5 +148,4 @@ more recent/different version, you may just need to run:
 Next steps
 ----------
 
-To publish software in your own PPA, you need to `build a source
-package <Packaging/PPA/BuildingASourcePackage>`__.
+To publish software in your own PPA, you need to :ref:`build a source package <building-a-source-package>`.

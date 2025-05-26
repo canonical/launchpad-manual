@@ -1,3 +1,5 @@
+.. _series-major-stable-and-development-branches:
+
 Series: major stable and development branches
 =============================================
 
@@ -13,18 +15,10 @@ releases are "cut" from them. Typically these branches represent:
    development trunk are snapshot, milestone or test releases, to
    generate more widespread testing and feedback.
 
-.. raw:: html
-
-   <!-- end list -->
-
 -  **Stable and supported branches:** these represent the latest work on
    the stable versions of the project, which are still supported. If
    updated stable releases are to be made they will come from these
    branches.
-
-.. raw:: html
-
-   <!-- end list -->
 
 -  **Obsolete branches:** for major release versions that are now out of
    date and no longer being updated. It's likely that work is no longer
@@ -41,9 +35,7 @@ stable version" and recommended for new users, and a trunk which
 represents the current line of active development and is the source of
 snapshot test releases for the next stable version.
 
-Take a look at the Zope3 project:
-
-    https://launchpad.net/zope3
+Take a look at the Zope3 project: https://launchpad.net/zope3
 
 The stable and trunk series are shown in the "Timeline" section of the
 page:
@@ -114,4 +106,4 @@ of the project and publish it for you as a Bazaar branch - and then keep
 it up to date so you can work entirely in Bazaar, merging from trunk
 whenever you want.
 
-That's the `next step <FeatureHighlights/BranchImports>`__ in this tour.
+That's the :ref:`next step <branch-imports>` in this tour.

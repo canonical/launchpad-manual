@@ -1,3 +1,5 @@
+.. _ssh-fingerprints:
+
 SSH fingerprints
 ================
 

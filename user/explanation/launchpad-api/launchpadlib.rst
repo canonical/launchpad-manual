@@ -1,3 +1,5 @@
+.. _launchpadlib:
+
 launchpadlib
 ============
 
@@ -7,7 +9,7 @@ launchpadlib
   :hidden:
   :maxdepth: 2
 
-  The Launchpad web service <launchpad-web-service>
+  Launchpad web service <launchpad-web-service>
 
 launchpadlib is an open-source Python library that lets you treat the HTTP resources
 published by Launchpad's web service as Python objects responding to a standard set of commands.
@@ -16,10 +18,10 @@ HTTP client programming.
 
 Launchpad's web service currently exposes the following major parts of Launchpad:
 
-* People and teams  
-* Team memberships  
-* Bugs and bugtasks  
-* The project registry  
+* People and teams
+* Team memberships
+* Bugs and bugtasks
+* The project registry
 * Hosted files, such as bug attachments and mugshots.
 
 As new features and capabilities are added to the web service, you'll be able to access most of
@@ -33,52 +35,57 @@ The top-level objects
 The Launchpad object has attributes corresponding to the major parts of Launchpad. These are:
 
 
-* ``.bugs``: All the bugs in Launchpad  
-* ``.people``: All the people in Launchpad  
-* ``.me``: You  
-* ``.distributions``: All the distributions in Launchpad  
-* ``.projects``: All the projects in Launchpad  
+* ``.bugs``: All the bugs in Launchpad
+* ``.people``: All the people in Launchpad
+* ``.me``: You
+* ``.distributions``: All the distributions in Launchpad
+* ``.projects``: All the projects in Launchpad
 * ``.project_groups``: All the project groups in Launchpad
 
 As a super special secret, distributions, projects and project_groups are all actually the same thing.
 
+.. code-block::
 
-* me \= launchpad.me  
-* print(me.name)
-  # This should be your user name, e.g. 'salgado'
+    me = launchpad.me
+    print(me.name)
+    # This should be your user name, e.g. 'salgado'
 
 The launchpad.people attribute gives you access to other people who use Launchpad.
 This code uses launchpad.people to look up the person with the Launchpad name "salgado".
 
+.. code-block::
 
-* people \= launchpad.people  
-* salgado \= people['salgado']  
-* print(salgado.display_name)
-  # Guilherme Salgado
+    people = launchpad.people
+    salgado = people['salgado']
+    print(salgado.display_name)
+    # Guilherme Salgado
 
 You can search for objects in other ways. Here's another way of finding "salgado".
 
+.. code-block::
 
-* salgado \= people.getByEmail(email="guilherme.salgado@canonical.com")  
-* print(salgado.display_name)
-  # Guilherme Salgado
+    salgado = people.getByEmail(email="guilherme.salgado@canonical.com")
+    print(salgado.display_name)
+    # Guilherme Salgado
 
 Some searches return more than one object.
 
+.. code-block::
 
-* for person in people.find(text="salgado"):  
-* print(person.name)  
-* # agustin-salgado  
-* # ariel-salgado  
-* # axel-salgado  
-* # bruno-salgado  
-* # camilosalgado
-  # ...
+    for person in people.find(text="salgado"):
+    print(person.name)
+    # agustin-salgado
+    # ariel-salgado
+    # axel-salgado
+    # bruno-salgado
+    # camilosalgado
+    # ...
 
 .. note::
-    Unlike typical Python methods, these methods--find() and getByEmail()--don't support
-    positional arguments, only keyword arguments. You can't call people.find("salgado");
-    it has to be people.find(text="salgado").
+
+    Unlike typical Python methods, these methods -- ``find()`` and ``getByEmail()`` -- don't support
+    positional arguments, only keyword arguments. You can't call ``people.find("salgado")``;
+    it has to be ``people.find(text="salgado")``.
 
 Entries
 -------
@@ -92,46 +99,50 @@ makes the facts available as attributes of the entry object.
 
 name and display_name are facts about people.
 
+.. code-block::
 
-* print(salgado.name)  
-* # salgado  
-* 
-* print(salgado.display_name)
-  # Guilherme Salgado
+    print(salgado.name)
+    # salgado
+
+    print(salgado.display_name)
+    # Guilherme Salgado
 
 private and description are facts about bugs.
 
+.. code-block::
 
-* print(bug_one.private)  
-* # False  
-* 
-* print(bug_one.description)  
-* # Microsoft has a majority market share in the new desktop PC marketplace.  
-* # This is a bug, which Ubuntu is designed to fix.
-  # ...
+    print(bug_one.private)
+    # False
+
+    print(bug_one.description)
+    # Microsoft has a majority market share in the new desktop PC marketplace.
+    # This is a bug, which Ubuntu is designed to fix.
+    # ...
 
 Some of an object's attributes are links to other entries. Bugs have an attribute owner,
 but the owner of a bug is a person, with attributes of its own.
 
+.. code-block::
 
-* owner \= bug_one.owner  
-* print(repr(owner))  
-* # \<person at https://api.staging.launchpad.net/beta/\~sabdfl\>  
-* print(owner.name)  
-* # sabdfl  
-* print(owner.display_name
-  # Mark Shuttleworth
+    owner = bug_one.owner
+    print(repr(owner))
+    # <person at https://api.staging.launchpad.net/beta/~sabdfl>
+    print(owner.name)
+    # sabdfl
+    print(owner.display_name
+    # Mark Shuttleworth
 
 If you have permission, you can change an entry's attributes and write the data back
 to the server using lp_save().
 
+.. code-block::
 
-* me \= people['my-user-name']  
-* me.display_name \= 'A user who edits through the Launchpad web service.'  
-* me.lp_save()  
-* 
-* print(people['my-user-name'].display_name)
-  # A user who edits through the Launchpad web service.
+    me = people['my-user-name']
+    me.display_name \= 'A user who edits through the Launchpad web service.'
+    me.lp_save()
+
+    print(people['my-user-name'].display_name)
+    # A user who edits through the Launchpad web service.
 
 Having permission means not only being authorized to perform an operation on the
 Launchpad side, but using a launchpadlib Credentials object that authorizes the operation.
@@ -145,25 +156,27 @@ Every entry has a self_link attribute. You can treat this as a permanent ID for 
 If your program needs to keep track of Launchpad objects across multiple runs, a simple way
 to do it is to keep track of the self_links.
 
+.. code-block::
 
-* print(salgado.self_link)  
-* # https://api.staging.launchpad.net/beta/\~salgado  
-* 
-* 
-  bug_one.self_link
-  # https://api.staging.launchpad.net/beta/bugs/1
+    print(salgado.self_link)
+    # https://api.staging.launchpad.net/beta/~salgado
 
-  ## web_link: the link to the Launchpad website
+    bug_one.self_link
+    # https://api.staging.launchpad.net/beta/bugs/1
+
+web_link: the link to the Launchpad website
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Most of the entries published by the web service correspond to pages on the Launchpad website.
 You can get the website URL of an entry with the web_link attribute:
 
+.. code-block::
 
-* print(salgado.web_link)  
-* # https://staging.launchpad.net/\~salgado  
-* 
-* bug_one.web_link
-  # https://bugs.staging.launchpad.net/bugs/1
+    print(salgado.web_link)
+    # https://staging.launchpad.net/~salgado
+
+    bug_one.web_link
+    # https://bugs.staging.launchpad.net/bugs/1
 
 Some entries don't correspond to any page on the Launchpad website: these entries won't have a web_link.
 
@@ -183,14 +196,12 @@ and the server-side error message. Depending on the error, you may be able to re
 If you're using an old version of launchpadlib, the HTTPError may not be this helpful.
 To see the server-side error message, you'll need to print out the .content of the HTTPError exception.
 
-`Toggle line numbers <https://help.launchpad.net/API/launchpadlib#>`_
+.. code-block::
 
-
-* `1 <https://help.launchpad.net/API/launchpadlib#CA-fb78a48ac0526ee8649dc78bfa231d31edb45c55_1>`_ try:  
-* `2 <https://help.launchpad.net/API/launchpadlib#CA-fb78a48ac0526ee8649dc78bfa231d31edb45c55_2>`_    failing_thing()  
-* `3 <https://help.launchpad.net/API/launchpadlib#CA-fb78a48ac0526ee8649dc78bfa231d31edb45c55_3>`_ except HTTPError as http_error:  
-* 
-  `4 <https://help.launchpad.net/API/launchpadlib#CA-fb78a48ac0526ee8649dc78bfa231d31edb45c55_4>`_    print(http_error.content)
+    try:
+        failing_thing()
+    except HTTPError as http_error:
+        print(http_error.content)
 
 Collections
 -----------
@@ -198,33 +209,36 @@ Collections
 When Launchpad groups similar entries together, we call it a collection.
 You've already seen one collection: the list of people you get back when you call ``launchpad.people.find``.
 
+.. code-block::
 
-* for person in launchpad.people.find(text="salgado"):  
-  .. code-block::
-
-      print(person.name)
+    for person in launchpad.people.find(text="salgado"):
+        print(person.name)
 
 That's a collection of people-type entries. You can iterate over a collection as you can any Python list.
 
 Some of an entry's attributes are links to related collections. Bug #1 has a number of associated bug tasks,
 represented as a collection of 'bug task' entries.
 
-* tasks \= bug_one.bug_tasks  
-* print(len(tasks))  
-* # 17  
-* for task in tasks:  
-* print(task.bug_target_display_name)  
-* # Computer Science Ubuntu  
-* # Ichthux  
-* # JAK LINUX
-  # ...
+.. code-block::
+
+    tasks \= bug_one.bug_tasks
+    print(len(tasks))
+    # 17
+    for task in tasks:
+    print(task.bug_target_display_name)
+    # Computer Science Ubuntu
+    # Ichthux
+    # JAK LINUX
+    # ...
 
 The person 'salgado' understands two languages, represented here as a collection of two language entries.
 
-* for language in salgado.languages:  
-* print(language.self_link)  
-* # https://api.staging.launchpad.net/beta/+languages/en
-  # https://api.staging.launchpad.net/beta/+languages/pt\_BR
+.. code-block::
+
+    for language in salgado.languages:
+    print(language.self_link)
+    # https://api.staging.launchpad.net/beta/+languages/en
+    # https://api.staging.launchpad.net/beta/+languages/pt_BR
 
 Because collections can be very large, it's usually a bad idea to iterate over them.
 Bugs generally have a manageable number of bug tasks, and people understand a manageable
@@ -235,34 +249,37 @@ launchpadlib will just keep pulling down entries until it runs out, which might 
 That's why we recommend you slice Launchpad's collections into Python lists, and operate on the lists.
 Here's code that prints descriptions for the 10 most recently filed bugs.
 
+.. code-block::
 
-* bugs \= launchpad.bugs[:10]  
-* for bug in bugs:  
-  .. code-block::
-
-     print(bug.description)
+    bugs = launchpad.bugs[:10]
+    for bug in bugs:
+        print(bug.description)
 
 For performance reasons, we've put a couple restrictions on collection slices that don't apply
 to slices on regular Python lists. You can only slice from the beginning of a collection, not the end.
 
-* launchpad.bugs[-5:]
-   # *** ValueError: Collection slices must have a nonnegative start point.
+::
+
+    launchpad.bugs[-5:]
+    # *** ValueError: Collection slices must have a nonnegative start point.
 
 And your slice needs to have a definite end point: you can't slice to the end of a collection.
 
-* bugs[10:]  
-* # *** ValueError: Collection slices must have a definite, nonnegative end point.  
-* 
-* bugs[:-5]
-  # *** ValueError: Collection slices must have a definite, nonnegative end point.
+.. code-block::
+
+    bugs[10:]
+    # *** ValueError: Collection slices must have a definite, nonnegative end point.
+
+    bugs[:-5]
+    # *** ValueError: Collection slices must have a definite, nonnegative end point.
 
 On the plus side, you can include a step number with your slice, as with a normal Python list:
 
+.. code-block::
 
-* every_other_bug \= launchpad.bugs[0:10:2]  
-* 
-  len(every_other_bug)
-  # 5
+    every_other_bug \= launchpad.bugs[0:10:2]
+    len(every_other_bug)
+    # 5
 
 Hosted files
 ------------
@@ -273,59 +290,66 @@ With launchpadlib, you can read and write these binary files programatically.
 If you have a launchpadlib reference to one of these hosted files, you can read its data
 by calling the open() method and treating the result as an open filehandle.
 
-* mugshot \= launchpad.me.mugshot  
-* mugshot_handle \= mugshot.open()  
-* mugshot_handle.read()  
-* # [binary data]  
-* mugshot_handle.content_type  
-* # 'image/jpeg'  
-* mugshot_handle.last_modified
-  # 'Wed, 12 Mar 2008 21:47:05 GMT'
+.. code-block::
+
+    mugshot = launchpad.me.mugshot
+    mugshot_handle = mugshot.open()
+    mugshot_handle.read()
+    # [binary data]
+    mugshot_handle.content_type
+    # 'image/jpeg'
+    mugshot_handle.last_modified
+    # 'Wed, 12 Mar 2008 21:47:05 GMT'
 
 You'll get an error if the file doesn't exist: for instance, if a person doesn't have a mugshot.
 
+.. code-block::
 
-* launchpad.people['has-no-mugshot'].mugshot
-   # *** HTTPError: HTTP Error 404: Not Found
+    launchpad.people['has-no-mugshot'].mugshot
+    # *** HTTPError: HTTP Error 404: Not Found
 
 To create or overwrite a file, open the hosted file object for write. You'll need to provide the
 access mode ("w"), the MIME type of the file you're sending to Launchpad, and the filename you
 want to give it on the server side.
 
+.. code-block::
 
-* with mugshot.open("w", "image/jpeg", "my-image.jpg") as mugshot_handle:  
-  .. code-block::
-
-      mugshot\_handle.write("image data goes here")
+    with mugshot.open("w", "image/jpeg", "my-image.jpg") as mugshot_handle:
+        mugshot_handle.write("image data goes here")
 
 If there's something wrong--maybe you provide a file of the wrong type--you'll get an HTTPError
 with a status code of 400. The content attribute will contain an error message.
 
-* print(http_error.content)  
-* # This image is not exactly 192x192 pixels in size.  
-* 
-* print(http_error.content)  
-* 
-  # The file uploaded was not recognized as an image; please
-  # check it and retry.
+.. code-block::
 
-  # Persistent references to Launchpad objects
+    print(http_error.content)
+    # This image is not exactly 192x192 pixels in size.
+
+    print(http_error.content)
+
+    # The file uploaded was not recognized as an image; please
+    # check it and retry.
+
+Persistent references to Launchpad objects
+------------------------------------------
 
 Every entry and collection has a unique ID: its URL. You can get this unique
 ID by calling str() on the object.
 
+.. code-block::
 
-* print(str(bug_one))
-   # https://api.staging.launchpad.net/beta/bugs/1
+    print(str(bug_one))
+    # https://api.staging.launchpad.net/beta/bugs/1
 
 If you need to keep track of Launchpad objects over time, or pass references to Launchpad
 objects to other programs, use these strings. If you've got one of these strings, you can
 turn it into the corresponding Launchpad object by calling launchpad.load().
 
+.. code-block::
 
-* bug_one \= launchpad.load("https://api.staging.launchpad.net/beta/bugs/1")  
-* print(bug_one.title)
-  Microsoft has a majority market share
+    bug_one = launchpad.load("https://api.staging.launchpad.net/beta/bugs/1")
+    print(bug_one.title)
+    Microsoft has a majority market share
 
 You're bookmarking the Launchpad objects and coming back to them later,
 just like you'd bookmark pages in your web browser.
@@ -338,25 +362,27 @@ should be fine; otherwise run from the branch or the latest tarball).
 
 2. **Profile:**
 
-* import httplib2
-   httplib2.debuglevel \= 1
+    .. code-block::
+
+        import httplib2
+        httplib2.debuglevel = 1
 
 3. **Fetch objects only once**:
 
-Don't do this:
+    Don't do this:
 
-* if bug.person is not None:  
-  .. code-block::
+    .. code-block::
 
-      print(bug.person.name)
+        if bug.person is not None:
+            print(bug.person.name)
 
-instead, do this:
+    instead, do this:
 
-* p \= bug.person  
-* if p is not None:  
-  .. code-block::
+    .. code-block::
 
-     print(p.name)
+        p = bug.person
+        if p is not None:
+            print(p.name)
 
 (From `the blog <http://blog.launchpad.net/api/three-tips-for-faster-launchpadlib-api-clients>`_).
 

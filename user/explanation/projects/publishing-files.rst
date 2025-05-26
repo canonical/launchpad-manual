@@ -1,3 +1,5 @@
+.. _making-your-project-files-available-for-download:
+
 Making your project files available for download
 ================================================
 
@@ -8,7 +10,7 @@ people can get hold of it. One way to distribute your software through
 Launchpad is to publish files for download.
 
 First up, you need to record the
-`release <Projects/SeriesMilestonesReleases#Releases>`__ in Launchpad.
+:ref:`release <releases>` in Launchpad.
 You can register a release from a series milestone; or, from the series
 page, you can register a release and create the milestone at the same
 time. Next, make sure your files fall into one of the following
@@ -32,8 +34,7 @@ download file``.
 Downloading files
 -----------------
 
-Let's take a look at `Bazaar's downloads
-page <https://launchpad.net/bzr/+download>`__.
+Let's take a look at `Bazaar's downloads page <https://launchpad.net/bzr/+download>`_.
 
 Here, files are grouped by series (major lines of development) and then
 by release. An MD5 checksum and the GPG signature of the uploader -
@@ -45,5 +46,5 @@ Further information
 
 Keeping people up to date with your project's news is an important way
 of building community around and interest in your project. Launchpad's
-`project announcements <Projects/Announcements>`__ let you publish news
+:ref:`project announcements <publishing-project-announcements>` let you publish news
 both on Launchpad and more widely by Atom feed.

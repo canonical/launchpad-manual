@@ -6,7 +6,7 @@ How-to guides
 .. toctree::
    :hidden:
    :maxdepth: 2
-   
+
    Import an OpenGPG key <import-opengpg-key>
    Import your SSH keys <import-ssh-keys>
    Log into websites with OpenID <using-openid>
@@ -16,6 +16,7 @@ How-to guides
    Manage your account <account-management/index>
    Projects <projects/register-your-project>
    Packaging <packaging/ppa-install>
+   Launchpad web services API <launchpad-api/index>
    Work with launchpadlib <launchpadlib/index>
    Work with Bazaar <work-with-bazaar/using-launchpad-with-bazaar>
    Work with bugs <work-with-bugs/display-bug-reporting-guidelines>

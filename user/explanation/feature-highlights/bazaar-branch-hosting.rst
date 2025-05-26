@@ -35,7 +35,7 @@ time, without having to ask permission first.
 
 For example, let's look at the work of Pete Savage:
 
-`` ``\ https://code.launchpad.net/~petesavage
+https://code.launchpad.net/~petesavage
 
 Here's the part of the page we're interested in, as it looked at the
 time of writing:
@@ -59,7 +59,7 @@ branches, including yours, will show up in the same place.
 
 For example, take a look at the branches for Ubuntu's "Update Manager":
 
-`` ``\ https://code.launchpad.net/update-manager
+https://code.launchpad.net/update-manager
 
 The relevant part of the page at the time of writing is included here:
 

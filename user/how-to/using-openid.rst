@@ -1,6 +1,8 @@
+.. _log-into-websites-with-openid:
 
 Log into websites with OpenID
 =============================
+
 .. include:: /includes/important_not_revised_help.rst
 
 
@@ -9,14 +11,14 @@ Log into websites with OpenID
 Here's how it works:
 
 
-#. You visit a website that supports OpenID and it asks you to log in.  
-#. Enter the Launchpad profile URL - https://launchpad.net/\~your-nickname  
-#. If you're not already logged into Launchpad, it'll ask you to enter your username and password.  
+#. You visit a website that supports OpenID and it asks you to log in.
+#. Enter the Launchpad profile URL - ``https://launchpad.net/~your-nickname``
+#. If you're not already logged into Launchpad, it'll ask you to enter your username and password.
 #. Once you're successfully logged into Launchpad, it'll return you to the site you want to use.
 
 Simple! This means that you only need to remember your Launchpad profile URL, username and password in order to use websites that support OpenID.
 
-We will send your Launchpad nickname to the site but some websites may choose to refer to you by your Launchpad profile URL - e.g. https://launchpad.net/\~your\_nickname.
+We will send your Launchpad nickname to the site but some websites may choose to refer to you by your Launchpad profile URL - e.g. ``https://launchpad.net/~your\_nickname``.
 
 Launchpad supports both `OpenID 2.0 <http://openid.net/specs/openid-authentication-2_0.html>`_ and 1.1.
 
@@ -27,10 +29,10 @@ Where can I use it?
 
 You can use Launchpad to log into any of the growing number of sites that support OpenID. These include:
 
-* Blogs powered by `Blogger <http://blogger.com>`_  
-* `PBWiki <http://pbwiki.com>`_ - the free wiki hosting service  
-* `Wordpress <http://wordpress.org>`_ blogs using an OpenID plugin  
-* `LiveJournal <http://livejournal.com>`_.  
+* Blogs powered by `Blogger <http://blogger.com>`_
+* `PBWiki <http://pbwiki.com>`_ - the free wiki hosting service
+* `Wordpress <http://wordpress.org>`_ blogs using an OpenID plugin
+* `LiveJournal <http://livejournal.com>`_.
 * `SourceForge <http://sourceforge.net>`_
 
 Find out more about `where you can use OpenID <http://en.wikipedia.org/wiki/OpenID#Adoption>`_.

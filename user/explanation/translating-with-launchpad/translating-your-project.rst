@@ -1,3 +1,5 @@
+.. _translating-your-project:
+
 Translating your project
 ========================
 

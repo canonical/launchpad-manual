@@ -1,3 +1,5 @@
+.. _preparing-to-translate:
+
 Preparing to translate
 ======================
 

@@ -1,3 +1,5 @@
+.. _launchpad-answer-tracker:
+
 Launchpad Answer Tracker
 ========================
 

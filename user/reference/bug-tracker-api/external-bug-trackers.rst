@@ -1,6 +1,8 @@
+.. _interoperability-with-external-bug-trackers:
 
 Interoperability with external bug trackers
 ===========================================
+
 .. include:: /includes/important_not_revised_help.rst
 
 
@@ -24,8 +26,8 @@ This table shows you what level of interoperability Launchpad has with which ext
      - `GitHub <https://github.com/>`_
      - `GitLab <https://gitlab.com/>`_
    * - Plugin for two-way comms
-     - `Yes <https://help.launchpad.net/Bugs/BugzillaPlugin>`_
-     - `Yes <https://help.launchpad.net/Bugs/TracPlugin>`_
+     - :ref:`Yes <use-the-bugzilla-plugin>`
+     - :ref:`Yes <use-the-trac-plugin>`
      -
      -
      -
@@ -56,14 +58,14 @@ This table shows you what level of interoperability Launchpad has with which ext
      - Yes
      - Yes
      - Yes
-     -  
+     -
      - Yes
      - Yes
    * - Comment importing
-     - `Plugin <https://help.launchpad.net/Bugs/BugzillaPlugin>`_
+     - :ref:`BugZilla plugin <use-the-bugzilla-plugin>`
      - WN
      - Yes
-     - `Plugin <https://help.launchpad.net/Bugs/TracPlugin>`_
+     - :ref:`Trac plugin <use-the-trac-plugin>`
      - WS
      -
      -
@@ -72,10 +74,10 @@ This table shows you what level of interoperability Launchpad has with which ext
      -
      -
    * - Comment pushing
-     - `Plugin <https://help.launchpad.net/Bugs/BugzillaPlugin>`_
+     - :ref:`BugZilla plugin <use-the-bugzilla-plugin>`
      - WN
      - NI
-     - `Plugin <https://help.launchpad.net/Bugs/TracPlugin>`_
+     - :ref:`Trac plugin <use-the-trac-plugin>`
      - WS
      -
      -
@@ -84,10 +86,10 @@ This table shows you what level of interoperability Launchpad has with which ext
      -
      -
    * - Bug importing
-     - NI `plugin <https://help.launchpad.net/Bugs/BugzillaPlugin>`_
+     - NI :ref:`BugZilla plugin <use-the-bugzilla-plugin>`
      - WN
      - Yes
-     - NI `plugin <https://help.launchpad.net/Bugs/TracPlugin>`_
+     - NI :ref:`Trac plugin <use-the-trac-plugin>`
      - WS
      -
      -
@@ -96,10 +98,10 @@ This table shows you what level of interoperability Launchpad has with which ext
      -
      -
    * - Bug forwarding
-     - NI `plugin <https://help.launchpad.net/Bugs/BugzillaPlugin>`_
+     - NI :ref:`BugZilla plugin <use-the-bugzilla-plugin>`
      - WN
      - NI
-     - NI `plugin <https://help.launchpad.net/Bugs/TracPlugin>`_
+     - NI :ref:`Trac plugin <use-the-trac-plugin>`
      - WS
      -
      -
@@ -112,10 +114,10 @@ This table shows you what level of interoperability Launchpad has with which ext
 Key
 ---
 
-* Yes \= We have this today  
-* ND \= Needs discussion  
-* WN \= Upstream work needed  
-* WS \= Upstream work scoped  
-* UD \= Under Development  
-* NI \= Possible already upstream but needs Launchpad implementation  
+* Yes \= We have this today
+* ND \= Needs discussion
+* WN \= Upstream work needed
+* WS \= Upstream work scoped
+* UD \= Under Development
+* NI \= Possible already upstream but needs Launchpad implementation
 * Plugin \= Available through a Launchpad-provided plugin for the upstream tracker

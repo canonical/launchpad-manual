@@ -1,3 +1,5 @@
+.. _bug-heat:
+
 Bug heat
 ========
 
@@ -26,9 +28,7 @@ to suggest the bug requires your attention. For example:
 -  whether the bug is marked is a security issue
 -  the number of duplicates of the bug.
 
-You can find `full details of how Launchpad calculates bug
-heat <https://dev.launchpad.net/Bugs/BugHeat#Algorithm>`__ in our
-development wiki.
+You can find `full details of how Launchpad calculates bug heat <https://dev.launchpad.net/Bugs/BugHeat#Algorithm>`_ in our development wiki.
 
 Where to find bug heat
 ----------------------
@@ -36,7 +36,4 @@ Where to find bug heat
 If you just want to see what heat Launchpad has assigned to a particular
 bug, you can find it towards the top-right of the bug page.
 
-However, you can also sort bug listings by bug heat and bug heat is
-available in `Launchpad's web services
-API <https://launchpad.net/+apidoc/>`__. The Launchpad community plan to
-add more uses for and ways to access bug heat in the future.
+However, you can also sort bug listings by bug heat and bug heat is available in `Launchpad's web services API <https://launchpad.net/+apidoc/>`_. The Launchpad community plan to add more uses for and ways to access bug heat in the future.
