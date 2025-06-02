@@ -9,7 +9,7 @@ Step-by-step procedure
 1. Prepare a branch containing just `your database
    patch <#Making_a_database_patch>`__ for review.
 
-   -  The patch must either be a hot patch (function / trigger / index)
+   -  The patch must either be a hot patch (function / trigger / index / constraints)
       or a cold patch (model change / model change + function/trigger).
       If you need both hot and cold changes, you require multiple
       branches.
@@ -41,12 +41,14 @@ Step-by-step procedure
 7. [Cold patches] Wait until the branch reaches staging. Use the
    `db-stable deployment
    report <https://deployable.ols.canonical.com/project/launchpad-db>`__
-   to check this.
+   to check this. You can also do ``juju status`` and compare the ``commit id``
+   under ``Version``.
 
 8. [Cold patches] After the branch reaches staging check the duration
-   that the patch took to apply by rsyncing
-   ``pamola.internal::staging-logs/dbupgrade.log`` from carob. If it
-   took more than 15 seconds, mark the revision bad and revert it.
+   that the patch took to apply by going to ``stg-launchpad`` on bastion.
+   Run ``in-model staging juju run-action --wait launchpad-db-update/leader preflight``
+   followed by ``in-model staging juju run-action --wait launchpad-db-update/leader db-update``.
+   ``db-update`` action will output the time taken to apply the patch. 
 
 9. [Cold patches] QA the patch as usual, check things still work on
    staging.
@@ -216,7 +218,7 @@ want. It should look like this:
     your patch.
 
 11. Make any necessary changes to ``database/schema/fti.py``,
-    ``database/schema/security.cfg``.
+    ``database/schema/security.cfg`` to grant necessary privileges. 
 
 12. **Run the full test suite to ensure that your new schema doesn't
     break any existing tests/code by side effect.**
