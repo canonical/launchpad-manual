@@ -56,9 +56,13 @@ merged to the ``master`` branch only after they are deployed to production
 to get the code changes merged.
 
 While the database patches make their way to production and to the ``master``
-branch, it is okay to copy the database patch from the ``db-devel``
-branch manually and apply it locally in the development environment to
-implement and test the code changes.
+branch, one way to test the code and the database changes together is
+to copy the database patch from the ``db-devel`` branch manually and apply
+it locally in the development environment to implement and test the
+corresponding code changes. Once the database patch is deployed to the
+production environment and merged back to the ``master`` branch, the code and
+the database changes should be tested together in the ``qastaging``
+environment before deploying the code changes to production.
 
 How to deploy the database changes to the production environment?
 -----------------------------------------------------------------
@@ -169,7 +173,7 @@ We have cron jobs in the Launchpad bastion environment to automatically deploy
 new changes in the ``db-stable`` branch to the ``staging`` environment and
 new changes in the ``stable`` branch to the ``qastaging`` environment. These
 jobs are added to the ``stg-launchpad`` user's crontab and the scripts used
-in these jobs are present in the ``lp:launchpad-bastion-scripts`` repository.
+in these jobs are present in the `launchpad-bastion-scripts repository`_.
 
 Shell access to these environment is available after connecting to the VPN,
 logging in to the Launchpad bastion, and switching to the ``stg-launchpad``
@@ -181,6 +185,7 @@ environments in limited ways too.
 
 .. _staging: https://staging.launchpad.net
 .. _qastaging: https://qastaging.launchpad.net
+.. _launchpad-bastion-scripts repository: https://git.launchpad.net/launchpad-bastion-scripts
 
 How to check the database patch application time in the ``staging`` environment?
 --------------------------------------------------------------------------------
@@ -283,7 +288,7 @@ For deploying changes to the production environment, we use the
 Launchpad bastion to invoke the appropriate ``mojo`` commands on the production
 bastion that only IS have access to.
 
-.. _launchpad-mojo-specs repository: https://git.launchpad.net/launchpad-mojo-specs_
+.. _launchpad-mojo-specs repository: https://git.launchpad.net/launchpad-mojo-specs
 
 How to deploy code changes to the production environment?
 ---------------------------------------------------------
