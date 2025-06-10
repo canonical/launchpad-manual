@@ -81,9 +81,10 @@ Once this is done, the changes show up on the `launchpad-db deployable page`_
 and there is a periodic cron job that automatically deploys the new database
 patches, if any, to the `Launchpad staging environment`_.
 
-The patch application times can be checked from the ``staging`` deployment logs.
-Launchpad has strict requirements about the patch application time and it should
-be under 10 seconds.
+The `database patch application time  <db-patch-application-time_>`_ can
+be checked from the ``staging`` deployment logs. Launchpad has strict
+requirements about the patch application time and it should be under
+10 seconds.
 
 After confirming the patch application time, the instructions in the
 `fastdowntime deployment process documentation`_ can be used to deploy the
@@ -99,6 +100,7 @@ merged to the ``master`` branch.
 .. _fastdowntime deployment process documentation: https://wiki.canonical.com/InformationInfrastructure/OSA/LaunchpadRollout#Fastdowntime_db_update
 .. _launchpad-db deployable page: https://deployable.ols.canonical.com/project/launchpad-db
 .. _Launchpad staging environment: https://staging.launchpad.net
+.. _path application times: _
 
 What is the landing bot?
 ------------------------
@@ -186,6 +188,8 @@ environments in limited ways too.
 .. _staging: https://staging.launchpad.net
 .. _qastaging: https://qastaging.launchpad.net
 .. _launchpad-bastion-scripts repository: https://git.launchpad.net/launchpad-bastion-scripts
+
+.. _db-patch-application-time:
 
 How to check the database patch application time in the ``staging`` environment?
 --------------------------------------------------------------------------------
