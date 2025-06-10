@@ -133,7 +133,7 @@ There is a `buildbot poller script`_ that runs on the buildbot buildmaster and
 merges new commits that have completed a successful Launchpad test suite run
 into the appropriate stable branch.
 
-.. _buildbot poller script: https://bazaar.launchpad.net/~canonical-launchpad-branches/lpbuildbot/public/view/head:/buildbot-poll.py
+.. _buildbot poller script: https://git.launchpad.net/lpbuildbot/tree/buildbot-poll.py
 
 What is deployable?
 -------------------
