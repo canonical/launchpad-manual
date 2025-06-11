@@ -139,6 +139,7 @@ linkcheck_ignore = [
     r'https://jenkins\.ols\.canonical\.com.*',  # private
     '../branches',  # relative link to a page in the same documentation
     '../live-patching',  # relative link to a page in the same documentation
+    'https://www.gnu.org/software/gettext/manual/',
     ]
 
 # Pages on which to ignore anchors
