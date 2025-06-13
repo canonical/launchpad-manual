@@ -34,7 +34,7 @@ directly on Launchpad.
 
 .. tip::
     Not sure how to upload a branch to Launchpad?
-    `See our guide <Code/UploadingABranch>`__.|\|
+    :ref:`See our guide <upload-your-bazaar-branch-to-launchpad>`.|\|
 
 At the moment, `team-owned branches don't work as
 expected <https://bugs.launchpad.net/rosetta/+bug/407260>`__. To work
@@ -132,5 +132,5 @@ Next steps
 
 Launchpad works with Bazaar to host, mirror and catalogue to branches of
 your project's code. It can even import git, Subversion and CVS
-repositories into Bazaar branches. Let's take a look at `hosting code
-with Launchpad <Code>`__.
+repositories into Bazaar branches. Let's take a look at :ref:`hosting code
+with Launchpad <host-your-project-code-on-launchpad>`.

@@ -14,7 +14,7 @@ way you interact with the bug tracker.
 Before you start
 ================
 
-Launchpad verifies incoming email by looking for a GNU Privacy Guard (GPG) signature by the sender, or a DKIM signature by a trusted sender domain, such as GMail. Read our :ref:`guide on adding your GPG key <import-an-opengpg-key>` to your Launchpad account.
+Launchpad verifies incoming email by looking for a GNU Privacy Guard (GPG) signature by the sender, or a DKIM signature by a trusted sender domain, such as GMail. Read our :ref:`guide on adding your GPG key <import-an-openpgp-key>` to your Launchpad account.
 
 Messages that just add comments to a bug or merge proposal are not
 required to be signed. Messages that contain commands to change the

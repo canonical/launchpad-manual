@@ -1,3 +1,5 @@
+.. _launchpad-badge-kit:
+
 Launchpad Badges
 ================
 

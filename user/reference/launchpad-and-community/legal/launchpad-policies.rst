@@ -14,10 +14,9 @@ Canonical Ltd.
 The Launchpad "Gem" logo was created by `Eugene Tretyak <https://launchpad.net/~etretyak>`_ as part of the Launchpad Logo Contest. The copyright in the Launchpad logo is owned by
 Canonical Ltd. and is licensed under a `Creative Commons Attribution-No Derivative Works 2.0 UK: England & Wales License <http://creativecommons.org/licenses/by-nd/2.0/uk/>`_.
 
-You can use one of the images from the `Launchpad Badge
-Kit <BadgeKit>`_ to show that your project uses Launchpad. Canonical
-may revoke your permission to use these images if you make modifications
-to the images or use them incorrectly (e.g., on a project that does not
+You can use one of the images from the :ref:`Launchpad Badge Kit <launchpad-badge-kit>` 
+to show that your project uses Launchpad. Canonical may revoke your permission to use these images 
+if you make modifications to the images or use them incorrectly (e.g., on a project that does not
 use Launchpad.net).
 
 Help, Dev, and News Content Licence

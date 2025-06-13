@@ -1,3 +1,5 @@
+.. _host-your-project-code-on-launchpad:
+
 Host your project's code on Launchpad
 =====================================
 
