@@ -1,3 +1,5 @@
+.. _the-launchpad-bug-tracker:
+
 The Launchpad bug tracker
 =========================
 
