@@ -12,7 +12,7 @@ If you're working on a project that uses Launchpad Code and Launchpad
 Bugs, for example, you can link a branch of code to the bug report it
 fixes. Similarly, you can offer more than just status updates to fans of
 that fantastic new feature you're working on - and tracking as a
-`blueprint <Blueprint>`__ - by linking the blueprint to a branch of your
+:ref:`blueprint <blueprints-lightweight-specifications>` - by linking the blueprint to a branch of your
 code.
 
 Bazaar also gets in on the act, as we'll see in a moment or two.
@@ -21,8 +21,8 @@ Fixing bugs in dedicated branches
 ---------------------------------
 
 Let's say you're new to a project. You spot a bug report and you're
-pretty certain you can fix it. You `pull down your own
-branch <Code/FindingAndDownloading>`__ of the project's trunk and hack
+pretty certain you can fix it. You :ref:`pull down your own
+branch <find-and-download-code-hosted-on-launchpad>` of the project's trunk and hack
 away. Every now and then, you `push your branch up to
 Launchpad <Code/UploadingABranch>`__.
 
@@ -87,5 +87,5 @@ Next steps
 ----------
 
 Most branches in Launchpad are associated with a project. However, you
-can also `host personal branches <Code/PersonalBranches>`__ using
+can also :ref:`host personal branches <create-and-maintain-personal-branch-in-launchpad>` using
 Launchpad.

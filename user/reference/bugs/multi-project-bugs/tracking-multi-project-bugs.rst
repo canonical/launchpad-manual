@@ -1,3 +1,5 @@
+.. _tracking-bugs-across-multiple-projects:
+
 Tracking bugs across multiple projects
 ======================================
 

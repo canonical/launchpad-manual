@@ -89,12 +89,12 @@ about your software.
 
 First, activate ``Answers`` for your project by selecting ``People can
 ask questions in Launchpad Answers`` on the ``Change details``
-page at ``https://launchpad.net//+edit``. Now, people can `ask for
-help <Answers/AskingForHelp>`__ using Launchpad.
+page at ``https://launchpad.net//+edit``. Now, people can :ref:`ask for
+help <asking-for-help>` using Launchpad.
 
 Next, encourage members of your community to use Answers. In particular,
 you should consider encouraging members of your community to become
-`answer contacts <Answers/OfferingHelp>`__.
+:ref:`answer contacts <offering-help>`.
 
 The Launchpad Answer Tracker offers tools to effectively build a support
 community around your project. It makes it easy for users to find help
@@ -113,8 +113,11 @@ Tracker feature in Launchpad:
 :literal:`Answer Tracker Tour<https://answers.launchpad.net/+tour>_`:
 a quick tour which shows the main features of the Answer Tracker.
 
-2. `Asking for help <Answers/AskingForHelp>`__:find out how to
+2. :ref:`Asking for help <asking-for-help>`:find out how to
    use Launchpad to get help with software.
-3. `Offering help <Answers/OfferingHelp>`__: how to help other
+3. :ref:`Offering help <offering-help>`: how to help other
    people and become an ..answer contact.
-4. `Answer syntax parsing <Comments>`__
+4. `Answer syntax parsing <Comments>`
+
+..
+   _What is number 4 supposed to link to?

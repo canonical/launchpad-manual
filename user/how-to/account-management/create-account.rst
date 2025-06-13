@@ -48,4 +48,4 @@ Next step
 
 Launchpad trusts that you are who you claim to be. Later, such as when you're using the bug tracker's email interface, you'll need to use an electronic signature to prove your identity.
 
-Setting up such a signature is easy and that's what we're doing next: :ref:`uploading an OpenPGP key <import-an-opengpg-key>`.
+Setting up such a signature is easy and that's what we're doing next: :ref:`uploading an OpenPGP key <import-an-openpgp-key>`.

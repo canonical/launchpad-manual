@@ -1,3 +1,5 @@
+.. _setting-up-and-running-launchpad-quickstart:
+
 =============================================
 Setting up and running Launchpad (Quickstart)
 =============================================

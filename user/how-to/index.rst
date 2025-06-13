@@ -7,7 +7,7 @@ How-to guides
    :hidden:
    :maxdepth: 2
 
-   Import an OpenGPG key <import-opengpg-key>
+   Import an OpenPGP key <import-openpgp-key>
    Import your SSH keys <import-ssh-keys>
    Log into websites with OpenID <using-openid>
    Track issues with email <bug-tracking-with-email>

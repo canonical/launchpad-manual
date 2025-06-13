@@ -35,7 +35,7 @@ skip straight to ``Enabling automatic template imports``.
 
 .. note::
     Don't worry if your Bazaar branch is empty. If you're new to
-    Bazaar and Launchpad Code Hosting, `see our quick-start <Code/QuickStart>`__.
+    Bazaar and Launchpad Code Hosting, :ref:`see our quick-start <setting-up-and-running-launchpad-quickstart>`.
 
 **Step 2:** Push your Bazaar branch to Launchpad:
 

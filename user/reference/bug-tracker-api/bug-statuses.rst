@@ -1,3 +1,5 @@
+.. _bug-status-in-launchpad:
+
 Bug statuses in Launchpad
 =========================
 

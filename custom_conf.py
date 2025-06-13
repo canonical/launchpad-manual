@@ -149,6 +149,7 @@ linkcheck_ignore = [
 
     #Incorrect or non-existent file reference - Referenced file moved, deleted, or renamed
     "/../YourProject/ImportingTemplates",
+    "Answer syntax parsing <Comments>",
 
 
 ]

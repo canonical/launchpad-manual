@@ -3,7 +3,7 @@ Multi-project bugs
 
 .. include:: /includes/important_not_revised_help.rst
 
-As we saw in the `introduction <Bugs/YourProject>`__ to the bugs section
+As we saw in the :ref:`introduction <tracking-bugs-across-multiple-projects>` to the bugs section
 of this user guide, Launchpad's bug tracker is special.
 
 Launchpad can track how the same bug affects different communities, such
@@ -11,7 +11,7 @@ as free software projects or Linux distributions.
 
 Each community shares the same bug number, report and comment history.
 However, they can keep track of how the bug affects them and how they
-plan to deal with it by setting their own `status <Bugs/Statuses>`__,
+plan to deal with it by setting their own :ref:`status <bug-status-in-launchpad>`,
 importance and assignee for each bug.
 
 In effect, those communities come together and form an ad-hoc community

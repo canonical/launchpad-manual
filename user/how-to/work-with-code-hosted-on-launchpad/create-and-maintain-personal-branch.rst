@@ -1,3 +1,5 @@
+.. _create-and-maintain-personal-branch-in-launchpad:
+
 Create and maintain a personal branch in Launchpad
 ==================================================
 
@@ -46,4 +48,4 @@ Next steps
 
 If you want to work on a project that uses an external Bazaar, git, CVS
 or Subversion branch to host its trunk line of development, you can ask
-Launchpad to `import it into a Bazaar branch <Code/Imports>`__.
+Launchpad to :ref:`import it into a Bazaar branch <branch-imports>`.
