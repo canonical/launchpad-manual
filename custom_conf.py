@@ -165,6 +165,24 @@ linkcheck_ignore = [
     r"https://www\.socialtext\.net/.*",
     r"https://translations\.launchpad\.net/.*",
     r"http://localhost.*",
+
+     "http://www.ubuntu.com/community/ubuntustory/licensing", # works in browser, linkchecker issue
+    #Uncertain Dead - May not be replaceable
+    "/Estonian",
+    "/Georgian",
+    "/Indonesian",
+    "/Italian",
+    "/Korean",
+    "/Russian",
+    "../Vietnamese",
+    #Replaceable Dead - Can probably be replaced by an equivalent
+    "/../POTemplates", # - https://docs.lokalise.com/en/articles/1400767-gettext-po-pot
+    "API",
+
+    #Incorrect or non-existent file reference - Referenced file moved, deleted, or renamed
+    "/../YourProject/ImportingTemplates",
+
+
 ]
 >>>>>>> 17e3f15 (Build & link fixes.)
 
