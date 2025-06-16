@@ -1,4 +1,5 @@
 .. _translations-licensing-faq:
+
 Translations licensing FAQ
 ==========================
 
