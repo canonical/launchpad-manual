@@ -1,3 +1,5 @@
+.. _create-and-publish-branches-bazaar:
+
 Create and Publish branches
 ===========================
 

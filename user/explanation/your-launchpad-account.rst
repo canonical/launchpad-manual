@@ -1,3 +1,5 @@
+.. _your-launchpad-account:
+
 Your Launchpad account
 ======================
 

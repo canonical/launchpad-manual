@@ -15,8 +15,7 @@ When you join one, you automatically can access everything the team has
 access to.
 
 .. toctree::
-    :hidden:
-    :maxdepth: 2
+    :maxdepth: 1
 
     Creating and running teams <creating-and-running-teams>
     Indirect team members <indirect-team-members>

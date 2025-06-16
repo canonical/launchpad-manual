@@ -1,3 +1,5 @@
+.. _malone-xmlrpc-interface:
+
 The Malone xmlrpc interface
 ===========================
 

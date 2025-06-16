@@ -4,7 +4,7 @@ Explanation
 .. include:: /includes/important_not_revised_help.rst
 
 .. toctree::
-    :hidden:
+    :maxdepth: 1
 
     What is Launchpad? <what-is-launchpad>
     Your Launchpad account <your-launchpad-account>
@@ -13,11 +13,11 @@ Explanation
     Collaborating using Launchpad <collaborating-using-launchpad>
     Answers <answers/answer-tracker>
     Feature highlights <feature-highlights/index>
-    Launchpad API <launchpad-api/launchpadlib>
+    Launchpad API <launchpad-api/index>
     Launchpad mailing lists <launchpad-mailing-lists>
     Rationale headers in Launchpad email <message-rationale-headers>
     OOPS <oops>
-    Packaging <packaging/packaging.rst>
+    Packaging <packaging/index>
     Privacy, confidentiality and disclosure <privacy-confidentiality-and-disclosure>
     Projects <projects/index>
     Staging environment <staging-environment>

@@ -474,7 +474,7 @@ will also publish client libraries for Python applications that wrap the
 XML-RPC interface in a good Pythonic API.
 
 The existing XML-RPC interface we have is documented at
-`MaloneXMLRPC <MaloneXMLRPC>`__; check it out for details.
+:ref:`MaloneXMLRPC <malone-xmlrpc-interface>`; check it out for details.
 
 Known issues
 ------------

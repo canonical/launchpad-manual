@@ -5,12 +5,6 @@ launchpadlib
 
 .. include:: /includes/important_not_revised_help.rst
 
-.. toctree::
-  :hidden:
-  :maxdepth: 2
-
-  Launchpad web service <launchpad-web-service>
-
 launchpadlib is an open-source Python library that lets you treat the HTTP resources
 published by Launchpad's web service as Python objects responding to a standard set of commands.
 With launchpadlib you can integrate your applications into Launchpad without knowing a lot about

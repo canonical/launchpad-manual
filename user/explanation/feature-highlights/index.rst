@@ -1,11 +1,10 @@
-Explanation
-===========
+Feature Highlights
+==================
 
 .. include:: /includes/important_not_revised_help.rst
 
 .. toctree::
-    :hidden:
-    :maxdepth: 2
+    :maxdepth: 1
 
     Answer Tracker <answer-tracker>
     Blueprints <blueprints>

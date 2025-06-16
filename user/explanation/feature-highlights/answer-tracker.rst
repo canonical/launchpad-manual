@@ -111,6 +111,4 @@ of real bugs. Importantly, it specifically handles people asking
 questions in their language of choice.
 
 And that leads us nicely to the next stop in our tour - Launchpad's
-`software translation
-service <FeatureHighlights/SoftwareTranslation>`__, which we call
-"Rosetta".
+:ref:`software translation service <using-rosetta>`, which we call "Rosetta".

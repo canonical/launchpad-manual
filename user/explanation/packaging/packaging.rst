@@ -3,14 +3,6 @@
 Packaging
 =========
 
-.. include:: /includes/important_not_revised_help.rst
-
-.. toctree::
-   :hidden:
-   :maxdepth: 2
-
-    Package upload errors <package-upload-errors>
-
 Using Launchpad, you can build and distribute packages for operating
 systems that use Debian-style packaging. Right now, Launchpad's
 packaging system (sometimes called Soyuz) supports the build and

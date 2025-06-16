@@ -1,3 +1,5 @@
+.. _using-rosetta:
+
 Using Rosetta
 =============
 

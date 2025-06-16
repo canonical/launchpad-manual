@@ -113,6 +113,5 @@ and menu bar allows you to do just this. Here's a picture of the menu in
 use:
 
 Now you know enough to explore the Launchpad applications. Let's start
-with one of the most unique features of Launchpad - tracking `bug
-conversations and work across multiple
-communities <FeatureHighlights/MultiProjectBugs>`__.
+with one of the most unique features of Launchpad - tracking 
+:ref:`bug conversations and work across multiple communities <tracking-bugs-across-multiple-projects>`.

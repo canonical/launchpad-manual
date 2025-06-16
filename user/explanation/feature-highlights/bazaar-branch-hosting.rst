@@ -1,3 +1,5 @@
+.. _branch-hosting-with-bazaar:
+
 Branch hosting with Bazaar
 ==========================
 
@@ -105,5 +107,5 @@ with full revision control, publish that branch to Launchpad or any
 other web hosting service, and eventually ask for his work to be merged
 into the trunk by a developer who does have commit rights there.
 
-Let's take a closer look at the process of `creating a
-branch <FeatureHighlights/EasyBranching>`__.
+Let's take a closer look at the process of 
+:ref:`creating a branch <create-and-publish-branches-bazaar>`.

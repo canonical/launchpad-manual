@@ -33,12 +33,12 @@ projects with non-free-software licences. This scheme is no longer in
 operation, although use of commercial-only features may still be granted
 on a case-by-case basis.
 
-If you're not sure that your project's licence is suitable, `talk to
-us <Feedback>`__ about it.
+If you're not sure that your project's licence is suitable, :ref:`talk to
+us <talk-to-us-about-launchpad>` about it.
 
 .. tip::
     If you want to register a translation team or Ubuntu
-    loco team in Launchpad, please `create a new team <Teams/Register>`__, not a project.
+    loco team in Launchpad, please :ref:`create a new team <creating-and-running-launchpad-teams>`, not a project.
 
 Registration
 ------------
@@ -63,11 +63,11 @@ note:
 
 If you choose the "Other/Proprietary" license, your project will be
 awarded a 30-day trial commercial subscription that entitles explore the
-`commercial hosting features <CommercialHosting>`__.
+:ref:`commercial hosting features <consumer-hosting>`.
 
 Note that once you have registered your project you will not be able to
 change its name by yourself. If you wish change it you can ask an
-administrator to that for you, read the `Feedback <Feedback>`__ page for
+administrator to that for you, read the :ref:`Feedback <talk-to-us-about-launchpad>` page for
 more information.
 
 Project groups
@@ -83,7 +83,7 @@ Project groups are useful because they give you one place from which to
 find all the information about the constituent projects.
 
 Read more about the process of registering a project group
-`here <ProjectGroups>`__.
+:ref:`here <project-groups>`.
 
 Sharing confidential information with trusted users
 ---------------------------------------------------
@@ -115,7 +115,7 @@ The bug and branch sharing policies determine the default bug or branch
 information type, and control what types they may be changed to.
 Non-commercial projects cannot configure the policies. Bugs and branches
 are Public by default, but can be changed to Private Security or Private
-later. Projects with `commercial subscriptions <CommercialHosting>`__
+later. Projects with :ref:`commercial subscriptions <consumer-hosting>`
 can choose other rules to ensure confidential information is never
 disclosed.
 

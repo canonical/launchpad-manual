@@ -1,3 +1,5 @@
+.. _personal-package-archives-highlights:
+
 Personal Package Archives
 =========================
 
@@ -59,10 +61,10 @@ packages. At this point you can start uploading your source packages
 immediately. You can watch the build farm, which turns those source
 packages into binaries, at work at https://launchpad.net/+builds
 
-Try the `Quick Start Guide for PPAs <PPAQuickStart>`__ if you want to
+Try the :ref:`Quick Start Guide for PPAs <personal-package-archive>` if you want to
 learn more!
 
 So, Launchpad can build your packages. But wouldn't it be great if you
 could actually host the code of your project in Launchpad *before* you
 started building packages? That leads us to the next stop on our tour -
-`hosting code in Launchpad <FeatureHighlights/BazaarHosting>`__.
+:ref:`hosting code in Launchpad <branch-hosting-with-bazaar>`.

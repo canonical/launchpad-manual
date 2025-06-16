@@ -133,5 +133,4 @@ major releases - what we call a series.
 
 Sometimes you may want to group just the blueprints that are relevant
 for an interim release. For that, we'll use milestones. And learning
-about those is the `final stop on our
-tour <FeatureHighlights/MilestoneUsage>`__.
+about those is the :ref:`final stop on our tour <milestones-exp>`.

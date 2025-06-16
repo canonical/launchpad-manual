@@ -40,4 +40,4 @@ Further information
 -------------------
 
 Now that you've registered your project, you can pick and choose which
-parts of Launchpad you want to use. Let's take a look at the :ref:`bug tracker <bugs>`.
+parts of Launchpad you want to use. Let's take a look at the :ref:`bug tracker <the-launchpad-bug-tracker>`.

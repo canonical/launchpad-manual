@@ -82,5 +82,5 @@ software.
 
 Teams are all about collaboration, so one of the nicest features of
 Launchpad takes advantage of them to make it easy for a team to
-collaborate on a set of software package. Welcome to `Personal Package
-Archives <FeatureHighlights/PersonalPackageArchives>`__!
+collaborate on a set of software package. Welcome to :ref:`Personal Package
+Archives <personal-package-archives-highlights>`!

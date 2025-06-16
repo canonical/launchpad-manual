@@ -1,3 +1,5 @@
+.. _translating-your-software-ref:
+
 Translating your software
 =========================
 

@@ -1,3 +1,5 @@
+.. _about-multi-project-bugs:
+
 Multi-project bugs
 ==================
 

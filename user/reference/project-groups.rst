@@ -1,3 +1,5 @@
+.. _project-groups:
+
 Project Groups
 ==============
 

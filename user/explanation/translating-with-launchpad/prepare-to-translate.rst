@@ -49,8 +49,8 @@ Licensing your translations
 One of Launchpad's terms of use is that you agree to license all your
 translations using the BSD license. This means that the translations you
 make are compatible with as many open source licenses as possible.
-There's more on this in our `translations licensing
-FAQ <Translations/LicensingFAQ>`__.
+There's more on this in our :ref:`translations licensing
+FAQ <translations-licensing-faq>`.
 
 When to translate distribution packages
 ---------------------------------------
@@ -81,7 +81,7 @@ Where to start
 Once you've been in touch with the relevant translation team, to learn
 their standards etc, you can start translation straight away. You don't
 need any special software or, in most cases, special permissions: all
-you need are `your Launchpad account <YourAccount>`__, your web browser
+you need are :ref:`your Launchpad account <your-launchpad-account>`, your web browser
 and your translation skills!
 
 When you're ready to get started, you need to tell Launchpad `which
@@ -165,5 +165,5 @@ they'll be glad to help.
 Further resources
 -----------------
 
-Read the `general translation guidelines <Translations/Guide>`__ and
+Read the :ref:`general translation guidelines <translating-your-software>` and
 know how to organize a localization team.

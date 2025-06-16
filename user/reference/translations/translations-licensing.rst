@@ -1,5 +1,6 @@
-Translations licensing
-======================
+.. _translations-licensing-faq:
+Translations licensing FAQ
+==========================
 
 .. include:: /includes/important_not_revised_help.rst
 
