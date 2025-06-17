@@ -1,6 +1,14 @@
 Release Notes
 =============
 
+June 2025
++++++++++
+17 June
+
+- Removed bzr codebrowse links on all pages that had them. This is in
+  preparation for the upcoming shutdown of the loggerhead bzr codebrowse
+  interface.
+
 May 2025
 ++++++++
 12 May
