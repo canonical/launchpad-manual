@@ -1,3 +1,5 @@
+.. _get-started-with-launchpad:
+
 Get started with Launchpad
 ==========================
 

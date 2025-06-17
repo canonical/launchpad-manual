@@ -1,3 +1,5 @@
+.. _translation-import-policy:
+
 Translation import policy
 =========================
 

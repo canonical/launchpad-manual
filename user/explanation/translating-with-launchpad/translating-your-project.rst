@@ -69,5 +69,5 @@ English strings you want to make available for translation.
 Further information
 -------------------
 
-Let us now look at how to `get your translation templates into
-Launchpad <Translations/YourProject/ImportingTemplates>`__.
+Let us now look at how to :ref:`get your translation templates into
+Launchpad <translation-import-policy>`.

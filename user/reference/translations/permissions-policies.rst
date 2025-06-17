@@ -1,3 +1,5 @@
+.. _choosing-a-permissions-policy:
+
 Choosing a permissions policy
 =============================
 

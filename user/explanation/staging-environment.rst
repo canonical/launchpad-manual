@@ -30,4 +30,4 @@ However, there are a few things to note about staging:
    lp://staging/~your-id/branch-name.
 
 If you don't need particularly up-to-date data, then there is also `the
-qastaging environment <GetInvolved/BetaTesting>`__.
+qastaging environment <https://qastaging.launchpad.net>`__.
