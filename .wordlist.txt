@@ -10,6 +10,7 @@ capitalized
 callables
 cgit
 Charmhub
+charmhub
 CLI
 conf
 contactuser
