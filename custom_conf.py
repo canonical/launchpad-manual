@@ -102,35 +102,56 @@ redirects = {}
 # Links to ignore when checking links
 
 linkcheck_ignore = [
-    'http://127.0.0.1:8000',
-    r'https://app\.diagrams\.net.*',  # ignore, as works in browser, but link checker has some issues
-    'https://archive.ph/CAqQm',  # ignore, as works in browser, but link checker has some issues
-    'https://bazaar.launchpad.net/lp-production-config',  # private
-    'https://bazaar.staging.launchpad.net',  # broken, unclear why XXX 2023-10-14: jugmac00- check with team
-    'https://www.breezy-vcs.org', # broken, returns "Connection refused" on port 443
-    'https://bugs.launchpad.net/charm-launchpad-buildd-image-modifier',  # private
-    'https://bugs.launchpad.net/launchpad-vbuilder-manage',  # private
-    'http://example.com/.*',  # ignore, example links
-    'https://launchpad.net/canonical-mojo-specs',  # private
-    r'https://launchpad\.test.*',  # ignore, local test setup
-    'Trunk/Glue',  # needs update
-    '/Background', 
-    '/Concepts',  # needs update
-    'JavascriptUnitTesting/MockIo',  # needs update
-    'https://git.launchpad.net/launchpad-mojo-specs/tree/mojo-lp-git/services',  # private
-    'https://deployable.ols.canonical.com/project/launchpad-db',  # private
-    'irc.libera.chat',  # this is not an HTTP link
-    r'https://github\.com/canonical/fetch-service*',  # private
-    r'https://github\.com/canonical/fetch-operator*',  # private
-    'https://git.launchpad.net/charm-launchpad-buildd-image-modifier/tree/files/scripts/setup-ppa-buildd',  # private
-    'https://git.zx2c4.com/cgit/', # unfortunately very flaky
-    'https://wiki.canonical.com/InformationInfrastructure/OSA/RequestLogging/LP/Cowboys',  # private
-    'https://staging.launchpad.net',  # ignore, staging launchpad
-    r'https://wiki\.canonical\.com/*',  # private
-    r'https://deployable\.ols\.canonical\.com.*',  # private
-    r'https://jenkins\.ols\.canonical\.com.*',  # private
-    '../branches',  # relative link to a page in the same documentation
-    '../live-patching',  # relative link to a page in the same documentation
+    "http://127.0.0.1:8000",
+    r"https://app\.diagrams\.net.*",  # ignore, as works in browser, but link checker has some issues
+    "https://archive.ph/CAqQm",  # ignore, as works in browser, but link checker has some issues
+    "https://bazaar.launchpad.net/lp-production-config",  # private
+    "https://bazaar.staging.launchpad.net",  # broken, unclear why XXX 2023-10-14: jugmac00- check with team
+    r"https://www\.breezy-vcs\.org/.*",  # broken, returns "Connection refused" on port 443
+    r"https://www\.bazaar-vcs\.org/.*",  # broken, returns "Connection refused" on port 443
+    "https://bugs.launchpad.net/charm-launchpad-buildd-image-modifier",  # private
+    "https://bugs.launchpad.net/launchpad-vbuilder-manage",  # private
+    "http://example.com/.*",  # ignore, example links
+    "https://launchpad.net/canonical-mojo-specs",  # private
+    r"https://launchpad\.test.*",  # ignore, local test setup
+    "Trunk/Glue",  # needs update
+    "/Background",
+    "/Concepts",  # needs update
+    "JavascriptUnitTesting/MockIo",  # needs update
+    "https://git.launchpad.net/launchpad-mojo-specs/tree/mojo-lp-git/services",  # private
+    "https://deployable.ols.canonical.com/project/launchpad-db",  # private
+    "irc.libera.chat",  # this is not an HTTP link
+    r"https://github\.com/canonical/fetch-service*",  # private
+    r"https://github\.com/canonical/fetch-operator*",  # private
+    "https://git.launchpad.net/charm-launchpad-buildd-image-modifier/tree/files/scripts/setup-ppa-buildd",  # private
+    "https://git.zx2c4.com/cgit/",  # unfortunately very flaky
+    "https://wiki.canonical.com/InformationInfrastructure/OSA/RequestLogging/LP/Cowboys",  # private
+    "https://staging.launchpad.net",  # ignore, staging launchpad
+    r"https://wiki\.canonical\.com/.*",  # private
+    r"https://www\.nongnu\.org/.*",
+    r"https://www\.gnu\.org/.*",
+    r"https://www\.socialtext\.net/.*",
+    r"https://translations\.launchpad\.net/.*",
+    r"http://localhost.*",
+
+     "http://www.ubuntu.com/community/ubuntustory/licensing", # works in browser, linkchecker issue
+    #Uncertain Dead - May not be replaceable
+    "/Estonian",
+    "/Georgian",
+    "/Indonesian",
+    "/Italian",
+    "/Korean",
+    "/Russian",
+    "../Vietnamese",
+    #Replaceable Dead - Can probably be replaced by an equivalent
+    "/../POTemplates", # - https://docs.lokalise.com/en/articles/1400767-gettext-po-pot
+    "API",
+
+    #Incorrect or non-existent file reference - Referenced file moved, deleted, or renamed
+    "/../YourProject/ImportingTemplates",
+    "Answer syntax parsing <Comments>",
+
+
 ]
 
 # Pages on which to ignore anchors
