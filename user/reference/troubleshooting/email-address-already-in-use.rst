@@ -5,10 +5,6 @@ Your email address is already in Launchpad
 
 .. include:: /includes/important_not_revised_help.rst
 
-.. toctree::
-    :hidden:
-    :maxdepth: 2
-
 If you to register an account using an email address that Launchpad
 already knows about, Launchpad will give you an error message.
 
