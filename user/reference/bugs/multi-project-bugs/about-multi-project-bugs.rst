@@ -58,10 +58,6 @@ outside of Launchpad.
 Let's take a look at `an
 example <https://bugs.launchpad.net/ubuntu/+source/mozilla-thunderbird/+bug/24220>`__.
 
-\||<tablestyle="font-size: 0.8em; width:30%; background:#F1F1ED; margin:
-1em 1em 1em 0;" style="padding:0.5em;">|\| \||<style="text-align:
-center;">\ **Bugs in Ubuntu, Debian and upstream**\ \|\|
-
 Here, the bug is tracked directly in Launchpad by the maintainers of the
 Ubuntu Mozilla Thunderbird package. However, Launchpad is also importing
 status information about the bug from two external bug trackers: Debian
@@ -72,7 +68,7 @@ Watching externally tracked bugs is just as easy as marking a bug as
 affecting multiple projects within Launchpad. Follow the link below the
 table and choose the relevant project.
 
-{i} **Note:** even though the project uses an external bug tracker, the
+**Note:** even though the project uses an external bug tracker, the
 project must be `registered <Projects/Registering>`__ in Launchpad.
 
 External trackers that Launchpad supports
@@ -81,11 +77,27 @@ External trackers that Launchpad supports
 Launchpad can link to and, in most cases, import the status of bugs
 reported in the following external trackers.
 
-\|\| **Bug tracker** \|\| **Import status?** \|\| \|\| Bugzilla \|\| Yes
-\|\| \|\| Debian BTS \|\| Yes \|\| \|\| Trac \|\| Yes \|\| \|\|
-Sourceforge \|\| Yes \|\| \|\| Mantis \|\| Yes \|\| \|\| RT \|\| Yes
-\|\| \|\| Savane \|\| Coming soon \|\| \|\| Gforge \|\| Coming soon \|\|
-\|\| Git``Hub \|\| Yes \|\|
++-----------------+--------------------+
+|Bug tracker      |Import status?      | 
++=================+====================+
+| Bugzilla        | Yes                |
++-----------------+--------------------+
+| Debian BTS      | Yes                |
++-----------------+--------------------+
+| Trac            | Yes                |
++-----------------+--------------------+
+| Sourceforge     | Yes                |
++-----------------+--------------------+
+| Mantis          | Yes                |
++-----------------+--------------------+
+| RT              | Yes                |
++-----------------+--------------------+
+| Savane          | Coming soon        |
++-----------------+--------------------+
+| Gforge          | Coming soon        |
++-----------------+--------------------+
+| GitHub          | Yes                |
++-----------------+--------------------+
 
 To ensure ease of use and consistency, Launchpad translates the statuses
 used by external trackers.

@@ -86,10 +86,9 @@ help a newcomer with.
 
 Good candidate bugs and blueprints are:
 
-| ``  1. a relatively straightforward piece of work for someone who wants to join one of your teams``
-| ``  1. something you know how to fix or implement``
-| ``  1. relevant to the work of one of one of the teams of which you are a member.``
-| ``  ``
+- A relatively straightforward piece of work for someone who wants to join one of your teams
+- Something you know how to fix or implement
+- Relevant to the work of one of one of the teams of which you are a member.
 
 You should also be confident that the fix or implementation you have in
 mind will be accepted by the relevant project. It could be highly

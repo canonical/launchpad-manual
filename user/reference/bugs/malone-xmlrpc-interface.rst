@@ -25,9 +25,10 @@ Synopsis
 For the truly interested
 ------------------------
 
-::
-    >>> from canonical.launchpad.xmlrpc import FileBugAPI``
-    >>> filebug_api = FileBugAPI(None, None)``
+.. code::
+
+    >>> from canonical.launchpad.xmlrpc import FileBugAPI
+    >>> filebug_api = FileBugAPI(None, None)
 
 The filebug API
 ~~~~~~~~~~~~~~~
@@ -41,15 +42,15 @@ The filebug API is:
 ``params`` is a dict, with the following keys:
 
 REQUIRED ARGS
-    *  summary: A string
-    *  comment: A string
+    *  ``summary``: A string
+    *  ``comment``: A string
 
 OPTIONAL ARGS
-    * product: The product name, as a string. Default None.
-    * distro: The distro name, as a string. Default None.
-    * package: A string, allowed only if distro is specified. Default None.
-    * security_related: Is this a security vulnerability?  Default False.
-    * subscribers: A list of email addresses. Default None.
+    * ``product``: The product name, as a string. Default None.
+    * ``distro``: The distro name, as a string. Default None.
+    * ``package``: A string, allowed only if distro is specified. Default None.
+    * ``security_related``: Is this a security vulnerability?  Default False.
+    * ``subscribers``: A list of email addresses. Default None.
 
 Either product or distro must be provided. The bug owner is the
 currently authenticated user, taken from the request. The return value

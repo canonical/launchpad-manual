@@ -17,9 +17,9 @@ selected and any binary packages built from it.
 Deletion marks the packages as deleted in the UI, but they are actually
 removed from your PPA in separate steps:
 
-:literal:`Archive`   ``indexes:`` A deleted package disappears from the archive indexes in at most 20 minutes. As soon as this happens, users will no longer be able to install it via apt.
+``Archive indexes:`` A deleted package disappears from the archive indexes in at most 20 minutes. As soon as this happens, users will no longer be able to install it via apt.
 
-:literal:`Files`   ``on``   ``disk:`` A file will be removed from the archive disk pool only when all packages referencing it have been scheduled for deletion. This includes packages published in other series, or multiple package versions referring to the same original upstream tarball.
+``Files on disk:`` A file will be removed from the archive disk pool only when all packages referencing it have been scheduled for deletion. This includes packages published in other series, or multiple package versions referring to the same original upstream tarball.
 
 The job that removes files from disk runs every six hours. It may take
 some time to remove a file from disk, depending on the number of

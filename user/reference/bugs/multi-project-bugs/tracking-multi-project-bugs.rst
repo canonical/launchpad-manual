@@ -20,7 +20,7 @@ communities:
 
 -  Java upstream
 -  Debian
--  Ubuntu.
+-  Ubuntu
 
 In Ubuntu's case, the bug has been recorded in two places: the sun-java5
 and sun-java6 packages.

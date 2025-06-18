@@ -1,5 +1,5 @@
 Privacy, confidentiality and disclosure
----------------------------------------
+=======================================
 
 .. include:: /includes/important_not_revised_help.rst
 
@@ -10,7 +10,7 @@ disclose confidential information to, and maybe choose to make the
 information public.
 
 Email addresses and obfuscation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------
 
 Launchpad considers all user email addresses to be confidential
 information. Anonymous users may not know any email address that belongs
@@ -51,7 +51,7 @@ See `Creating and running a team <Teams/CreatingAndRunning>`__ for more
 information.
 
 Hiding comments
-~~~~~~~~~~~~~~~
+---------------
 
 Project maintainers and comment authors may choose to hide comments that
 they believe contain confidential information. The comment may appear on
@@ -195,45 +195,48 @@ is disclosed.
 There is a policy for each kind of thing that can change: bugs,
 branches, and blueprints.
 
--  **Public** <
-   >
+-  **Public** 
 
 | ``New items as public unless they contain confidential information. Items``
 | ``can be made Private or Private Security later.``
 
--  **Public, can be proprietary** <
-   >
+-  **Public, can be proprietary** 
 
 ``New items are public, but can be made proprietary later.``
 
--  **Proprietary, can be public** <
-   >
+-  **Proprietary, can be public** 
 
 | ``New items are proprietary, but can be made public later.``
 | ``Only people who can see the project's proprietary information``
 | ``can create new branches or bugs.``
 
--  **Proprietary** <
-   >
+-  **Proprietary** 
 
 | ``New items are always proprietary.``
 | ``Only people who can see the project's proprietary information``
 | ``can create new branches.``
 
--  **Embargoed, can be proprietary** <
-   >
+-  **Embargoed, can be proprietary** 
 
 | ``New branches are embargoed, but can be made proprietary later.``
 | ``Only people who can see the project's proprietary information``
 | ``can create new branches.``
 
-\|\| Sharing Policy \|\| Public \|\| Public Security \|\| Private \|\|
-Private Security \|\| Proprietary \|\| Embargoed \|\| \|\| Public \|\|
-Default \|\| Yes \|\| Yes \|\| Yes \|\| - \|\| - \|\| \|\| Public, can
-be proprietary \|\| Default \|\| Yes \|\| Yes \|\| Yes \|\| Yes \|\| -
-\|\| \|\| Proprietary, can be public \|\| Yes \|\| Yes \|\| Yes \|\| Yes
-\|\| Default \|\| - \|\| \|\| Proprietary \|\| - \|\| - \|\| - \|\| -
-\|\| Default \|\| - \|\| \|\| Embargoed, can be proprietary \|\| - \|\|
-- \|\| - \|\| - \|\| Yes \|\| Default \|\|
 
-/!\\ Embargoed branches is only settable using Launchpad API.
++------------------------------+------------+-------------------+-----------+--------------------+---------------+-------------+
+|**Sharing Policy**            | **Public** |**Public Security**|**Private**|**Private Security**|**Proprietary**|**Embargoed**| 
++==============================+============+===================+===========+====================+===============+=============+
+|Public                        |Default     |Yes                |Yes        |Yes                 | \-            |\-           | 
++------------------------------+------------+-------------------+-----------+--------------------+---------------+-------------+
+|Public, can be proprietary    |Default     |Yes                |Yes        |Yes                 |Yes            |\-           |
++------------------------------+------------+-------------------+-----------+--------------------+---------------+-------------+
+|Proprietary, can be public    |Yes         |Yes                |Yes        |Yes                 |Default        |\-           | 
++------------------------------+------------+-------------------+-----------+--------------------+---------------+-------------+
+|Proprietary                   |\-          |\-                 |\-         |\-                  |Default        |\-           |
++------------------------------+------------+-------------------+-----------+--------------------+---------------+-------------+
+|Embargoed, can be proprietary |\-          |\-                 |\-         |\-                  |Yes            |Default      |
++------------------------------+------------+-------------------+-----------+--------------------+---------------+-------------+
+
+.. note::
+   
+   Embargoed branches is only settable using Launchpad API.

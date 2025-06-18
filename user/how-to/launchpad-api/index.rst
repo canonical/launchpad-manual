@@ -13,7 +13,7 @@ addition to accessing them through the Launchpad website. The service is
 designed around the principles of REST, with the goals of simplicity and
 transparency.
 
--  If you're the end-user of an application like Ground Control, you don't need to know about the API at all: you just need to know `how to integrate your Launchpad account with a third-party application <use-the-python-api>`.
+-  If you're the end-user of an application like Ground Control, you don't need to know about the API at all: you just need to know :ref:`how to integrate your Launchpad account with a third-party application <use-the-python-api>`.
 
 -  :ref:`launchpadlib` is the official Python client
    library for Launchpad's web service.
@@ -48,9 +48,10 @@ transparency.
    describes every published object and operation in a language-neutral
    form.
 
+Find out more:
+
 .. toctree::
-   :hidden:
-   :maxdepth: 2
+   :maxdepth: 1
 
    Access web services <launchpad-web>
    Sign web requests <launchpad-web-signing>

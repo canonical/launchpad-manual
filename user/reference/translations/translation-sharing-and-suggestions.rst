@@ -14,11 +14,11 @@ that's translated in Launchpad and its Ubuntu packages.
 There are two ways in which Launchpad can use this to reduce the amount
 of work needed to translate a project:
 
-   -  translation suggestions: Launchpad will suggest a translation if
-      it already has one in its database
-   -  translation sharing: when the same English strings appear in
-      different versions (series) of a project, Launchpad will use the
-      same translation across all these versions.
+-  translation suggestions: Launchpad will suggest a translation if
+   it already has one in its database
+-  translation sharing: when the same English strings appear in
+   different versions (series) of a project, Launchpad will use the
+   same translation across all these versions.
 
 Translation suggestions
 -----------------------

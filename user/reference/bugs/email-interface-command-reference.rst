@@ -29,8 +29,6 @@ For example:
 
     assignee bradb
 
-<<Anchor(affects)>>
-
 affects
 -------
 

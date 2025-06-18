@@ -129,7 +129,7 @@ Launchpad Translators group:
    team. As the coordinator, you are the primary contact person for the
    team and the person who make things happen.
 
-      -  As the coordinator of a Launchpad localization team, it is higly recommended to join the `Launchpad Translators mailing list <https://launchpad.net/~launchpad-translators>`__.
+   -  As the coordinator of a Launchpad localization team, it is higly recommended to join the `Launchpad Translators mailing list <https://launchpad.net/~launchpad-translators>`__.
 
 -  **Apply**. `Send a support request <https://answers.launchpad.net/rosetta/+addquestion>`__ for the Launchpad Translations Coordinators to appoint your team in the Launchpad Translators group. Please include a link to your team and a short note explaining how you have addressed the points above.
 

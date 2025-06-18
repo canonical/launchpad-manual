@@ -107,17 +107,17 @@ More information
 Here are some documents that describe how to make the most of the Answer
 Tracker feature in Launchpad:
 
-1. SupportTrackerTour: a quick tour which shows the main features
-      of the support tracker
+1. `SupportTrackerTour <https://help.launchpad.net/SupportTrackerTour>`_: 
+a quick tour which shows the main features of the support tracker
 
-:literal:`Answer Tracker Tour<https://answers.launchpad.net/+tour>_`:
+2. `Answer Tracker Tour <https://answers.launchpad.net/+tour>`_:
 a quick tour which shows the main features of the Answer Tracker.
 
-2. :ref:`Asking for help <asking-for-help>`:find out how to
+3. :ref:`Asking for help <asking-for-help>`:find out how to
    use Launchpad to get help with software.
-3. :ref:`Offering help <offering-help>`: how to help other
+4. :ref:`Offering help <offering-help>`: how to help other
    people and become an ..answer contact.
-4. `Answer syntax parsing <Comments>`
+5. `Answer syntax parsing <Comments>`
 
 ..
    _What is number 4 supposed to link to?

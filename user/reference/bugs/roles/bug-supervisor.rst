@@ -42,7 +42,7 @@ There are two restrictions when you appoint a bug supervisor:
 
    -  Only the project/distribution owner may appoint the bug
       supervisor.
-   - You can only appoint yourself or a team which you administer
+   - You can only appoint yourself or a team which you administer.
 
 .. raw:: html
 

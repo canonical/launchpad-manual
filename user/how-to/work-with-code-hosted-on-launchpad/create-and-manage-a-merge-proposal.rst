@@ -163,9 +163,7 @@ Here is the list of available commands:
 
 You can combine commands, so if you wanted to vote ``disapprove``, add a
 tag of ``UI``, leave a :ref:`comment <launchpad-comment-parsing>`, and reject the merge
-proposal, you'd write:
-
-::
+proposal, you'd write::
 
    This is a sensible change but I find the user interface confusing.
 

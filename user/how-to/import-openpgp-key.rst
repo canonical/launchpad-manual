@@ -19,14 +19,14 @@ OpenPGP uses two types of digital keys: one public, one private. Each time you s
 Using Passwords and Encryption Keys to manage OpenPGP keys
 ----------------------------------------------------------
 
-The easiest way to generate a new OpenPGP key in Ubuntu is to use the *Passwords and Encryption Keys* tool. If you are using Ubuntu 10.04 or an earlier version, it is located at *Applications &gt; Accessories &gt; Passwords and Encryption Keys*. In Ubuntu 10.10 and later versions, it is located at *System &gt; Preferences &gt; Passwords and Encryption Keys*
+The easiest way to generate a new OpenPGP key in Ubuntu is to use the *Passwords and Encryption Keys* tool. If you are using Ubuntu 10.04 or an earlier version, it is located at *Applications & Accessories & Passwords and Encryption Keys*. In Ubuntu 10.10 and later versions, it is located at *System & Preferences & Passwords and Encryption Keys*
 
 Creating your OpenPGP keys
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Step 1:** Open *Passwords and Encryption Keys*.
 
-**Step 2:** Select *File &gt; New*, select *PGP Key*, and then follow the on-screen instructions.
+**Step 2:** Select *File & New*, select *PGP Key*, and then follow the on-screen instructions.
 
 Now you'll see your new key listed in the *Passwords and Encryption Keys* tool.
 
@@ -37,7 +37,7 @@ Publishing your key to a keyserver
 
 **Step 2:** Select the *My Personal Keys* tab, select your key.
 
-**Step 3:** Select *Remote &gt; Sync and Publish Keys* from the menu. Choose the Sync button. (You may need to add ``hkp://keyserver.ubuntu.com`` to your key servers if you are not using Ubuntu.)
+**Step 3:** Select *Remote & Sync and Publish Keys* from the menu. Choose the Sync button. (You may need to add ``hkp://keyserver.ubuntu.com`` to your key servers if you are not using Ubuntu.)
 
 It can take up to thirty minutes before your key is available to Launchpad. After that time, you're ready to import key into into Launchpad.
 
@@ -83,7 +83,7 @@ You may have set your key to expire. You can update your key's expiration date a
 
 **Step 3:** Set a new expiration date or choose never. Close the property window
 
-**Step 4:** With you key still selected, select *Remote &gt; Sync and Publish Keys* from the menu. Choose the Sync button.
+**Step 4:** With you key still selected, select *Remote & Sync and Publish Keys* from the menu. Choose the Sync button.
 
 Using GPG to manage OpenPGP keys
 --------------------------------
@@ -142,23 +142,22 @@ Your keys are now stored as public.key and private.key in the current directory.
 
 --------------------------------
 
-::
+.. code::
+
     pub   1024D/12345678 2007-01-26
     uid                  Matthew Revell (My test OpenPGP key) \test@matthewrevelltest.com\
     sub   2048g/9ABCDEF1 2007-01-26
 
 Make a note of the *pub* id, which is 12345678 in the example above.
 
-**Step 12:** Launchpad doesn't store your key directly, so you need to export your public key to a key server, such as keyserver.ubuntu.com:
+**Step 12:** Launchpad doesn't store your key directly, so you need to export your public key to a key server, such as keyserver.ubuntu.com::
 
-::
     gpg --keyserver keyserver.ubuntu.com --send-keys 12345678
 
 Replace ``12345678`` with the pub id you noted in step 11.
 
-If successful, GPG will display a message similar to:
-
-::
+If successful, GPG will display a message similar to::
+   
     gpg: sending key 12345678 to hkp server keyserver.ubuntu.com
 
 Importing your key into Launchpad with gpg
@@ -166,14 +165,12 @@ Importing your key into Launchpad with gpg
 
 You can generate both keys using the GPG tool. If you're running Ubuntu, and most other Linux-based operating systems, GPG is ready to use.
 
-**Step 1:** Launchpad identifies your OpenPGP key by its fingerprint. In your terminal, you can ask GPG for your key's fingerprint by typing:
+**Step 1:** Launchpad identifies your OpenPGP key by its fingerprint. In your terminal, you can ask GPG for your key's fingerprint by typing::
 
-::
     gpg --fingerprint
 
-GPG will display a message similar to:
+GPG will display a message similar to::
 
-::
     pub   1024D/12345678 2007-01-26
     Key fingerprint = 0464 39CD 2486 190A 2C5A  0739 0E68 04DC 16E7 CB72
     uid   Matthew Revell (My test OpenPGP key) \test@matthewrevelltest.com\

@@ -74,9 +74,9 @@ To obtain a request token, send a POST request to
 This is the same kind of POST a web browser does when it submits a form.
 You should submit the following values in form-URL-encoded format.
 
--  oauth_consumer_key: Your consumer key
--  oauth_signature_method: The string "PLAINTEXT"
--  oauth_signature: The string "&".
+-  ``oauth_consumer_key``: Your consumer key
+-  ``oauth_signature_method``: The string "PLAINTEXT"
+-  ``oauth_signature``: The string "&".
 
 So the HTTP request might look like this:
 
@@ -189,10 +189,10 @@ parameters:
 
 -
 
-   -  oauth_token: The same as *oauth_token* from step 1
-   -  oauth_consumer_key: The consumer key you chose in step 0
-   -  oauth_signature_method: The string "PLAINTEXT"
-   -  oauth_signature: The OAuth signature, calculated using `the PLAINTEXT algorithm <http://oauth.net/core/1.0/#anchor22>`_ and
+   -  ``oauth_token``: The same as *oauth_token* from step 1
+   -  ``oauth_consumer_key``: The consumer key you chose in step 0
+   -  ``oauth_signature_method``: The string "PLAINTEXT"
+   -  ``oauth_signature``: The OAuth signature, calculated using `the PLAINTEXT algorithm <http://oauth.net/core/1.0/#anchor22>`_ and
       the *oauth_token_secret* from step 1
 
 The last one is the tricky one. The OAuth standard has the details, but

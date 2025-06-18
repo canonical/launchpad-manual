@@ -31,7 +31,10 @@ You might encounter a "Forbidden" error from Launchpad complaining about
 no REFERER header on the last step of the process. By adding the
 following to /etc/lynx-cur/local.cfg , you should be able to proceed:
 
-REFERER_WITH_QUERY:PARTIAL
+.. code::
+
+    REFERER_WITH_QUERY:PARTIAL
+
 
 Active bugs: https://bugs.launchpad.net/bugs/535456
 
@@ -66,8 +69,12 @@ is especially useful if you are using Gnome Terminal to run an OAuth
 application on a headless server via SSH:
 
 
-#. Run the console application using `/bin/echo` as the browser: \$
-   BROWSER=/bin/echo tarmac authenticate
+#. Run the console application using `/bin/echo` as the browser: 
+
+   .. code:: console
+
+      $ BROWSER=/bin/echo tarmac authenticate
+
 #. The URL to validate the OAuth token will be printed to the console:
    copy it to the clipboard
 #. Open a web browser in a different window, paste the token URL into

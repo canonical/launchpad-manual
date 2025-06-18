@@ -26,16 +26,14 @@ At present, Launchpad only supports RSA, DSA, and ECDSA keys.
 Linux/Cygwin/MacOS
 ^^^^^^^^^^^^^^^^^^
 
-**Step 1:** Install OpenSSH. On Ubuntu, you can install OpenSSH by opening your terminal and typing:
+**Step 1:** Install OpenSSH. On Ubuntu, you can install OpenSSH by opening your terminal and typing::
 
-::
     sudo apt-get install openssh-client
 
 With Cygwin, you can follow the instructions at `<http://pigtail.net/LRP/printsrv/cygwin-ssh.html>`_.
 
-**Step 2:** Once OpenSSH is installed, stay in the terminal and type:
+**Step 2:** Once OpenSSH is installed, stay in the terminal and type::
 
-::
     ssh-keygen -t rsa
 
 **Step 3:** When prompted, press Enter to accept the default file name for your key.
@@ -44,9 +42,8 @@ With Cygwin, you can follow the instructions at `<http://pigtail.net/LRP/printsr
 
 Now you need to upload the public portion of your SSH key to Launchpad.
 
-**Possible Step 5:** You may need to run ssh-add with the id file if you created an id file other than ``~/.ssh/id_rsa``. Do ``ssh-add /path/to/file/id_rsa_newfile``. If you’re on the Mac, you can execute the following on the command line:
+**Possible Step 5:** You may need to run ssh-add with the id file if you created an id file other than ``~/.ssh/id_rsa``. Do ``ssh-add /path/to/file/id_rsa_newfile``. If you’re on the Mac, you can execute the following on the command line::
 
-::
     cat ~/.ssh/id_rsa.pub | pbcopy
 
 Windows (PuTTY)
@@ -104,9 +101,7 @@ To do this:
 
 #. You need to generate a key to a non-default name, perhaps id_rsa_launchpad (and .pub)
 #. Upload that key to Launchpad, as described above.
-#. You'll need to tell your SSH client to use this key. With OpenSSH, add these lines to your ~/.ssh/config file:
-
-.. code-block::
+#. You'll need to tell your SSH client to use this key. With OpenSSH, add these lines to your ~/.ssh/config file::
 
     Host bazaar.launchpad.net
      IdentityFile  /home/me/.ssh/id_rsa_launchpad

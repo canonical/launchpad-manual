@@ -22,7 +22,7 @@ policies:
    though. For languages that don't have an appointed team/individual
    within your translation group, anyone can directly submit a
    translation.
--  **Restricted:** similar to \``structured``, except that translations
+-  **Restricted:** similar to ``structured``, except that translations
    are closed on languages that don't have an individual or team
    assigned to it within the translation group.
 -  **Closed:** only people or teams appointed in the translation group

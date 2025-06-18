@@ -52,9 +52,9 @@ should get through our automated approval process without problems.
 You'll need to check each template uploaded using the following rules:
 
 -  The template must be in GNU Gettext format and its file name end in
-   \```.pot``\` (see our `guidelines <#guidelines>`__ below for
+   ```.pot``` (see our `guidelines <#guidelines>`__ below for
    directory structure)
--  \```msgid``\` strings must be in English, not any other language or
+-  ```msgid``` strings must be in English, not any other language or
    symbolic identifiers.
 -  If there are multiple template files, each should be in a separate
    directory. If you're uploading through the web interface, you can

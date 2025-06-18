@@ -10,7 +10,7 @@ for the project or distribution you're using.
 **Example:** if you want help with the NULL project, you'd visit
 https://answers.launchpad.net/null
 
-Follow the \```Ask a question``\` link and choose the language with
+Follow the ```Ask a question``` link and choose the language with
 which you're most comfortable.
 
 {i} **Tip:** to improve your chances of getting an answer, choose a
@@ -24,7 +24,7 @@ Let's say you're having trouble getting Exaile to minimise to the system
 notifications area of your Gnome panel (the systray). You enter the
 question:
 
-*:literal:`How``   ``do``   ``I``   ``minimise``   ``Exaile``   ``to``   ``the``   ``systray?`*
+:literal:`How do I minimise Exaile to the systray?`
 
 Launchpad will now search for existing questions that look similar. If
 it finds any, it will show you them.
@@ -68,26 +68,26 @@ Actions that change a question's status
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -  **Someone, other than the reporter, has asked for more information**.
-   When the question's status is \```Open```, this will change it to
-   \```Needs information```.
+   When the question's status is ```Open```, this will change it to
+   ```Needs information```.
 -  **The reporter provides more information on the problem**. When the
-   status of the question is \```Needs information```, this will change
-   it back to \```Open```.
+   status of the question is ```Needs information```, this will change
+   it back to ```Open```.
 -  **Someone answers a question**. When the status of the question is
-   \```Open``\` or \```Needs information```, this will change it to
-   \```Answered```.
+   ```Open``` or ```Needs information```, this will change it to
+   ```Answered```.
 -  **The original reporter tells Launchpad they have found a solution**.
-   The status moves to \```Solved```.
+   The status moves to ```Solved```.
 -  **The reporter confirms an answer given by another user**. The status
-   moves to \```Solved```.
+   moves to ```Solved```.
 -  **After receiving an answer, the reporter replies that the problem
-   still occurs**. This reverts status to \```Open```.
+   still occurs**. This reverts status to ```Open```.
 -  **Two weeks have passed without a change to the question**. If the
-   question is in the \```Open``\` or \```Needs information``\` state,
+   question is in the ```Open``` or ```Needs information``` state,
    Launchpad's robot - the Launchpad Janitor - will automatically mark
-   the question as \```Expired```.
+   the question as ```Expired```.
 -  **An answer contact or administrator rejects a question which
    contains spam or is a duplicate**. This changes the status to
-   \```Invalid```.
+   ```Invalid```.
 
 

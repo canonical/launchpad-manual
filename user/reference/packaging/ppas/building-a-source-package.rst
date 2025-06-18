@@ -137,8 +137,8 @@ Ubuntu's primary archive, you don't need to upload the
 
 So, the ``debuild`` options you'd use are:
 
--  **alternative version of an existing package (will be uploaded without the ``.orig.tar.gz`` file):** ``debuild -S -sd``
--  **brand new package with no existing version in Ubuntu's repositories (will be uploaded with the ``.orig.tar.gz`` file):** ``debuild -S -sa``
+-  alternative version of an existing package (will be uploaded without the ``.orig.tar.gz`` file): ``debuild -S -sd``
+-  brand new package with no existing version in Ubuntu's repositories (will be uploaded with the ``.orig.tar.gz`` file): ``debuild -S -sa``
 
 .. note::
 

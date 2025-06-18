@@ -267,13 +267,7 @@ Get the type of requested code review
 The trick here (`bug 526362 <https://bugs.launchpad.net/bugs/526362>`_)
 is that the review type is actually an attribute of the pending review,
 and the pending review is recorded as a 'vote' with no vote or comment.
-So you need to iterate the
-
-::
-
-   votes
-
-attribute of the merge proposal.
+So you need to iterate the ``votes`` attribute of the merge proposal.
 
 Get IDs of recent package builds
 --------------------------------

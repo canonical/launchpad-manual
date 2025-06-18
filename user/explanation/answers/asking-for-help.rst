@@ -76,7 +76,7 @@ Actions that change a question's status
 
     When the question's status is ``Open``, this will change it to
     ``Needs information``.
-
+    
 -  The reporter provides more information on the problem.
 
     When the   status of the question is ``Needs information``,

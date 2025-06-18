@@ -90,7 +90,8 @@ Mantis
      - won't fix
      - Won't Fix
 
-* ### **Request Tracker (RT)**
+Request Tracker (RT)
+~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :header-rows: 1
@@ -108,7 +109,8 @@ Mantis
    * - resolved
      - Fix Released
 
-* ### **Roundup**
+Roundup
+~~~~~~~
 
 .. list-table::
    :header-rows: 1
