@@ -13,8 +13,8 @@
 ############################################################
 
 # Product name
-project = 'Launchpad Manual'
-author = 'Canonical Group Ltd'
+project = "Launchpad Manual"
+author = "Canonical Group Ltd"
 
 # Uncomment if your product uses release numbers
 # release = '1.0'
@@ -33,53 +33,45 @@ author = 'Canonical Group Ltd'
 #   -H 'Accept: application/vnd.github.v3.raw' \
 #   https://api.github.com/repos/canonical/<REPO> | jq '.created_at'
 
-copyright = '2023, %s' % author
+copyright = "2023, %s" % author
 
 ## Open Graph configuration - defines what is displayed in the website preview
 # The URL of the documentation output
-ogp_site_url = 'https://canonical-launchpad-manual.readthedocs-hosted.com/'
+ogp_site_url = "https://canonical-launchpad-manual.readthedocs-hosted.com/"
 # The documentation website name (usually the same as the product name)
 ogp_site_name = project
 # An image or logo that is used in the preview
-ogp_image = 'https://assets.ubuntu.com/v1/253da317-image-document-ubuntudocs.svg'
+ogp_image = "https://assets.ubuntu.com/v1/253da317-image-document-ubuntudocs.svg"
 
 # Update with the favicon for your product (default is the circle of friends)
-html_favicon = '.sphinx/_static/favicon.png'
+html_favicon = ".sphinx/_static/favicon.png"
 
 # (Some settings must be part of the html_context dictionary, while others
 #  are on root level. Don't move the settings.)
 html_context = {
-
     # Change to the link to your product website (without "https://")
-    'product_page': 'launchpad.net',
-
+    "product_page": "launchpad.net",
     # Add your product tag to ".sphinx/_static" and change the path
     # here (start with "_static"), default is the circle of friends
     # XXX 2023-09-29: jugmac00 - currently using the Canonical default image
-    'product_tag': '_static/tag.png',
-
+    "product_tag": "_static/tag.png",
     # Change to the discourse instance you want to be able to link to
     # using the :discourse: metadata at the top of a file
     # (use an empty value if you don't want to link)
-    'discourse': '',
-
+    "discourse": "",
     # Change to the GitHub info for your project
-    'github_url': 'https://github.com/canonical/launchpad-manual',
-
+    "github_url": "https://github.com/canonical/launchpad-manual",
     # Change to the branch for this version of the documentation
-    'github_version': 'main',
-
+    "github_version": "main",
     # Change to the folder that contains the documentation
     # (usually "/" or "/docs/")
-    'github_folder': '/',
-
+    "github_folder": "/",
     # Change to an empty value if your GitHub repo doesn't have issues enabled.
     # This will disable the feedback button and the issue link in the footer.
-    'github_issues': 'enabled',
-
+    "github_issues": "enabled",
     # Controls the existence of Previous / Next buttons at the bottom of pages
     # Valid options: none, prev, next, both
-    'sequential_nav': "none"
+    "sequential_nav": "none",
 }
 
 # Here we can configure custom theme options.
@@ -110,42 +102,62 @@ redirects = {}
 # Links to ignore when checking links
 
 linkcheck_ignore = [
-    'http://127.0.0.1:8000',
-    r'https://app\.diagrams\.net.*',  # ignore, as works in browser, but link checker has some issues
-    'https://archive.ph/CAqQm',  # ignore, as works in browser, but link checker has some issues
-    'https://bazaar.launchpad.net/lp-production-config',  # private
-    'https://bazaar.staging.launchpad.net',  # broken, unclear why XXX 2023-10-14: jugmac00- check with team
-    'https://www.breezy-vcs.org', # broken, returns "Connection refused" on port 443
-    'https://bugs.launchpad.net/charm-launchpad-buildd-image-modifier',  # private
-    'https://bugs.launchpad.net/launchpad-vbuilder-manage',  # private
-    'http://example.com/.*',  # ignore, example links
-    'https://launchpad.net/canonical-mojo-specs',  # private
-    r'https://launchpad\.test.*',  # ignore, local test setup
-    'Trunk/Glue',  # needs update
-    '/Background', 
-    '/Concepts',  # needs update
-    'JavascriptUnitTesting/MockIo',  # needs update
-    'https://git.launchpad.net/launchpad-mojo-specs/tree/mojo-lp-git/services',  # private
-    'https://deployable.ols.canonical.com/project/launchpad-db',  # private
-    'irc.libera.chat',  # this is not an HTTP link
-    r'https://github\.com/canonical/fetch-service*',  # private
-    r'https://github\.com/canonical/fetch-operator*',  # private
-    'https://git.launchpad.net/charm-launchpad-buildd-image-modifier/tree/files/scripts/setup-ppa-buildd',  # private
-    'https://git.zx2c4.com/cgit/', # unfortunately very flaky
-    'https://wiki.canonical.com/InformationInfrastructure/OSA/RequestLogging/LP/Cowboys',  # private
-    'https://staging.launchpad.net',  # ignore, staging launchpad
-    r'https://wiki\.canonical\.com/*',  # private
-    r'https://deployable\.ols\.canonical\.com.*',  # private
-    r'https://jenkins\.ols\.canonical\.com.*',  # private
-    '../branches',  # relative link to a page in the same documentation
-    '../live-patching',  # relative link to a page in the same documentation
-    ]
+    "http://127.0.0.1:8000",
+    r"https://app\.diagrams\.net.*",  # ignore, as works in browser, but link checker has some issues
+    "https://archive.ph/CAqQm",  # ignore, as works in browser, but link checker has some issues
+    "https://bazaar.launchpad.net/lp-production-config",  # private
+    "https://bazaar.staging.launchpad.net",  # broken, unclear why XXX 2023-10-14: jugmac00- check with team
+    r"https://www\.breezy-vcs\.org/.*",  # broken, returns "Connection refused" on port 443
+    r"https://www\.bazaar-vcs\.org/.*",  # broken, returns "Connection refused" on port 443
+    "https://bugs.launchpad.net/charm-launchpad-buildd-image-modifier",  # private
+    "https://bugs.launchpad.net/launchpad-vbuilder-manage",  # private
+    "http://example.com/.*",  # ignore, example links
+    "https://launchpad.net/canonical-mojo-specs",  # private
+    r"https://launchpad\.test.*",  # ignore, local test setup
+    "Trunk/Glue",  # needs update
+    "/Background",
+    "/Concepts",  # needs update
+    "JavascriptUnitTesting/MockIo",  # needs update
+    "https://git.launchpad.net/launchpad-mojo-specs/tree/mojo-lp-git/services",  # private
+    "https://deployable.ols.canonical.com/project/launchpad-db",  # private
+    "irc.libera.chat",  # this is not an HTTP link
+    r"https://github\.com/canonical/fetch-service*",  # private
+    r"https://github\.com/canonical/fetch-operator*",  # private
+    "https://git.launchpad.net/charm-launchpad-buildd-image-modifier/tree/files/scripts/setup-ppa-buildd",  # private
+    "https://git.zx2c4.com/cgit/",  # unfortunately very flaky
+    "https://wiki.canonical.com/InformationInfrastructure/OSA/RequestLogging/LP/Cowboys",  # private
+    "https://staging.launchpad.net",  # ignore, staging launchpad
+    r"https://wiki\.canonical\.com/.*",  # private
+    r"https://www\.nongnu\.org/.*",
+    r"https://www\.gnu\.org/.*",
+    r"https://www\.socialtext\.net/.*",
+    r"https://translations\.launchpad\.net/.*",
+    r"http://localhost.*",
+
+     "http://www.ubuntu.com/community/ubuntustory/licensing", # works in browser, linkchecker issue
+    #Uncertain Dead - May not be replaceable
+    "/Estonian",
+    "/Georgian",
+    "/Indonesian",
+    "/Italian",
+    "/Korean",
+    "/Russian",
+    "../Vietnamese",
+    #Replaceable Dead - Can probably be replaced by an equivalent
+    "/../POTemplates", # - https://docs.lokalise.com/en/articles/1400767-gettext-po-pot
+    "API",
+
+    #Incorrect or non-existent file reference - Referenced file moved, deleted, or renamed
+    "/../YourProject/ImportingTemplates",
+    "Answer syntax parsing <Comments>",
+
+
+]
 
 # Pages on which to ignore anchors
 # (This list will be appended to linkcheck_anchors_ignore_for_url)
 
-custom_linkcheck_anchors_ignore_for_url = [
-    ]
+custom_linkcheck_anchors_ignore_for_url = []
 
 ############################################################
 ### Additions to default configuration
@@ -159,8 +171,8 @@ custom_extensions = []
 
 # Add files or directories that should be excluded from processing.
 custom_excludes = [
-    'doc-cheat-sheet*',
-    'readme.rst',
+    "doc-cheat-sheet*",
+    "readme.rst",
 ]
 
 # Add CSS files (located in .sphinx/_static/)
