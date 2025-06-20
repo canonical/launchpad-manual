@@ -3,6 +3,8 @@
 Using Launchpad with Bazaar
 ===========================
 
+.. include:: /includes/important_bazaar_deprecation.rst
+
 .. include:: /includes/important_not_revised_help.rst
 
 .. toctree::
