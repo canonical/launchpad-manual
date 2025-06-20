@@ -18,6 +18,7 @@ Therefore, to access the builder, one should either:
    ``disable`` the builder, otherwise the build might not get dispatched
    properly.
 
+.. _disable-builder:
 
 Disable a builder
 ~~~~~~~~~~~~~~~~~
@@ -71,6 +72,36 @@ need to look into the container, you can ``lxc list`` to list the lxc
 containers present in the builder, and then run ``lxc shell`` to start a shell
 session from within the container.
 
+
+Cowboy builder
+~~~~~~~~~~~~~~
+
+.. tip::
+
+   Either :ref:`disable<disable-builder>` or switch to manual every
+   builder in the same architecture except one, and make the cowboy on that
+   builder only. Otherwise, the location of the next triggered build will be
+   randomized.
+
+Once you are inside the builder, 
+
+1. Switch to the package directory of lp-buildd with ``cd 
+   /usr/lib/python3/dist-packages/lpbuildd/``.
+   
+2. Make the changes you want with ``sudo`` access, e.g. ``sudo vim
+   binarypackage.py``.
+
+3. Once you're done making changes, restart the launchpad-buildd systemd service
+   with ``sudo systemctl restart launchpad-buildd``
+
+This will restart the service with your changes included. Running any build
+on that specific builder will run the cowboyed changes with it.
+
+.. note::
+   The cowboyed changes to the builder will be deleted in the next "cleaning"
+   stage of the builder. A "cleaning" stage can be triggered by finished
+   builds or disable-then-enable calls. Each subsequent cowboyed build will
+   require re-application of the cowboy changes in an identical manner.
 
 Clean-up
 ~~~~~~~~
