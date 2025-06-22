@@ -72,7 +72,7 @@ getting it installed and configured on your network.
 
 .. code-block:: sh
 
-    #! /bin/sh
+    #!/bin/sh
     
     id=400000  # some large uid outside of typical range, and outside of already mapped ranges in /etc/sub{u,g}id
     uid=$(id -u)
