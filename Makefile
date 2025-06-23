@@ -106,7 +106,7 @@ spelling: html
 .PHONY: spelling
 
 
-linkcheck: 
+linkcheck: install
     @echo "skipping linkcheck"
 	@true
 
