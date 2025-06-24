@@ -12,7 +12,6 @@ knowing a lot about HTTP client programming.
 
 
 .. toctree::
-   :hidden:
    :maxdepth: 1
 
    Get started with launchpadlib <using-launchpadlib> 

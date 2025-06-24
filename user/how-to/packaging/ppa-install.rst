@@ -5,14 +5,6 @@ Install software from PPAs
 
 .. include:: /includes/important_not_revised_help.rst
 
-.. toctree::
-    :hidden:
-    :maxdepth: 2
-
-    Install software from private PPAs <private-ppa-install>
-    Set up daily builds with bzr-builder <source-builds-with-bzr-builder>
-    Upload a package to a PPA <ppa-package-upload>
-
 PPAs work like normal Ubuntu archives. You can install software in the
 usual way -- for example, through ``apt-get`` or ``synaptic`` --
 and whenever there's an update Ubuntu will prompt you to install it.

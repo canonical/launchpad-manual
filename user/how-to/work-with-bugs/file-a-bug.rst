@@ -22,7 +22,7 @@ that certain fields may be pre-populated.
 Getting started
 ---------------
 
-When you :ref:`registered your project <register-your-project>` in
+When you :ref:`registered your project <how-to-register-your-project>` in
 Launchpad, you had the option to specify where its bugs are tracked. If
 you chose an option other than ``Bugs are tracked in Launchpad``, you
 now need to activate the Launchpad bug tracker for your project.

@@ -1,4 +1,5 @@
 
+.. _how-to-close-account:
 Close your account
 ==================
 .. include:: /includes/important_not_revised_help.rst

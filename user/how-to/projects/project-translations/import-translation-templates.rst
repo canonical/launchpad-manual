@@ -1,3 +1,5 @@
+.. _how-to-import-project-translation-templates:
+
 Import your project's translation templates
 ===========================================
 

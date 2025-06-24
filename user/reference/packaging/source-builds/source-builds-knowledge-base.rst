@@ -3,13 +3,6 @@ Source builds knowledge base
 
 .. include:: /includes/important_not_revised_help.rst
 
-.. toctree::
-    :hidden:
-    :maxdepth: 2
-
-     Naming conventions <naming-conventions>
-     Source build limitations <source-build-limitations>
-
 Here's a set of quick links to articles that may help you when using
 Launchpad's daily builds feature.
 
