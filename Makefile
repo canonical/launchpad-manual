@@ -112,6 +112,12 @@ linkcheck: install
 
 .PHONY: linkcheck
 
+linkcheck-manual: install
+	. $(VENV) ; $(SPHINXBUILD) -b linkcheck "$(SOURCEDIR)" "$(BUILDDIR)" \
+	$(SPHINXOPTS)
+
+.PHONY: linkcheck-manual
+
 
 woke: woke-install
 	woke *.rst **/*.rst \
