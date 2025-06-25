@@ -102,6 +102,8 @@ redirects = {}
 # Links to ignore when checking links
 
 linkcheck_ignore = [
+    r"http://www.gnu\.org/.*",
+    r"http://www.fsf\.org/.*",
     "http://127.0.0.1:8000",
     r"https://app\.diagrams\.net.*",  # ignore, as works in browser, but link checker has some issues
     "https://archive.ph/CAqQm",  # ignore, as works in browser, but link checker has some issues
