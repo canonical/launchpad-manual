@@ -34,17 +34,17 @@ With Cygwin, you can follow the instructions at `<http://pigtail.net/LRP/printsr
 
 **Step 2:** Once OpenSSH is installed, stay in the terminal and type::
 
-    ssh-keygen -t rsa
+    ssh-keygen -t ed25519
 
 **Step 3:** When prompted, press Enter to accept the default file name for your key.
 
-**Step 4:** Next, enter then confirm a password to protect your SSH key. Your key pair is stored in ``~/.ssh/`` as ``id_rsa.pub`` (public key) and ``id_rsa`` (private key)
+**Step 4:** Next, enter then confirm a password to protect your SSH key. Your key pair is stored in ``~/.ssh/`` as ``id_ed25519.pub`` (public key) and ``id_ed25519`` (private key)
 
 Now you need to upload the public portion of your SSH key to Launchpad.
 
-**Possible Step 5:** You may need to run ssh-add with the id file if you created an id file other than ``~/.ssh/id_rsa``. Do ``ssh-add /path/to/file/id_rsa_newfile``. If you’re on the Mac, you can execute the following on the command line::
+**Possible Step 5:** You may need to run ssh-add with the id file if you created an id file other than ``~/.ssh/id_ed25519``. Do ``ssh-add /path/to/file/id_ed25519_newfile``. If you’re on the Mac, you can execute the following on the command line::
 
-    cat ~/.ssh/id_rsa.pub | pbcopy
+    cat ~/.ssh/id_ed25519.pub | pbcopy
 
 Windows (PuTTY)
 ^^^^^^^^^^^^^^^
@@ -85,7 +85,7 @@ Registering the key with Launchpad
 
 **Step 1:** If you are using windows/putty/puttygen, go to step 2.
 
-Open your public key in a text editor and copy its contents to your clipboard. The public key file has the extension .pub. For example: id_rsa.pub
+Open your public key in a text editor and copy its contents to your clipboard. The public key file has the extension .pub. For example: id_ed25519.pub
 
 **Step 2:** Visit `your SSH keys page <https://launchpad.net/~/+editsshkeys>`_.
 
@@ -99,12 +99,12 @@ You can safely use one SSH key per client machine to connect to multiple hosts. 
 To do this:
 
 
-#. You need to generate a key to a non-default name, perhaps id_rsa_launchpad (and .pub)
+#. You need to generate a key to a non-default name, perhaps id_ed25519_launchpad (and .pub)
 #. Upload that key to Launchpad, as described above.
 #. You'll need to tell your SSH client to use this key. With OpenSSH, add these lines to your ~/.ssh/config file::
 
     Host bazaar.launchpad.net
-     IdentityFile  /home/me/.ssh/id_rsa_launchpad
+     IdentityFile  /home/me/.ssh/id_ed25519_launchpad
      User launchpad-username    # the short name that appears in the URL when you visit https://launchpad.net/~
 
 .. note::
