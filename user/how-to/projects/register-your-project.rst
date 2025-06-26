@@ -1,15 +1,9 @@
-.. _register-your-project:
+.. _how-to-register-your-project:
 
 Register your project
 =====================
 
 .. include:: /includes/important_not_revised_help.rst
-
-.. toctree::
-    :hidden:
-    :maxdepth: 2
-
-    Translate your projects <project-translations/import-project-translations>
 
 Registering your project in Launchpad takes just a few minutes and
 allows you to use Launchpad to do all or any of the following:

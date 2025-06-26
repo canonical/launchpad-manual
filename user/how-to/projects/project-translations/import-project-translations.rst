@@ -1,14 +1,9 @@
+.. _how-to-import-project-translations:
+
 Import your project's translations
 ==================================
 
 .. include:: /includes/important_not_revised_help.rst
-
-.. toctree::
-    :hidden:
-    :maxdepth: 2
-
-    Import your project's translation templates <import-translation-templates>
-    Exporting translations <exporting-translations>
 
 Just as with translation templates, you can import translation files
 (``.po``) in two ways:

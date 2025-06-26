@@ -7,13 +7,6 @@ Using Launchpad with Bazaar
 
 .. include:: /includes/important_not_revised_help.rst
 
-.. toctree::
-    :hidden:
-    :maxdepth: 2
-
-    Host your project on Launchpad with Bazaar <host-project-on-launchpad-with-bazaar>
-    Create and publish branches <create-and-publish-branches>
-
 Using Launchpad, you can publish `Bazaar <https://www.breezy-vcs.org>`_
 branches or :ref:`Git <hosting-git-repositories>` repositories of your code and,
 optionally, associate them with projects. You can also mirror Bazaar

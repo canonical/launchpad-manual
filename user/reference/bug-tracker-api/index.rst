@@ -1,11 +1,10 @@
-Reference
-=========
+Bug tracker API
+===============
 
 .. include:: /includes/important_not_revised_help.rst
 
 .. toctree::
-   :hidden:
-   :maxdepth: 2
+   :maxdepth: 1
 
      Bug statuses <bug-statuses>
      External bug statuses <external-bug-statuses>

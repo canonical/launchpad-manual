@@ -1,3 +1,4 @@
+.. _how-to-close-account:
 
 Close your account
 ==================

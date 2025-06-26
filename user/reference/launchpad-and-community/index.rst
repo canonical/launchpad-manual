@@ -1,11 +1,10 @@
-Reference
-=========
+Launchpad and community
+=======================
 
 .. include:: /includes/important_not_revised_help.rst
 
 .. toctree::
-    :hidden:
-    :maxdepth: 2
+    :maxdepth: 1
 
     Badges <launchpad-badge-kit>
     Feedback on Launchpad <feedback-on-launchpad>

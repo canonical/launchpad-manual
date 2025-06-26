@@ -1,11 +1,10 @@
-Reference
-=========
+Translations
+============
 
 .. include:: /includes/important_not_revised_help.rst
 
 .. toctree::
-   :hidden:
-   :maxdepth: 2
+   :maxdepth: 1
 
      Software translation <software-translation>
      Translation guidelines <translation-guidelines>

@@ -4,7 +4,7 @@ Reference
 .. include:: /includes/important_not_revised_help.rst
 
 .. toctree::
-   :hidden:
+   :maxdepth: 1
 
    Bugs <bugs/index>
    Bug tracker API <bug-tracker-api/index>

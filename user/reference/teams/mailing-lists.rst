@@ -170,7 +170,7 @@ Further information
 
 Teams are a great way for communities to organise themselves. If,
 however, your project isn't yet in Launchpad's directory, you need to
-:ref:`register it <register-your-project>` to use track its bugs and code,
+:ref:`register it <how-to-register-your-project>` to use track its bugs and code,
 translate it into different languages and more.
 
 Troubleshooting

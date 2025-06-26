@@ -1,3 +1,5 @@
+.. _how-to-export-translations:
+
 Export translations
 ===================
 

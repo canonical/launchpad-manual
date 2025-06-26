@@ -1,5 +1,5 @@
-Reference
-=========
+Personal package archives
+=========================
 
 .. include:: /includes/important_not_revised_help.rst
 

@@ -5,18 +5,6 @@ Host your project's code on Launchpad
 
 .. include:: /includes/important_not_revised_help.rst
 
-.. toctree::
-    :hidden:
-    :maxdepth: 2
-
-    Find and download code hosted on Launchpad <find-and-download-code-hosted on Launchpad>
-    Link code to bug reports and blueprints <linking-code-to-bug-reports-and-blueprints>
-    Host a Git repository on Launchpad <git-hosting-on-launchpad>
-    Import code into Launchpad <import-code-into-launchpad>
-    Create and maintain a personal branch in Launchpad <create-and-maintain-personal-branch>
-    Create and manage a merge proposal <create-and-manage-a-merge-proposal>
-    Upload your Bazaar branch to Launchpad <upload-bzr-branch-to-launchpad>
-
 You can host your project's source code using Launchpad and Bazaar. If
 you're new to Bazaar, or distributed version control in general, take a
 look at the `Bazaar mini-tutorial <http://doc.bazaar-vcs.org/bzr.dev/en/mini-tutorial/index.html>`_
@@ -45,7 +33,7 @@ If you need more detail, see our full guide to :ref:`hosting code in Launchpad <
 Enable code hosting for your project
 ------------------------------------
 
-First, :ref:`add your project to Launchpad <register-your-project>`.
+First, :ref:`add your project to Launchpad <how-to-register-your-project>`.
 
 When you've done that, visit your your project's overview page. There
 you'll find a ``Configuration progress`` section in the right-hand column.
