@@ -21,10 +21,10 @@ This table shows you what level of interoperability Launchpad has with which ext
      - `Mantis <http://www.mantisbt.org/>`_
      - `SourceForge <http://sourceforge.net/>`_
      - `Request Tracker <http://bestpractical.com/rt>`_
-     - `GForge <http://gforge.org/>`_
      - Savane
      - `GitHub <https://github.com/>`_
      - `GitLab <https://gitlab.com/>`_
+     -
    * - Plugin for two-way comms
      - :ref:`Yes <use-the-bugzilla-plugin>`
      - :ref:`Yes <use-the-trac-plugin>`
