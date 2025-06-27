@@ -3,6 +3,12 @@ Release Notes
 
 June 2025
 +++++++++
+27 June
+
+- The `bzr` codebrowse interface (`loggerhead`) has been disabled and all codebrowse
+  URLs will receive a '404 Not Found' response status code. Accessing `bzr`
+  repositories using the `bzr` CLI tool via HTTP and SSH continues to work.
+
 17 June
 
 - Removed bzr codebrowse links on all pages that had them. This is in
