@@ -87,7 +87,7 @@ having a multi-architecture build system for Operator Framework charms: unlike
 reactive charms and older frameworks, built OF charms are in practice always
 architecture-dependent due to embedding architecture-dependent Python wheels.
 As a result, in the absence of a multi-architecture build farm, the bulk of
-charms would end up only existing on amd64. We hope that providing charm
+charms would end up only existing on ``amd64``. We hope that providing charm
 building in Launchpad will encourage most charms to support multiple
 architectures by default.
 
@@ -100,7 +100,7 @@ charms. This is partly because that would be significantly more complex, partly
 because we expect charms and resources to typically have quite different build
 frequencies (changes to a resource very often require no changes to the
 corresponding charm), and partly because in the long run it seems likely that
-we'll want to encourage charms to consume something like ROCKs which should be
+we'll want to encourage charms to consume something like rocks which should be
 built separately anyway (although also by Launchpad).
 
 Be careful to quote channel correctly in ``charmcraft.yaml``: you must write
