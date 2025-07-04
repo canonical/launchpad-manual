@@ -72,6 +72,7 @@ need to look into the container, you can ``lxc list`` to list the lxc
 containers present in the builder, and then run ``lxc shell`` to start a shell
 session from within the container.
 
+.. _cowboy-builder:
 
 Cowboy builder
 ~~~~~~~~~~~~~~
@@ -102,6 +103,60 @@ on that specific builder will run the cowboyed changes with it.
    stage of the builder. A "cleaning" stage can be triggered by finished
    builds or disable-then-enable calls. Each subsequent cowboyed build will
    require re-application of the cowboy changes in an identical manner.
+
+Preserve ``.deb`` build schroots
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Not every build type uses ``lxc`` containers as the build environment.
+Some, such as ``.deb`` builds use schroot sessions for this purpose.
+Furthermore, unlike ``lxc`` containers, schroot sessions are by default
+are configured to be cleaned-up when the build finishes, irrespective of
+the build result. 
+
+This deletion is done through an unmounting operation within our
+``launchpad-buildd`` codebase. As a result, we need to cowboy a builder to
+preserve the schroot session inside.
+
+1. First, follow the ":ref:`cowboy-builder`" section and enter into the 
+`binarypackage.py`, with:
+
+.. code-block:: sh
+
+   sudo vim /usr/lib/python3/dist-packages/lpbuildd/binarypackage.py
+
+1. Overwrite the ``iterateReap_SBUILD`` method at the end of the file to
+``return`` immediately.
+   
+.. code-block:: sh
+
+   def iterateReap_SBUILD(self, success):
+
+      return # Here
+
+      # Ignore the rest
+      subprocess.call(["sudo", "rm", "-f", self.schroot_config_path])
+
+      self._state = DebianBuildState.UMOUNT
+      self.doUnmounting()
+
+3. Restart the launchpad-buildd service with:
+
+.. code-block:: sh
+
+   sudo systemctl restart launchpad-buildd
+
+4. Run the build and eventually :ref:`disable the builder <disable-builder>`.
+5. Within the builder once the build finishes, or during it, call:
+
+.. code-block:: sh
+
+   sudo schroot -l
+
+6. Copy the schroot ID and enter into that schroot session with:
+
+.. code-block:: sh
+
+   sudo schroot --run-session -c <session-id>
 
 Clean-up
 ~~~~~~~~
