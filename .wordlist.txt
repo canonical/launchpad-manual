@@ -109,3 +109,7 @@ wadl
 zpt
 randomized
 cowboyed
+schroot
+binarypackage
+unmounting
+schroots
