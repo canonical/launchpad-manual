@@ -5,8 +5,8 @@ Your Launchpad account
 
 .. include:: /includes/important_not_revised_help.rst
 
-Before you start using Launchpad, you need to `set up a Launchpad
-account <YourAccount/NewAccount>`__. With your new Launchpad account,
+Before you start using Launchpad, you need to :ref:`set up a Launchpad
+account <create-and-personalise-your-launchpad-account>`. With your new Launchpad account,
 you'll be able to:
 
 -  show other people what work you do in Launchpad and earn karma
@@ -31,17 +31,15 @@ Managing your account
 Here are some of the things you might want to do when you first join
 Launchpad:
 
--  `Create and personalise your account <YourAccount/NewAccount>`__
--  `Import an OpenPGP key <YourAccount/ImportingYourPGPKey>`__
--  `Import your SSH keys <YourAccount/CreatingAnSSHKeyPair>`__
--  `Learn about Launchpad karma <YourAccount/Karma>`__
--  `Log into other websites using OpenID through
-   Launchpad <YourAccount/OpenID>`__
--  `Contacting people and teams in
-   Launchpad <YourAccount/ContactingPeople>`__
+-  :ref:`create-and-personalise-your-launchpad-account`
+-  :ref:`import-an-openpgp-key`
+-  :ref:`import-your-ssh-keys`
+-  :ref:`Learn about Launchpad karma <your-account-karma>`
+-  :ref:`Log into other websites using OpenID through
+   Launchpad <log-into-websites-with-openid>`
+-  :ref:`collaborating-with-other-launchpad-users`
 
-If you have more than one account, you may want to `merge two or more
-accounts <YourAccount/Merging>`__.
+If you have more than one account, you may want to :ref:`merging-accounts`.
 
-And we'd hate to see you leave but, if you need to, you can also `close
-your account <YourAccount/Closing>`__.
+And we'd hate to see you leave but, if you need to, you can also :ref:`close
+your account <how-to-close-account>`.
