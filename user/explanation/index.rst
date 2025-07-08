@@ -11,7 +11,7 @@ Explanation
     Understanding karma <your-account-karma>
     Launchpad Answers <launchpad-answers>
     Collaborating using Launchpad <collaborating-using-launchpad>
-    Answers <answers/answer-tracker>
+    Answers <answers/index>
     Feature highlights <feature-highlights/index>
     Launchpad API <launchpad-api/index>
     Launchpad mailing lists <launchpad-mailing-lists>
