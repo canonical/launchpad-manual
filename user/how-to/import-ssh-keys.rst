@@ -103,7 +103,7 @@ To do this:
 #. Upload that key to Launchpad, as described above.
 #. You'll need to tell your SSH client to use this key. With OpenSSH, add these lines to your ~/.ssh/config file::
 
-    Host bazaar.launchpad.net
+    Host git.launchpad.net
      IdentityFile  /home/me/.ssh/id_rsa_launchpad
      User launchpad-username    # the short name that appears in the URL when you visit https://launchpad.net/~
 
