@@ -5,13 +5,6 @@ Launchpad Answer Tracker
 
 .. include:: /includes/important_not_revised_help.rst
 
-.. toctree::
-   :hidden:
-   :maxdepth: 2
-
-   Asking for help <asking-for-help>
-   Offering help <offering-help>
-
 One key to making a free software project thrive is building a community
 of dedicated users. An important aspect of this is making it easy for
 users to get help in learning to use and master the product.
