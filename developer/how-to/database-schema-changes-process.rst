@@ -227,24 +227,16 @@ want. It should look like this:
 Rules for patches
 ~~~~~~~~~~~~~~~~~
 
-1. Don't use the TRUNCATE or DROP TABLE statements as they don't work
-   with Slony-I replication.
+1. To drop a table, use ``DROP TABLE`` as usual. Make sure that you drop or
+   update any dependent triggers, views and foreign keys before.
 
-2. To drop a table, move it into the ``todrop`` namespace using a
-   statement like ``ALTER TABLE FooBar SET SCHEMA todrop``. Then
-   ``upgrade.py`` will automatically drop these tables during the
-   downtime. Be careful about foreign keys: the drop order is undefined
-   so foreign keys between the tables must be dropped explicitly, and
-   foreign keys handled specially by application code (most branch and
-   person) may need to be dropped first in a separate patch.
-
-3. Do not migrate data in schema patches unless the data size is
+2. Do not migrate data in schema patches unless the data size is
    extraordinarily small (< 100's of rows).
 
-4. Similarly, new columns must default NULL unless the data size is
+3. Similarly, new columns must default NULL unless the data size is
    extraordinarily small (< 100's of rows).
 
-5. When changing existing DB functions, start your patch with the
+4. When changing existing DB functions, start your patch with the
    original version (``SELECT pg_get_functiondef(oid) FROM pg_proc WHERE
    proname IN ('foofunc', 'barfunc') ORDER BY proname;``). This makes it
    much easier to review the diff.
