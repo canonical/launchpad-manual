@@ -39,7 +39,7 @@ Launchpad:
    Launchpad <log-into-websites-with-openid>`
 -  :ref:`collaborating-with-other-launchpad-users`
 
-If you have more than one account, you may want to :ref:`merging-accounts`.
+If you have more than one account, you may want to :ref:`merge them <merging-accounts>`.
 
 And we'd hate to see you leave but, if you need to, you can also :ref:`close
 your account <how-to-close-account>`.
