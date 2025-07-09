@@ -99,7 +99,7 @@ You can safely use one SSH key per client machine to connect to multiple hosts. 
 To do this:
 
 
-#. You need to generate a key to a non-default name, perhaps ``id_ed25519_launchpad`` (and ``.pub``).
+#. You need to generate a key to a non-default name, perhaps ``id_ed25519_launchpad``.
 #. Upload that key to Launchpad, as described above.
 #. You'll need to tell your SSH client to use this key. With OpenSSH, add these lines to your ``~/.ssh/config`` file::
 
