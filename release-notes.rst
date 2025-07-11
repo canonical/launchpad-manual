@@ -1,6 +1,14 @@
 Release Notes
 =============
 
+July 2025
++++++++++
+11 July
+
+- Launchpad no longer supports the creation of new mailing lists. For more
+  information, please refer to this `announcement
+  <https://blog.launchpad.net/general/sunsetting-launchpads-mailing-lists>`_.
+
 June 2025
 +++++++++
 27 June
