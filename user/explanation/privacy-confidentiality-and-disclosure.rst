@@ -47,7 +47,7 @@ other unique attributes. This rule ensures that no one can spy on
 others. Private teams can also have private PPAs, mailing lists, and
 Proprietary branches.
 
-See `Creating and running a team <Teams/CreatingAndRunning>`__ for more
+See :ref:`Creating and running a team <creating-and-running-launchpad-teams>` for more
 information.
 
 Hiding comments
@@ -188,7 +188,7 @@ Project sharing policies
 Project maintainers can set policies that govern which information types
 bugs, branches, and blueprints can become. The policy sets the default
 type and what types users can change to. Public projects only have the
-default "Public" policy. `Commercial projects <CommercialHosting>`__ can
+default "Public" policy. :ref:`Commercial projects <consumer-hosting>` can
 choose other policies to control the what, if any, project information
 is disclosed.
 
