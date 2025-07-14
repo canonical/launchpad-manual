@@ -9,30 +9,28 @@ Launchpad's daily builds feature.
 Recipes and builds in Launchpad
 -------------------------------
 
--  `Getting started with daily
-   builds <Packaging/SourceBuilds/GettingStarted>`__
--  `How to write recipes <Packaging/SourceBuilds/Recipes>`__
--  `More on the bzr-builder
-   plugin <Packaging/SourceBuilds/BzrBuilder>`__
+-  :ref:`Getting started with daily
+   builds <set-up-daily-builds-with-bzr-builder>`
+-  :ref:`How to write recipes <create-a-source-package-recipe>`
 
 Launchpad infrastructure
 ------------------------
 
 New to Launchpad? Learn about the infrastructure behind daily builds.
 
--  `Launchpad help <FrontPage>`__: learn about Launchpad, right from the
+-  :ref:`Launchpad help <what-is-launchpad>`: learn about Launchpad, right from the
    basics
--  `Hosting and importing code in Launchpad <Code>`__: host Bazaar
+-  :ref:`Hosting and importing code in Launchpad <work-with-code-hosted-launchpad>`: host Bazaar
    branches, import code from elsewhere, run code reviews
--  `Upload a Bazaar branch to Launchpad <Code/UploadingABranch>`__
--  `Import code from somewhere else <Code/Imports>`__
--  `Personal Package Archives <Packaging/PPA>`__: create your own Ubuntu
+-  :ref:`Upload a Bazaar branch to Launchpad <upload-your-bazaar-branch-to-launchpad>`
+-  :ref:`Import code from somewhere else <import-code-into-launchpad>`
+-  :ref:`Personal Package Archives <personal-package-archive>`: create your own Ubuntu
    archive in Launchpad
 
 Community infrastructure
 ------------------------
 
--  `Naming convention <Packaging/SourceBuilds/NamingConvention>`__:
+-  :ref:`Naming convention <naming-conventions-for-daily-builds>`:
    ideas for sanely naming daily builds so users can easily find your
    software
 -  `Adopt-an-Upstream
@@ -50,12 +48,12 @@ Packaging
 Building packages for daily builds
 ----------------------------------
 
--  `Writing build recipes <Packaging/SourceBuilds/Recipes>`__
--  `Using Bzr Builder to test
-   recipes <Packaging/SourceBuilds/BzrBuilder>`__
+-  :ref:`Writing build recipes <source-build-recipes>`
+-  :ref:`Using Bzr Builder to test
+   recipes <running-commands-in-recipes>`
 
 Other useful documentation
 --------------------------
 
--  `Going Back to the old version
-   again <Packaging/SourceBuilds/GoingBack>`__: rolling packages back
+-  :ref:`Source build limitations <known-source-build-limitations>`: Key limitations that affect many users.
+

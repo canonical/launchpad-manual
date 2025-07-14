@@ -114,7 +114,7 @@ linkcheck: install
 
 linkcheck-manual: install
 	. $(VENV) ; $(SPHINXBUILD) -b linkcheck "$(SOURCEDIR)" "$(BUILDDIR)" \
-	$(SPHINXOPTS)
+	$(SPHINXOPTS) > linkcheck.txt
 
 .PHONY: linkcheck-manual
 

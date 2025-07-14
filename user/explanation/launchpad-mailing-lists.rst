@@ -105,7 +105,7 @@ email address, whatever that happens to be at the time.
     All Launchpad mailing list messages are publicly archived, and **the
     archives are open to everyone**, not just Launchpad or team members.
     If you have any issues with information available in the archives,
-    you should contact `the Launchpad administrators <http://help.launchpad.net/#head-9562b4c8ee3bbaca8f0d0719f973269f13539ced>`_,
+    you should contact the :ref:`Launchpad administrators <talk-to-us-about-launchpad>`,
     however our general policy is **never to remove archive messages or
     information contained therein.**
 

@@ -1,0 +1,119 @@
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+(user/how-to/projects/project-translations/import-translation-templates: line   28) broken    Projects/SeriesMilestonesRelease - 
+(user/reference/bugs/email-interface-command-reference: line  140) broken    Projects/SeriesMilestonesReleases#milestones - 
+(user/reference/native-language-support: line   59) broken    ProvidingSupportThroughLaunchpad - 
+
+(user/reference/ssh-fingerprints: line   32) broken    MD5:79:57:63:97:d3:d3:be:b6:6d:da:81:d0:73:29:80:48 - 
+(user/explanation/working-with-code/git-hosting: line   79) broken    SSHFingerprints - 
+(user/explanation/privacy-confidentiality-and-disclosure: line   50) broken    Teams/CreatingAndRunning - 
+(user/reference/translations/translators-group: line  105) broken    Teams/CreatingAndRunning#Subscription%20policies - 
+(user/reference/launchpad-and-community/launchpad-mentoring: line  130) broken    Teams/MailingLists - 
+(user/reference/translations/language-specific-guides: line   30) broken    Translations/Czech - 
+(user/how-to/projects/project-translations/import-project-translations: line  149) broken    Translations/ImportPolicy - 
+
+(user/reference/translations/translation-sharing-and-suggestions: line   40) broken    Translations/LicensingFAQ - 
+(user/how-to/projects/project-translations/import-project-translations: line  161) broken    Translations/YourProject - 
+(user/reference/translations/permissions-policies: line   40) broken    Translations/YourProject/ChoosingAGroup - 
+(user/reference/translations/translation-sharing-and-suggestions: line  147) broken    Translations/YourProject/Exports - 
+(user/how-to/projects/project-translations/exporting-translations: line    8) broken    Translations/YourProject/ImportingTemplates - 
+(user/how-to/projects/project-translations/exporting-translations: line    8) broken    Translations/YourProject/ImportingTranslations - 
+(user/how-to/projects/project-translations/exporting-translations: line  130) broken    Translations/YourProject/PartialPOExport - 
+(user/how-to/projects/project-translations/import-project-translations: line  209) broken    Translations/YourProject/PermissionPolicies - 
+(user/reference/translations/translation-sharing-and-suggestions: line  129) broken    Translations/YourProject/PermissionPoliciesA - 
+(user/how-to/work-with-bugs/use-email-interface: line   22) broken    YourAccount/ImportingYourPGPKey - 
+(user/reference/settings-and-preferences: line    9) broken    YourAccount/NewAccount - 
+(user/reference/comment-syntax: line  282) broken    faq-2 - 
+(user/reference/comment-syntax: line  283) broken    faq=2 - 
+(user/reference/comment-syntax: line  281) broken    faq_#2 - 
+(user/reference/comment-syntax: line  280) broken    faq_1 - 
+(user/reference/comment-syntax: line  284) broken    faq_item_1 - 
+
+(user/reference/comment-syntax: line  285) broken    faq_number_2 - 
+(user/explanation/launchpad-api/launchpad-web-service: line  136) broken    http://api.staging.launchpad.net/people/+me - 404 Client Error: Not Found for url: https://api.staging.launchpad.net/people/+me
+(user/how-to/using-openid: line   36) broken    http://sourceforge.net - 403 Client Error: Forbidden for url: http://sourceforge.net/
+(user/reference/bug-tracker-api/external-bug-trackers: line   18) broken    http://roundup.sourceforge.net/ - 403 Client Error: Forbidden for url: https://roundup.sourceforge.net/
+(user/how-to/work-with-bugs/use-trac-plugin: line   29) broken    http://trac-hacks.org/wiki/XmlRpcPlugin - 403 Client Error: Forbidden for url: https://trac-hacks.org/wiki/XmlRpcPlugin
+(user/reference/launchpad-and-community/legal/project-licenses: line   53) broken    http://unicode.org/copyright.html#Exhibit1 - Anchor 'Exhibit1' not found
+(user/reference/packaging/ppas/ppa: line   71) broken    http://packaging.ubuntu.com/html/debian-dir-overview.html#the-changelog - Anchor 'the-changelog' not found
+(user/reference/translations/translation-best-practices: line  189) broken    http://www.bazaar-vcs.org/ - HTTPConnectionPool(host='www.bazaar-vcs.org', port=80): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7e6638e34110>: Failed to resolve 'www.bazaar-vcs.org' ([Errno -2] Name or service not known)"))
+(user/reference/packaging/ppas/ppa: line  225) broken    http://www.debian.org/doc/debian-policy/ch-controlfields.html#s-f-Version - Anchor 's-f-Version' not found
+(user/explanation/translating-with-launchpad/translating-your-project: line   61) broken    http://www.gnome.org/~malcolm/i18n/ - 404 Client Error: Not Found for url: https://www.gnome.org/~malcolm/i18n/
+(user/how-to/launchpad-api/launchpad-web-signing: line  137) broken    http://www.mysite.com/oauth-callback - 404 Client Error: Not Found for url: http://www.mysite.com/oauth-callback
+(user/explanation/launchpad-mailing-lists: line  194) broken    http://www.python.org/cgi-bin/faqw-mm.py?req=show&file=faq02.008.htp - 404 Client Error: Not Found for url: https://www.python.org/cgi-bin/faqw-mm.py?req=show&file=faq02.008.htp
+(user/explanation/launchpad-api/launchpad-web-service: line  700) broken    http://www.python.org/doc/lib/module-gzip.html - 404 Client Error: Not Found for url: https://www.python.org/doc/lib/module-gzip.html
+(user/explanation/launchpad-api/launchpad-web-service: line  700) broken    http://www.python.org/doc/lib/module-zlib.html - 404 Client Error: Not Found for url: https://www.python.org/doc/lib/module-zlib.html
+(user/explanation/translating-with-launchpad/translate-your-software: line  422) broken    http://www.i18n.ro/glosar - Exceeded 30 redirects.
+(user/reference/comment-syntax: line  370) broken    http://www.searchtools.com/test/urls/!exclamation.html - 404 Client Error: Not Found for url: https://www.searchtools.com/test/urls/!exclamation.html
+(user/reference/comment-syntax: line  366) broken    http://www.searchtools.com/test/urls/(parens).html - 404 Client Error: Not Found for url: https://www.searchtools.com/test/urls/(parens).html
+(user/reference/comment-syntax: line  367) broken    http://www.searchtools.com/test/urls/-dash.html - 404 Client Error: Not Found for url: https://www.searchtools.com/test/urls/-dash.html
+(user/reference/comment-syntax: line  368) broken    http://www.searchtools.com/test/urls/_underscore.html - 404 Client Error: Not Found for url: https://www.searchtools.com/test/urls/_underscore.html
+(user/reference/comment-syntax: line  369) broken    http://www.searchtools.com/test/urls/period.x.html - 404 Client Error: Not Found for url: https://www.searchtools.com/test/urls/period.x.html
+(user/reference/comment-syntax: line  372) broken    http://www.searchtools.com/test/urls/*asterisk.html - 404 Client Error: Not Found for url: https://www.searchtools.com/test/urls/*asterisk.html
+(user/reference/comment-syntax: line  371) broken    http://www.searchtools.com/test/urls/~tilde.html - 404 Client Error: Not Found for url: https://www.searchtools.com/test/urls/~tilde.html
+(user/reference/translations/language-specific-guides: line   29) broken    http://www.softcatala.org/wiki/Guia_d%27estil/Guia_2010 - 404 Client Error: Not Found for url: https://www.softcatala.org/wiki/Guia_d%27estil/Guia_2010
+(user/explanation/answers/asking-for-help: line   11) broken    https://answers.launchpad.net/null - 404 Client Error: Not Found for url: https://answers.launchpad.net/null
+(user/explanation/feature-highlights/bug-branch-linking: line   25) broken    https://bugs.beta.launchpad.net/beagle/+bugs - HTTPSConnectionPool(host='bugs.beta.launchpad.net', port=443): Max retries exceeded with url: /beagle/+bugs (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7e663b810c50>: Failed to resolve 'bugs.beta.launchpad.net' ([Errno -2] Name or service not known)"))
+(user/reference/comment-syntax: line  202) broken    https://bugs.launchpad.net/+code/ - 404 Client Error: Not Found for url: https://bugs.launchpad.net/+code/
+(user/reference/comment-syntax: line  240) broken    https://bugs.launchpad.net/+code/foo - 404 Client Error: Not Found for url: https://bugs.launchpad.net/+code/foo
+(user/reference/comment-syntax: line  243) broken    https://bugs.launchpad.net/+code/bar/baz - 404 Client Error: Not Found for url: https://bugs.launchpad.net/+code/bar/baz
+(user/reference/comment-syntax: line  242) broken    https://bugs.launchpad.net/+code/foo/bar - 404 Client Error: Not Found for url: https://bugs.launchpad.net/+code/foo/bar
+(user/reference/comment-syntax: line  235) broken    https://bugs.launchpad.net/+code/~foo/bar/baz - 404 Client Error: Not Found for url: https://bugs.launchpad.net/+code/~foo/bar/baz
+(user/reference/comment-syntax: line  236) broken    https://bugs.launchpad.net/+code/~foo/bar/bug-123 - 404 Client Error: Not Found for url: https://bugs.launchpad.net/+code/~foo/bar/bug-123
+(user/explanation/projects/series-milestones-releases: line  182) broken    https://bugs.launchpad.net/beeseek/+bug/182821 - 404 Client Error: Not Found for url: https://bugs.launchpad.net/beeseek-peer/+bug/182821
+(developer/reference/services/build-farm: line   73) broken    https://bugs.launchpad.net/charm-launchpad-buildd-image-modifier - 404 Client Error: Not Found for url: https://bugs.launchpad.net/charm-launchpad-buildd-image-modifier
+(user/reference/comment-syntax: line  239) broken    https://bugs.qastaging.launchpad.net/+code/foo/bar - 404 Client Error: Not Found for url: https://bugs.qastaging.launchpad.net/+code/foo/bar
+(user/reference/comment-syntax: line  237) broken    https://bugs.qastaging.launchpad.net/+code/~foo/+junk/baz - 404 Client Error: Not Found for url: https://bugs.qastaging.launchpad.net/+code/~foo/+junk/baz
+(user/reference/comment-syntax: line  238) broken    https://bugs.qastaging.launchpad.net/+code/~foo/ubuntu/jaunty/evolution/baz - 404 Client Error: Not Found for url: https://bugs.qastaging.launchpad.net/+code/~foo/ubuntu/jaunty/evolution/baz
+(user/reference/translations/translation-best-practices: line  224) broken    https://code.launchpad.net/~joe/frobnob/trunk - 404 Client Error: Not Found for url: https://code.launchpad.net/~joe/frobnob/trunk
+(developer/explanation/journey-of-a-change-to-production: line  141) broken    https://deployable.ols.canonical.com/project/launchpad - 403 Client Error: Forbidden for url: https://deployable.ols.canonical.com/project/launchpad
+(user/reference/bugs/bug-heat: line   31) broken    https://dev.launchpad.net/Bugs/BugHeat#Algorithm - Anchor 'Algorithm' not found
+(developer/reference/tests: line   94) broken    https://docutils.sourceforge.net/docs/user/rst/quickref.html - 403 Client Error: Forbidden for url: https://docutils.sourceforge.net/docs/user/rst/quickref.html
+(developer/reference/python: line   86) broken    https://epydoc.sourceforge.net/fields.html - 403 Client Error: Forbidden for url: https://epydoc.sourceforge.net/fields.html
+(developer/explanation/performance: line   75) broken    https://drive.google.com/file/d/1hUivL07Msoyej3wd_T4hMAX61EJzfE38/view?usp=drive_link - 404 Client Error: Not Found for url: https://drive.google.com/file/d/1hUivL07Msoyej3wd_T4hMAX61EJzfE38/view?usp=drive_link
+(user/how-to/work-with-bugs/import-bug-history: line   35) broken    https://git.launchpad.net/launchpad/tree/doc/bug-export.rnc - 404 Client Error: Not Found for url: https://git.launchpad.net/launchpad/tree/doc/bug-export.rnc
+(user/how-to/launchpad-api/webhooks: line   67) broken    https://help.launchpad.net/API/Webhooks#bug-0.1 - Anchor 'bug-0.1' not found
+(user/how-to/launchpad-api/webhooks: line   69) broken    https://help.launchpad.net/API/Webhooks#bug-comment-0.1 - Anchor 'bug-comment-0.1' not found
+(user/how-to/launchpad-api/webhooks: line   51) broken    https://help.launchpad.net/API/Webhooks#bzr-push-0.1 - Anchor 'bzr-push-0.1' not found
+(user/how-to/launchpad-api/webhooks: line   53) broken    https://help.launchpad.net/API/Webhooks#ci-build-0.1 - Anchor 'ci-build-0.1' not found
+(user/how-to/launchpad-api/webhooks: line   57) broken    https://help.launchpad.net/API/Webhooks#livefs-build-0.1 - Anchor 'livefs-build-0.1' not found
+(user/how-to/launchpad-api/webhooks: line   55) broken    https://help.launchpad.net/API/Webhooks#git-push-0.1 - Anchor 'git-push-0.1' not found
+(user/how-to/launchpad-api/webhooks: line   59) broken    https://help.launchpad.net/API/Webhooks#merge-proposal-0.1 - Anchor 'merge-proposal-0.1' not found
+(user/how-to/launchpad-api/webhooks: line   65) broken    https://help.launchpad.net/API/Webhooks#ocirecipe-build-0.1 - Anchor 'ocirecipe-build-0.1' not found
+(user/how-to/launchpad-api/webhooks: line   61) broken    https://help.launchpad.net/API/Webhooks#ping - Anchor 'ping' not found
+(user/how-to/launchpad-api/webhooks: line   63) broken    https://help.launchpad.net/API/Webhooks#snap-build-0.1 - Anchor 'snap-build-0.1' not found
+(user/reference/api-uses: line   48) broken    https://gitorious.org/openhatch/oh-mainline/blobs/master/mysite/customs/bugtrackers/launchpad.py - HTTPSConnectionPool(host='gitorious.org', port=443): Max retries exceeded with url: /openhatch/oh-mainline/blobs/master/mysite/customs/bugtrackers/launchpad.py (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e6638d2f7d0>: Failed to establish a new connection: [Errno 113] No route to host'))
+(user/how-to/launchpad-api/launchpad-web-signing: line  185) broken    https://launchpad.net/+access-token - unauthorized
+(user/explanation/launchpad-api/launchpad-web-service: line  216) broken    https://launchpad.net/+apidoc - 404 Client Error: Not Found for url: https://launchpad.net/+apidoc
+(user/reference/translations/translators-group: line   96) broken    https://launchpad.net/%7Elaunchpad-translators-leaders/+contactuser - 404 Client Error: Not Found for url: https://launchpad.net/~launchpad-translators-leaders/+contactuser
+(user/how-to/launchpad-api/launchpad-web-signing: line   72) broken    https://launchpad.net/+request-token - unauthorized
+(user/reference/settings-and-preferences: line   16) broken    https://launchpad.net/+forgottenpassword - 404 Client Error: Not Found for url: https://launchpad.net/+forgottenpassword
+(user/explanation/projects/series-milestones-releases: line  182) broken    https://launchpad.net/beeseek/hive - 404 Client Error: Not Found for url: https://launchpad.net/beeseek/hive
+(user/explanation/projects/series-milestones-releases: line  182) broken    https://launchpad.net/beeseek/honeybee - 404 Client Error: Not Found for url: https://launchpad.net/beeseek/honeybee
+(user/explanation/feature-highlights/branch-imports: line   27) broken    https://launchpad.net/drupal/main - 404 Client Error: Not Found for url: https://launchpad.net/drupal/main
+(user/reference/translations/translation-best-practices: line   39) broken    https://launchpad.net/frobnob - 404 Client Error: Not Found for url: https://launchpad.net/frobnob
+(user/reference/translations/translation-best-practices: line  233) broken    https://launchpad.net/frobnob/+configure-translations - 404 Client Error: Not Found for url: https://launchpad.net/frobnob/+configure-translations
+(user/reference/translations/translation-best-practices: line  244) broken    https://launchpad.net/frobnob/trunk/+linkbranch - 404 Client Error: Not Found for url: https://launchpad.net/frobnob/trunk/+linkbranch
+(user/reference/launchpad-and-community/launchpad-mentoring: line   58) broken    https://launchpad.net/~bugsquad/+mentoring - 404 Client Error: Not Found for url: https://launchpad.net/~bugsquad/+mentoring
+(user/explanation/feature-highlights/personal-package-archives: line   30) broken    https://launchpad.net/~amaranth/+archive - 404 Client Error: Not Found for url: https://launchpad.net/~amaranth/+archive
+(user/explanation/feature-highlights/personal-package-archives: line   52) broken    https://launchpad.net/~kubuntu-members/+archive - 404 Client Error: Not Found for url: https://launchpad.net/~kubuntu-members/+archive
+(developer/tutorials/building-charms-in-launchpad: line   94) broken    https://matrix.to/#/#launchpad:ubuntu.com - Anchor '/%23launchpad%3Aubuntu.com' not found
+(user/explanation/projects/registering-project: line   13) broken    https://www.bazaar-vcs.org - HTTPSConnectionPool(host='www.bazaar-vcs.org', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7e6638f0a7b0>: Failed to resolve 'www.bazaar-vcs.org' ([Errno -2] Name or service not known)"))

@@ -7,8 +7,8 @@ Logging in
 ----------
 
 To login in the help wiki you need to already have a Launchpad account.
-If you do not have one yet, read `how to create a new
-profile <YourAccount/NewAccount>`__.
+If you do not have one yet, read :ref:`how to create a new
+profile <create-and-personalise-your-launchpad-account>`.
 
 Resetting password
 ------------------
@@ -55,4 +55,3 @@ WikiSandBox page and the second subscribes to all subpages of it:
    WikiSandBox
    WikiSandBox/.*
 
-For more details, please see `Help on subscribing <HelpOnSubscribing>`_.

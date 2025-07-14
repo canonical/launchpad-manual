@@ -17,6 +17,8 @@ branch, or CVS or Subversion
 repository <https://help.launchpad.net/Code/Imports>`__), you may find
 that to be the easiest source for importing your translation files.
 
+.. _import-translation-from-bazaar-branch:
+
 Imports from a Bazaar branch
 ----------------------------
 
@@ -28,7 +30,7 @@ in a Bazaar branch. Which you choose will most likely depend on whether
 you expect to make frequent translations outside of Launchpad.
 
 -  **Continuous**: on your project's translations settings page choose
-   ``mport template and translation files`` to automatically import any
+   ``import template and translation files`` to automatically import any
    ``.po`` that are in the branch, whenever Launchpad imports ``.pot`` files
    from the branch.
 -  **One off:** go to the ``Request Bazaar Import`` page to request a

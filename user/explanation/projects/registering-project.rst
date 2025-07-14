@@ -85,6 +85,8 @@ find all the information about the constituent projects.
 Read more about the process of registering a project group
 :ref:`here <project-groups>`.
 
+.. _sharing-confidential-information-with-trusted-users:
+
 Sharing confidential information with trusted users
 ---------------------------------------------------
 

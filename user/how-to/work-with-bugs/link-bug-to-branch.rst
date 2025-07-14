@@ -68,7 +68,7 @@ Next step
 ---------
 
 Launchpad helps you to stay on top of the bugs you're interested in,
-both by email and Atom feeds. Let's take a look at `bug
-subscriptions <Bugs/Subscriptions>`__.
+both by email and Atom feeds. Let's take a look at :ref:`bug
+subscriptions <bug-subscription>`.
 
 Read more about :ref:`linking bugs to dedicated branches <linking-bugs-to-dedicated-branches>`.

@@ -32,11 +32,10 @@ following powers:
 -  Can assign bugs to other people. (Others can only assign bugs to
    themselves.)
 
-When the bug supervisor is set, a `bug
-subscription <Bugs/Subscriptions>`__ to the project or distribution is
-created for the the user or team. The user or team admin can change the
-subscription using "Edit bug mail" link found on the project or
-distribution's bug page.
+When the bug supervisor is set, a :ref:`bug subscription <bug-subscription>` 
+to the project or distribution is created for the the user or team. The user or
+team admin can change the subscription using "Edit bug mail" link found on the 
+project or distribution's bug page.
 
 There are two restrictions when you appoint a bug supervisor:
 

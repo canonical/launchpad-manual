@@ -107,15 +107,24 @@ linkcheck_ignore = [
     "http://127.0.0.1:8000",
     r"https://app\.diagrams\.net.*",  # ignore, as works in browser, but link checker has some issues
     "https://archive.ph/CAqQm",  # ignore, as works in browser, but link checker has some issues
+    r"http://bazaar\.launchpad\.net/.*", #bazaar is in the process of being shutdown
     "https://bazaar.launchpad.net/lp-production-config",  # private
     "https://bazaar.staging.launchpad.net",  # broken, unclear why XXX 2023-10-14: jugmac00- check with team
     r"https://www\.breezy-vcs\.org/.*",  # broken, returns "Connection refused" on port 443
-    r"https://www\.bazaar-vcs\.org/.*",  # broken, returns "Connection refused" on port 443
+    r"http://doc\.bazaar-vcs\.org\.*", #broken, bazaar being shut down
+    "http://bazaar-vcs.org",  #broken, bazaar being shut down
+    "http://www.bazaar-vcs.org/" #broken, bazaar being shut down
     "https://bugs.launchpad.net/charm-launchpad-buildd-image-modifier",  # private
     "https://bugs.launchpad.net/launchpad-vbuilder-manage",  # private
     "http://example.com/.*",  # ignore, example links
     "https://launchpad.net/canonical-mojo-specs",  # private
     r"https://launchpad\.test.*",  # ignore, local test setup
+    r"http://code\.beta\.launchpad\.net/.*",
+    "http://diacritice.svn.sourceforge.net/viewvc/diacritice/trunk/", # ignore, as works in browser, but link checker has some issues
+    "http://epydoc.sourceforge.net/fields.html", # ignore, as works in browser, but link checker has some issues
+    "http://api.staging.launchpad.net/people/+me", #ignore, as works in browser, but link checker has some issues
+    "http://i18n.ro/Ghidul_traducatorului_de_software", #broken
+    r"http://sourceforge\.net/.*",
     "Trunk/Glue",  # needs update
     "/Background",
     "/Concepts",  # needs update
@@ -135,8 +144,7 @@ linkcheck_ignore = [
     r"https://www\.socialtext\.net/.*",
     r"https://translations\.launchpad\.net/.*",
     r"http://localhost.*",
-
-     "http://www.ubuntu.com/community/ubuntustory/licensing", # works in browser, linkchecker issue
+    "http://www.ubuntu.com/community/ubuntustory/licensing", # works in browser, linkchecker issue
     #Uncertain Dead - May not be replaceable
     "/Estonian",
     "/Georgian",

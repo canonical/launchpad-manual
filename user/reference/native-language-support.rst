@@ -32,8 +32,8 @@ from your personal Launchpad page.
 Filling a bug in your native language
 -------------------------------------
 
-To ask a question in a language other than English, the `same procedure
-as usual <GettingSupportInLaunchpad>`__ is used. The only difference is
+To ask a question in a language other than English, the :ref:`same procedure
+as usual <getting-support-in-launchpad>` is used. The only difference is
 that you'll change the question's language in the *Language* drop down:
 you will be able to select among your preferred languages. (See the
 previous section for information on how this list is computed and how to

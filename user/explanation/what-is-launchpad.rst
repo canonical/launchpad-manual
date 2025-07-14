@@ -1,3 +1,5 @@
+.. _exp-what-is-launchpad:
+
 What is Launchpad?
 ==================
 
@@ -49,8 +51,8 @@ Getting started with Launchpad
 ------------------------------
 
 The first step to using Launchpad is to register your user account.
-Follow our guide to `creating your Launchpad
-account <CreatingYourLaunchpadAccount>`__.
+Follow our guide to :ref:`creating your Launchpad
+account <create-and-personalise-your-launchpad-account>`.
 
 If you want to use Launchpad for your free software project, follow our
-guide to `registering your project <RegisteringANewProject>`__
+guide to :ref:`registering your project <how-to-register-your-project>`
