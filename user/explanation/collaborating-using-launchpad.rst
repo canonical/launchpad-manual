@@ -1,3 +1,4 @@
+.. _collaborating-with-other-launchpad-users:
 
 Collaborating with other Launchpad users
 ========================================
