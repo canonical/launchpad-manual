@@ -133,7 +133,6 @@ linkcheck_ignore = [
     r"http://api\.staging\.launchpad\.net/.*", #ignore, as works in browser, but link checker has some issues
     "http://i18n.ro/Ghidul_traducatorului_de_software", #broken
     "https://launchpad.net/+access-token", #broken, access restricted
-    "http://launchpad.net/+access-token", #broken, access restricted
     "https://launchpad.net/+request-token",#broken, access restricted
     "https://roundup.sourceforge.net/", #ignore, as works in browser
     "https://trac-hacks.org/wiki/XmlRpcPlugin",
