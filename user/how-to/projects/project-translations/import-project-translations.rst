@@ -12,9 +12,8 @@ Just as with translation templates, you can import translation files
 -  or by uploading a tarball of templates and translation files through
    the web interface.
 
-If you already have your translation files in a Bazaar branch (or `git
-branch, or CVS or Subversion
-repository <https://help.launchpad.net/Code/Imports>`__), you may find
+If you already have your translation files in a Bazaar branch (or :ref:`git
+branch, or CVS or Subversion repository <code-imports>`), you may find
 that to be the easiest source for importing your translation files.
 
 .. _import-translation-from-bazaar-branch:
@@ -150,8 +149,7 @@ Naming translation files
 
 In order to ensure automatic approval and subsequent import of the
 translation files, two rules need to be followed, just like when
-uploadding tarballs (See a sample directory layout
-`here <Translations/ImportPolicy>`__).
+uploading tarballs (See a sample directory layout :ref:`here <translation-import-policy>`).
 
 1. Place the files in the same directory as the template for which they
    are meant. Each template and its translation files must have its own
@@ -160,8 +158,8 @@ uploadding tarballs (See a sample directory layout
 2. Name the files according to the language code of the language they
    contain. So for Spanish translations use ``es.po``.
 
-In addition to that the normal `instructions for uploading translation
-files <Translations/YourProject>`__ apply.
+In addition to that, the normal :ref:`instructions for uploading
+translation files <translating-your-project>` apply.
 
 Avoiding common problems
 ------------------------
@@ -209,6 +207,5 @@ Next steps
 ----------
 
 Launchpad can help you safeguard the quality of the translations you use
-in your project. Choose a `review
-policy <Translations/YourProject/PermissionPolicies>`__ for your
-project's translations.
+in your project. Choose a :ref:`review policy <choosing-a-permissions-policy>`
+for your project's translations.

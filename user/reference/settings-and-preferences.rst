@@ -14,8 +14,8 @@ Resetting password
 ------------------
 
 If you forgot your password, resetting it is simple: go to
-https://launchpad.net/+forgottenpassword and insert the e-mail address
-associated with your Launchpad account. You will receive a new password
+https://login.launchpad.net/ and click on `Forgot your password?`. Insert the e-mail address
+associated with your Launchpad account and continue. You will receive a new password
 soon.
 
 Changing settings

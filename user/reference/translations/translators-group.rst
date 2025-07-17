@@ -93,7 +93,7 @@ To check the current status of Launchpad Translators Group, please consult the `
 -  If your language is in the list, please consider joining that team
    (or request that your current team to be added as a subteam).
 
-If the Launchpad localization team appointed to your language is no longer active, or in case you encounter problems joining or working with the team, please let us know by `contacting the Launchpad Translation Coordinators <https://launchpad.net/%7Elaunchpad-translators-leaders/+contactuser>`__.
+If the Launchpad localization team appointed to your language is no longer active, or in case you encounter problems joining or working with the team, please let us know by contacting the `Launchpad Translation Coordinators <https://launchpad.net/~launchpad-translations-coordinators>`__.
 
 How to start a new team and join Launchpad Translators
 ------------------------------------------------------
@@ -102,7 +102,7 @@ Here's how you can create a new team for your language and join the
 Launchpad Translators group:
 
 -  **Create the team**. `Create a new Launchpad localization team <https://launchpad.net/people/+newteam>`__. When giving a name to the team in Launchpad, please follow the convention **lp-l10n-CC**, where CC is your **language** code . We use iso-639 two letters code and if not available we fallback to three letters code. For instance **lp-l10n-de** would be the name for the German team (language code *de*)
--  **Moderated subscription**. Make the `subscription policy <Teams/CreatingAndRunning#Subscription%20policies>`__ of the new team **Moderated** or **Restricted**. Only this way you can ensure the quality of translations.
+-  **Moderated subscription**. Make the :ref:`subscription policy <membership-policies>` of the new team **Moderated** or **Restricted**. Only this way you can ensure the quality of translations.
 -  **Team information**. Add some brief information on the team's page.
    This should include:
 

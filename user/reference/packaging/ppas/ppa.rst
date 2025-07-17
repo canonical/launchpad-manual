@@ -68,7 +68,7 @@ PPAs.
 Supported series
 ----------------
 
-When building a source package you can specify one of the supported series in your `changelog file <http://packaging.ubuntu.com/html/debian-dir-overview.html#the-changelog>`_, which are listed at `the Launchpad PPA page <https://launchpad.net/ubuntu/+ppas>`_.
+When building a source package you can specify one of the supported series in your `changelog file <hhttps://canonical-ubuntu-packaging-guide.readthedocs-hosted.com/en/latest/reference/debian-dir-overview/#the-changelog-file>`_, which are listed at `the Launchpad PPA page <https://launchpad.net/ubuntu/+ppas>`_.
 
 If you specify a different series the build will fail.
 
@@ -222,7 +222,7 @@ Your uploaded source package may refer to an orig.tar.gz file in the primary Ubu
 I get an error about versions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-When you upload a package, its version must exceed that of any existing package of the same name in the same Ubuntu distribution in your PPA. For more information, see the `Debian Policy Manual on versioning <http://www.debian.org/doc/debian-policy/ch-controlfields.html#s-f-Version>`_. You can also use ``dpkg --compare-version`` to check version numbers before uploading your package.
+When you upload a package, its version must exceed that of any existing package of the same name in the same Ubuntu distribution in your PPA. For more information, see the `Debian Policy Manual on versioning <https://www.debian.org/doc/debian-policy/ch-controlfields.html#version>`_. You can also use ``dpkg --compare-version`` to check version numbers before uploading your package.
 
 Why can't I upload the same version for multiple releases?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

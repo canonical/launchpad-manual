@@ -213,7 +213,7 @@ looks like when I convert it to a Python dictionary.
     u'visibility': u'Public',
     u'wiki_names_collection_link': u'http://api.staging.launchpad.net/1.0/~your-user-name/wiki_names'}
 
-That's a lot of information. You can consult `the reference documentation <https://launchpad.net/+apidoc>`_ for more information on
+That's a lot of information. You can consult `the reference documentation <https://launchpad.net/+apidoc/devel.html>`_ for more information on
 what each of the fields of this hash mean. What's important is that
 there are three and only three kinds of fields:
 
@@ -672,7 +672,7 @@ you supposed to know that you're allowed to modify a person's "latitude"
 but not their "karma"?
 
 If you don't know the capabilities of a resource, you can look it up in
-`the reference documentation <https://launchpad.net/+apidoc>`_. First,
+`the reference documentation <https://launchpad.net/+apidoc/devel.html>`_. First,
 look at the resource's 'resource_type_link'. It'll be something like
 ``http://api.launchpad.dev/1.0/#bugs``. Take the anchor part of that URL
 (here, ``#bugs``), and use it as an anchor into the reference
@@ -697,7 +697,7 @@ Launchpad's web service serves XML and JSON documents that compress very
 well. You'll get the documents faster and save bandwidth if you ask
 Launchpad to compress documents before sending them over the network.
 
-You do this by specifying a compression algorithm in the "TE" request header. Launchpad's web service supports two compression algorithms: "gzip", the standard gzip algorithm handled by `Python's gzip module <http://www.python.org/doc/lib/module-gzip.html>`_, and "deflate", the algorithm handled by `Python's zlib module <http://www.python.org/doc/lib/module-zlib.html>`_. Both of these are as defined in `the HTTP standard <http://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.5>`_.
+You do this by specifying a compression algorithm in the "TE" request header. Launchpad's web service supports two compression algorithms: "gzip", the standard gzip algorithm handled by `Python's gzip module <https://docs.python.org/3/library/gzip.html>`_, and "deflate", the algorithm handled by `Python's zlib module <https://docs.python.org/3/library/zlib.html>`_. Both of these are as defined in `the HTTP standard <http://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.5>`_.
 
 So your TE header will look like this:
 

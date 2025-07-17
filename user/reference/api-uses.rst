@@ -45,7 +45,7 @@ Below are programs that use the `Launchpad APIs <https://help.launchpad.net/API>
      - 
    * - `OpenHatch <http://openhatch.org/>`_
      - A website for talking about your Free Software contributions and finding new ways to contribute
-     - We use launchpadlib to convert email addresses into lp.net usernames, and we pull information about your project experiences from your lp.net user page. See the `script <https://gitorious.org/openhatch/oh-mainline/blobs/master/mysite/customs/bugtrackers/launchpad.py>`_.
+     - We use launchpadlib to convert email addresses into lp.net usernames, and we pull information about your project experiences from your lp.net user page.
    * - `Laika <https://launchpad.net/laika>`_
      - "a guide dog for launchpad" -- prints a summary of the bugs you touched this week
      -

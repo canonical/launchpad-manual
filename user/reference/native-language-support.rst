@@ -57,7 +57,7 @@ in other languages that you don't see. There is a checkbox that allows
 you to display **all** of the questions regardless of their language.
 
 To help users in your native language, the
-`procedure <ProvidingSupportThroughLaunchpad>`__ is the same as for
+:ref:`procedure <offering-help>` is the same as for
 English: you just go on the question you want to reply to, enter your
 message and click the appropriate button. You should enter your message
 in the **same** language than the original question.

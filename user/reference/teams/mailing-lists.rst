@@ -1,3 +1,5 @@
+.. _ref-mailing-lists:
+
 Launchpad mailing lists
 =======================
 

@@ -38,8 +38,8 @@ the suggestions or create a new translation that's better suited to the
 project you're working with.
 
 This is all possible because when people make translations in Launchpad
-they agree to `license them with the flexible BSD
-licence <Translations/LicensingFAQ>`__.
+they agree to :ref:`license them with the flexible BSD
+licence <translations-licensing-faq>`.
 
 Translation sharing
 -------------------
@@ -126,10 +126,10 @@ need to:
 -  tell Launchpad where the translation work happens: follow the
    *Configure translations* link on the project's translations overview
    page
--  select an appropriate `translations permissions
-   policy <Translations/YourProject/PermissionPoliciesA>`__
--  `import the project's translations into
-   Launchpad <Translations/YourProject/ImportingTranslations>`__:
+-  select an appropriate :ref:`translations permissions
+   policy <choosing-a-permissions-policy>`
+-  :ref:`import the project's translations into
+   Launchpad <how-to-import-project-translations>`:
    ideally using automatic imports from a Bazaar branch.
 
 Sharing upstream project translations with the Ubuntu package
@@ -144,8 +144,8 @@ individual strings differently for Ubuntu.
 Sharing Ubuntu package translations with upstream
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Upstream projects can `manually export Ubuntu
-translations <Translations/YourProject/Exports>`__ for use with their
+Upstream projects can :ref:`manually export Ubuntu
+translations <how-to-export-translations>` for use with their
 project.
 
 Launchpad can also automatically share translations made for the Ubuntu

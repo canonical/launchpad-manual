@@ -189,10 +189,6 @@ in your mail reader of choice. After a few minutes, depending on network
 latencies, you should receive your message in your inbox, and the
 message will appear in the archive.
 
-.. note::
-
-    If you use Gmail and you do not see your own posts arrive in your inbox, it is probably because of `this issue <http://www.python.org/cgi-bin/faqw-mm.py?req=show&file=faq02.008.htp>`_. Unfortunately there is nothing we can do about it, but if you check your list's archive, your message should appear there.
-
 Unsubscribing
 -------------
 
