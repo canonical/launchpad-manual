@@ -25,7 +25,7 @@ Help, Dev, and News Content Licence
 The documentation contained in the `Launchpad Help wiki <https://help.launchpad.net/>`_, the `Launchpad Development wiki <https://dev.launchpad.net/>`_, and on the `Launchpad blog <http://blog.launchpad.net/>`_ is owned by Canonical Ltd. and is licensed under a `Creative Commons Attribution 2.0 UK: England & Wales License <http://creativecommons.org/licenses/by/2.0/uk/>`_.
 
 For information about the licence of the Launchpad source code itself,
-please see `<https://dev.launchpad.net/LaunchpadLicense>`_.
+please see the :ref:`Launchpad License <launchpad-license>`.
 
 Copyright
 ---------
