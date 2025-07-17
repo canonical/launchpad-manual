@@ -23,5 +23,5 @@ Explanation
     Staging environment <staging-environment>
     Support requests <support-requests>
     Teams <teams/index>
-    Translating with Launchpad <translating-with-launchpad/translating-with-launchpad>
+    Translating <translating-with-launchpad/index>
     Working with code <working-with-code/code-imports>

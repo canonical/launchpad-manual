@@ -47,7 +47,7 @@ other unique attributes. This rule ensures that no one can spy on
 others. Private teams can also have private PPAs, mailing lists, and
 Proprietary branches.
 
-See `Creating and running a team <Teams/CreatingAndRunning>`__ for more
+See :ref:`Creating and running a team <creating-and-running-launchpad-teams>` for more
 information.
 
 Hiding comments
