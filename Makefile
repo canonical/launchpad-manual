@@ -114,7 +114,7 @@ spelling: html
 
 linkcheck: install
 	. $(VENV) ; $(SPHINXBUILD) -b linkcheck "$(SOURCEDIR)" "$(BUILDDIR)" \
-	$(SPHINXOPTS) > linkcheck.txt
+	$(SPHINXOPTS)
 
 .PHONY: linkcheck
 
