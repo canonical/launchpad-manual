@@ -30,7 +30,7 @@ Linux/Cygwin/MacOS
 
     sudo apt-get install openssh-client
 
-With Cygwin, you can follow the instructions at `<http://pigtail.net/LRP/printsrv/cygwin-ssh.html>`_.
+With Cygwin, you can follow the instructions at `<https://ftp.perforce.com/perforce/tools/benchmarks/browse/doc/cygwin.html>`_.
 
 **Step 2:** Once OpenSSH is installed, stay in the terminal and type::
 

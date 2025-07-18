@@ -36,7 +36,7 @@ proposal.
 use the email interface
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-You can also propose a merge by email by sending a `merge directive <http://doc.bazaar.canonical.com/bzr.dev/en/user-guide/sending_changes.html>`_ to ``merge@code.launchpad.net``.
+You can also propose a merge by email by sending a `merge directive <https://documentation.help/Bazaar-help/sending_changes.html#understanding-merge-directives>`_ to ``merge@code.launchpad.net``.
 
 In your email, you can ask for particular people to do the review by
 adding lines that say:

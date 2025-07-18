@@ -57,11 +57,6 @@ translations:
 You can find out more about these file formats and using GNU gettext in
 the `Gettext manual <http://www.gnu.org/software/gettext/manual/>`__.
 
-.. tip::
-    You may also find `Malcolm Tredinnick's Gnome internationalisation
-    guide <http://www.gnome.org/~malcolm/i18n/>`__ useful, although some
-    of the Gnome policies mentioned in that guide are now out of date.
-
 To make your project available for translation, you must upload at least
 one .pot translation template file. This file tells Launchpad which
 English strings you want to make available for translation.

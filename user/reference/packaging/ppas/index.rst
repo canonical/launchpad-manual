@@ -1,3 +1,5 @@
+.. _ref-personal-package-archives:
+
 Personal package archives
 =========================
 

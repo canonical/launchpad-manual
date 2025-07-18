@@ -69,7 +69,7 @@ affecting multiple projects within Launchpad. Follow the link below the
 table and choose the relevant project.
 
 **Note:** even though the project uses an external bug tracker, the
-project must be `registered <Projects/Registering>`__ in Launchpad.
+project must be :ref:`registered <registering-your-project>` in Launchpad.
 
 External trackers that Launchpad supports
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -104,4 +104,4 @@ Further information
 -------------------
 
 There's a table of the translations that Launchpad makes, along with an
-explanation of Launchpad's approach to `bug statuses <Bugs/Statuses>`__.
+explanation of Launchpad's approach to :ref:`bug statuses <bug-status-in-launchpad>`.

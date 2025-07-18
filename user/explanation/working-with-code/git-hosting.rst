@@ -76,7 +76,7 @@ clone git+ssh://git.launchpad.net/REPOSITORY``.
 The rest of this documentation assumes that you have configured Git this
 way.
 
-You should check the `fingerprint <SSHFingerprints>`__ of
+You should check the :ref:`fingerprint <ssh-fingerprints>` of
 git.launchpad.net when prompted to do so by SSH.
 
 Getting code
@@ -393,7 +393,7 @@ Please note that Launchpad can only mirror public repositories.
 Converting from Bazaar to Git
 -----------------------------
 
-There `are <https://www.google.com/search?%7Bgoogle:acceptedSuggestion%7Doq=convert&sourceid=chrome&client=ubuntu&channel=cs&ie=UTF-8&q=convert+from+bzr+to+git>`_ `several <https://astrofloyd.wordpress.com/2012/09/06/convert-bzr-to-git/>`_ `useful <http://www.fusonic.net/en/blog/2013/03/26/migrating-from-bazaar-to-git/>`_ `recommendations <http://blog.timmattison.com/archives/2011/06/13/how-to-convert-from-bzr-to-git-on-debianubuntu/>`_ online for how to convert from Bazaar to Git. Here's one way that preserves tags and does a pretty good job for relatively simple Bazaar branches.
+There `are some useful recommendations <https://astrofloyd.wordpress.com/2012/09/06/convert-bzr-to-git/>`_ online for how to convert from Bazaar to Git. Here's one way that preserves tags and does a pretty good job for relatively simple Bazaar branches.
 
 ::
 

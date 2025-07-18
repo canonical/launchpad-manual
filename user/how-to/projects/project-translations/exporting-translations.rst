@@ -5,9 +5,9 @@ Export translations
 
 .. include:: /includes/important_not_revised_help.rst
 
-Just as with `importing
-templates <Translations/YourProject/ImportingTemplates>`__ and
-`translations <Translations/YourProject/ImportingTranslations>`__, there
+Just as with :ref:`importing
+templates <how-to-import-project-translation-templates>` and
+:ref:`translations <how-to-import-project-translations>`, there
 are two ways to export your project's translations from Launchpad:
 
 -  by asking Launchpad to make regular commits to a Bazaar branch you
@@ -127,7 +127,7 @@ to choose the file format for the download - either ``PO format``, or ``MO
 format``, or ``Changes from packaged translations in partial PO format``.
 Choose the latter option for a partial export.
 
-`Read more about partial exports <Translations/YourProject/PartialPOExport>`__.
+:ref:`Read more about partial exports <exporting-partial-gettext-PO-files>`.
 
 Next steps
 ----------

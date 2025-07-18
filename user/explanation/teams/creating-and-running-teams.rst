@@ -96,6 +96,8 @@ team:
 
 These roles can be held by other teams, as well as by people.
 
+.. _membership-policies:
+
 Membership policies
 -------------------
 

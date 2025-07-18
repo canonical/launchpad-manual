@@ -136,7 +136,7 @@ Build Mail
 
 Notifications regarding the various types of builds that Launchpad can
 perform for you have associated rationales. If you requested a source
-package recipe, `live filesystem <LiveFilesystem>`__, or snap package
+package recipe, :ref:`live filesystem <live-file-systems>`, or snap package
 build:
 
 ::

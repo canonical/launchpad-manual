@@ -1,3 +1,5 @@
+.. _known-source-build-limitations:
+
 Known source build limitations
 ==============================
 

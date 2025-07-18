@@ -1,3 +1,5 @@
+.. _naming-conventions-for-daily-builds:
+
 Naming conventions for daily builds
 ====================================
 

@@ -82,4 +82,3 @@ More information
 ----------------
 
 http://bazaar-vcs.org/Tutorials/CentralizedWorkflow
-http://blogs.gnome.org/view/jamesh/2006/08/17/1

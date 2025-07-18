@@ -14,15 +14,14 @@ Branches that fix "Private Security" bugs can themselves be set to
 
 Proprietary branches are a feature available on request for projects
 with commercial subcriptions. For more information, see
-`CommercialHosting <CommercialHosting>`__.
+:ref:`Commercial Hosting<consumer-hosting>`.
 
 Bug sharing policies
 --------------------
 
-Visit the project's Sharing page. If the project has a `commercial
-subscription <CommercialHosting>`__, set the "branch sharing policy" to
-control the default information type of each branch and restrict what
-types they can be change to.
+Visit the project's Sharing page. If the project has a commercial
+subscription, set the "branch sharing policy" to control the default 
+information type of each branch and restrict what types they can be change to.
 
 When the policy is set to something "Proprietary, can be public", all
 new branches are Proprietary. They are only visible to people that the
@@ -41,5 +40,5 @@ Visit the project's Sharing page. Share the confidential information
 types with the development team, and any other team that you trust to
 see confidential bugs and branches.
 
-See `Sharing <Projects/Registering#sharing>`__ to learn about managing
-who can see confidential information.
+See :ref:`Sharing <sharing-confidential-information-with-trusted-users>` 
+to learn about managing who can see confidential information.

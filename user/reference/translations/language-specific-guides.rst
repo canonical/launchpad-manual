@@ -65,7 +65,7 @@ S
 
 -  Serbian
 -  `Simplified
-   Chinese <http://wiki.ubuntu.org.cn/TranslatorsGuideline>`__
+   Chinese <https://wiki.ubuntu.org.cn/TranslatorsGuideline>`__
 
 V
 ~

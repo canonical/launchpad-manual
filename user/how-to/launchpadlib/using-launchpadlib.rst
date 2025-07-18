@@ -214,7 +214,7 @@ that you don't care about. That's why we've made available these four lists:
       print(sorted(bug_one.lp_operations))
       # ['addAttachment', 'addWatch', 'subscribe', 'unsubscribe']
 
-If you need more detailed help, you can look the object up in `the reference documentation <http://launchpad.net/+apidoc>`_. First, find out the type of the object.
+If you need more detailed help, you can look the object up in :ref:`the reference documentation <launchpadlib-api-compatibility>`. First, find out the type of the object.
 
 ::
 

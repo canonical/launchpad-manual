@@ -1,3 +1,5 @@
+.. _exp-what-is-launchpad:
+
 What is Launchpad?
 ==================
 

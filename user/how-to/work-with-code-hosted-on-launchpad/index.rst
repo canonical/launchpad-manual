@@ -1,3 +1,5 @@
+.. _work-with-code-hosted-launchpad:
+
 Work with code hosted on launchpad
 ==================================
 

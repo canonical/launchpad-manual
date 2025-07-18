@@ -21,9 +21,7 @@ How to display a badge
 
 Insert HTML like the following into the page where you want to display
 the badge, replacing ``FILL_ME_IN`` with either a project name or a
-Launchpad username (if a username, remember to include the ``~``, for
-example ``joey`` as used
-`here <http://joey.ubuntu-rocks.org/blog/>`__). The default width of
+Launchpad username (if a username, remember to include the ``~``. The default width of
 160px is good for most contexts, but you can choose another pixel width
 from the list above or make a custom image from the `scalable SVG
 file <http://media.launchpad.net/lp-badge-kit/launchpad-badge.svg>`__ if
