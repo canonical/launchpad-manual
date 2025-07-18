@@ -262,7 +262,7 @@ will not be able to show it to you again.
 Via API
 ^^^^^^^
 
-Alternatively, you can generate access tokens using the `Launchpad
+Alternatively, you can generate access tokens using the :ref:`Launchpad
 API <launchpad-api>`, as follows:
 
 ::
