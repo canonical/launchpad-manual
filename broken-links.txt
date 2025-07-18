@@ -1,0 +1,4 @@
+
+(user/how-to/work-with-code-hosted-on-launchpad/create-and-manage-a-merge-proposal: line   39) timeout   https://documentation.help/Bazaar-help/sending_changes.html#understanding-merge-directives - HTTPSConnectionPool(host='documentation.help', port=443): Read timed out. (read timeout=30)
+(user/reference/launchpad-and-community/feedback-on-launchpad: line   17) timeout   https://help.ubuntu.com/community/SSO/FAQs - HTTPSConnectionPool(host='help.ubuntu.com', port=443): Read timed out. (read timeout=30)
+

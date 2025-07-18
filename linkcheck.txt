@@ -2,7 +2,7 @@ Running Sphinx v8.2.3
 loading translations [en]... done
 matplotlib is not installed, social cards will not be generated
 making output directory... done
-myst v4.0.1: MdParserConfig(commonmark_only=False, gfm_only=False, enable_extensions={'deflist', 'substitution'}, disable_syntax=[], all_links_external=False, links_external_new_tab=False, url_schemes=('http', 'https', 'mailto', 'ftp'), ref_domains=None, fence_as_directive=set(), number_code_blocks=[], title_to_header=False, heading_anchors=0, heading_slug_func=None, html_meta={}, footnote_sort=True, footnote_transition=True, words_per_minute=200, substitutions={}, linkify_fuzzy_links=True, dmath_allow_labels=True, dmath_allow_space=True, dmath_allow_digits=True, dmath_double_inline=False, update_mathjax=True, mathjax_classes='tex2jax_process|mathjax_process|math|output_area', enable_checkboxes=False, suppress_warnings=[], highlight_code_blocks=True)
+myst v4.0.1: MdParserConfig(commonmark_only=False, gfm_only=False, enable_extensions={'substitution', 'deflist'}, disable_syntax=[], all_links_external=False, links_external_new_tab=False, url_schemes=('http', 'https', 'mailto', 'ftp'), ref_domains=None, fence_as_directive=set(), number_code_blocks=[], title_to_header=False, heading_anchors=0, heading_slug_func=None, html_meta={}, footnote_sort=True, footnote_transition=True, words_per_minute=200, substitutions={}, linkify_fuzzy_links=True, dmath_allow_labels=True, dmath_allow_space=True, dmath_allow_digits=True, dmath_double_inline=False, update_mathjax=True, mathjax_classes='tex2jax_process|mathjax_process|math|output_area', enable_checkboxes=False, suppress_warnings=[], highlight_code_blocks=True)
 building [mo]: targets for 0 po files that are out of date
 writing output... 
 building [linkcheck]: targets for 310 source files that are out of date
@@ -828,6 +828,7 @@ writing output... [100%] user/reference/troubleshooting/index
 (user/reference/comment-syntax: line  372) -ignored- http://www.searchtools.com/test/urls/*asterisk.html
 (user/reference/comment-syntax: line  377) -ignored- http://localhost/foo?xxx&
 (user/reference/comment-syntax: line  378) -ignored- http://localhost?testing=%5Bsquare-brackets-in-query]
+(user/reference/launchpad-and-community/feedback-on-launchpad: line   17) -ignored- https://help.ubuntu.com/community/SSO/FAQs
 (user/reference/launchpad-and-community/launchpad-mentoring: line   58) -ignored- https://launchpad.net/~bugsquad/+mentoring
 (user/reference/launchpad-and-community/legal/launchpad-policies: line  159) -ignored- http://www.fsf.org/licensing/licenses/
 (user/reference/launchpad-and-community/legal/project-licenses: line   29) -ignored- http://www.boost.org/LICENSE_1_0.txt
@@ -866,319 +867,319 @@ writing output... [100%] user/reference/troubleshooting/index
 (user/reference/translations/translators-group: line    8) -ignored- https://translations.launchpad.net/+groups/launchpad-translators/
 (user/reference/translations/translators-group: line   37) -ignored- https://help.launchpad.net/Translations/YourProject/PermissionPolicies
 (user/reference/translations/translators-group: line   39) -ignored- https://translations.launchpad.net/%3CYOUR-PROJECT-NAME%3E/+settings
+(developer/explanation/charms: line   90) ok        https://charmsreactive.readthedocs.io/en/latest/structure.html#charm-layer
+(developer/explanation/charms: line   28) ok        https://charmhub.io/
 (contribute-to-our-docs: line   20) ok        https://answers.launchpad.net/launchpad
-(contribute-to-our-docs: line   12) ok        https://github.com/canonical/launchpad-manual
-(developer/explanation/branches: line   17) ok        https://code.launchpad.net/~launchpad/launchpad/+git/launchpad/+ref/db-devel
 (developer/explanation/branches: line   24) ok        https://code.launchpad.net/~launchpad/launchpad/+git/launchpad/+ref/db-stable
-(user/reference/teams/mailing-lists: line  181) redirect  http://answers.launchpad.net/launchpad - permanently to https://answers.launchpad.net/launchpad
-(user/how-to/source-package-recipe: line   90) ok        http://apt.ubuntu.com/p/bzr-builder
+(developer/explanation/branches: line   17) ok        https://code.launchpad.net/~launchpad/launchpad/+git/launchpad/+ref/db-devel
 (user/how-to/source-package-recipe: line   97) ok        http://apt.ubuntu.com/p/git-build-recipe
-(developer/explanation/branches: line   14) ok        https://code.launchpad.net/~launchpad/launchpad/+git/launchpad/+ref/master
+(user/how-to/source-package-recipe: line   90) ok        http://apt.ubuntu.com/p/bzr-builder
 (user/explanation/launchpad-api/launchpad-web-service: line   60) redirect  http://api.launchpad.net/1.0/ - with Found to https://api.launchpad.net/1.0/
+(user/reference/teams/mailing-lists: line  181) redirect  http://answers.launchpad.net/launchpad - permanently to https://answers.launchpad.net/launchpad
 (user/reference/bug-tracker-api/external-bug-trackers: line   23) redirect  http://bestpractical.com/rt - permanently to https://requesttracker.com/request-tracker/
 (user/how-to/work-with-bazaar/using-launchpad-with-bazaar: line   29) redirect  http://betterexplained.com/articles/intro-to-distributed-version-control-illustrated/ - permanently to https://betterexplained.com/articles/intro-to-distributed-version-control-illustrated/
-(user/reference/launchpad-and-community/legal/launchpad-policies: line  301) redirect  http://blog.launchpad.net - permanently to https://blog.launchpad.net/
+(user/reference/api-uses: line   22) redirect  http://blog.launchpad.net/api/launchpad-plugin-for-eclipse-using-the-launchpad-api - permanently to https://blog.launchpad.net/api/launchpad-plugin-for-eclipse-using-the-launchpad-api
 (user/reference/launchpad-and-community/legal/launchpad-policies: line   25) redirect  http://blog.launchpad.net/ - permanently to https://blog.launchpad.net/
 (user/explanation/launchpad-api/launchpadlib: line  381) redirect  http://blog.launchpad.net/api/three-tips-for-faster-launchpadlib-api-clients - permanently to https://blog.launchpad.net/api/three-tips-for-faster-launchpadlib-api-clients
+(user/reference/launchpad-and-community/legal/launchpad-policies: line  301) redirect  http://blog.launchpad.net - permanently to https://blog.launchpad.net/
 (user/explanation/working-with-code/code-imports: line   77) redirect  http://blog.launchpad.net/code/git-branch-imports-now-in-public-beta - permanently to https://blog.launchpad.net/code/git-branch-imports-now-in-public-beta
-(user/reference/api-uses: line   22) redirect  http://blog.launchpad.net/api/launchpad-plugin-for-eclipse-using-the-launchpad-api - permanently to https://blog.launchpad.net/api/launchpad-plugin-for-eclipse-using-the-launchpad-api
-(user/reference/teams/mailing-lists: line  181) redirect  http://bugs.launchpad.net/launchpad - permanently to https://bugs.launchpad.net/launchpad
-(user/explanation/launchpad-api/launchpad-web-service: line  739) redirect  http://code.google.com/p/httplib2/ - permanently to https://code.google.com/archive/p/httplib2
 (user/reference/launchpad-and-community/legal/project-licenses: line   40) redirect  http://creativecommons.org/ - with Found to https://creativecommons.org/
-(user/reference/launchpad-and-community/legal/launchpad-policies: line  170) redirect  http://creativecommons.org/licenses/by-nc-nd/3.0/ - with Found to https://creativecommons.org/licenses/by-nc-nd/3.0/
-(user/how-to/using-openid: line   32) redirect  http://blogger.com - permanently to https://www.blogger.com/about/?bpli=1
+(user/explanation/launchpad-api/launchpad-web-service: line  739) redirect  http://code.google.com/p/httplib2/ - permanently to https://code.google.com/archive/p/httplib2
 (user/reference/launchpad-and-community/legal/launchpad-policies: line  169) redirect  http://creativecommons.org/licenses/by-nc-sa/3.0/ - with Found to https://creativecommons.org/licenses/by-nc-sa/3.0/
-(user/reference/launchpad-and-community/legal/launchpad-policies: line  168) redirect  http://creativecommons.org/licenses/by-nc/3.0/ - with Found to https://creativecommons.org/licenses/by-nc/3.0/
+(user/reference/launchpad-and-community/legal/launchpad-policies: line  170) redirect  http://creativecommons.org/licenses/by-nc-nd/3.0/ - with Found to https://creativecommons.org/licenses/by-nc-nd/3.0/
 (user/reference/launchpad-and-community/legal/launchpad-policies: line   14) redirect  http://creativecommons.org/licenses/by-nd/2.0/uk/ - with Found to https://creativecommons.org/licenses/by-nd/2.0/uk/
 (user/reference/launchpad-and-community/legal/launchpad-policies: line  167) redirect  http://creativecommons.org/licenses/by-nd/3.0/ - with Found to https://creativecommons.org/licenses/by-nd/3.0/
+(user/reference/launchpad-and-community/legal/launchpad-policies: line  168) redirect  http://creativecommons.org/licenses/by-nc/3.0/ - with Found to https://creativecommons.org/licenses/by-nc/3.0/
+(user/reference/teams/mailing-lists: line  181) redirect  http://bugs.launchpad.net/launchpad - permanently to https://bugs.launchpad.net/launchpad
+(user/reference/launchpad-and-community/legal/launchpad-policies: line   25) redirect  http://creativecommons.org/licenses/by/2.0/uk/ - with Found to https://creativecommons.org/licenses/by/2.0/uk/
 (user/reference/launchpad-and-community/legal/launchpad-policies: line  166) redirect  http://creativecommons.org/licenses/by/3.0/ - with Found to https://creativecommons.org/licenses/by/3.0/
 (user/reference/launchpad-and-community/legal/launchpad-policies: line  165) redirect  http://creativecommons.org/licenses/publicdomain/ - permanently to https://creativecommons.org/publicdomain/
-(user/reference/translations/translation-best-practices: line   76) redirect  http://docs.python.org/library/gettext.html - permanently to https://docs.python.org/3/library/gettext.html
-(user/reference/launchpad-and-community/legal/launchpad-policies: line   25) redirect  http://creativecommons.org/licenses/by/2.0/uk/ - with Found to https://creativecommons.org/licenses/by/2.0/uk/
-(developer/how-to/getting: line   12) redirect  http://debian.org/ - with Found to https://www.debian.org/
 (user/reference/packaging/ppas/ppa: line   46) redirect  http://en.wikipedia.org/wiki/AMD64 - permanently to https://en.wikipedia.org/wiki/AMD64
 (user/reference/translations/translations-licensing: line  119) redirect  http://en.wikipedia.org/wiki/BSD_license - permanently to https://en.wikipedia.org/wiki/BSD_license
+(user/reference/translations/translation-best-practices: line   76) redirect  http://docs.python.org/library/gettext.html - permanently to https://docs.python.org/3/library/gettext.html
+(developer/how-to/getting: line   12) redirect  http://debian.org/ - with Found to https://www.debian.org/
 (user/how-to/import-openpgp-key: line   63) redirect  http://en.wikipedia.org/wiki/End-of-file - permanently to https://en.wikipedia.org/wiki/End-of-file
 (user/explanation/packaging/package-upload-errors: line   85) redirect  http://en.wikipedia.org/wiki/Gzip - permanently to https://en.wikipedia.org/wiki/Gzip
 (user/reference/packaging/ppas/ppa: line   45) redirect  http://en.wikipedia.org/wiki/X86 - permanently to https://en.wikipedia.org/wiki/X86
-(user/how-to/using-openid: line   38) redirect  http://en.wikipedia.org/wiki/OpenID#Adoption - permanently to https://en.wikipedia.org/wiki/OpenID
 (user/reference/translations/translation-import-policy: line   68) redirect  http://en.wikipedia.org/wiki/ISO_639 - permanently to https://en.wikipedia.org/wiki/ISO_639
 (user/how-to/work-with-bugs/subscribe-and-unsubscribe-to-bugs: line  101) ok        http://feeds.launchpad.net/bugs/1/bug.atom
 (user/explanation/projects/project-announcements: line   19) ok        http://feeds.launchpad.net/announcements.atom
-(user/reference/comment-syntax: line  182) ok        http://example.net
+(user/how-to/using-openid: line   38) redirect  http://en.wikipedia.org/wiki/OpenID#Adoption - permanently to https://en.wikipedia.org/wiki/OpenID
 (user/explanation/projects/project-announcements: line   19) ok        http://feeds.launchpad.net/terminator/announcements.atom
 (user/how-to/work-with-bugs/subscribe-and-unsubscribe-to-bugs: line  108) ok        http://feeds.launchpad.net/ubuntu/latest-bugs.atom
-(user/how-to/work-with-bugs/subscribe-and-unsubscribe-to-bugs: line  115) ok        http://feeds.launchpad.net/~bzr/latest-bugs.atom
 (user/explanation/working-with-code/git-hosting: line    8) redirect  http://git-scm.com/ - permanently to https://git-scm.com/
-(user/explanation/launchpad-api/launchpad-web-service: line   79) ok        http://json.org/
+(user/how-to/work-with-bugs/subscribe-and-unsubscribe-to-bugs: line  115) ok        http://feeds.launchpad.net/~bzr/latest-bugs.atom
+(user/how-to/using-openid: line   32) redirect  http://blogger.com - permanently to https://www.blogger.com/about/?bpli=1
 (user/how-to/work-with-bazaar/using-launchpad-with-bazaar: line   49) redirect  http://ianclatworthy.files.wordpress.com/2007/10/dvcs-why-and-how3.pdf - with Found to https://ianclatworthy.wordpress.com/wp-content/uploads/2007/10/dvcs-why-and-how3.pdf
 (user/how-to/import-openpgp-key: line   97) redirect  http://gnupg.org/download/index.en.html - temporarily to https://gnupg.org/download/index.en.html
-(user/explanation/support-requests: line   63) redirect  http://launchpad.net - permanently to https://launchpad.net/
 (developer/how-to/debugging: line   88) ok        http://jam-bazaar.blogspot.com/2010/01/meliae-020.html
+(user/explanation/launchpad-api/launchpad-web-service: line   79) ok        http://json.org/
+(user/explanation/support-requests: line   63) redirect  http://launchpad.net - permanently to https://launchpad.net/
 (user/reference/project-groups: line   37) redirect  http://launchpad.net/ - permanently to https://launchpad.net/
 (user/explanation/launchpad-api/launchpad-web-service: line  812) redirect  http://launchpad.net/+apidoc/ - permanently to https://launchpad.net/+apidoc/
-(developer/explanation/xxx-policy: line   25) redirect  http://launchpad.net/bugs/120005 - with See Other to https://bugs.launchpad.net/launchpad/+bug/120005
-(user/how-to/work-with-bugs/use-bugzilla-plugin: line    8) redirect  http://launchpad.net/bugzilla-launchpad - permanently to https://launchpad.net/bugzilla-launchpad
 (user/reference/bugs/malone-xmlrpc-interface: line   55) redirect  http://launchpad.net/bugs/42 - with See Other to https://bugs.launchpad.net/launchpad/+bug/42
 (user/how-to/launchpadlib/python-api: line  205) redirect  http://launchpad.net/bugs/520219 - with See Other to https://bugs.launchpad.net/launchpadlib/+bug/520219
+(developer/explanation/xxx-policy: line   25) redirect  http://launchpad.net/bugs/120005 - with See Other to https://bugs.launchpad.net/launchpad/+bug/120005
 (user/reference/api-uses: line   28) redirect  http://launchpad.net/apport - permanently to https://launchpad.net/apport
+(user/how-to/work-with-bugs/use-bugzilla-plugin: line    8) redirect  http://launchpad.net/bugzilla-launchpad - permanently to https://launchpad.net/bugzilla-launchpad
 (user/reference/api-uses: line   43) redirect  http://launchpad.net/memaker - permanently to https://launchpad.net/memaker
 (user/reference/api-uses: line   25) redirect  http://launchpad.net/tarmac - permanently to https://launchpad.net/tarmac
 (developer/explanation/mail: line    8) redirect  http://list.org - permanently to https://list.org/
 (developer/explanation/journey-of-a-change-to-production: line   75) ok        http://lpbuildbot.canonical.com
 (developer/explanation/testing: line   12) ok        http://lpbuildbot.canonical.com/
-(user/reference/launchpad-and-community/launchpad-badge-kit: line   22) ok        http://media.launchpad.net/lp-badge-kit/launchpad-badge.svg
 (user/how-to/using-openid: line   35) redirect  http://livejournal.com - with Found to https://www.livejournal.com/
+(user/reference/launchpad-and-community/launchpad-badge-kit: line   22) ok        http://media.launchpad.net/lp-badge-kit/launchpad-badge.svg
+(user/how-to/account-management/create-account: line   12) redirect  http://mail.google.com/ - with Found to https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&ifkv=AdBytiPG7bdPH-T7zUtJAJPROB0BQVBHZi8EVVoGT5zUrMPB3R-rGO74iEr6y00jM-uD1_nyYNj4Vw&osid=1&passive=1209600&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1038112180%3A1752832293640729
 (user/how-to/work-with-bugs/use-bugzilla-plugin: line  110) redirect  http://launchpad.net/bugs/bugtrackers - permanently to https://launchpad.net/bugs/bugtrackers
-(user/how-to/account-management/create-account: line   12) redirect  http://mail.google.com/ - with Found to https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&ifkv=AdBytiOR67ljl1VLQIs-1X0raDEtbgw7t406Pd0f_veZUSIUIkQlzcx5sQccexcBHJygHMt28lmxRg&osid=1&passive=1209600&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1711580996%3A1752827147769762
-(user/how-to/work-with-bazaar/using-launchpad-with-bazaar: line   16) redirect  http://news.launchpad.net/general/the-great-source-code-supermarket - permanently to https://blog.launchpad.net/general/the-great-source-code-supermarket
+(user/reference/teams/mailing-lists: line   24) redirect  http://mail-archive.com - permanently to https://www.mail-archive.com/
 (user/how-to/launchpad-api/launchpad-web-signing: line   25) redirect  http://oauth.net - permanently to https://oauth.net/
 (user/how-to/launchpad-api/index: line   40) redirect  http://oauth.net/ - permanently to https://oauth.net/
+(user/how-to/work-with-bazaar/using-launchpad-with-bazaar: line   16) redirect  http://news.launchpad.net/general/the-great-source-code-supermarket - permanently to https://blog.launchpad.net/general/the-great-source-code-supermarket
 (user/how-to/launchpad-api/launchpad-web-signing: line  245) redirect  http://oauth.net/core/1.0/ - permanently to https://oauth.net/core/1.0/
 (user/how-to/launchpad-api/launchpad-web-signing: line  255) redirect  http://oauth.net/core/1.0/#auth_header - permanently to https://oauth.net/core/1.0/
-(user/reference/teams/mailing-lists: line   24) redirect  http://mail-archive.com - permanently to https://www.mail-archive.com/
-(user/how-to/launchpad-api/launchpad-web-signing: line  255) redirect  http://oauth.net/core/1.0/#consumer_req_param - permanently to https://oauth.net/core/1.0/
-(user/how-to/launchpad-api/launchpad-web-signing: line  284) redirect  http://oauth.net/core/1.0/#nonce - permanently to https://oauth.net/core/1.0/
-(user/reference/api-uses: line   46) redirect  http://openhatch.org/ - permanently to https://openhatch.org/
 (user/how-to/launchpad-api/launchpad-web-signing: line  195) redirect  http://oauth.net/core/1.0/#anchor22 - permanently to https://oauth.net/core/1.0/
+(user/how-to/launchpad-api/launchpad-web-signing: line  284) redirect  http://oauth.net/core/1.0/#nonce - permanently to https://oauth.net/core/1.0/
 (user/explanation/translating-with-launchpad/translate-your-software: line  422) ok        http://open-tran.eu
+(user/reference/api-uses: line   46) redirect  http://openhatch.org/ - permanently to https://openhatch.org/
+(user/how-to/launchpad-api/launchpad-web-signing: line  255) redirect  http://oauth.net/core/1.0/#consumer_req_param - permanently to https://oauth.net/core/1.0/
 (user/how-to/using-openid: line    9) redirect  http://openid.net - permanently to https://openid.net/
 (user/how-to/using-openid: line   23) redirect  http://openid.net/specs/openid-authentication-2_0.html - permanently to https://openid.net/specs/openid-authentication-2_0.html
 (user/reference/launchpad-and-community/legal/launchpad-policies: line  158) redirect  http://opensource.org/licenses/category - permanently to https://opensource.org/licenses-old/category
-(user/how-to/using-openid: line   25) redirect  http://openid.net/what/ - permanently to https://openid.net/what-are-the-differences-between-fapi-1-0-and-fapi-2-0-and-what-do-they-mean-to-you/
 (            help: line   18) redirect  http://people.canonical.com/~mwh/canonicalapi/ - permanently to https://people.canonical.com/~mwh/canonicalapi/
-(user/how-to/packaging/ppa-package-upload: line   33) redirect  http://packaging.ubuntu.com/html/ - with Found to https://canonical-ubuntu-packaging-guide.readthedocs-hosted.com/en/latest/
+(user/how-to/using-openid: line   25) redirect  http://openid.net/what/ - permanently to https://openid.net/what-are-the-differences-between-fapi-1-0-and-fapi-2-0-and-what-do-they-mean-to-you/
 (user/how-to/using-openid: line   33) redirect  http://pbwiki.com - permanently to https://www.pbworks.com/
+(developer/explanation/hacking: line   41) redirect  http://python.org/peps/pep-0287 - with Found to https://peps.python.org/
+(user/how-to/packaging/ppa-package-upload: line   33) redirect  http://packaging.ubuntu.com/html/ - with Found to https://canonical-ubuntu-packaging-guide.readthedocs-hosted.com/en/latest/
 (developer/explanation/hacking: line   39) redirect  http://python.org/peps/pep-0257.html - with Found to https://peps.python.org/pep-0257/
 (developer/explanation/hacking: line   39) redirect  http://python.org/peps/pep-0008.html - with Found to https://peps.python.org/pep-0008/
-(developer/explanation/hacking: line   41) redirect  http://python.org/peps/pep-0287 - with Found to https://peps.python.org/
-(user/reference/translations/translations-licensing: line   30) ok        http://translationproject.org/html/whydisclaim.html
 (user/reference/translations/reusing-packaged-translations: line   29) ok        http://translationproject.org/team/index.html
-(user/reference/translations/reusing-packaged-translations: line   29) redirect  http://translationproject.org - permanently to https://translationproject.org/html/welcome.html
+(user/reference/translations/translations-licensing: line   30) ok        http://translationproject.org/html/whydisclaim.html
 (user/reference/teams/mailing-lists: line   85) redirect  http://wiki.list.org/display/DOC/I+use+Gmail-Googlemail%2C+but+I+can%27t+tell+if+any+of+my+messages+have+been+posted+to+the+list - with Found to https://wiki.list.org/DOC/I%20use%20Gmail-Googlemail%2C%20but%20I%20can%27t%20tell%20if%20any%20of%20my%20messages%20have%20been%20posted%20to%20the%20list
-(user/reference/teams/mailing-lists: line  192) redirect  http://wiki.list.org/x/2IA9 - with Found to https://wiki.list.org/DOC/I%20use%20Gmail-Googlemail%2C%20but%20I%20can%27t%20tell%20if%20any%20of%20my%20messages%20have%20been%20posted%20to%20the%20list
 (user/reference/launchpad-and-community/feedback-on-launchpad: line   21) redirect  http://twitter.com/launchpadstatus - with Found to https://x.com/launchpadstatus
+(user/reference/teams/mailing-lists: line  192) redirect  http://wiki.list.org/x/2IA9 - with Found to https://wiki.list.org/DOC/I%20use%20Gmail-Googlemail%2C%20but%20I%20can%27t%20tell%20if%20any%20of%20my%20messages%20have%20been%20posted%20to%20the%20list
+(user/reference/api-uses: line   31) redirect  http://wiki.ubuntu.com/UbuntuDevTools - permanently to https://wiki.ubuntu.com/UbuntuDevTools
+(user/reference/packaging/source-builds/source-builds-knowledge-base: line   36) redirect  http://wiki.ubuntu.com/Upstream/Adopt - permanently to https://wiki.ubuntu.com/Upstream/Adopt
+(user/reference/bug-tracker-api/external-bug-trackers: line   20) redirect  http://trac.edgewall.org/ - with Found to https://trac.edgewall.org/
+(user/reference/bug-tracker-api/external-bug-trackers: line   17) redirect  http://www.bugzilla.org/ - permanently to https://www.bugzilla.org/
 (user/how-to/source-package-recipe: line  155) redirect  http://wiki.ubuntu.com/UsingDevelopmentReleases - permanently to https://wiki.ubuntu.com/UsingDevelopmentReleases
 (user/how-to/using-openid: line   34) redirect  http://wordpress.org - permanently to https://wordpress.org/
-(user/reference/bug-tracker-api/external-bug-trackers: line   17) redirect  http://www.bugzilla.org/ - permanently to https://www.bugzilla.org/
 (user/reference/launchpad-and-community/legal/project-licenses: line   32) ok        http://www.cecill.info/index.en.html
 (user/reference/launchpad-and-community/legal/project-licenses: line   33) ok        http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.html
 (user/reference/launchpad-and-community/legal/project-licenses: line   34) ok        http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html
-(user/reference/bug-tracker-api/external-bug-trackers: line   20) redirect  http://trac.edgewall.org/ - with Found to https://trac.edgewall.org/
+(user/explanation/working-with-code/git-hosting: line  412) ok        http://www.catb.org/~esr/reposurgeon/
 (user/reference/bug-tracker-api/external-bug-trackers: line   19) redirect  http://www.debian.org/Bugs/ - with Found to https://www.debian.org/Bugs/
-(user/reference/packaging/source-builds/source-builds-knowledge-base: line   45) redirect  http://www.debian.org/doc/debian-policy/ - with Found to https://www.debian.org/doc/debian-policy/
-(user/reference/launchpad-and-community/legal/launchpad-policies: line  160) redirect  http://www.debian.org/social_contract#guidelines - with Found to https://www.debian.org/social_contract
--rate limited-   http://www.gnu.org/software/gettext/ | sleeping...
 (user/how-to/import-ssh-keys: line   52) redirect  http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html - permanently to https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+(user/reference/translations/translation-best-practices: line   64) ok        http://www.gnu.org/software/gettext/
+-rate limited-   http://www.gnu.org/software/gettext/manual/ | sleeping...
+(user/reference/launchpad-and-community/legal/launchpad-policies: line  160) redirect  http://www.debian.org/social_contract#guidelines - with Found to https://www.debian.org/social_contract
+(user/reference/packaging/source-builds/source-builds-knowledge-base: line   45) redirect  http://www.debian.org/doc/debian-policy/ - with Found to https://www.debian.org/doc/debian-policy/
+(user/reference/comment-syntax: line  182) ok        http://example.net
 (user/how-to/import-openpgp-key: line   97) redirect  http://www.gnupg.org/gph/en/manual.html#AEN26 - temporarily to https://www.gnupg.org/gph/en/manual.html
 (user/explanation/launchpad-api/launchpad-web-service: line  152) redirect  http://www.launchpad.net/people/+me - with See Other to https://launchpad.net/people/+me/+login
 (user/explanation/launchpad-mailing-lists: line    8) redirect  http://www.list.org - permanently to https://www.list.org/
-(user/explanation/launchpad-mailing-lists: line   58) redirect  http://www.mail-archive.com/ - permanently to https://www.mail-archive.com/
-(user/explanation/working-with-code/git-hosting: line  412) ok        http://www.catb.org/~esr/reposurgeon/
 (user/reference/launchpad-and-community/legal/project-licenses: line   46) redirect  http://www.opensource.org/licenses/nasa1.3.php - permanently to https://opensource.org/license/nasa1.3.php
 (user/reference/launchpad-and-community/legal/project-licenses: line   49) redirect  http://www.opensource.org/licenses/qtpl.php - permanently to https://opensource.org/license/qpl-1-0
-(user/reference/bug-tracker-api/external-bug-trackers: line   21) redirect  http://www.mantisbt.org/ - permanently to https://mantisbt.org/
 (user/reference/launchpad-and-community/legal/project-licenses: line   58) redirect  http://www.opensource.org/licenses/zlib-license.php - permanently to https://opensource.org/license/zlib
 (developer/how-to/use-soyuz-locally: line   56) redirect  http://www.pool.ntp.org/ - with Found to https://www.ntppool.org/en/
 (user/how-to/work-with-code-hosted-on-launchpad/create-and-manage-a-merge-proposal: line  140) redirect  http://www.python.org/dev/peps/pep-0010/ - with Found to https://peps.python.org/pep-0010/
-(user/reference/launchpad-and-community/legal/project-licenses: line   52) redirect  http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231 - permanently to https://www.w3.org/copyright/software-license-2002/
-(user/explanation/launchpad-api/launchpad-web-service: line  700) redirect  http://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.5 - permanently to https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html
-(user/reference/api-uses: line   31) -ignored- http://wiki.ubuntu.com/UbuntuDevTools: service unavailable
+(user/reference/bug-tracker-api/external-bug-trackers: line   21) redirect  http://www.mantisbt.org/ - permanently to https://mantisbt.org/
 (developer/how-to/debugging: line  418) redirect  http://www.postgresql.org/docs/8.3/static/runtime-config-logging.html#GUC-LOG-STATEMENT - permanently to https://www.postgresql.org/docs/8.3/runtime-config-logging.html
-(user/reference/packaging/source-builds/source-builds-knowledge-base: line   36) -ignored- http://wiki.ubuntu.com/Upstream/Adopt: service unavailable
+(user/explanation/launchpad-api/launchpad-web-service: line  700) redirect  http://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.5 - permanently to https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html
+(user/reference/launchpad-and-community/legal/project-licenses: line   52) redirect  http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231 - permanently to https://www.w3.org/copyright/software-license-2002/
+(user/reference/translations/reusing-packaged-translations: line   29) redirect  http://translationproject.org - permanently to https://translationproject.org/html/welcome.html
+(developer/explanation/javascript-unittesting: line   42) redirect  http://yuilibrary.com/yui/docs/api/modules/test.html - permanently to https://clarle.github.io/yui3/yui/docs/api/modules/test.html
+(user/how-to/source-package-recipe: line   28) redirect  http://youtu.be/_bG-SXNX9Ww - with See Other to https://www.youtube.com/watch?v=_bG-SXNX9Ww&feature=youtu.be
+(developer/explanation/javascript-unittesting: line   41) redirect  http://yuilibrary.com/yui/docs/test/ - permanently to https://clarle.github.io/yui3/yui/docs/test/
 (user/how-to/community-help: line    8) ok        https://answers.launchpad.net
 (user/how-to/account-management/merge-accounts: line   28) ok        https://answers.launchpad.net/
-(developer/explanation/javascript-unittesting: line   41) redirect  http://yuilibrary.com/yui/docs/test/ - permanently to https://clarle.github.io/yui3/yui/docs/test/
-(developer/explanation/javascript-unittesting: line   42) redirect  http://yuilibrary.com/yui/docs/api/modules/test.html - permanently to https://clarle.github.io/yui3/yui/docs/api/modules/test.html
+(user/explanation/projects/registering-project: line   29) ok        https://answers.launchpad.net/launchpad/+faq/208
 (user/explanation/answers/answer-tracker: line  106) redirect  https://answers.launchpad.net/+tour - permanently to https://launchpad.net/+tour/community-support
 (developer/explanation/css-sprites: line    7) redirect  http://www.websiteoptimization.com/speed/tweak/css-sprites/ - permanently to https://www.websiteoptimization.com/speed/tweak/css-sprites/
-(user/how-to/source-package-recipe: line   28) redirect  http://youtu.be/_bG-SXNX9Ww - with See Other to https://www.youtube.com/watch?v=_bG-SXNX9Ww&feature=youtu.be
-(user/explanation/projects/registering-project: line   29) ok        https://answers.launchpad.net/launchpad/+faq/208
-(user/explanation/translating-with-launchpad/translating-with-launchpad: line   39) redirect  https://answers.launchpad.net/rosetta/+faqs - permanently to https://answers.launchpad.net/launchpad/+faqs
 (user/explanation/projects/closing-project: line   14) redirect  https://answers.launchpad.net/launchpad/+addquestion - with See Other to https://answers.launchpad.net/launchpad/+addquestion/+login
 (user/how-to/import-ssh-keys: line   66) ok        https://answers.launchpad.net/launchpad/+question/26705
-(user/how-to/work-with-bugs/use-bugzilla-plugin: line  136) redirect  https://answers.launchpad.net/malone - permanently to https://answers.launchpad.net/launchpad
-(user/explanation/translating-with-launchpad/translating-with-launchpad: line   40) ok        https://answers.launchpad.net/ubuntu-translations/+faqs
-(user/reference/packaging/ppas/ppa: line   33) redirect  https://answers.launchpad.net/soyuz - permanently to https://answers.launchpad.net/launchpad
-(user/reference/launchpadlib-api-compatibility: line   22) ok        https://api.launchpad.net/beta/
-(developer/how-to/launchpad-api-docs: line    4) ok        https://api.launchpad.net/
 (user/explanation/translating-with-launchpad/translation-groups: line   85) redirect  https://answers.launchpad.net/rosetta/+addquestion - with See Other to https://answers.launchpad.net/launchpad/+addquestion/+login
-(developer/tutorials/creating-a-rock-build-using-apis: line   26) ok        https://api.launchpad.net/devel.html
+(user/how-to/work-with-bugs/use-bugzilla-plugin: line  136) redirect  https://answers.launchpad.net/malone - permanently to https://answers.launchpad.net/launchpad
+(user/explanation/translating-with-launchpad/translating-with-launchpad: line   39) redirect  https://answers.launchpad.net/rosetta/+faqs - permanently to https://answers.launchpad.net/launchpad/+faqs
+(user/reference/packaging/ppas/ppa: line   33) redirect  https://answers.launchpad.net/soyuz - permanently to https://answers.launchpad.net/launchpad
+(user/explanation/translating-with-launchpad/translating-with-launchpad: line   40) ok        https://answers.launchpad.net/ubuntu-translations/+faqs
+(developer/how-to/launchpad-api-docs: line    4) ok        https://api.launchpad.net/
 (user/explanation/answers/asking-for-help: line   11) ok        https://answers.launchpad.net/ubuntu
-(user/explanation/working-with-code/git-hosting: line  396) ok        https://astrofloyd.wordpress.com/2012/09/06/convert-bzr-to-git/
+(developer/tutorials/creating-a-rock-build-using-apis: line   26) ok        https://api.launchpad.net/devel.html
+(user/reference/launchpadlib-api-compatibility: line   22) ok        https://api.launchpad.net/beta/
 (user/how-to/launchpadlib/using-launchpadlib: line  224) ok        https://api.launchpad.net/devel.html#bug
 (developer/how-to/debugging: line  507) ok        https://apps.kde.org/kcachegrind/
+(user/explanation/working-with-code/git-hosting: line  396) ok        https://astrofloyd.wordpress.com/2012/09/06/convert-bzr-to-git/
 (user/explanation/launchpad-api/launchpad-web-service: line  828) ok        https://api.staging.launchpad.net/1.0/
-(   release-notes: line    8) ok        https://blog.launchpad.net/general/sunsetting-launchpads-mailing-lists
 (   release-notes: line   30) ok        https://blog.launchpad.net/general/build_by_defaultfalse-for-i386
-(user/reference/launchpad-and-community/feedback-on-launchpad: line   63) ok        https://blueprints.launchpad.net/launchpad-project
 (includes/important_bazaar_deprecation: line    3) ok        https://blog.launchpad.net/general/phasing-out-bazaar-code-hosting/
-(user/explanation/feature-highlights/blueprints: line  105) ok        https://blueprints.launchpad.net/ubuntu/gutsy
+(   release-notes: line    8) ok        https://blog.launchpad.net/general/sunsetting-launchpads-mailing-lists
+(user/reference/launchpad-and-community/feedback-on-launchpad: line   63) ok        https://blueprints.launchpad.net/launchpad-project
 (user/reference/bugs/bug-heat: line   31) ok        https://bugs.launchpad.net/+help-bugs/bug-heat.html
 (user/how-to/account-management/close-account: line   30) redirect  https://blueprints.launchpad.net/~/+specs?role=subscriber - with See Other to https://blueprints.launchpad.net/~/+specs/+login?role=subscriber
 (user/explanation/feature-highlights/blueprints: line   31) ok        https://blueprints.launchpad.net/ubuntu
-(user/reference/comment-syntax: line  128) redirect  https://bugs.launchpad.net/bugs/123 - with See Other to https://bugs.launchpad.net/launchpad/+bug/123
-(user/how-to/launchpadlib/python-api: line  267) redirect  https://bugs.launchpad.net/bugs/526362 - with See Other to https://bugs.launchpad.net/launchpad/+bug/526362
-(user/reference/packaging/source-builds/source-build-limitations: line   11) ok        https://bugs.launchpad.net/bzr/+bug/402814
+(user/explanation/feature-highlights/blueprints: line  105) ok        https://blueprints.launchpad.net/ubuntu/gutsy
 (user/explanation/projects/series-milestones-releases: line  182) ok        https://bugs.launchpad.net/apparmor/+bug/2105986
+(user/how-to/launchpadlib/python-api: line  267) redirect  https://bugs.launchpad.net/bugs/526362 - with See Other to https://bugs.launchpad.net/launchpad/+bug/526362
 (user/how-to/launchpadlib/auth-text-browser: line   39) redirect  https://bugs.launchpad.net/bugs/535456 - with See Other to https://bugs.launchpad.net/launchpad/+bug/535456
-(developer/reference/services/build-farm: line   72) ok        https://bugs.launchpad.net/charm-glance-simplestreams-sync
 (user/how-to/launchpadlib/auth-text-browser: line   51) redirect  https://bugs.launchpad.net/bugs/556927 - with See Other to https://bugs.launchpad.net/launchpad/+bug/556927
-(user/how-to/work-with-bugs/file-a-bug: line   71) ok        https://bugs.launchpad.net/inkscape
+(developer/reference/services/build-farm: line   72) ok        https://bugs.launchpad.net/charm-glance-simplestreams-sync
 (developer/how-to/contributing-changes: line   10) ok        https://bugs.launchpad.net/launchpad
+(user/reference/packaging/source-builds/source-build-limitations: line   11) ok        https://bugs.launchpad.net/bzr/+bug/402814
+(user/how-to/work-with-bugs/file-a-bug: line   71) ok        https://bugs.launchpad.net/inkscape
+(user/reference/launchpad-and-community/get-support: line   85) redirect  https://bugs.launchpad.net/launchpad-answers/+bug/75759 - permanently to https://bugs.launchpad.net/launchpad/+bug/75759
+(user/reference/comment-syntax: line  128) redirect  https://bugs.launchpad.net/bugs/123 - with See Other to https://bugs.launchpad.net/launchpad/+bug/123
 (developer/reference/services/build-farm: line   70) ok        https://bugs.launchpad.net/launchpad-buildd
+(user/reference/packaging/source-builds/source-build-limitations: line   22) redirect  https://bugs.launchpad.net/launchpad-code/+bug/519709 - permanently to https://bugs.launchpad.net/launchpad/+bug/519709
 (user/reference/packaging/source-builds/source-build-limitations: line   25) redirect  https://bugs.launchpad.net/launchpad-code/+bug/594294 - permanently to https://bugs.launchpad.net/launchpad/+bug/594294
 (user/reference/packaging/source-builds/source-build-limitations: line   20) redirect  https://bugs.launchpad.net/launchpad-code/+bug/607895 - permanently to https://bugs.launchpad.net/launchpad/+bug/607895
-(user/reference/packaging/source-builds/source-build-limitations: line   22) redirect  https://bugs.launchpad.net/launchpad-code/+bug/519709 - permanently to https://bugs.launchpad.net/launchpad/+bug/519709
-(user/reference/launchpad-and-community/get-support: line   85) redirect  https://bugs.launchpad.net/launchpad-answers/+bug/75759 - permanently to https://bugs.launchpad.net/launchpad/+bug/75759
-(developer/how-to/triage-bugs: line   39) ok        https://bugs.launchpad.net/launchpad-project
 (user/reference/packaging/source-builds/source-build-limitations: line   28) redirect  https://bugs.launchpad.net/launchpad-code/+bugs?field.tag=recipe - permanently to https://bugs.launchpad.net/launchpad/+bugs?field.tag=recipe
+(developer/how-to/triage-bugs: line   39) ok        https://bugs.launchpad.net/launchpad-project
+(user/reference/packaging/source-builds/source-build-limitations: line   14) redirect  https://bugs.launchpad.net/launchpad-code/+bug/627119 - permanently to https://bugs.launchpad.net/udd/+bug/627119
 (user/how-to/using-openid: line   45) ok        https://bugs.launchpad.net/launchpad-project/+bugs?field.tag=openid
 (developer/how-to/fixing-bugs: line   14) redirect  https://bugs.launchpad.net/launchpad-project/+bugs?field.searchtext=&orderby=-importance&field.status%3Alist=NEW&field.status%3Alist=INCOMPLETE_WITH_RESPONSE&field.status%3Alist=INCOMPLETE_WITHOUT_RESPONSE&field.status%3Alist=CONFIRMED&field.status%3Alist=TRIAGED&assignee_option=any&field.assignee=&field.bug_reporter=&field.bug_supervisor=&field.bug_commenter=&field.subscriber=&field.omit_dupes.used=&field.omit_dupes=on&field.has_patch.used=&field.has_cve.used=&field.tag=trivial&field.tags_combinator=ANY&search=Search|openbugsmarkedas'trivial' - with unknown code to https://bugs.launchpad.net/launchpad-project/+bugs?field.searchtext=&orderby=-importance&field.status%3Alist=NEW&field.status%3Alist=INCOMPLETE_WITH_RESPONSE&field.status%3Alist=INCOMPLETE_WITHOUT_RESPONSE&field.status%3Alist=CONFIRMED&field.status%3Alist=TRIAGED&assignee_option=any&field.assignee=&field.bug_reporter=&field.bug_supervisor=&field.bug_commenter=&field.subscriber=&field.omit_dupes.used=&field.omit_dupes=on&field.has_patch.used=&field.has_cve.used=&field.tag=trivial&field.tags_combinator=ANY&search=Search%7Copenbugsmarkedas'trivial'
-(user/reference/packaging/source-builds/source-build-limitations: line   14) redirect  https://bugs.launchpad.net/launchpad-code/+bug/627119 - permanently to https://bugs.launchpad.net/udd/+bug/627119
 (developer/reference/services/build-farm: line   69) ok        https://bugs.launchpad.net/launchpad-project/+bugs?field.tag=soyuz-build
-(developer/explanation/security: line  140) redirect  https://bugs.launchpad.net/launchpad-project/+filebug - with See Other to https://bugs.launchpad.net/launchpad-project/+filebug/+login
-(developer/explanation/feature-flags: line   55) ok        https://bugs.launchpad.net/launchpad/+bug/669942
-(user/explanation/your-account-karma: line   53) ok        https://bugs.launchpad.net/launchpad/+bug/275938
-(developer/reference/services/automatic-translations-export: line   60) ok        https://bugs.launchpad.net/launchpad/+bug/684664
 (user/explanation/oops: line   61) ok        https://bugs.launchpad.net/launchpad-project/+bugs?field.tag=timeout,oops
-(developer/explanation/feature-flags: line  339) ok        https://bugs.launchpad.net/launchpad/+bugs?field.tag=feature-flags
+(developer/explanation/security: line  140) redirect  https://bugs.launchpad.net/launchpad-project/+filebug - with See Other to https://bugs.launchpad.net/launchpad-project/+filebug/+login
+(user/explanation/your-account-karma: line   53) ok        https://bugs.launchpad.net/launchpad/+bug/275938
+(developer/explanation/feature-flags: line   55) ok        https://bugs.launchpad.net/launchpad/+bug/669942
 (developer/reference/services/automatic-translations-export: line   55) ok        https://bugs.launchpad.net/launchpad/+bug/849829
+(developer/reference/services/automatic-translations-export: line   60) ok        https://bugs.launchpad.net/launchpad/+bug/684664
+(developer/explanation/feature-flags: line  339) ok        https://bugs.launchpad.net/launchpad/+bugs?field.tag=feature-flags
 (developer/tutorials/building-charms-in-launchpad: line  117) redirect  https://bugs.launchpad.net/launchpad/+filebug - with See Other to https://bugs.launchpad.net/launchpad/+filebug/+login
-(user/explanation/launchpad-api/launchpadlib: line  386) ok        https://bugs.launchpad.net/launchpadlib
 (developer/reference/services/signing: line   31) ok        https://bugs.launchpad.net/lp-signing
-(developer/reference/services/build-farm: line   71) ok        https://bugs.launchpad.net/lpci
 (developer/reference/services/code-import: line   22) ok        https://bugs.launchpad.net/lp-codeimport
+(user/explanation/launchpad-api/launchpadlib: line  386) ok        https://bugs.launchpad.net/launchpadlib
+(developer/reference/services/build-farm: line   71) ok        https://bugs.launchpad.net/lpci
 (user/explanation/projects/series-milestones-releases: line  211) redirect  https://bugs.launchpad.net/malone/+bug/211855 - permanently to https://bugs.launchpad.net/launchpad/+bug/211855
 (user/explanation/projects/series-milestones-releases: line  219) redirect  https://bugs.launchpad.net/malone/+bug/314432 - permanently to https://bugs.launchpad.net/launchpad/+bug/314432
-(user/explanation/projects/series-milestones-releases: line  217) redirect  https://bugs.launchpad.net/malone/+bug/424118 - permanently to https://bugs.launchpad.net/launchpad/+bug/424118
+(user/explanation/launchpad-mailing-lists: line   58) redirect  http://www.mail-archive.com/ - permanently to https://www.mail-archive.com/
 (user/explanation/projects/series-milestones-releases: line  217) redirect  https://bugs.launchpad.net/malone/+bug/369419 - permanently to https://bugs.launchpad.net/launchpad/+bug/369419
 (user/explanation/projects/series-milestones-releases: line  219) redirect  https://bugs.launchpad.net/malone/+bug/423692 - permanently to https://bugs.launchpad.net/launchpad/+bug/423692
-(user/explanation/feature-highlights/the-bug-tracker: line   39) ok        https://bugs.launchpad.net/ubuntu/+source/gnome-panel/+bug/122590
-(user/explanation/feature-highlights/the-bug-tracker: line   35) ok        https://bugs.launchpad.net/zope3/+bug/98275
-(user/how-to/account-management/close-account: line   29) redirect  https://bugs.launchpad.net/~/+subscribedbugs - with See Other to https://bugs.launchpad.net/~/+subscribedbugs/+login
-(user/reference/packaging/ppas/ppa: line  230) redirect  https://bugs.launchpad.net/soyuz/+bug/189223 - permanently to https://bugs.launchpad.net/launchpad/+bug/189223
+(user/explanation/projects/series-milestones-releases: line  217) redirect  https://bugs.launchpad.net/malone/+bug/424118 - permanently to https://bugs.launchpad.net/launchpad/+bug/424118
 (user/how-to/projects/project-translations/exporting-translations: line   41) redirect  https://bugs.launchpad.net/rosetta/+bug/407260 - permanently to https://bugs.launchpad.net/launchpad/+bug/407260
+(user/reference/bugs/multi-project-bugs/about-multi-project-bugs: line   58) ok        https://bugs.launchpad.net/ubuntu/+source/mozilla-thunderbird/+bug/24220
+(user/reference/packaging/ppas/ppa: line  230) redirect  https://bugs.launchpad.net/soyuz/+bug/189223 - permanently to https://bugs.launchpad.net/launchpad/+bug/189223
+(user/explanation/feature-highlights/the-bug-tracker: line   39) ok        https://bugs.launchpad.net/ubuntu/+source/gnome-panel/+bug/122590
+(user/how-to/account-management/close-account: line   29) redirect  https://bugs.launchpad.net/~/+subscribedbugs - with See Other to https://bugs.launchpad.net/~/+subscribedbugs/+login
+(user/explanation/feature-highlights/the-bug-tracker: line   35) ok        https://bugs.launchpad.net/zope3/+bug/98275
+(developer/explanation/journey-of-a-change-to-production: line  121) ok        https://buildbot.net
 (developer/tutorials/building-charms-in-launchpad: line   80) ok        https://canonical-charmcraft.readthedocs-hosted.com/stable/howto/build-guides/pack-a-reactive-charm-with-charmcraft/
 (developer/tutorials/building-charms-in-launchpad: line   29) ok        https://canonical-charmcraft.readthedocs-hosted.com/stable/howto/manage-charmcraft/
-(user/reference/bugs/multi-project-bugs/about-multi-project-bugs: line   58) ok        https://bugs.launchpad.net/ubuntu/+source/mozilla-thunderbird/+bug/24220
 (developer/tutorials/building-charms-in-launchpad: line   15) ok        https://canonical-charmcraft.readthedocs-hosted.com/stable/howto/manage-charms/#publish-a-charm-on-charmhub
-(developer/how-to/building-lpdev-images: line   23) ok        https://canonical-lxd-imagebuilder.readthedocs-hosted.com/en/latest/howto/install/#installing-from-package
-(   release-notes: line   35) ok        https://canonical-craft-platforms.readthedocs-hosted.com/en/latest
-(user/how-to/packaging/ppa-package-upload: line  129) ok        https://canonical-ubuntu-packaging-guide.readthedocs-hosted.com/en/latest/reference/debian-dir-overview/#the-changelog-file
-(developer/explanation/framework: line   69) redirect  https://chameleon.readthedocs.io/ - with Found to https://chameleon.readthedocs.io/en/latest/
-(developer/explanation/journey-of-a-change-to-production: line  121) ok        https://buildbot.net
 (developer/how-to/running-quickstart: line   12) ok        https://canonical.com/lxd/install
+(developer/how-to/building-lpdev-images: line   23) ok        https://canonical-lxd-imagebuilder.readthedocs-hosted.com/en/latest/howto/install/#installing-from-package
+(developer/explanation/framework: line   69) redirect  https://chameleon.readthedocs.io/ - with Found to https://chameleon.readthedocs.io/en/latest/
+(user/how-to/packaging/ppa-package-upload: line  129) ok        https://canonical-ubuntu-packaging-guide.readthedocs-hosted.com/en/latest/reference/debian-dir-overview/#the-changelog-file
+(   release-notes: line   35) ok        https://canonical-craft-platforms.readthedocs-hosted.com/en/latest
+(developer/reference/services/automatic-translations-export: line   48) ok        https://charmhub.io/launchpad-scripts
 (developer/explanation/charms: line  188) ok        https://charmhub.io/autocert
-(developer/explanation/charms: line   28) ok        https://charmhub.io/
 (developer/reference/services/signing: line   35) ok        https://charmhub.io/lp-signing
-(developer/explanation/charms: line   90) ok        https://charmsreactive.readthedocs.io/en/latest/structure.html#charm-layer
-(developer/reference/services/buildbot: line   43) ok        https://charmhub.io/lpbuildbot-worker/
 (developer/reference/services/buildbot: line  148) ok        https://chat.canonical.com/canonical/channels/launchpad-buildbot
+(developer/reference/services/buildbot: line   43) ok        https://charmhub.io/lpbuildbot-worker/
 (developer/explanation/feature-flags: line   73) ok        https://chat.canonical.com/canonical/channels/launchpad-private
 (user/explanation/feature-highlights/branch-imports: line   67) redirect  https://code.launchpad.net/+code-imports/+new - with See Other to https://code.launchpad.net/+code-imports/+new/+login
-(user/how-to/work-with-code-hosted-on-launchpad/find-and-download-code-hosted on Launchpad: line   64) ok        https://code.launchpad.net/do
-(developer/explanation/pre-merge-reviews: line  100) ok        https://code.launchpad.net/launchpad/+activereviews
-(developer/how-to/contributing-changes: line   21) redirect  https://code.launchpad.net/launchpad - with See Other to https://code.launchpad.net/launchpad/+code/+login
 (developer/reference/services/buildbot: line   68) ok        https://code.launchpad.net/lpbuildbot-worker
+(developer/explanation/pre-merge-reviews: line  100) ok        https://code.launchpad.net/launchpad/+activereviews
 (developer/explanation/launchpad-ppa: line   34) ok        https://code.launchpad.net/meta-lp-deps
-(user/how-to/work-with-code-hosted-on-launchpad/linking-code-to-bug-reports-and-blueprints: line   70) ok        https://code.launchpad.net/drizzle
+(user/how-to/work-with-code-hosted-on-launchpad/find-and-download-code-hosted on Launchpad: line   64) ok        https://code.launchpad.net/do
+(developer/how-to/contributing-changes: line   21) redirect  https://code.launchpad.net/launchpad - with See Other to https://code.launchpad.net/launchpad/+code/+login
 (developer/how-to/create-job-publish-artifact: line   56) ok        https://code.launchpad.net/ols-jenkaas
-(user/how-to/work-with-code-hosted-on-launchpad/create-and-maintain-personal-branch: line   17) redirect  https://code.launchpad.net/people/+me - with See Other to https://code.launchpad.net/people/+me/+login
+(user/how-to/work-with-code-hosted-on-launchpad/linking-code-to-bug-reports-and-blueprints: line   70) ok        https://code.launchpad.net/drizzle
 (developer/reference/services/git-hosting: line   37) ok        https://code.launchpad.net/turnip
-(user/reference/packaging/ppas/ppa: line  115) ok        https://code.launchpad.net/ubuntu-archive-tools
+(user/how-to/work-with-code-hosted-on-launchpad/create-and-maintain-personal-branch: line   17) redirect  https://code.launchpad.net/people/+me - with See Other to https://code.launchpad.net/people/+me/+login
 (developer/reference/services/buildbot: line   19) ok        https://code.launchpad.net/~canonical-launchpad-branches/lpbuildbot/
 (user/explanation/feature-highlights/bazaar-branch-hosting: line   64) ok        https://code.launchpad.net/update-manager
-(developer/explanation/launchpad-ppa: line  121) ok        https://code.launchpad.net/~landscape/+recipe/convoy-daily-trunk-lds
+(user/reference/packaging/ppas/ppa: line  115) ok        https://code.launchpad.net/ubuntu-archive-tools
 (developer/explanation/code: line  198) ok        https://code.launchpad.net/~launchpad-pqm/loggerhead/devel
 (developer/reference/services/buildbot: line   43) ok        https://code.launchpad.net/~launchpad/+archive/ubuntu/ppa/+packages?field.name_filter=buildbot-worker&field.status_filter=published&field.series_filter=
-(developer/how-to/database-schema-changes-process: line  136) ok        https://code.launchpad.net/~launchpad/+git/dbpatches
+(developer/explanation/launchpad-ppa: line  121) ok        https://code.launchpad.net/~landscape/+recipe/convoy-daily-trunk-lds
 (developer/how-to/debug-tests-with-visual-studio-code: line   56) ok        https://code.launchpad.net/~launchpad/+git/dev-configs
-(developer/explanation/launchpad-ppa: line   80) ok        https://code.launchpad.net/~launchpad/+recipe/launchpad-buildd-daily
+(developer/how-to/database-schema-changes-process: line  136) ok        https://code.launchpad.net/~launchpad/+git/dbpatches
 (developer/explanation/launchpad-ppa: line  137) ok        https://code.launchpad.net/~launchpad/+recipe/git-build-recipe-daily
-(developer/explanation/launchpad-ppa: line  121) ok        https://code.launchpad.net/~launchpad/+recipe/launchpad-convoy
-(developer/explanation/launchpad-ppa: line   64) ok        https://code.launchpad.net/~launchpad/+recipe/meta-lp-deps-on-demand
+(developer/explanation/launchpad-ppa: line   80) ok        https://code.launchpad.net/~launchpad/+recipe/launchpad-buildd-daily
 (developer/how-to/porting-builders-to-newer-ubuntu-versions: line    9) ok        https://code.launchpad.net/~launchpad/launchpad-buildd/
+(developer/explanation/launchpad-ppa: line   64) ok        https://code.launchpad.net/~launchpad/+recipe/meta-lp-deps-on-demand
+(developer/explanation/launchpad-ppa: line  121) ok        https://code.launchpad.net/~launchpad/+recipe/launchpad-convoy
 (developer/how-to/porting-builders-to-newer-ubuntu-versions: line   17) redirect  https://code.launchpad.net/~launchpad/launchpad-mojo-specs/+git/private - with See Other to https://code.launchpad.net/~launchpad/launchpad-mojo-specs/+git/private/+index/+login
+(developer/explanation/branches: line   19) ok        https://code.launchpad.net/~launchpad/launchpad/+git/launchpad/+ref/stable
 (user/explanation/feature-highlights/bazaar-branch-hosting: line   40) ok        https://code.launchpad.net/~petesavage
 (developer/reference/services/buildbot: line   89) ok        https://code.launchpad.net/~lgp171188/launchpad-mojo-specs/+git/launchpad-mojo-specs/+merge/478047
-(developer/explanation/branches: line   19) ok        https://code.launchpad.net/~launchpad/launchpad/+git/launchpad/+ref/stable
+(developer/explanation/branches: line   14) ok        https://code.launchpad.net/~launchpad/launchpad/+git/launchpad/+ref/master
 (user/how-to/work-with-code-hosted-on-launchpad/create-and-manage-a-merge-proposal: line  119) ok        https://code.launchpad.net/~therve/storm/binary-and/+merge/387
 (user/explanation/teams/team-branches: line   77) ok        https://code.launchpad.net/~ubuntu-core-dev
-(user/explanation/feature-highlights/branch-imports: line   37) ok        https://code.launchpad.net/~vcs-imports
-(developer/how-to/debug-tests-with-visual-studio-code: line   89) ok        https://code.visualstudio.com/docs/python/debugging
 (developer/how-to/debugging: line  172) ok        https://code.visualstudio.com/docs/python/testing#_configure-tests
-(developer/how-to/debug-tests-with-visual-studio-code: line   93) redirect  https://code.visualstudio.com/docs/editor/debugging - permanently to https://code.visualstudio.com/docs/debugtest/debugging
+(user/explanation/feature-highlights/branch-imports: line   37) ok        https://code.launchpad.net/~vcs-imports
 (developer/how-to/running-quickstart: line   93) ok        https://code.visualstudio.com/docs/setup/linux#_snap
+(developer/how-to/debug-tests-with-visual-studio-code: line   93) redirect  https://code.visualstudio.com/docs/editor/debugging - permanently to https://code.visualstudio.com/docs/debugtest/debugging
+(developer/explanation/navigating: line   32) redirect  https://dev.launchpad.net/ - with Found to https://documentation.ubuntu.com/launchpad/en/latest/
 (developer/explanation/architecture: line   36) redirect  https://dev.launchpad.net/ArchitectureGuide/Services - with Found to https://documentation.ubuntu.com/launchpad/en/latest/
 (developer/reference/python: line   35) redirect  https://dev.launchpad.net/AssertionsInLaunchpad - with Found to https://documentation.ubuntu.com/launchpad/en/latest/
-(developer/explanation/navigating: line   32) redirect  https://dev.launchpad.net/ - with Found to https://documentation.ubuntu.com/launchpad/en/latest/
-(developer/how-to/triage-bugs: line   32) redirect  https://dev.launchpad.net/BugTriage/Background - with Found to https://documentation.ubuntu.com/launchpad/en/latest/
+(developer/how-to/debug-tests-with-visual-studio-code: line   89) ok        https://code.visualstudio.com/docs/python/debugging
 (developer/how-to/building-lpdev-images: line   38) redirect  https://dev.launchpad.net/Code/HowToUseCodehostingLocally - with Found to https://documentation.ubuntu.com/launchpad/en/latest/
 (developer/explanation/performance: line   65) redirect  https://dev.launchpad.net/Database/Performance - with Found to https://documentation.ubuntu.com/launchpad/en/latest/
+(developer/how-to/triage-bugs: line   32) redirect  https://dev.launchpad.net/BugTriage/Background - with Found to https://documentation.ubuntu.com/launchpad/en/latest/
 (developer/how-to/running: line  251) redirect  https://dev.launchpad.net/DatabaseSetup - with Found to https://documentation.ubuntu.com/launchpad/en/latest/
-(developer/reference/python: line   34) redirect  https://dev.launchpad.net/ExceptionGuidelines - with Found to https://documentation.ubuntu.com/launchpad/en/latest/
-(developer/explanation/scope: line  342) redirect  https://dev.launchpad.net/FeatureChecklist - with Found to https://documentation.ubuntu.com/launchpad/en/latest/
 (developer/how-to/running: line    7) redirect  https://dev.launchpad.net/Help - with Found to https://documentation.ubuntu.com/launchpad/en/latest/
 (developer/how-to/triage-bugs: line  123) redirect  https://dev.launchpad.net/LaunchpadBugTags - with Found to https://documentation.ubuntu.com/launchpad/en/latest/
-(user/reference/launchpad-and-community/legal/launchpad-policies: line   27) redirect  https://dev.launchpad.net/LaunchpadLicense - with Found to https://documentation.ubuntu.com/launchpad/en/latest/
-(developer/reference/tests: line  206) redirect  https://dev.launchpad.net/PageTests - with Found to https://documentation.ubuntu.com/launchpad/en/latest/
-(developer/explanation/working-with-db-devel: line    8) redirect  https://dev.launchpad.net/PolicyAndProcess/DatabaseSchemaChangesProcess - with Found to https://documentation.ubuntu.com/launchpad/en/latest/
 (developer/reference/python: line   36) redirect  https://dev.launchpad.net/LaunchpadHackingFAQ - with Found to https://documentation.ubuntu.com/launchpad/en/latest/
+(developer/reference/python: line   34) redirect  https://dev.launchpad.net/ExceptionGuidelines - with Found to https://documentation.ubuntu.com/launchpad/en/latest/
+(developer/reference/tests: line  206) redirect  https://dev.launchpad.net/PageTests - with Found to https://documentation.ubuntu.com/launchpad/en/latest/
+(user/reference/launchpad-and-community/legal/launchpad-policies: line   27) redirect  https://dev.launchpad.net/LaunchpadLicense - with Found to https://documentation.ubuntu.com/launchpad/en/latest/
+(developer/explanation/working-with-db-devel: line    8) redirect  https://dev.launchpad.net/PolicyAndProcess/DatabaseSchemaChangesProcess - with Found to https://documentation.ubuntu.com/launchpad/en/latest/
+(developer/explanation/scope: line  342) redirect  https://dev.launchpad.net/FeatureChecklist - with Found to https://documentation.ubuntu.com/launchpad/en/latest/
 (developer/how-to/triage-bugs: line   97) redirect  https://dev.launchpad.net/PolicyAndProcess/ZeroOOPSPolicy - with Found to https://documentation.ubuntu.com/launchpad/en/latest/
-(developer/how-to/building-lpdev-images: line   38) redirect  https://dev.launchpad.net/Soyuz/HowToUseSoyuzLocally - with Found to https://documentation.ubuntu.com/launchpad/en/latest/
 (developer/how-to/debugging: line  128) redirect  https://dev.launchpad.net/Soyuz/HowToDevelopWithBuildd - with Found to https://documentation.ubuntu.com/launchpad/en/latest/
 (user/reference/live-file-systems: line   11) redirect  https://dev.launchpad.net/Soyuz/LiveFilesystems - with Found to https://documentation.ubuntu.com/launchpad/en/latest/
+(developer/how-to/building-lpdev-images: line   38) redirect  https://dev.launchpad.net/Soyuz/HowToUseSoyuzLocally - with Found to https://documentation.ubuntu.com/launchpad/en/latest/
 (developer/reference/python: line  379) redirect  https://dev.launchpad.net/UltimateVimPythonSetup - with Found to https://documentation.ubuntu.com/launchpad/en/latest/
-(developer/explanation/performance: line   54) ok        https://devblogs.microsoft.com/python/python-311-faster-cpython-team/
 (developer/explanation/favicon: line   11) ok        https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html
+(developer/explanation/favicon: line   15) redirect  https://developer.mozilla.org/en-US/docs/Web/Manifest - permanently to https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest
+(developer/explanation/performance: line   54) ok        https://devblogs.microsoft.com/python/python-311-faster-cpython-team/
 (developer/explanation/favicon: line   12) ok        https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/pinnedTabs/pinnedTabs.html
 (contribute-to-our-docs: line   31) ok        https://diataxis.fr/
-(developer/explanation/favicon: line   15) redirect  https://developer.mozilla.org/en-US/docs/Web/Manifest - permanently to https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest
-(developer/reference/services/buildbot: line    7) ok        https://docs.buildbot.net/0.8.12/
 (developer/reference/services/buildbot: line   19) ok        https://docs.buildbot.net/0.8.12/manual/introduction.html
-(developer/reference/services/fetch-service: line  113) redirect  https://docs.google.com/document/d/1HZvFo78LqFGgdpM7v3teG9gV-pMyvXpXTD1vcLLv_d0/ - with Found to https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fd%2F1HZvFo78LqFGgdpM7v3teG9gV-pMyvXpXTD1vcLLv_d0%2Fedit&followup=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fd%2F1HZvFo78LqFGgdpM7v3teG9gV-pMyvXpXTD1vcLLv_d0%2Fedit&ifkv=AdBytiOzvHoA9LbbnRUtZbYBEPNKqLa84Gf2CcMerD6l7YkXSmL5ebNDNCclEUzBBfNWu4x_t-2xxQ&ltmpl=docs&osid=1&passive=1209600&service=wise&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1610135348%3A1752827207697443
-(developer/reference/services/fetch-service: line  194) redirect  https://docs.google.com/document/d/1Ta0THOsHLwbOA6H7ewHa-6s2GtZRWxvvtiMKFk5jiq8 - with Found to https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fd%2F1Ta0THOsHLwbOA6H7ewHa-6s2GtZRWxvvtiMKFk5jiq8%2Fedit&followup=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fd%2F1Ta0THOsHLwbOA6H7ewHa-6s2GtZRWxvvtiMKFk5jiq8%2Fedit&ifkv=AdBytiP2s-riNNbrrbWyHJ873TE8WqtZWJ97InDUiDt0exws_KYOxikobpBjAU-YWtCDhXBzCfIq&ltmpl=docs&osid=1&passive=1209600&service=wise&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-351022176%3A1752827208212418
-(developer/reference/services/build-farm: line   86) redirect  https://docs.google.com/document/d/1im8CMxLRNxtt5H0zv461kSYSflN-YlxJ1UZG8_53D9A - with Found to https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fd%2F1im8CMxLRNxtt5H0zv461kSYSflN-YlxJ1UZG8_53D9A%2Fedit&followup=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fd%2F1im8CMxLRNxtt5H0zv461kSYSflN-YlxJ1UZG8_53D9A%2Fedit&ifkv=AdBytiPxmUvcO2_-xbHcptPEQry1U2hAI5wJ3YtCi-hSIDKWgpe-dXQs9PvIIXNcQupB_bPTn2Gqaw&ltmpl=docs&osid=1&passive=1209600&service=wise&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1445577795%3A1752827208828373
-(developer/explanation/security: line   21) redirect  https://docs.google.com/document/d/1im8CMxLRNxtt5H0zv461kSYSflN-YlxJ1UZG8_53D9A/edit - with Found to https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fd%2F1im8CMxLRNxtt5H0zv461kSYSflN-YlxJ1UZG8_53D9A%2Fedit&followup=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fd%2F1im8CMxLRNxtt5H0zv461kSYSflN-YlxJ1UZG8_53D9A%2Fedit&ifkv=AdBytiM2uriyNi1jtIfCjWOX9NSNIljeg05rtWd_wH4ncOw-BR6_bk-fmtWubLl1P_p949WhrFcP7Q&ltmpl=docs&osid=1&passive=1209600&service=wise&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-264679805%3A1752827208806893
-(developer/reference/services/fetch-service: line  193) redirect  https://docs.google.com/document/d/1Z2kVh8eGzDV1-zEyTRYbCNQ0fsXJWt9-vutAjZ9Cxck - with Found to https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fd%2F1Z2kVh8eGzDV1-zEyTRYbCNQ0fsXJWt9-vutAjZ9Cxck%2Fedit&followup=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fd%2F1Z2kVh8eGzDV1-zEyTRYbCNQ0fsXJWt9-vutAjZ9Cxck%2Fedit&ifkv=AdBytiN_KknZlhXGlexw1Vh5ek_Bg9g6oKA0uuQivG1yqTIpnMfyE7f6Dj2aTLGkz9f93nlLDaYc7g&ltmpl=docs&osid=1&passive=1209600&service=wise&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-584482165%3A1752827208973827
-(developer/explanation/framework: line  102) redirect  https://docs.gunicorn.org/ - with Found to https://docs.gunicorn.org/en/stable/
+(developer/reference/services/buildbot: line    7) ok        https://docs.buildbot.net/0.8.12/
+(developer/explanation/security: line   21) redirect  https://docs.google.com/document/d/1im8CMxLRNxtt5H0zv461kSYSflN-YlxJ1UZG8_53D9A/edit - with Found to https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fd%2F1im8CMxLRNxtt5H0zv461kSYSflN-YlxJ1UZG8_53D9A%2Fedit&followup=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fd%2F1im8CMxLRNxtt5H0zv461kSYSflN-YlxJ1UZG8_53D9A%2Fedit&ifkv=AdBytiNL_i1sYaGZEMxfh-QCcYBkaCPx_c0uyTxS1FcQ_OU3p58RpyZMbks7i-uBLL8fSRRLs0oN&ltmpl=docs&osid=1&passive=1209600&service=wise&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S102252767%3A1752832355190495
+(developer/reference/services/fetch-service: line  113) redirect  https://docs.google.com/document/d/1HZvFo78LqFGgdpM7v3teG9gV-pMyvXpXTD1vcLLv_d0/ - with Found to https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fd%2F1HZvFo78LqFGgdpM7v3teG9gV-pMyvXpXTD1vcLLv_d0%2Fedit&followup=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fd%2F1HZvFo78LqFGgdpM7v3teG9gV-pMyvXpXTD1vcLLv_d0%2Fedit&ifkv=AdBytiP_yhFnZEzbbCRuaLD33X_RqX44NMApsP9URJ7KSRffNu-FvcuisHgnu3C7sxkfEIa7BY2U1Q&ltmpl=docs&osid=1&passive=1209600&service=wise&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1541506831%3A1752832355381659
+(developer/reference/services/build-farm: line   86) redirect  https://docs.google.com/document/d/1im8CMxLRNxtt5H0zv461kSYSflN-YlxJ1UZG8_53D9A - with Found to https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fd%2F1im8CMxLRNxtt5H0zv461kSYSflN-YlxJ1UZG8_53D9A%2Fedit&followup=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fd%2F1im8CMxLRNxtt5H0zv461kSYSflN-YlxJ1UZG8_53D9A%2Fedit&ifkv=AdBytiNG09Lo-HGI3rT7Ejrg7U3KXwUDjkbySfT7FufWK7SHa-05GJRxVxnGOk26T-Hqb2s8uNLr2Q&ltmpl=docs&osid=1&passive=1209600&service=wise&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1038112180%3A1752832355790870
+(developer/reference/services/fetch-service: line  193) redirect  https://docs.google.com/document/d/1Z2kVh8eGzDV1-zEyTRYbCNQ0fsXJWt9-vutAjZ9Cxck - with Found to https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fd%2F1Z2kVh8eGzDV1-zEyTRYbCNQ0fsXJWt9-vutAjZ9Cxck%2Fedit&followup=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fd%2F1Z2kVh8eGzDV1-zEyTRYbCNQ0fsXJWt9-vutAjZ9Cxck%2Fedit&ifkv=AdBytiPOYGsMI3F1IlJrEMdEexrDT8IclbGan_FQZUEdDPSTw7pKLwewelXoSsrN4FIxDPas99wuvw&ltmpl=docs&osid=1&passive=1209600&service=wise&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-922497539%3A1752832355780721
+(developer/reference/services/fetch-service: line  194) redirect  https://docs.google.com/document/d/1Ta0THOsHLwbOA6H7ewHa-6s2GtZRWxvvtiMKFk5jiq8 - with Found to https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fd%2F1Ta0THOsHLwbOA6H7ewHa-6s2GtZRWxvvtiMKFk5jiq8%2Fedit&followup=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fd%2F1Ta0THOsHLwbOA6H7ewHa-6s2GtZRWxvvtiMKFk5jiq8%2Fedit&ifkv=AdBytiM_0ukZ8pbGIJCjb_fqgqeQXx7BxyxEnn0isl54dsFBFgP4vi8zeI24fyPk09eeaZgllnQ3QA&ltmpl=docs&osid=1&passive=1209600&service=wise&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-970009635%3A1752832355907664
 (user/explanation/launchpad-api/launchpad-web-service: line  700) ok        https://docs.python.org/3/library/gzip.html
 (user/explanation/working-with-code/git-hosting: line  147) ok        https://docs.python.org/3/library/fnmatch.html#fnmatch.fnmatch
 (developer/reference/python: line  259) ok        https://docs.python.org/3/library/operator.html#operator.attrgetter
+(developer/explanation/framework: line  102) redirect  https://docs.gunicorn.org/ - with Found to https://docs.gunicorn.org/en/stable/
 (user/explanation/launchpad-api/launchpad-web-service: line  700) ok        https://docs.python.org/3/library/zlib.html
-(developer/reference/services/signing: line   41) redirect  https://docs.google.com/document/d/1kCUUVFb1m0-Uo81tHFyYJCxysquMbKgJDMOSF63NWFc - with Found to https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fd%2F1kCUUVFb1m0-Uo81tHFyYJCxysquMbKgJDMOSF63NWFc%2Fedit&followup=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fd%2F1kCUUVFb1m0-Uo81tHFyYJCxysquMbKgJDMOSF63NWFc%2Fedit&ifkv=AdBytiNDzvwvjQSvbyGfqfqycq8xQRuNyJAw-zLlKc4K35oS_1rMrOzOZTVh2afRix3KnuBsS83V8g&ltmpl=docs&osid=1&passive=1209600&service=wise&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1656899753%3A1752827210337796
-(developer/reference/python: line   26) ok        https://docs.twistedmatrix.com/en/stable/development/coding-standard.html
+(developer/explanation/favicon: line   13) redirect  https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/dn320426(v=vs.85) - permanently to https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/dn320426(v=vs.85)
 (developer/tutorials/building-charms-in-launchpad: line    5) ok        https://documentation.ubuntu.com/juju/3.6/howto/manage-charms/#build-a-charm
-(contribute-to-our-docs: line   43) redirect  https://docs.ubuntu.com/styleguide/ - with Found to https://docs.ubuntu.com/styleguide/en/
-(user/how-to/work-with-code-hosted-on-launchpad/create-and-manage-a-merge-proposal: line   39) ok        https://documentation.help/Bazaar-help/sending_changes.html#understanding-merge-directives
-(developer/how-to/porting-builders-to-newer-ubuntu-versions: line   44) redirect  https://documentation.ubuntu.com/launchpad/en/latest/how-to/debug-buildfarm-builder/ - with Found to https://documentation.ubuntu.com/launchpad/en/latest/developer/how-to/debug-buildfarm-builder/
+(developer/reference/python: line   26) ok        https://docs.twistedmatrix.com/en/stable/development/coding-standard.html
+(developer/reference/services/signing: line   41) redirect  https://docs.google.com/document/d/1kCUUVFb1m0-Uo81tHFyYJCxysquMbKgJDMOSF63NWFc - with Found to https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fd%2F1kCUUVFb1m0-Uo81tHFyYJCxysquMbKgJDMOSF63NWFc%2Fedit&followup=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fd%2F1kCUUVFb1m0-Uo81tHFyYJCxysquMbKgJDMOSF63NWFc%2Fedit&ifkv=AdBytiN8oh1qhrSCKv5-1zGRHm8zhZA3QV9X6DjZQYDsm75GkhhFNdXYCkBX08oJ6j4Lj9IJT_LFoA&ltmpl=docs&osid=1&passive=1209600&service=wise&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1446790010%3A1752832357278540
 (developer/explanation/charms: line  152) redirect  https://documentation.ubuntu.com/lxd/en/latest/ - permanently to https://documentation.ubuntu.com/lxd/latest/
-(developer/how-to/running: line   62) redirect  https://documentation.ubuntu.com/lxd/en/latest/getting_started/ - permanently to https://documentation.ubuntu.com/lxd/latest/getting_started/
-(developer/tutorials/creating-a-rock-build-using-apis: line   17) ok        https://documentation.ubuntu.com/rockcraft/en/latest/how-to/get-started/
+(developer/how-to/porting-builders-to-newer-ubuntu-versions: line   44) redirect  https://documentation.ubuntu.com/launchpad/en/latest/how-to/debug-buildfarm-builder/ - with Found to https://documentation.ubuntu.com/launchpad/en/latest/developer/how-to/debug-buildfarm-builder/
 (developer/how-to/porting-builders-to-newer-ubuntu-versions: line   42) redirect  https://documentation.ubuntu.com/launchpad/en/latest/how-to/manage-users - with Found to https://documentation.ubuntu.com/launchpad/en/latest/developer/how-to/manage-users/
+(developer/how-to/running: line   62) redirect  https://documentation.ubuntu.com/lxd/en/latest/getting_started/ - permanently to https://documentation.ubuntu.com/lxd/latest/getting_started/
 (developer/reference/python: line   80) ok        https://docutils.sourceforge.io/rst.html
+(developer/tutorials/creating-a-rock-build-using-apis: line   17) ok        https://documentation.ubuntu.com/rockcraft/en/latest/how-to/get-started/
 (developer/how-to/running: line  146) redirect  https://documentation.ubuntu.com/lxd/en/latest/howto/network_bridge_resolved/ - permanently to https://documentation.ubuntu.com/lxd/latest/howto/network_bridge_resolved/
-(developer/explanation/performance: line   42) ok        https://en.wikipedia.org/wiki/Big_O_notation
 (developer/explanation/charms: line   58) ok        https://en.wikipedia.org/wiki/Don%27t_repeat_yourself
+(developer/explanation/performance: line   42) ok        https://en.wikipedia.org/wiki/Big_O_notation
+(developer/how-to/building-lpdev-images: line   33) ok        https://drive.google.com/file/d/1jn_w2Uu_sVVMP9UVY-ut4aN1LDPSeIJh/view?usp=drive_link
 (developer/how-to/land-update-for-loggerhead: line    4) ok        https://en.wikipedia.org/wiki/GNU_Bazaar
 (user/how-to/launchpad-api/webhooks: line    9) ok        https://en.wikipedia.org/wiki/Webhook
 (developer/explanation/framework: line    5) ok        https://en.wikipedia.org/wiki/Zope
-(developer/explanation/favicon: line   13) redirect  https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/dn320426(v=vs.85) - permanently to https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/dn320426(v=vs.85)
-(developer/how-to/building-lpdev-images: line   33) ok        https://drive.google.com/file/d/1jn_w2Uu_sVVMP9UVY-ut4aN1LDPSeIJh/view?usp=drive_link
+(user/reference/comment-syntax: line  293) ok        https://example.com/
 (developer/how-to/checking-availability-of-launchpad-frontends: line   33) redirect  https://everything.curl.dev/usingcurl/connections/name#provide-a-custom-ip-address-for-a-name - permanently to https://everything.curl.dev/usingcurl/connections/name.html
 (developer/explanation/code: line    6) ok        https://git-scm.com/
 (user/how-to/launchpad-api/webhooks: line  124) ok        https://git-scm.com/book/en/v2/Git-Internals-Git-References
 (user/explanation/working-with-code/git-hosting: line  293) ok        https://git-scm.com/book/en/v2/Git-Tools-Credential-Storage
-(developer/reference/css: line   26) ok        https://getbem.com/naming/
 (user/how-to/import-ssh-keys: line   33) ok        https://ftp.perforce.com/perforce/tools/benchmarks/browse/doc/cygwin.html
-(user/how-to/launchpad-api/webhooks: line  259) redirect  https://git.launchpad.net/ - with Found to https://launchpad.net/
-(developer/reference/services/build-farm: line  168) redirect  https://git.launchpad.net/canonical-is-prometheus/tree/ols/launchpad.rules - with Found to https://login.launchpad.net/+openid?openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.sreg=http%3A%2F%2Fopenid.net%2Fextensions%2Fsreg%2F1.1&openid.realm=https%3A%2F%2Fgit.launchpad.net%2F&openid.return_to=https%3A%2F%2Fgit.launchpad.net%2F%2Blogin%2F%3Fback_to%3Dhttps%253A%252F%252Fgit.launchpad.net%252Fcanonical-is-prometheus%252Ftree%252Fols%252Flaunchpad.rules%26janrain_nonce%3D2025-07-18T08%253A26%253A57ZEqYjOJ&openid.sreg.required=nickname
-(developer/reference/services/build-farm: line   64) redirect  https://git.launchpad.net/charm-launchpad-buildd-image-modifier - with Found to https://login.launchpad.net/+openid?openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.sreg=http%3A%2F%2Fopenid.net%2Fextensions%2Fsreg%2F1.1&openid.realm=https%3A%2F%2Fgit.launchpad.net%2F&openid.return_to=https%3A%2F%2Fgit.launchpad.net%2F%2Blogin%2F%3Fback_to%3Dhttps%253A%252F%252Fgit.launchpad.net%252Fcharm-launchpad-buildd-image-modifier%26janrain_nonce%3D2025-07-18T08%253A26%253A57ZPi4Vm8&openid.sreg.required=nickname
-(developer/how-to/porting-builders-to-newer-ubuntu-versions: line   19) redirect  https://git.launchpad.net/charm-launchpad-buildd-image-modifier/tree/files/scripts - with Found to https://login.launchpad.net/+openid?openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.sreg=http%3A%2F%2Fopenid.net%2Fextensions%2Fsreg%2F1.1&openid.realm=https%3A%2F%2Fgit.launchpad.net%2F&openid.return_to=https%3A%2F%2Fgit.launchpad.net%2F%2Blogin%2F%3Fback_to%3Dhttps%253A%252F%252Fgit.launchpad.net%252Fcharm-launchpad-buildd-image-modifier%252Ftree%252Ffiles%252Fscripts%26janrain_nonce%3D2025-07-18T08%253A26%253A58ZRPhABQ&openid.sreg.required=nickname
+(developer/reference/css: line   26) ok        https://getbem.com/naming/
+(developer/reference/services/build-farm: line  168) redirect  https://git.launchpad.net/canonical-is-prometheus/tree/ols/launchpad.rules - with Found to https://login.launchpad.net/+openid?openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.sreg=http%3A%2F%2Fopenid.net%2Fextensions%2Fsreg%2F1.1&openid.realm=https%3A%2F%2Fgit.launchpad.net%2F&openid.return_to=https%3A%2F%2Fgit.launchpad.net%2F%2Blogin%2F%3Fback_to%3Dhttps%253A%252F%252Fgit.launchpad.net%252Fcanonical-is-prometheus%252Ftree%252Fols%252Flaunchpad.rules%26janrain_nonce%3D2025-07-18T09%253A52%253A44ZXJFt3X&openid.sreg.required=nickname
+(developer/how-to/porting-builders-to-newer-ubuntu-versions: line   40) redirect  https://git.launchpad.net/charm-launchpad-buildd-image-modifier/commit/?id=e0ea7d79767c09412e9fd16855e0d5f1810fe357 - with Found to https://login.launchpad.net/+openid?openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.sreg=http%3A%2F%2Fopenid.net%2Fextensions%2Fsreg%2F1.1&openid.realm=https%3A%2F%2Fgit.launchpad.net%2F&openid.return_to=https%3A%2F%2Fgit.launchpad.net%2F%2Blogin%2F%3Fback_to%3Dhttps%253A%252F%252Fgit.launchpad.net%252Fcharm-launchpad-buildd-image-modifier%252Fcommit%252F%253Fid%253De0ea7d79767c09412e9fd16855e0d5f1810fe357%26janrain_nonce%3D2025-07-18T09%253A52%253A45ZpNal80&openid.sreg.required=nickname
+(developer/how-to/porting-builders-to-newer-ubuntu-versions: line   19) redirect  https://git.launchpad.net/charm-launchpad-buildd-image-modifier/tree/files/scripts - with Found to https://login.launchpad.net/+openid?openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.sreg=http%3A%2F%2Fopenid.net%2Fextensions%2Fsreg%2F1.1&openid.realm=https%3A%2F%2Fgit.launchpad.net%2F&openid.return_to=https%3A%2F%2Fgit.launchpad.net%2F%2Blogin%2F%3Fback_to%3Dhttps%253A%252F%252Fgit.launchpad.net%252Fcharm-launchpad-buildd-image-modifier%252Ftree%252Ffiles%252Fscripts%26janrain_nonce%3D2025-07-18T09%253A52%253A45Zrw7VRX&openid.sreg.required=nickname
 (user/explanation/working-with-code/git-hosting: line  345) ok        https://git.launchpad.net/kicad-git-hook
-(developer/how-to/porting-builders-to-newer-ubuntu-versions: line   40) redirect  https://git.launchpad.net/charm-launchpad-buildd-image-modifier/commit/?id=e0ea7d79767c09412e9fd16855e0d5f1810fe357 - with Found to https://login.launchpad.net/+openid?openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.sreg=http%3A%2F%2Fopenid.net%2Fextensions%2Fsreg%2F1.1&openid.realm=https%3A%2F%2Fgit.launchpad.net%2F&openid.return_to=https%3A%2F%2Fgit.launchpad.net%2F%2Blogin%2F%3Fback_to%3Dhttps%253A%252F%252Fgit.launchpad.net%252Fcharm-launchpad-buildd-image-modifier%252Fcommit%252F%253Fid%253De0ea7d79767c09412e9fd16855e0d5f1810fe357%26janrain_nonce%3D2025-07-18T08%253A26%253A58Z1Tpv9Y&openid.sreg.required=nickname
+(user/how-to/launchpad-api/webhooks: line  259) redirect  https://git.launchpad.net/ - with Found to https://launchpad.net/
 (developer/explanation/journey-of-a-change-to-production: line   33) ok        https://git.launchpad.net/launchpad
+(developer/reference/services/build-farm: line   64) redirect  https://git.launchpad.net/charm-launchpad-buildd-image-modifier - with Found to https://login.launchpad.net/+openid?openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.sreg=http%3A%2F%2Fopenid.net%2Fextensions%2Fsreg%2F1.1&openid.realm=https%3A%2F%2Fgit.launchpad.net%2F&openid.return_to=https%3A%2F%2Fgit.launchpad.net%2F%2Blogin%2F%3Fback_to%3Dhttps%253A%252F%252Fgit.launchpad.net%252Fcharm-launchpad-buildd-image-modifier%26janrain_nonce%3D2025-07-18T09%253A52%253A44ZbVhKdW&openid.sreg.required=nickname
 (developer/explanation/journey-of-a-change-to-production: line  174) ok        https://git.launchpad.net/launchpad-bastion-scripts
 (developer/explanation/journey-of-a-change-to-production: line  197) ok        https://git.launchpad.net/launchpad-bastion-scripts/tree/auto-upgrade-staging
 (developer/explanation/journey-of-a-change-to-production: line  197) ok        https://git.launchpad.net/launchpad-bastion-scripts/tree/staging-restore/staging_restore.sh
@@ -1191,11 +1192,11 @@ writing output... [100%] user/reference/troubleshooting/index
 (developer/reference/services/git-hosting: line   33) ok        https://git.launchpad.net/launchpad-mojo-specs/tree/lp-git/bundle.yaml
 (developer/reference/services/signing: line   36) ok        https://git.launchpad.net/launchpad-mojo-specs/tree/lp-signing/
 (developer/explanation/navigating: line   67) ok        https://git.launchpad.net/launchpad/tree
-(developer/reference/services/build-farm: line   65) redirect  https://git.launchpad.net/launchpad-vbuilder-manage - with Found to https://login.launchpad.net/+openid?openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.sreg=http%3A%2F%2Fopenid.net%2Fextensions%2Fsreg%2F1.1&openid.realm=https%3A%2F%2Fgit.launchpad.net%2F&openid.return_to=https%3A%2F%2Fgit.launchpad.net%2F%2Blogin%2F%3Fback_to%3Dhttps%253A%252F%252Fgit.launchpad.net%252Flaunchpad-vbuilder-manage%26janrain_nonce%3D2025-07-18T08%253A26%253A59Z2VeOLX&openid.sreg.required=nickname
+(developer/reference/services/build-farm: line   65) redirect  https://git.launchpad.net/launchpad-vbuilder-manage - with Found to https://login.launchpad.net/+openid?openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.sreg=http%3A%2F%2Fopenid.net%2Fextensions%2Fsreg%2F1.1&openid.realm=https%3A%2F%2Fgit.launchpad.net%2F&openid.return_to=https%3A%2F%2Fgit.launchpad.net%2F%2Blogin%2F%3Fback_to%3Dhttps%253A%252F%252Fgit.launchpad.net%252Flaunchpad-vbuilder-manage%26janrain_nonce%3D2025-07-18T09%253A52%253A47Zyh0Wrz&openid.sreg.required=nickname
 (developer/explanation/performance: line   96) ok        https://git.launchpad.net/launchpad/tree/Makefile
 (developer/explanation/performance: line   90) ok        https://git.launchpad.net/launchpad/tree/charm
-(developer/explanation/codeimport: line   25) ok        https://git.launchpad.net/launchpad/tree/lib/lp/code/model/codeimport.py
 (developer/reference/services/build-farm: line   60) ok        https://git.launchpad.net/launchpad/tree/lib/lp/buildmaster/
+(developer/explanation/codeimport: line   25) ok        https://git.launchpad.net/launchpad/tree/lib/lp/code/model/codeimport.py
 (developer/explanation/codeimport: line   55) ok        https://git.launchpad.net/launchpad/tree/lib/lp/code/model/codeimportjob.py
 (developer/explanation/codeimport: line   53) ok        https://git.launchpad.net/launchpad/tree/lib/lp/code/xmlrpc/codeimportscheduler.py
 (developer/explanation/codeimport: line   29) ok        https://git.launchpad.net/launchpad/tree/lib/lp/services/config/schema-lazr.conf
@@ -1207,321 +1208,311 @@ writing output... [100%] user/reference/troubleshooting/index
 (developer/explanation/journey-of-a-change-to-production: line  132) ok        https://git.launchpad.net/lpbuildbot/tree/buildbot-poll.py
 (developer/reference/services/build-farm: line   62) ok        https://git.launchpad.net/lpci
 (developer/explanation/charms: line    9) ok        https://git.launchpad.net/ols-charm-deps
-(developer/reference/services/git-hosting: line   44) ok        https://git.launchpad.net/turnip/tree/charm
-(developer/explanation/journey-of-a-change-to-production: line  107) redirect  https://git.launchpad.net/ols-jenkaas-jobs - with Found to https://login.launchpad.net/+openid?openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.sreg=http%3A%2F%2Fopenid.net%2Fextensions%2Fsreg%2F1.1&openid.realm=https%3A%2F%2Fgit.launchpad.net%2F&openid.return_to=https%3A%2F%2Fgit.launchpad.net%2F%2Blogin%2F%3Fback_to%3Dhttps%253A%252F%252Fgit.launchpad.net%252Fols-jenkaas-jobs%26janrain_nonce%3D2025-07-18T08%253A27%253A01Z0bl1I2&openid.sreg.required=nickname
 (developer/how-to/codehosting-locally: line    4) ok        https://git.launchpad.net/turnip/tree/README.rst
+(developer/reference/services/git-hosting: line   44) ok        https://git.launchpad.net/turnip/tree/charm
+(developer/explanation/journey-of-a-change-to-production: line  107) redirect  https://git.launchpad.net/ols-jenkaas-jobs - with Found to https://login.launchpad.net/+openid?openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.sreg=http%3A%2F%2Fopenid.net%2Fextensions%2Fsreg%2F1.1&openid.realm=https%3A%2F%2Fgit.launchpad.net%2F&openid.return_to=https%3A%2F%2Fgit.launchpad.net%2F%2Blogin%2F%3Fback_to%3Dhttps%253A%252F%252Fgit.launchpad.net%252Fols-jenkaas-jobs%26janrain_nonce%3D2025-07-18T09%253A52%253A49Zqqdj0L&openid.sreg.required=nickname
 (developer/explanation/code: line  190) ok        https://git.launchpad.net/turnip/tree/turnip/pack/http.py
-(developer/how-to/porting-builders-to-newer-ubuntu-versions: line   18) redirect  https://git.launchpad.net/~launchpad/charm-glance-simplestreams-sync - with Found to https://login.launchpad.net/+openid?openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.sreg=http%3A%2F%2Fopenid.net%2Fextensions%2Fsreg%2F1.1&openid.realm=https%3A%2F%2Fgit.launchpad.net%2F&openid.return_to=https%3A%2F%2Fgit.launchpad.net%2F%2Blogin%2F%3Fback_to%3Dhttps%253A%252F%252Fgit.launchpad.net%252F~launchpad%252Fcharm-glance-simplestreams-sync%26janrain_nonce%3D2025-07-18T08%253A27%253A02ZizZitf&openid.sreg.required=nickname
 (developer/how-to/porting-builders-to-newer-ubuntu-versions: line   31) ok        https://git.launchpad.net/ubuntu-archive-tools
-(developer/reference/services/automatic-translations-export: line   48) ok        https://charmhub.io/launchpad-scripts
-(developer/reference/services/build-farm: line   63) redirect  https://git.launchpad.net/~launchpad/charm-glance-simplestreams-sync/tree/?h=scalingstack - with Found to https://login.launchpad.net/+openid?openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.sreg=http%3A%2F%2Fopenid.net%2Fextensions%2Fsreg%2F1.1&openid.realm=https%3A%2F%2Fgit.launchpad.net%2F&openid.return_to=https%3A%2F%2Fgit.launchpad.net%2F%2Blogin%2F%3Fback_to%3Dhttps%253A%252F%252Fgit.launchpad.net%252F~launchpad%252Fcharm-glance-simplestreams-sync%252Ftree%252F%253Fh%253Dscalingstack%26janrain_nonce%3D2025-07-18T08%253A27%253A02Z1RDGI1&openid.sreg.required=nickname
+(developer/how-to/porting-builders-to-newer-ubuntu-versions: line   18) redirect  https://git.launchpad.net/~launchpad/charm-glance-simplestreams-sync - with Found to https://login.launchpad.net/+openid?openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.sreg=http%3A%2F%2Fopenid.net%2Fextensions%2Fsreg%2F1.1&openid.realm=https%3A%2F%2Fgit.launchpad.net%2F&openid.return_to=https%3A%2F%2Fgit.launchpad.net%2F%2Blogin%2F%3Fback_to%3Dhttps%253A%252F%252Fgit.launchpad.net%252F~launchpad%252Fcharm-glance-simplestreams-sync%26janrain_nonce%3D2025-07-18T09%253A52%253A49Zb4LxWf&openid.sreg.required=nickname
 (developer/reference/services/fetch-service: line   27) ok        https://git.launchpad.net/~launchpad/launchpad-buildd
-(developer/reference/services/fetch-service: line  110) redirect  https://git.launchpad.net/~launchpad/launchpad-mojo-specs/+git/private/+ref/master - with Found to https://login.launchpad.net/+openid?openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.sreg=http%3A%2F%2Fopenid.net%2Fextensions%2Fsreg%2F1.1&openid.realm=https%3A%2F%2Fgit.launchpad.net%2F&openid.return_to=https%3A%2F%2Fgit.launchpad.net%2F%2Blogin%2F%3Fback_to%3Dhttps%253A%252F%252Fgit.launchpad.net%252F~launchpad%252Flaunchpad-mojo-specs%252F%252Bgit%252Fprivate%252F%252Bref%252Fmaster%26janrain_nonce%3D2025-07-18T08%253A27%253A03ZLzCqtR&openid.sreg.required=nickname
-(developer/how-to/porting-builders-to-newer-ubuntu-versions: line   13) redirect  https://git.launchpad.net/~launchpad/launchpad-mojo-specs/+git/private/tree/vbuilder/bundle.yaml?h=vbuilder - with Found to https://login.launchpad.net/+openid?openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.sreg=http%3A%2F%2Fopenid.net%2Fextensions%2Fsreg%2F1.1&openid.realm=https%3A%2F%2Fgit.launchpad.net%2F&openid.return_to=https%3A%2F%2Fgit.launchpad.net%2F%2Blogin%2F%3Fback_to%3Dhttps%253A%252F%252Fgit.launchpad.net%252F~launchpad%252Flaunchpad-mojo-specs%252F%252Bgit%252Fprivate%252Ftree%252Fvbuilder%252Fbundle.yaml%253Fh%253Dvbuilder%26janrain_nonce%3D2025-07-18T08%253A27%253A03ZtE3prc&openid.sreg.required=nickname
-(developer/reference/services/build-farm: line   80) redirect  https://git.launchpad.net/~launchpad/launchpad-mojo-specs/+git/private/tree/vbuilder?h=vbuilder - with Found to https://login.launchpad.net/+openid?openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.sreg=http%3A%2F%2Fopenid.net%2Fextensions%2Fsreg%2F1.1&openid.realm=https%3A%2F%2Fgit.launchpad.net%2F&openid.return_to=https%3A%2F%2Fgit.launchpad.net%2F%2Blogin%2F%3Fback_to%3Dhttps%253A%252F%252Fgit.launchpad.net%252F~launchpad%252Flaunchpad-mojo-specs%252F%252Bgit%252Fprivate%252Ftree%252Fvbuilder%253Fh%253Dvbuilder%26janrain_nonce%3D2025-07-18T08%253A27%253A03ZsNlzev&openid.sreg.required=nickname
-(developer/reference/services/fetch-service: line   27) ok        https://git.launchpad.net/~launchpad/launchpad/tree/charm/launchpad-buildd-manager
+(developer/reference/services/build-farm: line   82) redirect  https://git.launchpad.net/~launchpad/launchpad-mojo-specs/+git/private/tree/lp-fetch-service - with Found to https://login.launchpad.net/+openid?openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.sreg=http%3A%2F%2Fopenid.net%2Fextensions%2Fsreg%2F1.1&openid.realm=https%3A%2F%2Fgit.launchpad.net%2F&openid.return_to=https%3A%2F%2Fgit.launchpad.net%2F%2Blogin%2F%3Fback_to%3Dhttps%253A%252F%252Fgit.launchpad.net%252F~launchpad%252Flaunchpad-mojo-specs%252F%252Bgit%252Fprivate%252Ftree%252Flp-fetch-service%26janrain_nonce%3D2025-07-18T09%253A52%253A50ZpcAOFi&openid.sreg.required=nickname
+(developer/reference/services/build-farm: line   63) redirect  https://git.launchpad.net/~launchpad/charm-glance-simplestreams-sync/tree/?h=scalingstack - with Found to https://login.launchpad.net/+openid?openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.sreg=http%3A%2F%2Fopenid.net%2Fextensions%2Fsreg%2F1.1&openid.realm=https%3A%2F%2Fgit.launchpad.net%2F&openid.return_to=https%3A%2F%2Fgit.launchpad.net%2F%2Blogin%2F%3Fback_to%3Dhttps%253A%252F%252Fgit.launchpad.net%252F~launchpad%252Fcharm-glance-simplestreams-sync%252Ftree%252F%253Fh%253Dscalingstack%26janrain_nonce%3D2025-07-18T09%253A52%253A49ZrWBZ2I&openid.sreg.required=nickname
+(developer/reference/services/fetch-service: line  110) redirect  https://git.launchpad.net/~launchpad/launchpad-mojo-specs/+git/private/+ref/master - with Found to https://login.launchpad.net/+openid?openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.sreg=http%3A%2F%2Fopenid.net%2Fextensions%2Fsreg%2F1.1&openid.realm=https%3A%2F%2Fgit.launchpad.net%2F&openid.return_to=https%3A%2F%2Fgit.launchpad.net%2F%2Blogin%2F%3Fback_to%3Dhttps%253A%252F%252Fgit.launchpad.net%252F~launchpad%252Flaunchpad-mojo-specs%252F%252Bgit%252Fprivate%252F%252Bref%252Fmaster%26janrain_nonce%3D2025-07-18T09%253A52%253A50ZQDNF9z&openid.sreg.required=nickname
+(developer/how-to/porting-builders-to-newer-ubuntu-versions: line   13) redirect  https://git.launchpad.net/~launchpad/launchpad-mojo-specs/+git/private/tree/vbuilder/bundle.yaml?h=vbuilder - with Found to https://login.launchpad.net/+openid?openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.sreg=http%3A%2F%2Fopenid.net%2Fextensions%2Fsreg%2F1.1&openid.realm=https%3A%2F%2Fgit.launchpad.net%2F&openid.return_to=https%3A%2F%2Fgit.launchpad.net%2F%2Blogin%2F%3Fback_to%3Dhttps%253A%252F%252Fgit.launchpad.net%252F~launchpad%252Flaunchpad-mojo-specs%252F%252Bgit%252Fprivate%252Ftree%252Fvbuilder%252Fbundle.yaml%253Fh%253Dvbuilder%26janrain_nonce%3D2025-07-18T09%253A52%253A50ZGDUnIq&openid.sreg.required=nickname
+(developer/reference/services/build-farm: line   80) redirect  https://git.launchpad.net/~launchpad/launchpad-mojo-specs/+git/private/tree/vbuilder?h=vbuilder - with Found to https://login.launchpad.net/+openid?openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.sreg=http%3A%2F%2Fopenid.net%2Fextensions%2Fsreg%2F1.1&openid.realm=https%3A%2F%2Fgit.launchpad.net%2F&openid.return_to=https%3A%2F%2Fgit.launchpad.net%2F%2Blogin%2F%3Fback_to%3Dhttps%253A%252F%252Fgit.launchpad.net%252F~launchpad%252Flaunchpad-mojo-specs%252F%252Bgit%252Fprivate%252Ftree%252Fvbuilder%253Fh%253Dvbuilder%26janrain_nonce%3D2025-07-18T09%253A52%253A50ZGe5lGk&openid.sreg.required=nickname
 (user/reference/bug-tracker-api/external-bug-trackers: line   25) ok        https://github.com/
-(developer/reference/services/build-farm: line   82) redirect  https://git.launchpad.net/~launchpad/launchpad-mojo-specs/+git/private/tree/lp-fetch-service - with Found to https://login.launchpad.net/+openid?openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.sreg=http%3A%2F%2Fopenid.net%2Fextensions%2Fsreg%2F1.1&openid.realm=https%3A%2F%2Fgit.launchpad.net%2F&openid.return_to=https%3A%2F%2Fgit.launchpad.net%2F%2Blogin%2F%3Fback_to%3Dhttps%253A%252F%252Fgit.launchpad.net%252F~launchpad%252Flaunchpad-mojo-specs%252F%252Bgit%252Fprivate%252Ftree%252Flp-fetch-service%26janrain_nonce%3D2025-07-18T08%253A27%253A03ZiGPKIB&openid.sreg.required=nickname
-(developer/how-to/building-lpdev-images: line    8) ok        https://github.com/canonical/lxd-imagebuilder
+(developer/reference/services/fetch-service: line   27) ok        https://git.launchpad.net/~launchpad/launchpad/tree/charm/launchpad-buildd-manager
+(user/how-to/work-with-code-hosted-on-launchpad/create-and-manage-a-merge-proposal: line   39) ok        https://documentation.help/Bazaar-help/sending_changes.html#understanding-merge-directives
+(contribute-to-our-docs: line   12) ok        https://github.com/canonical/launchpad-manual
 (developer/reference/services/buildbot: line    7) ok        https://github.com/buildbot/buildbot
 (user/how-to/work-with-bugs/import-bug-history: line   11) ok        https://github.com/kevincox/nsf2lp
+(developer/how-to/building-lpdev-images: line    8) ok        https://github.com/canonical/lxd-imagebuilder
 (developer/reference/python: line   42) ok        https://github.com/psf/black
 (developer/explanation/pip: line  105) ok        https://github.com/zopefoundation/zopetoolkit
-(user/reference/bug-tracker-api/external-bug-trackers: line   26) redirect  https://gitlab.com/ - permanently to https://about.gitlab.com/
 (developer/how-to/running: line  427) ok        https://github.com/pyca/pynacl/issues/553
+(user/reference/bug-tracker-api/external-bug-trackers: line   26) redirect  https://gitlab.com/ - permanently to https://about.gitlab.com/
 (developer/explanation/security: line  122) ok        https://infosec.mozilla.org/guidelines/web_security.html
 (developer/explanation/performance: line   19) redirect  https://grafana.admin.canonical.com/d/oIhMaXhMk/launchpad-dash?orgId=1&refresh=5m - with Found to https://grafana.admin.canonical.com/openid/+login
 (developer/reference/services/build-farm: line  166) redirect  https://grafana.admin.canonical.com/d/oIhMaXhMk/launchpad-dash - with Found to https://grafana.admin.canonical.com/openid/+login
-(user/reference/launchpad-and-community/feedback-on-launchpad: line   17) ok        https://help.ubuntu.com/community/SSO/FAQs
 (developer/explanation/journey-of-a-change-to-production: line  241) redirect  https://jenkins.ols.ps5.canonical.com/job/launchpad-build-charm/ - with Found to https://login.ubuntu.com/+login?next=%2Fsaml%2Fprocess
 (developer/how-to/create-job-publish-artifact: line   13) redirect  https://jenkins.ols.ps5.canonical.com/ - with Found to https://login.ubuntu.com/+login?next=%2Fsaml%2Fprocess
+(developer/explanation/journey-of-a-change-to-production: line  107) redirect  https://jenkins.ols.ps5.canonical.com/job/trigger-launchpad/ - with Found to https://login.ubuntu.com/+login?next=/saml/process
+(developer/explanation/charms: line   58) redirect  https://jinja.palletsprojects.com/ - with Found to https://jinja.palletsprojects.com/en/stable/
 (developer/explanation/journey-of-a-change-to-production: line  247) redirect  https://jenkins.ols.ps5.canonical.com/job/launchpad-build-db-charm/ - with Found to https://login.ubuntu.com/+login?next=%2Fsaml%2Fprocess
 (developer/explanation/journey-of-a-change-to-production: line  107) redirect  https://jenkins.ols.ps5.canonical.com/job/launchpad/ - with Found to https://login.ubuntu.com/+login?next=%2Fsaml%2Fprocess
-(developer/explanation/charms: line   58) redirect  https://jinja.palletsprojects.com/ - with Found to https://jinja.palletsprojects.com/en/stable/
-(developer/explanation/journey-of-a-change-to-production: line  107) redirect  https://jenkins.ols.ps5.canonical.com/job/trigger-launchpad/ - with Found to https://login.ubuntu.com/+login?next=/saml/process
 (developer/explanation/charms: line    9) redirect  https://juju.is/docs/juju/relation - with Found to https://documentation.ubuntu.com/juju/3.6/reference/relation/
 (developer/explanation/charms: line   73) redirect  https://juju.is/docs/juju/tutorial - with Found to https://documentation.ubuntu.com/juju/3.6/tutorial/
+(developer/explanation/charms: line    9) redirect  https://juju.is/docs/olm/application - with Found to https://documentation.ubuntu.com/juju/3.6/reference/application/
 (developer/explanation/charms: line  152) redirect  https://juju.is/docs/olm - with Found to https://documentation.ubuntu.com/juju/3.6/
 (developer/explanation/charms: line    5) redirect  https://juju.is/docs/sdk - with Found to https://documentation.ubuntu.com/juju/3.6/howto/manage-charms/#build-a-charm
-(developer/explanation/charms: line    9) redirect  https://juju.is/docs/olm/application - with Found to https://documentation.ubuntu.com/juju/3.6/reference/application/
 (developer/explanation/charms: line   28) redirect  https://juju.is/docs/olm/bundle - with Found to https://documentation.ubuntu.com/juju/3.6/reference/bundle/
 (developer/explanation/charms: line    9) redirect  https://juju.is/docs/olm/unit - with Found to https://documentation.ubuntu.com/juju/3.6/reference/unit/
 (developer/explanation/charms: line  170) redirect  https://juju.is/docs/sdk/debug-a-charm - with Found to https://documentation.ubuntu.com/juju/3.6/howto/manage-charms/#how-to-manage-charms/#debug-a-charm
-(developer/reference/services/build-farm: line   79) ok        https://launchpad-buildd.readthedocs.io/en/latest/explanation/deployment.html
+(developer/explanation/charms: line   90) redirect  https://juju.is/docs/sdk/charmcraft-yaml - permanently to https://canonical-charmcraft.readthedocs-hosted.com/stable/reference/files/charmcraft-yaml-file/
 (developer/reference/services/build-farm: line   78) ok        https://launchpad-buildd.readthedocs.io/en/latest/how-to/deployment.html
-(developer/how-to/porting-builders-to-newer-ubuntu-versions: line    9) ok        https://launchpad-buildd.readthedocs.io/en/latest/how-to/developing.html
-(developer/reference/services/build-farm: line   54) ok        https://launchpad-buildd.readthedocs.io/en/latest/index.html
 (developer/how-to/porting-builders-to-newer-ubuntu-versions: line   17) ok        https://launchpad-buildd.readthedocs.io/en/latest/how-to/deployment.html#testing-on-qastaging
-(developer/how-to/create-bot-account: line   28) ok        https://launchpad.net
-(developer/how-to/use-lp-shell: line   59) ok        https://launchpad.net/+apidoc/
-(user/explanation/launchpad-api/launchpad-web-service: line  216) ok        https://launchpad.net/+apidoc/devel.html
-(developer/explanation/branches: line   24) ok        https://launchpad.net/
+(developer/how-to/porting-builders-to-newer-ubuntu-versions: line    9) ok        https://launchpad-buildd.readthedocs.io/en/latest/how-to/developing.html
+(developer/reference/services/build-farm: line   79) ok        https://launchpad-buildd.readthedocs.io/en/latest/explanation/deployment.html
 (user/explanation/projects/project-announcements: line   18) ok        https://launchpad.net/+announcements
+(developer/how-to/use-lp-shell: line   59) ok        https://launchpad.net/+apidoc/
+(developer/reference/services/build-farm: line   54) ok        https://launchpad-buildd.readthedocs.io/en/latest/index.html
+(developer/explanation/branches: line   24) ok        https://launchpad.net/
+(user/explanation/launchpad-api/launchpad-web-service: line  216) ok        https://launchpad.net/+apidoc/devel.html
+(developer/how-to/create-bot-account: line   28) ok        https://launchpad.net
 (user/how-to/launchpad-api/launchpad-web: line  681) ok        https://launchpad.net/+apidoc/devel.html#bugs
+(contribute-to-our-docs: line   43) redirect  https://docs.ubuntu.com/styleguide/ - with Found to https://docs.ubuntu.com/styleguide/en/
 (user/how-to/launchpad-api/webhooks: line   25) ok        https://launchpad.net/+apidoc/devel.html#branch
 (user/how-to/launchpad-api/webhooks: line   37) ok        https://launchpad.net/+apidoc/devel.html#distribution
-(developer/explanation/charms: line   90) redirect  https://juju.is/docs/sdk/charmcraft-yaml - permanently to https://canonical-charmcraft.readthedocs-hosted.com/stable/reference/files/charmcraft-yaml-file/
 (user/how-to/launchpad-api/webhooks: line   39) ok        https://launchpad.net/+apidoc/devel.html#distribution_source_package
 (user/how-to/launchpad-api/webhooks: line   27) ok        https://launchpad.net/+apidoc/devel.html#git_repository
-(user/how-to/launchpad-api/webhooks: line   29) ok        https://launchpad.net/+apidoc/devel.html#livefs
 (user/how-to/launchpad-api/webhooks: line   33) ok        https://launchpad.net/+apidoc/devel.html#oci_recipe
+(user/how-to/launchpad-api/webhooks: line   29) ok        https://launchpad.net/+apidoc/devel.html#livefs
 (user/how-to/launchpad-api/webhooks: line   35) ok        https://launchpad.net/+apidoc/devel.html#project
 (user/how-to/launchpad-api/webhooks: line   31) ok        https://launchpad.net/+apidoc/devel.html#snap
 (user/how-to/launchpad-api/launchpad-web-signing: line  145) redirect  https://launchpad.net/+authorize-token?oauth_token=%7Boauth_token%7D - with See Other to https://launchpad.net/+authorize-token/+login?oauth_token=%7Boauth_token%7D
-(user/how-to/launchpad-api/webhooks: line   88) ok        https://launchpad.net/+apidoc/devel.html#webhook-setSecret
-(user/how-to/launchpad-api/webhooks: line   99) ok        https://launchpad.net/+apidoc/devel.html#webhook-ping
-(user/how-to/launchpad-api/webhooks: line  109) ok        https://launchpad.net/+apidoc/devel.html#webhook_delivery
 (user/reference/native-language-support: line   27) redirect  https://launchpad.net/+editmylanguages - with See Other to https://launchpad.net/+editmylanguages/+login
+(user/how-to/launchpad-api/webhooks: line   99) ok        https://launchpad.net/+apidoc/devel.html#webhook-ping
 (developer/explanation/feature-flags: line   49) redirect  https://launchpad.net/+feature-info - with See Other to https://launchpad.net/+feature-rules/info/+login
+(user/how-to/launchpad-api/webhooks: line   88) ok        https://launchpad.net/+apidoc/devel.html#webhook-setSecret
 (user/how-to/account-management/create-account: line    8) ok        https://launchpad.net/+login
-(user/how-to/work-with-bugs/file-a-bug: line    6) ok        https://launchpad.net/+storeblob
-(user/how-to/work-with-code-hosted-on-launchpad/host-your-code-on-launchpad: line   30) ok        https://launchpad.net/+tour/join-launchpad#commercial
 (developer/explanation/feature-flags: line   87) redirect  https://launchpad.net/+feature-rules - with See Other to https://launchpad.net/+feature-rules/+index/+login
 (user/get-started: line   27) redirect  https://launchpad.net/+tour - with Found to https://launchpad.net/+tour/index
+(user/how-to/work-with-code-hosted-on-launchpad/host-your-code-on-launchpad: line   30) ok        https://launchpad.net/+tour/join-launchpad#commercial
 (user/explanation/feature-highlights/personal-package-archives: line   47) redirect  https://launchpad.net/+builds - permanently to https://launchpad.net/builders/
+(user/how-to/launchpad-api/webhooks: line  109) ok        https://launchpad.net/+apidoc/devel.html#webhook_delivery
 (developer/how-to/debugging: line  454) ok        https://launchpad.net/api/beta/launchpad
-(user/explanation/projects/series-milestones-releases: line  182) ok        https://launchpad.net/apparmor/
+(user/how-to/work-with-bugs/file-a-bug: line    6) ok        https://launchpad.net/+storeblob
 (user/explanation/feature-highlights/the-bug-tracker: line    8) redirect  https://launchpad.net/Apport - permanently to https://launchpad.net/apport
+(user/explanation/projects/series-milestones-releases: line  182) ok        https://launchpad.net/apparmor/
 (user/explanation/projects/registering-project: line   53) ok        https://launchpad.net/awn
 (user/how-to/work-with-code-hosted-on-launchpad/find-and-download-code-hosted on Launchpad: line   94) ok        https://launchpad.net/bitlbee
+(user/reference/api-uses: line   19) ok        https://launchpad.net/bughugger
 (user/how-to/work-with-code-hosted-on-launchpad/find-and-download-code-hosted on Launchpad: line  103) ok        https://launchpad.net/banshee
 (user/how-to/community-help: line  162) redirect  https://launchpad.net/blueprint - permanently to https://launchpad.net/launchpad
-(user/reference/api-uses: line   19) ok        https://launchpad.net/bughugger
 (user/reference/launchpadlib-api-compatibility: line   78) redirect  https://launchpad.net/bugs/755313 - with See Other to https://bugs.launchpad.net/launchpadlib/+bug/755313
-(user/reference/bugs/multi-project-bugs/tracking-multi-project-bugs: line   39) redirect  https://launchpad.net/bugs/85124 - with See Other to https://bugs.launchpad.net/ubuntu/+source/mozilla-locale-lt/+bug/85124
 (user/reference/packaging/ppas/ppa: line  207) redirect  https://launchpad.net/bugs/125103 - with See Other to https://bugs.launchpad.net/launchpad/+bug/125103
 (user/reference/bugs/multi-project-bugs/tracking-multi-project-bugs: line   54) redirect  https://launchpad.net/bugs/81782 - with See Other to https://bugs.launchpad.net/ubuntu/+source/linux-source-2.6.15/+bug/81782
 (user/how-to/work-with-bugs/use-bugzilla-plugin: line  105) redirect  https://launchpad.net/bugs/bugtrackers/+newbugtracker - with See Other to https://launchpad.net/bugs/bugtrackers/+newbugtracker/+login
-(user/how-to/work-with-bugs/use-bugzilla-plugin: line   39) ok        https://launchpad.net/bugzilla-launchpad/+download
 (user/explanation/feature-highlights/bug-watches: line    8) redirect  https://launchpad.net/bugs/86103 - with See Other to https://bugs.launchpad.net/ubuntu/+source/sun-java5/+bug/86103
-(user/reference/comment-syntax: line  293) ok        https://example.com/
-(user/explanation/feature-highlights/page-tour: line   28) ok        https://launchpad.net/bzr
-(developer/how-to/getting-overview-of-build-farm: line   11) ok        https://launchpad.net/builders
-(user/explanation/projects/publishing-files: line   36) ok        https://launchpad.net/bzr/+download
+(user/reference/bugs/multi-project-bugs/tracking-multi-project-bugs: line   39) redirect  https://launchpad.net/bugs/85124 - with See Other to https://bugs.launchpad.net/ubuntu/+source/mozilla-locale-lt/+bug/85124
+(user/how-to/work-with-bugs/use-bugzilla-plugin: line   39) ok        https://launchpad.net/bugzilla-launchpad/+download
 (user/explanation/feature-highlights/milestones: line   36) ok        https://launchpad.net/bzr/+milestone/0.15
-(user/how-to/work-with-bugs/use-bugzilla-plugin: line  103) ok        https://launchpad.net/bugs/bugtrackers
-(user/how-to/work-with-code-hosted-on-launchpad/find-and-download-code-hosted on Launchpad: line   25) ok        https://launchpad.net/do
+(developer/how-to/getting-overview-of-build-farm: line   11) ok        https://launchpad.net/builders
+(user/explanation/feature-highlights/page-tour: line   28) ok        https://launchpad.net/bzr
+(user/explanation/projects/publishing-files: line   36) ok        https://launchpad.net/bzr/+download
 (user/explanation/working-with-code/code-imports: line   36) ok        https://launchpad.net/drupal/head
-(user/explanation/projects/registering-project: line   76) ok        https://launchpad.net/firefox
-(developer/explanation/journey-of-a-change-to-production: line  141) ok        https://launchpad.net/isitdeployable
-(user/how-to/launchpadlib/python-api: line  145) ok        https://launchpad.net/hydrazine
-(user/reference/api-uses: line   49) ok        https://launchpad.net/laika
+(user/how-to/work-with-code-hosted-on-launchpad/find-and-download-code-hosted on Launchpad: line   25) ok        https://launchpad.net/do
 (user/explanation/support-requests: line  175) redirect  https://launchpad.net/distros/ubuntu/+ticket/1601 - permanently to https://answers.launchpad.net/ubuntu/+question/1601
-(developer/explanation/launchpad-ppa: line   74) ok        https://launchpad.net/launchpad-buildd
+(user/how-to/launchpadlib/python-api: line  145) ok        https://launchpad.net/hydrazine
+(user/how-to/work-with-bugs/use-bugzilla-plugin: line  103) ok        https://launchpad.net/bugs/bugtrackers
+(developer/explanation/journey-of-a-change-to-production: line  141) ok        https://launchpad.net/isitdeployable
+(user/explanation/projects/registering-project: line   76) ok        https://launchpad.net/firefox
+(user/reference/api-uses: line   49) ok        https://launchpad.net/laika
 (developer/reference/services/automatic-translations-export: line    5) ok        https://launchpad.net/langpack-o-matic
 (user/reference/project-groups: line   28) redirect  https://launchpad.net/launchpad/+addquestion - with See Other to https://launchpad.net/launchpad/+addquestion/+login
+(developer/explanation/launchpad-ppa: line   74) ok        https://launchpad.net/launchpad-buildd
 (user/reference/launchpad-and-community/legal/launchpad-policies: line   88) redirect  https://launchpad.net/launchpad/+filebug - with See Other to https://launchpad.net/launchpad/+filebug/+login
-(developer/how-to/land-update-for-loggerhead: line    4) ok        https://launchpad.net/loggerhead/
 (developer/reference/services/buildbot: line   43) ok        https://launchpad.net/lpbuildbot-worker
-(developer/explanation/launchpad-ppa: line   15) ok        https://launchpad.net/lpreview-body
-(user/reference/teams/launchpad-teams: line   54) ok        https://launchpad.net/people
-(user/reference/api-uses: line    8) ok        https://launchpad.net/lpx
-(user/explanation/projects/registering-project: line   76) ok        https://launchpad.net/mozilla
 (developer/explanation/code: line  198) ok        https://launchpad.net/loggerhead
+(developer/explanation/launchpad-ppa: line   15) ok        https://launchpad.net/lpreview-body
+(user/reference/api-uses: line    8) ok        https://launchpad.net/lpx
+(developer/how-to/land-update-for-loggerhead: line    4) ok        https://launchpad.net/loggerhead/
+(user/reference/teams/launchpad-teams: line   54) ok        https://launchpad.net/people
 (developer/how-to/debugging: line   57) ok        https://launchpad.net/meliae
 (user/explanation/collaborating-using-launchpad: line   22) redirect  https://launchpad.net/people/+me - with See Other to https://launchpad.net/people/+me/+login
+(user/explanation/projects/registering-project: line   76) ok        https://launchpad.net/mozilla
 (user/reference/packaging/ppas/ppa: line   88) redirect  https://launchpad.net/people/+me/ - with See Other to https://launchpad.net/people/+me/+login
-(user/reference/packaging/ppas/building-a-source-package: line  124) redirect  https://launchpad.net/people/+me/+archive - with See Other to https://launchpad.net/people/+me/+archive/+login
 (user/how-to/packaging/private-ppa-install: line   28) redirect  https://launchpad.net/people/+me/+archivesubscriptions - with See Other to https://launchpad.net/people/+me/+archivesubscriptions/+login
-(user/get-started: line   10) redirect  https://launchpad.net/people/+me/+edit - with See Other to https://launchpad.net/people/+me/+edit/+login
+(user/reference/packaging/ppas/building-a-source-package: line  124) redirect  https://launchpad.net/people/+me/+archive - with See Other to https://launchpad.net/people/+me/+archive/+login
 (user/explanation/collaborating-using-launchpad: line   18) redirect  https://launchpad.net/people/+me/+editemails - with See Other to https://launchpad.net/people/+me/+editemails/+login
+(user/get-started: line   10) redirect  https://launchpad.net/people/+me/+edit - with See Other to https://launchpad.net/people/+me/+edit/+login
 (user/explanation/translating-with-launchpad/prepare-to-translate: line   87) redirect  https://launchpad.net/people/+me/+editlanguages - with See Other to https://launchpad.net/people/+me/+editlanguages/+login
 (user/how-to/import-openpgp-key: line   55) redirect  https://launchpad.net/people/+me/+editpgpkeys - with See Other to https://launchpad.net/people/+me/+editpgpkeys/+login
 (user/how-to/work-with-bazaar/create-and-publish-branches: line  101) redirect  https://launchpad.net/people/+me/+editsshkeys - with See Other to https://launchpad.net/people/+me/+editsshkeys/+login
 (user/reference/launchpad-and-community/launchpad-mentoring: line  110) redirect  https://launchpad.net/people/+me/+mentoring - with See Other to https://launchpad.net/people/+me/+mentoring/+login
 (user/how-to/account-management/application-integration: line  167) redirect  https://launchpad.net/people/+me/+oauth-tokens - with See Other to https://launchpad.net/people/+me/+oauth-tokens/+login
 (user/explanation/teams/creating-and-running-teams: line   20) redirect  https://launchpad.net/people/+newteam - with See Other to https://launchpad.net/people/+newteam/+login
-(user/how-to/account-management/merge-accounts: line   15) redirect  https://launchpad.net/people/+requestmerge - with See Other to https://launchpad.net/people/+requestmerge/+login
-(user/explanation/working-with-code/code-imports: line   51) redirect  https://launchpad.net/products - permanently to https://launchpad.net/projects
 (user/explanation/projects/registering-project: line   46) ok        https://launchpad.net/projects
 (user/how-to/projects/register-your-project: line   23) ok        https://launchpad.net/projects/
+(user/how-to/account-management/merge-accounts: line   15) redirect  https://launchpad.net/people/+requestmerge - with See Other to https://launchpad.net/people/+requestmerge/+login
+(user/explanation/working-with-code/code-imports: line   51) redirect  https://launchpad.net/products - permanently to https://launchpad.net/projects
 (user/explanation/feature-highlights/the-bug-tracker: line  351) redirect  https://launchpad.net/products/malone/+specs - permanently to https://launchpad.net/launchpad/+specs
 (developer/tutorials/building-charms-in-launchpad: line   40) redirect  https://launchpad.net/projects/+new - with See Other to https://launchpad.net/projects/+new/+login
+(user/how-to/work-with-bugs/import-bug-history: line   11) ok        https://launchpad.net/sfbugs2launchpad
 (user/explanation/teams/creating-and-running-teams: line  189) ok        https://launchpad.net/pyroom
 (developer/reference/python: line  386) ok        https://launchpad.net/python-mode
 (user/explanation/projects/project-announcements: line   17) ok        https://launchpad.net/terminator/+announcements
-(user/how-to/work-with-bugs/use-trac-plugin: line    8) ok        https://launchpad.net/trac-launchpad
-(user/how-to/work-with-bugs/import-bug-history: line   11) ok        https://launchpad.net/sfbugs2launchpad
-(user/explanation/support-requests: line    6) redirect  https://launchpad.net/support - permanently to https://answers.launchpad.net/launchpad
-(user/reference/translations/software-translation: line  101) -ignored- https://launchpad.net/translations/groups/ubuntu-translators: ignored redirect: https://translations.launchpad.net/+groups/ubuntu-translators
-(user/how-to/work-with-bugs/use-trac-plugin: line   38) ok        https://launchpad.net/trac-launchpad/+download
 (user/explanation/projects/project-announcements: line    8) ok        https://launchpad.net/terminator
+(user/how-to/work-with-bugs/use-trac-plugin: line   38) ok        https://launchpad.net/trac-launchpad/+download
+(user/explanation/support-requests: line    6) redirect  https://launchpad.net/support - permanently to https://answers.launchpad.net/launchpad
+(user/how-to/work-with-bugs/use-trac-plugin: line    8) ok        https://launchpad.net/trac-launchpad
+(user/reference/translations/software-translation: line  101) -ignored- https://launchpad.net/translations/groups/ubuntu-translators: ignored redirect: https://translations.launchpad.net/+groups/ubuntu-translators
 (developer/how-to/getting-overview-of-build-farm: line   26) ok        https://launchpad.net/ubuntu-archive-tools
 (user/reference/api-uses: line   34) ok        https://launchpad.net/ubuntu-qa-tools
-(user/reference/packaging/build-scores: line   17) ok        https://launchpad.net/ubuntu/+builds
 (user/explanation/translating-with-launchpad/translating-with-launchpad: line   40) ok        https://launchpad.net/ubuntu-translations
-(user/explanation/packaging/package-upload-errors: line   16) ok        https://launchpad.net/ubuntu/+builds?build_text=&build_state=all
+(user/reference/packaging/build-scores: line   17) ok        https://launchpad.net/ubuntu/+builds
 (user/reference/packaging/ppas/ppa: line   71) ok        https://launchpad.net/ubuntu/+ppas
+(user/explanation/packaging/package-upload-errors: line   16) ok        https://launchpad.net/ubuntu/+builds?build_text=&build_state=all
 (developer/reference/services/mirror-prober: line    7) ok        https://launchpad.net/ubuntu/+archivemirrors
 (user/explanation/packaging/package-upload-errors: line   16) redirect  https://launchpad.net/~ - with See Other to https://launchpad.net/~/+login
-(user/explanation/privacy-confidentiality-and-disclosure: line   21) redirect  https://launchpad.net/~/+edit - with See Other to https://launchpad.net/~/+edit/+login
-(user/how-to/source-package-recipe: line  112) ok        https://launchpad.net/wikkid
 (developer/reference/services/mirror-prober: line    7) ok        https://launchpad.net/ubuntu/+cdmirrors
 (user/explanation/feature-highlights/product-series: line   38) ok        https://launchpad.net/zope3
+(user/how-to/source-package-recipe: line  112) ok        https://launchpad.net/wikkid
 (user/how-to/account-management/create-account: line   26) redirect  https://launchpad.net/~/+editemails - with See Other to https://launchpad.net/~/+editemails/+login
-(user/how-to/account-management/create-account: line   28) redirect  https://launchpad.net/~/+editircnicknames - with See Other to https://launchpad.net/~/+editircnicknames/+login
 (user/how-to/account-management/create-account: line   25) redirect  https://launchpad.net/~/+edithomepage - with See Other to https://launchpad.net/~/+edithomepage/+login
+(user/how-to/account-management/create-account: line   28) redirect  https://launchpad.net/~/+editircnicknames - with See Other to https://launchpad.net/~/+editircnicknames/+login
+(user/explanation/privacy-confidentiality-and-disclosure: line   21) redirect  https://launchpad.net/~/+edit - with See Other to https://launchpad.net/~/+edit/+login
 (user/how-to/account-management/create-account: line   28) redirect  https://launchpad.net/~/+editjabberids - with See Other to https://launchpad.net/~/+editjabberids/+login
-(user/how-to/account-management/create-account: line   29) redirect  https://launchpad.net/~/+editlocation - with See Other to https://launchpad.net/~/+editlocation/+login
 (user/explanation/packaging/package-upload-errors: line   27) redirect  https://launchpad.net/~/+editpgpkeys - with See Other to https://launchpad.net/~/+editpgpkeys/+login
+(user/how-to/account-management/create-account: line   29) redirect  https://launchpad.net/~/+editlocation - with See Other to https://launchpad.net/~/+editlocation/+login
 (user/how-to/import-ssh-keys: line   90) redirect  https://launchpad.net/~/+editsshkeys - with See Other to https://launchpad.net/~/+editsshkeys/+login
 (user/how-to/account-management/create-account: line   27) redirect  https://launchpad.net/~/+editwikinames - with See Other to https://launchpad.net/~/+editwikinames/+login
-(user/reference/teams/launchpad-teams: line   58) ok        https://launchpad.net/~5-a-day
 (user/explanation/your-account-karma: line   53) redirect  https://launchpad.net/~/+karma - with See Other to https://launchpad.net/~/+karma/+login
+(user/reference/teams/launchpad-teams: line   58) ok        https://launchpad.net/~5-a-day
 (user/reference/launchpad-and-community/legal/launchpad-policies: line   14) ok        https://launchpad.net/~etretyak
-(user/reference/launchpad-and-community/launchpad-mentoring: line   54) ok        https://launchpad.net/~bugsquad/
 (user/how-to/source-package-recipe: line   99) ok        https://launchpad.net/~canonical-is-sa/+archive/ubuntu/buildd
 (user/explanation/teams/team-management: line   15) ok        https://launchpad.net/~launchpad-beta-testers/
+(user/reference/launchpad-and-community/launchpad-mentoring: line   54) ok        https://launchpad.net/~bugsquad/
 (developer/how-to/contributing-changes: line   10) ok        https://launchpad.net/~launchpad-dev
-(user/reference/translations/translators-group: line   96) ok        https://launchpad.net/~launchpad-translations-coordinators
 (user/explanation/teams/creating-and-running-teams: line  142) ok        https://launchpad.net/~launchpad-beta-testers/+members
 (user/reference/translations/translation-best-practices: line  307) ok        https://launchpad.net/~launchpad-translators
+(user/reference/translations/translators-group: line   96) ok        https://launchpad.net/~launchpad-translations-coordinators
 (developer/how-to/contributing-changes: line   10) ok        https://launchpad.net/~launchpad-users
 (user/reference/packaging/ppas/copying-packages: line   12) redirect  https://launchpad.net/~launchpad/+archive/ubuntu/ppa/+copy-packages - with See Other to https://launchpad.net/~launchpad/+archive/ubuntu/ppa/+copy-packages/+login
-(developer/tutorials/creating-a-rock-build-using-apis: line   15) ok        https://launchpad.net/~launchpad/launchpad-tutorials/+git/helloworld-rock
 (developer/reference/services/buildbot: line   43) ok        https://launchpad.net/~launchpad/lpbuildbot-worker/+charm/lpbuildbot-worker
+(developer/tutorials/creating-a-rock-build-using-apis: line   15) ok        https://launchpad.net/~launchpad/launchpad-tutorials/+git/helloworld-rock
 (developer/tutorials/creating-a-rock-build-using-apis: line   70) ok        https://launchpad.net/~pelpsi/launchpad-tutorials/+rock/rocktutorial/+build/291
-(user/explanation/teams/creating-and-running-teams: line  189) ok        https://launchpad.net/~pyroom-bugsquad
 (developer/explanation/hacking: line  788) redirect  https://launchpad.net/~launchpad/+archive/ppa - with See Other to https://launchpad.net/~launchpad/+archive/ubuntu/ppa
+(user/explanation/teams/creating-and-running-teams: line  189) ok        https://launchpad.net/~pyroom-bugsquad
 (user/explanation/teams/team-management: line   56) ok        https://launchpad.net/~motu/
-(user/explanation/teams/creating-and-running-teams: line  189) ok        https://launchpad.net/~pyroom-dev
 (user/explanation/teams/creating-and-running-teams: line  189) ok        https://launchpad.net/~pyroom-team
+(user/explanation/teams/creating-and-running-teams: line  189) ok        https://launchpad.net/~pyroom-dev
 (user/reference/teams/launchpad-teams: line    6) ok        https://launchpad.net/~ubuntu-loco-enthusiasts
-(user/reference/teams/launchpad-teams: line    6) ok        https://launchpad.net/~ubuntu-l10n-eo
 (developer/reference/services/mirror-prober: line   46) ok        https://launchpad.net/~ubuntu-mirror-admins
-(user/reference/teams/launchpad-teams: line    6) ok        https://launchpad.net/~ubuntu-users
 (developer/explanation/engineering-overview-translations: line   56) ok        https://launchpad.net/~ubuntu-translations-coordinators
-(developer/explanation/framework: line   90) redirect  https://lazrlifecycle.readthedocs.io/ - with Found to https://lazrlifecycle.readthedocs.io/en/latest/
-(developer/explanation/framework: line   16) redirect  https://lazrrestful.readthedocs.io/ - with Found to https://lazrrestful.readthedocs.io/en/latest/
-(developer/how-to/launchpad-api-docs: line    8) ok        https://lazrrestful.readthedocs.io/en/latest/webservice-declarations.html
-(user/reference/teams/launchpad-teams: line    6) ok        https://launchpad.net/~zope3-dev
+(user/reference/teams/launchpad-teams: line    6) ok        https://launchpad.net/~ubuntu-l10n-eo
+(user/reference/teams/launchpad-teams: line    6) ok        https://launchpad.net/~ubuntu-users
 (user/explanation/translating-with-launchpad/translate-your-software: line  261) ok        https://leofontenelle.wordpress.com/2007/12/01/context-in-gnome-translations/
-(            help: line   15) ok        https://lists.launchpad.net/launchpad-dev/
+(user/reference/teams/launchpad-teams: line    6) ok        https://launchpad.net/~zope3-dev
+(developer/how-to/launchpad-api-docs: line    8) ok        https://lazrrestful.readthedocs.io/en/latest/webservice-declarations.html
+(developer/explanation/framework: line   16) redirect  https://lazrrestful.readthedocs.io/ - with Found to https://lazrrestful.readthedocs.io/en/latest/
+(developer/explanation/framework: line   90) redirect  https://lazrlifecycle.readthedocs.io/ - with Found to https://lazrlifecycle.readthedocs.io/en/latest/
 (user/reference/packaging/ppas/ppa: line  169) redirect  https://lists.canonical.com/mailman/listinfo/launchpad-users - with Found to https://lists.canonical.com/mailman3/openid/login/?next=/mailman3/postorius/lists/mailman.lists.canonical.com/
+(            help: line   15) ok        https://lists.launchpad.net/launchpad-dev/
 (developer/explanation/testing: line  135) ok        https://lists.launchpad.net/launchpad-dev/msg02780.html
-(developer/explanation/feature-flags: line  332) ok        https://lists.launchpad.net/launchpad-dev/msg07244.html
 (developer/explanation/javascript-buildsystem: line   36) ok        https://lists.launchpad.net/launchpad-dev/msg06474.html
-(developer/reference/services/signing: line   37) ok        https://lp-signing.readthedocs.io/en/latest/how-to/deployment.html
-(developer/reference/services/signing: line   23) redirect  https://lp-signing.readthedocs.io/ - with Found to https://lp-signing.readthedocs.io/en/latest/
 (user/reference/settings-and-preferences: line   16) ok        https://login.launchpad.net/
-(user/explanation/working-with-code/launchpad-ci: line   30) ok        https://lpci.readthedocs.io/en/latest/configuration.html
+(developer/explanation/feature-flags: line  332) ok        https://lists.launchpad.net/launchpad-dev/msg07244.html
+(developer/reference/services/signing: line   37) ok        https://lp-signing.readthedocs.io/en/latest/how-to/deployment.html
 (developer/reference/services/build-farm: line   55) ok        https://lpci.readthedocs.io/en/latest/
+(user/explanation/working-with-code/launchpad-ci: line   30) ok        https://lpci.readthedocs.io/en/latest/configuration.html
+(developer/reference/services/signing: line   23) redirect  https://lp-signing.readthedocs.io/ - with Found to https://lp-signing.readthedocs.io/en/latest/
 (user/explanation/feature-highlights/the-bug-tracker: line   17) redirect  https://lists.ubuntu.com/mailman/listinfo/launchpad-users - with Found to https://launchpad.net/~launchpad-users
 (developer/explanation/branches: line  175) redirect  https://lpbuildbot.canonical.com/force - permanently to http://lpbuildbot.canonical.com/force
-(developer/explanation/journey-of-a-change-to-production: line  197) ok        https://mojo.canonical.com
 (developer/how-to/running-quickstart: line   94) ok        https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh
-(developer/explanation/security: line  121) ok        https://owasp.org/www-project-top-ten/
+(developer/explanation/journey-of-a-change-to-production: line  197) ok        https://mojo.canonical.com
 (developer/explanation/charms: line    9) ok        https://mojo.canonical.com/
 (developer/how-to/running-quickstart: line   98) ok        https://marketplace.visualstudio.com/items?itemName=ms-python.python
+(developer/explanation/security: line  121) ok        https://owasp.org/www-project-top-ten/
 (developer/explanation/framework: line   62) redirect  https://pagetemplates.readthedocs.io/ - with Found to https://pagetemplates.readthedocs.io/en/latest/
+(developer/explanation/performance: line   13) ok        https://pagespeed.web.dev/
+(developer/explanation/security: line  129) redirect  https://observatory.mozilla.org/ - permanently to https://developer.mozilla.org/en-US/observatory
+(developer/explanation/security: line   41) redirect  https://observatory.mozilla.org/analyze/launchpad.net - permanently to https://developer.mozilla.org/en-US/observatory/analyze?host=launchpad.net
 (developer/explanation/pip: line    4) redirect  https://pip.pypa.io/ - with Found to https://pip.pypa.io/en/stable/
-(developer/explanation/pip: line  117) ok        https://pip.pypa.io/en/stable/reference/requirement-specifiers/
 (developer/explanation/hacking: line  810) ok        https://pip.pypa.io/en/stable/
 (developer/explanation/pip: line  110) ok        https://pip.pypa.io/en/stable/reference/requirements-file-format/
-(developer/explanation/security: line   41) redirect  https://observatory.mozilla.org/analyze/launchpad.net - permanently to https://developer.mozilla.org/en-US/observatory/analyze?host=launchpad.net
-(developer/explanation/security: line  129) redirect  https://observatory.mozilla.org/ - permanently to https://developer.mozilla.org/en-US/observatory
-(developer/explanation/performance: line   13) ok        https://pagespeed.web.dev/
+(developer/explanation/pip: line  117) ok        https://pip.pypa.io/en/stable/reference/requirement-specifiers/
 (user/how-to/launchpad-api/webhooks: line   82) ok        https://pubsubhubbub.github.io/PubSubHubbub/pubsubhubbub-core-0.4.html#rfc.section.8
 (developer/how-to/create-job-publish-artifact: line   24) redirect  https://portal.admin.canonical.com/requests/new - permanently to https://portal.admin.canonical.com/openid/login/?next=/requests/new
 (developer/how-to/create-job-publish-artifact: line   24) redirect  https://portal.admin.canonical.com/q/launchpad/ - permanently to https://portal.admin.canonical.com/openid/login/?next=/q/launchpad/
-(developer/how-to/create-bot-account: line   12) redirect  https://portal.admin.canonical.com/C162471/ - permanently to https://portal.admin.canonical.com/openid/login/?next=/C162471/
+(developer/how-to/running: line  232) ok        https://pypi.org/project/pipx/
 (developer/reference/python: line   80) ok        https://pypi.org/project/pydoctor/
 (developer/how-to/running: line  229) ok        https://pre-commit.com/
-(developer/how-to/running: line  232) ok        https://pypi.org/project/pipx/
 (developer/explanation/framework: line  102) ok        https://pypi.org/project/talisker/
+(developer/how-to/create-bot-account: line   12) redirect  https://portal.admin.canonical.com/C162471/ - permanently to https://portal.admin.canonical.com/openid/login/?next=/C162471/
 (developer/explanation/branches: line   59) ok        https://qastaging.launchpad.net
-(developer/explanation/branches: line   19) ok        https://qastaging.launchpad.net/
-(developer/how-to/debugging: line  232) ok        https://qastaging.launchpad.net/++profile++
 (developer/how-to/debugging: line  256) ok        https://qastaging.launchpad.net/++oops++
-(developer/how-to/debugging: line  248) ok        https://qastaging.launchpad.net/++profile++pstats
-(developer/how-to/debugging: line  244) ok        https://qastaging.launchpad.net/++profile++show
-(developer/how-to/debugging: line  236) ok        https://qastaging.launchpad.net/++profile++sql
-(developer/how-to/debugging: line  240) ok        https://qastaging.launchpad.net/++profile++sqltrace
-(developer/how-to/debug-buildfarm-builder: line   44) ok        https://qastaging.launchpad.net/builders
 (developer/how-to/debugging: line  252) ok        https://qastaging.launchpad.net/++profile++callgrind
-(developer/how-to/debugging: line  535) redirect  https://qastaging.launchpad.net/+feature-rules - with See Other to https://qastaging.launchpad.net/+feature-rules/+index/+login
+(developer/how-to/debugging: line  236) ok        https://qastaging.launchpad.net/++profile++sql
+(developer/how-to/debugging: line  232) ok        https://qastaging.launchpad.net/++profile++
+(developer/explanation/branches: line   19) ok        https://qastaging.launchpad.net/
+(developer/how-to/debugging: line  240) ok        https://qastaging.launchpad.net/++profile++sqltrace
+(developer/how-to/debugging: line  244) ok        https://qastaging.launchpad.net/++profile++show
+(developer/how-to/debug-buildfarm-builder: line   44) ok        https://qastaging.launchpad.net/builders
 (developer/explanation/favicon: line    4) ok        https://realfavicongenerator.net/
-(developer/explanation/security: line   55) ok        https://storm-orm.readthedocs.io/en/latest/index.html
+(developer/how-to/debugging: line  248) ok        https://qastaging.launchpad.net/++profile++pstats
 (developer/explanation/storm-migration-guide: line    6) ok        https://storm-orm.readthedocs.io/en/latest/tutorial.html
-(developer/reference/services/git-hosting: line   46) ok        https://turnip.readthedocs.io/en/latest/index.html
+(developer/explanation/security: line   55) ok        https://storm-orm.readthedocs.io/en/latest/index.html
 (user/reference/launchpad-and-community/legal/project-licenses: line   55) ok        https://spdx.org/licenses/Unicode-TOU.html
+(developer/reference/services/git-hosting: line   46) ok        https://turnip.readthedocs.io/en/latest/index.html
 ( developer/index: line   60) ok        https://ubuntu.com/community/ethos/code-of-conduct
+(developer/how-to/debugging: line  535) redirect  https://qastaging.launchpad.net/+feature-rules - with See Other to https://qastaging.launchpad.net/+feature-rules/+index/+login
 (developer/reference/css: line   52) ok        https://vanillaframework.io/docs/patterns/accordion
-(developer/reference/css: line   26) ok        https://vanillaframework.io/docs
 (developer/reference/css: line   70) ok        https://vanillaframework.io/docs/patterns/buttons
-(developer/how-to/debugging: line   96) ok        https://wiki.python.org/moin/DebuggingWithGdb
+(user/reference/launchpad-and-community/legal/launchpad-policies: line  161) redirect  https://ubuntu.com/licensing - with Found to https://ubuntu.com/legal/intellectual-property-policy
 (developer/explanation/performance: line   37) ok        https://wiki.python.org/moin/TimeComplexity
 (developer/explanation/favicon: line   10) redirect  https://web.dev/add-manifest/#splash-screen - permanently to https://web.dev/articles/add-manifest
-(user/explanation/packaging/packaging: line   25) ok        https://wiki.ubuntu.com/MOTU/GettingStarted
+(developer/how-to/debugging: line   96) ok        https://wiki.python.org/moin/DebuggingWithGdb
 (user/reference/packaging/ppas/ppa: line  273) ok        https://wiki.ubuntu.com/MOTU/
 (user/reference/packaging/ppas/ppa: line  273) ok        https://wiki.ubuntu.com/MOTU/Packages/REVU/
-(user/explanation/packaging/packaging: line   29) ok        https://wiki.ubuntu.com/MOTU/School/PackagingWithoutCompiling
+(user/explanation/packaging/packaging: line   25) ok        https://wiki.ubuntu.com/MOTU/GettingStarted
 (user/explanation/translating-with-launchpad/translating-with-launchpad: line   40) ok        https://wiki.ubuntu.com/Translations/
+(user/explanation/packaging/packaging: line   29) ok        https://wiki.ubuntu.com/MOTU/School/PackagingWithoutCompiling
 (user/explanation/translating-with-launchpad/prepare-to-translate: line   74) redirect  https://wiki.ubuntu.com/TranslatingUbuntu - with Found to https://wiki.ubuntu.com/Translations?action=show&redirect=TranslatingUbuntu
-(user/how-to/work-with-bazaar/using-launchpad-with-bazaar: line   10) ok        https://www.breezy-vcs.org
 (developer/how-to/running: line   30) ok        https://www.debian.org/
-(user/reference/packaging/ppas/ppa: line  225) ok        https://www.debian.org/doc/debian-policy/ch-controlfields.html#version
-(developer/explanation/performance: line   78) ok        https://www.postgresql.org/docs/current/sql-explain.html
-(developer/reference/python: line   16) redirect  https://www.python.org/dev/peps/pep-0008/ - with Found to https://peps.python.org/pep-0008/
 (user/reference/translations/language-specific-guides: line   67) ok        https://wiki.ubuntu.org.cn/TranslatorsGuideline
-(developer/explanation/pip: line  337) redirect  https://www.python.org/dev/peps/pep-0440/ - with Found to https://peps.python.org/pep-0440/
+(user/reference/packaging/ppas/ppa: line  225) ok        https://www.debian.org/doc/debian-policy/ch-controlfields.html#version
+(user/how-to/work-with-bazaar/using-launchpad-with-bazaar: line   10) ok        https://www.breezy-vcs.org
 (developer/reference/python: line   18) redirect  https://www.python.org/dev/peps/pep-0257/ - with Found to https://peps.python.org/pep-0257/
+(developer/reference/python: line   16) redirect  https://www.python.org/dev/peps/pep-0008/ - with Found to https://peps.python.org/pep-0008/
+(developer/explanation/performance: line   78) ok        https://www.postgresql.org/docs/current/sql-explain.html
 (developer/explanation/favicon: line   15) ok        https://www.w3.org/TR/appmanifest/
+(developer/explanation/pip: line  337) redirect  https://www.python.org/dev/peps/pep-0440/ - with Found to https://peps.python.org/pep-0440/
+(user/explanation/launchpad-api/launchpad-web-service: line  812) ok        https://www.w3.org/submissions/wadl/
 (developer/explanation/security: line  132) ok        https://www.zaproxy.org/
 (developer/explanation/framework: line   16) redirect  https://zopecomponent.readthedocs.io/ - with Found to https://zopecomponent.readthedocs.io/en/latest/
-(developer/explanation/framework: line   90) redirect  https://zopeevent.readthedocs.io/ - with Found to https://zopeevent.readthedocs.io/en/latest/
 (developer/explanation/framework: line    5) ok        https://zope.dev/world.html
-(developer/explanation/framework: line   77) redirect  https://zopeformlib.readthedocs.io/ - with Found to https://zopeformlib.readthedocs.io/en/latest/
+(developer/explanation/framework: line   90) redirect  https://zopeevent.readthedocs.io/ - with Found to https://zopeevent.readthedocs.io/en/latest/
 (developer/reference/python: line   28) redirect  https://www.zope.org/developer/guidelines.html - permanently to https://www.zope.dev/developer/guidelines.html
-(developer/explanation/framework: line   16) redirect  https://zopeinterface.readthedocs.io/ - with Found to https://zopeinterface.readthedocs.io/en/latest/
 (developer/explanation/framework: line   69) redirect  https://zopepagetemplate.readthedocs.io/ - with Found to https://zopepagetemplate.readthedocs.io/en/latest/
-(developer/explanation/framework: line   41) redirect  https://zopepublisher.readthedocs.io/ - with Found to https://zopepublisher.readthedocs.io/en/latest/
+(developer/explanation/framework: line   16) redirect  https://zopeinterface.readthedocs.io/ - with Found to https://zopeinterface.readthedocs.io/en/latest/
+(developer/explanation/framework: line   77) redirect  https://zopeformlib.readthedocs.io/ - with Found to https://zopeformlib.readthedocs.io/en/latest/
+(developer/how-to/using-breakpoints: line   19) ok        https://zopetestrunner.readthedocs.io/en/latest/testrunner-layers-ntd.html
 (developer/explanation/framework: line   26) redirect  https://zopeschema.readthedocs.io/ - with Found to https://zopeschema.readthedocs.io/en/latest/
 (developer/explanation/framework: line   26) redirect  https://zopesecurity.readthedocs.io/ - with Found to https://zopesecurity.readthedocs.io/en/latest/
-(developer/how-to/using-breakpoints: line   19) ok        https://zopetestrunner.readthedocs.io/en/latest/testrunner-layers-ntd.html
-(developer/explanation/framework: line   41) redirect  https://zopetraversing.readthedocs.io/ - with Found to https://zopetraversing.readthedocs.io/en/latest/
--rate limited-   http://www.gnu.org/software/gettext/ | sleeping...
--rate limited-   http://www.gnu.org/software/gettext/manual/ | sleeping...
--rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html | sleeping...
--rate limited-   http://www.gnu.org/software/gettext/manual/ | sleeping...
--rate limited-   http://www.gnu.org/software/gettext/manual/ | sleeping...
--rate limited-   http://www.gnu.org/software/gettext/manual/ | sleeping...
--rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html | sleeping...
--rate limited-   http://www.gnu.org/software/gettext/ | sleeping...
--rate limited-   http://www.gnu.org/software/gettext/ | sleeping...
--rate limited-   http://www.gnu.org/software/gettext/manual/ | sleeping...
-(user/explanation/launchpad-api/launchpad-web-service: line  812) timeout   https://wadl.dev.java.net/ - HTTPSConnectionPool(host='wadl.dev.java.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x79ff136053d0>, 'Connection to wadl.dev.java.net timed out. (connect timeout=30)'))
-(user/reference/launchpad-and-community/legal/launchpad-policies: line  161) redirect  https://ubuntu.com/licensing - with Found to https://ubuntu.com/legal/intellectual-property-policy
-(user/reference/translations/translation-best-practices: line   64) ok        http://www.gnu.org/software/gettext/
--rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html#Plural-forms | sleeping...
--rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html | sleeping...
--rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html#Binaries | sleeping...
--rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html#Contexts | sleeping...
 (user/explanation/translating-with-launchpad/translating-your-project: line   57) ok        http://www.gnu.org/software/gettext/manual/
--rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html | sleeping...
--rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html#Preparing-Strings | sleeping...
--rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html#Contexts | sleeping...
-(user/reference/translations/translation-best-practices: line  356) ok        http://www.gnu.org/software/gettext/manual/gettext.html#Binaries
-(user/reference/translations/language-plural-forms: line   11) ok        http://www.gnu.org/software/gettext/manual/gettext.html#Plural-forms
--rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html#Sources | sleeping...
--rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html#Preparing-Strings | sleeping...
--rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html#Template | sleeping...
--rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html | sleeping...
--rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html | sleeping...
+(developer/explanation/framework: line   41) redirect  https://zopepublisher.readthedocs.io/ - with Found to https://zopepublisher.readthedocs.io/en/latest/
+-rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html#Binaries | sleeping...
+(developer/explanation/framework: line   41) redirect  https://zopetraversing.readthedocs.io/ - with Found to https://zopetraversing.readthedocs.io/en/latest/
 -rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html | sleeping...
 -rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html#Contexts | sleeping...
--rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html#Contexts | sleeping...
--rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html#Sources | sleeping...
--rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html#Preparing-Strings | sleeping...
--rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html#Template | sleeping...
--rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html#Template | sleeping...
--rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html | sleeping...
 (user/explanation/translating-with-launchpad/partial-exports: line   81) ok        http://www.gnu.org/software/gettext/manual/gettext.html
--rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html#Contexts | sleeping...
--rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html#Sources | sleeping...
 -rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html#Preparing-Strings | sleeping...
-(user/reference/translations/translation-best-practices: line  167) ok        http://www.gnu.org/software/gettext/manual/gettext.html#Template
+-rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html#Binaries | sleeping...
+-rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html#Plural-forms | sleeping...
+-rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html#Contexts | sleeping...
+-rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html#Preparing-Strings | sleeping...
 (user/reference/translations/translation-best-practices: line  122) ok        http://www.gnu.org/software/gettext/manual/gettext.html#Preparing-Strings
-(user/reference/translations/translation-best-practices: line   76) ok        http://www.gnu.org/software/gettext/manual/gettext.html#Sources
+-rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html#Sources | sleeping...
+(user/reference/translations/translation-best-practices: line  356) ok        http://www.gnu.org/software/gettext/manual/gettext.html#Binaries
 (user/reference/translations/translation-best-practices: line  132) ok        http://www.gnu.org/software/gettext/manual/gettext.html#Contexts
-build finished with problems.
+(user/reference/translations/language-plural-forms: line   11) ok        http://www.gnu.org/software/gettext/manual/gettext.html#Plural-forms
+(developer/reference/css: line   26) ok        https://vanillaframework.io/docs
+-rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html#Template | sleeping...
+-rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html#Sources | sleeping...
+-rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html#Sources | sleeping...
+-rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html#Template | sleeping...
+-rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html#Template | sleeping...
+-rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html#Sources | sleeping...
+-rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html#Sources | sleeping...
+-rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html#Template | sleeping...
+(user/reference/translations/translation-best-practices: line   76) ok        http://www.gnu.org/software/gettext/manual/gettext.html#Sources
+-rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html#Template | sleeping...
+-rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html#Template | sleeping...
+-rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html#Template | sleeping...
+-rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html#Template | sleeping...
+-rate limited-   http://www.gnu.org/software/gettext/manual/gettext.html#Template | sleeping...
+(user/reference/translations/translation-best-practices: line  167) ok        http://www.gnu.org/software/gettext/manual/gettext.html#Template
+build succeeded.
+
+Look for any errors in the above output or in _build/output.txt

@@ -187,6 +187,7 @@ linkcheck_ignore = [
     "API",
     "/../YourProject/ImportingTemplates",
     "Answer syntax parsing <Comments>",
+    "https://help.ubuntu.com/community/SSO/FAQs" #timeout, should be temporary
 ]
 
 # Pages on which to ignore anchors

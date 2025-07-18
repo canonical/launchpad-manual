@@ -812,7 +812,7 @@ WADL Description
 Like most web service providers we publish `a prose document <http://launchpad.net/+apidoc/>`_ describing the capabilities
 of all our resources. But we also publish a machine-readable document
 containing the same information. It's written in
-`WADL <https://wadl.dev.java.net/>`_ format, and you can use it as a
+`WADL <https://www.w3.org/submissions/wadl/>`_ format, and you can use it as a
 basis for tools that interact with the web service. In fact, the
 reference documentation is just a human-readable transformation of the
 WADL document. The launchpadlib Python library is a thin wrapper on top
