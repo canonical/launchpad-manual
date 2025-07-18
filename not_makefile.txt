@@ -120,3 +120,6 @@ sp-pdf: sp-pdf-prep
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
 %: Makefile.sp
 	. $(VENV); $(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+
+
+grep "broken" linkcheck.txt > broken-links.txt

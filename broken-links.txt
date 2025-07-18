@@ -1,5 +1,0 @@
-(user/explanation/privacy-confidentiality-and-disclosure: line   50) broken    Teams/CreatingAndRunning - 
-(developer/explanation/performance: line   75) broken    https://drive.google.com/file/d/1hUivL07Msoyej3wd_T4hMAX61EJzfE38/view?usp=drive_link - 404 Client Error: Not Found for url: https://drive.google.com/file/d/1hUivL07Msoyej3wd_T4hMAX61EJzfE38/view?usp=drive_link
-(user/how-to/launchpad-api/launchpad-web-signing: line  185) broken    https://launchpad.net/+access-token - unauthorized
-(user/how-to/launchpad-api/launchpad-web-signing: line   72) broken    https://launchpad.net/+request-token - unauthorized
-(user/reference/launchpad-and-community/launchpad-mentoring: line   58) broken    https://launchpad.net/~bugsquad/+mentoring - 404 Client Error: Not Found for url: https://launchpad.net/~bugsquad/+mentoring
