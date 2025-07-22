@@ -67,7 +67,7 @@ involved with new developments.
 For more information on how you can get involved, visit the `CODA website`_. 
 You can also browse through the types of issues you'll be working on in the `CODA repository`_. 
 
-Other channels to get invovled with the academy include:
+Other channels to get involved with the academy include:
 
 - Our `discussion forum`_ on the Ubuntu Community Hub
 - The `Matrix channel`_ for interactive chat
