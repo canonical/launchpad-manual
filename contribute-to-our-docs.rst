@@ -50,7 +50,7 @@ all.
 
 Open Documentation Academy
 --------------------------
-Launchpad is a proud member of the Canonical Open Documentation Academy (CODA)
+Launchpad is a proud member of the Canonical Open Documentation Academy (CODA).
 
 The Open Documentation Academy is an initiative that aims to encourage open 
 source contributions from the community by making documentation the gateway, 
