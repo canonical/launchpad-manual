@@ -59,9 +59,9 @@ thus lowering the barrier to entry.
 Through the academy, community members get access to curated and well-defined 
 beginner-friendly tasks along with mentorship and advice in a friendly and 
 encouraging environment. This allows them to make meaningful contributions to
-established open-source projects such as Launchpad from the start.
+established open-source projects, such as Launchpad, from the start.
 
-For experts, the academy can also be a great place to share knowledge and get
+For experts, the academy can be a great place to share knowledge and get
 involved with new developments. 
 
 For more information on how you can get involved, visit the `CODA website`_. 
@@ -69,10 +69,10 @@ You can also browse through the types of issues you'll be working on in the `COD
 
 Other channels to get involved with the academy include:
 
-- Our `discussion forum`_ on the Ubuntu Community Hub
+- The CODA `discussion forum`_ on the Ubuntu Community Hub
 - The `Matrix channel`_ for interactive chat
 
-You can also `follow us on Fosstodon`_ for the latest updates and information 
+You can also `follow Canonical's documentation team on Fosstodon`_ for the latest updates and information 
 on upcoming events.
 
 
@@ -85,4 +85,4 @@ on upcoming events.
 .. _CODA repository: https://github.com/canonical/open-documentation-academy/issues
 .. _discussion forum: https://discourse.ubuntu.com/c/community/open-documentation-academy/166
 .. _Matrix channel: https://matrix.to/#/#documentation:ubuntu.com
-.. _follow us on Fosstodon: https://fosstodon.org/@CanonicalDocumentation
+.. _follow Canonical's documentation team on Fosstodon: https://fosstodon.org/@CanonicalDocumentation
