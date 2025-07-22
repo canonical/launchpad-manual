@@ -21,7 +21,7 @@ reach out to us by any of these means:
 - Send an e-mail to feedback@launchpad.net
 
 Style and language
-++++++++++++++++++
+------------------
 
 Launchpad's documentation is aimed at helping both beginners and experts. As 
 such, we try to use appropriate writing for the subject, to use inclusive 
@@ -48,8 +48,41 @@ prevent you from contributing. If something is inconsistent, we'll fix it.
 We'd rather have documentation that we can fix than not have documentation at 
 all.
 
+Open Documentation Academy
+--------------------------
+Launchpad is a proud member of the Canonical Open Documentation Academy (CODA)
+
+The Open Documentation Academy is an initiative that aims to encourage open 
+source contributions from the community by making documentation the gateway, 
+thus lowering the barrier to entry. 
+
+Through the academy, community members get access to curated and well-defined 
+beginner-friendly tasks along with mentorship and advice in a friendly and 
+encouraging environment. This allows them to make meaningful contributions to
+established open-source projects such as Launchpad from the start.
+
+For experts, the academy can also be a great place to share knowledge and get
+involved with new developments. 
+
+For more information on how you can get involved, visit the `CODA website`_. 
+You can also browse through the types of issues you'll be working on in the `CODA repository`_. 
+
+Other channels to get invovled with the academy include:
+
+- Our `discussion forum`_ on the Ubuntu Community Hub
+- The `Matrix channel`_ for interactive chat
+
+You can also `follow us on Fosstodon`_ for the latest updates and information 
+on upcoming events.
+
+
 .. _#launchpad IRC channel: irc://irc.libera.chat/launchpad
 .. _irc.libera.chat: irc.libera.chat
 .. _API documentation: http://people.canonical.com/~mwh/canonicalapi/
 .. _Diátaxis: https://diataxis.fr/
 .. _Ubuntu style guide: https://docs.ubuntu.com/styleguide/
+.. _CODA website: https://documentationacademy.org/
+.. _CODA repository: https://github.com/canonical/open-documentation-academy/issues
+.. _discussion forum: https://discourse.ubuntu.com/c/community/open-documentation-academy/166
+.. _Matrix channel: https://matrix.to/#/#documentation:ubuntu.com
+.. _follow us on Fosstodon: https://fosstodon.org/@CanonicalDocumentation
