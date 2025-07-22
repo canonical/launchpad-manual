@@ -5,13 +5,6 @@ Code imports
 
 .. include:: /includes/important_not_revised_help.rst
 
-.. toctree::
-    :hidden:
-    :maxdepth: 2
-
-    Git hosting <git-hosting>
-    Launchpad CI <launchpad-ci>
-
 There's a lot of free software code available in CVS, Subversion (SVN)
 and Git repositories, or Bazaar repositories that aren't hosted on
 Launchpad. Sometimes you're going to want to have this code available on
