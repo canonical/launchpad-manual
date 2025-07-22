@@ -76,7 +76,7 @@ clone git+ssh://git.launchpad.net/REPOSITORY``.
 The rest of this documentation assumes that you have configured Git this
 way.
 
-You should check the `fingerprint <SSHFingerprints>`__ of
+You should check the :ref:`fingerprint <ssh-fingerprints>` of
 git.launchpad.net when prompted to do so by SSH.
 
 Getting code
@@ -262,8 +262,8 @@ will not be able to show it to you again.
 Via API
 ^^^^^^^
 
-Alternatively, you can generate access tokens using the `Launchpad
-API <API>`__, as follows:
+Alternatively, you can generate access tokens using the :ref:`Launchpad
+API <launchpad-api>`, as follows:
 
 ::
 

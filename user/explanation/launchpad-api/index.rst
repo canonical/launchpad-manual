@@ -1,3 +1,5 @@
+.. _launchpad-api:
+
 Launchpad API
 =============
 
