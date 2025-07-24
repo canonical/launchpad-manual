@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: lxd-sphinx-extensions
+Version: 0.0.16
+Summary: lxd-sphinx-extensions is now canonical-sphinx-extensions
+Classifier: Development Status :: 7 - Inactive
+Description-Content-Type: text/markdown
+Requires-Dist: canonical-sphinx-extensions
+
+# `lxd-sphinx-extensions` is now `canonical-sphinx-extensions`
+
+This package has been renamed to reflect that it is being used by more projects than just LXD.
+Use `pip install canonical-sphinx-extensions` instead.
+
+New package: https://pypi.org/project/canonical-sphinx-extensions

@@ -1,0 +1,3 @@
+[console_scripts]
+pyspelling = pyspelling.__main__:main
+pyspelling3.11 = pyspelling.__main__:main
