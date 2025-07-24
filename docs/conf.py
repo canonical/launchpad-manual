@@ -24,7 +24,7 @@ import yaml
 #
 # TODO: Update with the official name of your project or product
 
-project = "Documentation starter pack"
+project = "Launchpad Manual"
 author = "Canonical Ltd."
 
 
@@ -70,7 +70,7 @@ copyright = "%s CC-BY-SA, %s" % (datetime.date.today().year, author)
 # NOTE: The Open Graph Protocol (OGP) enhances page display in a social graph
 #       and is used by social media platforms; see https://ogp.me/
 
-ogp_site_url = "https://canonical-starter-pack.readthedocs-hosted.com/"
+ogp_site_url = "https://canonical-launchpad-manual.readthedocs-hosted.com/"
 
 
 # Preview name of the documentation website
@@ -91,7 +91,7 @@ ogp_image = "https://assets.ubuntu.com/v1/253da317-image-document-ubuntudocs.svg
 
 # TODO: To customise the favicon, uncomment and update as needed.
 
-# html_favicon = '.sphinx/_static/favicon.png'
+html_favicon = '_static/favicon.png'
 
 
 # Dictionary of values to pass into the Sphinx context for all pages:
@@ -106,33 +106,32 @@ html_context = {
     # TODO: If there's no such website,
     #       remove the {{ product_page }} link from the page header template
     #       (usually .sphinx/_templates/header.html; also, see README.rst).
-    "product_page": "documentation.ubuntu.com",
+    "product_page": "launchpad.net",
     # Product tag image; the orange part of your logo, shown in the page header
     #
     # TODO: To add a tag image, uncomment and update as needed.
-    # 'product_tag': '_static/tag.png',
+    'product_tag': '_static/tag.png',
     # Your Discourse instance URL
     #
     # TODO: Change to your Discourse instance URL or leave empty.
     #
     # NOTE: If set, adding ':discourse: 123' to an .rst file
     #       will add a link to Discourse topic 123 at the bottom of the page.
-    "discourse": "https://discourse.ubuntu.com",
+    "discourse": "",
     # Your Mattermost channel URL
     #
     # TODO: Change to your Mattermost channel URL or leave empty.
-    "mattermost": "https://chat.canonical.com/canonical/channels/documentation",
     # Your Matrix channel URL
     #
     # TODO: Change to your Matrix channel URL or leave empty.
-    "matrix": "https://matrix.to/#/#documentation:ubuntu.com",
+    "matrix": "https://matrix.to/#/#launchpad:ubuntu.com",
     # Your documentation GitHub repository URL
     #
     # TODO: Change to your documentation GitHub repository URL or leave empty.
     #
     # NOTE: If set, links for viewing the documentation source files
     #       and creating GitHub issues are added at the bottom of each page.
-    "github_url": "https://github.com/canonical/sphinx-docs-starter-pack",
+    "github_url": "https://github.com/canonical/launchpad-manual",
     # Docs branch in the repo; used in links for viewing the source files
     #
     # TODO: To customise the branch, uncomment and update as needed.
@@ -145,7 +144,7 @@ html_context = {
     "repo_folder": "/docs/",
     # TODO: To enable or disable the Previous / Next buttons at the bottom of pages
     # Valid options: none, prev, next, both
-    # "sequential_nav": "both",
+    "sequential_nav": "none",
     # TODO: To enable listing contributors on individual pages, set to True
     "display_contributors": False,
 
@@ -160,16 +159,16 @@ html_context = {
 # - https://launchpad.net/example
 # - https://git.launchpad.net/example
 #
-# html_theme_options = {
-# 'source_edit_link': 'https://github.com/canonical/sphinx-docs-starter-pack',
-# }
+html_theme_options = {
+    "sidebar_hide_name": True,
+}
 
 # Project slug; see https://meta.discourse.org/t/what-is-category-slug/87897
 #
 # TODO: If your documentation is hosted on https://docs.ubuntu.com/,
 #       uncomment and update as needed.
 
-# slug = ''
+slug = ''
 
 #######################
 # Sitemap configuration: https://sphinx-sitemap.readthedocs.io/
@@ -177,7 +176,7 @@ html_context = {
 
 # Base URL of RTD hosted project
 
-html_baseurl = 'https://canonical-starter-pack.readthedocs-hosted.com/'
+html_baseurl = ogp_site_url
 
 # URL scheme. Add language and version scheme elements.
 # When configured with RTD variables, check for RTD environment so manual runs succeed:
@@ -196,7 +195,7 @@ sitemap_show_lastmod = True
 # Template and asset locations
 #######################
 
-#html_static_path = ["_static"]
+html_static_path = ["_static"]
 #templates_path = ["_templates"]
 
 
@@ -225,8 +224,56 @@ redirects = {}
 # TODO: Remove or adjust the ACME entry after you update the contributing guide
 
 linkcheck_ignore = [
+    r"http://www.gnu\.org/.*",
+    r"http://www.fsf\.org/.*",
     "http://127.0.0.1:8000",
-    "https://github.com/canonical/ACME/*"
+    r"https://app\.diagrams\.net.*",  # ignore, as works in browser, but link checker has some issues
+    "https://archive.ph/CAqQm",  # ignore, as works in browser, but link checker has some issues
+    "https://bazaar.launchpad.net/lp-production-config",  # private
+    "https://bazaar.staging.launchpad.net",  # broken, unclear why XXX 2023-10-14: jugmac00- check with team
+    r"https://www\.breezy-vcs\.org/.*",  # broken, returns "Connection refused" on port 443
+    r"https://www\.bazaar-vcs\.org/.*",  # broken, returns "Connection refused" on port 443
+    "https://bugs.launchpad.net/charm-launchpad-buildd-image-modifier",  # private
+    "https://bugs.launchpad.net/launchpad-vbuilder-manage",  # private
+    "http://example.com/.*",  # ignore, example links
+    "https://launchpad.net/canonical-mojo-specs",  # private
+    r"https://launchpad\.test.*",  # ignore, local test setup
+    "Trunk/Glue",  # needs update
+    "/Background",
+    "/Concepts",  # needs update
+    "JavascriptUnitTesting/MockIo",  # needs update
+    "https://git.launchpad.net/launchpad-mojo-specs/tree/mojo-lp-git/services",  # private
+    "https://deployable.ols.canonical.com/project/launchpad-db",  # private
+    "irc.libera.chat",  # this is not an HTTP link
+    r"https://github\.com/canonical/fetch-service*",  # private
+    r"https://github\.com/canonical/fetch-operator*",  # private
+    "https://git.launchpad.net/charm-launchpad-buildd-image-modifier/tree/files/scripts/setup-ppa-buildd",  # private
+    "https://git.zx2c4.com/cgit/",  # unfortunately very flaky
+    "https://wiki.canonical.com/InformationInfrastructure/OSA/RequestLogging/LP/Cowboys",  # private
+    "https://staging.launchpad.net",  # ignore, staging launchpad
+    r"https://wiki\.canonical\.com/.*",  # private
+    r"https://www\.nongnu\.org/.*",
+    r"https://www\.gnu\.org/.*",
+    r"https://www\.socialtext\.net/.*",
+    r"https://translations\.launchpad\.net/.*",
+    r"http://localhost.*",
+
+     "http://www.ubuntu.com/community/ubuntustory/licensing", # works in browser, linkchecker issue
+    #Uncertain Dead - May not be replaceable
+    "/Estonian",
+    "/Georgian",
+    "/Indonesian",
+    "/Italian",
+    "/Korean",
+    "/Russian",
+    "../Vietnamese",
+    #Replaceable Dead - Can probably be replaced by an equivalent
+    "/../POTemplates", # - https://docs.lokalise.com/en/articles/1400767-gettext-po-pot
+    "API",
+
+    #Incorrect or non-existent file reference - Referenced file moved, deleted, or renamed
+    "/../YourProject/ImportingTemplates",
+    "Answer syntax parsing <Comments>",
     ]
 
 
@@ -285,7 +332,7 @@ exclude_patterns = [
 
 # Adds custom CSS files, located under 'html_static_path'
 
-# html_css_files = []
+html_css_files = ['custom.css']
 
 
 # Adds custom JavaScript files, located under 'html_static_path'
