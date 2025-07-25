@@ -167,7 +167,6 @@ linkcheck_ignore = [
     r"https://translations\.launchpad\.net/.*",
     r"http://localhost.*",
     "http://www.ubuntu.com/community/ubuntustory/licensing",  #works in browser, linkchecker issue
-    "https://matrix.to/#/#documentation:ubuntu.com"
     "http://www.boost.org/LICENSE_1_0.txt",  #Unexpected, Should be working
     #Uncertain Dead - May not be replaceable
      "Translations/Czech",  #Not a valid link
