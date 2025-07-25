@@ -10,3 +10,4 @@ Legal
 
     Launchpad policies <launchpad-policies>
     Project licenses <project-licenses>
+    Launchpad license <launchpad-license>
