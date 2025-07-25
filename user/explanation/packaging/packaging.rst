@@ -87,6 +87,8 @@ are not suitable for your project, such as:
    one-time database upgrade or something from one version to another)
    then this can be problematic.
 
+.. _source-build-recipes:
+
 Source build recipes
 --------------------
 

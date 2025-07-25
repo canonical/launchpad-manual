@@ -105,7 +105,7 @@ email address, whatever that happens to be at the time.
     All Launchpad mailing list messages are publicly archived, and **the
     archives are open to everyone**, not just Launchpad or team members.
     If you have any issues with information available in the archives,
-    you should contact `the Launchpad administrators <http://help.launchpad.net/#head-9562b4c8ee3bbaca8f0d0719f973269f13539ced>`_,
+    you should contact the :ref:`Launchpad administrators <talk-to-us-about-launchpad>`,
     however our general policy is **never to remove archive messages or
     information contained therein.**
 
@@ -191,7 +191,9 @@ message will appear in the archive.
 
 .. note::
 
-    If you use Gmail and you do not see your own posts arrive in your inbox, it is probably because of `this issue <http://www.python.org/cgi-bin/faqw-mm.py?req=show&file=faq02.008.htp>`_. Unfortunately there is nothing we can do about it, but if you check your list's archive, your message should appear there.
+   If you use Gmail and do not see your own posts arrive in your inbox, please 
+   note that there is a known issue that does not originate from Launchpad. 
+   However, your message should still appear in your list's archive.
 
 Unsubscribing
 -------------

@@ -1,3 +1,5 @@
+.. _live-database-patching:
+
 Live Database Patching
 ======================
 

@@ -62,5 +62,4 @@ Further information
 -------------------
 
 If there isn't yet a team in Launchpad that deals with the activity or
-community that interests you, you can `create your own
-team <Teams/CreatingAndRunning>`__.
+community that interests you, you can :ref:`create your own team <creating-and-running-launchpad-teams>`.

@@ -138,8 +138,8 @@ milestone
 ``milestone $milestone``
 
 Sets or clears the milestone of the bug. The milestone must already
-exist in Launchpad. `More about
-milestones <Projects/SeriesMilestonesReleases#milestones>`__.
+exist in Launchpad. :ref:`More about
+milestones <milestones>`.
 
 ::
 

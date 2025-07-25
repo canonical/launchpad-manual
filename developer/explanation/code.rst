@@ -135,7 +135,7 @@ kicked off.
 The web application
 -------------------
 
-Code that is executed as part of the Launchpad web application. The core concepts are documented on the :doc:`Code Concepts <./concepts>` page.
+Code that is executed as part of the Launchpad web application. The core concepts are documented on the :ref:`Code Concepts <code-concepts>` page.
 
 **Major features**
 

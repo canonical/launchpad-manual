@@ -7,8 +7,8 @@ Translating your software
 
 Launchpad has unique infrastructure to support the translation of free
 software into many languages. It enables translation communities to form
-and organise themselves, leveraging the `Team
-Management <ReviewersGuide/TeamManagement>`__ capabilities described
+and organise themselves, leveraging the :ref:`Team
+Management <exp-team-management>` capabilities described
 earlier, and allows you to keep track of the translations of multiple
 versions of your software into multiple languages.
 
@@ -141,6 +141,6 @@ to ensure the quality of the translations, but Launchpad greatly reduces
 the barriers to participation and gives you a framework to build a
 strong translation effort.
 
-The next step on our tour looks at Launchpad's `feature planning and
-release management <FeatureHighlights/BlueprintReleasePlanning>`__
+The next step on our tour looks at Launchpad's :ref:`feature planning and
+release management <blueprints-lightweight-specifications>`
 capabilities.

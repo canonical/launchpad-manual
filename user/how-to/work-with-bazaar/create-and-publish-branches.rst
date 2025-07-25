@@ -15,8 +15,8 @@ all set. For users of other platforms, take a look at `these
 instructions <http://bazaar-vcs.org/Download>`__ to install Bazaar for
 yourself.
 
-{i} Find out `how to create your SSH key and upload it to
-Launchpad <CreatingAnSSHKeyPair>`__.
+{i} Find out :ref:`how to create your SSH key and upload it to
+Launchpad <import-your-ssh-keys>`.
 
 You should have at least version 0.15 of Bzr installed. To check:
 
@@ -143,5 +143,4 @@ directory.
 
 This is needed because you can also publish branches into directories
 for each of the teams of which you are a member. And that leads us to
-the next stop on our tour - `Team
-Branches <FeatureHighlights/TeamBranches>`__!
+the next stop on our tour - :ref:`Team Branches <team-branches>`!

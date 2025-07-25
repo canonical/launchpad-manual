@@ -1,3 +1,5 @@
+.. _exporting-partial-gettext-PO-files:
+
 Exporting partial gettext PO files
 ==================================
 

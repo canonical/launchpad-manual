@@ -32,7 +32,7 @@ What VCS branches does Launchpad use?
 
 The `main Launchpad repository <https://git.launchpad.net/launchpad>`_ has 4
 main (or "trunk") branches. These are ``master``, ``stable``, ``db-devel``,
-and ``db-stable``. For more details see `branches <../branches>`_.
+and ``db-stable``. For more details see :ref:`branches <about-launchpad-branches>`.
 
 How to contribute a code change or a database schema change to Launchpad?
 -------------------------------------------------------------------------
@@ -219,9 +219,8 @@ What is the ``fastdowntime`` deployment process?
 Deploying cold database patches to the production Launchpad database requires
 having a very short downtime (usually < 10 seconds). That is why the process
 to deploy such cold database patches is called ``fastdowntime``. For details
-about hot and cold database patches, see `Live Patching`_.
+about hot and cold database patches, see :ref:`Live Patching <live-database-patching>`.
 
-.. _Live Patching: ../live-patching
 
 How do code changes in the ``stable`` branch get added to the ``db-stable`` branch?
 -----------------------------------------------------------------------------------

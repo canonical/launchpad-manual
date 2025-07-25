@@ -128,5 +128,5 @@ Further information
 -------------------
 
 Good communication within a team is essential. Let's set up a team
-`mailing list <Teams/MailingLists>`__ to help members discuss their
+:ref:`mailing list <launchpad-mailing-lists>` to help members discuss their
 work.

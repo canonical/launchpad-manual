@@ -68,7 +68,7 @@ PPAs.
 Supported series
 ----------------
 
-When building a source package you can specify one of the supported series in your `changelog file <http://packaging.ubuntu.com/html/debian-dir-overview.html#the-changelog>`_, which are listed at `the Launchpad PPA page <https://launchpad.net/ubuntu/+ppas>`_.
+When building a source package you can specify one of the supported series in your `changelog file <https://canonical-ubuntu-packaging-guide.readthedocs-hosted.com/en/latest/reference/debian-dir-overview/#the-changelog-file>`_, which are listed at `the Launchpad PPA page <https://launchpad.net/ubuntu/+ppas>`_.
 
 If you specify a different series the build will fail.
 
@@ -222,7 +222,7 @@ Your uploaded source package may refer to an orig.tar.gz file in the primary Ubu
 I get an error about versions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-When you upload a package, its version must exceed that of any existing package of the same name in the same Ubuntu distribution in your PPA. For more information, see the `Debian Policy Manual on versioning <http://www.debian.org/doc/debian-policy/ch-controlfields.html#s-f-Version>`_. You can also use ``dpkg --compare-version`` to check version numbers before uploading your package.
+When you upload a package, its version must exceed that of any existing package of the same name in the same Ubuntu distribution in your PPA. For more information, see the `Debian Policy Manual on versioning <https://www.debian.org/doc/debian-policy/ch-controlfields.html#version>`_. You can also use ``dpkg --compare-version`` to check version numbers before uploading your package.
 
 Why can't I upload the same version for multiple releases?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -270,6 +270,6 @@ What's this dput.cf stuff? What do I have to modify? I can't seem to follow the 
 How does this stuff differ from the Ubuntu archive? and REVU?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-PPA infrastructure is identical to the Ubuntu Primary archive, but it's a separate setup. It ie meant to provide a flat-learning-curve for users already used to the ubuntu/debian development tools. All the tools, procedures and features tend to be the same and shared between PPAs and ubuntu Primary archive. Our goal is to provide the shortest path between developers able to get things fixed or to add innovation to ubuntu context and the ubuntu users. `REVU <http://revu.tauware.de/>`_ is a parallel system currently maintained and used by `MOTU <https://wiki.ubuntu.com/MOTU/Packages/REVU>`_ members to have structured and transparent procedures for "producing and reviewing new packages". PPAs will be soon provide similar features.
+PPA infrastructure is identical to the Ubuntu Primary archive, but it's a separate setup. It ie meant to provide a flat-learning-curve for users already used to the ubuntu/debian development tools. All the tools, procedures and features tend to be the same and shared between PPAs and ubuntu Primary archive. Our goal is to provide the shortest path between developers able to get things fixed or to add innovation to ubuntu context and the ubuntu users. `REVU <https://wiki.ubuntu.com/MOTU/Packages/REVU/>`_ is a parallel system currently maintained and used by `MOTU <https://wiki.ubuntu.com/MOTU/>`_ members to have structured and transparent procedures for "producing and reviewing new packages". PPAs will be soon provide similar features.
 
 Additional information about upload issues is a available at :ref:`troubleshoot-package-upload-errors`.
