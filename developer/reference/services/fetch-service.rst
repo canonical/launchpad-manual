@@ -108,7 +108,7 @@ Bug trackers
 Deployment
 ----------
 We deploy the fetch service using the specs defined in
-`fetch service mojo specs <https://git.launchpad.net/~launchpad/launchpad-mojo-specs/+git/private/+ref/master>`_.
+`fetch service mojo specs <https://git.launchpad.net/~launchpad/launchpad-mojo-specs/+git/private/tree/lp-fetch-service/bundle.yaml>`_.
 
 In order to be able to evaluate new fetch service versions, we use different
 Snap channels and revisions for qastaging and production, so we are able to

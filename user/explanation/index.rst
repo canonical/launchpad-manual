@@ -24,4 +24,4 @@ Explanation
     Support requests <support-requests>
     Teams <teams/index>
     Translating <translating-with-launchpad/index>
-    Working with code <working-with-code/code-imports>
+    Working with code <working-with-code/index>
