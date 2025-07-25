@@ -91,8 +91,8 @@ charms would end up only existing on ``amd64``. We hope that providing charm
 building in Launchpad will encourage most charms to support multiple
 architectures by default.
 
-We currently only support building charms, not bundles. Contact us
-on Matrix at #launchpad:ubuntu.com if you have a use case for
+We currently only support building charms not bundles. `Contact us
+on Matrix <https://matrix.to/#/#launchpad:ubuntu.com>`_ if you have a use case for
 building bundles on Launchpad and would like to discuss it with us.
 
 We don't currently support building OCI images to attach as resources to

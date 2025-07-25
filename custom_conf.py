@@ -102,6 +102,7 @@ redirects = {}
 # Links to ignore when checking links
 
 linkcheck_ignore = [
+    r"http://www\.gnu\.org/.*",
     r"https://www\.gnu\.org/.*",
     r"http://www.fsf\.org/.*",
     r"http://sourceforge\.net/.*", #ignore, as works in browser
@@ -147,6 +148,7 @@ linkcheck_ignore = [
     "http://code.beta.launchpad.net/beagle",  #broken, bazaar being shut down
     "https://launchpad.net/drupal/main",  #broken, should be replaced in the example
     r"https://launchpad\.net/frobnob/.*",
+    "https://matrix.to/#/#launchpad:ubuntu.com",
     "Trunk/Glue",  #  needs update
     "/Background",
     "/Concepts",  #  needs update
@@ -156,7 +158,7 @@ linkcheck_ignore = [
     "irc.libera.chat",  #this is not an HTTP link
     r"https://github\.com/canonical/fetch-service*",  #private
     r"https://github\.com/canonical/fetch-operator*",  #private
-    "https://git.launchpad.net/charm-launchpad-buildd-image-modifier/tree/files/scripts/setup-ppa-buildd",  #private
+    r"https://git\.launchpad\.net/charm\-launchpad\-buildd\-image\-modifier/.*",  #private
     "https://git.zx2c4.com/cgit/",  #unfortunately very flaky
     "https://wiki.canonical.com/InformationInfrastructure/OSA/RequestLogging/LP/Cowboys",  #private
     "https://staging.launchpad.net",  #ignore, staging launchpad

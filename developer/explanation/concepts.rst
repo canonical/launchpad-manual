@@ -1,4 +1,5 @@
-=============
+.. _code-concepts:
+
 Code Concepts
 =============
 

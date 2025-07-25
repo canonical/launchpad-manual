@@ -189,6 +189,12 @@ in your mail reader of choice. After a few minutes, depending on network
 latencies, you should receive your message in your inbox, and the
 message will appear in the archive.
 
+.. note::
+
+   If you use Gmail and do not see your own posts arrive in your inbox, please 
+   note that there is a known issue that does not originate from Launchpad. 
+   However, your message should still appear in your list's archive.
+
 Unsubscribing
 -------------
 

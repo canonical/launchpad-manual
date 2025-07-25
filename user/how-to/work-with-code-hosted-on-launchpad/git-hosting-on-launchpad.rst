@@ -265,11 +265,10 @@ Please note that Launchpad can only mirror public repositories.
 Convert from Bazaar to Git
 --------------------------
 
-There
-`are some useful recommendations online <https://astrofloyd.wordpress.com/2012/09/06/convert-bzr-to-git/>`_
-for how to convert from Bazaar to Git. Here's one way that
-preserves tags and does a pretty good job for relatively simple Bazaar
-branches.
+There are useful recommendations from `launchpad team members <https://jugmac00.github.io/blog/migrate-a-repository-from-bazaar-to-git/>`_ 
+and `other sources <https://astrofloyd.wordpress.com/2012/09/06/convert-bzr-to-git/>`_ 
+for how to convert from Bazaar to Git. Here's one way that preserves tags and 
+does a pretty good job for relatively simple Bazaar branches.
 
 ::
 

@@ -68,7 +68,7 @@ PPAs.
 Supported series
 ----------------
 
-When building a source package you can specify one of the supported series in your `changelog file <hhttps://canonical-ubuntu-packaging-guide.readthedocs-hosted.com/en/latest/reference/debian-dir-overview/#the-changelog-file>`_, which are listed at `the Launchpad PPA page <https://launchpad.net/ubuntu/+ppas>`_.
+When building a source package you can specify one of the supported series in your `changelog file <https://canonical-ubuntu-packaging-guide.readthedocs-hosted.com/en/latest/reference/debian-dir-overview/#the-changelog-file>`_, which are listed at `the Launchpad PPA page <https://launchpad.net/ubuntu/+ppas>`_.
 
 If you specify a different series the build will fail.
 
