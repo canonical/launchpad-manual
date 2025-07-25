@@ -159,7 +159,7 @@ linkcheck_ignore = [
     r"https://github\.com/canonical/fetch-service*",  #private
     r"https://github\.com/canonical/fetch-operator*",  #private
     r"https://git\.launchpad\.net/charm\-launchpad\-buildd\-image\-modifier/.*",  #private
-    "https://matrix.to/#/#documentation:ubuntu.com" #ignore, link works in browser
+    r"https://matrix\.to/#/#documentation:ubuntu\.com" #ignore, link works in browser
     "https://git.zx2c4.com/cgit/",  #unfortunately very flaky
     "https://wiki.canonical.com/InformationInfrastructure/OSA/RequestLogging/LP/Cowboys",  #private
     "https://staging.launchpad.net",  #ignore, staging launchpad
