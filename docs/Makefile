@@ -117,8 +117,7 @@ clean-doc:
 	rm -rf $(SPHINXDIR)/.doctrees
 
 spellcheck: spellcheck-install
-	. $(VENV) ; python3 -m pyspelling -c $(SPHINXDIR)/spellingcheck.yaml -j $(shell nproc)
-
+	. $(VENV) ; python3 -m pyspelling -c $(SPHINXDIR)/spellingcheck.yaml -j $(shell nproc) >>spellcheck.txt
 spelling: html spellcheck
 
 linkcheck-manual: install
