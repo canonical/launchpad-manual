@@ -148,7 +148,6 @@ linkcheck_ignore = [
     "http://code.beta.launchpad.net/beagle",  #broken, bazaar being shut down
     "https://launchpad.net/drupal/main",  #broken, should be replaced in the example
     r"https://launchpad\.net/frobnob/.*",
-    "https://matrix.to/#/#launchpad:ubuntu.com",
     "Trunk/Glue",  #  needs update
     "/Background",
     "/Concepts",  #  needs update
@@ -159,7 +158,6 @@ linkcheck_ignore = [
     r"https://github\.com/canonical/fetch-service*",  #private
     r"https://github\.com/canonical/fetch-operator*",  #private
     r"https://git\.launchpad\.net/charm\-launchpad\-buildd\-image\-modifier/.*",  #private
-    r"https://matrix\.to/#/#documentation:ubuntu\.com" #ignore, link works in browser
     "https://git.zx2c4.com/cgit/",  #unfortunately very flaky
     "https://wiki.canonical.com/InformationInfrastructure/OSA/RequestLogging/LP/Cowboys",  #private
     "https://staging.launchpad.net",  #ignore, staging launchpad
