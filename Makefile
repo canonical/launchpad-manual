@@ -105,18 +105,11 @@ spelling: html
 
 .PHONY: spelling
 
-
 linkcheck: install
-	@echo "skipping linkcheck"
-	@true
+	. $(VENV) ; $(SPHINXBUILD) -b linkcheck "$(SOURCEDIR)" "$(BUILDDIR)" \
+	$(SPHINXOPTS) 
 
 .PHONY: linkcheck
-
-linkcheck-manual: install
-	. $(VENV) ; $(SPHINXBUILD) -b linkcheck "$(SOURCEDIR)" "$(BUILDDIR)" \
-	$(SPHINXOPTS)
-
-.PHONY: linkcheck-manual
 
 
 woke: woke-install

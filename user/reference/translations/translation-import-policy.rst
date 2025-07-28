@@ -21,7 +21,7 @@ translation effort in Launchpad. The rest of the rules are technical.
 .. note::
     If you follow these rules, the easiest and quickest way to get
     your templates and translations automatically into Launchpad is to
-    `import them from a Bazaar branch <Translations/ImportingFromBazaarBranches>`__.
+    :ref:`import them from a Bazaar branch <import-translation-from-bazaar-branch>`.
 
 Social rules
 ------------
@@ -29,10 +29,8 @@ Social rules
 When you request a new translation template import into Launchpad, you
 should make sure of the following:
 
--  The project is published using an `open source
-   licence <Legal#Project_eligibility>`__, or the project has a valid
-   `commercial
-   subscription <https://launchpad.net/+tour/join-launchpad#commercial>`__.
+-  The project is published using an :ref:`open source licence <project-licenses>`, 
+   or the project has a valid `commercial subscription <https://launchpad.net/+tour/join-launchpad#commercial>`__.
 -  The project leaders are happy to publish translations made in
    Launchpad for their project using the BSD licence.
 -  The project is not part of an organisation -- such as GNU or Debian

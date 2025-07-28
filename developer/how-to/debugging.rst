@@ -505,7 +505,7 @@ Profiling page requests
 -----------------------
 
 You can generate
-`KCacheGrind <http://kcachegrind.sourceforge.net/html/Home.html>`__ and
+`KCacheGrind <https://apps.kde.org/kcachegrind/>`__ and
 pstats (Python standard library) profiles of requests on your local
 system.
 

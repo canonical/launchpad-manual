@@ -1,3 +1,5 @@
+.. _exp-team-management:
+
 Team management
 ===============
 

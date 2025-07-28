@@ -102,58 +102,94 @@ redirects = {}
 # Links to ignore when checking links
 
 linkcheck_ignore = [
-    r"http://www.gnu\.org/.*",
+    r"http://www\.gnu\.org/.*",
+    r"https://www\.gnu\.org/.*",
     r"http://www.fsf\.org/.*",
+    r"http://sourceforge\.net/.*", #ignore, as works in browser
+    "https://sourceforge.net/",
     "http://127.0.0.1:8000",
     r"https://app\.diagrams\.net.*",  # ignore, as works in browser, but link checker has some issues
     "https://archive.ph/CAqQm",  # ignore, as works in browser, but link checker has some issues
+    r"http://bazaar\.launchpad\.net/.*",  #bazaar is in the process of being shutdown
+    r"http://www\.searchtools\.com/.*",  #ignore, example link, was never intended to be clicked
     "https://bazaar.launchpad.net/lp-production-config",  # private
     "https://bazaar.staging.launchpad.net",  # broken, unclear why XXX 2023-10-14: jugmac00- check with team
     r"https://www\.breezy-vcs\.org/.*",  # broken, returns "Connection refused" on port 443
-    r"https://www\.bazaar-vcs\.org/.*",  # broken, returns "Connection refused" on port 443
-    "https://bugs.launchpad.net/charm-launchpad-buildd-image-modifier",  # private
-    "https://bugs.launchpad.net/launchpad-vbuilder-manage",  # private
-    "http://example.com/.*",  # ignore, example links
+    r"http://doc\.bazaar-vcs\.org/.*",  #broken, bazaar being shut down
+    "https://www.bazaar-vcs.org",  #broken, bazaar being shut down
+    r"http://bazaar-vcs\.org",  #broken, bazaar being shut down
+    "http://www.bazaar-vcs.org/",  #broken, bazaar being shut down
+    r"https://launchpad\.net/~bugsquad/\+mentoring",  #broken, offering may be outdated
+    r"https://launchpad\.net/\+access-token",  #broken, access restricted
+    r"https://launchpad\.net/\+request-token",  #broken, access restricted 
+    r"https://drive\.google\.com/file/d/1hUivL07Msoyej3wd_T4hMAX61EJzfE38/view\?usp=drive_link", #ignore, internal video
+    "https://bugs.launchpad.net/charm-launchpad-buildd-image-modifier",  #private
+    "https://bugs.launchpad.net/launchpad-vbuilder-manage",  #private
+    "http://example.com/.*",  #ignore, example links
     "https://launchpad.net/canonical-mojo-specs",  # private
-    r"https://launchpad\.test.*",  # ignore, local test setup
-    "Trunk/Glue",  # needs update
+    r"https://launchpad\.test.*",  #ignore, local test setup
+    r"https://bugs\.launchpad\.net/\+code/.*",
+    r"https://bugs\.qastaging\.launchpad\.net/.*",  #ignore, example link, was never intended to be clicked
+    r"http://code\.beta\.launchpad\.net/.*",
+    "http://diacritice.svn.sourceforge.net/viewvc/diacritice/trunk/",  #ignore, as works in browser, but link checker has some issues
+    "http://epydoc.sourceforge.net/fields.html",  #ignore, as works in browser, but link checker has some issues
+    r"http://api\.staging\.launchpad\.net/.*",  #ignore, as works in browser, but link checker has some issues
+    "http://i18n.ro/Ghidul_traducatorului_de_software",  #broken
+    r"https://matrix\.to/\#/\#documentation:ubuntu\.com",
+    "http://roundup.sourceforge.net/",  #ignore, as works in browser
+    "http://trac-hacks.org/wiki/XmlRpcPlugin",
+    "http://www.mysite.com/oauth-callback",  #ignore, not a real website
+    r"https://help\.launchpad\.net/.*",  #ignore, all critical links changed, others will redirect to the manual's landing page
+    r"https://bugs\.beta\.launchpad\.net/.*",  #broken, bazaar being shut down
+    "https://code.launchpad.net/~joe/frobnob/trunk",  #ignore, example link, was never intended to be clicked 
+    "https://deployable.ols.canonical.com/project/launchpad",  #private
+    "https://docutils.sourceforge.net/docs/user/rst/quickref.html",  #Ignore, works in browser
+    "https://epydoc.sourceforge.net/fields.html",  #Ignore, works in browser
+    "https://git.launchpad.net/launchpad/tree/doc/bug-export.rnc",  #broken. Process may need to be replaced/upgraded
+    "http://code.beta.launchpad.net/beagle",  #broken, bazaar being shut down
+    "https://launchpad.net/drupal/main",  #broken, should be replaced in the example
+    r"https://launchpad\.net/frobnob/.*",
+    "Trunk/Glue",  #  needs update
     "/Background",
-    "/Concepts",  # needs update
-    "JavascriptUnitTesting/MockIo",  # needs update
-    "https://git.launchpad.net/launchpad-mojo-specs/tree/mojo-lp-git/services",  # private
-    "https://deployable.ols.canonical.com/project/launchpad-db",  # private
-    "irc.libera.chat",  # this is not an HTTP link
-    r"https://github\.com/canonical/fetch-service*",  # private
-    r"https://github\.com/canonical/fetch-operator*",  # private
-    "https://git.launchpad.net/charm-launchpad-buildd-image-modifier/tree/files/scripts/setup-ppa-buildd",  # private
-    "https://git.zx2c4.com/cgit/",  # unfortunately very flaky
-    "https://wiki.canonical.com/InformationInfrastructure/OSA/RequestLogging/LP/Cowboys",  # private
-    "https://staging.launchpad.net",  # ignore, staging launchpad
-    r"https://wiki\.canonical\.com/.*",  # private
+    "/Concepts",  #  needs update
+    "JavascriptUnitTesting/MockIo",  #needs update
+    "https://git.launchpad.net/launchpad-mojo-specs/tree/mojo-lp-git/services",  #private
+    "https://deployable.ols.canonical.com/project/launchpad-db",  #private
+    "irc.libera.chat",  #this is not an HTTP link
+    r"https://github\.com/canonical/fetch-service*",  #private
+    r"https://github\.com/canonical/fetch-operator*",  #private
+    r"https://git\.launchpad\.net/charm\-launchpad\-buildd\-image\-modifier/.*",  #private
+    "https://git.zx2c4.com/cgit/",  #unfortunately very flaky
+    "https://wiki.canonical.com/InformationInfrastructure/OSA/RequestLogging/LP/Cowboys",  #private
+    "https://staging.launchpad.net",  #ignore, staging launchpad
+    r"https://wiki\.canonical\.com/.*",  #private
     r"https://www\.nongnu\.org/.*",
-    r"https://www\.gnu\.org/.*",
     r"https://www\.socialtext\.net/.*",
     r"https://translations\.launchpad\.net/.*",
     r"http://localhost.*",
-
-     "http://www.ubuntu.com/community/ubuntustory/licensing", # works in browser, linkchecker issue
+    "http://www.ubuntu.com/community/ubuntustory/licensing",  #works in browser, linkchecker issue
+    "http://www.boost.org/LICENSE_1_0.txt",  #Unexpected, Should be working
     #Uncertain Dead - May not be replaceable
-    "/Estonian",
-    "/Georgian",
-    "/Indonesian",
-    "/Italian",
-    "/Korean",
-    "/Russian",
-    "../Vietnamese",
-    #Replaceable Dead - Can probably be replaced by an equivalent
-    "/../POTemplates", # - https://docs.lokalise.com/en/articles/1400767-gettext-po-pot
+     "Translations/Czech",  #Not a valid link
+    r"http://www\.softcatala\.org/.*",  #Broken, content not valid
+    "/Estonian",  #Not a valid link
+    "/Georgian",  #Not a valid link
+    "/Indonesian",  #Not a valid link
+    "/Italian",  #Not a valid link
+    "/Korean",  #Not a valid link
+    "/Russian",  #Not a valid link
+    "../Vietnamese",  #Not a valid link
+    "faq-2",  #Not a link
+    "faq=2",  #Not a link
+    "faq_#2",  #Not a link
+    "faq_1",  #Not a link
+    "faq_item_1",  #Not a link
+    "faq_number_2",  #Not a link
+    "/../POTemplates",  # - https://docs.lokalise.com/en/articles/1400767-gettext-po-pot
     "API",
-
-    #Incorrect or non-existent file reference - Referenced file moved, deleted, or renamed
     "/../YourProject/ImportingTemplates",
     "Answer syntax parsing <Comments>",
-
-
+    "https://help.ubuntu.com/community/SSO/FAQs" #timeout, should be temporary
 ]
 
 # Pages on which to ignore anchors

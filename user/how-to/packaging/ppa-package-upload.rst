@@ -137,7 +137,7 @@ sort lexicographically.) If you need to release an updated package,
 increment the ``~ppa*n*`` suffix. Specifying the series version here
 doesn't change the series that you are targetting; this must still be
 set correctly as described in the Ubuntu packaging guide's section on
-the `changelog file <http://packaging.ubuntu.com/html/debian-dir-overview.html#the-changelog>`_.
+the `changelog file <https://canonical-ubuntu-packaging-guide.readthedocs-hosted.com/en/latest/reference/debian-dir-overview/#the-changelog-file>`_.
 
 Next steps
 ----------

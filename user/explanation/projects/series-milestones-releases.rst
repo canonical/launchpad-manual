@@ -179,7 +179,7 @@ Series goals
 
 As series tend to represent planned releases, it's useful to target bugs and blueprints to particular series. These are called series goals and must be approved by either the project or that series' release manager.
 
-`BeeSeek <https://launchpad.net/beeseek/>`_ is a project to create an open source peer to peer search engine. BeeSeek drivers have accepted `bug 182821 <https://bugs.launchpad.net/beeseek/+bug/182821>`_ as affecting two of their series, `Hive <https://launchpad.net/beeseek/hive>`_ and `Honeybee <https://launchpad.net/beeseek/honeybee>`_.
+`AppArmor <https://launchpad.net/apparmor/>`_ is a project for a security module that protects linux systems by limiting the capabilities of individual applications. AppArmor drivers have accepted `bug 2105986 <https://bugs.launchpad.net/apparmor/+bug/2105986>`_ as affecting six of their series.
 
 Only the bug supervisor for a project can nominate a bug or blueprint as affecting a particular series with the Nominate for release link.
 

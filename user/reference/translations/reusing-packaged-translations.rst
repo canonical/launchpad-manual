@@ -52,6 +52,6 @@ compatibility between licenses.
 
 For the most common case of reusing in a GPL licensed project, you have
 to check the `GPL license compatibility
-list <http://www.gnu.org/philosophy/license-list.html#GPLCompatibleLicenses>`__.
+list <https://www.gnu.org/licenses/license-list.html#GPLCompatibleLicenses>`__.
 In general, you can reuse both LGPL and GPL licensed translations in
 another GPL licensed project.

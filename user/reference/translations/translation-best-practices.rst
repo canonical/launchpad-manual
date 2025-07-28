@@ -37,7 +37,7 @@ Demonstration project and user name
 For examples in this page, let's assume:
 
 -  The Launchpad project is named ``frobnob``. Like all projects, frobnob
-   would be hosted at https://launchpad.net/frobnob on Launchpad.
+   would be hosted at https://launchpad.net/frobnob/ on Launchpad.
 -  Your user name is ``joe``.
 
 .. note::

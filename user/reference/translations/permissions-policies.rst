@@ -37,5 +37,5 @@ translations overview page.
 Further information
 -------------------
 
-Now that you've decided your review policy, you need to `choose a
-translation group <Translations/YourProject/ChoosingAGroup>`__.
+Now that you've decided your review policy, you need to :ref:`choose a
+translation group <launchpad-translators-group>`.

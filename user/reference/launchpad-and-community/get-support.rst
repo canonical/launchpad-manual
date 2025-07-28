@@ -1,3 +1,5 @@
+.. _getting-support-in-launchpad:
+
 Getting support in Launchpad
 ============================
 
