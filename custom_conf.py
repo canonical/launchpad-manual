@@ -135,6 +135,7 @@ linkcheck_ignore = [
     "http://epydoc.sourceforge.net/fields.html",  #ignore, as works in browser, but link checker has some issues
     r"http://api\.staging\.launchpad\.net/.*",  #ignore, as works in browser, but link checker has some issues
     "http://i18n.ro/Ghidul_traducatorului_de_software",  #broken
+    r"https://matrix\.to/\#/\#documentation:ubuntu\.com",
     "http://roundup.sourceforge.net/",  #ignore, as works in browser
     "http://trac-hacks.org/wiki/XmlRpcPlugin",
     "http://www.mysite.com/oauth-callback",  #ignore, not a real website
