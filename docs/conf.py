@@ -270,6 +270,8 @@ linkcheck_ignore = [
     "http://code.beta.launchpad.net/beagle",  #broken, bazaar being shut down
     "https://launchpad.net/drupal/main",  #broken, should be replaced in the example
     r"https://launchpad\.net/frobnob/.*",
+    r"https://buildbot\.net.*",
+
     "Trunk/Glue",  #  needs update
     "/Background",
     "/Concepts",  #  needs update
