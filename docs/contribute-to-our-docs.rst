@@ -70,7 +70,7 @@ You can also browse through the types of issues you'll be working on in the `COD
 Other channels to get involved with the academy include:
 
 - The CODA `discussion forum`_ on the Ubuntu Community Hub
-- The `Matrix channel`_ for interactive chat
+- The Matrix channel **#documentation:ubuntu.com** for interactive chat
 
 You can also `follow Canonical's documentation team on Fosstodon`_ for the latest updates and information 
 on upcoming events.
@@ -84,5 +84,4 @@ on upcoming events.
 .. _CODA website: https://documentationacademy.org/
 .. _CODA repository: https://github.com/canonical/open-documentation-academy/issues
 .. _discussion forum: https://discourse.ubuntu.com/c/community/open-documentation-academy/166
-.. _Matrix channel: https://matrix.to/#/#documentation:ubuntu.com
 .. _follow Canonical's documentation team on Fosstodon: https://fosstodon.org/@CanonicalDocumentation

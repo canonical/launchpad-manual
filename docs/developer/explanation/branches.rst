@@ -1,3 +1,5 @@
+.. _about-launchpad-branches:
+
 About Launchpad branches
 ========================
 

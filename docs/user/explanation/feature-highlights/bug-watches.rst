@@ -19,11 +19,8 @@ Automatically monitor the status of external bugs
 Open the bug in a new tab in your browser using this link, so you can
 interact with it more directly: https://launchpad.net/bugs/86103
 
-Mouse over those two links in the "assignee" column and you will see
-URLs for the SUN Java and Debian bug trackers respectively:
-
-- https://jdk-distros.dev.java.net/issues/show_bug.cgi?id=20
-- http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=402165
+Move the pointer over the links in the "assignee" column and you will see
+URLs for the SUN Java, Debian, and other bug trackers.
 
 This is one of the unique features of Launchpad. It allows you to track
 the status of bugs in external trackers that run Bugzilla, Round``Up,

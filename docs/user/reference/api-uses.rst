@@ -27,7 +27,7 @@ Below are programs that use the `Launchpad APIs <https://help.launchpad.net/API>
      - 
    * - `apport <http://launchpad.net/apport>`_
      - A crash detection system that automatically generates reports with debugging information from crashed programs and provides UI frontends for handling these reports.
-     - See the script `apport-collect <http://bazaar.launchpad.net/%7Eubuntu-core-dev/apport/ubuntu/annotate/head%3A/debian/local/apport-collect>`_, which `adds apport data to existing bug reports <http://blog.grossmeier.net/2009/03/02/apport-collect-just-what-you-wanted/>`_
+     - See the script `apport-collect <http://bazaar.launchpad.net/%7Eubuntu-core-dev/apport/ubuntu/annotate/head%3A/debian/local/apport-collect>`_, which adds apport data to existing bug reports.
    * - `ubuntu-dev-tools <http://wiki.ubuntu.com/UbuntuDevTools>`_
      - A collection of useful tools that Ubuntu developers use to make their packaging work a lot easier (bug filing, packaging preparation, package analysis, etc).
      - See the `manage-credentials <http://bazaar.launchpad.net/%7Eubuntu-dev/ubuntu-dev-tools/trunk/annotate/head%3A/manage-credentials>`_, `requestsync <http://bazaar.launchpad.net/%7Eubuntu-dev/ubuntu-dev-tools/trunk/annotate/head%3A/requestsync>`_, `massfile <http://bazaar.launchpad.net/%7Eubuntu-dev/ubuntu-dev-tools/trunk/annotate/head%3A/massfile>`_, `lp-set-dup <http://bazaar.launchpad.net/%7Eubuntu-dev/ubuntu-dev-tools/trunk/annotate/head%3A/lp-set-dup>`_, `grab-attachments <http://bazaar.launchpad.net/%7Eubuntu-dev/ubuntu-dev-tools/trunk/annotate/head%3A/grab-attachments>`_, and `hugdaylist <http://bazaar.launchpad.net/%7Eubuntu-dev/ubuntu-dev-tools/trunk/annotate/head%3A/hugdaylist>`_ scripts. They're all sharing the `ubuntutools/lp/libsupport.py <http://bazaar.launchpad.net/%7Eubuntu-dev/ubuntu-dev-tools/trunk/annotate/head%3A/ubuntutools/lp/libsupport.py>`_ library, which might be a good place to start.
@@ -45,7 +45,7 @@ Below are programs that use the `Launchpad APIs <https://help.launchpad.net/API>
      - 
    * - `OpenHatch <http://openhatch.org/>`_
      - A website for talking about your Free Software contributions and finding new ways to contribute
-     - We use launchpadlib to convert email addresses into lp.net usernames, and we pull information about your project experiences from your lp.net user page. See the `script <https://gitorious.org/openhatch/oh-mainline/blobs/master/mysite/customs/bugtrackers/launchpad.py>`_.
+     - We use launchpadlib to convert email addresses into lp.net usernames, and we pull information about your project experiences from your lp.net user page.
    * - `Laika <https://launchpad.net/laika>`_
      - "a guide dog for launchpad" -- prints a summary of the bugs you touched this week
      -

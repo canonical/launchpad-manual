@@ -33,7 +33,7 @@ You can use Launchpad to log into any of the growing number of sites that suppor
 * `PBWiki <http://pbwiki.com>`_ - the free wiki hosting service
 * `Wordpress <http://wordpress.org>`_ blogs using an OpenID plugin
 * `LiveJournal <http://livejournal.com>`_.
-* `SourceForge <http://sourceforge.net>`_
+* `SourceForge <https://sourceforge.net/>`_
 
 Find out more about `where you can use OpenID <http://en.wikipedia.org/wiki/OpenID#Adoption>`_.
 

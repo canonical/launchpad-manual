@@ -7,8 +7,8 @@ Launchpad Answers
 Using Launchpad to find help is easy. First off, visit the Answers page
 for the project or distribution you're using.
 
-**Example:** if you want help with the NULL project, you'd visit
-https://answers.launchpad.net/null
+**Example:** if you want help with the ubuntu project, you'd visit
+https://answers.launchpad.net/ubuntu
 
 Follow the ```Ask a question``` link and choose the language with
 which you're most comfortable.

@@ -53,5 +53,4 @@ Launchpad will email everyone in that team every time a new bug is filed
 against the project or package.
 
 You can find out more about Launchpad teams in the next step on our
-tour, `Understanding Launchpad
-teams <FeatureHighlights/TeamManagement>`__.
+tour, :ref:`Understanding Launchpad teams <creating-and-running-launchpad-teams>`.

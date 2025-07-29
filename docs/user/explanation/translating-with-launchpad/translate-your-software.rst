@@ -419,7 +419,7 @@ Below you will find a set of common practices for running a team
          example "Tile children" may sound funny in many languages so
          try "Arrange windows as tile". The original text is not always
          the correct one.
-      -  a common terminology or a link to a common terminology dictionary or glossary. Don't forget about `open-tran.eu <http://open-tran.eu>`__ . You can also install `the glossary used by Romanian teams <http://www.i18n.ro/glosar>`__ (`here is the code <http://diacritice.svn.sourceforge.net/viewvc/diacritice/trunk/>`__)
+      -  a common terminology or a link to a common terminology dictionary or glossary. Don't forget about `open-tran.eu <http://open-tran.eu>`__ . You can also install the glossary used by Romanian teams.(`here is the code <http://diacritice.svn.sourceforge.net/viewvc/diacritice/trunk/>`__)
       -  information about what should be translated and what not
       -  specific rules for translating into your language
       -  a list of frequent errors.

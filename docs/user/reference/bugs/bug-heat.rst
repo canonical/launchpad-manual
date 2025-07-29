@@ -28,7 +28,7 @@ to suggest the bug requires your attention. For example:
 -  whether the bug is marked is a security issue
 -  the number of duplicates of the bug.
 
-You can find `full details of how Launchpad calculates bug heat <https://dev.launchpad.net/Bugs/BugHeat#Algorithm>`_ in our development wiki.
+You can find full details of how Launchpad calculates bug heat in https://bugs.launchpad.net/+help-bugs/bug-heat.html
 
 Where to find bug heat
 ----------------------

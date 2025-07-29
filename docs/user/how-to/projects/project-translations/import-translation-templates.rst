@@ -15,18 +15,15 @@ manual <http://www.gnu.org/software/gettext/manual/gettext.html>`__.
 
 You can choose from two methods of importing translation templates:
 
-.. tip::
-    Automatic and ongoing imports of your templates, and
-    optionally also `translation
-    files <Translations/YourProject/ImportingTranslations>`__, from a
-    Bazaar branch you specify - or `manually upload .pot files <#manual>`__
-    using the web interface.
+- Automatic and ongoing imports of your templates, and optionally also :ref:`translation files <how-to-import-project-translations>`, from a Bazaar branch you specify
+
+- `Manually upload .pot files <#manual-translation-template-imports>`_ using the web interface.
 
 Push the branch to Launchpad
 ----------------------------
 
 You can run concurrent separate translation efforts for each
-`series <Projects/SeriesMilestonesRelease>`__ of your project. For now,
+:ref:`series <planning-and-recording-releases>` of your project. For now,
 let's work with the ``trunk`` series that Launchpad created by default
 when you registered your project.
 
@@ -66,9 +63,7 @@ click ``Settings``.
 settings``.
 
 We can ignore the other option for now, as that's explained in our
-`Importing
-translations <Translations/YourProject/ImportingTranslations>`__
-article.
+:ref:`Importing translations <how-to-import-project-translations>` article.
 
 Once you've completed both stages, Launchpad will schedule its first
 import to take place within the next 15 minutes.
@@ -85,7 +80,7 @@ translation tab for the product series.
 
 .. important::
 
-    You should follow our `translations import policy <Translations/ImportPolicy>`_
+    You should follow our :ref:`translations import policy <translation-import-policy>`
     when creating and adding your templates.
 
 Name template
@@ -208,6 +203,4 @@ Next steps
 ----------
 
 If you're likely to make translations elsewhere, you can have Launchpad
-`automatically
-import <Translations/YourProject/ImportingTranslations>`__ them from the
-same Bazaar branch.
+automatically import them from the same Bazaar branch.

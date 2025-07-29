@@ -1,3 +1,5 @@
+.. _project-licenses:
+
 Licenses
 ========
 
@@ -50,7 +52,7 @@ case-by-case basis (but it's incredibly rare that that would come up).
     - http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231
 
 - Unicode, Inc. License
-    - http://unicode.org/copyright.html#Exhibit1
+    - https://spdx.org/licenses/Unicode-TOU.html
 
 - zlib/libpng License
     - http://www.opensource.org/licenses/zlib-license.php

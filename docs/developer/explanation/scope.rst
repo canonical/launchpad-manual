@@ -1,4 +1,5 @@
-==================
+.. _what-is-launchpad:
+
 What is Launchpad?
 ==================
 

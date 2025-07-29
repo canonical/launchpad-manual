@@ -7,15 +7,15 @@ Logging in
 ----------
 
 To login in the help wiki you need to already have a Launchpad account.
-If you do not have one yet, read `how to create a new
-profile <YourAccount/NewAccount>`__.
+If you do not have one yet, read :ref:`how to create a new
+profile <create-and-personalise-your-launchpad-account>`.
 
 Resetting password
 ------------------
 
 If you forgot your password, resetting it is simple: go to
-https://launchpad.net/+forgottenpassword and insert the e-mail address
-associated with your Launchpad account. You will receive a new password
+https://login.launchpad.net/ and click on `Forgot your password?`. Insert the e-mail address
+associated with your Launchpad account and continue. You will receive a new password
 soon.
 
 Changing settings
@@ -55,4 +55,3 @@ WikiSandBox page and the second subscribes to all subpages of it:
    WikiSandBox
    WikiSandBox/.*
 
-For more details, please see `Help on subscribing <HelpOnSubscribing>`_.

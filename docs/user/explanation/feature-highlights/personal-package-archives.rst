@@ -24,11 +24,6 @@ Your friends can then add your PPA's URL to their
 any other and receive automatic updates when you upload an updated
 version.
 
-As an example, here's a PPA where cool Compiz 3D desktop packages were
-developed early in the adoption of the technology by Ubuntu:
-
-    https://launchpad.net/~amaranth/+archive
-
 Ubuntu versions
 ---------------
 
@@ -45,11 +40,6 @@ A team can have their own PPA too. This allows a group of developers to
 collaborate on a set of packages. Anyone in the team can upload to the
 team PPA, so it is a convenient way for a group to work together on a
 whole bunch of packages which work together as a set.
-
-For example, this is the Kubuntu team's PPA, where they did a lot of
-preliminary work on KDE packaging for hard-core experimental users:
-
-    https://launchpad.net/~kubuntu-members/+archive
 
 Activating your PPA
 -------------------
