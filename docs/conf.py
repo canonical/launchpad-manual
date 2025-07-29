@@ -270,7 +270,8 @@ linkcheck_ignore = [
     "http://code.beta.launchpad.net/beagle",  #broken, bazaar being shut down
     "https://launchpad.net/drupal/main",  #broken, should be replaced in the example
     r"https://launchpad\.net/frobnob/.*",
-    r"https://buildbot\.net.*",
+    r"https://buildbot\.net.*", #ignore, expired SSL certificate
+    r"https://docs\.buildbot\.net/.*", #ignore, expired SSL certificate
 
     "Trunk/Glue",  #  needs update
     "/Background",
