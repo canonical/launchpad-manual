@@ -3,6 +3,10 @@ Release Notes
 
 July 2025
 +++++++++
+30 July
+
+- Update appserver log rotation from daily to hourly
+
 11 July
 
 - Launchpad no longer supports the creation of new mailing lists. For more
