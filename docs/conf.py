@@ -183,7 +183,7 @@ html_baseurl = 'https://canonical-launchpad-manual.readthedocs-hosted.com'
 
 if 'READTHEDOCS_VERSION' in os.environ:
     version = os.environ["READTHEDOCS_VERSION"]
-    sitemap_url_scheme = '{version}{link}'
+    sitemap_url_scheme = '{link}'
 else:
     sitemap_url_scheme = 'MANUAL/{link}'
 
@@ -196,7 +196,7 @@ sitemap_show_lastmod = True
 #######################
 
 html_static_path = ["_static"]
-templates_path = [".sphinx/_templates"]
+templates_path = ["_templates"]
 
 
 #############
