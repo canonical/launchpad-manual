@@ -12,7 +12,7 @@
 # Vale
 .sphinx/styles/*
 .sphinx/vale.ini.swp
-.sphinx/vale.ini.
+.sphinx/vale.ini
 
 # Build outputs
 _build
