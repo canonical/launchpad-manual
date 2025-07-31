@@ -14,7 +14,7 @@ Pre-requisites
 3. You have a test project in Launchpad. You can create one `here <https://launchpad.net/projects/+new>`_.
 4. You have a repository containing a Rock recipe. You can fork the `helloworld-rock <https://launchpad.net/~launchpad/launchpad-tutorials/+git/helloworld-rock>`_ repository.
 
-If you want to create a new repository from scratch, you can start from `there <https://documentation.ubuntu.com/rockcraft/en/latest/how-to/get-started/>`_.
+If you want to create a new repository from scratch, you can start from `there <https://documentation.ubuntu.com/rockcraft/stable/how-to/get-started/>`_.
 
 Creating the recipe
 ===================
