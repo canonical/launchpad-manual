@@ -5,7 +5,6 @@ matrix:
     d: en_GB
   dictionary:
     wordlists:
-    - .wordlist.txt
     - .custom_wordlist.txt
     output: .sphinx/.wordlist.dic
   sources:
@@ -17,12 +16,16 @@ matrix:
       - title
       - alt
       ignores:
-      - code
-      - pre
-      - spellexception
-      - link
-      - title
-      - div.relatedlinks
-      - div.visually-hidden
-      - img
-      - a.p-navigation__link
+        - code
+        - pre
+        - spellexception
+        - link
+        - title
+        - div.relatedlinks
+        - strong.command
+        - div.visually-hidden
+        - img
+        - a.p-navigation__link
+        - a.contributor
+
+
