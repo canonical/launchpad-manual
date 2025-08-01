@@ -370,26 +370,16 @@ exclude_patterns = [
     "readme.rst",
 ]
 
-# Adds custom CSS files, located under 'html_static_path'
-
-html_css_files = ['custom.css']
-
-
-# Adds custom JavaScript files, located under 'html_static_path'
-
-# html_js_files = []
-
 # Add JavaScript files (located in .sphinx/_static/)
-custom_html_js_files = [
-	'js/bundle.js',
+
+html_js_files = [
+    'js/bundle.js',
 ]
 
 # Specifies a reST snippet to be appended to each .rst file
 
 # Add CSS files (located in .sphinx/_static/)
-custom_html_css_files = [
-	'cookie-banner.css'
-]
+html_css_files = ['cookie-banner.css']
 
 rst_epilog = """
 .. include:: /reuse/links.txt
