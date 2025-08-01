@@ -40,14 +40,11 @@ Supported architectures
 -----------------------
 
 When Launchpad builds a source package in a PPA, by default it creates
-binaries for:
+binaries for amd64.
 
--  `x86 <http://en.wikipedia.org/wiki/X86>`_
--  `AMD64 <http://en.wikipedia.org/wiki/AMD64>`_
-
-You may also request builds for arm64, armhf, ppc64el, and/or s390x. Use
-the "Change details" page for the PPA to enable the architectures you
-want.
+You may also request builds for arm64, armhf, i386, powerpc, ppc64el, riscv64
+and/or s390x. Use the "Change details" page for the PPA to enable the
+architectures you want.
 
 Changing the set of architectures for which a PPA builds does not create
 new builds for source packages that are already published in that PPA;
@@ -159,10 +156,6 @@ Packages will remain published until either you remove them yourself, or you
 supersede them with newer versions, or the underlying release of Ubuntu against which they
 were built becomes obsolete and unmaintained.
 
-.. note::
-    You cannot remove packages from your PPA at the moment. We will
-    add this functionality to Launchpad soon.
-
 What formats of packages are supported?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -185,26 +178,15 @@ for example, you can have a team of people interested in "server" issues that ha
 version of the Apache package, and another interested in "workstation" issues that has
 a different version of the same package, each in a different PPA. Please don't abuse this capability!
 
-Why are only x86 and amd64 architectures supported?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-We use the Xen virtualisation system for security during the build process,
-ensuring that each build has a clean build environment and different developers
-cannot impact on one another's builds accidentally. This technology is only available on x86 and amd64.
-
-My PPA has reached the 1GB limit. What can I do?
+My PPA has reached the 8GB limit. What can I do?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If your PPA has reached the 1GB limit, there are a few things you can do.
+If your PPA has reached the 8GB limit, there are a few things you can do.
 
 The easiest option is to remove packages from it. While obvious, it isn't always obvious that packages may not have been automatically superseded in the archive; this happens, for instance, when the package name varies. Pay particular attention to packages that have ``.orig.tar.gz`` files that are used by multiple versions; those packages will only be superseded when all packages that use that ``.orig`` file have also been superseded.
 
 If you believe you have good reason to request additional disk space, file a question with a written justification at `<https://answers.launchpad.net/soyuz>`_ and it will be considered. A Launchpad admin will consider your request and either defer it or provide you with alternative advice.
 
-Why do I get a warning about unauthenticated packages?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-At present the PPA system does not sign the archive, and Ubuntu's apt will issue a warning when fetching from such archives. This is `bug 125103 <https://launchpad.net/bugs/125103>`_,  and should be fixed by about March of 2008.
 
 Technical Questions
 ~~~~~~~~~~~~~~~~~~~
@@ -256,16 +238,16 @@ Why does my package not have an orig.tar.gz?
 
 If a package does not have an ``orig.tar.gz`` file it's because it's not the first version of the package. When uploading newer versions of a package, we can refer to the existing ``orig.tar.gz`` because it never changes.
 
-Does PPA only do Hardy? How do I make it do another release?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Does PPA only do one release? How do I make it do another release?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 PPA supports all active Ubuntu releases. To upload to another release, you need to specify
 this in the Distribution field of your source package's debian/changelog file.
 
-What's this dput.cf stuff? What do I have to modify? I can't seem to follow the quickstart guide correctly.
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+What's this dput.cf stuff? What do I have to modify? I can't seem to follow the how-to guide correctly.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-``dput.cf`` configures the ``dput`` tool, as suggested in the PPAQuickStart you have to modify the given template to match your Launchpad details (user-name). Be sure that you refer to the specific target you've edited when uploading your source (``dput my-ppa <source>.changes``) and also don't forget to sign it with a key already referenced in Launchpad as yours.
+``dput.cf`` configures the ``dput`` tool, as suggested in the :ref:`Upload a package to a PPA <upload-a-package-to-a-ppa>` you have to modify the given template to match your Launchpad details (user-name). Be sure that you refer to the specific target you've edited when uploading your source (``dput my-ppa <source>.changes``) and also don't forget to sign it with a key already referenced in Launchpad as yours.
 
 How does this stuff differ from the Ubuntu archive? and REVU?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
