@@ -176,7 +176,7 @@ slug = ''
 
 # Base URL of RTD hosted project
 
-html_baseurl = 'https://canonical-launchpad-manual.readthedocs-hosted.com'
+html_baseurl = 'https://canonical-launchpad-manual.readthedocs-hosted.com/'
 
 # URL scheme. Add language and version scheme elements.
 # When configured with RTD variables, check for RTD environment so manual runs succeed:
@@ -195,7 +195,7 @@ sitemap_show_lastmod = True
 # Template and asset locations
 #######################
 
-html_static_path = ["_static"]
+html_static_path = ["_static", "robots.txt"]
 templates_path = ["_templates"]
 
 
