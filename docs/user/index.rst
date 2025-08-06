@@ -1,35 +1,51 @@
 Launchpad user documentation
 ============================
 
-Launchpad is a collaboration platform for open-source projects.
+Launchpad is designed for effective open-source collaboration. It offers
+users the tools they need to build their open-source projects and share them 
+with the world.
 
-Launchpad provides everything necessary to build and publish software, including code hosting, issue tracking, translations,
-and request tracking for bugs and features. The most famous software hosted on Launchpad is Ubuntu.
+Users get access to everything necessary to build and publish software 
+including code hosting, issue tracking, and request tracking for bugs and 
+features. Unique features include build capacities for different languages, and 
+package formats for different architectures such as AMD64, ARM, and RISC-V.
 
-Launchpad provides unique features needed in modern software development, especially in open-source development.
-These include build capacities for many different languages and package formats across standard architectures, but also including rising stars such as RISC-V and ARM.
-Launchpad also offers unparalleled tracking capabilities across issue trackers to seamlessly communicate with upstream projects.
+Launchpad also offers tracking capabilities across issue trackers to 
+seamlessly communicate with upstream projects.
 
-With its unique features, Launchpad is the right tool for companies, professionals, open-source maintainers, and hobbyists alike.
+---------------------
 
 In this documentation
 ---------------------
 
-.. grid:: 1 1 2 2
+.. grid:: 1 1 3 3
 
-   .. grid-item::
+   .. grid-item-card:: :doc:`How-to guides <how-to/index>`
 
-   .. grid-item:: :doc:`How-to guides <how-to/index>`
+      **Step-by-step guides** guides to key operations and common tasks.
 
-      **Step-by-step guides** guides covering key operations and common tasks.
-
-   .. grid-item:: :doc:`Explanation <explanation/index>`
+   .. grid-item-card:: :doc:`Explanation <explanation/index>`
 
       **Discussion and clarification** of key topics.
 
-   .. grid-item:: :doc:`Reference <reference/index>`
+   .. grid-item-card:: :doc:`Reference <reference/index>`
 
       **Technical information** - specifications, APIs, architecture.
+
+
+**Code hosting:** Host your project on Launchpad • Import code • Link code to bug reports
+
+**Your team:** Creating and running teams • Team management • Indirect team members 
+
+**Packaging:** Packaging • PPAs • Install software from PPAs • Building a source package 
+
+**Bug tracking:**
+
+**Launchpad API:**
+
+**Community:**
+
+
 
 .. toctree::
    :hidden:
