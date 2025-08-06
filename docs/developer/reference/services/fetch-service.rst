@@ -53,22 +53,25 @@ The life-cycle of a fetch-service session within Launchpad goes as follows:
 
 Using the fetch service
 ~~~~~~~~~~~~~~~~~~~~~~~
-Currently, the fetch service can only be used for building snaps, rocks and
-source packages.
+Currently, the fetch service can only be used for building snaps, charms, rocks 
+and source packages.
 
-To do so, a Launchpad admin is required to set the
+For `Snaps`, this option is now available in `Edit recipe` instead of
+`Administer recipe`. For other types, a Launchpad admin is required to set the
 ``use_fetch_service`` flag for the recipe to ``true``, either in the API or in
-the UI by accessing the admin area. The UI option may not be available for all
-build types the fetch service supports.
+the UI by accessing the admin area.  The UI option may not be available
+for all build types the fetch service supports.
 
 The fetch service can be run in two modes, "strict" and "permissive", where it
-defaults to the former on production. The "strict" mode only allows certain
-resources and formats, and errors out in any case the restrictions are
-violated. The "permissive" mode works similar, but only logs a warning when
-encountering any violations.
+defaults to the former. The "strict" mode only allows certain resources and
+formats, and errors out in any case the restrictions are violated. The
+"permissive" mode works similar, but only logs a warning when encountering any
+violations.
 
 The mode can be configured using the ``fetch_service_policy`` option via API,
-with the currently two possible values ``permissive`` and ``strict``.
+with the currently two possible values ``permissive`` and ``strict``. For
+`Snaps`, the mode can also be selected from a dropdown on the `Edit recipe`
+page.
 
 Requests to use the fetch service shall be made to the Launchpad team through
 the usual channels (by
