@@ -56,11 +56,11 @@ Using the fetch service
 Currently, the fetch service can only be used for building snaps, charms, rocks 
 and source packages.
 
-For `Snaps`, this option is now available in `Edit recipe` instead of
-`Administer recipe`. For other types, a Launchpad admin is required to set the
-``use_fetch_service`` flag for the recipe to ``true``, either in the API or in
-the UI by accessing the admin area.  The UI option may not be available
-for all build types the fetch service supports.
+For `Snaps`, this option is now available in `Edit recipe`. For other types, a
+Launchpad admin is required to set the ``use_fetch_service`` flag for the
+recipe to ``true``, either in the API or in the UI by accessing the admin 
+area. The UI option may not be available for all build types the fetch service
+supports.
 
 The fetch service can be run in two modes, "strict" and "permissive", where it
 defaults to the former. The "strict" mode only allows certain resources and
