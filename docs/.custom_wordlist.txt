@@ -8,6 +8,7 @@ addons
 analyze
 analyzer
 AnyPerson
+apache
 api
 API
 APIs
