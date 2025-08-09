@@ -1,3 +1,5 @@
+.. _launchpad-manual-for-users:
+
 Launchpad user documentation
 ============================
 

@@ -1,3 +1,5 @@
+.. _launchpad-and-community:
+
 Launchpad and community
 =======================
 
