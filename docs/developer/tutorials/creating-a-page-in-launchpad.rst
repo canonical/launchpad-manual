@@ -15,7 +15,7 @@ Introduction
 
 A page in Launchpad requires a view class, an interface it is related to,
 and a page template to render the HTML. These are then mapped to a page
-at a specific URL using a ZCML directive. Let us learn how to do this in
+at a specific URL using a `ZCML directive <https://zopecomponent.readthedocs.io/en/latest/zcml.html>`. Let us learn how to do this in
 the following sections.
 
 Identifying the interface
