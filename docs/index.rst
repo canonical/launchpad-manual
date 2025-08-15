@@ -53,7 +53,7 @@ In this documentation
 Project and community
 ---------------------
 
-Launchpad is a member of the `Ubuntu <https://ubuntu.com/>`_. family.
+Launchpad is a member of the Ubuntu family.
 It's an open source project that warmly welcomes community projects,
 contributions, suggestions, fixes and constructive feedback.
 
