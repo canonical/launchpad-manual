@@ -12,6 +12,7 @@ July 2025
 30 July
 
 - Update appserver log rotation from daily to hourly
+- Fixed `#2032180 The parse-ppa-apache-access-logs.py script should report an error parsing a log line just once <https://bugs.launchpad.net/launchpad/+bug/2032180>`_.
 
 11 July
 
