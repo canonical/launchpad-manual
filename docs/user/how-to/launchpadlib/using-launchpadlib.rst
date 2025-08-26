@@ -1,3 +1,5 @@
+.. _get-started-with-launchpadlib:
+
 Get started with launchpadlib
 =============================
 

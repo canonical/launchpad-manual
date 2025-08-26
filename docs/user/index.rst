@@ -26,25 +26,25 @@ In this documentation
 
    .. grid-item-card:: :doc:`Explanation <explanation/index>`
 
-      **Discussion and clarification** of key topics.
+      **Discussion** and clarification of key topics.
 
    .. grid-item-card:: :doc:`Reference <reference/index>`
 
       **Technical information** - specifications, APIs, architecture.
 
+===================    ==================
 
-**Code hosting:** Host your project on Launchpad • Import code • Link code to bug reports
+===================    ==================
+**Code hosting:**      :ref:`Host your project <host-your-project-code-on-launchpad>` • :ref:`Import code <import-code-into-launchpad>` • :ref:`Link code to bug reports <link-code-to-bug-reports-and-blueprints>`
 
-**Your team:** Creating and running teams • Team management • Indirect team members 
+**Packaging:**         :ref:`Packaging <packaging-how-to>` • :ref:`PPAs <personal-package-archive>` • :ref:`Building a source package <building-a-source-package>` 
 
-**Packaging:** Packaging • PPAs • Install software from PPAs • Building a source package 
+**Bug tracking:**      :ref:`Using Bugzilla<use-the-bugzilla-plugin>` • :ref:`File a Bug<file-a-bug-in-launchpad>`
 
-**Bug tracking:**
+**Launchpad APIs:**    :ref:`Lauchpadlib <get-started-with-launchpadlib>` • :ref:`Bug tracker API <bug-tracker-api-plugin>` • :ref:`Web services API <launchpad-web-service>`
 
-**Launchpad API:**
-
-**Community:**
-
+**Community:**         :ref:`Giving feedback <talk-to-us-about-launchpad>` • :ref:`Getting support<getting-support-in-launchpad>` • :ref:`Launchpad policies <launchpad-policies>`
+===================    ==================
 
 
 .. toctree::
