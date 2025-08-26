@@ -23,22 +23,22 @@ In this manual
 
 .. grid:: 1 1 2 2
 
-   .. grid-item:: :ref:`User documentation <launchpad-manual-for-users>`
+   .. grid-item-card:: :ref:`User documentation <launchpad-manual-for-users>`
 
        Host your code, track bugs, translate software projects, and more on 
        Launchpad
 
-   .. grid-item:: :ref:`Developer documentation <launchpad-manual-for-developers>`
+   .. grid-item-card:: :ref:`Developer documentation <launchpad-manual-for-developers>`
 
       Contribute changes to Launchpad, fix bugs, Launchpad developments tips,
       and more 
 
----------
+==========================    ===========================
 
-**User quick start:** :ref:`Get started with launchpad <get-started-with-launchpad>` • :ref:`Host a Git repository <host-a-git-repository-on-launchpad>` • :ref:`Launchpad and Community<launchpad-and-community>` 
-**Developer quick start:** :ref:`Ideas behind Launchpad<ideas-behind-launchpad>` • :ref:`Setting up Launchpad<setting-up-and-running-launchpad-quickstart>` • :ref:`Get the source code<get-the-source-code>`
-
----------
+==========================    ===========================
+**User quick start:**         :ref:`Get started with launchpad <get-started-with-launchpad>`    • :ref:`Host a repository <host-a-git-repository-on-launchpad>` • :ref:`Community<launchpad-and-community>` 
+**Developer quick start:**    :ref:`Ideas behind Launchpad<ideas-behind-launchpad>`             • :ref:`Setting up Launchpad<setting-up-and-running-launchpad-quickstart>` • :ref:`Get the source code<get-the-source-code>`
+==========================    ===========================
 
 Project and community
 ---------------------
