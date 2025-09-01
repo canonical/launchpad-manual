@@ -5,15 +5,8 @@ Applying database schema changes
 Whenever changes are made to the database schema,
 these changes need to be applied to the databases in use.
 
-In order to apply changes to e.g. the *test template database* you need to run:
-
-.. code-block:: bash
-
-    database/schema/upgrade.py -d launchpad_ftest_template
-    database/schema/security.py -d launchpad_ftest_template
-
-
-To migrate all of Launchpad's databases in a standard development setup:
+To migrate all of Launchpad's databases in a standard development setup
+to have the latest schema changes:
 
 .. code-block:: bash
 
@@ -27,7 +20,7 @@ A more heavyweight approach is the following command:
 
 .. note::
 
-    Running this command will erase and rebuild everything.
+    Running this command will erase all databases and rebuild everything.
 
 .. code-block:: bash
 
@@ -44,7 +37,7 @@ please run the following command:
 If you only want to apply one specific patch for testing purposes, you can
 run the following command:
 
-.. code-block: bash
+.. code-block:: bash
 
     psql launchpad_dev -1 -f <your-patch>.sql
 

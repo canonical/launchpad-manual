@@ -9,7 +9,7 @@ How you upload a source package to a PPA depends on two things:
 
 -  whether you're using a recent version of Ubuntu (Ubuntu 9.10 and
    newer)
--  whether you want to use FTP or SFTP.
+-  whether you want to use File Transfer Protocol (FTP) or Secure File Transfer Protocol (SFTP).
 
 Once you've :ref:`built your source package <building-a-source-package>`, you need to upload it
 to Launchpad using the *dput* tool.

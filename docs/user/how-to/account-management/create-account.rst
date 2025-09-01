@@ -28,7 +28,7 @@ You can personalise your profile in a few different ways:
 * publish your `IRC nicks <https://launchpad.net/~/+editircnicknames>`_ and `Jabber identities <https://launchpad.net/~/+editjabberids>`_
 * tell Launchpad `your location and timezone <https://launchpad.net/~/+editlocation>`_.
 
-One of the easiest ways to stamp your mark on Launchpad is to `upload a profile picture <https://launchpad.net/~/+edit>`_. It should be 192x192 and no more than 100 KB.
+One of the easiest ways to stamp your mark on Launchpad is to `upload a profile picture <https://launchpad.net/~/+edit>`_. It should be 192x192 pixels (px) and no more than 100 KB.
 
 Your Launchpad name
 ^^^^^^^^^^^^^^^^^^^
