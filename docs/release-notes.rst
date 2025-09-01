@@ -1,17 +1,29 @@
 Release Notes
 =============
+September 2025
+++++++++++++++
+1 September
+
+- The 'Use Fetch Service' and 'Fetch Service Policy' options are
+  available for charms via the API and the Edit recipe page.
+
 August 2025
 +++++++++++
+21 August
+
+- The 'Use Fetch Service' and 'Fetch Service Policy' options are
+  available for rocks and source packages via the APIs.
+
 5 August
 
 - The 'Use Fetch Service' button for snaps has been moved from
-  Administer recipe to Edit recipe 
+  Administer recipe to Edit recipe.
 
 July 2025
 +++++++++
 30 July
 
-- Update appserver log rotation from daily to hourly
+- Update appserver log rotation from daily to hourly.
 
 11 July
 
