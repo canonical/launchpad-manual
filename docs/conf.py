@@ -168,7 +168,7 @@ html_theme_options = {
 # TODO: If your documentation is hosted on https://docs.ubuntu.com/,
 #       uncomment and update as needed.
 
-slug = ''
+slug = 'launchpad'
 
 #######################
 # Sitemap configuration: https://sphinx-sitemap.readthedocs.io/
@@ -176,7 +176,7 @@ slug = ''
 
 # Base URL of RTD hosted project
 
-html_baseurl = 'https://canonical-launchpad-manual.readthedocs-hosted.com'
+html_baseurl = 'https://documentation.ubuntu.com/launchpad/'
 
 # URL scheme. Add language and version scheme elements.
 # When configured with RTD variables, check for RTD environment so manual runs succeed:

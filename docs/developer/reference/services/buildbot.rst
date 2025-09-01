@@ -147,4 +147,8 @@ Monitoring
 
 Buildbot runs are logged at `Launchpad
 Buildbot <https://chat.canonical.com/canonical/channels/launchpad-buildbot>`__
-channel on Mattermost. 
+channel on Mattermost. If a build fails, you can navigate to the build log
+of your build and review the summary to identify the cause of the failure.
+If you suspect the build is failing due to flakiness of the test
+infrastructure and not your changes, you can `restart the build
+<http://lpbuildbot.canonical.com/force>`__.

@@ -1,5 +1,11 @@
 Release Notes
 =============
+August 2025
++++++++++++
+5 August
+
+- The 'Use Fetch Service' button for snaps has been moved from
+  Administer recipe to Edit recipe 
 
 July 2025
 +++++++++
