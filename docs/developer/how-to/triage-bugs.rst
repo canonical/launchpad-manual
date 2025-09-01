@@ -1,3 +1,5 @@
+.. _triaging-launchpad-project-bugs:
+
 Triaging Launchpad project bugs
 ===============================
 

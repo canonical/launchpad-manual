@@ -1,4 +1,5 @@
-===========================================
+.. _setting-up-and-running-launchpad-advanced:
+
 Setting up and running Launchpad (Advanced)
 ===========================================
 

@@ -1,4 +1,5 @@
-=====================
+.. _how-to-use-lp-shell:
+
 How to Use lp-shell
 =====================
 
