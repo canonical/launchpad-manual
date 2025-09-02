@@ -11,7 +11,7 @@ this platform. We rely on contributors like you to make this happen.
 
 As a developer, you can contribute to Launchpad by proposing new features, 
 identifying and fixing bugs, testing features, etc. This manual gives you 
-a headstart on how to handle different tasks from creating new pages to more 
+a head start on how to handle different tasks from creating new pages to more 
 substantial tasks like fixing bugs and contributing changes.
 
 ---------
