@@ -43,7 +43,7 @@ In this documentation
 ==========================             ==================
 
 ==========================             ==================
-**Setting up Launchpad:**              :ref:`Get the sourcecode <getting-the-source-code>` • :ref:`Quick set up <setting-up-and-running-launchpad-quickstart>` • :ref:`Advanced set up <setting-up-and-running-launchpad-advanced>`
+**Setting up Launchpad:**              :ref:`Get the source code <getting-the-source-code>` • :ref:`Quick set up <setting-up-and-running-launchpad-quickstart>` • :ref:`Advanced set up <setting-up-and-running-launchpad-advanced>`
 
 **Operating Launchpad:**               :ref:`Manage users and teams <manage-users-and-teams-in-development-environments>` • :ref:`Using lp-shell <how-to-use-lp-shell>` • :ref:`Triaging bugs <triaging-launchpad-project-bugs>` 
 
