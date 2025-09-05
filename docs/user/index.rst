@@ -19,6 +19,23 @@ seamlessly communicate with upstream projects.
 In this documentation
 ---------------------
 
+===================    ==================
+
+===================    ==================
+Code hosting:          :ref:`Host your project <host-your-project-code-on-launchpad>` • :ref:`Import code <import-code-into-launchpad>` • :ref:`Link code to bug reports <link-code-to-bug-reports-and-blueprints>`
+
+Packaging:             :ref:`Packaging <packaging-how-to>` • :ref:`PPAs <personal-package-archive>` • :ref:`Building a source package <building-a-source-package>` 
+
+Bug tracking:          :ref:`Using Bugzilla<use-the-bugzilla-plugin>` • :ref:`File a Bug<file-a-bug-in-launchpad>`
+
+Launchpad APIs:        :ref:`Lauchpadlib <get-started-with-launchpadlib>` • :ref:`Bug tracker API <bug-tracker-api-plugin>` • :ref:`Web services API <launchpad-web-service>`
+
+Community:             :ref:`Giving feedback <talk-to-us-about-launchpad>` • :ref:`Getting support<getting-support-in-launchpad>` • :ref:`Launchpad policies <launchpad-policies>`
+===================    ==================
+
+There is more to discover in the Launchpad user manual. Explore this 
+documentation by category:
+
 .. grid:: 1 1 3 3
 
    .. grid-item-card:: :doc:`How-to guides <how-to/index>`
@@ -33,19 +50,7 @@ In this documentation
 
       **Technical information** - specifications, APIs, architecture.
 
-===================    ==================
 
-===================    ==================
-**Code hosting:**      :ref:`Host your project <host-your-project-code-on-launchpad>` • :ref:`Import code <import-code-into-launchpad>` • :ref:`Link code to bug reports <link-code-to-bug-reports-and-blueprints>`
-
-**Packaging:**         :ref:`Packaging <packaging-how-to>` • :ref:`PPAs <personal-package-archive>` • :ref:`Building a source package <building-a-source-package>` 
-
-**Bug tracking:**      :ref:`Using Bugzilla<use-the-bugzilla-plugin>` • :ref:`File a Bug<file-a-bug-in-launchpad>`
-
-**Launchpad APIs:**    :ref:`Lauchpadlib <get-started-with-launchpadlib>` • :ref:`Bug tracker API <bug-tracker-api-plugin>` • :ref:`Web services API <launchpad-web-service>`
-
-**Community:**         :ref:`Giving feedback <talk-to-us-about-launchpad>` • :ref:`Getting support<getting-support-in-launchpad>` • :ref:`Launchpad policies <launchpad-policies>`
-===================    ==================
 
 
 .. toctree::
