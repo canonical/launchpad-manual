@@ -313,7 +313,8 @@ linkcheck_ignore = [
     "API",
     "/../YourProject/ImportingTemplates",
     "Answer syntax parsing <Comments>",
-    "https://help.ubuntu.com/community/SSO/FAQs" #timeout, should be temporary
+    "https://help.ubuntu.com/community/SSO/FAQs", #timeout, should be temporary
+    "http://mail-archive.com", #times out but works in browser. Remove from list after mailing list docs are removed
 ]
 
 
@@ -322,7 +323,7 @@ linkcheck_ignore = [
 linkcheck_anchors_ignore_for_url = [r"https://github\.com/.*"]
 
 # give linkcheck multiple tries on failure
-linkcheck_timeout = 60
+linkcheck_timeout = 90
 linkcheck_retries = 3
 
 ########################
