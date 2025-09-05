@@ -1,3 +1,5 @@
+.. _get-the-source-code:
+
 Getting the source code
 =======================
 

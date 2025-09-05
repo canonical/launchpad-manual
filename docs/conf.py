@@ -314,7 +314,7 @@ linkcheck_ignore = [
     "/../YourProject/ImportingTemplates",
     "Answer syntax parsing <Comments>",
     "https://help.ubuntu.com/community/SSO/FAQs", #timeout, should be temporary
-    "http://mail-archive.com", #times out but works in browser. Remove from list after mailing list docs are removed
+    "http://www.mail-archive.com/", #times out but works in browser. Remove from list after mailing list docs are removed
 ]
 
 

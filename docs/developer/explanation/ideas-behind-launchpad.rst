@@ -1,3 +1,5 @@
+.. _ideas-behind-launchpad:
+
 The ideas behind Launchpad
 ==========================
 
