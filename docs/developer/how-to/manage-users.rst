@@ -1,3 +1,5 @@
+.. _manage-users-and-teams-in-development-environments:
+
 Manage users and teams in development environments
 ==================================================
 

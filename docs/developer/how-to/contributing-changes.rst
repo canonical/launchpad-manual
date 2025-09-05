@@ -1,4 +1,5 @@
-====================
+.. _contributing-changes:
+
 Contributing changes
 ====================
 
