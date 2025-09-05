@@ -4,16 +4,16 @@ Launchpad manual
 ================
 
 Launchpad is a collaboration platform for open-source projects. It provides 
-everything necessary to build and publish software including code hosting, 
-issue tracking, translations, and request tracking for bugs and features.
-The most famous software hosted on Launchpad is `Ubuntu <https://ubuntu.com/>`_.
+everything necessary to build and publish software including bug tracking 
+across different platforms. The most famous software hosted on Launchpad is 
+`Ubuntu <https://ubuntu.com/>`_.
+ 
 
-Launchpad provides unique features needed in modern software development,
-especially in open-source development. The source code for Launchpad is also
-open-source, allowing Launchpad developers to contribute to features to the 
-platform, bug fixes, and more. 
+Launchpad's features include code hosting, issue tracking, translations, and 
+request tracking for bugs and features. Its source code is also open-source, 
+allowing developers to contribute to new features and bug fixes. 
 
-With its unique features, Launchpad is the right tool for companies,
+With its unique qualities, Launchpad is the right tool for companies,
 professionals, open-source maintainers, and hobbyists alike.
 
 ---------
