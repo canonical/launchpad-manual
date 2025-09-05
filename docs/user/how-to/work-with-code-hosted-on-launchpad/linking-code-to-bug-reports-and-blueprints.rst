@@ -1,3 +1,5 @@
+.. _link-code-to-bug-reports-and-blueprints:
+
 Link code to bug reports and blueprints
 =======================================
 

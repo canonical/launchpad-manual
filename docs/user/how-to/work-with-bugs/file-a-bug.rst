@@ -1,3 +1,5 @@
+.. _file-a-bug-in-launchpad:
+
 File a bug in Launchpad
 =======================
 
