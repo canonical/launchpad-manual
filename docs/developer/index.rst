@@ -15,10 +15,21 @@ This manual shows you how to handle different tasks from downloading the source
 code and creating new pages to fixing bugs and contributing changes to 
 Launchpad.
 
----------
-
 In this documentation
 ---------------------
+==========================             ==================
+
+==========================             ==================
+**Setting up Launchpad:**              :ref:`Get the source code <getting-the-source-code>` • :ref:`Quick set up <setting-up-and-running-launchpad-quickstart>` • :ref:`Advanced set up <setting-up-and-running-launchpad-advanced>`
+
+**Operating Launchpad:**               :ref:`Manage users and teams <manage-users-and-teams-in-development-environments>` • :ref:`Using lp-shell <how-to-use-lp-shell>` • :ref:`Triaging bugs <triaging-launchpad-project-bugs>` 
+
+**Launchpad development:**             :ref:`Fixing bugs<fixing-bugs>` • :ref:`Contributing changes<contributing-changes>`
+
+==========================             ==================
+
+There is more to discover in the Launchpad manual for developers. Explore by 
+category:
 
 ..  grid:: 1 1 2 2
 
@@ -28,7 +39,7 @@ In this documentation
 
    ..  grid-item-card:: :doc:`How-to guides <how-to/index>`
 
-      **How-to guides** - step-by-step guides covering key operations and common tasks
+      **Step-by-step** instructions covering key operations and common tasks
 
 .. grid:: 1 1 2 2
    :reverse:
@@ -40,17 +51,6 @@ In this documentation
    .. grid-item-card:: :doc:`Explanation <explanation/index>`
 
       **Discussion** and clarification of key topics
-
-==========================             ==================
-
-==========================             ==================
-**Setting up Launchpad:**              :ref:`Get the source code <getting-the-source-code>` • :ref:`Quick set up <setting-up-and-running-launchpad-quickstart>` • :ref:`Advanced set up <setting-up-and-running-launchpad-advanced>`
-
-**Operating Launchpad:**               :ref:`Manage users and teams <manage-users-and-teams-in-development-environments>` • :ref:`Using lp-shell <how-to-use-lp-shell>` • :ref:`Triaging bugs <triaging-launchpad-project-bugs>` 
-
-**Launchpad development:**             :ref:`Fixing bugs<fixing-bugs>` • :ref:`Contributing changes<contributing-changes>`
-
-==========================             ==================
 
 
 .. toctree::
