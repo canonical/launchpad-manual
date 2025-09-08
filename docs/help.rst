@@ -8,7 +8,7 @@ If you have questions about any aspect of Launchpad development, or if you're
 trying to modify Launchpad but are having trouble, please seek us out by any of
 these means:
 
-- Join us on `Launchpad channel on Matrix <https://matrix.to/#/#launchpad:ubuntu.com>`_
+- Join us on :literalref:`Launchpad channel on Matrix <https://matrix.to/#/#launchpad:ubuntu.com>`
 - Ask on the `launchpad-dev_AT_lists.launchpad.net`_ mailing list.
   You do not have to be subscribed to post (but feel free to subscribe too).
 - Look in the `mailing list archives`_.
