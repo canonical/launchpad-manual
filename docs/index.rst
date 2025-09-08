@@ -11,7 +11,7 @@ and request tracking for bugs and features.
 The most famous software hosted on Launchpad is `Ubuntu <https://ubuntu.com/>`_.
 
 Launchpad provides unique features needed in modern software development,
-especially in open-source development.
+especially in open-source development. :literalref:`Launchpad channel on Matrix <https://matrix.to/#/#launchpad:ubuntu.com>`
 These include build capacities for many different languages and package formats
 across standard architectures, but also including rising stars such as RISC-V
 and ARM. Launchpad also offers unparalleled tracking capabilities across issue
