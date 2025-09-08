@@ -90,6 +90,7 @@ changeset
 changesets
 charmcraft
 Charmhub
+charmhub
 chroot
 CLI
 Cmd
