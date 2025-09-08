@@ -1,9 +1,9 @@
+#
 name: Daily link check
 
 on:
-  pull_request:
   schedule:
-    - cron: '10 15 * * *' # every day at 15:20 UTC
+    - cron: '00 19 * * *' # every day at 19:00 UTC
   workflow_dispatch:
 
 jobs:
