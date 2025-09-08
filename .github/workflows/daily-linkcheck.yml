@@ -1,0 +1,19 @@
+name: Daily link check
+
+on:
+  pull_request:
+  schedule:
+    - cron: '10 15 * * *' # every day at 15:20 UTC
+  workflow_dispatch:
+
+jobs:
+  link-check:
+
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@main
+
+      - name: Run linkcheck
+        run: make linkcheck-daily
+    with:
+      working-directory: "docs"
