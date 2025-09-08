@@ -120,9 +120,13 @@ spellcheck: spellcheck-install
 	. $(VENV) ; python3 -m pyspelling -c $(SPHINXDIR)/spellingcheck.yaml -j $(shell nproc) 
 spelling: html spellcheck
 
-linkcheck: install
+linkcheck-daily: install
 	. $(VENV) ; $(SPHINXBUILD) -b linkcheck "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) || { grep --color -F "[broken]" "$(BUILDDIR)/output.txt"; exit 1; }
 	exit 0 
+
+linkcheck: install
+	@echo "skipping linkcheck"
+	@true
 
 pa11y: pa11y-install html
 	find $(BUILDDIR) -name *.html -print0 | xargs -n 1 -0 $(PA11Y)
