@@ -1,7 +1,7 @@
 name: Daily link check
 on:
   schedule:
-    - cron: '0 22 * * *'  # every day at 22:00 UTC
+    - cron: '0 22 * * *'  # Every day at 22:00 UTC
 
   workflow_dispatch:  # Manual trigger
 
