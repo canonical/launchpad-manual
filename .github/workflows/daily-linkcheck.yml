@@ -1,21 +1,19 @@
 name: Daily link check
 on:
-  pull_request:
   schedule:
-    - cron: '00 19 * * *' # every day at 19:00 UTC
+    - cron: '0 22 * * *'  # every day at 22:00 UTC
 
-  workflow_dispatch:
-    # Manual trigger
+  workflow_dispatch:  # Manual trigger
 
 jobs:
   link-check:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout repo
-        uses: actions/checkout@main
+        uses: actions/checkout@v5
         with: 
           fetch-depth: 0
 
       - name: Run linkcheck
         working-directory: "docs"
-        run: make linkcheck-daily
+        run: make linkcheck-discrete

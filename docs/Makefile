@@ -120,7 +120,7 @@ spellcheck: spellcheck-install
 	. $(VENV) ; python3 -m pyspelling -c $(SPHINXDIR)/spellingcheck.yaml -j $(shell nproc) 
 spelling: html spellcheck
 
-linkcheck-daily: install
+linkcheck-discrete: install
 	. $(VENV) ; $(SPHINXBUILD) -b linkcheck "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) || { grep --color -F "[broken]" "$(BUILDDIR)/output.txt"; exit 1; }
 	exit 0 
 
