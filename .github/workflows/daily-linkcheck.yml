@@ -1,10 +1,10 @@
-#
 name: Daily link check
 
 on:
   schedule:
     - cron: '00 19 * * *' # every day at 19:00 UTC
   workflow_dispatch:
+    # Manual trigger
 
 jobs:
   link-check:
