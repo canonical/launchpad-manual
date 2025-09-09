@@ -11,8 +11,10 @@ jobs:
   link-check:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout repo
+      - name: Checkout repo
         uses: actions/checkout@main
+        with: 
+          fetch-depth: 0
 
       - name: Run linkcheck
         working-directory: "docs"
