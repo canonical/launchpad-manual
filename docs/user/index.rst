@@ -3,35 +3,57 @@
 Launchpad user documentation
 ============================
 
-Launchpad is a collaboration platform for open-source projects.
+Launchpad is designed for effective open-source collaboration. It provides the
+tools you need to build open-source projects and share them with the 
+world.
 
-Launchpad provides everything necessary to build and publish software, including code hosting, issue tracking, translations,
-and request tracking for bugs and features. The most famous software hosted on Launchpad is Ubuntu.
+Launchpad gives you access to everything necessary to build and publish 
+software including code hosting, issue tracking, and request tracking for bugs. 
+Features unique to this platform include build capacities for different 
+languages, and package formats for different architectures such as **AMD64**, 
+**ARM**, and **RISC-V**.
 
-Launchpad provides unique features needed in modern software development, especially in open-source development.
-These include build capacities for many different languages and package formats across standard architectures, but also including rising stars such as RISC-V and ARM.
-Launchpad also offers unparalleled tracking capabilities across issue trackers to seamlessly communicate with upstream projects.
+Launchpad also offers tracking capabilities across issue trackers to 
+seamlessly communicate with upstream projects.
 
-With its unique features, Launchpad is the right tool for companies, professionals, open-source maintainers, and hobbyists alike.
+---------------------
 
 In this documentation
 ---------------------
 
-.. grid:: 1 1 2 2
+===================    ==================
 
-   .. grid-item::
+===================    ==================
+Code hosting:          :ref:`Host your project <host-your-project-code-on-launchpad>` • :ref:`Import code <import-code-into-launchpad>` • :ref:`Link code to bug reports <link-code-to-bug-reports-and-blueprints>`
 
-   .. grid-item:: :doc:`How-to guides <how-to/index>`
+Packaging:             :ref:`What is a PPA <personal-package-archive>` • :ref:`Install software from PPAs <install-software-from-ppas>` • :ref:`Building a source package <building-a-source-package>` 
 
-      **Step-by-step guides** guides covering key operations and common tasks.
+Bug tracking:          :ref:`Using Bugzilla<use-the-bugzilla-plugin>` • :ref:`File a Bug<file-a-bug-in-launchpad>`
 
-   .. grid-item:: :doc:`Explanation <explanation/index>`
+Launchpad APIs:        :ref:`Lauchpadlib <get-started-with-launchpadlib>` • :ref:`Bug tracker API <bug-tracker-api-plugin>` • :ref:`Web services API <launchpad-web-service>`
 
-      **Discussion and clarification** of key topics.
+Community:             :ref:`Giving feedback <talk-to-us-about-launchpad>` • :ref:`Getting support<getting-support-in-launchpad>` • :ref:`Launchpad policies <launchpad-policies>`
+===================    ==================
 
-   .. grid-item:: :doc:`Reference <reference/index>`
+There is more to discover in the Launchpad user manual. Explore this 
+documentation by category:
+
+.. grid:: 1 1 3 3
+
+   .. grid-item-card:: :doc:`How-to guides <how-to/index>`
+
+      **Step-by-step** instructions for key operations and common tasks.
+
+   .. grid-item-card:: :doc:`Explanation <explanation/index>`
+
+      **Discussion** and clarification of user topics.
+
+   .. grid-item-card:: :doc:`Reference <reference/index>`
 
       **Technical information** - specifications, APIs, architecture.
+
+
+
 
 .. toctree::
    :hidden:
