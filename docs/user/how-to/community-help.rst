@@ -1,4 +1,5 @@
-##################
+.. _help-the-community:
+
 Help the community
 ##################
 

@@ -3,52 +3,34 @@
 Launchpad manual
 ================
 
-Launchpad is a collaboration platform for open-source projects.
+Launchpad is a collaboration platform for open-source projects. It provides 
+everything necessary to build and publish software including bug tracking 
+across different platforms. The most famous software hosted on Launchpad is 
+`Ubuntu <https://ubuntu.com/>`_.
+ 
 
-Launchpad provides everything necessary to build and publish software,
-including code hosting, issue tracking, translations,
-and request tracking for bugs and features.
-The most famous software hosted on Launchpad is `Ubuntu <https://ubuntu.com/>`_.
+Launchpad's features include code hosting, issue tracking, translations, and 
+request tracking for bugs and features. Its source code is also open-source, 
+allowing developers to contribute to new features and bug fixes. 
 
-Launchpad provides unique features needed in modern software development,
-especially in open-source development.
-These include build capacities for many different languages and package formats
-across standard architectures, but also including rising stars such as RISC-V
-and ARM. Launchpad also offers unparalleled tracking capabilities across issue
-trackers to seamlessly communicate with upstream projects.
-
-With its unique features, Launchpad is the right tool for companies,
+With its unique qualities, Launchpad is the right tool for companies,
 professionals, open-source maintainers, and hobbyists alike.
 
 
-
----------
-
-In this documentation
+In this manual
 ---------------------
+==========================    ===========================
 
-.. grid:: 1 1 2 2
+==========================    ===========================
+**User quick start:**         :ref:`Get started with launchpad <get-started-with-launchpad>`    • :ref:`Host a repository <host-a-git-repository-on-launchpad>` • :ref:`Community<help-the-community>` 
+**Developer quick start:**    :ref:`What is Launchpad<what-is-launchpad>`             • :ref:`Setting up Launchpad<setting-up-and-running-launchpad-quickstart>` • :ref:`Get the source code<get-the-source-code>`
+==========================    ===========================
 
-   .. grid-item:: :doc:`Tutorials <developer/tutorials/index>`
+The Launchpad manual is divided into two sections, according to the user:
 
-       **Start here** - hands-on introductions to Launchpad for new developers
+:ref:`End User documentation <launchpad-manual-for-users>` - For individuals and teams collaborating on open-source software
 
-   .. grid-item:: :doc:`How-to guides <developer/how-to/index>`
-
-      **How-to guides** - step-by-step guides covering key operations and common tasks
-
-.. grid:: 1 1 2 2
-   :reverse:
-
-   .. grid-item:: :doc:`Reference <developer/reference/index>`
-
-      **Technical information** - specifications, APIs, architecture
-
-   .. grid-item:: :doc:`Explanation <developer/explanation/index>`
-
-      **Discussion and clarification** of key topics
-
----------
+:ref:`Developer documentation <launchpad-manual-for-developers>` - For contributors to the Launchpad project itself
 
 Project and community
 ---------------------
