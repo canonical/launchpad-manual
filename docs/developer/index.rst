@@ -3,64 +3,55 @@
 Launchpad manual for developers
 ===============================
 
-**Launchpad is a collaboration platform for open-source projects.**
+The Launchpad manual for developers is the most comprehensive resource for
+anyone looking to contribute to `Launchpad <https://launchpad.net/>`_. 
 
-**Launchpad provides everything necessary to build and publish software,
-including code hosting, issue tracking, translations,
-and request tracking for bugs and features.**
-The most famous software hosted on Launchpad is Ubuntu.
+We are always working to improve the user experience and other features of
+this platform and we rely on contributors like you to make this happen. There  
+are different ways to contribute to launchpad as a developer including 
+**proposing new features, triaging and fixing bugs, and testing features.** 
 
-**Launchpad provides unique features needed in modern software development,
-especially in open-source development.**
-These include build capacities for many different languages and package formats
-across standard architectures, but also including rising stars such as RISC-V
-and ARM. Launchpad also offers unparalleled tracking capabilities across issue
-trackers to seamlessly communicate with upstream projects.
-
-**With its unique features, Launchpad is the right tool for companies,
-professionals, open-source maintainers, and hobbyists alike.**
-
-
-
----------
+This manual shows you how to handle different tasks from downloading the source
+code and creating new pages to fixing bugs and contributing changes to 
+Launchpad.
 
 In this documentation
 ---------------------
+==========================             ==================
+
+==========================             ==================
+**Setting up Launchpad:**              :ref:`Get the source code <get-the-source-code>` • :ref:`Quick set up <setting-up-and-running-launchpad-quickstart>` • :ref:`Advanced set up <setting-up-and-running-launchpad-advanced>`
+
+**Operating Launchpad:**               :ref:`Manage users and teams <manage-users-and-teams-in-development-environments>` • :ref:`Using lp-shell <how-to-use-lp-shell>` • :ref:`Triaging bugs <triaging-launchpad-project-bugs>` 
+
+**Launchpad development:**             :ref:`Fixing bugs<fixing-bugs>` • :ref:`Contributing changes<contributing-changes>`
+
+==========================             ==================
+
+There is more to discover in the Launchpad manual for developers. Explore by 
+category:
 
 ..  grid:: 1 1 2 2
 
-   ..  grid-item:: :doc:`Tutorials <tutorials/index>`
+   ..  grid-item-card:: :doc:`Tutorials <tutorials/index>`
 
-       **Start here** - hands-on introductions to Launchpad for new developers
+       **Start here** -   hands-on introductions to Launchpad for new developers
 
-   ..  grid-item:: :doc:`How-to guides <how-to/index>`
+   ..  grid-item-card:: :doc:`How-to guides <how-to/index>`
 
-      **How-to guides** - step-by-step guides covering key operations and common tasks
+      **Step-by-step** instructions covering key operations and common tasks
 
 .. grid:: 1 1 2 2
    :reverse:
 
-   .. grid-item:: :doc:`Reference <reference/index>`
+   .. grid-item-card:: :doc:`Reference <reference/index>`
 
       **Technical information** - specifications, APIs, architecture
 
-   .. grid-item:: :doc:`Explanation <explanation/index>`
+   .. grid-item-card:: :doc:`Explanation <explanation/index>`
 
-      **Discussion and clarification** of key topics
+      **Discussion** and clarification of key topics
 
----------
-
-Project and community
----------------------
-
-Launchpad is a member of the Ubuntu family.
-It's an open source project that warmly welcomes community projects,
-contributions, suggestions, fixes and constructive feedback.
-
-* `Code of conduct <https://ubuntu.com/community/ethos/code-of-conduct>`_
-* :ref:`Get support <getting-help>`
-* :doc:`Contribute to our code <how-to/contributing-changes>`
-* :ref:`contribute-to-our-docs`
 
 .. toctree::
    :hidden:

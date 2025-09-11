@@ -1,3 +1,5 @@
+.. _fixing-bugs:
+
 Fixing Bugs
 ===========
 
