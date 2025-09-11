@@ -224,6 +224,7 @@ redirects = {}
 # TODO: Remove or adjust the ACME entry after you update the contributing guide
 
 linkcheck_ignore = [
+    r"https://matrix\.to/.*",
     r"http://www\.gnu\.org/.*",
     r"https://www\.gnu\.org/.*",
     r"http://www.fsf\.org/.*",

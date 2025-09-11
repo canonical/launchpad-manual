@@ -8,6 +8,7 @@ addons
 analyze
 analyzer
 AnyPerson
+apache
 api
 API
 APIs
@@ -90,6 +91,7 @@ changeset
 changesets
 charmcraft
 Charmhub
+charmhub
 chroot
 CLI
 Cmd
