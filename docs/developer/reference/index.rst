@@ -51,6 +51,7 @@ Ubuntu-related
    :maxdepth: 1
 
    services/mirror-prober.rst
+   services/ubuntu-mirrors-index.rst
 
 Git-related
 ~~~~~~~~~~~~~~
