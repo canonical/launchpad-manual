@@ -22,7 +22,7 @@ Team mailing lists are useful because they:
 -  greatly simplify administration: manage multiple lists through one
    interface
 -  automatically archive posts: copies are archived on Launchpad itself
-   and at `mail-archive.com <http://www.mail-archive.com>`_, a popular
+   and at `mail-archive.com <http://www.mail-archive.com/>`_, a popular
    long-term list archive site.
 
 For the technically minded, Launchpad mailing lists are managed by `GNU Mailman <http://www.list.org>`_, although we have simplified the web interface, allowing you to easily administer multiple lists through Launchpad.
