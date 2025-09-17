@@ -16,12 +16,13 @@ Detailed description
 There are the following main components in the Launchpad Buildbot
 setup. 
 
-1. `lpbuildbot <https://code.launchpad.net/~canonical-launchpad-branches/lpbuildbot/>`__:
+1. `lpbuildbot <https://code.launchpad.net/lpbuildbot>`__:
    This contains the ``master.cfg`` file and the related Python code
    which powers the
    `buildmaster <https://docs.buildbot.net/0.8.12/manual/introduction.html>`__
-   in our buildbot setup. There is a public bazaar branch and a private
-   production branch, which contains some secrets related to our
+   in our buildbot setup. There is a public git branch and a 
+   `private production branch <https://code.launchpad.net/~launchpad/lpbuildbot/+git/production>`_,
+   which contains secrets related to our
    production deployment. We add changes to the public branch via merge
    proposals and then merge them back to the private “production” branch
    before deployment. In the ``master.cfg`` file, we have defined all
