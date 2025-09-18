@@ -508,6 +508,7 @@ POTranslation
 POTs
 ppa
 PPA
+PPA's
 PPAs
 pqm
 PQM
@@ -745,6 +746,7 @@ upstreams
 uptime
 url
 URL
+urllib
 urls
 userbase
 UtcDateTimeCol

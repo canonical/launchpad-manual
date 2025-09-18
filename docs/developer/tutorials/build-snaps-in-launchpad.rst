@@ -20,11 +20,12 @@ To build a snap on Launchpad, you will need:
 
 - A Launchpad account (:ref:`how to create an account <create-and-personalise-your-launchpad-account>`).
 
-- A Git repository on Launchpad with a basic working snap, which you can create
-  by following the code example in `this tutorial <https://ubuntu.com/tutorials/create-your-first-snap#4-exposing-an-app-via-your-snap>`_.
-  You can push to a repository using::
+- A Git repository on Launchpad with your working snap recipe. If you do not
+  have one, you can follow `this guide
+  <https://ubuntu.com/tutorials/create-your-first-snap#1-overview>`_ to create
+  a simple one. You can push to a repository using::
 
-    git remote add origin git+ssh://username@git.launchpad.net/~username/+git/REPOSITORY_NAME
+    git remote add origin git+ssh://username@git.launchpad.net/~username/+git/repository_name
     git push --set-upstream origin master
 
 To work with the API, you will also need:
@@ -41,7 +42,7 @@ To work with the API, you will also need:
     $ lp-shell production devel
 
 - To verify your connection, run the following command, which should return 
-  your own Person object::
+  your own ``Person`` object::
 
     >>> lp.me
     <person at https://api.launchpad.net/devel/~username>
@@ -60,11 +61,28 @@ Steps to Build Snaps in Launchpad
       associating it with a source repository which contains a ``snapcraft.yaml``
       file.
 
-      To create a buildable snap package, inside ``lp-shell``, run::
+      Inside ``lp-shell``, run either of the following commands to create a
+      buildable snap package::
+
+      - Using a Git repository and path::
+
+        >>> git_repository = lp.load("~username/+git/repository_name")
+
+        >>> git_repository
+        <git_repository at https://api.launchpad.net/devel/~username/+git/repository_name>
 
         >>> snap = lp.snaps.new(name="test-snap", owner=lp.me, 
-        ... git_repository_url="https://git.launchpad.net/~username/+git/REPOSITORY_NAME", 
-        ... git_path="master")
+        ... git_repository_url=git_repository, git_path="master")
+
+      - Using a Git reference::
+
+        >>> git_reference = lp.load("~username/+git/repository_name/+ref/master")
+
+        >>> git_reference
+        <git_ref at https://api.launchpad.net/devel/~username/+git/repository_name/+ref/master>
+
+        >>> snap = lp.snaps.new(name="test-snap", owner=lp.me, 
+        ... git_ref=git_reference")
 
       The full list of parameters that can be passed in the API can be found in
       the `snaps API documentation <https://api.launchpad.net/devel.html#snaps>`_.
@@ -174,9 +192,9 @@ Steps to Build Snaps in Launchpad
 
       **Build failures**
 
-      In the case a build fails, ensure that the snap is buildable by running
-      ``snapcraft`` command to build it locally. You can go through the 
-      ``buildlog`` (``build.build_log_url``) and retry they build::
+      In the case a build fails, ensure that the snap can be built locally by
+      running the ``snapcraft`` command. You can go through the 
+      ``buildlog`` (``build.build_log_url``) and retry the build::
 
         >>> for build in snap_build:
         ...   build.retry()
@@ -194,20 +212,20 @@ Steps to Build Snaps in Launchpad
 
       - A particular branch in your source repository. Navigate to::
 
-          https://code.launchpad.net/~username/+git/REPOSITORY_NAME/+ref/master
+          https://code.launchpad.net/~username/+git/repository_name/+ref/master
         
         and click on ``Create snap package``::
 
-          https://code.launchpad.net/~username/+git/REPOSITORY_NAME/+ref/master/+new-snap
+          https://code.launchpad.net/~username/+git/repository_name/+ref/master/+new-snap
 
       - A project on Launchpad (`register a project
         <https://launchpad.net/projects/+new>`_). Navigate to::
 
-          https://launchpad.net/PROJECT_NAME
+          https://launchpad.net/project_name
 
         and click on ``Create snap package``::
 
-          https://launchpad.net/PROJECT_NAME/+new-snap
+          https://launchpad.net/project_name/+new-snap
 
       After filling in all the necessary details, click on ``Create snap
       package``. For this tutorial, the name of the snap is set to ``test-snap``.
@@ -243,7 +261,7 @@ Steps to Build Snaps in Launchpad
 
       where you can navigate to the ``Latest Builds`` section to see the
       ``buildlog`` and ``build files``. Clicking on the ``build files`` will
-      downloaded the snap to your machine.
+      download the snap to your machine.
 
       **Build failures**
       
