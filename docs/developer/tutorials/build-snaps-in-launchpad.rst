@@ -121,12 +121,6 @@ Build with the API or the web interface(UI)
       PPA, the PPA's archive dependencies will be used to select the pocket 
       in the distribution's primary archive.
 
-      .. note::
-        
-        To enable `Ubuntu Pro <https://ubuntu.com/pro>`_ for your snap build, 
-        use the ``pro_enable`` parameter.
-
-
       For this tutorial, we will select ``Primary Archive for Ubuntu`` as the 
       Source archive and ``Updates`` as the ``pocket``::
 
@@ -257,12 +251,6 @@ Build with the API or the web interface(UI)
 
       For this tutorial, we will request a build with ``Primary Archive for
       Ubuntu`` as the Source archive and the ``Updates`` pocket.
-
-      .. note::
-        
-        To enable `Ubuntu Pro <https://ubuntu.com/pro>`_ for your snap build, 
-        select ``Administer snap package`` in the snap recipe and check 
-        ``Enable Ubuntu Pro``.
       
       Build the .snap artifact by selecting ``Request builds``.
 
