@@ -13,7 +13,7 @@ architectures, without needing to manage your own build infrastructure. It
 provides an easy way to publish snaps directly to the `Snap Store <https://snapcraft.io/store>`_.
 
 On Launchpad, snaps can be built using either the web interface or the API. 
-This tutorial takesS you through both approaches.
+This tutorial takes you through both approaches.
 
 Prerequisites
 --------------

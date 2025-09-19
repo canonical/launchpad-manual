@@ -610,6 +610,7 @@ Slony
 smtp
 smtpMailer
 SMTPMailer
+Snapcraft
 snapshotting
 SolutionsLog
 sourcecode
