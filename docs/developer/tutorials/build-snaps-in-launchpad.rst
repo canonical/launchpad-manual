@@ -1,19 +1,19 @@
 Build Snaps in Launchpad
 ========================
 
-Snaps are containerised software packages that are simple to create and
-install, and because they bundle their dependencies, they work across many
-different Linux distributions without modification. Read more about snaps
-`here <https://snapcraft.io/docs/get-started>`_.
+Snaps are containerised software packages that are designed to be simpler to 
+create and install by bundling applications with their dependencies. They work 
+across many Linux distributions without modification. Check out the Snapcraft 
+documentation to `learn more about Snaps <https://snapcraft.io/docs/get-started>`_.
 
 Building snaps on Launchpad ensures clean, reproducible builds across multiple
 architectures, without needing to manage your own build infrastructure. It
 provides an easy way to publish snaps directly to the `Snap Store <https://snapcraft.io/store>`_.
 
-Snaps can be built using either the Launchpad web interface or the API. We will
-take a look at both of these ways in this tutorial.
+On Launchpad, snaps can be built using either the web interface or the API. 
+This tutorial takesS you through both approaches.
 
-Pre-requisites
+Prerequisites
 --------------
 
 To build a snap on Launchpad, you will need:
@@ -21,39 +21,37 @@ To build a snap on Launchpad, you will need:
 - A Launchpad account (:ref:`how to create an account <create-and-personalise-your-launchpad-account>`).
 
 - A Git repository on Launchpad with your working snap recipe. If you do not
-  have one, you can follow `this guide
-  <https://ubuntu.com/tutorials/create-your-first-snap#1-overview>`_ to create
-  a simple one. You can push to a repository using::
+  have one, follow `this guide <https://ubuntu.com/tutorials/create-your-first-snap#1-overview>`_ 
+  to create a simple one, and push to a repository using::
 
     git remote add origin git+ssh://username@git.launchpad.net/~username/+git/repository_name
     git push --set-upstream origin master
 
-To work with the API, you will also need:
-
-- The :ref:`lp-shell tool <how-to-use-lp-shell>`, which can be installed
-  using::
+- To work with the API, you will also need the :ref:`lp-shell tool <how-to-use-lp-shell>`, which can be installed using::
   
     $ sudo apt install lptools
 
-- To log in to Launchpad using the ``lp-shell`` command. Since we are pointing
-  to production and want to use the devel APIs (`API documentation <https://api.launchpad.net/devel.html>`_),
-  run::
-
-    $ lp-shell production devel
-
-- To verify your connection, run the following command, which should return 
-  your own ``Person`` object::
-
-    >>> lp.me
-    <person at https://api.launchpad.net/devel/~username>
-
-Steps to Build Snaps in Launchpad
----------------------------------
+Build with the API or the web interface(UI)
+-------------------------------------------
 
 .. tab-set:: 
 
-  ..  tab-item:: Build Snaps with the API
+  ..  tab-item:: Build a snap with the API
       :sync: key1
+
+      **Log into Launchpad**
+
+      Use the ``lp-shell`` command to log in. Since we are pointing to 
+      production and want to use the devel APIs (`API documentation <https://api.launchpad.net/devel.html>`_),
+      run::
+
+        $ lp-shell production devel
+
+      To verify your connection, run the following command, which should return 
+      your own ``Person`` object::
+      
+        >>> lp.me
+        <person at https://api.launchpad.net/devel/~username>
 
       **Create the Snap**
 
@@ -61,10 +59,10 @@ Steps to Build Snaps in Launchpad
       associating it with a source repository which contains a ``snapcraft.yaml``
       file.
 
-      Inside ``lp-shell``, run either of the following commands to create a
-      buildable snap package::
+      Inside ``lp-shell``, run either of the following sets of commands to 
+      create a buildable snap package:
 
-      - Using a Git repository and path::
+      - If you have a Git repository and path::
 
         >>> git_repository = lp.load("~username/+git/repository_name")
 
@@ -87,16 +85,20 @@ Steps to Build Snaps in Launchpad
       The full list of parameters that can be passed in the API can be found in
       the `snaps API documentation <https://api.launchpad.net/devel.html#snaps>`_.
 
-      Once created, you can obtain the URL of the snap's Launchpad page where
-      you can view the snap, see builds, and edit the snap package::
+      Once the snap is created, you can obtain the URL of the snap's Launchpad 
+      page where you can view the snap, see builds, and edit the snap package::
 
         >>> snap.web_link
         'https://launchpad.net/~username/+snap/test-snap'
 
-      To get the attributes and methods associated with the object::
+      To get the attributes associated with the object::
 
         >>> snap.lp_attributes
+
+      To get the methods associated with the object::
+
         >>> snap.lp_operations
+
     
       **Build the Snap**
 
@@ -104,21 +106,27 @@ Steps to Build Snaps in Launchpad
       producing a build record and, if successful, ``.snap`` artifacts that can
       installed and used.
 
-      The parameters needed to request a snap build can be found in the `snap
-      API documentation <https://api.launchpad.net/devel.html#snap>`_.
-
+      The parameters used when requesting a snap build can be found in the `snap
+      API documentation <https://api.launchpad.net/devel.html#snap>`_. 
+      
       When requesting a build, you must specify the ``archive`` to be used to
       get the package sources needed to build the snap package. This can be the
-      ``Primary Archive for Ubuntu`` or a :ref:`PPA
+      ``Primary Archive for Ubuntu`` or a :ref:`Personal Package Archive (PPA)
       <personal-package-archive>`.
 
       The ``pocket`` determines which package stream within the ``source archive``
       and ``distribution series`` is to be used. If the ``source archive`` is a
-      ``PPA``, then the PPA's archive dependencies will be used to select the
-      pocket in the distribution's primary archive.
+      PPA, the PPA's archive dependencies will be used to select the pocket 
+      in the distribution's primary archive.
 
-      Here, we will request a build with the ``Primary Archive for Ubuntu`` as
-      the ``Source archive`` and ``Updates pocket``::
+      .. note::
+        
+        To enable `Ubuntu Pro <https://ubuntu.com/pro>`_ for your snap build, 
+        use the ``pro_enable`` parameter.
+
+
+      For this tutorial, we will select ``Primary Archive for Ubuntu`` as the 
+      Source archive and ``Updates`` as the ``pocket``::
 
         >>> ubuntu_archive = lp.distributions["ubuntu"].main_archive
 
@@ -134,18 +142,18 @@ Steps to Build Snaps in Launchpad
         >>> build_request.web_link
         'https://api.launchpad.net/devel/~username/+snap/test-snap/+build-request/id'
 
-      While ``requestBuilds()`` requests that the snap package be built for all
-      relevant architectures, you can specify the architecture to build for
-      by passing ``distro_arch_series`` in ``requestBuild()`` instead.
+      ``requestBuilds()`` requests that the snap package be built for all 
+      relevant architectures. However, you can specify an architecture to 
+      build for by passing ``distro_arch_series`` in ``requestBuild()`` instead.
 
-      You will need to query Launchpad to obtain the status of your build
-      request (Pending, Failed, Completed), you will not be notified in the CLI
-      once the build is completed::
+      You will not be notified in the CLI once the build is completed. To 
+      obtain the status of your build (``Pending``, ``Failed``, ``Completed``),
+      you'll need to query Launchpad::
 
         >>> build_request.status
         'Completed'
 
-      You can try refreshing the object state at any time by running::
+      You can refresh the object state at any time by running::
 
         >>> build_request.lp_refresh()
 
@@ -159,8 +167,8 @@ Steps to Build Snaps in Launchpad
       Here, ``snap_build`` is a collection of builds based on the specified
       distribution series and architecture set.
 
-      Again, you will need to query Launchpad to obtain the status of your
-      build, you will not be notified in the CLI once the build is completed::
+      In this case as well, you'll need to query Launchpad to obtain the 
+      status of your build::
 
         >>> for build in snap_build:
         ...   build.lp_refresh() # to refresh the object state
@@ -180,8 +188,8 @@ Steps to Build Snaps in Launchpad
         ['https://launchpad.net/~username/+snap/test-snap/+build/id/+files/hello_2.10_amd64.snap',
         'https://launchpadlibrarian.net/id/buildlog_snap_ubuntu_...test-snap_SUCCESSFULLYBUILT.txt.gz']
 
-      To download the snap, you can use
-      `urllib.request <https://docs.python.org/3/library/urllib.request.html#module-urllib.request>`_::
+      Use `urllib.request <https://docs.python.org/3/library/urllib.request.html#module-urllib.request>`_
+      to download the snap::
 
         >>> for build in snap_build:
         ...   for url in build.getFileUrls():
@@ -192,8 +200,8 @@ Steps to Build Snaps in Launchpad
 
       **Build failures**
 
-      In the case a build fails, ensure that the snap can be built locally by
-      running the ``snapcraft`` command. You can go through the 
+      In case a build fails, ensure that the snap can be built locally by
+      running the ``snapcraft`` command. You can also go through the 
       ``buildlog`` (``build.build_log_url``) and retry the build::
 
         >>> for build in snap_build:
@@ -208,27 +216,22 @@ Steps to Build Snaps in Launchpad
       associating it with a source repository which contains a ``snapcraft.yaml``
       file.
 
-      To create a buildable snap package, you can either create a new snap from:
+      There are two options to create a buildable snap package on the UI:
 
-      - A particular branch in your source repository. Navigate to::
+      - Go to a branch in your source repository and navigate to::
 
-          https://code.launchpad.net/~username/+git/repository_name/+ref/master
-        
-        and click on ``Create snap package``::
+          https://code.launchpad.net/~username/+git/repository_name/+ref/master.
 
-          https://code.launchpad.net/~username/+git/repository_name/+ref/master/+new-snap
-
-      - A project on Launchpad (`register a project
-        <https://launchpad.net/projects/+new>`_). Navigate to::
+      - Select or `register
+        <https://launchpad.net/projects/+new>`_ a project on Launchpad and 
+        navigate to::
 
           https://launchpad.net/project_name
 
-        and click on ``Create snap package``::
+      Select ``Create snap package``.
 
-          https://launchpad.net/project_name/+new-snap
-
-      After filling in all the necessary details, click on ``Create snap
-      package``. For this tutorial, the name of the snap is set to ``test-snap``.
+      Fill in the required details and click on ``Create snap package``. For 
+      this tutorial, the name of the snap is set to ``test-snap``.
 
       **Build the Snap**
 
@@ -242,7 +245,7 @@ Steps to Build Snaps in Launchpad
 
       When requesting a build, you must specify the ``archive`` to be used to
       get the package sources needed to build the snap package. This can be the
-      ``Primary Archive for Ubuntu`` or a :ref:`PPA
+      ``Primary Archive for Ubuntu`` or a :ref:`Personal Package Archive (PPA)
       <personal-package-archive>`.
 
       The ``pocket`` determines which package stream within the ``source archive``
@@ -250,27 +253,35 @@ Steps to Build Snaps in Launchpad
       ``PPA``, then the PPA's archive dependencies will be used to select the
       pocket in the distribution's primary archive.
 
-      Here, we will request a build with the ``Primary Archive for Ubuntu`` as
-      the ``Source archive`` and ``Updates pocket``. Click on ``Request builds``.
+      For this tutorial, we will request a build with ``Primary Archive for
+      Ubuntu`` as the Source archive and the ``Updates`` pocket.
+
+      .. note::
+        
+        To enable `Ubuntu Pro <https://ubuntu.com/pro>`_ for your snap build, 
+        select ``Administer snap package`` in the snap recipe and check 
+        ``Enable Ubuntu Pro``.
+      
+      Build the .snap artifact by selecting ``Request builds``.
 
       **Download the Snap**
 
-      Once the snap is built, it can be accessed from::
+      Once the snap is built it can be accessed from::
 
         https://launchpad.net/~username/+snap/test-snap
 
-      where you can navigate to the ``Latest Builds`` section to see the
-      ``buildlog`` and ``build files``. Clicking on the ``build files`` will
-      download the snap to your machine.
+      Navigate to the ``Latest Builds`` section to see the ``buildlog`` and 
+      ``build files``. Select ``build files`` to download the snap to your 
+      machine.
 
       **Build failures**
       
-      In the case a build fails, ensure that the snap can be built locally by
-      running the ``snapcraft`` command. You can go through the ``buildlog`` and
-      retry the build by clicking on ``Request builds`` again.
+      In case a build fails, ensure that the snap can be built locally by
+      running the ``snapcraft`` command. You can also go through the 
+      ``buildlog`` and retry the build by selecting ``Request builds`` again.
 
 Next Steps
 ----------
 
-- Install and run your built snap by following `these steps <https://ubuntu.com/tutorials/create-your-first-snap#3-building-a-snap-is-easy>`_
+- `Install and run your built snap <https://ubuntu.com/tutorials/create-your-first-snap#3-building-a-snap-is-easy>`_
 - Learn how to build charms and rocks on Launchpad
