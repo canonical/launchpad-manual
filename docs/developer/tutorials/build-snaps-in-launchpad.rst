@@ -1,3 +1,5 @@
+.. _build-snaps-in-launchpad:
+
 Build Snaps in Launchpad
 ========================
 
@@ -16,7 +18,7 @@ take a look at both of these ways in this tutorial.
 Pre-requisites
 --------------
 
-To build a snap on Launchpad, you will need:
+To build a snap in Launchpad, you will need:
 
 - A Launchpad account (:ref:`how to create an account <create-and-personalise-your-launchpad-account>`).
 
@@ -62,7 +64,7 @@ Steps to Build Snaps in Launchpad
       file.
 
       Inside ``lp-shell``, run either of the following commands to create a
-      buildable snap package::
+      buildable snap package:
 
       - Using a Git repository and path::
 
@@ -178,7 +180,7 @@ Steps to Build Snaps in Launchpad
         >>> for build in snap_build:
         ...   print(build.getFileUrls(), build.build_log_url)
         ['https://launchpad.net/~username/+snap/test-snap/+build/id/+files/hello_2.10_amd64.snap',
-        'https://launchpadlibrarian.net/id/buildlog_snap_ubuntu_...test-snap_SUCCESSFULLYBUILT.txt.gz']
+        'https://launchpadlibrarian.net/id/buildlog_snap_ubuntu_...test-snap_BUILDING.txt.gz']
 
       To download the snap, you can use
       `urllib.request <https://docs.python.org/3/library/urllib.request.html#module-urllib.request>`_::
@@ -190,7 +192,7 @@ Steps to Build Snaps in Launchpad
         ...     print(f"Downloaded {filename}")
         Downloaded hello_2.10_amd64.snap
 
-      **Build failures**
+      **Build Failures**
 
       In the case a build fails, ensure that the snap can be built locally by
       running the ``snapcraft`` command. You can go through the 
@@ -263,7 +265,7 @@ Steps to Build Snaps in Launchpad
       ``buildlog`` and ``build files``. Clicking on the ``build files`` will
       download the snap to your machine.
 
-      **Build failures**
+      **Build Failures**
       
       In the case a build fails, ensure that the snap can be built locally by
       running the ``snapcraft`` command. You can go through the ``buildlog`` and
