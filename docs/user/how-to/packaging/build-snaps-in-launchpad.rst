@@ -13,7 +13,7 @@ architectures, without needing to manage your own build infrastructure. It
 provides an easy way to publish snaps directly to the `Snap Store <https://snapcraft.io/store>`_.
 
 On Launchpad, snaps can be built using either the web interface or the API. 
-This tutorial takes you through both approaches.
+This guide takes you through both approaches.
 
 Prerequisites
 --------------
@@ -106,7 +106,7 @@ Build with the API or the web interface(UI)
 
       Requesting a build instructs Launchpad to compile and package the snap,
       producing a build record and, if successful, ``.snap`` artifacts that can
-      installed and used.
+      be installed and used.
 
       The parameters used when requesting a snap build can be found in the `snap
       API documentation <https://api.launchpad.net/devel.html#snap>`_. 
@@ -121,8 +121,8 @@ Build with the API or the web interface(UI)
       PPA, the PPA's archive dependencies will be used to select the pocket 
       in the distribution's primary archive.
 
-      For this tutorial, we will select ``Primary Archive for Ubuntu`` as the 
-      Source archive and ``Updates`` as the ``pocket``::
+      In this guide, ``Primary Archive for Ubuntu`` is selected as the source 
+      archive and ``Updates`` as the ``pocket``::
 
         >>> ubuntu_archive = lp.distributions["ubuntu"].main_archive
 
@@ -226,8 +226,8 @@ Build with the API or the web interface(UI)
 
       Select ``Create snap package``.
 
-      Fill in the required details and click on ``Create snap package``. For 
-      this tutorial, the name of the snap is set to ``test-snap``.
+      Fill in the required details and click on ``Create snap package``. The 
+      name of this snap is set to ``test-snap``.
 
       **Build the Snap**
 
@@ -249,8 +249,8 @@ Build with the API or the web interface(UI)
       ``PPA``, then the PPA's archive dependencies will be used to select the
       pocket in the distribution's primary archive.
 
-      For this tutorial, we will request a build with ``Primary Archive for
-      Ubuntu`` as the Source archive and the ``Updates`` pocket.
+      In this guide, the build is requested with ``Primary Archive for Ubuntu`` 
+      set as the source archive and ``Updates`` as the pocket.
       
       Build the .snap artifact by selecting ``Request builds``.
 
