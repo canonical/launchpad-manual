@@ -11,4 +11,3 @@ Common development tasks
    creating-a-page-in-launchpad
    creating-a-rock-build-using-apis
    building-charms-in-launchpad
-   build-snaps-in-launchpad
