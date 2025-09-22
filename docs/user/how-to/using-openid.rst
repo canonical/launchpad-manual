@@ -30,7 +30,6 @@ Where can I use it?
 You can use Launchpad to log into any of the growing number of sites that support OpenID. These include:
 
 * Blogs powered by `Blogger <http://blogger.com>`_
-* `PBWiki <http://pbwiki.com>`_ - the free wiki hosting service
 * `Wordpress <http://wordpress.org>`_ blogs using an OpenID plugin
 * `LiveJournal <http://livejournal.com>`_.
 * `SourceForge <https://sourceforge.net/>`_
