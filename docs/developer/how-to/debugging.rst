@@ -56,8 +56,7 @@ Debugging memory leaks
 
 The app servers and the Librarian install a signal handler to dump their
 memory using `meliae <https://launchpad.net/meliae>`__. To make use of
-that you just have to send the 44 signal to the `appropriate
-process <https://wiki.canonical.com/InformationInfrastructure/OSA/LaunchpadProductionStatus#Service%20Debugging>`__.
+that you just have to send the 44 signal to the appropriate process.
 This will create a file named /tmp/launchpad-memory.dump (or
 /tmp/librarian-memory.dump, for the Librarian), which you can debug
 later.

@@ -340,7 +340,6 @@ LaunchpadFormView
 launchpadlib
 LaunchpadObjectFactory
 LaunchpadPpa
-LaunchpadProductionStatus
 LaunchpadStatementTracer
 LaunchpadView
 lazr
