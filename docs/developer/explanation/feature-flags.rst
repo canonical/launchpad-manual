@@ -8,7 +8,7 @@ running, and for particular features or behaviours to be exposed to only
 a subset of users or requests.**
 
 Please note, that any changes to feature flags need to be recorded on
-https://wiki.canonical.com/InformationInfrastructure/OSA/LaunchpadProductionStatus
+https://docs.google.com/document/d/1lxQJJWL2VD3mgCLp-KqDRxPYrhHv-020hn9qd2wL07Q/edit?tab=t.0
 
 Key points
 ----------
@@ -71,8 +71,8 @@ Operations
 ----------
 
 A change to a flag in production counts as a production change: it is
-made by the Launchpad team on request. Make the change `on the appropriate wiki
-page <https://wiki.canonical.com/InformationInfrastructure/OSA/LaunchpadProductionStatus>`__
+made by the Launchpad team on request. Make the change `on the appropriate
+documentation page <https://docs.google.com/document/d/1lxQJJWL2VD3mgCLp-KqDRxPYrhHv-020hn9qd2wL07Q/edit?tab=t.0>`__
 (sorry, company internal), including `an approval per the usual
 policy <https://wiki.canonical.com/Launchpad/PolicyandProcess/ProductionChangeApprovalPolicy>`__,
 and then ask in
