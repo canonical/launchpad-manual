@@ -95,7 +95,7 @@ Build the Rock Recipe
 ---------------------
 
 Requesting a build instructs Launchpad to compile and package the rock. This
-produces a build record and, if successful, ``.rock`` artifacts that can
+produces a build record and, if successful, ``.rock`` artifacts that can be
 installed and used::
 
     >>> build_request = rock_recipe.requestBuilds()
@@ -148,7 +148,7 @@ Download the Rock
 
 Once the build has completed successfully, fetch the build artifacts::
 
-    for build in rock_build:
+    >>> for build in rock_build:
     ...     print(build.getFileUrls(), build.build_log_url)
     ['https://launchpad.net/~username/project_name/+rock/test-rock/+build/id/+files/hello_latest_arm64.rock']
     https://launchpad.net/~username/project_name/+rock/test-rock/+build/id/+files/buildlog_rock_ubuntu_..._test-rock-1_BUILDING.txt.gz
