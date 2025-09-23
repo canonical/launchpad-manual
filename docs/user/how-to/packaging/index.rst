@@ -12,3 +12,4 @@ Packaging
     Set up daily builds with bzr-builder <source-builds-with-bzr-builder>
     Upload a package to a PPA <ppa-package-upload>
     build-snaps-in-launchpad
+    build-rocks-in-launchpad
