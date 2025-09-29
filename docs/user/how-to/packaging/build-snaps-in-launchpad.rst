@@ -274,4 +274,4 @@ Next Steps
 ----------
 
 - `Install and run your built snap <https://documentation.ubuntu.com/snapcraft/stable/tutorials/craft-a-snap/#test-the-snap>`_
-- Learn how to :ref:`build rocks on Launchpad <build-rocks-in-launchpad>`
+- Learn how to :ref:`build rocks in Launchpad <build-rocks-in-launchpad>`
