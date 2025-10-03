@@ -1,8 +1,12 @@
 .. _build-oci-images-in-launchpad:
 
 Build OCI images in Launchpad
-==========================================
+=============================
 
+.. note::
+    This feature is not yet available to everyone. Please reach out to the 
+    Launchpad team if you're interested in building OCI images in Launchpad.
+    
 OCI images are standardized, containerized application images that ensure 
 consistent runtime behavior across container runtimes such as Docker, Podman, 
 and Kubernetes.
