@@ -9,15 +9,14 @@ systems, so we aren't there yet.)
 To get an overview of how this works, you'll need to look in the ``charm/``
 directory of Launchpad itself, as well as `ols-layers
 <https://git.launchpad.net/ols-charm-deps>`_, `launchpad-layers
-<https://git.launchpad.net/launchpad-layers>`_, and `launchpad-mojo-specs
-<https://git.launchpad.net/launchpad-mojo-specs>`_.  Each of the
-subdirectories of ``charm/`` represents a single logical function which can
-be deployed as a Juju `application <https://juju.is/docs/olm/application>`_
-with one or more `units <https://juju.is/docs/olm/unit>`_.  The layers
-provide common code used by multiple charms.  The specs are used with `Mojo
-<https://mojo.canonical.com/>`_ to coordinate whole deployments of multiple
-applications; they contain configuration of individual applications and
-`integrations <https://juju.is/docs/juju/relation>`_ between applications.
+<https://git.launchpad.net/launchpad-layers>`_, and `launchpad-mojo-specs <https://git.launchpad.net/launchpad-mojo-specs>`_.  
+Each of the subdirectories of ``charm/`` represents a single logical function 
+which can be deployed as a Juju `application <https://documentation.ubuntu.com/juju/3.6/reference/application/>`_
+with one or more `units <https://documentation.ubuntu.com/juju/3.6/reference/unit/>`_.  
+The layers provide common code used by multiple charms.  The specs are used 
+with `Mojo <https://mojo.canonical.com/>`_ to coordinate whole deployments of 
+multiple applications; they contain configuration of individual applications 
+and `integrations <https://documentation.ubuntu.com/juju/3.6/reference/relation/>`_ between applications.
 
 Principles
 ==========
@@ -31,8 +30,8 @@ being the right thing to do, this also allows using machinery such as
 Launchpad's charm recipes that upload to `Charmhub <https://charmhub.io/>`_.
 When used in combination with Charmhub, Juju can easily be instructed to
 upgrade charms and update configuration using a single `bundle
-<https://juju.is/docs/olm/bundle>`_, allowing the top-level spec to be
-relatively simple.
+<https://documentation.ubuntu.com/juju/3.6/reference/bundle/>`_, allowing the 
+top-level spec to be relatively simple.
 
 Each charm should correspond to a deployment of a single top-level payload.
 On the other hand, it's fine for a single payload to have multiple charms
@@ -149,8 +148,8 @@ these guidelines to build your charm for Launchpad:
 Workflow
 ========
 
-You can run test deployments using `Juju <https://juju.is/docs/olm>`_ and
-`LXD <https://documentation.ubuntu.com/lxd/en/latest/>`_.
+You can run test deployments using `Juju <https://documentation.ubuntu.com/juju/3.6/howto/manage-your-deployment/>`_ 
+and `LXD <https://documentation.ubuntu.com/lxd/en/latest/>`_.
 
 Each Mojo spec has a ``README.md`` file explaining how to deploy it, and
 that's usually the easiest way to get started.  You should normally use the

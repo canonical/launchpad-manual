@@ -14,3 +14,4 @@ Packaging
     build-snaps-in-launchpad
     build-rocks-in-launchpad
     build-charms-in-launchpad
+    build-oci-images-in-launchpad

@@ -23,7 +23,7 @@ To build a snap in Launchpad, you will need:
 - A Launchpad account (:ref:`how to create an account <create-and-personalise-your-launchpad-account>`).
 
 - A Git repository on Launchpad with your working snap recipe. If you do not
-  have one, follow `this guide <https://ubuntu.com/tutorials/create-your-first-snap#1-overview>`_ 
+  have one, follow `Snapcraft's tutorial <https://documentation.ubuntu.com/snapcraft/stable/tutorials/craft-a-snap/>`_ 
   to create a simple one, and push to a repository using::
 
     git remote add origin git+ssh://username@git.launchpad.net/~username/+git/repository_name
@@ -273,5 +273,5 @@ Build with the API or the web interface(UI)
 Next Steps
 ----------
 
-- `Install and run your built snap <https://ubuntu.com/tutorials/create-your-first-snap#3-building-a-snap-is-easy>`_
-- Learn how to build charms and rocks on Launchpad
+- `Install and run your built snap <https://documentation.ubuntu.com/snapcraft/stable/tutorials/craft-a-snap/#test-the-snap>`_
+- Learn how to :ref:`build rocks in Launchpad <build-rocks-in-launchpad>`
