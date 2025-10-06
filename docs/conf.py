@@ -273,7 +273,7 @@ linkcheck_ignore = [
     r"https://launchpad\.net/frobnob/.*",
     r"https://buildbot\.net.*", #ignore, expired SSL certificate
     r"https://docs\.buildbot\.net/.*", #ignore, expired SSL certificate
-
+    "https://documentation.help/Bazaar-help/sending_changes.html#understanding-merge-directives",  #403 error. The link works in browser
     "Trunk/Glue",  #  needs update
     "/Background",
     "/Concepts",  #  needs update
