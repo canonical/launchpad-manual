@@ -28,7 +28,7 @@ Available to everyone
 -  ``Confirmed:`` a member of the community other than the original
    reporter believes that this report describes a genuine bug in enough
    detail that a developer could start work on a fix.
--  ``In Progress:`` a developer has taken responsibility to fix the bug
+-  ``In Progress``: a developer has taken responsibility to fix the bug
    and has begun work.
 -  ``Fix Committed:`` a developer has committed his/her fix to the
    project's codebase.
