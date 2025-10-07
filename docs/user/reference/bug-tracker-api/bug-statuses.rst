@@ -36,7 +36,7 @@ Available to everyone
    specifying the impact of a CVE/vulnerability on a package.
 -  ``Fix Released:`` a new version of the software, featuring the bug
    fix, has been released.
--  *Under consideration for removal:* ``Opinion:`` there is a difference
+-  *Under consideration for removal:* ``Opinion``: there is a difference
    of opinion about the bug and everyone is free to continue the
    discussion, however, the project maintainers consider the issue
    closed.
