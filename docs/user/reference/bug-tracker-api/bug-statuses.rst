@@ -34,7 +34,7 @@ Available to everyone
    project's codebase.
 -  ``Does Not Exist``: custom status used by the security team for
    specifying the impact of a CVE/vulnerability on a package.
--  ``Fix Released:`` a new version of the software, featuring the bug
+-  ``Fix Released``: a new version of the software, featuring the bug
    fix, has been released.
 -  *Under consideration for removal:* ``Opinion``: there is a difference
    of opinion about the bug and everyone is free to continue the
