@@ -25,7 +25,7 @@ Available to everyone
    considered for :ref:`expiry <bug-expiry>`.
 -  ``Invalid``: the report describes the software's normal behavior, or
    is unsuitable for any other reason.
--  ``Confirmed:`` a member of the community other than the original
+-  ``Confirmed``: a member of the community other than the original
    reporter believes that this report describes a genuine bug in enough
    detail that a developer could start work on a fix.
 -  ``In Progress``: a developer has taken responsibility to fix the bug
