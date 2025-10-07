@@ -20,7 +20,7 @@ Available to everyone
 ---------------------
 
 -  ``New``
--  ``Incomplete:`` the bug report is incomplete and needs more
+-  ``Incomplete``: the bug report is incomplete and needs more
    information before it can be triaged. Bugs in this state are
    considered for :ref:`expiry <bug-expiry>`.
 -  ``Invalid:`` the report describes the software's normal behaviour, or
