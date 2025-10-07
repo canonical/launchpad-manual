@@ -1,3 +1,5 @@
+.. _answer-tracker-for-community:
+
 Answer Tracker for building community support
 =============================================
 
