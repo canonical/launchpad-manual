@@ -30,7 +30,7 @@ Available to everyone
    detail that a developer could start work on a fix.
 -  ``In Progress``: a developer has taken responsibility to fix the bug
    and has begun work.
--  ``Fix Committed:`` a developer has committed his/her fix to the
+-  ``Fix Committed``: a developer has committed his/her fix to the
    project's codebase.
 -  ``Does Not Exist`` custom status used by the security team for
    specifying the impact of a CVE/vulnerability on a package.
