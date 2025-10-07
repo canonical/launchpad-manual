@@ -48,7 +48,7 @@ Only available to the bug supervisor
    contains all information a developer needs to start work on a fix.
 -  ``Won't Fix:`` this is acknowledged as a genuine bug but the project
    has no plans to fix it.
--  ``Deferred:`` the bug supervisor considers that the bug fix will be deferred
+-  ``Deferred``: the bug supervisor considers that the bug fix will be deferred
    to a later date.
 
 Translating external bug statuses
