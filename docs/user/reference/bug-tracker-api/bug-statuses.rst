@@ -32,7 +32,7 @@ Available to everyone
    and has begun work.
 -  ``Fix Committed``: a developer has committed his/her fix to the
    project's codebase.
--  ``Does Not Exist`` custom status used by the security team for
+-  ``Does Not Exist``: custom status used by the security team for
    specifying the impact of a CVE/vulnerability on a package.
 -  ``Fix Released:`` a new version of the software, featuring the bug
    fix, has been released.
