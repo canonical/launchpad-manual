@@ -171,7 +171,7 @@ requires your review.
 Further information
 -------------------
 
-Let `Launchpad and local translators know about your team guidelines <https://help.launchpad.net/Translations/Guidelines>`__
+Let :ref:`Launchpad and local translators know about your team guidelines <translation-guidelines>`
 
 Once people start using Launchpad to translate your project, you'll want
 to :ref:`export those translations <exporting-translations-from-launchpad>` for

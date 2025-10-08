@@ -45,8 +45,8 @@ For examples in this page, let's assume:
     here only for examples.
 
 .. tip::
-    If you have not yet created your project on Launchpad, `read
-    about it here <https://help.launchpad.net/Projects/Registering>`__.
+    If you have not yet created your project on Launchpad, :ref:`read
+    about it here <registering-your-project>`.
 
 Preparing the source code
 -------------------------
@@ -304,8 +304,8 @@ Translate!
 
 Now the actual translating can start!
 
-Please read the `Launchpad
-Translators <https://help.launchpad.net/Translations/LaunchpadTranslators>`__
+Please read the :ref:`Launchpad
+Translators <launchpad-translators-group>`
 instructions for project maintainers. You should also join the `team on
 Launchpad <https://launchpad.net/~launchpad-translators>`__ and
 subscribe to the mailing list. On this list you can announce your new
