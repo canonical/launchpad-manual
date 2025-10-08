@@ -19,24 +19,24 @@ new contributors to get involved, there are two additional bug statuses
 Available to everyone
 ---------------------
 
--  **New**
--  **Incomplete:** the bug report is incomplete and needs more
+-  ``New``
+-  ``Incomplete``: the bug report is incomplete and needs more
    information before it can be triaged. Bugs in this state are
    considered for :ref:`expiry <bug-expiry>`.
--  **Invalid:** the report describes the software's normal behaviour, or
+-  ``Invalid``: the report describes the software's normal behavior, or
    is unsuitable for any other reason.
--  **Confirmed:** a member of the community other than the original
+-  ``Confirmed``: a member of the community other than the original
    reporter believes that this report describes a genuine bug in enough
    detail that a developer could start work on a fix.
--  **In Progress:** a developer has taken responsibility to fix the bug
+-  ``In Progress``: a developer has taken responsibility to fix the bug
    and has begun work.
--  **Fix Committed:** a developer has committed his/her fix to the
+-  ``Fix Committed``: a developer has committed his/her fix to the
    project's codebase.
--  **Does Not Exist** custom status used by the security team for
+-  ``Does Not Exist``: custom status used by the security team for
    specifying the impact of a CVE/vulnerability on a package.
--  **Fix Released:** a new version of the software, featuring the bug
+-  ``Fix Released``: a new version of the software, featuring the bug
    fix, has been released.
--  *Under consideration for removal:* **Opinion:** there is a difference
+-  *Under consideration for removal:* ``Opinion``: there is a difference
    of opinion about the bug and everyone is free to continue the
    discussion, however, the project maintainers consider the issue
    closed.
@@ -44,11 +44,11 @@ Available to everyone
 Only available to the bug supervisor
 ------------------------------------
 
--  **Triaged:** the bug supervisor considers that the bug report
+-  ``Triaged``: the bug supervisor considers that the bug report
    contains all information a developer needs to start work on a fix.
--  **Won't Fix:** this is acknowledged as a genuine bug but the project
+-  ``Won't Fix``: this is acknowledged as a genuine bug but the project
    has no plans to fix it.
--  **Deferred:** the bug supervisor considers that the bug fix will be deferred
+-  ``Deferred``: the bug supervisor considers that the bug fix will be deferred
    to a later date.
 
 Translating external bug statuses
