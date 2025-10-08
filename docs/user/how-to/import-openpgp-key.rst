@@ -10,7 +10,7 @@ OpenPGP allows you to sign documents, such as emails or text files, using a digi
 
 You can use most of Launchpad without OpenPGP. However, if you want to sign the Ubuntu Code of Conduct or use the Bug Tracker's email interface, you will need to register an OpenPGP key in your Launchpad account.
 
-You may occasionally receive an email from Launchpad that has been encrypted to your OpenPGP key, or signed by someone else's OpenPGP key. If you need help viewing such messages in your mail reader, please see our guide to `reading OpenPGP signed mail <https://help.launchpad.net/ReadingOpenPgpMail>`_.
+You may occasionally receive an email from Launchpad that has been encrypted to your OpenPGP key, or signed by someone else's OpenPGP key. If you need help viewing such messages in your mail reader, please see this guide to `reading OpenPGP signed mail <https://www.openpgp.org/software/>`_.
 
 .. TODO: ReadingOpenPgpMail not in GH
 

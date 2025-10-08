@@ -89,10 +89,8 @@ features and security-related areas.
 
 Authorization
 --------------
-There is `extensive documentation`_ for how the OAuth authorization
+There is :ref:`extensive documentation <sign-web-requests>` for how the OAuth authorization
 arrangements work for the webservice API.
-
-.. _extensive documentation: https://help.launchpad.net/API/SigningRequests
 
 Processes
 ---------

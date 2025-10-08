@@ -1,3 +1,5 @@
+.. _launchpad-project-translation-best-practices:
+
 Launchpad project translation Best Practices
 ============================================
 

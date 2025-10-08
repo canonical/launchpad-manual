@@ -211,6 +211,5 @@ how to land changes to Launchpad loggerhead.
 Source package recipes
 ----------------------
 
-See `the help
-wiki <https://help.launchpad.net/Packaging/SourceBuilds>`__ for more
+Check out the :ref:`source builds explanation <source-build-recipes>` for more
 details on what recipes are.
