@@ -1,3 +1,5 @@
+.. _plural-forms-information-for-languages:
+
 Plural forms information for languages
 ======================================
 

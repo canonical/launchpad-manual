@@ -53,7 +53,7 @@ Documentation
 -------------
 * `Documentation for launchpad-buildd <https://launchpad-buildd.readthedocs.io/en/latest/index.html>`_
 * `Documentation for the Launchpad CI runner <https://lpci.readthedocs.io/en/latest/>`_
-* `Documentation for Launchpad CI <https://help.launchpad.net/Code/ContinuousIntegration>`_
+* :ref:`Documentation for Launchpad CI <continuous-integration>`
 
 Git repositories
 ----------------

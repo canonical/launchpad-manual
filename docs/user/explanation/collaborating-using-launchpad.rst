@@ -45,4 +45,4 @@ X-Launchpad-Message-Rationale: ContactViaWeb
 Next step
 ---------
 
-Launchpad teams help you find other people with similar interests. Let's look at `joining a team <https://help.launchpad.net/Teams/Joining>`_
+Launchpad teams help you find other people with similar interests. Let's look at :ref:`joining a team <ref-launchpad-teams>`

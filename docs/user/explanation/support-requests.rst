@@ -1,3 +1,5 @@
+.. _filing-new-support-request:
+
 Filing a new support request
 ============================
 

@@ -100,7 +100,7 @@ More information
 Here are some documents that describe how to make the most of the Answer
 Tracker feature in Launchpad:
 
-1. `SupportTrackerTour <https://help.launchpad.net/SupportTrackerTour>`_: 
+1. :ref:`Support Tracker Tour <filing-new-support-request>`: 
 a quick tour which shows the main features of the support tracker
 
 2. `Answer Tracker Tour <https://answers.launchpad.net/+tour>`_:

@@ -1,3 +1,5 @@
+.. _ref-launchpad-teams:
+
 Launchpad Teams
 ===============
 

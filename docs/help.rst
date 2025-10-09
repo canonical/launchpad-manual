@@ -25,7 +25,3 @@ It's also okay to just `file a bug`_.
 
 .. _file a bug: https://bugs.launchpad.net/launchpad/+filebug
 
-.. note::
-
-   If you need help **using** Launchpad, please see the
-   https://help.launchpad.net/.

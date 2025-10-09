@@ -18,7 +18,7 @@ Launchpad uses the Zope Component Architecture (`zope.interface
 <https://zopecomponent.readthedocs.io/>`_) extensively and pervasively.
 ``zope.interface`` defines most of Launchpad's internal interfaces, and is
 also built upon by `lazr.restful <https://lazrrestful.readthedocs.io/>`_ to
-define its `external web service API <https://help.launchpad.net/API>`_.
+define its :ref:`external web service API <launchpad-web-services-api>`.
 ``zope.component`` provides facilities for registering and looking up
 components, making it easier to decouple implementations from interfaces and
 reducing the need for circular imports.
