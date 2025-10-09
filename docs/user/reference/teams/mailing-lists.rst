@@ -77,7 +77,7 @@ append it to ``@lists.launchpad.net``.
 
     - Postings by people who are not Launchpad members are immediately discarded.
     - Postings by Launchpad members who are not team members are held for approval by the team owner.
-    - All Launchpad mailing list messages are publicly archived and **the archives are open to everyone**, not just Launchpad or team members. If you have any issues with information available in the archives, you should contact `the Launchpad administrators <https://help.launchpad.net/Feedback>`_. However, our general policy is **never to remove archive messages or information contained therein**.
+    - All Launchpad mailing list messages are publicly archived and **the archives are open to everyone**, not just Launchpad or team members. If you have any issues with information available in the archives, you should contact :ref:`the Launchpad administrators <talk-to-us-about-launchpad>`. However, our general policy is **never to remove archive messages or information contained therein**.
 
 If you use Gmail
 ^^^^^^^^^^^^^^^^

@@ -49,7 +49,7 @@ Launchpad will now deactivate your account.
 Recovering your account
 -----------------------
 
-If you later decide that you want to start using Launchpad again, you can recover your account by logging into Launchpad again using the same email address. (If you also deleted your account on the login service after deactivating your Launchpad account, then you will need to `create a new account <https://help.launchpad.net/CreatingYourLaunchpadAccount>`_ using one of the email addresses from your deactivated account, at which point you will get an error ID due to the account conflict; send an email to feedback@launchpad.net explaining the situation and including the error ID, and we can restore your old account for you.)
+If you later decide that you want to start using Launchpad again, you can recover your account by logging into Launchpad again using the same email address. (If you also deleted your account on the login service after deactivating your Launchpad account, then you will need to :ref:`create a new account <create-and-personalise-your-launchpad-account>` using one of the email addresses from your deactivated account, at which point you will get an error ID due to the account conflict; send an email to feedback@launchpad.net explaining the situation and including the error ID, and we can restore your old account for you.)
 
 
 .. note::

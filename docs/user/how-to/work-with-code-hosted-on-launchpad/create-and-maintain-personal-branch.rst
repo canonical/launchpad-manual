@@ -27,8 +27,8 @@ However, there are some differences:
 If you want to collaborate on a +junk branch with someone else, you need
 to make the branch be owned by a team that both you and the other person
 are members of. Better still, when you are ready to collaborate, you
-should `create a
-project <https://help.launchpad.net/Projects/Registering>`__ and move
+should :ref:`create a
+project <registering-your-project>` and move
 the ``+junk`` branch into the project.
 
 Create a +junk branch
