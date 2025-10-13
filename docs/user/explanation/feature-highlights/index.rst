@@ -6,66 +6,67 @@ Launchpad feature highlights
 Welcome to Launchpad, the platform designed to help you share your software 
 projects with the world. You can use this platform to host your code, but 
 you'll also have access to features that help you collaborate with others, 
-track bugs, manage project releases and more. 
+build packages, track bugs, and more. 
 
 Get familiar with some of Launchpad's most exciting features below.
 
+:ref:`Personal Package Archives (PPA) <personal-package-archives-highlights>`
+-----------------------------------------------------------------------------
+Personal package archives allow you to distribute software packages that can be
+installed on an Ubuntu system. Users who install these packages receive 
+automatic updates whenever you make them available. PPAs are useful for:
+
+- Distributing your open source software as debian packages
+- Providing alternative implementations of existing packages
+- Maintaining backported packages when there are newer upstream versions 
+- Building in an isolated environment and lowering the risk of breaking Ubuntu systems, etc.
+
 :ref:`The answer tracker <answer-tracker-for-community>`
 --------------------------------------------------------
-This feature makes it convenient to get support from the community. It offers a
-framework for capturing discussions on different questions and issues for each 
-registered project and turning them into a knowledge-base. 
+If you need help with a project on Launchpad, the answer tracker is your best 
+bet for finding a solution. When you ask a question through this feature, you 
+can get assistance from project admins or community members who have signed up 
+to be answer contacts for that project. 
 
-Community members can sign up to become answer contacts for a project, allowing
-them to be notified when questions are asked.
+The answer tracker also provides a framework for capturing discussions on 
+different questions and issues, enabling users to search for answers in 
+previous questions before asking new ones.
 
-:ref:`Blueprints <blueprints-lightweight-specifications>`
----------------------------------------------------------
-A blueprint is a placeholder for work. It's a declaration of a desire to work 
-on something or see something worked on. They can be contributed by anyone and 
-can be proposals for:
+`The build farm <https://launchpad.net/builders>`_
+---------------------------------------------------
+Launchpad has a build farm consisting of 450+ builders (and counting), allowing
+users to build packages such as snaps, rocks, and charms on the platform. The 
+builders are distributed across various architectures including AMD64, ARM64, 
+RISC-V, and more.   
 
-- Bug fixes
-- Documenation
-- Implementation of ideas, etc.
+You can check the status of the builders, length of queues, and even build
+histories of individual builders, before starting yours. 
 
-Project leaders determine which blueprints should be implemented and when.
+:ref:`Bugs and bug trackers <monitoring-bugs-in-other-bug-trackers>`
+--------------------------------------------------------------------
+Bugs are a central feature of Launchpad and this enables users to work together 
+to report, track, and fix bugs. Tracked bugs are made available to all projects
+and distributions.
 
-:ref:`Personal package archives <personal-package-archives-highlights>`
------------------------------------------------------------------------
-A personal package archive allows you to publish software packages that can be
-installed on an Ubuntu system. You can create and distribute your own PPA by 
-creating a source package, getting it built on Launchpad, and publishing it.
+The bug tracker monitors bugs related to a project regardless of where they are 
+reported. To monitor the status of bugs in external trackers, you just need to 
+provide a bug report URL. 
 
-
-:ref:`Bug watches <monitoring-bugs-in-other-bug-trackers>`
-----------------------------------------------------------
-Launchpad allows you to track the status of bugs reported in other communities,
-allowing you to conveniently keep track of bugs relating to your project
-regardless of where they are reported. 
-
-Once you provide the bug report's URL, Launchpad will regularly check the 
-status of the external bug tracker automatically.
-
-:ref:`Milestones <milestones-exp>`
-----------------------------------
-You can use milestones to indicate the bugs and blueprints you are prioritizing
-for a specific release or within a given period. Although Launchpad provides 
-features that enable stricter project management, e.g., product series, 
-milestones offer a less restrictive approach that makes sense for small 
-projects. 
+:ref:`Maintaining multiple releases <series-major-stable-and-development-branches>`
+-----------------------------------------------------------------------------------
+You can register multiple releases of a project on Launchpad and maintain them 
+on separate branches. This allows you to present users with different product 
+options, e.g., the latest stable release, releases with experimental features, 
+releases that have been superceded but are preferred by some users, etc. 
 
 Additional features
 -------------------
-There are other features you can try out on Launchpad to aid your software 
-collaborations including:
+Other features you can use on Launchpad to aid your collaborations include:
 
-- The :ref:`email interface <launchpad-email-interface>`: Interact with the bug tracker without going to your browser
+- The :ref:`email interface <launchpad-email-interface>`: Interact with the bug tracker without a browser
 - :ref:`Bug branch linking <linking-bugs-to-dedicated-branches>`: Link a branch fixing a specific bug to the bug report
-- :ref:`Product series <series-major-stable-and-development-branches>`: Register different project series, and separate stable, development, and obsolete branches
-- :ref:`Bug tracker <the-launchpad-bug-tracker>`: Launchpad's bug tracking tool which makes every bug available to every project and distribution
-
-
+- :ref:`Blueprints <blueprints-lightweight-specifications>`: Short specifications of things to be worked on in a project, i.e., bugs, documentation, features, etc.
+- :ref:`Milestones <milestones-exp>`: Indicate bugs and blueprints you're prioritizing for your next release
 
 .. toctree::
     :hidden:
