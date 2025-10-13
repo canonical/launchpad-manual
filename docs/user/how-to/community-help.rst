@@ -80,9 +80,8 @@ button beside. Otherwise, you can enter your own search terms to look
 for other FAQ answers that may be useful to the original questioner.
 
 .. note::
+   If you can't find a relevant answer but think that the question should be considered a FAQ, skip to the next section *Creating a new FAQ*.
 
-    If you can't find a relevant answer but think that the
-    question should be considered a FAQ, skip to the next section *Creating a new FAQ*.
 
 **Step 5:** You can send a message to the questioner to explain why
 you're sending them a link to a FAQ. Launchpad automatically enters a
