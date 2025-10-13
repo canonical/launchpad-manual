@@ -79,9 +79,10 @@ appear to be relevant. If you see a relevant answer, select the radio
 button beside. Otherwise, you can enter your own search terms to look
 for other FAQ answers that may be useful to the original questioner.
 
-**Note:** If you can't find a relevant answer but think that the
-question should be considered a FAQ, skip to the next section *Creating
-a new FAQ*.
+.. note::
+
+    If you can't find a relevant answer but think that the
+    question should be considered a FAQ, skip to the next section *Creating a new FAQ*.
 
 **Step 5:** You can send a message to the questioner to explain why
 you're sending them a link to a FAQ. Launchpad automatically enters a
@@ -97,9 +98,10 @@ Creating a new FAQ
 
 *Continues from after step 4 in the section above.*
 
-{i} **Note:** Although any user can answer a question with an existing
-FAQ answer, only answer contacts for the project can create a new FAQ
-answer.
+.. note::
+
+   Although any user can answer a question with an existing
+   FAQ answer, only answer contacts for the project can create a new FAQ answer.
 
 **Step 5:** If you can't find a suitable FAQ answer, click **create a new FAQ** in the page's introductory text.
 
