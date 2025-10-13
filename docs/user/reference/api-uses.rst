@@ -5,7 +5,7 @@ Table of applications using the API
 .. include:: /includes/important_not_revised_help.rst
 
 
-Below are programs that use the `Launchpad APIs <https://help.launchpad.net/API>`_ (usually through the `launchpadlib <https://help.launchpad.net/API/launchpadlib>`_ Python interface) that you can use as examples if you're starting out with Launchpad API programming. See also the `API/Examples <https://help.launchpad.net/API/Examples>`_ page, which contains code snippets specifically meant as examples, the `Clients <https://help.launchpad.net/Clients>`_ page (into which this page should probably be merged), and the `Launchpad Extensions (lpx) <https://launchpad.net/lpx>`_ project group.
+Below are programs that use the :ref:`Launchpad APIs <launchpad-web-services-api>` (usually through the :ref:`launchpadlib <get-started-with-launchpadlib>` Python interface) that you can use as examples if you're starting out with Launchpad API programming. See also the :ref:`API Examples <use-the-python-api>` page, which contains code snippets specifically meant as examples, the `Clients <https://blog.launchpad.net/tag/api-clients>`_ page (into which this page should probably be merged), and the `Launchpad Extensions (lpx) <https://launchpad.net/lpx>`_ project group.
 
 .. list-table::
    :header-rows: 1

@@ -22,7 +22,7 @@ use Launchpad.net).
 Help, Dev, and News Content Licence
 -----------------------------------
 
-The documentation contained in the `Launchpad Help wiki <https://help.launchpad.net/>`_, the `Launchpad Development wiki <https://dev.launchpad.net/>`_, and on the `Launchpad blog <http://blog.launchpad.net/>`_ is owned by Canonical Ltd. and is licensed under a `Creative Commons Attribution 2.0 UK: England & Wales License <http://creativecommons.org/licenses/by/2.0/uk/>`_.
+The documentation contained in the :ref:`Launchpad manual <launchpad-manual-for-users>`, the `Launchpad Development wiki <https://dev.launchpad.net/>`_, and on the `Launchpad blog <http://blog.launchpad.net/>`_ is owned by Canonical Ltd. and is licensed under a `Creative Commons Attribution 2.0 UK: England & Wales License <http://creativecommons.org/licenses/by/2.0/uk/>`_.
 
 For information about the licence of the Launchpad source code itself,
 please see the :ref:`Launchpad License <launchpad-license>`.
@@ -52,7 +52,7 @@ these translations as sources for their own translations, without
 suffering licensing incompatibilities. Translations of groups of strings
 from the same project, to the extent forming a derivative work of the
 project, are made available to Canonical and in turn to you under the
-licence applicable to the project. See the `Translations Licensing FAQ <https://help.launchpad.net/Translations/LicensingFAQ>`_ for details.
+licence applicable to the project. See the :ref:`Translations Licensing FAQ <translations-licensing-faq>` for details.
 
 Bugs copyright
 ~~~~~~~~~~~~~~
