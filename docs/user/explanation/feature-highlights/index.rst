@@ -21,7 +21,7 @@ automatic updates whenever you make them available. PPAs are useful for:
 - Maintaining backported packages when there are newer upstream versions 
 - Building in an isolated environment and lowering the risk of breaking Ubuntu systems, etc.
 
-:ref:`The answer tracker <answer-tracker-for-community>`
+:ref:`Answer tracker <answer-tracker-for-community>`
 --------------------------------------------------------
 If you need help with a project on Launchpad, the answer tracker is your best 
 bet for finding a solution. When you ask a question through this feature, you 
@@ -32,7 +32,7 @@ The answer tracker also provides a framework for capturing discussions on
 different questions and issues, enabling users to search for answers in 
 previous questions before asking new ones.
 
-`The build farm <https://launchpad.net/builders>`_
+`Build farm <https://launchpad.net/builders>`_
 ---------------------------------------------------
 Launchpad has a build farm consisting of 450+ builders (and counting), allowing
 users to build packages such as snaps, rocks, and charms on the platform. The 
@@ -52,18 +52,11 @@ The bug tracker monitors bugs related to a project regardless of where they are
 reported. To monitor the status of bugs in external trackers, you just need to 
 provide a bug report URL. 
 
-:ref:`Maintaining multiple releases <series-major-stable-and-development-branches>`
------------------------------------------------------------------------------------
-You can register multiple releases of a project on Launchpad and maintain them 
-on separate branches. This allows you to present users with different product 
-options, e.g., the latest stable release, releases with experimental features, 
-releases that have been superceded but are preferred by some users, etc. 
-
 Additional features
 -------------------
-Other features you can use on Launchpad to aid your collaborations include:
+Other interesting features to explore on Launchpad include:
 
-- The :ref:`email interface <launchpad-email-interface>`: Interact with the bug tracker without a browser
+- :ref:`Email interface <launchpad-email-interface>`: Interact with the bug tracker without a browser
 - :ref:`Bug branch linking <linking-bugs-to-dedicated-branches>`: Link a branch fixing a specific bug to the bug report
 - :ref:`Blueprints <blueprints-lightweight-specifications>`: Short specifications of things to be worked on in a project, i.e., bugs, documentation, features, etc.
 - :ref:`Milestones <milestones-exp>`: Indicate bugs and blueprints you're prioritizing for your next release
