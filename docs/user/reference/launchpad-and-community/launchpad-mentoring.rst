@@ -123,10 +123,3 @@ from all the lists where it was previously displayed.
 You can only retract an offer while the bug or blueprint is incomplete.
 Once the bug is completely fixed, or the blueprint is implemented, you
 can't make or retract an offer of mentorship.
-
-Further information
--------------------
-
-Good communication within a team is essential. Let's set up a team
-:ref:`mailing list <launchpad-mailing-lists>` to help members discuss their
-work.

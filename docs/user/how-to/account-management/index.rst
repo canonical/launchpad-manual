@@ -24,8 +24,8 @@ At the very least, you need to create a user account.
   all of Launchpad's tools, or just tell the world more about your
   project. :ref:`Need help with this? <how-to-register-your-project>`
 - `Create a team in Launchpad <https://launchpad.net/people/+newteam>`__: work with
-  other people in your community, take shared responsibilities and run
-  a mailing list. :ref:`Need help with this? <creating-and-running-launchpad-teams>`
+  other people in your community and take shared responsibilities.
+  :ref:`Need help with this? <creating-and-running-launchpad-teams>`
 - :ref:`Close your account <how-to-close-account>`
 
 Next steps

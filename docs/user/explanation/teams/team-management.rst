@@ -34,8 +34,7 @@ subscription policy:
 -  **Restricted:** the only way to join a team is to be added by one of
    its administrators.
 
-These subscription policies are similar to those used for mailing lists.
-They allow you, as the creator or administrator of a team, to decide how
+These allow you, as the creator or administrator of a team, to decide how
 flexible you want to be, and to maintain good control of the growth of
 your community, if you choose.
 
