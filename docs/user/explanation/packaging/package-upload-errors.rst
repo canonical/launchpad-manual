@@ -118,4 +118,5 @@ Other errors
 ------------
 
 If you come across other errors when uploading a package to Launchpad,
-find us in #launchpad on irc.libera.chat or :ref:`get in touch by email <talk-to-us-about-launchpad>`.
+find us on `Matrix <https://matrix.to/#/#launchpad:ubuntu.com>`_ or :ref:`get 
+in touch by email <talk-to-us-about-launchpad>`.
