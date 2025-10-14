@@ -9,14 +9,11 @@ trying to modify Launchpad but are having trouble, please seek us out by any of
 these means:
 
 - Join us on :literalref:`Launchpad channel on Matrix <https://matrix.to/#/#launchpad:ubuntu.com>`
-- Ask on the `launchpad-dev_AT_lists.launchpad.net`_ mailing list.
   You do not have to be subscribed to post (but feel free to subscribe too).
-- Look in the `mailing list archives`_.
 - Check the XXX FAQ.
 - Read the `API documentation`_.
 
 .. _launchpad-dev_AT_lists.launchpad.net: https://launchpad.net/~launchpad-dev
-.. _mailing list archives: https://lists.launchpad.net/launchpad-dev/
 .. _API documentation: http://people.canonical.com/~mwh/canonicalapi/
 
 We try to run a newcomer-friendly community; it's okay to ask basic questions

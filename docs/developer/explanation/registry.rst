@@ -103,6 +103,6 @@ though some may be registered by an import process.
 
 | ``   * Team membership``
 | ``   * Team participation``
-| ``   * Mailing Lists``
 | ``   * Polls``
 | ``   * Privacy``
+
