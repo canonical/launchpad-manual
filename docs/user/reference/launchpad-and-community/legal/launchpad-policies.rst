@@ -169,7 +169,7 @@ under one or more of the following:
    -  `CC BY-NC-SA <http://creativecommons.org/licenses/by-nc-sa/3.0/>`_
    -  `CC BY-NC-ND <http://creativecommons.org/licenses/by-nc-nd/3.0/>`_
 
-To request approval to host content on Launchpad under a license not covered by the list above, bring it up on the `Launchpad Matrix channel <https://matrix.to/#/#launchpad:ubuntu.com>`_ for consideration before uploading it.
+To request approval to host content on Launchpad under a license not covered by the list above, :ref:`contact the Launchpad team <getting-help>` for consideration before uploading it.
 
 Canonical reserves the right (but shall have no obligation) to
 pre-screen, review, flag, filter, modify, refuse, or remove any or all
@@ -303,8 +303,7 @@ uses not previously disclosed in this policy. If our information
 practices change at some time in the future we will post the policy
 changes to our web site to notify you of these changes. If you are
 concerned about how your information is used, you should check back at
-our web site periodically. We will also announce these changes on the
-Launchpad Users mailing list and on `<http://blog.launchpad.net>`_.
+our web site periodically. We will also announce these changes on `<http://blog.launchpad.net>`_.
 
 Data retention
 --------------

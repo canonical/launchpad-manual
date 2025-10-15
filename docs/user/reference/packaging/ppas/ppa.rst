@@ -159,7 +159,7 @@ were built becomes obsolete and unmaintained.
 What formats of packages are supported?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-At this stage only .deb packages are supported. If you are interested in building RPM or other package formats, please contact us on the `Launchpad Matrix channel <https://matrix.to/#/#launchpad:ubuntu.com>`_ to discuss that in more detail!
+At this stage only .deb packages are supported. If you are interested in building RPM or other package formats, please contact the :ref:`Launchpad team <getting-help>` to discuss that in more detail!
 
 How many users can download packages from my PPA?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
