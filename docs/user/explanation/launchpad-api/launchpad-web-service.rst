@@ -193,7 +193,6 @@ looks like when I convert it to a Python dictionary.
     u'languages_collection_link': u'http://api.staging.launchpad.net/1.0/~your-user-name/languages',
     u'latitude': None,
     u'longitude': None,
-    u'mailing_list_auto_subscribe_policy': u'Ask me when I join a team',
     u'members_collection_link': u'http://api.staging.launchpad.net/1.0/~your-user-name/members',
     u'members_details_collection_link': u'http://api.staging.launchpad.net/1.0/~your-user-name/members_details',
     u'memberships_details_collection_link': u'http://api.staging.launchpad.net/1.0/~your-user-name/memberships_details',

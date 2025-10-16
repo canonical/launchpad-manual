@@ -37,9 +37,6 @@ As the maintainer of a project with commercial support, you can create:
 Private teams
     Visible to team members only
 
-Private mailing lists
-    Visible to team members only
-
 Private package archives
     Visible to team members and to users you offer a package subscription too
 

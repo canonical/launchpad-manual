@@ -36,7 +36,7 @@ We use Launchpad Answers, and you can discuss pretty much anything Launchpad-rel
 Chat with us
 ~~~~~~~~~~~~
 
-If you want to discuss your suggestion with a member of the Launchpad team, visit us in #launchpad on irc.libera.chat. You can also join us on the `Launchpad users team mailing list <https://launchpad.net/~launchpad-users>`_.
+If you want to discuss your suggestion with a member of the Launchpad team, visit us in #launchpad on irc.libera.chat.
 
 Email us
 ~~~~~~~~

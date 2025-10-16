@@ -34,16 +34,13 @@ Adding a third-party widget
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The current story for adding a third-party widget is to put it in
-``lib/lp/contrib``. You can read the `mailing list discussion`_ about the adoption of
-this location.
+``lib/lp/contrib``.
 
 For CSS, follow the rules above to modify the tools. If other assets are
 needed, you'll need to create a link in
 ``lib/canonical/launchpad/icing`` to the proper place in
 ``lib/lp/contrib`` so the assets can be found. See
 ``lib/canonical/launchpad/icing/yui3-gallery`` for an example.
-
-.. _`mailing list discussion`: https://lists.launchpad.net/launchpad-dev/msg06474.html
 
 New Combo loader Setup
 ----------------------

@@ -213,13 +213,6 @@ PPA (this is an unusual configuration):
 Any of these may have the @ notation appended if the relation is through
 a team, as above.
 
-Most package uploads to primary archives also cause an announcement to
-the appropriate -changes mailing list. This has:
-
-::
-
-       X-Launchpad-Message-Rationale: Announcement
-
 All package upload mail also has:
 
 ::

@@ -14,7 +14,6 @@ Explanation
     Answers <answers/index>
     Feature highlights <feature-highlights/index>
     Launchpad API <launchpad-api/index>
-    Launchpad mailing lists <launchpad-mailing-lists>
     Rationale headers in Launchpad email <message-rationale-headers>
     OOPS <oops>
     Packaging <packaging/index>

@@ -8,14 +8,8 @@ The Launchpad bug tracker
 This document describes the extra data interface to
 the bug tracker in Launchpad that can be used by bug reporting tools
 such as `Apport <https://launchpad.net/Apport>`__. If you have questions
-or comments about this document, please address them to
-
-::
-
-   #launchpad
-
-on irc.libera.chat, or ask on the `launchpad-users mailing
-list <https://lists.ubuntu.com/mailman/listinfo/launchpad-users>`__.
+or comments about this document, please address them to the `Launchpad Matrix
+channel <https://matrix.to/#/#launchpad:ubuntu.com>`_
 
 Overview
 --------

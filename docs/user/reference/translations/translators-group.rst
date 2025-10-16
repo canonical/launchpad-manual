@@ -74,8 +74,6 @@ distributions.
 -  Follow the rules of your team, communicate and keep in touch with the
    team.
 
--  You may want to join the `Launchpad Translators mailing list <https://launchpad.net/~launchpad-translators>`__ and get in touch with other translators and teams.
-
 Launchpad localization teams
 ----------------------------
 
@@ -124,12 +122,11 @@ Launchpad Translators group:
 
 -  **Coordinator**. The team should have a coordinator with a stable
    contact e-mail address visible to logged-in Launchpad users. The
-   coordinator should subscribe to the launchpad-translators mailing
-   list and forward any relevant announcements or information to the
+   coordinator should forward any relevant announcements or information to the
    team. As the coordinator, you are the primary contact person for the
    team and the person who make things happen.
 
-   -  As the coordinator of a Launchpad localization team, it is higly recommended to join the `Launchpad Translators mailing list <https://launchpad.net/~launchpad-translators>`__.
+   -  As the coordinator of a Launchpad localization team, it is higly recommended to join the `Launchpad Translators team <https://launchpad.net/~launchpad-translators>`__.
 
 -  **Apply**. `Send a support request <https://answers.launchpad.net/rosetta/+addquestion>`__ for the Launchpad Translations Coordinators to appoint your team in the Launchpad Translators group. Please include a link to your team and a short note explaining how you have addressed the points above.
 
