@@ -613,6 +613,7 @@ Snapcraft
 snapshotting
 SolutionsLog
 sourcecode
+sourcecraft
 sourceforge
 sourcepackage
 SourcePackage
