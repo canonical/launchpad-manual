@@ -54,7 +54,7 @@ The life-cycle of a fetch-service session within Launchpad goes as follows:
 Using the fetch service
 ~~~~~~~~~~~~~~~~~~~~~~~
 Currently, the fetch service can only be used for building snaps, charms, rocks 
-and source packages.
+and sourcecraft packages.
 
 For `Snaps` and `Charms`, this option is now available in the `Edit recipe` UI.
 For all recipe types, the ``use_fetch_service`` flag can be set to ``true`` in
