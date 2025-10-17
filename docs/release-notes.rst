@@ -12,7 +12,7 @@ August 2025
 21 August
 
 - The 'Use Fetch Service' and 'Fetch Service Policy' options are
-  available for rocks and source packages via the APIs.
+  available for rocks and sourcecraft packages via the APIs.
 
 5 August
 
