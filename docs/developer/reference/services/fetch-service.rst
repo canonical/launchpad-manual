@@ -68,13 +68,8 @@ violations.
 
 The mode can be configured using the ``fetch_service_policy`` option via API,
 with the currently two possible values ``permissive`` and ``strict``. For
-`Snaps`, the mode can also be selected from a dropdown on the `Edit recipe`
-page.
-
-Requests to use the fetch service shall be made to the Launchpad team through
-the usual channels (by
-`opening a question <https://answers.launchpad.net/launchpad>`_, or emailing
-the team at feedback@launchpad.net).
+`Snaps` and `Charms`, the mode can also be selected from a dropdown on the
+`Edit recipe` page.
 
 Fetch service maintainers
 ~~~~~~~~~~~~~~~~~~~~~~~~~
