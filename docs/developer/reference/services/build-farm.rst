@@ -34,7 +34,8 @@ Builders do not have direct access to the Internet, but rather need to
 acquire an authentication token to be able to access a restricted set of
 URLs on the Internet via a proxy. This can either be a squid proxy or the
 :doc:`fetch service <fetch-service>`, determined by a ``use_fetch_service``
-flag. Currently, only snaps can use the fetch service.
+flag. Currently, the fetch service can only be used for building snaps, charms,
+rocks and sourcecraft packages.
 
 Builder regions are physically co-located and consist of machines of the
 same architecture family.
