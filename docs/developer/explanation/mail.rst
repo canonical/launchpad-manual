@@ -7,7 +7,7 @@ There are various kinds of emails in Launchpad:
 
 1. Emails sent from one user to another (that is, an email sent "by"
    Launchpad, but really sent by user Alice when Alice uses the
-   ``https://edge.launchpad.net/~barry/+contactuser`` form to contact
+   ``https://launchpad.net/~barry/+contactuser`` form to contact
    user Barry.
 2. Emails sent by Launchpad itself, such as emails sent to subscribers
    when a bug is changed.

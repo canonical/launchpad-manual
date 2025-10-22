@@ -303,7 +303,8 @@ uses not previously disclosed in this policy. If our information
 practices change at some time in the future we will post the policy
 changes to our web site to notify you of these changes. If you are
 concerned about how your information is used, you should check back at
-our web site periodically. We will also announce these changes on `<http://blog.launchpad.net>`_.
+our web site periodically. We will also announce these changes on 
+`<http://blog.launchpad.net>`_.
 
 Data retention
 --------------
