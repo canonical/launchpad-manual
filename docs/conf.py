@@ -24,7 +24,7 @@ import yaml
 #
 # TODO: Update with the official name of your project or product
 
-project = "Launchpad Manual"
+project = "Launchpad"
 author = "Canonical Ltd."
 
 
@@ -34,7 +34,7 @@ author = "Canonical Ltd."
 #
 # TODO: To disable the title, set to an empty string.
 
-html_title = "project" + " documentation"
+html_title = "Launchpad manual"
 
 
 # Copyright string; shown at the bottom of the page
@@ -159,9 +159,9 @@ html_context = {
 # - https://launchpad.net/example
 # - https://git.launchpad.net/example
 #
-html_theme_options = {
-    "sidebar_hide_name": True,
-}
+# html_theme_options = {
+#     "sidebar_hide_name": True,
+# }
 
 # Project slug; see https://meta.discourse.org/t/what-is-category-slug/87897
 #
