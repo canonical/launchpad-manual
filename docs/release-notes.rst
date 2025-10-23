@@ -1,5 +1,13 @@
 Release Notes
 =============
+
+October 2025
+++++++++++++
+17 October 2025
+
+- Support for the ``core26`` snap base has been enabled and recipes
+  can use it.
+
 September 2025
 ++++++++++++++
 1 September
