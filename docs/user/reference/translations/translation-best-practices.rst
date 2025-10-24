@@ -309,9 +309,7 @@ Now the actual translating can start!
 Please read the :ref:`Launchpad
 Translators <launchpad-translators-group>`
 instructions for project maintainers. You should also join the `team on
-Launchpad <https://launchpad.net/~launchpad-translators>`__ and
-subscribe to the mailing list. On this list you can announce your new
-project and ask people to translate it.
+Launchpad <https://launchpad.net/~launchpad-translators>`__.
 
 .. _exporting-translations-from-launchpad:
 
