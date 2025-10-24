@@ -1,7 +1,8 @@
+
 .. _help-the-community:
 
 Help the community
-##################
+==================
 
 .. include:: /includes/important_not_revised_help.rst
 
@@ -14,7 +15,7 @@ help out on an on-going basis, you can make sure you stay up to date
 with new questions by becoming an ``answer contact``.
 
 Answer contacts
-===============
+---------------
 
 As an answer contact, you have two main jobs:
 
@@ -26,7 +27,7 @@ project. All you have to do is click the ``Set answer contact`` link
 on a project or distro's Answers overview page. If you're the admin of a
 team, you can also set that team to be an answer contact.
 
-**Important:** when you become an answer contact, you're asking
+**Important:** When you become an answer contact, you're asking
 Launchpad to send you an email each time someone asks a question about
 that project or distro. If you make one of your teams an answer contact,
 you're subscribing each member to also receive that email. You should
@@ -34,7 +35,7 @@ gain each member's permission before you make the team an answer
 contact.
 
 Volunteering to be an answer contact is the easy bit. While Launchpad
-provides the mechanism to offer help to people, each project can choose
+provides the mechanism to offer help to people; each project can choose
 for themselves how they deal with user support queries.
 
 To find out about any such conventions, you should get in touch with one
@@ -66,33 +67,23 @@ When you answer a question, you can choose to use an existing FAQ
 answer. This saves you from typing an answer that has already been given
 by one of the project's answer contacts.
 
-**Step 1:** Visit the open questions page for the project you're
-interested in. For example: https://answers.launchpad.net/ubuntu
+1. Visit the open questions page for the project you're interested in. For example: https://answers.launchpad.net/ubuntu
 
-**Step 2:** Click **Open** in the menu, then select a question from the
-list.
+2. Click **Open** in the menu, then select a question from the list.
 
-**Step 3:** Click **This is a FAQ** in the menu.
+3. Click **This is a FAQ** in the menu.
 
-**Step 4:** Launchpad will search for any existing FAQ answers that
-appear to be relevant. If you see a relevant answer, select the radio
-button beside. Otherwise, you can enter your own search terms to look
-for other FAQ answers that may be useful to the original questioner.
+4. Launchpad will search for any existing FAQ answers that appear to be relevant. If you see a relevant answer, select the radio button beside. Otherwise, you can enter your own search terms to look for other FAQ answers that may be useful to the original questioner.
 
 .. note::
 
-   If you can't find a relevant answer but think that the question should be
-   considered a FAQ, skip to the next section *Creating a new FAQ*.
+   If you can't find a relevant answer, but think that the question should be
+   considered an FAQ, skip to the next section *Creating a new FAQ*.
 
 
-**Step 5:** You can send a message to the questioner to explain why
-you're sending them a link to a FAQ. Launchpad automatically enters a
-generic message in the *Answer Message* text-box, which you can
-customise.
+5. You can send a message to the questioner to explain why you're sending them a link to an FAQ. Launchpad automatically enters a generic message in the *Answer Message* text-box, which you can customise.
 
-**Step 6:** When you're ready to send the FAQ to the questioner, click
-the **Link FAQ** button. A link to the FAQ and your message will then
-appear as an answer, alongside any other answers, to the question.
+6. When you're ready to send the FAQ to the questioner, click the **Link FAQ** button. A link to the FAQ and your message will then appear as an answer, alongside any other answers, to the question.
 
 Creating a new FAQ
 ------------------
@@ -104,24 +95,16 @@ Creating a new FAQ
    Although any user can answer a question with an existing
    FAQ answer, only answer contacts for the project can create a new FAQ answer.
 
-**Step 5:** If you can't find a suitable FAQ answer, click **create a new FAQ** in the page's introductory text.
+7. If you can't find a suitable FAQ answer, click **create a new FAQ** in the page's introductory text.
 
-**Step 6:** Specify relevant keywords to improve the chances of your FAQ
-being found in searches.
+8. Specify relevant keywords to improve the chances of your FAQ being found in searches.
 
-**Step 7:** Enter the text of your FAQ answer. You should make sure that
-your answer is accurate and complete as it will be used as the canonical
-answer to this problem. Alternatively, enter a simple explanation and a
-link to an external page where the reader can find more details (for
-example, if the complete answer is contained in the project's wiki or
-documentation).
+9. Enter the text of your FAQ answer. You should make sure that your answer is accurate and complete, as it will be used as the canonical answer to this problem. Alternatively, enter a simple explanation and a link to an external page where the reader can find more details (for example, if the complete answer is contained in the project's wiki or documentation).
 
-**Step 8:** When you are happy with your answer text, optionally
-customise the *Answer Message*, then click the **Create and Link**
-button to add your FAQ to Launchpad and send it to the questioner.
+10. When you are happy with your answer text, optionally customise the *Answer Message*, then click the **Create and Link** button to add your FAQ to Launchpad and send it to the questioner.
 
 Filtering email
-===============
+---------------
 
 As an answer contact, you'll receive quite a bit of email from
 Launchpad. To help you deal with this email, Launchpad uses special
@@ -145,12 +128,12 @@ X-Launchpad-Question
 Emails from Launchpad Answers have the ``X-Launchpad-Question``
 header, which is made up of:
 
--  **Product:** the project that the question is about.
--  **Status:** open, needs info, answered, solved, invalid or expired -
+-  ``Product``: the project that the question is about.
+-  ``Status``: open, needs info, answered, solved, invalid or expired -
    more: :ref:`question-statuses`.
--  **Assignee:** the person assigned to work on the question, if any.
--  **Priority:** always set to normal.
--  **Language:** the language the questioner chose when asking their
+-  ``Assignee``: the person assigned to work on the question, if any.
+-  ``Priority``: always set to normal.
+-  ``Language``: the language the questioner chose when asking their
    question.
 
 Here's an example:
@@ -161,8 +144,7 @@ Here's an example:
    assignee=None; priority=Normal; language=en
 
 Next step
-=========
-
+---------
 Different projects favour different ways of planning future releases and
 organising chunks of work. `Blueprint <https://launchpad.net/blueprint>`_ is Launchpad's
 light-touch specification tracker that makes it easy to organise and
