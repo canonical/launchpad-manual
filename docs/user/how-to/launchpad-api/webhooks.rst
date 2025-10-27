@@ -49,35 +49,35 @@ incompatible way, we'll bump the version so that you can adapt your code
 gracefully. We may add more key/value pairs to dictionaries without
 bumping the version.
 
-+----------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------+
-| Event type                                                                                                                                   | Event name            | When                                                                                                        |
-+==============================================================================================================================================+=======================+=============================================================================================================+
-| `bzr:push:0.1 <https://documentation.ubuntu.com/launchpad/user/how-to/launchpad-api/webhooks/#bazaar-push>`_                                 | Bazaar push           | Any time a Bazaar branch is pushed                                                                          |
-+----------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------+
-| `ci:build:0.1 <https://documentation.ubuntu.com/launchpad/user/how-to/launchpad-api/webhooks/#ci-build>`_                                    | CI build              | Any time the status of a CI build changes                                                                   |
-+----------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------+
-| `git:push:0.1 <https://documentation.ubuntu.com/launchpad/user/how-to/launchpad-api/webhooks/#git-push>`_                                    | Git push              | Any time a Git repository is pushed; this includes creating or deleting branches                            |
-+----------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------+
-| `livefs:build:0.1 <https://documentation.ubuntu.com/launchpad/user/how-to/launchpad-api/webhooks/#live-filesystem-build>`_                   | Live filesystem build | Any time the status of a live filesystem build changes                                                      |
-+----------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------+
-| `merge-proposal:0.1 <https://documentation.ubuntu.com/launchpad/user/how-to/launchpad-api/webhooks/#merge-proposal>`_                        | Merge proposal        | Any time a merge proposal that has this branch or repository as the target is created, modified, or deleted |
-+----------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------+
-| `ping <https://documentation.ubuntu.com/launchpad/user/how-to/launchpad-api/webhooks/#id3>`_                                                 | Ping                  | A test event was requested manually                                                                         |
-+----------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------+
-| `snap:build:0.1 <https://documentation.ubuntu.com/launchpad/user/how-to/launchpad-api/webhooks/#snap-build>`_                                | Snap build            | Any time the status of a snap package build changes                                                         |
-+----------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------+
-| `ocirecipe:build:0.1 <https://documentation.ubuntu.com/launchpad/user/how-to/launchpad-api/webhooks/#oci-recipe-build>`_                     | OCI recipe build      | Any time the status of an OCI image build changes                                                           |
-+----------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------+
-| `bug:0.1 <https://documentation.ubuntu.com/launchpad/user/how-to/launchpad-api/webhooks/#bug-created-updated>`_                              | Bug                   | When a bug or bug task changes                                                                              |
-+----------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------+
-| `bug:comment:0.1 <https://documentation.ubuntu.com/launchpad/user/how-to/launchpad-api/webhooks/#bug-comment-created>`_                      | Bug Comment           | When a comment is added to a bug                                                                            |
-+----------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------+
-| `archive:source-package-upload:0.1 <https://documentation.ubuntu.com/launchpad/user/how-to/launchpad-api/webhooks/#source-package-upload>`_  | Source package upload | When the status of a source package upload changes                                                          |
-+----------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------+
-| `archive:binary-package-upload:0.1 <https://documentation.ubuntu.com/launchpad/user/how-to/launchpad-api/webhooks/#binary-package-upload>`_  | Binary package upload | When the status of a binary package upload changes                                                          |
-+----------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------+
-| `archive:binary-build:0.1 <https://documentation.ubuntu.com/launchpad/user/how-to/launchpad-api/webhooks/#binary-build>`_                    | Binary build          | When the status of a binary build changes                                                                   |
-+----------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------+
+| Event type                                                        | Event name            | When                                                                                                        |
++===================================================================+=======================+=============================================================================================================+
+| :ref:`bzr:push:0.1 <bazaar-push>`                                 | Bazaar push           | Any time a Bazaar branch is pushed                                                                          |
++-------------------------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------+
+| :ref:`ci:build:0.1 <ci-build>`                                    | CI build              | Any time the status of a CI build changes                                                                   |
++-------------------------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------+
+| :ref:`git:push:0.1 <git-push>`                                    | Git push              | Any time a Git repository is pushed; this includes creating or deleting branches                            |
++-------------------------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------+
+| :ref:`livefs:build:0.1 <live-filesystem-build>`                   | Live filesystem build | Any time the status of a live filesystem build changes                                                      |
++-------------------------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------+
+| :ref:`merge-proposal:0.1 <merge-proposal>`                        | Merge proposal        | Any time a merge proposal that has this branch or repository as the target is created, modified, or deleted |
++-------------------------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------+
+| :ref:`ping <id3>`                                                 | Ping                  | A test event was requested manually                                                                         |
++-------------------------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------+
+| :ref:`snap:build:0.1 <snap-build>`                                | Snap build            | Any time the status of a snap package build changes                                                         |
++-------------------------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------+
+| :ref:`ocirecipe:build:0.1 <oci-recipe-build>`                     | OCI recipe build      | Any time the status of an OCI image build changes                                                           |
++-------------------------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------+
+| :ref:`bug:0.1 <bug-created-updated>`                              | Bug                   | When a bug or bug task changes                                                                              |
++-------------------------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------+
+| :ref:`bug:comment:0.1 <bug-comment-created>`                      | Bug Comment           | When a comment is added to a bug                                                                            |
++-------------------------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------+
+| :ref:`archive:source-package-upload:0.1 <source-package-upload>`  | Source package upload | When the status of a source package upload changes                                                          |
++-------------------------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------+
+| :ref:`archive:binary-package-upload:0.1 <binary-package-upload>`  | Binary package upload | When the status of a binary package upload changes                                                          |
++-------------------------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------+
+| :ref:`archive:binary-build:0.1 <binary-build>`                    | Binary build          | When the status of a binary build changes                                                                   |
++-------------------------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------+
 
 Creating webhooks
 -----------------
@@ -211,6 +211,8 @@ information about the object than the webhook payload provides, or if
 you need to send notifications back to Launchpad (for example, after a
 CI job completes).
 
+.. _bazaar-push:
+
 Bazaar push
 ~~~~~~~~~~~
 
@@ -236,6 +238,8 @@ Triggered any time a Bazaar branch is pushed. The payload is:
 | ``revision_id`` | string | The tip revision ID |
 +-----------------+--------+---------------------+
 
+.. _ci-build:
+
 CI build
 ~~~~~~~~
 
@@ -254,6 +258,8 @@ Triggered any time the status of a CI build changes. The payload is:
 +--------------------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | status             | string   | The current status of the build job: one of "Needs building", "Successfully built", "Failed to build", "Dependency wait", "Chroot problem", "Build for superseded Source", "Currently building", "Failed to upload", "Uploading build", "Cancelling build", or "Cancelled build" |
 +--------------------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+.. _git-push:
 
 Git push
 ~~~~~~~~
@@ -279,6 +285,8 @@ Ref descriptions are dictionaries of attributes as follows:
 | ``commit_sha1`` | string | The SHA-1 of the commit that the ref points to |
 +-----------------+--------+------------------------------------------------+
 
+.. _live-filesystem-build:
+
 Live filesystem build
 ~~~~~~~~~~~~~~~~~~~~~
 
@@ -296,6 +304,8 @@ payload is:
 +------------------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | ``status``       | string   | The current status of the build job: one of "Needs building", "Successfully built", "Failed to build", "Dependency wait", "Chroot problem", "Build for superseded Source", "Currently building", "Failed to upload", "Uploading build", "Cancelling build", or "Cancelled build" |
 +------------------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+.. _merge-proposal:
 
 Merge proposal
 ~~~~~~~~~~~~~~
@@ -352,6 +362,8 @@ Merge proposal attributes are as follows:
 | ``preview_diff``                | url-path | The current diff of the source branch against the target branch                                                                 |
 +---------------------------------+----------+---------------------------------------------------------------------------------------------------------------------------------+
 
+.. _id3:
+
 Ping
 ~~~~
 
@@ -362,6 +374,8 @@ A test event was :ref:`requested manually <testing>`. The payload is:
 +======+=========+=======+
 | ping | boolean | true  |
 +------+---------+-------+
+
+.. _snap-build:
 
 Snap build
 ~~~~~~~~~~
@@ -385,6 +399,8 @@ payload is:
 | ``store_upload_status`` | string   | The current status of uploading this build to the store: one of "Unscheduled", "Pending", "Failed to upload", "Failed to release to channels", or "Uploaded"                                                                                                                     |
 +-------------------------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
+.. _oci-recipe-build:
+
 OCI recipe build
 ~~~~~~~~~~~~~~~~
 
@@ -403,6 +419,8 @@ OCI recipe build
 +----------------------------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | ``registry_upload_status`` | string   | The current status of uploading this image to the registry: one of "Unscheduled", "Pending", "Failed to upload", or "Uploaded"                                                                                                                                                   |
 +----------------------------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+.. _bug-created-updated:
 
 Bug created/updated
 ~~~~~~~~~~~~~~~~~~~
@@ -453,6 +471,8 @@ per target, and their payloads will be different from each other in the
 fields specific to the target (``status``, ``importance``, ``assignee``, and
 ``date_created``).
 
+.. _bug-comment-created:
+
 Bug comment created
 ~~~~~~~~~~~~~~~~~~~
 
@@ -484,6 +504,8 @@ Triggered any time a new comment is added to a bug. The payload is:
 | ``content``   | string | Comment message                   |
 +---------------+--------+-----------------------------------+
 
+.. _source-package-upload:
+
 Source package upload
 ~~~~~~~~~~~~~~~~~~~~~
 
@@ -505,6 +527,8 @@ Triggered when the status of a source package upload changes. The payload is:
 | ``package_version``     | string   | Name of the accepted source package if it available                                   |
 +-------------------------+----------+---------------------------------------------------------------------------------------+ 
 
+.. _binary-package-upload:
+
 Binary package upload
 ~~~~~~~~~~~~~~~~~~~~~
 
@@ -523,6 +547,8 @@ Triggered when the status of a binary package upload changes. The payload is:
 +-------------------------+----------+---------------------------------------------------------------------------------------+
 | ``source_package_name`` | string   | Name of the source package corresponding to this binary package                       |
 +-------------------------+----------+---------------------------------------------------------------------------------------+
+
+.. _binary-build:
 
 Binary build
 ~~~~~~~~~~~~
