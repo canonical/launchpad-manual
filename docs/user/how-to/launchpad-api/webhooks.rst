@@ -522,9 +522,9 @@ Triggered when the status of a source package upload changes. The payload is:
 +-------------------------+----------+---------------------------------------------------------------------------------------+
 | ``archive``             | url-path | The archive associated with the source package                                        |
 +-------------------------+----------+---------------------------------------------------------------------------------------+
-| ``package_name``        | string   | Name of the accepted source package if it available                                   |
+| ``package_name``        | string   | Name of the accepted source package if it is available                                |
 +-------------------------+----------+---------------------------------------------------------------------------------------+
-| ``package_version``     | string   | Name of the accepted source package if it available                                   |
+| ``package_version``     | string   | Name of the accepted source package if it is available                                |
 +-------------------------+----------+---------------------------------------------------------------------------------------+ 
 
 .. _binary-package-upload:
