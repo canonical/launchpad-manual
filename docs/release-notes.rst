@@ -3,6 +3,11 @@ Release Notes
 
 October 2025
 ++++++++++++
+27 October 2025
+
+- Webhooks can now be configured on archives for successful or unsuccessful
+  source and binary package uploads, and binary build events.
+
 17 October 2025
 
 - Support for the ``core26`` snap base has been enabled and recipes
