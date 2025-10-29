@@ -43,7 +43,6 @@ contributions, suggestions, fixes and constructive feedback.
 * :doc:`Get support <help>`
 * :ref:`Feature highlights <launchpad-feature-highlights>` 
 * :doc:`Contribute to our code <developer/how-to/contributing-changes>`
-* :doc:`Contribute to our docs <contribute-to-our-docs>`
 
 .. toctree::
    :hidden:
