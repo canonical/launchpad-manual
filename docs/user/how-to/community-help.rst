@@ -35,7 +35,7 @@ gain each member's permission before you make the team an answer
 contact.
 
 Volunteering to be an answer contact is the easy bit. While Launchpad
-provides the mechanism to offer help to people; each project can choose
+provides the mechanism to offer help to people, each project can choose
 for themselves how they deal with user support queries.
 
 To find out about any such conventions, you should get in touch with one
