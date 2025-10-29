@@ -54,7 +54,7 @@ OOPS.
 What to do if you encounter an OOPS
 -----------------------------------
 
-Come and chat to us on `launchpad IRC <#launchpad on irc.libera.chat>`_. We'll try and help
+Come and chat to us in the :ref:`public Launchpad channel <getting-help>`. We'll try and help
 you achieve what you are trying to do. We may ask for the OOPS ID - see
 above under `what does an OOPS look like? <#looklike>`__.
 

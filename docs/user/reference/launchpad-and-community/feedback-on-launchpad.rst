@@ -36,7 +36,7 @@ We use Launchpad Answers, and you can discuss pretty much anything Launchpad-rel
 Chat with us
 ~~~~~~~~~~~~
 
-If you want to discuss your suggestion with a member of the Launchpad team, visit us in #launchpad on irc.libera.chat.
+If you want to discuss your suggestion with a member of the Launchpad team, visit the :ref:`public Launchpad channel <getting-help>`.
 
 Email us
 ~~~~~~~~
@@ -60,6 +60,8 @@ No matter where in Launchpad you found the bug, `report it against the launchpad
 Write a blueprint
 ~~~~~~~~~~~~~~~~~
 
-If you have an idea for a new feature, `search the Blueprint Tracker <https://blueprints.launchpad.net/launchpad-project>`_ to see if it has already been planned or discussed. If not, write up a summary and discuss it with the Launchpad team on IRC.
+If you have an idea for a new feature, `search the Blueprint Tracker <https://blueprints.launchpad.net/launchpad-project>`_ 
+to see if it has already been planned or discussed. If not, write up a summary 
+and discuss it with the Launchpad team in the public channel.
 
 Thanks for helping us make Launchpad a great place to develop free software.
