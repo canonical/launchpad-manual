@@ -28,7 +28,7 @@ In this manual
 
 The Launchpad manual is divided into two sections, according to the user:
 
-:ref:`End User documentation <launchpad-manual-for-users>` - For individuals and teams collaborating on open-source software
+:ref:`End user documentation <launchpad-manual-for-users>` - For individuals and teams collaborating on open-source software
 
 :ref:`Developer documentation <launchpad-manual-for-developers>` - For contributors to the Launchpad project itself
 
