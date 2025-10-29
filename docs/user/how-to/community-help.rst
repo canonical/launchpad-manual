@@ -88,7 +88,7 @@ by one of the project's answer contacts.
 Creating a new FAQ
 ------------------
 
-*Continues from after step 4 in the section above.*
+*Continues from the fourth step in the section above.*
 
 .. note::
 
