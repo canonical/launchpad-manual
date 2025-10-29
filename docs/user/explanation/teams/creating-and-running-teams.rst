@@ -50,7 +50,6 @@ but doing so requires the team to agree to reveal its Launchpad Id and
 other unique attributes. This rule ensures that no one can spy on
 others. Private teams have additional privileges:
 
--  **Mailing List**: the team can have a private mailing list that has a private list archive that only team members can view.
 -  **P3A**: the team can have many private personal package archives (sometimes called ``P3As``) to distribute packages.
 
    Non-member subscribers to an archive may know the team's Launchpad-Id``
