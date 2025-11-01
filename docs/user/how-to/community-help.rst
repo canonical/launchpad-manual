@@ -27,12 +27,13 @@ project. All you have to do is click the ``Set answer contact`` link
 on a project or distro's Answers overview page. If you're the admin of a
 team, you can also set that team to be an answer contact.
 
-**Important:** When you become an answer contact, you're asking
-Launchpad to send you an email each time someone asks a question about
-that project or distro. If you make one of your teams an answer contact,
-you're subscribing each member to also receive that email. You should
-gain each member's permission before you make the team an answer
-contact.
+.. note::
+
+   When you become an answer contact, Launchpad will send you an email each 
+   time someone asks a question about that project or distro. If you make one 
+   of your teams an answer contact, you're subscribing each member to also 
+   receive that email. You should gain each member's permission before you make
+   the team an answer contact.
 
 Volunteering to be an answer contact is the easy bit. While Launchpad
 provides the mechanism to offer help to people, each project can choose
