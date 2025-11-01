@@ -3,16 +3,13 @@
 Getting help
 ============
 
-**We're here to help you hack on Launchpad.**
 If you have questions about any aspect of Launchpad development, or if you're
 trying to modify Launchpad but are having trouble, please seek us out by any of
 these means:
 
-- Join us on :literalref:`Launchpad channel on Matrix <https://matrix.to/#/#launchpad:ubuntu.com>`.
-- Check the XXX FAQ.
+- Join us on the :literalref:`Launchpad channel on Matrix <https://matrix.to/#/#launchpad:ubuntu.com>`.
 - Read the `API documentation`_.
 
-.. _launchpad-dev_AT_lists.launchpad.net: https://launchpad.net/~launchpad-dev
 .. _API documentation: http://people.canonical.com/~mwh/canonicalapi/
 
 We try to run a newcomer-friendly community; it's okay to ask basic questions
