@@ -10,7 +10,7 @@ within a project is often crucial to its success. Launchpad teams help
 you to bring people together by offering:
 
 -  a focal point of collaboration.
--  tools for members to communicate, such as mailing lists
+-  tools for members to communicate
 -  the ability for many people to share a role, such as a project's maintainer or driver.
 
 Teams are easy to use: Launchpad doesn't impose rules or a particular
@@ -50,7 +50,6 @@ but doing so requires the team to agree to reveal its Launchpad Id and
 other unique attributes. This rule ensures that no one can spy on
 others. Private teams have additional privileges:
 
--  **Mailing List**: the team can have a private mailing list that has a private list archive that only team members can view.
 -  **P3A**: the team can have many private personal package archives (sometimes called ``P3As``) to distribute packages.
 
    Non-member subscribers to an archive may know the team's Launchpad-Id``
@@ -80,7 +79,6 @@ In general, members of your team get:
 
 -  Upload rights for all of the team's code branches
 -  Permission to upload and build Ubuntu packages in the team's PPA
--  Optional access to the team's mailing list
 -  Any access that comes with a role taken by the team (e.g. project maintainer).
 -  Disclosure of all confidential information shared with the team
 
@@ -203,8 +201,3 @@ If you add another team to your own, you're actually inviting that team
 to join. Launchpad will email the other team's admins with your
 invitation, allowing them to decide whether or not to add their team to
 yours.
-
-Further information
--------------------
-
-Good communication within a team is essential. Let's set up a team :ref:`launchpad-mailing-lists` to help members discuss their work.

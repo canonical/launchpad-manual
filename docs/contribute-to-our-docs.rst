@@ -81,7 +81,7 @@ on upcoming events.
 .. _API documentation: http://people.canonical.com/~mwh/canonicalapi/
 .. _Diátaxis: https://diataxis.fr/
 .. _Ubuntu style guide: https://docs.ubuntu.com/styleguide/
-.. _CODA website: https://documentationacademy.org/
+.. _CODA website: https://documentation.academy/
 .. _CODA repository: https://github.com/canonical/open-documentation-academy/issues
 .. _discussion forum: https://discourse.ubuntu.com/c/community/open-documentation-academy/166
 .. _follow Canonical's documentation team on Fosstodon: https://fosstodon.org/@CanonicalDocumentation

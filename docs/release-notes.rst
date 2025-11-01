@@ -1,5 +1,18 @@
 Release Notes
 =============
+
+October 2025
+++++++++++++
+27 October 2025
+
+- Webhooks can now be configured on archives for successful or unsuccessful
+  source and binary package uploads, and binary build events.
+
+17 October 2025
+
+- Support for the ``core26`` snap base has been enabled and recipes
+  can use it.
+
 September 2025
 ++++++++++++++
 1 September
@@ -12,7 +25,7 @@ August 2025
 21 August
 
 - The 'Use Fetch Service' and 'Fetch Service Policy' options are
-  available for rocks and source packages via the APIs.
+  available for rocks and sourcecraft packages via the APIs.
 
 5 August
 

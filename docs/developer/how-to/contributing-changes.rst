@@ -9,12 +9,9 @@ Discuss the change
 ------------------
 
 To begin with, it is usually helpful to discuss the change you'd like to make,
-in a `bug`_, in the `launchpad-users`_, or `launchpad-dev`_ mailing lists,
-or on IRC (``#launchpad-dev`` on ``irc.libera.chat``).
+in a `bug`_ on IRC (``#launchpad-dev`` on ``irc.libera.chat``).
 
 .. _bug: https://bugs.launchpad.net/launchpad
-.. _launchpad-users: https://launchpad.net/~launchpad-users
-.. _launchpad-dev: https://launchpad.net/~launchpad-dev
 
 Fork the Launchpad repository
 -----------------------------

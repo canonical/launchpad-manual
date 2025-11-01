@@ -44,8 +44,7 @@ Non-members cannot see any of the team's pages. Private teams can choose
 to be in some public relationships, such as subscribed to a public bug,
 but doing so requires the team to agree to reveal its Launchpad Id and
 other unique attributes. This rule ensures that no one can spy on
-others. Private teams can also have private PPAs, mailing lists, and
-Proprietary branches.
+others. Private teams can also have private PPAs, and proprietary branches.
 
 See :ref:`Creating and running a team <creating-and-running-launchpad-teams>` for more
 information.

@@ -111,6 +111,39 @@ To do this:
 
     You need to upload the public key file (with ``.pub``) to Launchpad, and to specify the private-key file (with no ``.pub``) in the SSH configuration.
 
+Support for FIDO2 SSH Keys
+--------------------------
+
+Launchpad supports the FIDO2 hardware-backed SSH key types ed25519-sk and
+ecdsa-sk. These keys use a hardware device, such as a YubiKey or Nitrokey, to
+perform cryptographic operations and keep your private keys safely off your
+computer. They can be used anywhere Launchpad accepts SSH authentication,
+including git+ssh and SFTP PPA uploads.
+
+To generate a new key, run
+
+.. code::
+
+    ssh-keygen -t ed25519-sk -C "your@email.com"
+
+or use ecdsa-sk for backwards compatibility. You will be asked to touch your
+security key during the key creation, and OpenSSH will store the resulting
+files in ``~/.ssh/``. If you want to make your key resident, meaning it can be
+stored on the hardware device and later retrieved even if the original files
+are lost, use the ``-O resident`` option:
+
+.. code::
+
+    ssh-keygen -t ed25519-sk -O resident -C "your@email.com"
+
+Resident keys are useful if you use multiple machines or if you want a portable
+login method tied directly to your hardware key. To register a new key on your
+Launchpad account, visit https://launchpad.net/~username/+editsshkeys.
+
+These new key types offer strong protection against key theft and phishing, but
+require a physical device each time you connect. It is recommended you keep a
+separate backup key if you use them regularly.
+
 Next step
 ---------
 

@@ -54,7 +54,7 @@ The life-cycle of a fetch-service session within Launchpad goes as follows:
 Using the fetch service
 ~~~~~~~~~~~~~~~~~~~~~~~
 Currently, the fetch service can only be used for building snaps, charms, rocks 
-and source packages.
+and sourcecraft packages.
 
 For `Snaps` and `Charms`, this option is now available in the `Edit recipe` UI.
 For all recipe types, the ``use_fetch_service`` flag can be set to ``true`` in
@@ -68,13 +68,8 @@ violations.
 
 The mode can be configured using the ``fetch_service_policy`` option via API,
 with the currently two possible values ``permissive`` and ``strict``. For
-`Snaps`, the mode can also be selected from a dropdown on the `Edit recipe`
-page.
-
-Requests to use the fetch service shall be made to the Launchpad team through
-the usual channels (by
-`opening a question <https://answers.launchpad.net/launchpad>`_, or emailing
-the team at feedback@launchpad.net).
+`Snaps` and `Charms`, the mode can also be selected from a dropdown on the
+`Edit recipe` page.
 
 Fetch service maintainers
 ~~~~~~~~~~~~~~~~~~~~~~~~~
