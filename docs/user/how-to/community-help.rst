@@ -68,29 +68,26 @@ When you answer a question, you can choose to use an existing FAQ
 answer. This saves you from typing an answer that has already been given
 by one of the project's answer contacts.
 
-- Visit the open questions page for the project you're interested in. For example: 
-https://answers.launchpad.net/ubuntu
-
-- Click **Open** in the menu, then select a question from the list.
-
-- Click **This is a FAQ** in the menu.
-
-- Launchpad will search for any existing FAQ answers that appear to be relevant. 
-If you see a relevant answer, select the radio button beside. 
-Otherwise, you can enter your own search terms to look for other FAQ answers that 
-may be useful to the original questioner.
+-  Visit the open questions page for the project you're interested in. For 
+   example: https://answers.launchpad.net/ubuntu
+-  Click **Open** in the menu, then select a question from the list.
+-  Click **This is a FAQ** in the menu.
+-  Launchpad will search for any existing FAQ answers that appear to be relevant. 
+   If you see a relevant answer, select the radio button beside. 
+   Otherwise, you can enter your own search terms to look for other FAQ answers that 
+   may be useful to the original questioner.
 
 .. note::
 
    If you can't find a relevant answer, but think that the question should be
    considered an FAQ, skip to the next section *Creating a new FAQ*.
 
-
-- You can send a message to the questioner to explain why you're sending them a link to an FAQ.
-Launchpad automatically enters a generic message in the *Answer Message* text-box, which you can customise.
-
-- When you're ready to send the FAQ to the questioner, click the **Link FAQ** button. 
-A link to the FAQ and your message will then appear as an answer, alongside any other answers, to the question.
+-  You can send a message to the questioner to explain why you're sending them 
+   a link to an FAQ. Launchpad automatically enters a generic message in the 
+   *Answer Message* text-box, which you can customise.
+-  When you're ready to send the FAQ to the questioner, click the **Link FAQ** 
+   button. A link to the FAQ and your message will then appear as an answer, 
+   alongside any other answers, to the question.
 
 Creating a new FAQ
 ------------------
@@ -102,14 +99,17 @@ Creating a new FAQ
    Although any user can answer a question with an existing
    FAQ answer, only answer contacts for the project can create a new FAQ answer.
 
-- If you can't find a suitable FAQ answer, 
-click **create a new FAQ** in the page's introductory text.
-
-- Specify relevant keywords to improve the chances of your FAQ being found in searches.
-
-- Enter the text of your FAQ answer. You should make sure that your answer is accurate and complete, as it will be used as the canonical answer to this problem. Alternatively, enter a simple explanation and a link to an external page where the reader can find more details (for example, if the complete answer is contained in the project's wiki or documentation).
-
-- When you are happy with your answer text, optionally customise the *Answer Message*, then click the **Create and Link** button to add your FAQ to Launchpad and send it to the questioner.
+-  If you can't find a suitable FAQ answer, 
+   click **create a new FAQ** in the page's introductory text.
+-  Specify relevant keywords to improve the chances of your FAQ being found in searches.
+-  Enter the text of your FAQ answer. You should make sure that your answer is 
+   accurate and complete, as it will be used as the canonical answer to this 
+   problem. Alternatively, enter a simple explanation and a link to an external
+   page where the reader can find more details (for example, if the complete 
+   answer is contained in the project's wiki or documentation).
+-  When you are happy with your answer text, optionally customise the *Answer Message*, 
+   then click the **Create and Link** button to add your FAQ to Launchpad and 
+   send it to the questioner.
 
 Filtering email
 ---------------
