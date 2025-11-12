@@ -18,7 +18,7 @@ Trouble logging into Launchpad? `get help for the Ubuntu Single Sign-on service 
 
 If you're having trouble logging into Launchpad, you can get help:
 
-Check the system `status page on Twitter <http://twitter.com/launchpadstatus>`_ for current known issues and details of any workarounds.
+Check the system `status page on Mastodon <https://ubuntu.social/@launchpadstatus>`_ for current known issues and details of any workarounds.
 
 Other issues
 ------------
