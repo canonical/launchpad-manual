@@ -138,7 +138,7 @@ are lost, use the ``-O resident`` option:
 
 Resident keys are useful if you use multiple machines or if you want a portable
 login method tied directly to your hardware key. To register a new key on your
-Launchpad account, visit https://launchpad.net/~username/+editsshkeys.
+Launchpad account, visit https://launchpad.net/~/+editsshkeys.
 
 These new key types offer strong protection against key theft and phishing, but
 require a physical device each time you connect. It is recommended you keep a
