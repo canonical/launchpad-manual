@@ -264,11 +264,10 @@ Let's suppose that we want to add the "lazr.foo" package as a dependency.
 8.  Check old versions in the download-cache.  If you are sure that
     they are not in use any more, *anywhere*, then remove them to save
     checkout space.  More explicitly, check with the LOSAs to see if
-    they are in use in production and send an email to
-    launchpad-dev@lists.launchpad.net before deleting anything if you
-    are unsure.  A rule of thumb is that it's worth starting this
-    investigation if the replacement has already been in use by the
-    Launchpad tree for more than a month.  You can approximate this
+    they are in use in production and :ref:`contact the Launchpad team<getting-help>` 
+    before deleting anything if you are unsure.  A rule of thumb is that it's 
+    worth starting this investigation if the replacement has already been in 
+    use by the Launchpad tree for more than a month. You can approximate this
     information by using ``git log`` on the newer (replacement)
     download-cache/dist file for the particular package.
 

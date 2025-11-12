@@ -326,14 +326,6 @@ For sample code, check:
 -  ``lib/lp/services/features/tests/test_helpers.py``
 -  ``$ grep -r FeatureFixture lib/lp/``
 
-Tips and traps
---------------
-
--  `When you soft launch a feature limited to
-   launchpad-beta <https://lists.launchpad.net/launchpad-dev/msg07244.html>`__
-   or some other group, remember that it won't get any testing from
-   anonymous users.
-
 See also
 --------
 -  `bugs tagged feature-flags <https://bugs.launchpad.net/launchpad/+bugs?field.tag=feature-flags>`__

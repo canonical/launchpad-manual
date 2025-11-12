@@ -133,8 +133,8 @@ python file:
    LP_PERSISTENT_TEST_SERVICES=1 ./bin/test PATH/TO/PYTHON/TEST/FILE.py
 
 See `this
-mail <https://lists.launchpad.net/launchpad-dev/msg02780.html>`__ for
-more.
+mail <https://web.archive.org/web/20210620040705/https://lists.launchpad.net/launchpad-dev/msg02780.html>`__ 
+for more.
 
 Headless tests
 ~~~~~~~~~~~~~~
