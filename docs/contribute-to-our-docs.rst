@@ -15,7 +15,7 @@ https://github.com/canonical/launchpad-manual.
 If you have any questions or doubts, please don't hesitate to 
 reach out to us by any of these means:
 
-- Join our :ref:`public channel <getting-help>` and ask your questions.
+- :ref:`Reach out to the Launchpad team <getting-help>` and ask your questions.
 - Ask a question: https://answers.launchpad.net/launchpad
 - Send an e-mail to feedback@launchpad.net
 

@@ -62,6 +62,6 @@ Write a blueprint
 
 If you have an idea for a new feature, `search the Blueprint Tracker <https://blueprints.launchpad.net/launchpad-project>`_ 
 to see if it has already been planned or discussed. If not, write up a summary 
-and discuss it with the Launchpad team in the public channel.
+and discuss it with the :ref:`Launchpad team <getting-help>`.
 
 Thanks for helping us make Launchpad a great place to develop free software.

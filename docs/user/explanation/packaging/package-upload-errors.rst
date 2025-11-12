@@ -118,5 +118,5 @@ Other errors
 ------------
 
 If you come across other errors when uploading a package to Launchpad,
-find us in the :ref:`public channel <getting-help>` or :ref:`get in touch by 
+:ref:`contact the Launchpad team <getting-help>` or :ref:`get in touch by 
 email <talk-to-us-about-launchpad>`.

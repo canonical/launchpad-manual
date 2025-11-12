@@ -9,7 +9,7 @@ Discuss the change
 ------------------
 
 To begin with, it is usually helpful to discuss the change you'd like to make,
-in a `bug`_ on or in the :ref:`public Launchpad channel <getting-help>`.
+in a `bug`_ on or :ref:`directly with the Launchpad team <getting-help>`.
 
 .. _bug: https://bugs.launchpad.net/launchpad
 
