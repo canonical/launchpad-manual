@@ -118,4 +118,5 @@ Other errors
 ------------
 
 If you come across other errors when uploading a package to Launchpad,
-find us in #launchpad on irc.libera.chat or :ref:`get in touch by email <talk-to-us-about-launchpad>`.
+:ref:`contact the Launchpad team <getting-help>` or :ref:`get in touch by 
+email <talk-to-us-about-launchpad>`.

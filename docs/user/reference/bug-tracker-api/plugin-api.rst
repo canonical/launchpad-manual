@@ -441,5 +441,5 @@ This is the read operation that matches set_launchpad_bug.
 Further information
 -------------------
 
-You can find the Launchpad team in irc.libera.chat's #launchpad channel.
-We'd love to hear your experiences.
+Feel free to reach out to the :ref:`Launchpad team <getting-help>`. We'd love 
+to hear your experiences.
