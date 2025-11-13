@@ -87,8 +87,8 @@ Before you can start using a PPA, whether it's your own or it belongs to a team,
 Your PPA's key
 ~~~~~~~~~~~~~~
 
-Launchpad generates a unique key for each PPA and uses it to sign any
-packages built in that PPA.
+Launchpad generates a unique key for the user's default PPA and reuses it to
+sign any packages built in the user's PPAs.
 
 This means that people downloading/installing packages from your PPA can
 verify their source. After you've activated your PPA, uploading its
