@@ -214,6 +214,9 @@ templates_path = ["_templates"]
 
 redirects = {}
 
+# Add redirects, so they can be updated here to land alongside docs being moved
+rediraffe_branch = "main"
+rediraffe_redirects = "redirects.txt"
 
 ###########################
 # Link checker exceptions #
@@ -363,6 +366,7 @@ extensions = [
     "sphinx_last_updated_by_git",
     "sphinx.ext.intersphinx",
     "sphinx_sitemap",
+    "sphinxext.rediraffe",
 ]
 
 # Excludes files or directories from processing

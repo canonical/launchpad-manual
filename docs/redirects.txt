@@ -1,0 +1,14 @@
+# Client-side page redirects
+# ---------------------------
+# Comments start with a single hash (#)
+# Each redirect appears on its own line in the format:
+#
+# redirect/from/ redirect/to/
+#
+# Paths are relative to the root of the `docs` directory
+# The "from" path must be a file that *does not* exist
+# The "to" path must be a file that *does* exist
+# The separator between "from" and "to" paths is a single space (not a tab)
+
+https://help.launchpad.net/Translations user/reference/translations/index.rst
+https://help.launchpad.net/Packaging/PPA user/reference/packaging/ppas/ppa/
