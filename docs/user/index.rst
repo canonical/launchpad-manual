@@ -32,7 +32,7 @@ Bug tracking:          :ref:`Using Bugzilla<use-the-bugzilla-plugin>` • :ref:`
 
 Launchpad APIs:        :ref:`Lauchpadlib <get-started-with-launchpadlib>` • :ref:`Bug tracker API <bug-tracker-api-plugin>` • :ref:`Web services API <launchpad-web-service>`
 
-Community:             :ref:`Giving feedback <talk-to-us-about-launchpad>` • :ref:`Getting support<getting-support-in-launchpad>` • :ref:`Launchpad policies <launchpad-policies>`
+Community:             :ref:`Giving feedback <get-help>` • :ref:`Getting support<getting-support-in-launchpad>` • :ref:`Launchpad policies <launchpad-policies>`
 ===================    ==================
 
 There is more to discover in the Launchpad user manual. Explore this 

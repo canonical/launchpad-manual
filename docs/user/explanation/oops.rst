@@ -54,7 +54,7 @@ OOPS.
 What to do if you encounter an OOPS
 -----------------------------------
 
-Come and :ref:`chat with us <getting-help>`. We'll try and help you achieve 
+Come and :ref:`chat with us <get-help>`. We'll try and help you achieve 
 what you are trying to do. We may ask for the OOPS ID - see above under 
 `what does an OOPS look like? <#looklike>`__.
 

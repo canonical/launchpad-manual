@@ -3,7 +3,7 @@
 Launchpad License
 =================
 
-Below are the licensing terms for Launchpad. Please use our :ref:`feedback <talk-to-us-about-launchpad>` 
+Below are the licensing terms for Launchpad. Please use our :ref:`feedback <get-help>` 
 address for questions.
 
 Launchpad is Copyright 2004-2018 Canonical Ltd.

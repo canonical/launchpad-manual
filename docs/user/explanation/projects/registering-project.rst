@@ -34,7 +34,7 @@ operation, although use of commercial-only features may still be granted
 on a case-by-case basis.
 
 If you're not sure that your project's licence is suitable, :ref:`talk to
-us <talk-to-us-about-launchpad>` about it.
+us <get-help>` about it.
 
 .. tip::
     If you want to register a translation team or Ubuntu
@@ -67,7 +67,7 @@ awarded a 30-day trial commercial subscription that entitles explore the
 
 Note that once you have registered your project you will not be able to
 change its name by yourself. If you wish change it you can ask an
-administrator to that for you, read the :ref:`Feedback <talk-to-us-about-launchpad>` page for
+administrator to that for you, read the :ref:`Feedback <get-help>` page for
 more information.
 
 Project groups

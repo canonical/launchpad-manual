@@ -22,7 +22,7 @@ Launchpad is a hosting and collaboration service for software projects. You can 
 * plan, assign and follow the progress of chunks of work :ref:`more about Blueprint <blueprints-lightweight-specifications>`
 * create and host Ubuntu packages - :ref:`more about Personal Package Archives <ref-personal-package-archives>`
 
-You can also :ref:`register your software project <registering-your-project>` in our directory, then pick and choose which parts of Launchpad you want to use. It's free for :ref:`free software projects <launchpad-policies>` - :ref:`contact us <talk-to-us-about-launchpad>` if your project uses a non-free licence.
+You can also :ref:`register your software project <registering-your-project>` in our directory, then pick and choose which parts of Launchpad you want to use. It's free for :ref:`free software projects <launchpad-policies>` - :ref:`contact us <get-help>` if your project uses a non-free licence.
 
 Want to know more about what Launchpad can do? Take `our tour <https://launchpad.net/+tour>`_.
 

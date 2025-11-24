@@ -45,5 +45,4 @@ Support
 -------
 
 Employees of Canonical can get support at the Launchpad channel on
-Mattermost. External users can use the usual
-:ref:`channels <getting-help>`.
+Mattermost. External users can use the usual :ref:`channels <get-help>`.

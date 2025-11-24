@@ -160,7 +160,7 @@ What formats of packages are supported?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 At this stage only .deb packages are supported. If you are interested in 
-building RPM or other package formats, please contact the :ref:`Launchpad team <getting-help>` 
+building RPM or other package formats, please contact the :ref:`Launchpad team <get-help>` 
 to discuss that in more detail!
 
 How many users can download packages from my PPA?

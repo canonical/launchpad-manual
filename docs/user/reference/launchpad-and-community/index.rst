@@ -9,7 +9,6 @@ Launchpad and community
     :maxdepth: 1
 
     Badges <launchpad-badge-kit>
-    Feedback on Launchpad <feedback-on-launchpad>
     Get support <get-support>
     Legal <legal/index>
     Project announcements <project-announcements>
