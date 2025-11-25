@@ -1,6 +1,6 @@
 .. _get-help:
 
-Get Support
+Get help
 ===========
 Whether you need advice on using Launchpad or want to help improve Launchpad 
 itself, we would like to hear from you. Please seek us out or make suggestions
@@ -14,10 +14,10 @@ We try to run a newcomer-friendly community; it's okay to ask basic questions
 and make obvious suggestions.
 
 If you are getting started using the Launchpad API, be sure to check out the 
-`API documentation <http://people.canonical.com/~mwh/canonicalapi/>`_
+`API documentation <http://people.canonical.com/~mwh/canonicalapi/>`_.
 
 Login issues
-~~~~~~~~~~~~
+------------
 
 Trouble logging into Launchpad? `Get help for the Ubuntu Single Sign-on service <https://help.ubuntu.com/community/SSO/FAQs>`_, 
 which provides the Launchpad login service.
@@ -30,10 +30,10 @@ Inappropriate content
 
 If you come across spam, offensive material or other inappropriate content in 
 Launchpad, please contact the Launchpad team using one of the methods above. If
-you wish to make the report in private, please use the Email option.
+you wish to make the report in private, use the Email option.
 
 Report a bug
-~~~~~~~~~~~~
+------------
 
 No matter where in Launchpad you found the bug, `report it against the launchpad project <https://bugs.launchpad.net/launchpad>`_ 
 in Launchpad.
