@@ -91,7 +91,7 @@ charms would end up only existing on ``amd64``. We hope that providing charm
 building in Launchpad will encourage most charms to support multiple
 architectures by default.
 
-We currently only support building charms not bundles. :ref:`Contact us <getting-help>` 
+We currently only support building charms not bundles. :ref:`Contact us <get-help>` 
 if you have a use case for building bundles on Launchpad and would like to 
 discuss it with us.
 

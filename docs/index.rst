@@ -40,7 +40,7 @@ It's an open source project that warmly welcomes community projects,
 contributions, suggestions, fixes and constructive feedback.
 
 * `Code of conduct <https://ubuntu.com/community/ethos/code-of-conduct>`_
-* :doc:`Get support <help>`
+* :doc:`Get help <help>`
 * :ref:`Feature highlights <launchpad-feature-highlights>` 
 * :doc:`Contribute to our code <developer/how-to/contributing-changes>`
 

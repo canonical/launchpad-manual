@@ -264,7 +264,7 @@ you'll receive an error message similar to:
    or send an email to help@launchpad.net
 
 If you've waited several minutes and still not received either a change
-notification or an error message, please :ref:`let us know <talk-to-us-about-launchpad>`.
+notification or an error message, please :ref:`let us know <get-help>`.
 
 Filter bug mail
 ---------------

@@ -9,7 +9,7 @@ To create a new Launchpad account, visit the `account sign-up <https://launchpad
 
 A few things to note:
 
-* **Confirmation email:** If you don't receive a confirmation email from Launchpad it may have been incorrectly trapped by a spam filter. If you think this has happened, try registering using a `Gmail <http://mail.google.com/>`_ address. You can always change your registered email address later on. If that still doesn't work, :ref:`let us know <talk-to-us-about-launchpad>`.
+* **Confirmation email:** If you don't receive a confirmation email from Launchpad it may have been incorrectly trapped by a spam filter. If you think this has happened, try registering using a `Gmail <http://mail.google.com/>`_ address. You can always change your registered email address later on. If that still doesn't work, :ref:`let us know <get-help>`.
 * **Display name:** Launchpad will ask you for a display name. This is the name people will see on your profile page and next to work that you do. Many people choose to use their real name or a widely recognised pseudonym here.
 * **Protecting your email address:** Your email address is only visible to registered Launchpad users and not search engine spiders or spam bots. However, you can hide it from everyone at any time.
 

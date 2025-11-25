@@ -43,7 +43,7 @@ from another bug tracker. This may mean you can switch to Launchpad's
 bug tracker without having to maintain your previous bug tracker in a
 read-only mode.
 
-:ref:`Get in touch <talk-to-us-about-launchpad>` to see if we can help.
+:ref:`Get in touch <get-help>` to see if we can help.
 
 Setting roles
 ---------------

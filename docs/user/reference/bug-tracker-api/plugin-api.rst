@@ -441,5 +441,5 @@ This is the read operation that matches set_launchpad_bug.
 Further information
 -------------------
 
-Feel free to reach out to the :ref:`Launchpad team <getting-help>`. We'd love 
+Feel free to reach out to the :ref:`Launchpad team <get-help>`. We'd love 
 to hear your experiences.
