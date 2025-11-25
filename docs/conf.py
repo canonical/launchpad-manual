@@ -159,9 +159,10 @@ html_context = {
 # - https://launchpad.net/example
 # - https://git.launchpad.net/example
 #
-# html_theme_options = {
-#     "sidebar_hide_name": True,
-# }
+html_theme_options = {
+    "source_edit_link": "https://github.com/canonical/launchpad-manual/",
+#    "sidebar_hide_name": True,
+}
 
 # Project slug; see https://meta.discourse.org/t/what-is-category-slug/87897
 #
