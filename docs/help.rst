@@ -35,7 +35,7 @@ you wish to make the report in private, use the Email option.
 Report a bug
 ------------
 
-No matter where in Launchpad you found the bug, `report it against the launchpad project <https://bugs.launchpad.net/launchpad>`_ 
+No matter where in Launchpad you found the bug, `report it against the launchpad project <https://bugs.launchpad.net/launchpad/+filebug>`_ 
 in Launchpad.
 
 Thanks for helping us make Launchpad a great place to develop free software.
