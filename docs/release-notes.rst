@@ -8,6 +8,8 @@ November 2025
 - Launchpad mailing lists have been fully shut down. The static HTML archives
   for all the public Launchpad mailing lists are now available at
   https://archive.lists.launchpad.net.
+- The correct social links are now shown in Launchpad error pages
+  (`LP: #2132134 <https://bugs.launchpad.net/launchpad/+bug/2132134>`_)
 
 October 2025
 ++++++++++++
