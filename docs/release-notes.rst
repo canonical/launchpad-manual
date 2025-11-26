@@ -1,6 +1,14 @@
 Release Notes
 =============
 
+November 2025
++++++++++++++
+26 November 2025
+
+- Launchpad mailing lists have been fully shut down. The static HTML archives
+  for all the public Launchpad mailing lists are now available at
+  https://archive.lists.launchpad.net.
+
 October 2025
 ++++++++++++
 27 October 2025
