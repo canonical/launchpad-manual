@@ -17,6 +17,5 @@ How-to guides
    Packaging <packaging/index>
    Launchpad web services API <launchpad-api/index>
    Work with launchpadlib <launchpadlib/index>
-   Work with Bazaar <work-with-bazaar/index>
    Work with bugs <work-with-bugs/index>
    Work with code hosted on Launchpad <work-with-code-hosted-on-launchpad/index>
