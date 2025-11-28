@@ -3,7 +3,7 @@ Release Notes
 
 November 2025
 +++++++++++++
-26 November 2025
+26 November
 
 - Launchpad mailing lists have been fully shut down. The static HTML archives
   for all the public Launchpad mailing lists are now available at
@@ -13,12 +13,12 @@ November 2025
 
 October 2025
 ++++++++++++
-27 October 2025
+27 October
 
 - Webhooks can now be configured on archives for successful or unsuccessful
   source and binary package uploads, and binary build events.
 
-17 October 2025
+17 October
 
 - Support for the ``core26`` snap base has been enabled and recipes
   can use it.
