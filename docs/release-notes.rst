@@ -3,12 +3,13 @@ Release Notes
 
 November 2025
 +++++++++++++
+
 27 November
 
- - Users can now add GitHub accounts to their profile's social links.
- - Fixed archive webhook trigger function. Webhooks configured on and
-   archive are now correctly triggered, and can be set for rejected
-   package upload use cases.
+- Users can now add GitHub accounts to their profile's social links.
+- Fixed archive webhook trigger function. Webhooks configured on an
+  archive are now correctly triggered, and can be set for rejected
+  package upload use cases.
 
 26 November
 
