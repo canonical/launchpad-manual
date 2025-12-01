@@ -1,6 +1,19 @@
 Release Notes
 =============
 
+December 2025
++++++++++++++
+
+1 December
+
+- Owners of a PPA can now see "Manage Webhooks" button in the PPA page.
+  For more information, see `Introducing Webhooks for Package Uploads in PPAs
+  <https://blog.launchpad.net/general/introducing-webhooks-for-package-uploads-in-ppas>`_.
+- Builder farm's home page now also displays "Cleaning" and "Idle" builders.
+- Explicitly specify the mirror page URLs while registering new mirrors,
+  as some users were misunderstanding the “Official” mirror option as
+  referring to a country’s official mirror.
+
 November 2025
 +++++++++++++
 
