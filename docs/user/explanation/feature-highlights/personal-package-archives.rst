@@ -57,4 +57,4 @@ learn more!
 So, Launchpad can build your packages. But wouldn't it be great if you
 could actually host the code of your project in Launchpad *before* you
 started building packages? That leads us to the next stop on our tour -
-:ref:`hosting code in Launchpad <branch-hosting-with-bazaar>`.
+:ref:`hosting code in Launchpad <hosting-git-repositories>`.
