@@ -15,3 +15,4 @@ Packaging
     build-rocks-in-launchpad
     build-charms-in-launchpad
     build-oci-images-in-launchpad
+    use-ppa-snapshot-service
