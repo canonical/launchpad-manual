@@ -66,6 +66,7 @@ buildable
 buildbot
 buildd
 builddeb
+buildinfo
 buildmaster
 buildslave
 bzr
@@ -92,6 +93,7 @@ changesets
 charmcraft
 Charmhub
 charmhub
+checksums
 chroot
 CLI
 Cmd
@@ -145,6 +147,7 @@ DBEnums
 dbpatches
 dbschema
 dbupgrade
+ddebs
 ddl
 debchange
 debcommit
@@ -193,6 +196,7 @@ doctest
 doctests
 docutils
 DOM
+dput
 downstreams
 dropdown
 dtrt
@@ -421,6 +425,7 @@ né
 newsampledata
 nextval
 nfs
+ng
 NodePort
 nodowntime
 normalized
@@ -581,6 +586,7 @@ RTD
 runtime
 SafariWebContent
 sampledata
+sbuild
 scalability
 schroot
 schroots
@@ -632,6 +638,7 @@ SQL's
 sqltrace
 SRE
 SREs
+SRU
 srv
 SshConnectionMultiplexing
 SSL
