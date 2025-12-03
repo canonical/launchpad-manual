@@ -1,3 +1,5 @@
+.. _mockio-library:
+
 MockIo library
 ==============
 
