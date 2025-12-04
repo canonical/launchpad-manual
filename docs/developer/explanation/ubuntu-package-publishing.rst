@@ -1,7 +1,7 @@
 Ubuntu package publishing
 =========================
 
-The Debian package lifecycle describes the process from a `source package upload <https://documentation.ubuntu.com/project/how-ubuntu-is-made/concepts/package-format/#source-packages>`_
+The Ubuntu package lifecycle describes the process from a `source package upload <https://documentation.ubuntu.com/project/how-ubuntu-is-made/concepts/package-format/#source-packages>`_
 to the `Ubuntu package archive <https://documentation.ubuntu.com/project/how-ubuntu-is-made/concepts/package-archive/>`_.
 This involves multiple steps in which the original source package is verified,
 built into a `binary package <https://documentation.ubuntu.com/project/how-ubuntu-is-made/concepts/package-format/#binary-packages>`_
