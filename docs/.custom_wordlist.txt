@@ -176,6 +176,7 @@ devpad
 dh
 dia
 Diátaxis
+diskpool
 dir
 directDelivery
 DirectDelivery
