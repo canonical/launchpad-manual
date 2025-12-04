@@ -71,23 +71,7 @@ Series and branches
 In Launchpad, each project can register multiple series. Each of those
 series can be associated with a branch. By default, if you don't specify
 which series you are interested in, you will get the current development
-trunk series (**usually** called trunk, but not always). For example, in
-the example where you branched GNU Hello, you typed:
-
-::
-
-   % bzr branch http://launchpad.net/gnuhello
-   191 revisions branched.
-
-This command specifies only the project name, so you would have been
-given the development trunk. If there was a 1.3 series with a branch
-associated with it, you could have typed
-
-::
-
-   bzr branch http://launchpad.net/gnuhello/1.3
-
-and received the tip of that stable branch.
+trunk series (**usually** called trunk, but not always). 
 
 Note that this is different to the previous approach of branching from a
 specific person's version of a project. Here you are branching from one
@@ -99,11 +83,3 @@ version of the software, or so that bugs can be targeted there for
 release management. But we do encourage you to make sure, when you
 branch from trunk to make a new major stable release, that you set up a
 series for it and link the branch to it.
-
-What if the project isn't yet using Bazaar officially, and code is being
-managed in CVS or Subversion? Launchpad can import the CVS or SVN trunk
-of the project and publish it for you as a Bazaar branch - and then keep
-it up to date so you can work entirely in Bazaar, merging from trunk
-whenever you want.
-
-That's the :ref:`next step <branch-imports>` in this tour.

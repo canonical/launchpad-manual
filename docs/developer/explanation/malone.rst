@@ -109,25 +109,4 @@ is that users may not all be running the latest version of a piece of code.
 In fact, that's pretty much guaranteed. So Malone needs to be able to say
 whether a bug is found in a particular version of a package or not.
 
-Future
-======
-
-Bazaar Integration
-------------------
-
-Malone is part of Launchpad, a web based portal for open source
-developers. Another component of that portal is the Bazaar, a repository of
-data and metadata about code stored in the Bazaar revision control system. We
-hope that Bazaar will be embraced by the open source world, as it solves a
-number of problems with traditional centralised revision control systems and
-is again designed to support distributed disconnected operation.
-
-Once more people start keeping their code in Bazaar, it should become possible
-to streamline the cooperation process even further. For example, if the fix
-for a particular Malone bug can be found in a Bazaar changeset, then it should
-be possible for upstream and other distributions to merge in that fix to their
-codebase automatically and easily. The integration could even be
-bidirectional - once a fix had been merged in, Bazaar could possibly detect
-that and mark the bug fixed in that codebase automatically.
-
 

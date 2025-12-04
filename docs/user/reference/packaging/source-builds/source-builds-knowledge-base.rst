@@ -51,9 +51,3 @@ Building packages for daily builds
 -  :ref:`Writing build recipes <source-build-recipes>`
 -  :ref:`Using Bzr Builder to test
    recipes <running-commands-in-recipes>`
-
-Other useful documentation
---------------------------
-
--  :ref:`Source build limitations <known-source-build-limitations>`: Key limitations that affect many users.
-
