@@ -1,4 +1,4 @@
-Debian package publishing
+Ubuntu package publishing
 =========================
 
 The Debian package lifecycle describes the process from a `source package upload <https://documentation.ubuntu.com/project/how-ubuntu-is-made/concepts/package-format/#source-packages>`_
@@ -20,9 +20,9 @@ The first step of the publishing process is to upload a source package
 with a signed source ``.changes`` file. The signed document references
 and includes checksums of the files to upload and the source package.
 These files are usually uploaded with ``dput`` or ``dput-ng``, which use
-FTP or SFTP to push the files to Launchpad.
+FTP or SFTP to push the files to Launchpad, specifically ``upload.ubuntu.com``.
 
-The Ubuntu upload processor (``process-upload.py``) runs every minute.
+The Ubuntu upload processor (``process-upload.py``) runs periodically.
 When it finds a newly uploaded source package,
 it performs various checks, including:
 
@@ -39,18 +39,19 @@ Once all checks pass, the script uploads the files to the librarian and
 creates a queue entry (``PackageUpload``) in the database.
 If any checks fail the package upload is marked as ``REJECTED``.
 
-If the upload is automatically accepted (e.g. for the devel series),
+If the upload is automatically accepted (e.g. for the devel series when it is not frozen),
 the system immediately creates a ``PENDING`` source package publishing history
-entry and creates all necessary binary package build requests.
-Otherwise these are created later when the package is accepted from the queue.
+entry and creates all necessary binary package build requests for the architectures
+supported by the Ubuntu series that the uploaded source package targets.
+Otherwise, these are created later when the package is accepted from the queue.
 
 ########
 Building
 ########
 
-The Launchpad build farm is controlled by the ``buildd-manager`` daemon,
-which manages multiple ``launchpad-buildd`` instances
-for all supported architectures.
+he ``buildd-manager`` service manages the builder VMs of all
+supported architectures in the Launchpad build farm by communicating with the
+``launchpad-buildd`` service that runs on them.
 
 For a binary package build, a ``launchpad-buildd`` instance is given a list
 of artifacts to download from the librarian, the source package,
@@ -85,8 +86,9 @@ the archive or due to the package being a kernel package, which are
 always published as new binary packages with the version as a part
 of the binary package name.
 
-When the publisher sees an ``ACCEPTED`` binary queue item,
-it creates new ``PENDING`` binary package publishing history entries.
+The ``process-accepted`` script iterates through all ``ACCEPTED``
+binary queue items and creates new ``PENDING`` binary package
+publishing history entries.
 
 ###########
 Publication
@@ -94,11 +96,11 @@ Publication
 
 The archive publisher reads the set of current publication records
 for a component (i.e. main/universe/…) of a suite (which is a combination
-of a series and a pocket like ``noble/proposed`` or ``questing/release``),
-makes sure that these packages are present in the pool and creates
+of a series and a pocket like ``noble-proposed`` or ``questing-release``),
+makes sure that these packages are present in the archive on the diskpool and creates
 the index files to be consumed by `apt` which describe the
 sources and binaries that are currently published.
 
-Once all component/suite combinations have been published for a series
-it also generates the Release file, signs it and synchronises
-its working copy with the active archive copy.
+Once all component/suite combinations have been published for a series,
+it also generates the Release file, signs it using the appropriate signing key
+and synchronises its working copy with the active archive copy.
