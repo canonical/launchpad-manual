@@ -9,13 +9,6 @@
 # The "from" path must be a file that *does not* exist
 # The "to" path must be a file that *does* exist
 # The separator between "from" and "to" paths is a single space (not a tab)
-#
-# In this implementation:
-#   Requests to help.launchpad.net are forwaded to the same path at https://documentation.ubuntu.com/launchpad/user
-#   and then forwarded by rediraffe to the correct doc in this repository.
-#   Requests to developer.launchpad.net are forwarded to the same path at https://documentation.ubuntu.com/launchpad/developer
-#   and then forwarded by rediraffe to the correct doc in this repository.
-
 
 user/Translations	user/explanation/translating-with-launchpad/translating-with-launchpad/
 user/Packaging/PPA	user/reference/packaging/ppas/ppa/
