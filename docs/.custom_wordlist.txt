@@ -149,6 +149,7 @@ dbschema
 dbupgrade
 ddebs
 ddl
+deathrow
 debchange
 debcommit
 DEBEMAIL
@@ -676,6 +677,7 @@ SuggestivePOTemplate
 summarized
 svg
 svn
+symlink
 symlinked
 symlinks
 synchronize
