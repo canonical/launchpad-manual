@@ -43,8 +43,9 @@ In Launchpad, each series behaves almost like a sub-project, having its own:
 * releases
 * release manager.
 
-For an example, take a look at the `Bazaar <https://launchpad.net/bzr>`_ project. There you'll see a number of
-series each with their related milestones and releases.
+For an example, take a look at the `OpenShot Video Editor <https://launchpad.net/openshot>`_ 
+project. There you'll see a number of series each with their related milestones 
+and releases.
 
 Project maintainers and drivers can register series. When a driver registers a series, the user is also set as
 the series release manager. Project maintainers and series release managers can create and manage milestones and releases.
@@ -98,13 +99,12 @@ line of development for your next major release, we suggest you:
 This ensures that people who create a branch of "trunk" always get the tip of your development,
 rather than discovering later on that it has turned into a stable release.
 
-This last point is not entirely true, Launchpad + Bazaar allows projects to use ``leading series`` without
+This last point is not entirely true, Launchpad allows projects to use ``leading series`` without
 the need to rebranch the focus of development. You can choose the series that is the focus of development.
 This changes were ``lp:your-project&gt;`` points to. Anyone who branches or pulls using the short-hand
 URL will always get the branch associated with the focus of development series.
 
-You can tell people the purpose of each series with a short description. Bazaar's bzr.dev serie
- overview page shows that it's described as "...the development mainline where new releases are published".
+You can tell people the purpose of each series with a short description. 
 
 .. _milestones:
 

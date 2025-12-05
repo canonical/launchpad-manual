@@ -162,8 +162,6 @@ If your Launchpad username differs from your local one, then put this in
 ``~/.ssh/config`` in the container before doing anything else, replacing
 ``LPUSERNAME`` with your Launchpad username::
 
-    Host bazaar.launchpad.net
-            User LPUSERNAME
     Host git.launchpad.net
             User LPUSERNAME
 
@@ -345,7 +343,7 @@ This should look similar to this:
 .. code-block::
 
     # Launchpad virtual domains. This should be on one line.
-    <your container IPv4 address>     launchpad.test answers.launchpad.test archive.launchpad.test api.launchpad.test bazaar.launchpad.test bazaar-internal.launchpad.test blueprints.launchpad.test bugs.launchpad.test code.launchpad.test feeds.launchpad.test keyserver.launchpad.test ppa.launchpad.test private-ppa.launchpad.test testopenid.test translations.launchpad.test xmlrpc-private.launchpad.test xmlrpc.launchpad.test
+    <your container IPv4 address>     launchpad.test answers.launchpad.test archive.launchpad.test api.launchpad.test blueprints.launchpad.test bugs.launchpad.test code.launchpad.test feeds.launchpad.test keyserver.launchpad.test ppa.launchpad.test private-ppa.launchpad.test testopenid.test translations.launchpad.test xmlrpc-private.launchpad.test xmlrpc.launchpad.test
 
 .. note::
 
