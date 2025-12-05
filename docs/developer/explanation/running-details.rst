@@ -8,7 +8,7 @@ What the installation process does
 The ``rocketfuel-setup`` script first determines what release of Ubuntu
 you're running, then installs various lines into files under ``/etc``, to
 enable you to run Launchpad services locally.  For example, it adds entries
-for "launchpad.test", "bazaar.launchpad.test" and others to your ``/etc/hosts`` 
+for "launchpad.test", "git.launchpad.test" and others to your ``/etc/hosts`` 
 file, so that after you build Launchpad you can browse to ``launchpad.test`` 
 and see a locally-running instance.  It also installs some packages, 
 dependencies that Launchpad needs in order to run.  This is why the ``sudo`` 
