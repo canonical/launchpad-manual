@@ -84,3 +84,4 @@ user/Blueprint	user/explanation/feature-highlights/blueprints/
 user/API/launchpadlib/	user/how-to/launchpadlib/using-launchpadlib/
 user/API	user/how-to/launchpad-api/
 user/AnswerTrackerDocumentation	user/explanation/answers/answer-tracker/
+developer/Translations/LanguagePackSchedule developer/reference/services/automatic-translations-export
