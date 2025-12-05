@@ -50,7 +50,5 @@ your project into their language, for which there were no translations
 before, a new (virtual) PO file is created in the Launchpad database. It
 becomes a real PO file when you chose to download it.
 
-Please make sure to keep the PO
-template in Launchpad current by importing updated versions of the file
-you create from your source code. This is most easily done by setting up
-its import from a Bazaar branch that you push your code to.
+Please make sure to keep the PO template in Launchpad current by importing 
+updated versions of the file you create from your source code.
