@@ -74,8 +74,6 @@ Other interesting features to explore on Launchpad include:
     Bug branch linking <bug-branch-linking>
     Product series <product-series>
     The bug tracker <the-bug-tracker>
-    Branch imports <branch-imports>
-    Code hosting with Bazaar <bazaar-branch-hosting>
     Page tour <page-tour>
     
     
