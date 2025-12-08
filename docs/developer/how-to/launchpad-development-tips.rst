@@ -16,4 +16,5 @@ Launchpad development tips
    debug-buildfarm-builder
    debugging
    launchpad-api-docs
+   codehosting-locally
    rename-database-table
