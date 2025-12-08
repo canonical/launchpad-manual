@@ -1,3 +1,5 @@
+.. _apply-database-schema-changes:
+
 ================================
 Applying database schema changes
 ================================
