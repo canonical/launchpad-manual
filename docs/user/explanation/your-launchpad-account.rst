@@ -12,8 +12,7 @@ you'll be able to:
 -  show other people what work you do in Launchpad and earn karma
 -  join teams working on free software
 -  file, comment on, triage and solve bugs
--  host and monitor code in Bazaar branches or CVS and Subversion
-   repositories
+-  host and monitor code in git repositories
 -  help translate software
 -  contribute ideas and specifications to free software projects, then
    track their progress

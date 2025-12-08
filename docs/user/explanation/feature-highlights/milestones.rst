@@ -31,9 +31,9 @@ create a milestone, and then link bugs or blueprints to that milestone
 as a way of saying "we think these items are worth keeping track of as
 we get closer to that date".
 
-Here's an example, the 0.15 milestone of Bazaar:
+Here's an example, the 1.0 milestone of Inkscape:
 
-    https://launchpad.net/bzr/+milestone/0.15
+    https://launchpad.net/inkscape/+milestone/1.0
 
 At the time of writing, it looked something like this:
 

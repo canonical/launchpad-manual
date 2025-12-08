@@ -13,7 +13,6 @@ Who is using Launchpad?
 Several high-profile free software projects use Launchpad, including:
 
 -  Ubuntu - Linux-based operating system.
--  Bazaar - distributed version control.
 -  Zope 3 - web application server.
 -  Jokosher - easy to use audio recorder and editor.
 
