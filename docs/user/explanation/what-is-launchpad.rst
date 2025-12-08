@@ -52,5 +52,5 @@ Getting started with Launchpad
 The first step to using Launchpad is to register your user account.
 Follow our guide to :ref:`create your account <create-and-personalise-your-launchpad-account>`.
 
-If you want to use Launchpad and bzr for your free software project, follow our
+If you want to use Launchpad for your free software project, follow our
 guide to :ref:`register your project <registering-your-project>`
