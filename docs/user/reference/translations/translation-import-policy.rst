@@ -18,11 +18,6 @@ templates and translations. Some of these rules are social and cover
 things such as whether you have permission from the project to start a
 translation effort in Launchpad. The rest of the rules are technical.
 
-.. note::
-    If you follow these rules, the easiest and quickest way to get
-    your templates and translations automatically into Launchpad is to
-    :ref:`import them from a Bazaar branch <import-translation-from-bazaar-branch>`.
-
 Social rules
 ------------
 
