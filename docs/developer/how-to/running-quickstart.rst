@@ -148,14 +148,10 @@ This only runs the basic web application.  `Codehosting
 <https://dev.launchpad.net/Soyuz/HowToUseSoyuzLocally>`_ require additional
 steps.
 
-.. note::
-
-    Sometimes, the existing image may be missing some database migrations
-    because a new development image hasn't been published yet. In such 
-    cases, you can run make schema — but be aware that this will reset 
-    your local database and erase any changes.
-    
-    For future runs, you can skip make schema and simply run make run. 
+For subsequent builds, you can just do ``make run`` right away.  You don't
+need to do ``make schema`` every time, and you should avoid it because it's
+expensive and because it will clean out any data you might have put into
+your test instance (through the web UI or by running other scripts).
 
 CSS Watch
 ---------
