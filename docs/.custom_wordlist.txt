@@ -105,6 +105,7 @@ codehosting
 Codehosting
 codeimport
 codeimportscheduler
+Codename
 CodeReviewChecklist
 codereviewmessage
 CodeReviewMessageView
@@ -149,6 +150,7 @@ dbschema
 dbupgrade
 ddebs
 ddl
+deathrow
 debchange
 debcommit
 DEBEMAIL
@@ -198,6 +200,7 @@ doctests
 docutils
 DOM
 dput
+dominator
 downstreams
 dropdown
 dtrt
@@ -676,9 +679,11 @@ SuggestivePOTemplate
 summarized
 svg
 svn
+symlink
 symlinked
 symlinks
 synchronize
+synchronizes
 synchronizing
 syntax
 syntaxes
