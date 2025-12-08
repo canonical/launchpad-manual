@@ -8,7 +8,8 @@ in a process called domination. Finally it generates the index files
 ``Sources``, ``Packages`` and ``Release`` which are consumed by clients
 like ``apt``.
 
-When a package enters the Ubuntu archive publisher, it is taken through five distinct steps.
+When a package enters the Ubuntu archive publisher,
+it is taken through five distinct steps.
 
 
 Publishing
@@ -38,8 +39,9 @@ Judge and dominate
 --------------------------
 
 The ``judge`` and ``dominate`` processes mark older versions of newly published
-packages as superseded or prepare them for deletion. The final deletion is handled by
-a separate process called ``process-deathrow``.
+packages as superseded or prepare them for deletion.
+The final deletion is handled by a separate
+process called ``process-deathrow``.
 
 Domination
 ~~~~~~~~~~
@@ -63,14 +65,15 @@ oldest live releases that are newer than the superseded ones.
 Judging
 ~~~~~~~
 
-The dominator also processes the superseded publications and marks the ones with
-unnecessary files as 'eligible for removal', meaning a ``SUPERSEDED``
+The dominator also processes the superseded publications and marks the ones
+with unnecessary files as 'eligible for removal', meaning a ``SUPERSEDED``
 or ``DELETED`` publication status and a defined ``scheduleddeletiondate``.
 These will then be considered for archive removal by the deathrow processing.
 
 In order to judge if a source is eligible for removal, it also checks
 if its resulting binaries are still required in the archive, i.e.,
-old binary publications can (and should) hold their respective sources in the archive.
+old binary publications can (and should) hold their
+respective sources in the archive.
 
 
 Generate Sources and Packages
@@ -85,14 +88,15 @@ distribution source.
 Write out Release files
 -------------------------------
 
-The publisher generates the Release files for each suite (distribution series and pocket).
-This involves collecting all index files generated in the previous step and
-``Contents`` files.
+The publisher generates the Release files for each suite
+(distribution series and pocket). This involves collecting
+all index files generated in the previous step and ``Contents`` files.
 
-A ``Release`` file is created containing metadata about the suite (Origin, Label,
-Codename, etc.) and checksums for all collected files. If the archive is configured
-for signing, the publisher also generates ``Release.gpg`` and ``InRelease`` signatures.
+A ``Release`` file is created containing metadata about the suite
+(Origin, Label, Codename, etc.) and checksums for all collected files.
+If the archive is configured for signing, the publisher also
+generates ``Release.gpg`` and ``InRelease`` signatures.
 
 Finally, if enabled for the series, the publisher updates the by-hash directory
-structure to support hash-based retrieval of index files, and synchronizes timestamps
-across core files.
+structure to support hash-based retrieval of index files,
+and synchronizes timestamps across core files.
