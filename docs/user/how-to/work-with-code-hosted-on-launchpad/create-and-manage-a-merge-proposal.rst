@@ -5,7 +5,9 @@ Create and manage a merge proposal
 
 .. include:: /includes/important_not_revised_help.rst
 
-Thanks to Bazaar's distributed model, you can :ref:`get full access to the code of any branch <find-and-download-code-hosted-on-launchpad>` hosted in Launchpad, with version control and history, right on your own machine.
+Thanks to git's distributed model, you can get full access to the code of any 
+repository hosted on Launchpad, with version control and history, right on your
+own machine.
 
 That flexibility means you can start work on a project without having to
 get special permissions to commit code. Of course, if you make changes

@@ -23,8 +23,6 @@ This guide shows you how to:
 -  hand the branch over to a team, so several people can commit code to
    it.
 
-If you need more detail, see our full guide to :ref:`hosting code in Launchpad <using-launchpad-with-bazaar>`.
-
 .. note::
 
     Launchpad is free of charge for :ref:`open source projects <project-eligibility>`.
@@ -123,4 +121,4 @@ your project's code page. Other people can also propose there branches
 for merging into your trunk, or any other branch associated with your
 project.
 
-Read the full guide to :ref:`hosting code in Launchpad <using-launchpad-with-bazaar>`.
+Read the full guide to :ref:`working with merge proposals <create-and-manage-a-merge-proposal>`.
