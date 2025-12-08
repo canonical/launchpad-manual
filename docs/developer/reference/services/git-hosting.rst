@@ -4,8 +4,7 @@ Git hosting
 Description
 -----------
 
-Launchpad has direct Git hosting support alongside its existing Bazaar hosting support. 
-The major subsystems involved are:
+Launchpad has direct Git hosting support. The major subsystems involved are:
 
 * The git client
 * Hosting service (turnip)

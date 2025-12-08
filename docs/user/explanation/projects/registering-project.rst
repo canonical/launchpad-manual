@@ -12,8 +12,7 @@ Let's have a quick recap of how you can use Launchpad for your project:
    distribution package build and hosting, file downloads and so on.
 -  **List your project in the directory:** gain publicity for your
    project, make announcements, link to your bug tracker, register your
-   code and make it available through
-   `Bazaar <https://www.bazaar-vcs.org>`__.
+   code and `make it available <https://code.launchpad.net>`__.
 
 Of course, you can pick and choose almost any combination of what
 Launchpad has to offer. The first step is to register your project.
@@ -34,7 +33,7 @@ operation, although use of commercial-only features may still be granted
 on a case-by-case basis.
 
 If you're not sure that your project's licence is suitable, :ref:`talk to
-us <talk-to-us-about-launchpad>` about it.
+us <get-help>` about it.
 
 .. tip::
     If you want to register a translation team or Ubuntu
@@ -67,7 +66,7 @@ awarded a 30-day trial commercial subscription that entitles explore the
 
 Note that once you have registered your project you will not be able to
 change its name by yourself. If you wish change it you can ask an
-administrator to that for you, read the :ref:`Feedback <talk-to-us-about-launchpad>` page for
+administrator to that for you, read the :ref:`Feedback <get-help>` page for
 more information.
 
 Project groups

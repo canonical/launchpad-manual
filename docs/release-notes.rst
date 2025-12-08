@@ -1,14 +1,45 @@
 Release Notes
 =============
 
+December 2025
++++++++++++++
+
+1 December
+
+- Owners of a PPA can now see "Manage Webhooks" button in the PPA page.
+  For more information, see `Introducing Webhooks for Package Uploads in PPAs
+  <https://blog.launchpad.net/general/introducing-webhooks-for-package-uploads-in-ppas>`_.
+- Builder farm's home page now also displays "Cleaning" and "Idle" builders.
+- Explicitly specify the mirror page URLs while registering new mirrors,
+  as some users were misunderstanding the “Official” mirror option as
+  referring to a country’s official mirror.
+
+November 2025
++++++++++++++
+
+27 November
+
+- Users can now add GitHub accounts to their profile's social links.
+- Fixed archive webhook trigger function. Webhooks configured on an
+  archive are now correctly triggered, and can be set for rejected
+  package upload use cases.
+
+26 November
+
+- Launchpad mailing lists have been fully shut down. The static HTML archives
+  for all the public Launchpad mailing lists are now available at
+  https://archive.lists.launchpad.net.
+- The correct social links are now shown in Launchpad error pages
+  (`LP: #2132134 <https://bugs.launchpad.net/launchpad/+bug/2132134>`_)
+
 October 2025
 ++++++++++++
-27 October 2025
+27 October
 
 - Webhooks can now be configured on archives for successful or unsuccessful
   source and binary package uploads, and binary build events.
 
-17 October 2025
+17 October
 
 - Support for the ``core26`` snap base has been enabled and recipes
   can use it.

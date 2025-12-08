@@ -33,7 +33,7 @@ download file``.
 Downloading files
 -----------------
 
-Let's take a look at `Bazaar's downloads page <https://launchpad.net/bzr/+download>`_.
+Let's take a look at `launchpadlib's downloads page <https://launchpad.net/launchpadlib/+download>`_.
 
 Here, files are grouped by series (major lines of development) and then
 by release. An MD5 checksum and the GPG signature of the uploader -

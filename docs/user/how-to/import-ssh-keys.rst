@@ -19,7 +19,7 @@ Creating the key
 
 How you create your SSH key pair depends on which operating system you use.
 
-If the instructions for your operating system are not here, :ref:`get in touch to request them <talk-to-us-about-launchpad>` or, if you know what to do, add them to this page.
+If the instructions for your operating system are not here, :ref:`get in touch to request them <get-help>` or, if you know what to do, add them to this page.
 
 Launchpad supports both RSA and ED25519 keys.
 

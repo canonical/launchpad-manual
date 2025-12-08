@@ -2,7 +2,7 @@ Parts of Launchpad
 ===================
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    navigation-menus
    mail
@@ -11,3 +11,4 @@ Parts of Launchpad
    registry
    engineering-overview-translations
    code
+   publisher

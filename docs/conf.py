@@ -159,9 +159,10 @@ html_context = {
 # - https://launchpad.net/example
 # - https://git.launchpad.net/example
 #
-# html_theme_options = {
-#     "sidebar_hide_name": True,
-# }
+html_theme_options = {
+    "source_edit_link": "https://github.com/canonical/launchpad-manual/",
+#    "sidebar_hide_name": True,
+}
 
 # Project slug; see https://meta.discourse.org/t/what-is-category-slug/87897
 #
@@ -214,6 +215,9 @@ templates_path = ["_templates"]
 
 redirects = {}
 
+# Add redirects, so they can be updated here to land alongside docs being moved
+rediraffe_branch = "main"
+rediraffe_redirects = "redirects.txt"
 
 ###########################
 # Link checker exceptions #
@@ -363,6 +367,7 @@ extensions = [
     "sphinx_last_updated_by_git",
     "sphinx.ext.intersphinx",
     "sphinx_sitemap",
+    "sphinxext.rediraffe",
 ]
 
 # Excludes files or directories from processing

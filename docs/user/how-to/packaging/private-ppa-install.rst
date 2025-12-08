@@ -15,7 +15,7 @@ To access a Private PPA, you'll need to contact its owner and ask for a
 subscription. It's up to the Private PPA's owner how they decide to
 grant access; for example, they may choose to charge a subscription fee.
 
-:ref:`Contact us <talk-to-us-about-launchpad>` to find out how to get your own Private PPA.
+:ref:`Contact us <get-help>` to find out how to get your own Private PPA.
 
 Activate your subscription
 --------------------------

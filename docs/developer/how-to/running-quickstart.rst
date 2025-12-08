@@ -137,6 +137,14 @@ On your local system, go to the workspace directory you specified during setup a
     git fetch
     git pull upstream master
 
+.. note::
+
+    Because the development image is built periodically rather than on every change
+    to the main branch, it may not always contain the latest database migrations if
+    a new image hasn’t been published with those changes yet. If needed, refer to 
+    :ref:`this page <apply-database-schema-changes>` for instructions on applying 
+    the newer database schema changes.
+
 Now you should be able to start up Launchpad:
 
 .. code-block:: shell-session
@@ -148,10 +156,6 @@ This only runs the basic web application.  `Codehosting
 <https://dev.launchpad.net/Soyuz/HowToUseSoyuzLocally>`_ require additional
 steps.
 
-For subsequent builds, you can just do ``make run`` right away.  You don't
-need to do ``make schema`` every time, and you should avoid it because it's
-expensive and because it will clean out any data you might have put into
-your test instance (through the web UI or by running other scripts).
 
 CSS Watch
 ---------
