@@ -105,6 +105,7 @@ codehosting
 Codehosting
 codeimport
 codeimportscheduler
+Codename
 CodeReviewChecklist
 codereviewmessage
 CodeReviewMessageView
@@ -199,6 +200,7 @@ doctests
 docutils
 DOM
 dput
+dominator
 downstreams
 dropdown
 dtrt
@@ -681,6 +683,7 @@ symlink
 symlinked
 symlinks
 synchronize
+synchronizes
 synchronizing
 syntax
 syntaxes
