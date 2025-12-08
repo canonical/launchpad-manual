@@ -1,7 +1,7 @@
 .. _builder-specs:
 
-Builder _builder-specs
-======================
+Builder specs
+=============
 
 Launchpad's builders currently run with the following configuration for all architectures except for ppc64el:
 
