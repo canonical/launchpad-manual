@@ -36,7 +36,7 @@ directly on Launchpad.
 
 .. tip::
     Not sure how to upload a branch to Launchpad?
-    :ref:`See our guide <upload-your-bazaar-branch-to-launchpad>`.|\|
+    :ref:`See our guide <code-imports>`.|\|
 
 At the moment, `team-owned branches don't work as
 expected <https://bugs.launchpad.net/rosetta/+bug/407260>`__. To work

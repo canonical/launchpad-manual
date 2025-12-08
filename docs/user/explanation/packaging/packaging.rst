@@ -469,4 +469,3 @@ Further information
 -------------------
 
 - :ref:`Daily builds getting started <building-a-source-package>`
-- :ref:`bzr-builder in detail <set-up-daily-builds-with-bzr-builder>`

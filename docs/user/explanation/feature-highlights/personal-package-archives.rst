@@ -53,8 +53,3 @@ packages into binaries, at work at https://launchpad.net/+builds
 
 Try the :ref:`Quick Start Guide for PPAs <personal-package-archive>` if you want to
 learn more!
-
-So, Launchpad can build your packages. But wouldn't it be great if you
-could actually host the code of your project in Launchpad *before* you
-started building packages? That leads us to the next stop on our tour -
-:ref:`hosting code in Launchpad <branch-hosting-with-bazaar>`.
