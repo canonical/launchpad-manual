@@ -76,4 +76,4 @@ Related information
 ===================
 
 Applying cowboys to production need to be performed by IS, see
-https://wiki.canonical.com/InformationInfrastructure/OSA/RequestLogging/LP/Cowboys.
+https://docs.google.com/document/d/1lxQJJWL2VD3mgCLp-KqDRxPYrhHv-020hn9qd2wL07Q/edit?tab=t.ba9rhn9ws2d5.

@@ -170,7 +170,7 @@ Search for "build" in https://git.launchpad.net/canonical-is-prometheus/tree/ols
 
 Common support cases
 --------------------
-See `Launchpad's playbook for support rotation <https://wiki.canonical.com/Launchpad/SupportRotation#Builder>`_
+See `Launchpad's playbook for support rotation <https://canonical-launchpad-admin-manual.readthedocs-hosted.com/en/latest/howto/builder/>`_
 
 More information
 ----------------

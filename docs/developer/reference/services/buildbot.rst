@@ -58,10 +58,7 @@ setup.
 Documentation
 -------------
 
-- `InformationInfrastructure/OSA/LPHowTo/Buildbot - Canonical
-  Wiki <https://wiki.canonical.com/InformationInfrastructure/OSA/LPHowTo/Buildbot>`__
-
-- https://wiki.canonical.com/Launchpad/Buildbot#code_references
+- `InformationInfrastructure/OSA/LPHowTo/Buildbot - <https://canonical-launchpad-admin-manual.readthedocs-hosted.com/en/latest/howto/builder/work-with-buildbot/>`__
 
 Git repositories
 ----------------
