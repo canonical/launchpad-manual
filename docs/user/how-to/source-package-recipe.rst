@@ -31,9 +31,8 @@ Code in Launchpad
 =================
 
 The code that you want to use for your source package recipe must be in
-Launchpad, either as a :ref:`Bazaar <upload-your-bazaar-branch-to-launchpad>` or
-:ref:`Git <host-a-git-repository-on-launchpad>` branch that you have uploaded to Launchpad (easier)
-or as :ref:`an import from elsewhere <code-imports>`.
+Launchpad as a :ref:`Git <host-a-git-repository-on-launchpad>` branch that you 
+have uploaded to Launchpad (easier) or as :ref:`an import from elsewhere <code-imports>`.
 
 You can import code that is hosted anywhere on the internet, so long as
 Launchpad can reach it and it is available without needing a username
@@ -89,8 +88,6 @@ Getting bzr-builder
 
 On recent Ubuntu releases you can `install the bzr-builder package <http://apt.ubuntu.com/p/bzr-builder>`_ to run tests locally.
 
-Read more about :ref:`bzr-builder <set-up-daily-builds-with-bzr-builder>`.
-
 Getting git-build-recipe
 ------------------------
 
@@ -106,8 +103,6 @@ There are different ways to write a recipe but, for this example, we're
 going to use the simplest: you use the project's trunk, which contains
 no packaging, and nest another branch that contains only packaging
 information.
-
-For other recipe types, see the :ref:`recipes`.
 
 For this example, we'll use the `Wikkid wiki <https://launchpad.net/wikkid>`_ project.
 
@@ -233,10 +228,3 @@ a build of your recipe once every day, if any of the branches specified
 have changed since the last build. However, it's a good idea to try
 building it yourself first, to make sure that everything is working
 correctly. You can use the "Request build(s)" link for this: **Manually request a build**
-
-Next steps
-==========
-
-Now that you've tried a simple example, let's take a more detailed look
-at :ref:`recipes`.
-

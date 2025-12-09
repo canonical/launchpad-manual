@@ -105,5 +105,3 @@ managed in CVS or Subversion? Launchpad can import the CVS or SVN trunk
 of the project and publish it for you as a Bazaar branch - and then keep
 it up to date so you can work entirely in Bazaar, merging from trunk
 whenever you want.
-
-That's the :ref:`next step <branch-imports>` in this tour.

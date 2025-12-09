@@ -46,6 +46,5 @@ For instance:
 Next steps
 ----------
 
-If you want to work on a project that uses an external Bazaar, git, CVS
-or Subversion branch to host its trunk line of development, you can ask
-Launchpad to :ref:`import it into a Bazaar branch <branch-imports>`.
+If you want to work on a project that uses an external git repository to host 
+its main line of development, you can ask Launchpad to :ref:`import it into a git branch <import-code-into-launchpad>`.

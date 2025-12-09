@@ -9,8 +9,6 @@ Launchpad's daily builds feature.
 Recipes and builds in Launchpad
 -------------------------------
 
--  :ref:`Getting started with daily
-   builds <set-up-daily-builds-with-bzr-builder>`
 -  :ref:`How to write recipes <create-a-source-package-recipe>`
 
 Launchpad infrastructure
@@ -22,7 +20,6 @@ New to Launchpad? Learn about the infrastructure behind daily builds.
    basics
 -  :ref:`Hosting and importing code in Launchpad <work-with-code-hosted-launchpad>`: host Bazaar
    branches, import code from elsewhere, run code reviews
--  :ref:`Upload a Bazaar branch to Launchpad <upload-your-bazaar-branch-to-launchpad>`
 -  :ref:`Import code from somewhere else <import-code-into-launchpad>`
 -  :ref:`Personal Package Archives <personal-package-archive>`: create your own Ubuntu
    archive in Launchpad
@@ -49,7 +46,6 @@ Building packages for daily builds
 ----------------------------------
 
 -  :ref:`Writing build recipes <source-build-recipes>`
--  :ref:`Using Bzr Builder to test
    recipes <running-commands-in-recipes>`
 
 Other useful documentation

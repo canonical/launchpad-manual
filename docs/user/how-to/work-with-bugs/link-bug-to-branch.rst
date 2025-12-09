@@ -13,7 +13,9 @@ is working on a fix.
 Fix a bug in a dedicated branch
 -------------------------------
 
-Let's say you're new to a project. You spot a bug report and you're pretty certain you can fix it. You :ref:`pull down your own branch <find-and-download-code-hosted-on-launchpad>` of the project's trunk and hack away. Every now and then, you :ref:`push your branch up to Launchpad <upload-your-bazaar-branch-to-launchpad>`.
+Let's say you're new to a project. You spot a bug report and you're pretty 
+certain you can fix it. You :ref:`pull down your own branch <host-a-git-repository-on-launchpad>` 
+of the project's trunk and hack away. Every now and then, you push your branch up to Launchpad.
 
 You can tell everyone who's interested in the bug about your work by
 linking your branch to the report. Now, anyone looking at the bug report
