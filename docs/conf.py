@@ -289,7 +289,6 @@ linkcheck_ignore = [
     r"https://github\.com/canonical/fetch-operator*",  #private
     r"https://git\.launchpad\.net/charm\-launchpad\-buildd\-image\-modifier/.*",  #private
     "https://git.zx2c4.com/cgit/",  #unfortunately very flaky
-    "https://wiki.canonical.com/InformationInfrastructure/OSA/RequestLogging/LP/Cowboys",  #private
     "https://staging.launchpad.net",  #ignore, staging launchpad
     r"https://wiki\.canonical\.com/.*",  #private
     r"https://www\.nongnu\.org/.*",
