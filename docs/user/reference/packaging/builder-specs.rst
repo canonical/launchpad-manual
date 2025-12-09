@@ -23,4 +23,5 @@ For ppc64el we have the folllowing spec in place:
 
 - SWAP: 4 GB
 
+These specs are configured in the `Launchpad Mojo specs <https://launchpad.net/launchpad-mojo-specs>`__. 
 Please note that hardware random number generation of the host is used.
