@@ -57,7 +57,7 @@ Step-by-step procedure
     buildbot is faster.*
 
 11. Request a deployment per the internal `production change
-    process <https://canonical-launchpad-admin-manual.readthedocs-hosted.com/en/latest/howto/launchpad-rollout/launchpad-deployments/production-change-processes/`__.
+    process <https://canonical-launchpad-admin-manual.readthedocs-hosted.com/en/latest/howto/launchpad-rollout/launchpad-deployments/production-change-processes/>`__.
 
 12. Now get your python code that builds on the schema landed and
     deployed as usual.
