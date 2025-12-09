@@ -86,3 +86,14 @@ user/API	user/how-to/launchpad-api/
 user/AnswerTrackerDocumentation	user/explanation/answers/answer-tracker/
 developer/Translations/LanguagePackSchedule developer/reference/services/automatic-translations-export
 user/Packaging/BuilderSpecs user/reference/packaging/builder-specs/
+developer/LEP/FeatureFlags developer/explanation/feature-flags/
+developer/Translations/Specs/UpstreamImportIntoUbuntu/FixingIsImported/setCurrentTranslation developer/explanation/engineering-overview-translations/
+developer/Code/HowToUseCodehostingLocally developer/how-to/codehosting-locally/
+developer/Database/Performance developer/explanation/database-performance/
+developer/DatabaseSetup developer/how-to/database-setup/
+developer/ExceptionGuidelines developer/how-to/exceptions/
+developer/Help help/
+developer/LaunchpadHackingFAQ developer/explanation/hacking/
+developer/PolicyAndProcess/DatabaseSchemaChangesProcess developer/how-to/database-schema-changes-process/
+developer/Soyuz/HowToUseSoyuzLocally developer/how-to/use-soyuz-locally/
+developer/Soyuz/HowToDevelopWithBuildd developer/how-to/develop-with-buildd/
