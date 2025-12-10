@@ -44,9 +44,7 @@ Launchpad supports Git hosting. This means that you can:
 What will be supported?
 -----------------------
 
-Launchpad's Bazaar support has grown many features over the years, and
-it will take some time to bring our Git support up to full parity with
-it. Here's an incomplete list of some of the features we expect to add:
+Here's an incomplete list of some of the features we expect to add:
 
 -  useful subscriptions (currently only attribute change notifications
    work, which are not usually very interesting in themselves)
