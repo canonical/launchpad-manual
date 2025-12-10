@@ -24,7 +24,7 @@ official packages and your own packages in your personal package archive
 
 -  `Official Ubuntu packages <https://wiki.ubuntu.com/MOTU/GettingStarted>`_: find out about becoming an Ubuntu packager with the MOTU team
 
--  :ref:`package recipes <source-package-recipes>`: automatically assemble a package from bzr branches (beta)
+-  :ref:`package recipes <source-package-recipes>`: automatically assemble a package from git branches (beta)
 
 -  `Packaging binaries <https://wiki.ubuntu.com/MOTU/School/PackagingWithoutCompiling>`_: how to go about packaging software which is only available as a binary.
 
@@ -43,7 +43,7 @@ Whether you want to help others test your code, or you want to run a
 modified or bleeding edge version of your favourite software, with
 Launchpad's source package recipes you can:
 
--  take the code in one or more Bazaar or Git branches
+-  take the code in one or more Git branches
 -  borrow the packaging information from the software's existing Ubuntu
    package
 -  sit back and get an automatic build on every day the source changes,
@@ -93,7 +93,7 @@ Source build recipes
 --------------------
 
 A "recipe" is a description of the steps needed to construct a package
-from a set of Bazaar or Git branches. Its format specifies:
+from a set of Git branches. Its format specifies:
 
 -  Which branch to use for the source code: trunk branch, beta branch,
    etc.
@@ -103,8 +103,7 @@ from a set of Bazaar or Git branches. Its format specifies:
    stable version when it's released.
 -  What to modify to make the source build properly.
 
-The same recipe format is used for bzr via bzr-builder and git via
-git-build-recipe.
+This recipe format is used for git via git-build-recipe.
 
 Writing a recipe
 ~~~~~~~~~~~~~~~~
@@ -115,24 +114,22 @@ They always start with a line similar to this:
 
 ::
 
-   # bzr-builder format 0.3 deb-version 1.0+{revno}
+   # git-build-recipe format 0.4 deb-version 1.0+{revtime}
 
 Let's take a look at this in more detail:
 
--  ``# bzr-builder format 0.3`` specifies which recipe format we're
+-  ``# git-build-recipe format 0.4`` specifies which recipe format we're
    using. The current format is 0.4.
--  If you're using git, this will be ``# git-build-recipe format
-   0.4`` instead.
--  ``deb-version 1.0+{revno}`` specifies the version to give the
-   package we're building. ``{revno}`` is a substitution variable;
+-  ``deb-version 1.0+{revtime}`` specifies the version to give the
+   package we're building. ``{revtime}`` is a substitution variable;
    more on which later.
 
 Specifying the branches
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-The next line of a recipe specifies which branch to base the package on ``lp:bzr``.
+The next line of a recipe specifies which branch to base the package on ``lp:germinate``.
 
-This says that we will use the trunk of the ``bzr`` project in
+This says that we will use the trunk of the ``germinate`` project in
 Launchpad. This could just as easily be any other branch in Launchpad,
 using the short format that you can find on any branch overview page.
 
@@ -156,7 +153,7 @@ default repository. You can always disambiguate like this:
 Next, you can specify any number of other branches to include. There are
 two ways to include those branches additional branches:
 
--  merge: this specifies a simple ``bzr merge`` of the two branches.
+-  merge: this specifies a simple ``git merge`` of the two branches.
 -  nest: inserts the content of the second branch into a specific
    location within the main branch.
 
@@ -171,25 +168,18 @@ Most often you'll use the "merge" command:
 
 ::
 
-   merge fix-build lp:~bzr/bzr/fix-build
+   merge fix-build lp:~contributor/germinate fix-build
 
 Here ``fix-build`` is a unique short name that we'll use to refer to
 this branch in substitution variables. The short name can be anything
 you like, so long as it is unique to this branch within this recipe.
 
-``lp:~bzr/bzr/fix-build`` is the location of the branch.
-
-In this example, the branch ``ix-build`` fixes a problem in the trunk
+In this example, the branch ``fix-build`` fixes a problem in the trunk
 that prevents it from building. This branch could be anything:
 stand-alone packaging information, some other modification to the branch
 that's not yet present in the trunk and so on.
 
-If you're using git, then the format is similar, but you should normally
-provide a branch name as a revision specifier:
-
-::
-
-   merge fix-build lp:~contributor/germinate fix-build
+You should normally provide a branch name as a revision specifier.
 
 The second ``fix-build`` here is something that identifies a commit,
 usually a ref (branch or tag) name. Be careful not to confuse this with
@@ -217,23 +207,13 @@ The ``nest`` keyword puts the contents of one branch into a specific
 location in another branch, instead of merging it.
 
 In this case, we are nesting the contents of ``lp:pyfoo`` in a new
-``foo`` directory in the ``lp:bzr`` branch. Again, we've given
+``foo`` directory in the ``lp:germinate`` branch. Again, we've given
 the branch a short name, ``pyfoo``, that we can use to refer to it in
 substitution variables.
 
 You can also act on the nested branch in the same way as you can the
 main branch: you can merge and nest other branches in your nested
 branch.
-
-Here's how:
-
-::
-
-   nest pyfoo lp:pyfoo foo
-   merge branding lp:~bob/pyfoo/ubuntu-branding
-
-If you're using git, then the format is similar, but you should normally
-provide a branch name as a revision specifier:
 
 ::
 
@@ -257,16 +237,8 @@ nest-part
 
 If you want to nest only one directory from another branch, you can use
 ``nest-part``. It works in the same way as ``nest``, except that
-you specify which directory you're taking from the nested branch.
-
-For example:
-
-::
-
-   nest-part packaging lp:~some-person/some-project/trunk-with-packaging debian debian
-
-If you're using git, then the format is similar, but you should normally
-provide a branch name as a revision specifier:
+you specify which directory you're taking from the nested branch.Provide a 
+branch name as a revision specifier:
 
 ::
 
@@ -293,17 +265,6 @@ Adding up all the lines above, our full recipe would look like this:
 
 ::
 
-   # bzr-builder format 0.3 deb-version 1.0+{revno}
-   lp:bzr
-   merge fix-build lp:~bzr/bzr/fix-build
-   nest pyfoo lp:pyfoo foo
-     merge branding lp:~bob/pyfoo/ubuntu-branding
-   nest-part packaging lp:~some-person/some-project/trunk-with-packaging debian debian
-
-Or for git:
-
-::
-
    # git-build-recipe format 0.4 deb-version 1.0+{revtime}
    lp:germinate
    merge fix-build lp:~contributor/germinate fix-build
@@ -315,32 +276,32 @@ Specifying revisions
 --------------------
 
 Sometimes you want to specify a specific revision of a branch to use,
-rather than the tip (or the HEAD symbolic reference in the case of git).
+rather than the HEAD symbolic reference.
 
 You can do this by including a revision specifier at the end of any
 branch line. For example:
 
 ::
 
-   merge packaging lp:~bzr/bzr/packaging revno:2355
+   merge packaging lp:~bob/pyfoo ubuntu-branding revtime:2355
 
 Similarly for the main branch:
 
 ::
 
-   lp:bzr revno:1234
+   lp:germinate revtime:1234
 
-Bazaar allows you to tag a certain revision with an easily memorable
+Git allows you to tag a certain revision with an easily memorable
 name. You can request a specific tagged revision like this:
 
 ::
 
-   lp:bzr tag:2.0
+   lp:germinate tag:2.0
 
 Here, the recipe would use the revision that has the tag "2.0".
 
-For git, a revision specifier may be anything that you could pass to
-``git rev-parse`` in a clone of the given repository.
+A revision specifier may be anything that you could pass to ``git rev-parse`` 
+in a clone of the given repository.
 
 Version numbers and substitution variables
 ------------------------------------------
@@ -350,7 +311,7 @@ package we want to build, using:
 
 ::
 
-   deb-version 1.0+{revno}
+   deb-version 1.0+{revtime}
 
 Rather than specify a fixed version number, we need it to increase every
 time the package is built. To allow for this, you can use multiple
@@ -362,57 +323,46 @@ substitution variables.
    * - Variable
      - Purpose
      - Introduced in (recipe format version)
-     - Bazaar
      - Git
    * - time
      - Replaced by the date and time (UTC) when the package was built.
      - 0.1
      - Yes
-     - Yes
    * - revno
      - Replaced by the revision number.
      - 0.1
-     - Yes
      - Yes (see note below)
    * - latest-tag
      - Replaced by the name of the most recent tag
      - 0.4
      - Yes
-     - Yes
    * - revdate
      - Replaced by the date of the revision that was built
      - 0.4
-     - Yes
      - Yes
    * - revtime
      - Replaced by the time of the revision that was built
      - 0.4
      - Yes
-     - Yes
    * - svn-revno
      - Replaced with the svn revision number of the revision that was built
      - 0.4
-     - Yes
      - No
    * - git-commit
      - Replaced with the first 7 characters of the git commit that was built
      - 0.4
      - Yes
-     - Yes
    * - debversion
      - Replaced with the version in debian/changelog
      - 0.3
-     - Yes
      - Yes
    * - debupstream
      - Replaced by the upstream portion of the version number taken from debian/changelog. For example: if the version is 1.0-1, this would evaluate to 1.0.
      - 0.1
      - Yes
-     - Yes
    * - debupstream-base
      - Similar to {debupstream}, but with any VCS identifiers (e.g. "bzr42", "svn200") stripped, and updated to always end with a "+" or "~")
      - 0.3
-     - Yes
      - Yes
 
 All variables other than ``time`` are derived from a particular
