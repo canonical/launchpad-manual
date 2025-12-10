@@ -10,15 +10,15 @@ templates <how-to-import-project-translation-templates>` and
 :ref:`translations <how-to-import-project-translations>`, there
 are two ways to export your project's translations from Launchpad:
 
--  by asking Launchpad to make regular commits to a Bazaar branch you
+-  by asking Launchpad to make regular commits to a Git branch you
    specify
 -  or requesting a one-off download through the web interface.
 
-Committing translations to a Bazaar branch
+Committing translations to a Git branch
 ------------------------------------------
 
 Launchpad can produce a regular snapshot of your translations and commit
-it to a Launchpad-hosted Bazaar branch of your choice. Using this export
+it to a Launchpad-hosted Git branch of your choice. Using this export
 method, you can always find a reasonably fresh export of your
 translations in the same place, and download it automatically, without
 any asynchronous requests.
@@ -132,7 +132,6 @@ Choose the latter option for a partial export.
 Next steps
 ----------
 
-Launchpad works with Bazaar to host, mirror and catalogue to branches of
-your project's code. It can even import git, Subversion and CVS
-repositories into Bazaar branches. Let's take a look at :ref:`hosting code
-with Launchpad <host-your-project-code-on-launchpad>`.
+Launchpad works with Git to host, mirror and catalogue to branches of
+your project's code. It can even import Subversion and CVS repositories. 
+Let's take a look at :ref:`hosting code with Launchpad <host-your-project-code-on-launchpad>`.
