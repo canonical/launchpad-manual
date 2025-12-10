@@ -97,7 +97,7 @@ process ensures that there are no such jobs running before applying the patch
 with a small downtime. At the end of this process, the database changes will get
 merged to the ``master`` branch.
 
-.. _fastdowntime deployment process documentation: https://wiki.canonical.com/InformationInfrastructure/OSA/LaunchpadRollout#Fastdowntime_db_update
+.. _fastdowntime deployment process documentation: https://canonical-launchpad-admin-manual.readthedocs-hosted.com/en/latest/howto/launchpad-rollout/launchpad-deployments/database-deployment/
 .. _launchpad-db deployable page: https://deployable.ols.canonical.com/project/launchpad-db
 .. _Launchpad staging environment: https://staging.launchpad.net
 .. _path application times: _
@@ -320,7 +320,7 @@ Then the changes can be deployed to the production environment by following the
 instructions in the `nodowntime deployment process documentation`_.
 
 .. _launchpad deployable page: https://deployable.ols.canonical.com/project/launchpad
-.. _nodowntime deployment process documentation: https://wiki.canonical.com/InformationInfrastructure/OSA/LaunchpadRollout#Production_nodowntime_Rollout
+.. _nodowntime deployment process documentation: https://canonical-launchpad-admin-manual.readthedocs-hosted.com/en/latest/howto/launchpad-rollout/launchpad-deployments/code-deployment/
 
 What is the ``nodowntime`` deployment process?
 ----------------------------------------------

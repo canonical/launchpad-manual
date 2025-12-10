@@ -50,7 +50,7 @@ Not available.
 Common support cases
 --------------------
 
-See `Launchpad's playbook for support rotation <https://wiki.canonical.com/Launchpad/SupportRotation/CodeImportStuck>`_
+See `Launchpad's playbook for support rotation <https://canonical-launchpad-admin-manual.readthedocs-hosted.com/en/latest/howto/fix-stuck-code-imports/>`_
 
 More information
 ----------------
