@@ -3,55 +3,31 @@ Launchpad Code Hosting
 
 .. include:: ../../includes/important_not_revised.rst
 
-Launchpad hosts source code using `Git <https://git-scm.com/>`__ and
-`Bazaar <https://www.breezy-vcs.org/>`__ branches. However dealing
-with code in Launchpad covers many more areas than just hosting
+Launchpad hosts source code using `Git <https://git-scm.com/>`__ branches. 
+However dealing with code in Launchpad covers many more areas than just hosting
 branches.
 
 Code for the web application is only part of the Launchpad codehosting
 system. The major sub-systems are:
 
--  The `git` and `bzr` / `brz` clients (neither of which is part of
-   Launchpad, but their behaviours are important to us)
--  Connectivity to Launchpad (git, git+ssh, and https for Git; SFTP and
-   bzr+ssh for Bazaar)
+-  The `git` client (which is not a part of Launchpad but its behaviour is 
+   important to us).
+-  Connectivity to Launchpad (git, git+ssh, and https for Git)
 -  Hosting infrastructure
 -  The underlying object model
 -  The web application
 -  Email processing
--  Code imports (from CVS, Subversion, git and Mercurial)
+-  Code imports from git 
 -  Branch source code browser (`cgit <https://git.zx2c4.com/cgit/>`__
-   for Git; :doc:`loggerhead <../how-to/land-update-for-loggerhead>` for Bazaar)
--  Source package recipes (`git-build-recipe`/`bzr-builder\` integration
-   with :doc:`Soyuz ../how-to/use-soyuz-locally`)
+   for Git)
+-  Source package recipes (`git-build-recipe` integration with 
+   :ref:`Soyuz <use-soyuz-locally>`)
 
 Each of these subsystems also have multiple moving parts and some have
 other asynchronous jobs associated with them.
 
 The `codehosting overview diagram :attachment:../images/codehosting.png`
 summarises how some of these systems interact.
-
-You can :doc:`run the codehosting system locally <../how-to/codehosting-locally>`.
-
-We no longer put significant effort into bzr hosting beyond making sure
-it remains functional. The future of bzr is
-`Breezy <https://www.breezy-vcs.org/>`__; Launchpad has migrated to it
-for code hosting, and will migrate to it for code imports in due course.
-
-The bzr/brz client
-------------------
-
-This is what users install on their systems to use Bazaar. The bzr
-application is also installed on the server side for Launchpad to use to
-access the information in the Bazaar branches.
-
-'''Parts [and responsibilities] '''
-
--  bzr/brz client [maintained by the
-   `Breezy <https://www.breezy-vcs.org/>`__ community]
--  bzr.plugins.launchpad [shared with the
-   `Breezy <https://www.breezy-vcs.org/>`__ team]
--  server side of lp name resolution
 
 Connectivity to Launchpad
 -------------------------
@@ -76,36 +52,6 @@ Git
    to check per-ref permissions
 -  Launchpad's XML-RPC interfaces in \`lp.code.xmlrpc.git\`
 
-Bazaar
-~~~~~~
-
-Connecting to the code hosting system from the outside world is done
-either through SSH using SFTP or the bzr+ssh protocol, or through HTTP.
-Apache handles the HTTP routing using a number of mod-rewrite rules.
-
-'''Parts [and responsibilities] '''
-
--  HTTP Apache configuration [shared with LOSAs]
--  branch location rewrite script (called by mod-rewrite rule)
--  ssh server
-
-   -  
-
-      -  authentication
-      -  SFTP implementation
-      -  smart server launching
-
--  smart server
-
-   -  
-
-      -  lp-serve plugin
-      -  bzr's smart server [shared with
-         `Breezy <https://www.breezy-vcs.org/>`__ team]
-
--  codehosting transport implementations
--  codehosting interfaces on xmlrpc.lp.internal
-
 Hosting infrastructure
 ----------------------
 
@@ -115,7 +61,6 @@ kicked off.
 
 '''Parts [and responsibilities] '''
 
--  puller (Bazaar only)
 -  scanner
 
    -  
@@ -170,19 +115,11 @@ Code imports
 ------------
 
 Launchpad provides a way for users to get access to source code from
-other systems as Bazaar branches (from CVS, Subversion, git and
-Mercurial). This also supports mirroring Git repositories from elsewhere
-into Git repositories in Launchpad.
+other systems as git branches. This also supports mirroring Git repositories 
+from elsewhere into Git repositories in Launchpad.
 
 -  code import jobs
 -  integration of import tools
-
-   -  
-
-      -  CSCVS for CVS (and legacy Subversion imports)
-      -  bzr-svn and subvertpy for all new Subversion imports
-      -  bzr-git and dulwich for git
-      -  bzr-hg for mercurial imports
 
 Git repository source code browser (cgit)
 -----------------------------------------
@@ -191,22 +128,6 @@ Launchpad uses `cgit <https://git.zx2c4.com/cgit/>`__ to provide a web
 view of the repository contents. We use an unmodified package of
 \`cgit`; Launchpad's customisations are in
 `turnip.pack.http <https://git.launchpad.net/turnip/tree/turnip/pack/http.py>`__.
-
-Bazaar branch source code browser (loggerhead)
-----------------------------------------------
-
-Launchpad uses `loggerhead <https://launchpad.net/loggerhead>`__ to
-provide a web view of the branch contents. We try not to have any
-Launchpad specific code in loggerhead itself, but instead keep that in
-the
-`lp:~launchpad-pqm/loggerhead/devel <https://code.launchpad.net/~launchpad-pqm/loggerhead/devel>`__
-branch.
-
--  loggerhead itself - community project but with major contributions
-   from Canonical
-
-See :doc:`Loggerhead for Launchpad developers <../how-to/land-update-for-loggerhead>` for details on
-how to land changes to Launchpad loggerhead.
 
 Source package recipes
 ----------------------
