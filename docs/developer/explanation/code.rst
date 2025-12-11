@@ -29,6 +29,8 @@ other asynchronous jobs associated with them.
 The `codehosting overview diagram :attachment:../images/codehosting.png`
 summarises how some of these systems interact.
 
+You can `run the codehosting system locally <https://turnip.readthedocs.io/en/latest/development.html>`_
+
 Connectivity to Launchpad
 -------------------------
 
