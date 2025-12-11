@@ -88,7 +88,7 @@ Related specifications (only accessible for Canonical employees)
 
 Log files
 ---------
-See `https://wiki.canonical.com/Launchpad/FreshLogs <https://wiki.canonical.com/Launchpad/FreshLogs>`_.
+See `Reading Launchpad logs via rsync <https://canonical-launchpad-admin-manual.readthedocs-hosted.com/en/latest/reference/reading-launchpad-logs-via-rsync/>`_.
 
 Production
 ~~~~~~~~~~
