@@ -63,7 +63,7 @@ to git smart HTTP protocol, and ``turnip``` deals with configuring ``cgit`` appr
 
 Log files
 ---------
-See `FreshLogs documentation <https://wiki.canonical.com/Launchpad/FreshLogs>`_.
+See `Reading Launchpad logs via rsync <https://canonical-launchpad-admin-manual.readthedocs-hosted.com/en/latest/reference/reading-launchpad-logs-via-rsync/>`_.
 
 Production
 ~~~~~~~~~~
