@@ -15,12 +15,6 @@ endpoints. It is a stopgap measure until we have signed DNS records.
    * - Host
      - Key type
      - Fingerprints
-   * - bazaar.launchpad.net
-     - RSA
-     - `MD5:9d:38:3a:63:b1:d5:6f:c4:44:67:53:49:2e:ee:fc:89`
-   * - 
-     - 
-     - `SHA256:dS2DmMhdbMsWaFP4HOF7A/ut73ozMR/gDL2Xxs01/7A`
    * - git.launchpad.net
      - RSA
      - `MD5:df:b0:16:7e:55:54:96:58:79:85:ba:e2:c3:72:d9:09`
@@ -49,12 +43,6 @@ We also provide some staging endpoints over SSH. If you are using these, be awar
    * - Host
      - Key type
      - Fingerprints
-   * - bazaar.staging.launchpad.net
-     - RSA
-     - `MD5:9d:38:3a:63:b1:d5:6f:c4:44:67:53:49:2e:ee:fc:89`
-   * - 
-     - 
-     - `SHA256:dS2DmMhdbMsWaFP4HOF7A/ut73ozMR/gDL2Xxs01/7A`
    * - git.qastaging.paddev.net
      - RSA
      - `MD5:1a:29:54:09:ee:6a:67:69:8a:77:31:21:37:a3:9d:c1`
