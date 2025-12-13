@@ -9,24 +9,8 @@ by intercepting those calls and providing a server response of your own.
 Files and namespaces
 --------------------
 
-!MockIo is found in
-
-::
-
-   lib/lp/app/testing/mockio.js
-
-and its namespace is
-
-::
-
-   Y.lp.testing.mockio
-
-. The instrumentation helpers are in
-
-::
-
-   Y.lp.client
-
+!MockIo is found in ``lib/lp/app/testing/mockio.js`` and its namespace is 
+``Y.lp.testing.mockio``. The instrumentation helpers are in ``Y.lp.client``
 because they need to be usable by production code.
 
 Instrumentation
