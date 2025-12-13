@@ -104,13 +104,7 @@ You can respond to a request via its ``respond`` method.
        statusText: "Not found"
    });
 
-You can explicitly access the last request via the
-
-::
-
-   last_request
-
-attribute.
+You can explicitly access the last request via the ``last_request`` attribute.
 
 Already instrumented code
 -------------------------
