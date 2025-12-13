@@ -8,6 +8,7 @@ buildslave
 callables
 cgit
 Charmhub
+charmhub
 CLI
 conf
 contactuser
