@@ -110,31 +110,10 @@ Already instrumented code
 -------------------------
 
 The Launchpad client has already been instrumented. When you instantiate
-it, pass in a config with an
+it, pass in a config with an ``io_provider`` attribute. As this usually happens 
+in your code you will have to instrument it to receive the io_provider from 
+your test harness.
 
-::
-
-   io_provider
-
-attribute. As this usually happens in your code you will have to
-instrument it to receive the io_provider from your test harness.
-
-An example is !FormOverlay which now has an extra attribute
-
-::
-
-   io_provider
-
-which defaults to
-
-::
-
-   Y
-
-. In your test simply configure !FormOverlay with an
-
-::
-
-   io_provider
-
-attribute and set that attribute to an instance of !MockIo.
+An example is FormOverlay which now has an extra attribute ``io_provider``
+which defaults to ``Y``. In your test simply configure FormOverlay with an
+``io_provider`` attribute and set that attribute to an instance of MockIo.
