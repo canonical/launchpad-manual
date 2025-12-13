@@ -72,61 +72,11 @@ Mocking happens in three steps.
 
    // Now you can check what the succcess handler in your code did.
 
-The
-
-::
-
-   success
-
-method is a convenience method that calls the
-
-::
-
-   respond
-
-method and sets
-
-::
-
-   status
-
-to 200 and
-
-::
-
-   statusText
-
-to OK. You can also call
-
-::
-
-   respond
-
-directly and pass in your own
-
-::
-
-   status
-
-and
-
-::
-
-   statusText
-
-. There is also a
-
-::
-
-   failure
-
-method which sends a status of
-
-::
-
-   500 Internal server error
-
-. Obviously, the latter will result in the failure handler being called.
+The ``success`` method is a convenience method that calls the ``respond``
+method and sets ``status`` to 200 and ``statusText`` to OK. You can also call
+``respond`` directly and pass in your own ``status`` and ``statusText``. There is 
+also a ``failure`` method which sends a status of ``500 Internal server error``.
+Obviously, the latter will result in the failure handler being called.
 
 The above example responds to the last request that your code sent out.
 If your code sends out multiple requests, you have access to those
