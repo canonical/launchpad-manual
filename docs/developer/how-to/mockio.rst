@@ -80,20 +80,8 @@ Obviously, the latter will result in the failure handler being called.
 
 The above example responds to the last request that your code sent out.
 If your code sends out multiple requests, you have access to those
-through the
-
-::
-
-   requests
-
-attribute of !MockIo which is a list of all received requests. You can
-respond to a request via its
-
-::
-
-   respond
-
-method.
+through the ``requests`` attribute of !MockIo which is a list of all received requests. 
+You can respond to a request via its ``respond`` method.
 
 ::
 
