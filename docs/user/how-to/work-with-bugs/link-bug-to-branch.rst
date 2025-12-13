@@ -6,9 +6,8 @@ Link a bug reports to a branch
 .. include:: /includes/important_not_revised_help.rst
 
 If your project uses both Launchpad Bugs and Launchpad Code -- whether
-directly hosting Bazaar or Git branches on Launchpad or importing from
-elsewhere -- you can link bug reports directly to the code where someone
-is working on a fix.
+directly hosting Git branches on Launchpad or importing from elsewhere -- you 
+can link bug reports directly to the code where someone is working on a fix.
 
 Fix a bug in a dedicated branch
 -------------------------------
@@ -29,22 +28,12 @@ Using the Launchpad web interface:
 First, visit your bug report in Launchpad. Click ``Link to related branch``,
 then select the branch.
 
-Create a link using Bazaar
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Just as you can register and push a branch of code to Launchpad directly
-from Bazaar, you can also create a bug-branch link.
-
-::
-
-   $ bzr commit --fixes lp:12345
-
 Create a link using Git
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-If you manage your code using Git instead, then you can link to bugs by
-adding appropriate text to your commit message instead. For example,
-your commit message might look like this:
+If you manage your code using Git, then you can link to bugs by adding 
+appropriate text to your commit message instead. For example, your commit 
+message might look like this:
 
 ::
 
@@ -54,7 +43,8 @@ your commit message might look like this:
 
    LP: #12345
 
-Note that Git bug links will only be recorded once you :ref:`propose a merge <create-and-manage-a-merge-proposal>` that includes such commits.
+Note that Git bug links will only be recorded once you :ref:`propose a merge <create-and-manage-a-merge-proposal>` 
+that includes such commits.
 
 See :ref:`Launchpad's Git hosting documentation <linking-to-bugs>` for more details.
 
