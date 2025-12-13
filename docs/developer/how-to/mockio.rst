@@ -19,15 +19,9 @@ Instrumentation
 Before you can test your code you need to instrument it to intercept
 Y.io calls. This is done by passing an extra argument to the function or
 adding an attribute to an objects config. By convention this parameter
-is called
-
-::
-
-   io_provider
-
-because it provides a replacement io method. During test you pass in an
-instance of !MockIo via this parameter, in production you just leave it
-undefined (or pass in Y).
+is called io_provider because it provides a replacement io method. 
+During test you pass in an instance of !MockIo via this parameter, in 
+production you just leave it undefined (or pass in Y).
 
 Here is an example for a class.
 
