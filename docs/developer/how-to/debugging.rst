@@ -482,7 +482,7 @@ To start the testing/debugging environment (the harness) run:
    make iharness
 
 Next you will have to import your classed and get your object. In our
-example we were trying to get the *!PerLanguageStatisticsView* for
+example we were trying to get the *PerLanguageStatisticsView* for
 *ubuntu['hoary']* series.
 
 ::

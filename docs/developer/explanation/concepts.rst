@@ -13,10 +13,10 @@ between the different Launchpad applications. The registry objects that
 -  Person
 -  Product
 -  Project
--  !SourcePackage
+-  SourcePackage
 -  Distribution
--  !DistroSeries
--  !DistributionSourcePackage
+-  DistroSeries
+-  DistributionSourcePackage
 
 ``  ''Please be aware of the confusion between ``\ *:literal:`\`Products\``*\ `` and ``\ *:literal:`\`Projects\``*\ `` in the codebase.  To the outside world a ``\ *:literal:`\`Product\``*\ `` is a project, and a ``\ *:literal:`\`Project\``*\ `` is a project group (or super-project).''``
 
@@ -40,15 +40,15 @@ The owner defines who can write to the branch.
 
 A branch also has a target. There are three current targets:
 
--  !PersonBranchTarget - these are \`+junk\` branches
--  !ProductBranchTarget - these are branches associated with a product,
+-  PersonBranchTarget - these are \`+junk\` branches
+-  ProductBranchTarget - these are branches associated with a product,
    sometimes called an upstream
--  !PackageBranchTarget - these branches are associated with source
+-  PackageBranchTarget - these branches are associated with source
    packages. A source package is effectively tuple of a particular
    package name in a distribution series.
 
 You almost never need to know about these objects though, since they are
-!IBranchTarget adapters: \`IBranchTarget(person)`,
+IBranchTarget adapters: \`IBranchTarget(person)`,
 \`IBranchTarget(product)`, \`IBranchTarget(source_package)`.
 
 A branch also has a name.
