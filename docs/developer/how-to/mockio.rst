@@ -9,24 +9,8 @@ by intercepting those calls and providing a server response of your own.
 Files and namespaces
 --------------------
 
-MockIo is found in
-
-::
-
-   lib/lp/app/testing/mockio.js
-
-and its namespace is
-
-::
-
-   Y.lp.testing.mockio
-
-. The instrumentation helpers are in
-
-::
-
-   Y.lp.client
-
+MockIo is found in ``lib/lp/app/testing/mockio.js`` and its namespace is 
+``Y.lp.testing.mockio``. The instrumentation helpers are in ``Y.lp.client``
 because they need to be usable by production code.
 
 Instrumentation
@@ -35,15 +19,9 @@ Instrumentation
 Before you can test your code you need to instrument it to intercept
 Y.io calls. This is done by passing an extra argument to the function or
 adding an attribute to an objects config. By convention this parameter
-is called
-
-::
-
-   io_provider
-
-because it provides a replacement io method. During test you pass in an
-instance of MockIo via this parameter, in production you just leave it
-undefined (or pass in Y).
+is called io_provider because it provides a replacement io method. 
+During test you pass in an instance of MockIo via this parameter, in 
+production you just leave it undefined (or pass in Y).
 
 Here is an example for a class.
 
@@ -94,78 +72,16 @@ Mocking happens in three steps.
 
    // Now you can check what the succcess handler in your code did.
 
-The
-
-::
-
-   success
-
-method is a convenience method that calls the
-
-::
-
-   respond
-
-method and sets
-
-::
-
-   status
-
-to 200 and
-
-::
-
-   statusText
-
-to OK. You can also call
-
-::
-
-   respond
-
-directly and pass in your own
-
-::
-
-   status
-
-and
-
-::
-
-   statusText
-
-. There is also a
-
-::
-
-   failure
-
-method which sends a status of
-
-::
-
-   500 Internal server error
-
-. Obviously, the latter will result in the failure handler being called.
+The ``success`` method is a convenience method that calls the ``respond``
+method and sets ``status`` to 200 and ``statusText`` to OK. You can also call
+``respond`` directly and pass in your own ``status`` and ``statusText``. There is 
+also a ``failure`` method which sends a status of ``500 Internal server error``.
+Obviously, the latter will result in the failure handler being called.
 
 The above example responds to the last request that your code sent out.
 If your code sends out multiple requests, you have access to those
-through the
-
-::
-
-   requests
-
-attribute of MockIo which is a list of all received requests. You can
-respond to a request via its
-
-::
-
-   respond
-
-method.
+through the ``requests`` attribute of MockIo which is a list of all received requests. 
+You can respond to a request via its ``respond`` method.
 
 ::
 
@@ -188,43 +104,16 @@ method.
        statusText: "Not found"
    });
 
-You can explicitly access the last request via the
-
-::
-
-   last_request
-
-attribute.
+You can explicitly access the last request via the ``last_request`` attribute.
 
 Already instrumented code
 -------------------------
 
 The Launchpad client has already been instrumented. When you instantiate
-it, pass in a config with an
+it, pass in a config with an ``io_provider`` attribute. As this usually happens 
+in your code you will have to instrument it to receive the io_provider from 
+your test harness.
 
-::
-
-   io_provider
-
-attribute. As this usually happens in your code you will have to
-instrument it to receive the io_provider from your test harness.
-
-An example is FormOverlay which now has an extra attribute
-
-::
-
-   io_provider
-
-which defaults to
-
-::
-
-   Y
-
-. In your test simply configure FormOverlay with an
-
-::
-
-   io_provider
-
-attribute and set that attribute to an instance of MockIo.
+An example is FormOverlay which now has an extra attribute ``io_provider``
+which defaults to ``Y``. In your test simply configure FormOverlay with an
+``io_provider`` attribute and set that attribute to an instance of MockIo.
