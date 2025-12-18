@@ -243,6 +243,7 @@ formatter
 formatters
 formlib
 Fosstodon
+FormOverlay
 FreshLogs
 frontend
 frontends

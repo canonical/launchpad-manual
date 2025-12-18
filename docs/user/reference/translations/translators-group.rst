@@ -14,7 +14,7 @@ software.
 There is one Launchpad localization team appointed for each language.
 
 We encourage Ubuntu, Debian, Fedora, GNOME, KDE, Mozilla,
-!OpenOffice.org and all other translators dedicated to a specific
+OpenOffice.org and all other translators dedicated to a specific
 project to join the localization team appointed for their language.
 
 We also encourage project maintainers to appoint the **Launchpad
