@@ -348,12 +348,11 @@ Branch integration
 
 Launchpad can be used to keep track of development being done by your
 community on multiple independent branches. This is because Launchpad
-has a branch management subsystem designed to work with Bazaar, a fast,
-distributed revision control system written in Python.
+is designed to work with Git.
 
-It is not necessary for your project "trunk" to use Bazaar in order to
+It is not necessary for your project "trunk" to use Git in order to
 reap these benefits. The main project can continue to use Subversion or
-CVS, and Launchpad can publish a Bazaar version of that branch which
+CVS, and Launchpad can publish a Git version of that branch which
 your community can use to branch off while they do their own personal
 development. If they register their branches with Launchpad, and in
 doing so note that they are working on a particular bug in that branch,
