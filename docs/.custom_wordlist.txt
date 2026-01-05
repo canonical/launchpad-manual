@@ -589,6 +589,7 @@ rst
 rsync
 rsyncing
 RTD
+ruleset
 runtime
 SafariWebContent
 sampledata
@@ -797,6 +798,7 @@ wget
 wgrant's
 whitespace
 wildcherry
+wishlist
 Wishlist
 WorkingWithDbDevel
 WorkingWithReviews

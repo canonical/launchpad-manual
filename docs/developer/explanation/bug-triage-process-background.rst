@@ -82,7 +82,7 @@ Also buckets have a cost : we need a ruleset for triage that will let us assign
 bugs to buckets: every bucket makes the heuristics more complex.
 
 Given that we have a freshness tolerance for most bugs of some months, that we 
-don't want to update many bugs when a single bugshuffles in front, and that 
+don't want to update many bugs when a single bug shuffles in front, and that 
 because we have more bugs coming in than we fix - we need three or perhaps four
 buckets:
 
