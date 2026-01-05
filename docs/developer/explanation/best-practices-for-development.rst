@@ -5,6 +5,7 @@ Best practices for development
    :maxdepth: 1
 
    architecture
+   bug-triage-process-background
    charms
    codeimport
    performance
