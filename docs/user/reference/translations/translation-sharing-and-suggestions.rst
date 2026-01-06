@@ -129,8 +129,7 @@ need to:
 -  select an appropriate :ref:`translations permissions
    policy <choosing-a-permissions-policy>`
 -  :ref:`import the project's translations into
-   Launchpad <how-to-import-project-translations>`:
-   ideally using automatic imports from a Bazaar branch.
+   Launchpad <how-to-import-project-translations>`
 
 Sharing upstream project translations with the Ubuntu package
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
