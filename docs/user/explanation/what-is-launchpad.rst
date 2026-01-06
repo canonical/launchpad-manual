@@ -13,9 +13,10 @@ Who is using Launchpad?
 Several high-profile free software projects use Launchpad, including:
 
 -  Ubuntu - Linux-based operating system.
--  Bazaar - distributed version control.
 -  Zope 3 - web application server.
 -  Jokosher - easy to use audio recorder and editor.
+-  Breezy - Distributed version control system that still supports Bazaar file 
+   formats
 
 What can you do with Launchpad?
 -------------------------------
@@ -53,5 +54,5 @@ Getting started with Launchpad
 The first step to using Launchpad is to register your user account.
 Follow our guide to :ref:`create your account <create-and-personalise-your-launchpad-account>`.
 
-If you want to use Launchpad for your free software project, follow our
-guide to :ref:`register your project <registering-your-project>`
+If you want to use Launchpad for your free software project, follow our guide 
+to :ref:`register your project <registering-your-project>`
