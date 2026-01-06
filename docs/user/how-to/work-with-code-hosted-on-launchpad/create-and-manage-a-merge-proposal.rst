@@ -5,14 +5,16 @@ Create and manage a merge proposal
 
 .. include:: /includes/important_not_revised_help.rst
 
-Thanks to Bazaar's distributed model, you can :ref:`get full access to the code of any branch <find-and-download-code-hosted-on-launchpad>` hosted in Launchpad, with version control and history, right on your own machine.
+Thanks to git's distributed model, you can get full access to the code of any 
+repository hosted on Launchpad, with version control and history, right on your 
+own machine.
 
 That flexibility means you can start work on a project without having to
 get special permissions to commit code. Of course, if you make changes
 that you want to see integrated into the project's main line you need a
 way of telling the main line's owner that you want to merge.
 
-Launchpad and Bazaar make that easy. Bazaar was made to merge: even
+Launchpad and git make that easy. Git was made to merge: even
 complex merges can be relatively easy. Launchpad helps look after the
 community process of discussing whether a proposed merge is a good idea.
 
@@ -32,23 +34,6 @@ Now, Launchpad will notify the proposed target branch's owner of your
 proposal. Anyone viewing the overview page for your branch, or the
 target branch, will also see a link to view the details of your
 proposal.
-
-use the email interface
-~~~~~~~~~~~~~~~~~~~~~~~
-
-You can also propose a merge by email by sending a `merge directive <https://documentation.help/Bazaar-help/sending_changes.html#understanding-merge-directives>`_ to ``merge@code.launchpad.net``.
-
-In your email, you can ask for particular people to do the review by
-adding lines that say:
-
--  ``reviewer <name>`` where ``<name>``  is the Launchpad user name or email address
-   of the reviewer.
-
-You can ask for as many reviewers as you like.
-
-.. note::
-
-    You **must** start the command line with a space or your command will not be recognized.
 
 The flow of this process
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -178,7 +163,7 @@ Make the merge
 --------------
 
 Once you're ready to merge another branch into yours, follow the
-instructions on the page, either for ``bzr`` or for ``git`` respectively.
+instructions on the page.
 
 Next steps
 ----------
