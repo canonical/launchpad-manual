@@ -377,8 +377,7 @@ To make long lines show up:
     match Error /\%>79v.\+/
 
 For an even more in-depth Vim configuration, have a look at
-`UltimateVimPythonSetup <https://dev.launchpad.net/UltimateVimPythonSetup>`_
-for a complete vim file you can copy to your local setup.
+`VIM and Python <https://realpython.com/vim-and-python-a-match-made-in-heaven/>`_.
 
 Emacs
 -----

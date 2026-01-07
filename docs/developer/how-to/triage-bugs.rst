@@ -97,10 +97,7 @@ High
 ~~~~
 
 These are bugs that will be our main focus in normal operation, timeouts
-(tagged "timeout"), OOPSes (thanks to our `zero OOPS
-policy <https://dev.launchpad.net/PolicyAndProcess/ZeroOOPSPolicy>`__,
-and tagged "oops"), and A and AA conformance accessibility
-bugs.
+(tagged "timeout"), OOPSes , and A and AA conformance accessibility bugs.
 
 Low
 ~~~

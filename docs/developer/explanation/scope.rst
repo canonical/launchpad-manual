@@ -339,4 +339,4 @@ References
 
 * :doc:`strategy`
 * :doc:`values`
-* `Feature checklist <https://dev.launchpad.net/FeatureChecklist>`_
+* :ref:`Feature highlights <launchpad-feature-highlights>`
