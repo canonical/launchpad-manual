@@ -7,6 +7,8 @@ Best practices for development
    architecture
    charms
    codeimport
+   page-tests
    performance
    template-reuse
    security-policy
+ 
