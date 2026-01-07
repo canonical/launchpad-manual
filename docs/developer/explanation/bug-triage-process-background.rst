@@ -56,7 +56,8 @@ The sort is complete enough if the answers to 'what is an important bug to work
 on now' and questions that users may ask (like 'how long till this will be 
 worked on') get answers accurate enough... and how accurate do we need?
 
-We answer that question in the bug triage policy itself.
+We answer that question in the :ref:`bug triage policy <triaging-launchpad-project-bugs>` 
+itself.
 
 Bug Importance
 --------------
