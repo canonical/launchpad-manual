@@ -6,6 +6,7 @@ Best practices for development
 
    architecture
    assertions-in-launchpad
+   bug-triage-process-background
    charms
    codeimport
    performance
