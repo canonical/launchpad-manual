@@ -20,6 +20,7 @@ appservers
 artifact
 artifacts
 aspirational
+AssertionError
 AssertionsInLaunchpad
 attrgetter
 AttributeError
@@ -481,9 +482,11 @@ performant
 PerLanguageStatisticsView
 Permalink
 PersonBranchTarget
+PersonView
 pgbouncer
 pgsql
 pgSQL
+pipermail
 pipx
 pkey
 plaintext

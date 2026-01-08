@@ -5,6 +5,7 @@ Best practices for development
    :maxdepth: 1
 
    architecture
+   assertions-in-launchpad
    charms
    codeimport
    performance

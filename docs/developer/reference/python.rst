@@ -32,7 +32,7 @@ Related Documents
 =================
 
 * `Exception guidelines <https://dev.launchpad.net/ExceptionGuidelines>`_
-* `Assertions <https://dev.launchpad.net/AssertionsInLaunchpad>`_
+* :ref:`Assertions <assertions-in-launchpad>`
 * `Launchpad hacking FAQ <https://dev.launchpad.net/LaunchpadHackingFAQ>`_
 * :doc:`Tests style guide <tests>`
 
