@@ -17,6 +17,7 @@ no tooling available to enforce those rules.
    python
    tests
    css
+   bug-tags
 
 Services
 --------
