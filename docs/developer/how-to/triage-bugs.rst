@@ -122,8 +122,8 @@ think it is unlikely we will focus effort on it.
 Tagging bugs
 ------------
 
-We tag bugs as part of the triage process. Read the `list of Launchpad
-tags <https://dev.launchpad.net/LaunchpadBugTags>`__ to find out which
+We tag bugs as part of the triage process. Read the :ref:`list of Launchpad
+tags <tagging-bugs-about-launchpad>` to find out which
 tags to use.
 
 Assigning bugs
