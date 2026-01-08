@@ -16,9 +16,8 @@ influences we try to strike a balance between in assessing that importance:
 - Things affecting stakeholders
 - Things affecting other users
 
-When we have triaged a bug, it has status triaged and an importance other than 
-unknown.
-
+When a bug has been triaged, its status is set to "Triaged" in the Launchpad UI, 
+and its importance is set to a value other than "Unknown".
 
 Why triage
 ----------
@@ -101,6 +100,5 @@ We map these buckets into:
 -  low: All other bugs.
 -  We don't use wishlist.
 
-This has a clear tension: time-till-we-start-work is a good metric for what 
-bucket to put in, but given a bug with some symptoms how do we decide what 
-bucket it should go into.
+In this case, time-till-we-start-work offers some guidance on which bucket to 
+put a bug in.
