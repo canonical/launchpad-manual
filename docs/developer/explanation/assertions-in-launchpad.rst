@@ -20,31 +20,32 @@ rules that should be followed when using them in Launchpad:
     are two possible scenarios:
 
     -   If the docstring says something like "don't do such-and-such", then an
-        an assert statement should be used (recalling asserts will disappear if
+        assert statement should be used (recalling asserts will disappear if
         optimization is turned on so they should never be used to prevent bad 
         behaviour, such as returning the wrong value).
     -   If the docstring says something like "if you do such-and-such an 
         AssertionError will be raised", a "raise AssertionError()" statement 
         should be used.
 
--   Assertions should always have the conditional expression, and a string 
+-   Assertions should always have a conditional expression, and a string 
     explaining the rationale. The rationale makes it easier to scan the OOPS 
     report, for example.
--   No code should catch AssertionError: it is wrong for any code to catch 
-    AssertionError. So, if you want to highlight a programmer's error, and stop
-    the execution of the program, then use an AssertionError.
+-   No code should catch AssertionError: It is wrong to use a try-except block 
+    to catch AssertionError. AssertionError is meant to highlight programmers' 
+    errors and stop execution of the program.
 
-As as example of how to use assertions, we have the method ``bugTasksWithSharedInterest()`` 
-in PersonView, which is meant to be called only when we have a logged in user. 
-This method is used only in one template, and protected by a tal:condition to 
-make sure we have a logged in user. In this case, it's pretty fair to use an 
+As an example, we have the method ``bugTasksWithSharedInterest()`` in 
+PersonView, which is meant to be called only when the user is logged in. This 
+method is used only in one template, and protected by a tal:condition to 
+make sure the user is logged in. In this case, it's reasonable to use an 
 assertion, because calling this method without a logged in user is something 
 that should not happen. This is the code::
 
     def bugTasksWithSharedInterest(self):
         assert self.user is not None, 'This method should not be called without a logged in user'
 
-Here is an example of an assertion that does not need one. In this case, we should be raising an error, instead::
+Here is an example of a function that does not need an assertion. In this case, 
+we should be raising an error, instead::
 
     def marryPersons(self, person1, person2):
         assert person1 is not None
@@ -58,7 +59,7 @@ Testing your asserts
 --------------------
 
 As with any other code, asserts should be documented and tested to make sure 
-misbehaving programmers will be caught. But they shouldn't be in the general 
-flow of documentation, because they're not part of the API. For this reason the
-test of asserts should be either in a separate file or in a separate section of
-the same file.
+misbehaving programmers will be caught. However, the documentation and test of 
+asserts should not be part of the :spellexception:`API's` main documentation because they are not 
+actually part of the API. For this reason, the test of asserts also should be 
+either in a separate file or in a separate section of the same file.
