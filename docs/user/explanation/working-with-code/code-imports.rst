@@ -24,22 +24,23 @@ Trunk imports
 -------------
 
 Launchpad supports the import of code from a remote repository. A good example 
-is the `snapd` project. Launchpad imports snapd's trunk as its `"trunk" series <https://launchpad.net/snapd/trunk>`_ 
+is the `snapd` project. Launchpad imports snapd's main branch as its `"trunk" series <https://launchpad.net/snapd/trunk>`_ 
 in Launchpad.
 
 As you can see, there's a Git branch of snapd's code. Launchpad updates that 
-branch regularly by importing the latest from snapd's trunk GitHub repository. 
-It works just like any other branch in Launchpad:
-you can see the latest commits and you can create your own branch of it and 
-then upload it back to Launchpad.
+branch regularly by importing the latest changes from snapd's GitHub repository. 
+It works just like any other branch in Launchpad - you can see the latest 
+commits, create your own branch of it, and then upload it back to Launchpad.
 
 Requesting an import
 --------------------
 
 To request an import, please:
 
-- Make sure the project is `registered in Launchpad <https://launchpad.net/products>`_, or register it yourself.
-- Then visit the `page for requesting a code import <https://code.launchpad.net/+code-imports/+new>`_ and fill out the details.
+- Make sure the project is `registered in Launchpad <https://launchpad.net/products>`_, 
+  or register it yourself.
+- Then visit the `page for requesting a code import <https://code.launchpad.net/+code-imports/+new>`_ 
+  and fill out the details.
 
 This will:
 
@@ -63,29 +64,28 @@ such as CVS and SVN.
 In most cases, where the CVS and SVN repositories had not been manually
 edited or altered, it was possible to infer the information that was required
 for the import to proceed smoothly. Git, however, keeps track of renames and 
-every commit is treated as an `atomic commit <https://www.geeksforgeeks.org/computer-networks/atomic-commit-protocol-in-distributed-system/>`_
+every commit is treated as an `atomic commit <https://www.geeksforgeeks.org/computer-networks/atomic-commit-protocol-in-distributed-system/>`_,
+capturing the state of the entire project at that point.
 
 Making your request
 ~~~~~~~~~~~~~~~~~~~
 
-So, a good import is part voodoo, part science, part luck. An import
-will not lose data - we can verify that the result of a checkout of the
-Git branch is identical to a checkout of the CVS branch. But getting
-it to that point may well require inspection and custom work.
+An import will not lose data - the result of a checkout of the Git branch is 
+identical to a checkout of the CVS branch. But getting it to that point may 
+require inspection and custom work.
 
-For this reason, we don't have an automated process for the import.
-Instead, you `request one <https://code.launchpad.net/+code-imports/+new>`_ 
-and we put it in a queue. Sometimes it takes just an hour or two, sometimes it 
-can take days to get a good import together. In very few cases, the old
-repositories are so wedged that we can't get all the history exactly
-right. It's best just to get started and see how it goes. We are
-constantly improving the voodoo.
+For this reason, there is no automated process for the import. Instead, you 
+`request a code import <https://code.launchpad.net/+code-imports/+new>`_ 
+and it's added to the queue. Putting the import together can take anywhere from
+one hour to several days. In some few cases, it's not possible to get all the 
+history exactly right, but the systems and processes used behind the scenes are 
+being constantly improved.
 
-The initial import can take a long time—up to several days, depending on
+The initial import can take a long time; up to several days, depending on
 the number of revisions that need to be converted. Once the import is
-established it will be updated from the CVS or Subversion branch with
-every 6-12 hours, although an import can be requested at any time by
-clicking the "Import Now" button on the import page.
+established, it will be updated from the CVS or Subversion branch every 6-12 
+hours, although an import can be requested at any time by clicking the 
+"Import Now" button on the import page.
 
 More information
 ----------------
