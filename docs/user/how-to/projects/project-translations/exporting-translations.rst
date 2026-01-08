@@ -5,14 +5,8 @@ Export translations
 
 .. include:: /includes/important_not_revised_help.rst
 
-Just as with :ref:`importing
-templates <how-to-import-project-translation-templates>` and
-:ref:`translations <how-to-import-project-translations>`, there
-are two ways to export your project's translations from Launchpad:
-
--  by asking Launchpad to make regular commits to a Git branch you
-   specify
--  or requesting a one-off download through the web interface.
+You can export your project's translations from Launchpad but requesting a 
+one-off download through the web interface.
 
 Committing translations to a Git branch
 ------------------------------------------
@@ -132,6 +126,5 @@ Choose the latter option for a partial export.
 Next steps
 ----------
 
-Launchpad works with Git to host, mirror and catalogue to branches of
-your project's code. It can even import Subversion and CVS repositories. 
-Let's take a look at :ref:`hosting code with Launchpad <host-your-project-code-on-launchpad>`.
+Launchpad works with Git to host, mirror and catalogue to branches of your 
+project's code. Let's take a look at :ref:`hosting code with Launchpad <host-your-project-code-on-launchpad>`.
