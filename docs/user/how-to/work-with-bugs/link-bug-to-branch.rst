@@ -14,26 +14,24 @@ Fix a bug in a dedicated branch
 
 Let's say you're new to a project. You spot a bug report and you're pretty 
 certain you can fix it. You :ref:`pull down your own branch <host-a-git-repository-on-launchpad>` 
-of the project's trunk and hack away. Every now and then, you push your branch up to Launchpad.
+of the project's trunk and hack away. Every now and then, you push your branch 
+up to Launchpad.
 
 You can tell everyone who's interested in the bug about your work by
 linking your branch to the report. Now, anyone looking at the bug report
 can click straight through to see your branch.
 
-Create a link to the branch
----------------------------
-
-Using the Launchpad web interface:
+Create a link using the Launchpad web interface
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 First, visit your bug report in Launchpad. Click ``Link to related branch``,
 then select the branch.
 
-Create a link using Git
-~~~~~~~~~~~~~~~~~~~~~~~
+Create a link from the terminal
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you manage your code using Git, then you can link to bugs by adding 
-appropriate text to your commit message instead. For example, your commit 
-message might look like this:
+You can also link to bugs by adding appropriate text to your commit message 
+instead. For example, your commit message might look like this:
 
 ::
 
@@ -46,7 +44,8 @@ message might look like this:
 Note that Git bug links will only be recorded once you :ref:`propose a merge <create-and-manage-a-merge-proposal>` 
 that includes such commits.
 
-See :ref:`Launchpad's Git hosting documentation <linking-to-bugs>` for more details.
+See :ref:`Launchpad's Git hosting documentation <linking-to-bugs>` for more 
+details.
 
 Find links to branches
 ----------------------
