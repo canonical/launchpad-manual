@@ -96,8 +96,9 @@ If all is well with Launchpad, there should be no *Critical* bugs.
 High
 ~~~~
 
-These are bugs that will be our main focus in normal operation, timeouts
-(tagged "timeout"), OOPSes , and A and AA conformance accessibility bugs.
+These are bugs that will be our main focus in normal operation, `timeouts <https://bugs.launchpad.net/launchpad/+bugs?field.tag=timeout>`_
+(tagged "timeout"), `OOPSes <https://bugs.launchpad.net/launchpad/+bugs?field.tag=oops>`_ , 
+and A and AA conformance accessibility bugs.
 
 Low
 ~~~
