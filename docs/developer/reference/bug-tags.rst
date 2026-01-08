@@ -5,13 +5,16 @@ Tagging bugs about Launchpad
 
 Launchpad's Bug Tracker allows you to create ad-hoc groups of bugs with tagging.
 
-In the Launchpad team, we have a list of agreed tags that we may apply to bugs reported against various aspects of Launchpad itself. By using a standard set of tags, each explained on this page, we can avoid confusion.
+In the Launchpad team, we have a list of agreed tags that we may apply to bugs 
+reported against various aspects of Launchpad itself. By using a standard set 
+of tags, each explained on this page, we can avoid confusion.
 
 
 Proposing new tags
 ------------------
 
-New tags, or changes in the meaning of existing tags, are to be proposed on the launchpad-dev list, and must be accepted there.
+New tags, or changes in the meaning of existing tags, can be proposed by
+:ref:`contacting the Launchpad team <get-help>`.
 
 After discussion, the tag should be updated here.
 
@@ -109,8 +112,6 @@ Approved tags
 | lp-translations           | Bugs in the Translations application                                                                             |
 +---------------------------+------------------------------------------------------------------------------------------------------------------+
 | lp-web                    | Bugs in the infrastructure for Launchpad's web UI                                                                |
-+---------------------------+------------------------------------------------------------------------------------------------------------------+
-| mailing-lists             | Bugs related to the team mailing lists feature.                                                                  |
 +---------------------------+------------------------------------------------------------------------------------------------------------------+
 | markup                    | marking user text in useful ways (like ReST or some wiki markup)                                                 |
 +---------------------------+------------------------------------------------------------------------------------------------------------------+
