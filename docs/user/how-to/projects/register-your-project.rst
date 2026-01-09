@@ -10,9 +10,8 @@ allows you to use Launchpad to do all or any of the following:
 
 -  track your project's bugs
 -  translate your project's user interface
--  host and mirror Bazaar branches of your project's code
--  import CVS and Subversion repositories of your project's code into
-   Bazaar branches
+-  host git branches of your project's code
+-  import git repositories of your project's code
 -  plan and manage the development of features for your project
 -  offer an easy way for your project's users to post and answer support
    questions.
