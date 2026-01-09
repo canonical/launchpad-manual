@@ -24,7 +24,7 @@ official packages and your own packages in your personal package archive
 
 -  `Official Ubuntu packages <https://wiki.ubuntu.com/MOTU/GettingStarted>`_: find out about becoming an Ubuntu packager with the MOTU team
 
--  :ref:`package recipes <source-package-recipes>`: automatically assemble a package from git branches (beta)
+-  :ref:`package recipes <source-package-recipes>`: automatically assemble a package from git branches
 
 -  `Packaging binaries <https://wiki.ubuntu.com/MOTU/School/PackagingWithoutCompiling>`_: how to go about packaging software which is only available as a binary.
 
@@ -323,47 +323,33 @@ substitution variables.
    * - Variable
      - Purpose
      - Introduced in (recipe format version)
-     - Git
    * - time
      - Replaced by the date and time (UTC) when the package was built.
      - 0.1
-     - Yes
    * - revno
      - Replaced by the revision number.
      - 0.1
-     - Yes (see note below)
    * - latest-tag
      - Replaced by the name of the most recent tag
      - 0.4
-     - Yes
    * - revdate
      - Replaced by the date of the revision that was built
      - 0.4
-     - Yes
    * - revtime
      - Replaced by the time of the revision that was built
      - 0.4
-     - Yes
-   * - svn-revno
-     - Replaced with the svn revision number of the revision that was built
-     - 0.4
-     - No
    * - git-commit
      - Replaced with the first 7 characters of the git commit that was built
      - 0.4
-     - Yes
    * - debversion
      - Replaced with the version in debian/changelog
      - 0.3
-     - Yes
    * - debupstream
      - Replaced by the upstream portion of the version number taken from debian/changelog. For example: if the version is 1.0-1, this would evaluate to 1.0.
      - 0.1
-     - Yes
    * - debupstream-base
      - Similar to {debupstream}, but with any VCS identifiers (e.g. "bzr42", "svn200") stripped, and updated to always end with a "+" or "~")
      - 0.3
-     - Yes
 
 All variables other than ``time`` are derived from a particular
 branch. By default they use the base branch (eg. ``{revno}``), but
