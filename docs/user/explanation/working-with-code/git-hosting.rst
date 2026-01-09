@@ -41,22 +41,6 @@ Launchpad supports Git hosting. This means that you can:
    for code in Launchpad-hosted Git repositories
 -  mirror repositories from other sites
 
-What will be supported?
------------------------
-
-Launchpad's Bazaar support has grown many features over the years, and
-it will take some time to bring our Git support up to full parity with
-it. Here's an incomplete list of some of the features we expect to add:
-
--  useful subscriptions (currently only attribute change notifications
-   work, which are not usually very interesting in themselves)
--  RSS feeds
--  an integrated code browser
-
-Here's a short list of known bugs that you don't need to tell us about:
-
--  the interface for registering merge proposals is very rough
-
 Configuring Git
 ---------------
 
