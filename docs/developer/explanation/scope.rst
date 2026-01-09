@@ -112,7 +112,7 @@ No project lives in isolation.  Each project is part of an ecosystem of
 software.  Projects must be able to interact with each other, share bugs,
 teams, goals and code with each other.
 
-.. image:: ../images/cross-project-collab.svg
+.. image:: ../images/cross-project-collab.png
 
 Launchpad takes every chance it gets to show the connections between projects
 and to bring the opportunities created by those connections to light.
@@ -211,7 +211,7 @@ areas of functionality:
    users and other developers, and vice-versa
 4. major supporting features
 
-.. image:: ../images/scope.svg
+.. image:: ../images/scope.png
 
 Work
 ----
@@ -339,4 +339,4 @@ References
 
 * :doc:`strategy`
 * :doc:`values`
-* `Feature checklist <https://dev.launchpad.net/FeatureChecklist>`_
+* :ref:`Feature highlights <launchpad-feature-highlights>`

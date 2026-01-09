@@ -32,7 +32,7 @@ Related Documents
 =================
 
 * `Exception guidelines <https://dev.launchpad.net/ExceptionGuidelines>`_
-* `Assertions <https://dev.launchpad.net/AssertionsInLaunchpad>`_
+* :ref:`Assertions <assertions-in-launchpad>`
 * `Launchpad hacking FAQ <https://dev.launchpad.net/LaunchpadHackingFAQ>`_
 * :doc:`Tests style guide <tests>`
 
@@ -377,8 +377,7 @@ To make long lines show up:
     match Error /\%>79v.\+/
 
 For an even more in-depth Vim configuration, have a look at
-`UltimateVimPythonSetup <https://dev.launchpad.net/UltimateVimPythonSetup>`_
-for a complete vim file you can copy to your local setup.
+`VIM and Python <https://realpython.com/vim-and-python-a-match-made-in-heaven/>`_.
 
 Emacs
 -----

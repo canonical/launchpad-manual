@@ -4,6 +4,11 @@ Release Notes
 December 2025
 +++++++++++++
 
+17 December
+
+- Removed translations automatic synchronisation as part of bzr
+  decommissioning.
+
 1 December
 
 - Owners of a PPA can now see "Manage Webhooks" button in the PPA page.

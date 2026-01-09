@@ -33,10 +33,6 @@ directly related to code structure or quality.
 Related documents
 -----------------
 
-Launchpad is moving to a `services-based design
-<https://dev.launchpad.net/ArchitectureGuide/Services>`_.  This is intended
-to facilitate achieving many of the goals from this guide.
-
 The :doc:`Python style guide <../reference/python>` specifies coding style guidelines.
 
 Values

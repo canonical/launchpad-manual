@@ -5,8 +5,8 @@ Linking bugs to dedicated branches
 
 .. include:: /includes/important_not_revised_help.rst
 
-If you create a Bazaar branch to fix a specific bug, and that branch is
-registered in Launchpad, you can link the bug report and the branch.
+If you create a branch to fix a specific bug, and that branch is registered in 
+Launchpad, you can link the bug report and the merge proposal for that branch.
 
 Launchpad uses an icon to indicate the link in the branch and bug
 listings. The icons are a quick way for anyone to see that you have code
@@ -24,9 +24,9 @@ you to the relevant branch.
 
 https://bugs.beta.launchpad.net/beagle/+bugs
 
-Each link between a bug and branch has its own status and whiteboard.
-The status indicates the progress of the fix, and you can use the
-whiteboard for more detailed information.
+Each link between a bug and a merge proposal has its own status and whiteboard.
+The status indicates the progress of the fix, and you can use the whiteboard 
+for more detailed information.
 
 Any Launchpad user can have multiple branches of code for a project, and
 teams can have multiple branches too. How do you know which branch to

@@ -12,8 +12,7 @@ Let's have a quick recap of how you can use Launchpad for your project:
    distribution package build and hosting, file downloads and so on.
 -  **List your project in the directory:** gain publicity for your
    project, make announcements, link to your bug tracker, register your
-   code and make it available through
-   `Bazaar <https://www.bazaar-vcs.org>`__.
+   code and `make it available <https://code.launchpad.net>`__.
 
 Of course, you can pick and choose almost any combination of what
 Launchpad has to offer. The first step is to register your project.

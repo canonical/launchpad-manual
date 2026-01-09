@@ -32,8 +32,8 @@ these lists we can ensure that we're focusing our time and energy on the most
 important priorities.
 
 For a full understanding of why we triage bugs and how we came to
-develop this process, please read our description of the `background to
-our bug triage process <https://dev.launchpad.net/BugTriage/Background>`__.
+develop this process, please read our description of the :ref:`background to
+our bug triage process <bug-triage-process-background>`.
 
 How to triage
 -------------
@@ -96,11 +96,9 @@ If all is well with Launchpad, there should be no *Critical* bugs.
 High
 ~~~~
 
-These are bugs that will be our main focus in normal operation, timeouts
-(tagged "timeout"), OOPSes (thanks to our `zero OOPS
-policy <https://dev.launchpad.net/PolicyAndProcess/ZeroOOPSPolicy>`__,
-and tagged "oops"), and A and AA conformance accessibility
-bugs.
+These are bugs that will be our main focus in normal operation, `timeouts <https://bugs.launchpad.net/launchpad/+bugs?field.tag=timeout>`_
+(tagged "timeout"), `OOPSes <https://bugs.launchpad.net/launchpad/+bugs?field.tag=oops>`_ , 
+and A and AA conformance accessibility bugs.
 
 Low
 ~~~
@@ -122,8 +120,8 @@ think it is unlikely we will focus effort on it.
 Tagging bugs
 ------------
 
-We tag bugs as part of the triage process. Read the `list of Launchpad
-tags <https://dev.launchpad.net/LaunchpadBugTags>`__ to find out which
+We tag bugs as part of the triage process. Read the :ref:`list of Launchpad
+tags <tagging-bugs-about-launchpad>` to find out which
 tags to use.
 
 Assigning bugs

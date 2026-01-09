@@ -1,0 +1,99 @@
+# Client-side page redirects
+# ---------------------------
+# Comments start with a single hash (#)
+# Each redirect appears on its own line in the format:
+#
+# redirect/from/ redirect/to/
+#
+# Paths are relative to the root of the `docs` directory
+# The "from" path must be a file that *does not* exist
+# The "to" path must be a file that *does* exist
+# The separator between "from" and "to" paths is a single space (not a tab)
+
+user/Translations	user/explanation/translating-with-launchpad/translating-with-launchpad/
+user/Packaging/PPA	user/reference/packaging/ppas/ppa/
+user/Packaging/BuildScores	user/reference/packaging/build-scores/
+user/BugExpiry	user/reference/bugs/bug-expiry/
+user/Legal/ProjectLicensing	user/reference/launchpad-and-community/legal/project-licenses/
+user/CommercialHosting	user/reference/consumer-hosting/
+user/API/	user/how-to/launchpad-api/
+user/Packaging/UploadErrors.	user/explanation/packaging/package-upload-errors/
+user/Packaging/PPA/Uploading	user/how-to/packaging/ppa-package-upload/
+user/Feeds	user
+user/Translations/YourProject	user/reference/translations/translation-best-practices/
+user/OpenID	user/how-to/using-openid/
+user/EmailInterface	user/how-to/work-with-bugs/use-email-interface/
+user/Teams	user/reference/teams/launchpad-teams/
+user/Code	user/how-to/work-with-code-hosted-on-launchpad/index/
+user/Bugs	user/how-to/work-with-bugs/
+user/YourAccount/Merging	user/how-to/account-management/merge-accounts/
+user/Translations/YourProject/ImportPolicy	user/reference/translations/translation-import-policy/
+user/Translations/StartingToTranslate	user/explanation/translating-with-launchpad/prepare-to-translate/
+user/Translations/ImportPolicy	user/reference/translations/translation-import-policy/
+user/Code/Review	user/how-to/work-with-code-hosted-on-launchpad/create-and-manage-a-merge-proposal/
+user/Bugs/Subscriptions	user/how-to/work-with-bugs/subscribe-and-unsubscribe-to-bugs/
+user/Bugs/Expiry	user/reference/bugs/bug-expiry/
+user/Bugs/BugAttachments	user/reference/bugs/bug-attachment/
+user/YourAccount/Karma	user/explanation/your-account-karma/
+user/YourAccount/ImportingYourPGPKey	user/how-to/import-openpgp-key/
+user/YourAccount/ContactingPeople	user/explanation/collaborating-using-launchpad/
+user/VcsImports	user/how-to/work-with-code-hosted-on-launchpad/import-code-into-launchpad/
+user/TurningABugIntoAQuestion	user/reference/bugs/bug-to-question/
+user/Translations/ReusingPackagedTranslations	user/reference/translations/reusing-packaged-translations/
+user/Translations/PartialPOExport	user/explanation/translating-with-launchpad/partial-exports/
+user/Translations/LaunchpadTranslators	user/reference/translations/translators-group/
+user/QuestionLifeCycle	user/reference/question-life-cycle/
+user/ProjectGroups	user/reference/project-groups/
+user/Packaging/SourceBuilds/Recipes	user/how-to/source-package-recipe/
+user/Packaging/SourceBuilds	user/explanation/packaging/packaging/
+user/Packaging/PPA/Deleting	user/reference/packaging/ppas/deleting-packages/
+user/Legal	user/reference/launchpad-and-community/legal/launchpad-policies/
+#  user/InterBugTracking	https://web.archive.org/web/20120714093517/https://help.launchpad.net/Bugs/InterBugTracking (doc not migrated)
+user/Code/UploadingABranch	user/how-to/work-with-code-hosted-on-launchpad/git-hosting-on-launchpad/
+user/Code/PersonalBranches	user/how-to/work-with-code-hosted-on-launchpad/create-and-maintain-personal-branch/
+user/Code/BugAndBlueprintLinks	user/how-to/work-with-code-hosted-on-launchpad/linking-code-to-bug-reports-and-blueprints/
+user/BugTrackerEmailInterface	user/how-to/bug-tracking-with-email/
+user/Bugs/PluginAPISpec	user/reference/bug-tracker-api/plugin-api/
+user/Bugs/EmailInterface	user/how-to/bug-tracking-with-email/
+user/BlueprintDocumentation	user/explanation/feature-highlights/blueprints/
+user/API/launchpadlib	user/how-to/launchpadlib/using-launchpadlib/
+user/Answers	user/explanation/answers/answer-tracker/
+user/YourAccount/CreatingAnSSHKeyPair	user/how-to/import-ssh-keys/
+user/YourAccount	user/explanation/your-launchpad-account/
+#  user/WorkItems	https://web.archive.org/web/20130308020751/https://help.launchpad.net/Blueprint?action=show&redirect=WorkItems#workitems (section not migrated)
+user/Translations/YourProject/ImportingTranslations	user/how-to/projects/project-translations/import-project-translations/
+user/Translations/YourProject/ImportingTemplates	user/how-to/projects/project-translations/import-translation-templates/
+user/Translations/YourProject/ChoosingAGroup	user/explanation/translating-with-launchpad/translation-groups/
+user/Translations/LicensingFAQ	user/reference/translations/translations-licensing/
+user/Translations/JoiningATranslationGroup	user/explanation/translating-with-launchpad/translation-groups/
+user/Translations/ImportingFromBazaarBranches	user/how-to/projects/project-translations/import-project-translations/
+user/Translations/Groups	user/explanation/translating-with-launchpad/translation-groups/
+user/PPATermsofUse	user/reference/launchpad-and-community/legal/launchpad-policies/
+user/PPA	user/reference/packaging/ppas/ppa/
+user/Packaging/SourceBuilds/GettingStarted	user/how-to/source-package-recipe/
+user/Packaging/BuildScores.	user/reference/packaging/build-scores/
+user/Legal/BSDLicense	user/reference/translations/translations-licensing/
+user/LaunchpadMessageRationale.	user/explanation/message-rationale-headers/
+# user/FAQ/Translations	"https://answers.launchpad.net/launchpad/+faqs"
+user/CrossProjectBugTracking	user/reference/bugs/multi-project-bugs/tracking-multi-project-bugs/
+user/Code/MirroredBranches	user/how-to/work-with-code-hosted-on-launchpad/index/
+user/Bugs/YourProject	user/how-to/work-with-bugs/file-a-bug/
+user/Bugs/MultiProjectBugs	user/reference/bugs/multi-project-bugs/about-multi-project-bugs/
+user/Bugs/BugBranchLinks	user/how-to/work-with-bugs/link-bug-to-branch/
+user/Blueprint	user/explanation/feature-highlights/blueprints/
+user/API/launchpadlib/	user/how-to/launchpadlib/using-launchpadlib/
+user/API	user/how-to/launchpad-api/
+user/AnswerTrackerDocumentation	user/explanation/answers/answer-tracker/
+developer/Translations/LanguagePackSchedule developer/reference/services/automatic-translations-export
+user/Packaging/BuilderSpecs user/reference/packaging/builder-specs/
+developer/LEP/FeatureFlags developer/explanation/feature-flags/
+developer/Translations/Specs/UpstreamImportIntoUbuntu/FixingIsImported/setCurrentTranslation developer/explanation/engineering-overview-translations/
+developer/Code/HowToUseCodehostingLocally developer/how-to/codehosting-locally/
+developer/Database/Performance developer/explanation/database-performance/
+developer/DatabaseSetup developer/how-to/database-setup/
+developer/ExceptionGuidelines developer/how-to/exceptions/
+developer/Help help/
+developer/LaunchpadHackingFAQ developer/explanation/hacking/
+developer/PolicyAndProcess/DatabaseSchemaChangesProcess developer/how-to/database-schema-changes-process/
+developer/Soyuz/HowToUseSoyuzLocally developer/how-to/use-soyuz-locally/
+developer/Soyuz/HowToDevelopWithBuildd developer/how-to/develop-with-buildd/

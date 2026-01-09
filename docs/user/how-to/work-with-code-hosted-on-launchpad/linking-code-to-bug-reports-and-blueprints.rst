@@ -17,16 +17,13 @@ that fantastic new feature you're working on - and tracking as a
 :ref:`blueprint <blueprints-lightweight-specifications>` - by linking the blueprint to a branch of your
 code.
 
-Bazaar also gets in on the act, as we'll see in a moment or two.
-
 Fixing bugs in dedicated branches
 ---------------------------------
 
 Let's say you're new to a project. You spot a bug report and you're
-pretty certain you can fix it. You :ref:`pull down your own
-branch <find-and-download-code-hosted-on-launchpad>` of the project's trunk and hack
-away. Every now and then, you :ref:`push your branch up to
-Launchpad <upload-your-bazaar-branch-to-launchpad>`.
+pretty certain you can fix it. You :ref:`pull down your own branch <host-a-git-repository-on-launchpad>` 
+of the project's trunk and hack away. Every now and then, you push your branch 
+up to Launchpad.
 
 You can tell everyone who's interested in the bug about your work by
 linking your branch to the report. Now, anyone looking at the bug report
@@ -35,7 +32,7 @@ can click straight through to see your branch.
 Now imagine the project were using a more traditional version control
 system and they were tracking their bugs in a standalone tracker. As a
 newcomer, you could paste your patches as bug comments, while hacking
-away on your own machine. With Launchpad and Bazaar you get full version
+away on your own machine. With Launchpad and Git, you get full version
 control, without affecting the official project branch itself, and
 anyone else can take part by downloading and creating their own branch
 of your work.
@@ -45,21 +42,28 @@ Create a link
 
 Using the Launchpad web interface:
 
-**Step 1**: Visit your branch page in Launchpad.
+**Step 1**: Visit your merge proposal page in Launchpad.
 
 **Step 2**: Click ``Link to a bug report``.
 
 **Step 3**: Select the bug report and you're done!
 
-Create a link using Bazaar
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+Create a link
+~~~~~~~~~~~~~~
 
-Just as you can register and push your branch to Launchpad directly from
-Bazaar, you can also create a bug-branch link.
+Just as you can register and push your branch to Launchpad directly using
+git, you can link to bugs by adding appropriate text to your commit message 
+instead. For example, your commit message might look like this:
 
 ::
 
-   $ bzr commit --fixes lp:12345
+   Shorten error message
+
+   The previous 3000-line message was too hard to read.
+
+   LP: #12345
+
+The bug link will only be created after you make a merge proposal.
 
 Find links to branches
 ----------------------

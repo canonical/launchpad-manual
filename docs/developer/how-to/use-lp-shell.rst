@@ -18,7 +18,7 @@ The way to install lp-shell is pretty straight forward. Only package needed is
 
 .. code-block:: shell-session
 
-    $ sudo apt install lptools
+    sudo apt install lptools
 
 “lp-shell” resides in lptools, so this is all we need to connect to Launchpad.
 
@@ -32,7 +32,7 @@ exploration when inside the lp-shell.
 
 .. code-block:: shell-session
 
-    $ sudo apt install ipython3
+    sudo apt install ipython3
 
 How to Connect
 --------------
@@ -41,7 +41,7 @@ After installation, we can enter into lp-shell using:
 
 .. code-block:: shell-session
 
-    $ lp-shell
+    lp-shell
 
 Thus, we are in, and free to do whatever we want as long as we have the
 permissions.
@@ -64,13 +64,13 @@ All the resources open to API can be found in the `API Documentation
 Other Options
 _____________
 
-The simple ``$ lp-shell`` command implicitly defaults two options: the environment
+The simple ``lp-shell`` command implicitly defaults two options: the environment
 to connect as ``production`` and the version/branch of the API as ``devel``. Thus we can
 denote the initial command as:
 
 .. code-block:: shell-session
 
-    $ lp-shell production devel
+    lp-shell production devel
 
 Alternatively, we have other options in regards to what environment we connect
 to and the version of API as well.
@@ -80,13 +80,13 @@ The options for environment follow the development environments of Launchpad:
 
 .. code-block:: shell-session
     
-    $ lp-shell staging
+    lp-shell staging
 
 Or
 
 .. code-block:: shell-session
 
-    $ lp-shell qastaging
+    lp-shell qastaging
 
 Alternatively, we can also connect to local development/test environments on
 our personal systems with ``dev``. However, this requires the deactivation of 
@@ -97,7 +97,7 @@ itself with:
 
 .. code-block:: shell-session
 
-    $ LP_DISABLE_SSL_CERTIFICATE_VALIDATION=True lp-shell dev
+    LP_DISABLE_SSL_CERTIFICATE_VALIDATION=True lp-shell dev
 
 In contrast, the second set of options we have, i.e. which API version/branch
 we connect to is less crippling since we only support the use of ``devel`` as

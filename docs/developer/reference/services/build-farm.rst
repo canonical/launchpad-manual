@@ -88,7 +88,7 @@ Related specifications (only accessible for Canonical employees)
 
 Log files
 ---------
-See `https://wiki.canonical.com/Launchpad/FreshLogs <https://wiki.canonical.com/Launchpad/FreshLogs>`_.
+See `Reading Launchpad logs via rsync <https://canonical-launchpad-admin-manual.readthedocs-hosted.com/en/latest/reference/reading-launchpad-logs-via-rsync/>`_.
 
 Production
 ~~~~~~~~~~
@@ -170,7 +170,7 @@ Search for "build" in https://git.launchpad.net/canonical-is-prometheus/tree/ols
 
 Common support cases
 --------------------
-See `Launchpad's playbook for support rotation <https://wiki.canonical.com/Launchpad/SupportRotation#Builder>`_
+See `Launchpad's playbook for support rotation <https://canonical-launchpad-admin-manual.readthedocs-hosted.com/en/latest/howto/builder/>`_
 
 More information
 ----------------

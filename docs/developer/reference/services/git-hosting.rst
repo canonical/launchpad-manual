@@ -4,8 +4,7 @@ Git hosting
 Description
 -----------
 
-Launchpad has direct Git hosting support alongside its existing Bazaar hosting support. 
-The major subsystems involved are:
+Launchpad has direct Git hosting support. The major subsystems involved are:
 
 * The git client
 * Hosting service (turnip)
@@ -64,7 +63,7 @@ to git smart HTTP protocol, and ``turnip``` deals with configuring ``cgit`` appr
 
 Log files
 ---------
-See `FreshLogs documentation <https://wiki.canonical.com/Launchpad/FreshLogs>`_.
+See `Reading Launchpad logs via rsync <https://canonical-launchpad-admin-manual.readthedocs-hosted.com/en/latest/reference/reading-launchpad-logs-via-rsync/>`_.
 
 Production
 ~~~~~~~~~~
