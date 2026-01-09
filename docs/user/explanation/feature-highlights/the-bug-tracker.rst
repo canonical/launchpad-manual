@@ -347,22 +347,14 @@ Branch integration
 ~~~~~~~~~~~~~~~~~~
 
 Launchpad can be used to keep track of development being done by your
-community on multiple independent branches. This is because Launchpad
-is designed to work with Git.
+community on multiple independent branches.
 
-It is not necessary for your project "trunk" to use Git in order to
-reap these benefits. The main project can continue to use Subversion or
-CVS, and Launchpad can publish a Git version of that branch which
-your community can use to branch off while they do their own personal
-development. If they register their branches with Launchpad, and in
-doing so note that they are working on a particular bug in that branch,
-then Launchpad will notify the other subscribers to the bug that the
-branch exists and is being worked on. This allows people who have an
-interest in the bug either to pitch in and collaborate on the bug fix
-directly, or simply to know that they can find a fix by merging from the
-relevant branch.
-
-We expect this feature to be complete by the end of November 2006.
+If they register their branches with Launchpad, and in doing so note that they 
+are working on a particular bug in that branch, then Launchpad will notify the 
+other subscribers to the bug that the branch exists and is being worked on. 
+This allows people who have an interest in the bug either to pitch in and 
+collaborate on the bug fix directly, or simply to know that they can find a fix
+by merging from the relevant branch.
 
 Release management
 ~~~~~~~~~~~~~~~~~~
