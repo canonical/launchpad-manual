@@ -41,9 +41,6 @@ Launchpad supports Git hosting. This means that you can:
    for code in Launchpad-hosted Git repositories
 -  mirror repositories from other sites
 
-Launchpad's Git support is still growing and more features will be added with 
-time.
-
 Configuring Git
 ---------------
 
