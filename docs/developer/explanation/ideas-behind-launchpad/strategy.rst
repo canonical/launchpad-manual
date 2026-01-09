@@ -102,7 +102,7 @@ needs Launchpad to do both of the above and:
 
 The value flow of Launchpad can be summed up in this diagram:
 
-.. image:: ../images/value-flow.svg
+.. image:: ../../images/value-flow.svg
 
 
 Who is Launchpad for?
