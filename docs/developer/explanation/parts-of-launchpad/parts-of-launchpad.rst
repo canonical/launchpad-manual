@@ -11,4 +11,4 @@ Parts of Launchpad
    registry
    engineering-overview-translations
    code
-   publisher
+   publisher/publisher
