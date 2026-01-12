@@ -102,7 +102,7 @@ EXPLAIN ANALYZE on staging and qastaging can be used by LOSAs, the TAs,
 and squad leads.
 
 If you want to see how a query is working on a GET page locally, try the
-:doc:`++oops++ and ++profile++ tools <../how-to/debugging>`.
+:doc:`++oops++ and ++profile++ tools <../../how-to/debugging>`.
 ++profile++ reportedly works on staging and qastaging now too.
 
 Unfortunately, they sometimes do not work properly for POSTs, and can't

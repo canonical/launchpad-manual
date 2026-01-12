@@ -15,7 +15,7 @@ fundamentally secure.
 
 We only use Ubuntu LTS releases, which gets professional security support.
 
-We monitor updates of both system and :doc:`Python packages <pip>` closely,
+We monitor updates of both system and :doc:`Python packages <../setting-up-launchpad/pip>` closely,
 and update or patch our systems and applications accordingly.
 
 We use a restrictive network setup between all our systems, especially

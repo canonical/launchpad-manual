@@ -2,7 +2,7 @@
 Navigating the tree
 ===================
 
-See :doc:`../how-to/running` to learn how to get Launchpad's code and set up
+See :doc:`../../how-to/running` to learn how to get Launchpad's code and set up
 a local development environment.
 
 The Launchpad tree is big, messy and changing.  Sorry about that.  Don't panic

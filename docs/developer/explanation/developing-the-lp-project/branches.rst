@@ -103,7 +103,7 @@ Where to Send Merge Requests
 Merge requests that do any of the following should be targeted at the
 **db-devel** branch:
 
--  adds a cold database patch (see :doc:`../how-to/database-schema-changes-process`)
+-  adds a cold database patch (see :doc:`../../how-to/database-schema-changes-process`)
 -  depends on database schema change only in **db-devel** /
    **db-stable**
 

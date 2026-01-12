@@ -85,7 +85,7 @@ they will be promoted to ``master`` as part of the go-live process.
 Hot Patches
 ~~~~~~~~~~~
 
-:doc:`../explanation/live-patching` explains how
+:doc:`../explanation/database/live-patching` explains how
 hot-patching works and what sorts of things we can hot-patch. It's the
 authority — we may be able to hot-patch more as our tooling improves.
 

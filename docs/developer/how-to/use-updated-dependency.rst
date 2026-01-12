@@ -14,4 +14,4 @@ you need to both download the dependency and make a new build:
 Further reading
 ***************
 
-Please see :doc:`../explanation/pip`.
+Please see :doc:`../explanation/setting-up-launchpad/pip`.
