@@ -379,6 +379,7 @@ exclude_patterns = [
 
 html_js_files = [
     'js/bundle.js',
+    'issue_links.js',
 ]
 
 # Specifies a reST snippet to be appended to each .rst file
@@ -392,9 +393,9 @@ rst_epilog = """
 
 # Feedback button at the top; enabled by default
 #
-# TODO: To disable the button, uncomment this.
+# To disable the button, uncomment this.
 
-# disable_feedback_button = True
+disable_feedback_button = True
 
 
 # Your manpage URL
