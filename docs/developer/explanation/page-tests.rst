@@ -3,29 +3,29 @@
 Page tests
 ==========
 
-Now that we've upgraded to Zope 3.2 we can use zope.testbrowser to do page 
-testing, instead of the traditional way using http() calls. testbrowser page 
-tests are easier to write and understand, since you get easy access to links 
-and form controls in the page. So, for example, you can check whether a link is
-present, and click on that link to go to some other page. zope.testbrowser can 
-be tricky to use sometimes, though, since you can get weird errors.
+Using zope.testbrowser to do page testing is easier to write and understand 
+than using http() calls because you get easy access to links and form controls 
+in the page. For example, you can check whether a link is present, and click on 
+that link to go to some other page. zope.testbrowser can be tricky to use 
+sometimes though since you can get weird errors.
 
-In the pagetests there is already a 'browser' object set up ready to use. It 
-has ``browser.handleErrors = False``, to give you a traceback instead of a simple 
-500 error message if something goes wrong. It will also give a traceback for 
-404 pages and pages you don't have permission to view.
+In the pagetests, there is already a 'browser' object set up ready to use. The 
+object is configured using ``browser.handleErrors = False``, to give you a 
+traceback instead of a simple 500 error message if something goes wrong. It 
+will also give a traceback for 404 pages and pages you don't have permission to 
+view.
 
 How to write testbrowser tests
 ==============================
 
-Read lib/zope/testbrowser/README.txt or the `online version <https://pypi.org/project/zope.testbrowser/#detailed-documentation>`_, 
+Read ``lib/zope/testbrowser/README.txt`` or the `online version <https://zopetestbrowser.readthedocs.io/en/latest/>`_, 
 to find out everything you can do with the testbrowser.
 
-Read lib/canonical/launchpad/testing/pages.py to find out how you can use page 
-testing helpers.
+Read ``lib/canonical/launchpad/testing/pages.py`` to find out how you can use 
+page testing helpers.
 
-Read lib/canonical/launchpad/pagetests/README.txt to find out how to run page 
-tests and the available configured users. These are the highlights.
+Read ``lib/canonical/launchpad/pagetests/README.txt`` to find out how to run 
+page tests and the available configured users. These are the highlights.
 
 -   Open a page using browser.open():
 
@@ -60,20 +60,19 @@ tests and the available configured users. These are the highlights.
             ...
             Unauthorized...
     
-You can find many pagetest helpers in ``lib/canonical/launchpad/testing/pages.py``,
-so before starting to write any pagetest check that file out.
-
+To get a better idea of how a pagetest check should look, check out the the 
+pagetest helpers in ``lib/canonical/launchpad/testing/pages.py``.
 
 Using multiple browsers
 -----------------------
 
-If you test multiple HTTP situations -- such as logging in as different 
-people -- in the same file, you need to use different Browser() objects. There 
-are three available automatically:
+If you test different sessions -- such as logging in as different people -- in 
+the same file, you need to use different Browser() objects. There are three 
+available automatically:
 
--   admin_browser (a Launchpad administrator)
--   user_browser (someone with no special privileges)
--   anon_browser (visiting Launchpad while logged out)
+-   ``admin_browser`` (a Launchpad administrator)
+-   ``user_browser`` (someone with no special privileges)
+-   ``anon_browser`` (visiting Launchpad while logged out)
 
 To create another one:
 
@@ -91,9 +90,9 @@ Or to test as a particular logged-in person:
 Testing the contents of the page
 --------------------------------
 
--   To check the contents of the page, print browser.contents. Unfortunately the 
-    expected output can't begin with '...', so we need to include the start of the 
-    page.
+-   To check the contents of the page, print ``browser.contents``. 
+    Unfortunately the expected output can't begin with '...', so we need to 
+    include the start of the page.
 
     .. code::
 
@@ -102,8 +101,9 @@ Testing the contents of the page
             ...No events in the next two weeks...
     
 -   Often we want to make sure something isn't in a page. For this we can use 
-    'foo' not in browser.contents, but if we want to ensure that a link or form
-    control isn't visible, there's a better way; using ``getLink()``. For example:
+    ``foo`` not in ``browser.contents``, but if we want to ensure that a link 
+    or form control isn't visible, there's a better way; using ``getLink()``. 
+    For example:
 
     .. code::
 
@@ -117,7 +117,7 @@ Testing the contents of the page
             True
 
     In some cases it is more appropriate to get the link by its URL, using the 
-    url= parameter. For example:
+    ``url=`` parameter. For example:
 
     .. code::
 
@@ -163,10 +163,10 @@ When writing or debugging a page test, you may wonder, "What does the page
 really look like in a browser at this point?" You could walk through the entire 
 test manually, but there is an easier way.
 
-First, edit your config/default/launchpad.conf file and change the ``dbname`` in 
-your <canonical default> section to be 'launchpad_ftest'.
+First, edit your ``config/default/launchpad.conf`` file and change the ``dbname`` 
+in your <canonical default> section to be ``launchpad_ftest``.
 
-Next, stick a pdb break point at the place in your page test that you want to 
+Next, add a pdb break point at the place in your page test that you want to 
 examine:
 
 .. code::
@@ -174,7 +174,7 @@ examine:
      >>> import pdb; pdb.set_trace() 
 
 Now run the page test as you normally would using bin/test. When you hit the 
-break point, go to a different shell and do 'make run'. Because of your ``dbname`` 
+break point, go to a different shell and do ``make run``. Because of your ``dbname`` 
 change, this will run the site against the testing database, so all the state 
 your page test has built up will be available to you. Now poke around in your 
 browser all you want.
@@ -208,7 +208,7 @@ the default values.
 Organizing tests into stories
 -----------------------------
 
-Prefer standalone tests and short stories rather than long stories. source
+Prefer standalone tests and short stories rather than long stories.
 
 Unresolved issues
 -----------------
