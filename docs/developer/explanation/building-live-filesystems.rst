@@ -3,12 +3,12 @@
 Building live filesystems in Launchpad
 ======================================
 
-Launchpad now supports building :ref:`live filesystems <live-file-systems>` using 
-the ``livecd-rootfs`` package in Ubuntu. 
+Launchpad now supports building :ref:`live filesystems <live-file-systems>`
+using the ``livecd-rootfs`` package in Ubuntu. 
 
 This replaces an older system where we had a dedicated builder per architecture
-just for this purpose, and allows us to :spellexception:`parallelise` this task across the 
-Launchpad build farm instead.
+just for this purpose, and allows us to :spellexception:`parallelise` this task
+across the Launchpad build farm instead.
 
 LiveFS and LiveFSBuild
 ----------------------
