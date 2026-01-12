@@ -72,7 +72,7 @@ especially important given the interactions between visibility and mutability
 rules of multiple objects found on many Launchpad pages.
 
 You can learn more about how we use it in
-:doc:`Handling security policies <../how-to/security>`.
+:doc:`Handling security policies <../../how-to/security>`.
 
 Permissions
 -----------

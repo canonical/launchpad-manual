@@ -1,7 +1,7 @@
 Navigation menus
 ================
 
-.. include:: ../../includes/important_not_revised.rst
+.. include:: ../../../includes/important_not_revised.rst
 
 When linking different views in Launchpad page templates it is recommend
 to use the NavigationMenu attached to each facet of that object.

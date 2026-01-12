@@ -1,7 +1,7 @@
 The Launchpad JavaScript Build System
 =====================================
 
-.. include:: ../../includes/important_not_revised.rst
+.. include:: ../../../includes/important_not_revised.rst
 
 **Current in process of deprecating, see combo loader docs below.**
 

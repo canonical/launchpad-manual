@@ -3,7 +3,7 @@
 Live Database Patching
 ======================
 
-.. include:: ../../includes/important_not_revised.rst
+.. include:: ../../../includes/important_not_revised.rst
 
 This page documents the schema changes that can be deployed on
 Launchpad's replicated PostgreSQL database.

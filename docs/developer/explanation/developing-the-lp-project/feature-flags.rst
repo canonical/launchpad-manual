@@ -1,7 +1,7 @@
 Feature Flags
 =============
 
-.. include:: ../../includes/important_not_revised.rst
+.. include:: ../../../includes/important_not_revised.rst
 
 **Feature Flags allow Launchpad's configuration to be changed while it's
 running, and for particular features or behaviours to be exposed to only

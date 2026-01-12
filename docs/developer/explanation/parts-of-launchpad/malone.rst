@@ -2,7 +2,7 @@
 About Malone
 ============
 
-.. include:: ../../includes/important_out_of_date.rst
+.. include:: ../../../includes/important_out_of_date.rst
 
 The world has many excellent bug tracking tools already. It would not make
 sense to create another bug tracker unless the vision behind that software

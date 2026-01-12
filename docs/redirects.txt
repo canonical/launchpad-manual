@@ -87,9 +87,9 @@ user/AnswerTrackerDocumentation	user/explanation/answers/answer-tracker/
 developer/Translations/LanguagePackSchedule developer/reference/services/automatic-translations-export
 user/Packaging/BuilderSpecs user/reference/packaging/builder-specs/
 developer/LEP/FeatureFlags developer/explanation/developing-the-lp-project/feature-flags
-developer/Translations/Specs/UpstreamImportIntoUbuntu/FixingIsImported/setCurrentTranslation developer/explanation/engineering-overview-translations/
+developer/Translations/Specs/UpstreamImportIntoUbuntu/FixingIsImported/setCurrentTranslation developer/explanation/parts-of-launchpad/engineering-overview-translations/
 developer/Code/HowToUseCodehostingLocally developer/how-to/codehosting-locally/
-developer/Database/Performance developer/explanation/database-performance/
+developer/Database/Performance developer/explanation/database/database-performance/
 developer/DatabaseSetup developer/how-to/database-setup/
 developer/ExceptionGuidelines developer/how-to/exceptions/
 developer/Help help/

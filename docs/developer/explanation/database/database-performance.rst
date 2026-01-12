@@ -1,7 +1,7 @@
 Database performance
 ====================
 
-.. include:: ../../includes/important_not_revised.rst
+.. include:: ../../../includes/important_not_revised.rst
 
 Poor query times - looks right, takes ages
 ------------------------------------------
