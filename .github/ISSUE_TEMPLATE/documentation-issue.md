@@ -5,9 +5,6 @@ title: ''
 labels: ''
 assignees: ''
 
----
-
-title: ''
 body:
   - type: markdown
     attributes:
@@ -38,3 +35,4 @@ body:
         - Any error messages or screenshots you can provide would be very helpful.
     validations:
       required: true
+---
