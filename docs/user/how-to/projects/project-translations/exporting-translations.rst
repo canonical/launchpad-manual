@@ -5,7 +5,7 @@ Export translations
 
 .. include:: /includes/important_not_revised_help.rst
 
-You can export your project's translations from Launchpad but requesting a 
+You can export your project's translations from Launchpad by requesting a 
 one-off download through the web interface.
 
 Committing translations to a Git branch
@@ -126,5 +126,5 @@ Choose the latter option for a partial export.
 Next steps
 ----------
 
-Launchpad works with Git to host, mirror and catalogue to branches of your 
-project's code. Let's take a look at :ref:`hosting code with Launchpad <host-your-project-code-on-launchpad>`.
+Launchpad offers git hosting for your projects. Let's take a look at how you 
+can :ref:`host code on Launchpad <host-your-project-code-on-launchpad>`.
