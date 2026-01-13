@@ -21,11 +21,10 @@ How to write testbrowser tests
 Read ``lib/zope/testbrowser/README.txt`` or the `online version <https://zopetestbrowser.readthedocs.io/en/latest/>`_, 
 to find out everything you can do with the testbrowser.
 
-Read ``lib/canonical/launchpad/testing/pages.py`` to find out how you can use 
+Read ``lib/lp/testing/pages.py`` to find out how you can use 
 page testing helpers.
 
-Read ``lib/canonical/launchpad/pagetests/README.txt`` to find out how to run 
-page tests and the available configured users. These are the highlights.
+These are the key points on running page tests:
 
 -   Open a page using browser.open():
 
@@ -61,7 +60,7 @@ page tests and the available configured users. These are the highlights.
             Unauthorized...
     
 To get a better idea of how a pagetest check should look, check out the the 
-pagetest helpers in ``lib/canonical/launchpad/testing/pages.py``.
+pagetest helpers in ``lib/lp/testing/pages.py``.
 
 Using multiple browsers
 -----------------------
@@ -163,8 +162,8 @@ When writing or debugging a page test, you may wonder, "What does the page
 really look like in a browser at this point?" You could walk through the entire 
 test manually, but there is an easier way.
 
-First, edit your ``config/default/launchpad.conf`` file and change the ``dbname`` 
-in your <canonical default> section to be ``launchpad_ftest``.
+First, edit your ``configs/development/launchpad-lazr.conf`` file and change 
+the ``dbname`` in your <canonical default> section to be ``launchpad_ftest``.
 
 Next, add a pdb break point at the place in your page test that you want to 
 examine:
