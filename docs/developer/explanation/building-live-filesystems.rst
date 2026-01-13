@@ -50,8 +50,8 @@ There are some security issues surrounding live filesystem builds. Firstly,
 they are a very easy way to consume lots of time on the Launchpad build farm, 
 so only members of the `launchpad-livefs-builders <https://launchpad.net/~launchpad-livefs-builders>`_ 
 team can create new LiveFS or LiveFSBuild objects. Secondly, building a live 
-filesystem involves executing code from packages in the source archive; 
-therefore, in order to build live filesystems on devirtualized builders (which 
-support more architectures than virtualized builders at present, but have no 
-effective sandboxing, so may only be used by trusted people), both the LiveFS 
-parameters and the source archive must be devirtualized.
+filesystem involves executing code from packages in the source archive. 
+Therefore, in order to build live filesystems on devirtualized builders (which 
+, occasionally, support architectures not supported by virtualized builders, 
+but have no effective sandboxing, so may only be used by trusted people), both 
+the LiveFS parameters and the source archive must be devirtualized.
