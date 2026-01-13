@@ -786,6 +786,7 @@ ViewTests
 virt
 virtualenv
 virtualenvs
+virtualization
 virtualized
 VM
 VM
