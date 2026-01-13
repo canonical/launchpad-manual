@@ -15,7 +15,7 @@ The trust that other people put in your Launchpad identity is
 no more important than when they use code that you've uploaded to Launchpad.
 
 An SSH key secures the connection between your computer and
-Launchpad while you're pushing Bazaar branches up to Launchpad.
+Launchpad when you push code to it.
 
 Creating the key
 ----------------
@@ -40,7 +40,7 @@ Launchpad supports RSA, ECDSA and ED25519 key types.
 
       -   Once OpenSSH is installed, stay in the terminal and type::
 
-              ssh-keygen -t ed25519
+              ssh-keygen -a 100 -t ed25519
 
       -   When prompted, press Enter to accept the default
           file name for your key.
@@ -96,12 +96,12 @@ Launchpad supports RSA, ECDSA and ED25519 key types.
 
       -   Follow the procedure in the 'Windows (PuTTY)' section.
 
-      -   Add ``BZR_SSH`` as an environment variable with the full path to
+      -   Add ``GIT_SSH`` as an environment variable with the full path to
           ``plink.exe`` or just ``plink`` if that is already in your ``PATH``.
 
       -   Close all existing bash terminals and open a new terminal.
 
-      -   Run ``plink INSERT_YOUR_USERNAME_HERE@bazaar.launchpad.net`` and 
+      -   Run ``plink INSERT_YOUR_USERNAME_HERE@git.launchpad.net`` and 
           accept 'yes' to store the server's host key
 
 Registering the key with Launchpad
@@ -138,7 +138,7 @@ To do this:
 .. note::
 
     You need to upload the public key file (with ``.pub``) to Launchpad,
-    and to specify the private-key file (with no ``.pub``)
+    and specify the private-key file (with no ``.pub``)
     in the SSH configuration.
 
 Support for FIDO2 SSH Keys
