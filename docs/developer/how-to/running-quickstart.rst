@@ -15,7 +15,7 @@ own machine, using a `LXD
 `install <https://canonical.com/lxd/install>`_ LXD as a snap. 
 
 After you've done this, you may want to read about
-:doc:`../explanation/navigating`.
+:doc:`../explanation/setting-up-launchpad/navigating`.
 
 Supported operating systems
 ===========================

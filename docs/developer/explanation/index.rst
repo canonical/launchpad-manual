@@ -9,7 +9,7 @@ Explore these pages for an overview of the concepts and motivations behind the L
 .. toctree::
    :maxdepth: 2
 
-   ideas-behind-launchpad
+   ideas-behind-launchpad/ideas-behind-launchpad
 
 Setting up and understanding Launchpad
 ---------------------------------------
@@ -19,7 +19,7 @@ Understanding how to install and configure Launchpad, navigate the codebase, and
 .. toctree::
    :maxdepth: 2
 
-   setting-up-and-understanding-launchpad
+   setting-up-launchpad/setting-up-and-understanding-launchpad
 
 Best practices for development
 -------------------------------
@@ -29,7 +29,7 @@ By using these principled approaches to development, you can improve Launchpad i
 .. toctree::
    :maxdepth: 2
 
-   best-practices-for-development
+   best-practices-for-development/best-practices-for-development
 
 Developing the Launchpad project
 --------------------------------
@@ -39,7 +39,7 @@ These pages help explain important aspects of the developer experience.
 .. toctree::
    :maxdepth: 2
 
-   developing-the-launchpad-project
+   developing-the-lp-project/developing-the-launchpad-project
 
 Deploying Launchpad changes
 ---------------------------
@@ -49,7 +49,7 @@ These pages help explain the important aspects of deploying Launchpad changes.
 .. toctree::
    :maxdepth: 1
 
-   deploying-launchpad-changes
+   deploying-launchpad-changes/deploying-launchpad-changes
 
 Parts of Launchpad
 ------------------
@@ -59,7 +59,7 @@ After understanding the goals and approaches of the project, dive into the detai
 .. toctree::
    :maxdepth: 2
 
-   parts-of-launchpad
+   parts-of-launchpad/parts-of-launchpad
 
 JavaScript
 ----------
@@ -69,7 +69,7 @@ These pages explain how to develop, test, and build using the YUI Test framework
 .. toctree::
    :maxdepth: 2
 
-   javascript
+   javascript/javascript
 
 Static assets
 -------------
@@ -79,7 +79,7 @@ Launchpad's visual style is controlled by CSS and images that you set up and bui
 .. toctree::
    :maxdepth: 2
 
-   static-assets
+   static-assets/static-assets
 
 Database
 --------
@@ -89,4 +89,4 @@ This section gives an overview of how Launchpad interacts with the PostgreSQL da
 .. toctree::
    :maxdepth: 2
 
-   database
+   database/database

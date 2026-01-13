@@ -14,7 +14,7 @@ own machine, using a `LXD
 isolate it from the rest of your system.
 
 After you've done this, you may want to read about
-:doc:`../explanation/navigating`.
+:doc:`../explanation/setting-up-launchpad/navigating`.
 
 .. _supported_operating_systems:
 
@@ -174,8 +174,8 @@ Then:
    $ curl https://git.launchpad.net/launchpad/plain/utilities/rocketfuel-setup >rocketfuel-setup
 
 Read through the rocketfuel-setup script at this point and make sure you're
-OK with what it's going to do.  (See :doc:`../explanation/running-details` if you want to
-know more.)
+OK with what it's going to do.  (See :doc:`../explanation/setting-up-launchpad/running-details` 
+if you want to know more.)
 
 .. code-block:: shell-session
 
