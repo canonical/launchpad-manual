@@ -65,16 +65,12 @@ kicked off.
 
 -  scanner
 
-   -  
-
-      -  revision email jobs
+   -  revision email jobs
 
 -  scalability concerns - efficient storage and responsiveness [shared
    with LOSAs]
 
-   -  
-
-      -  stacking
+   -  stacking
 
 -  reclamation cleanup jobs
 -  backup support scripts
@@ -95,10 +91,8 @@ Code that is executed as part of the Launchpad web application. The core concept
 -  branch gardening
 -  linking to other launchpad apps (bugs, blueprints, rosetta (soyuz
    soon))
-
-   -  
-
-      -  translation jobs [rosetta team primarily responsible for this]
+   
+   -  translation jobs [rosetta team primarily responsible for this]
 
 -  asynchronous generation of review diffs
 
