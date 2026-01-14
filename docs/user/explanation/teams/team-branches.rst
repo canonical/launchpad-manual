@@ -9,9 +9,6 @@ The combination of git hosting and teams gives you a very powerful capability
 to collaborate on code. Essentially, you can push a branch into a shared space, 
 and anyone on that team can then commit to the branch.
 
-This means that you can use git in the same way that you would use something 
-like SVN, i.e. centrally hosting a branch that many people commit to.
-
 Git checkouts
 ----------------
 
@@ -23,10 +20,9 @@ already there. Instead, it must extend that work. However, this is not
 usually the most optimal arrangement because each "push" can change the
 history of the branch in a dramatic way.
 
-To get a more SVN-like experience, we usually recommend that people use
-git ``checkouts`` of a team branch. A checkout is essentially JUST
-the working code tree, without all the branch history, because the
-branch history stays on the central server.
+We usually recommend that people use git ``checkouts`` of a team branch. A 
+checkout is essentially JUST the working code tree, without all the branch 
+history, because the branch history stays on the central server.
 
 When using Git in this fashion it behaves very similarly to SVN. You
 cannot commit locally, because the knowledge of your branch history is
@@ -43,8 +39,7 @@ a shared branch of GNU Hello called "newfeature" using the following command:
 
 ::
 
-   % git push git+ssh://<me>@git.launchpad.net/~test-team/gnuhello/newfeature
-   Created new branch.
+   % git push git+ssh://<me>@git.launchpad.net/~test-team/gnuhello newfeature.
 
 Now, it is possible for anybody else to branch from that branch. It is
 also possible for anyone in the test-team to push an updated version of
