@@ -18,7 +18,7 @@ New to Launchpad? Learn about the infrastructure behind daily builds.
 
 -  :ref:`Launchpad help <what-is-launchpad>`: learn about Launchpad, right from the
    basics
--  :ref:`Hosting and importing code in Launchpad <work-with-code-hosted-launchpad>`: host Bazaar
+-  :ref:`Hosting and importing code in Launchpad <host-a-git-repository-on-launchpad>`: host git
    branches, import code from elsewhere, run code reviews
 -  :ref:`Import code from somewhere else <import-code-into-launchpad>`
 -  :ref:`Personal Package Archives <personal-package-archive>`: create your own Ubuntu
