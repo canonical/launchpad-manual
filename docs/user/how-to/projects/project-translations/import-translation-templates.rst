@@ -13,7 +13,7 @@ If you're unfamiliar with ``.pot`` files or GNU gettext in general, `see
 the gettext
 manual <http://www.gnu.org/software/gettext/manual/gettext.html>`__.
 
-You can importing translation templates by `Manually uploading .pot files <#manual-translation-template-imports>`_ 
+You can import translation templates by `Manually uploading .pot files <#manual-translation-template-imports>`_ 
 using the web interface.
 
 Name template
