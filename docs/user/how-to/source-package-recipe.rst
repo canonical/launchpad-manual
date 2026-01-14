@@ -51,7 +51,8 @@ Similarly, if there's a branch in Launchpad that contains packaging
 information for your software, you can use that.
 
 If there's no existing packaging, either for Debian or Ubuntu, you'll need to 
-create your own. You should `read the Ubuntu community's guide to packaging <http://packaging.ubuntu.com/html/>`_ to get started.
+create your own. You should `read the Ubuntu community's guide to packaging <https://canonical-ubuntu-packaging-guide.readthedocs-hosted.com/en/latest/>`_ 
+to get started.
 
 **Note:** you need to make sure that the build process specified by your
 packaging and deal with what's in your branch. For example, if you work
@@ -83,11 +84,13 @@ program.
 Getting git-build-recipe
 ------------------------
 
-As of Ubuntu 16.04, you can `install the git-build-recipe package <http://apt.ubuntu.com/p/git-build-recipe>`_ 
-to run tests locally.
+You can install the git-build-recipe package to run tests locally. Run::
 
-On previous releases of Ubuntu, you can get the version running on Launchpad's 
-builders from the `buildd PPA <https://launchpad.net/~canonical-is-sa/+archive/ubuntu/buildd>`_.
+   sudo apt update
+   sudo apt install git-build-recipe   
+
+On releases of Ubuntu predating 16.04, you can get the version running on 
+Launchpad's builders from the `buildd PPA <https://launchpad.net/~canonical-is-sa/+archive/ubuntu/buildd>`_.
 
 Writing a basic recipe
 ----------------------
@@ -107,7 +110,7 @@ Open your text editor and enter:
 
 ::
 
-   # git-build-recipe format 0.4 deb-version {debupstream}-0~{revtime}+{revtime:packaging}
+   # git-build-recipe format 0.4 deb-version {debupstream}-0~{revtime}
    lp:wikkid
    merge packaging lp:~thumper/wikkid/debian
 
