@@ -5,31 +5,30 @@ Team branches
 
 .. include:: /includes/important_not_revised_help.rst
 
-The combination of Bazaar branch hosting and teams gives you a very
-powerful capability to collaborate on code. Essentially, you can push a
-branch into a shared space, and anyone on that team can then commit to
-the branch.
+The combination of git hosting and teams gives you a very powerful capability 
+to collaborate on code. Essentially, you can push a branch into a shared space, 
+and anyone on that team can then commit to the branch.
 
-This means that you can use Bazaar in the same way that you would use
-something like SVN, i.e. centrally hosting a branch that many people
-commit to.
+This means that you can use git in the same way that you would use something 
+like SVN, i.e. centrally hosting a branch that many people commit to.
 
-Bazaar checkouts
+Git checkouts
 ----------------
 
-It is possible for multiple people in a team each to ``bzr push`` their branches to the same location in the team space. For example, ``~team/gnuhello/newfeature``.
+It is possible for multiple people in a team each to ``git push`` their 
+branches to the same location in the team space. For example, ``~team/gnuhello/newfeature``.
 
-Bazaar will make sure that each push doesn't overwrite the work that is
+Git will make sure that each push doesn't overwrite the work that is
 already there. Instead, it must extend that work. However, this is not
 usually the most optimal arrangement because each "push" can change the
 history of the branch in a dramatic way.
 
 To get a more SVN-like experience, we usually recommend that people use
-Bazaar ``checkouts`` of a team branch. A checkout is essentially JUST
+git ``checkouts`` of a team branch. A checkout is essentially JUST
 the working code tree, without all the branch history, because the
 branch history stays on the central server.
 
-When using Bazaar in this fashion it behaves very similarly to SVN. You
+When using Git in this fashion it behaves very similarly to SVN. You
 cannot commit locally, because the knowledge of your branch history is
 on the remote server. But it does mean that you use less space locally,
 because you don't need to store all of that history locally too.
@@ -37,14 +36,14 @@ because you don't need to store all of that history locally too.
 Setting up a team branch
 ------------------------
 
-To create a team branch, simply push a branch into a team space. For
-example, if you are still in the ``gnuhello`` branch you created during the earlier example, and you are a member of
-the ``test-team`` team, then you could create a shared branch of GNU Hello called
-"newfeature" using the following command:
+To create a team branch, simply push a branch into a team space. For example, 
+if you are still in the ``gnuhello`` branch you created during the earlier 
+example, and you are a member of the ``test-team`` team, then you could create 
+a shared branch of GNU Hello called "newfeature" using the following command:
 
 ::
 
-   % bzr push bzr+ssh://<me>@bazaar.launchpad.net/~test-team/gnuhello/newfeature
+   % git push git+ssh://<me>@git.launchpad.net/~test-team/gnuhello/newfeature
    Created new branch.
 
 Now, it is possible for anybody else to branch from that branch. It is
@@ -55,10 +54,10 @@ branch:
 
 ::
 
-   % bzr checkout bzr+ssh://<me>@bazaar.launchpad.net/~test-team/gnuhello/newfeature
+   % git checkout git+ssh://<me>@git.launchpad.net/~test-team/gnuhello/newfeature
 
-Now, whenever they commit, Bazaar will first make sure they are up to
-date. If not, they can get up to date with ``bzr update`` and then commit.
+Now, whenever they commit, Git will first make sure they are up to
+date. If not, they can get up to date with ``git pull`` and then commit.
 
 Launchpad makes it extremely easy to administer the set of people who
 can commit to a branch like this, because they are simply the members of
