@@ -11,6 +11,5 @@ Work with code hosted on launchpad
     Host your project's code on Launchpad <host-your-code-on-launchpad>
     Link code to bug reports and blueprints <linking-code-to-bug-reports-and-blueprints>
     Host a Git repository on Launchpad <git-hosting-on-launchpad>
-    Import code into Launchpad <import-code-into-launchpad>
     Create and maintain a personal branch in Launchpad <create-and-maintain-personal-branch>
     Create and manage a merge proposal <create-and-manage-a-merge-proposal>

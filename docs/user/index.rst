@@ -24,7 +24,7 @@ In this documentation
 ===================    ==================
 
 ===================    ==================
-Code hosting:          :ref:`Host your project <host-your-project-code-on-launchpad>` • :ref:`Import code <import-code-into-launchpad>` • :ref:`Link code to bug reports <link-code-to-bug-reports-and-blueprints>`
+Code hosting:          :ref:`Host your project <host-your-project-code-on-launchpad>` • :ref:`Import code <code-imports>` • :ref:`Link code to bug reports <link-code-to-bug-reports-and-blueprints>`
 
 Packaging:             :ref:`What is a PPA <personal-package-archive>` • :ref:`Install software from PPAs <install-software-from-ppas>` • :ref:`Building a source package <building-a-source-package>` 
 

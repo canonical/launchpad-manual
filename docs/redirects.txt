@@ -37,7 +37,7 @@ user/Bugs/BugAttachments	user/reference/bugs/bug-attachment/
 user/YourAccount/Karma	user/explanation/your-account-karma/
 user/YourAccount/ImportingYourPGPKey	user/how-to/import-openpgp-key/
 user/YourAccount/ContactingPeople	user/explanation/collaborating-using-launchpad/
-user/VcsImports	user/how-to/work-with-code-hosted-on-launchpad/import-code-into-launchpad/
+user/VcsImports	user/explanation/working-with-code/code-imports/
 user/TurningABugIntoAQuestion	user/reference/bugs/bug-to-question/
 user/Translations/ReusingPackagedTranslations	user/reference/translations/reusing-packaged-translations/
 user/Translations/PartialPOExport	user/explanation/translating-with-launchpad/partial-exports/
