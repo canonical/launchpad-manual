@@ -85,6 +85,7 @@ castable
 CategoryTesting
 CategoryTipsAndTricks
 cd
+cdimage
 centralized
 Centralized
 cfg
@@ -180,6 +181,7 @@ Desc
 dev
 devel
 devel
+devirtualized
 devops
 devpad
 dh
@@ -193,6 +195,7 @@ Distro
 distro
 distros
 distroseries
+DistroArchSeries
 DistroSeries
 distutils
 Diátaxis
@@ -235,6 +238,7 @@ fastnodowntime
 favicon
 favicons
 filesystem
+filesystems
 FIXME
 FK
 fk
@@ -366,6 +370,10 @@ libgit
 lifecycle
 listdir
 ListRangeFactory
+livefs
+LiveFS
+livefses
+LiveFSBuild
 LivePatching
 LiveScript
 LocationError
@@ -608,6 +616,7 @@ rsyncing
 RTD
 ruleset
 runtime
+sandboxing
 SafariWebContent
 sampledata
 sbuild
@@ -785,6 +794,7 @@ urllib
 urls
 userbase
 UtcDateTimeCol
+Utopic
 validator
 Validators
 validators
@@ -795,6 +805,7 @@ ViewTests
 virt
 virtualenv
 virtualenvs
+virtualization
 virtualized
 VM
 VM

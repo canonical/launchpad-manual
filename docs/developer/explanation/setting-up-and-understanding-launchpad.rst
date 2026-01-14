@@ -11,3 +11,4 @@ Setting up and understanding Launchpad
    launchpad-ppa
    testing
    concepts
+   building-live-filesystems
