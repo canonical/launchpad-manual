@@ -6,62 +6,11 @@ Import your project's translations
 .. include:: /includes/important_not_revised_help.rst
 
 Just as with translation templates, you can import translation files
-(``.po``) in two ways:
+(``.po``) by uploading a tarball of templates and translation files through the
+web interface.
 
--  from your series' default Bazaar branch
--  or by uploading a tarball of templates and translation files through
-   the web interface.
-
-If you already have your translation files in a Bazaar branch (or :ref:`git
-branch, or CVS or Subversion repository <code-imports>`), you may find
-that to be the easiest source for importing your translation files.
-
-.. _import-translation-from-bazaar-branch:
-
-Imports from a Bazaar branch
-----------------------------
-
-You can ask Launchpad to automatically import your translation templates
-from your project's official Bazaar branches hosted in Launchpad.
-
-You can make either one-off or continuous imports of translation files
-in a Bazaar branch. Which you choose will most likely depend on whether
-you expect to make frequent translations outside of Launchpad.
-
--  **Continuous**: on your project's translations settings page choose
-   ``import template and translation files`` to automatically import any
-   ``.po`` that are in the branch, whenever Launchpad imports ``.pot`` files
-   from the branch.
--  **One off:** go to the ``Request Bazaar Import`` page to request a
-   one-time import of all ``.pot`` and ``.po`` files in the branch.
-
-Activating automatic translation imports for Bazaar branches
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-First off, you -- the project owner -- need to link each project series,
-for which you want to automatically import translation templates, to its
-Bazaar branch. When a project is registered in Launchpad, its ``trunk``
-series is created by default.
-
-1. Visit the project series overview page and click ``Link to branch``.
-2. Next, select the branch and click ``Update``.
-
-If you've previously linked the series to a branch, you can skip
-straight to enabling automatic template imports.
-
-1. Visit the translations overview page for the series and click
-   ``Settings``.
-2. Next, select ``Import template files``, then click ``Save settings``.
-
-The other available setting is explained further below under
-:literal:`Importing translations`.
-
-The order in which you complete the two stages does matter to an extent:
-the ``Translations Settings`` form shows you the branch associated with
-the series, making it easier to confirm that you've selected the branch.
-
-Once you've completed both stages, Launchpad will schedule its first
-import to take place within the next 15 minutes.
+If you already have your translation files in a git branch, you may find that 
+to be the easiest source for importing your translation files.
 
 Adding and updating templates
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -96,76 +45,18 @@ will be used:
 The template name is derived from the domain by replacing underscores
 (_) with dashes (-).
 
-Automatic approval
-^^^^^^^^^^^^^^^^^^
-
-One of the big advantages of importing templates directly from your
-series Bazaar branch is that your templates may be automatically
-approved.
-
-To assure automatic approval, these conditions must be met:
-
--  The translation domain must be specified in the path (as described
-   above).
--  The resulting template name must either match the name of a template
-   in Launchpad Translations, or,
--  If the template is to be added, no template entry must exist in
-   Launchpad Translations that does not have a matching template file in
-   the branch.
-
-The latter condition is there to avoid creating new template entries
-when in reality the existing template entry was to be renamed. This and
-any other case will not be approved automatically and must be reviewed
-by a queue admin.
-
-**Exception:** In the simple case of having only one template file in
-the branch and one entry in Launchpad Translations, these two are always
-matched and the translation domain attribute of the Launchpad
-Translations entry is updated with whatever the file name provides. The
-template name is never updated as it identifies the template in the UI
-and is also used in URLs.
-
-Importing translations
-~~~~~~~~~~~~~~~~~~~~~~
-
-There are two ways to get translation files (``.po``) imported into
-Launchpad from your branch.
-
-1. On the ``Settings`` page choose ``Import template and translation files``
-   to import ``.po`` files in addition to ``.pot`` files whenever they are
-   updated in the branch.
-2. Or go to the ``Request Bazaar Import`` page to request a one-time
-   import of all ``.pot`` and ``.po`` files in the tree.
-
-One time upload of a tarball
-----------------------------
+Upload a tarball of your translation files
+------------------------------------------
 
 Visit your project's translations overview page and click the link for
 the ``trunk`` series. Upload a tarball containing your translation files
 ``preserving directory structure``.
 
-Naming translation files
-------------------------
-
-In order to ensure automatic approval and subsequent import of the
-translation files, two rules need to be followed, just like when
-uploading tarballs (See a sample directory layout :ref:`here <translation-import-policy>`).
-
-1. Place the files in the same directory as the template for which they
-   are meant. Each template and its translation files must have its own
-   directory. This rules out the first naming option for templates that
-   was mentioned above.
-2. Name the files according to the language code of the language they
-   contain. So for Spanish translations use ``es.po``.
-
-In addition to that, the normal :ref:`instructions for uploading
-translation files <translating-your-project>` apply.
-
 Avoiding common problems
 ------------------------
 
-Your translations stand a better chance of an automatic, and therefore
-near instant, import if you follow these guidelines:
+Your translations stand a better chance of a quick import import if you follow 
+these guidelines:
 
 -  Ensure consistent formatting: for example, if ``%d`` appears in an
    original English string, make sure it's also in each language's
