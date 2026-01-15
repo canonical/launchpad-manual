@@ -6,18 +6,18 @@ Host your project's code on Launchpad
 .. include:: /includes/important_not_revised_help.rst
 
 You can host your project's source code using Launchpad and Git. If
-you're new to git, or distributed version control in general, take a
+you're new to Git, or distributed version control in general, take a
 look at this `Git tutorial <https://gitimmersion.com/>`_ first.
 
-When you push a git branch to Launchpad, it's usually associated with
+When you push a Git branch to Launchpad, it's usually associated with
 a project that's also registered in Launchpad. Other people can then get
-hold of your git branch, modify it, and push their own version back
+hold of your Git branch, modify it, and push their own version back
 up to Launchpad for everyone to see.
 
 This guide shows you how to:
 
 -  tell the world your project uses Launchpad to host its source code
--  push your first git branch up to Launchpad
+-  push your first Git branch up to Launchpad
 -  set that branch as your project's development focus -- i.e. ``trunk``
 -  hand the branch over to a team, so several people can commit code to
    it.
@@ -34,7 +34,7 @@ First, :ref:`add your project to Launchpad <how-to-register-your-project>`.
 
 When you've done that, visit your your project's overview page. There
 you'll find a ``Configuration progress`` section in the right-hand column.
-Click ``Configure project branch`` and either select an existing branch or
+Click ``Code`` and either select an existing branch or
 set up a new one.
 
 Push a Git branch to your project
@@ -66,25 +66,10 @@ See your branch in place
 Once Git has pushed your branch to Launchpad, Launchpad will scan the
 revisions in your branch and:
 
--  list the branch on both `your own code overview page <https://code.launchpad.net/people/+me>`_ 
+-  list the repository on both `your own code overview page <https://code.launchpad.net/people/+me>`_ 
    and that of the project. 
 -  enable other people to download the branch and create their own version of it
 -  make the full revision history available in the source-code tab.
-
-Set your project's trunk branch
--------------------------------
-
-You can tell Launchpad which of your project's branches is the current
-focus of development; i.e. which is the trunk.
-
-Setting a trunk branch is useful to:
-
--  tell people which branch they should download
--  define which branch Launchpad should provide when someone enters ``git clone git+ssh://username@git.launchpad.net/your-project``
--  act as the default target when someone proposes a merge
-
-Visit your project's code overview page and follow the link inviting you
-to set a development focus.
 
 Let several people commit to the branch
 ---------------------------------------
@@ -93,10 +78,9 @@ If you want to enable several people to push code to the branch, you'll
 need to :ref:`create a team <creating-and-running-launchpad-teams>` and make 
 that the branch's owner.
 
-Go to your project main page (``https://launchpad.net/project-name``), select
-the ``Branches`` tab, then click the branch nick link you wish to edit to
-go to the ``branch overview page``. If you've followed the instructions
-above, its nick will be ``lp:your-project``.
+Go to your project's code page (``https://launchpad.net/project-name``), select
+the repository you want to change, select ``Change repository details``, and
+change ``Owner`` to the new team, and save the changes.
 
 Once on the branch's overview page, you'll see an information box on the
 right-hand side of the page. Click the pencil icon next to your name in
