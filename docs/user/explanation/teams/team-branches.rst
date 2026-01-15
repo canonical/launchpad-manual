@@ -52,9 +52,6 @@ branch:
 
    % git checkout git+ssh://<me>@git.launchpad.net/~test-team/gnuhello/newfeature
 
-Now, whenever they commit, Git will first make sure they are up to
-date. If not, they can get up to date with ``git pull`` and then commit.
-
 Launchpad makes it extremely easy to administer the set of people who
 can commit to a branch like this, because they are simply the members of
 the team.
@@ -98,15 +95,8 @@ commit their work to the shared team mainline branch for the feature,
 they simply make sure their checkout of that branch is up to date, then
 merge from their local branch, and commit to the central server.
 
-Branch statuses and links
--------------------------
-
-The freedom to create branches is wonderful for encouraging
-participation. With all those branches out there, it's good to tell
-people which ones are most relevant to them. Pick good names for your
-branches! Also, use the branch status - New, Experimental, Mature,
-Obsolete, etc - to provide a hint to potential collaborators or testers
-about the maturity of your code.
+Next steps
+----------
 
 One of the most useful things you can do is to link your branches to a
 description of the work they implement.
