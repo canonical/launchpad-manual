@@ -6,15 +6,12 @@ Host a Git repository on Launchpad
 .. include:: /includes/important_not_revised_help.rst
 
 Launchpad supports hosting `Git <http://git-scm.com/>`_ repositories.
-This is distinct from the :ref:`code import <import-code-into-launchpad>` facility that
-Launchpad has included for many years; it is now possible to host Git
-repositories on Launchpad directly.
-
 Git repositories use a somewhat different model from Bazaar branches:
 operations such as cloning happen at the level of a repository, but it
-is common for a single repository to contain many branches. This means
-that the Launchpad interface needs to be laid out somewhat differently
-to support that.
+is common for a single repository to contain many branches. 
+
+This means that the Launchpad interface needs to be laid out somewhat 
+differently to support that.
 
 Configure Git
 -------------

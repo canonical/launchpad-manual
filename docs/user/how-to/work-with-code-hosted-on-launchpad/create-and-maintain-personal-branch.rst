@@ -48,4 +48,4 @@ Next steps
 
 If you want to work on a project that uses an external git repository to host 
 its main line of development, you can ask Launchpad to 
-:ref:`import it into a git branch <import-code-into-launchpad>`.
+:ref:`import it into a git branch <code-imports>`.
