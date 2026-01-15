@@ -181,8 +181,6 @@ browser all you want.
 Once your page test ends (maybe because you've killed it), your browser session 
 will be unhappy because the launchpad_ftest database is torn down when bin/test 
 exits. Make sure you revert your launchpad.conf changes before you commit. 
-(`Barry Warsaw <https://blog.launchpad.net/meet-the-devs/meet-barry-warsaw>`_ 
-plans on making this easier when lazr config lands.)
 
 Dealing with old-style page tests
 ---------------------------------
@@ -212,6 +210,6 @@ Prefer standalone tests and short stories rather than long stories.
 Unresolved issues
 -----------------
 
-There's currently no equivalence to ``makepagetest.py`` in RF for creating 
-``zope.testbrowser`` tests, but there is another package, ``zope.testrecorder``, 
-which we could pull in.
+There's currently no equivalent to ``makepagetest.py`` (already deleted from
+codebase) in RF for creating `zope.testbrowser`` tests, but there is another 
+package, ``zope.testrecorder``, which we could pull in.

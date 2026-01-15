@@ -11,4 +11,3 @@ Best practices for development
    performance
    template-reuse
    security-policy
- 
