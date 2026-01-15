@@ -27,8 +27,10 @@ When you've come to a stage in your development where you're ready to
 merge your code into another branch registered against the project -
 such as its main line - you can make a public merge proposal.
 
-To do so, visit your branch's overview page, click ``Propose for merging
-into another branch``, then follow the on-screen instructions.
+To do so, go to your repository page in
+`code.launchpad.net/~ <https://code.launchpad.net/~>`_ and visit your branch's
+overview page. Click on the ``Propose for merging into another branch`` link,
+then follow the on-screen instructions.
 
 Now, Launchpad will notify the proposed target branch's owner of your
 proposal. Anyone viewing the overview page for your branch, or the
