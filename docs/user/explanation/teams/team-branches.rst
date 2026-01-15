@@ -5,7 +5,7 @@ Team branches
 
 .. include:: /includes/important_not_revised_help.rst
 
-The combination of git hosting and teams gives you a very powerful capability 
+The combination of Git hosting and teams gives you a very powerful capability 
 to collaborate on code. Essentially, you can push a branch into a shared space, 
 and anyone on that team can then commit to the branch.
 
@@ -39,7 +39,8 @@ a shared branch of GNU Hello called "newfeature" using the following command:
 
 ::
 
-   % git push git+ssh://<me>@git.launchpad.net/~test-team/gnuhello newfeature.
+   git remote add origin git+ssh://<me>@git.launchpad.net/~test-team/gnuhello 
+   git push origin newfeature
 
 Now, it is possible for anybody else to branch from that branch. It is
 also possible for anyone in the test-team to push an updated version of
