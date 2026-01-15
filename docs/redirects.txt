@@ -20,7 +20,7 @@ user/API/	user/how-to/launchpad-api/
 user/Packaging/UploadErrors.	user/explanation/packaging/package-upload-errors/
 user/Packaging/PPA/Uploading	user/how-to/packaging/ppa-package-upload/
 user/Feeds	user
-user/Translations/YourProject	user/reference/translations/
+user/Translations/YourProject	user/reference/translations/translation-best-practices/
 user/OpenID	user/how-to/using-openid/
 user/EmailInterface	user/how-to/work-with-bugs/use-email-interface/
 user/Teams	user/reference/teams/launchpad-teams/

@@ -16,4 +16,5 @@ Translations
      Plural forms for languages <language-plural-forms>
      Reusing translations <reusing-packaged-translations>
      PO templates <po-templates>
+     Translation best practices <translation-best-practices>
      Translation sharing and suggestions <translation-sharing-and-suggestions>
