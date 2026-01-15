@@ -5,7 +5,13 @@ Table of applications using the API
 .. include:: /includes/important_not_revised_help.rst
 
 
-Below are programs that use the :ref:`Launchpad APIs <launchpad-web-services-api>` (usually through the :ref:`launchpadlib <get-started-with-launchpadlib>` Python interface) that you can use as examples if you're starting out with Launchpad API programming. See also the :ref:`API Examples <use-the-python-api>` page, which contains code snippets specifically meant as examples, the `Clients <https://blog.launchpad.net/tag/api-clients>`_ page (into which this page should probably be merged), and the `Launchpad Extensions (lpx) <https://launchpad.net/lpx>`_ project group.
+Below are programs that use the :ref:`Launchpad APIs <launchpad-web-services-api>` 
+(usually through the :ref:`launchpadlib <get-started-with-launchpadlib>` Python interface) 
+that you can use as examples if you're starting out with Launchpad API programming. 
+See also the :ref:`API Examples <use-the-python-api>` page, which contains code 
+snippets specifically meant as examples, the `Clients <https://blog.launchpad.net/tag/api-clients>`_ 
+page (into which this page should probably be merged), and the `Launchpad Extensions (lpx) <https://launchpad.net/lpx>`_ 
+project group.
 
 .. list-table::
    :header-rows: 1
@@ -17,9 +23,6 @@ Below are programs that use the :ref:`Launchpad APIs <launchpad-web-services-api
      - Various scripts shipped with Launchpadlib, meant both as examples and as real-world tools.
      - In particular, see `lp-bug-ifier.py <http://git.launchpad.net/launchpadlib/tree/contrib/lp-bug-ifier.py?id=d637505d4f12a2da0f974639e779bbcc6bad87e4>`_ (expands raw bug numbers to show the bug summaries as fetched from Launchpad)
        and `close_bugs_from_commits.py <https://git.launchpad.net/launchpadlib/tree/contrib/close_bugs_from_commits.py?id=d637505d4f12a2da0f974639e779bbcc6bad87e4>`_ (the name is self-explanatory).
-   * - `bughugger <https://launchpad.net/bughugger>`_
-     - Py Gtk Client for Ubuntu bugs in Launchpad. Currently supports listing bugs by team, user, and package. Supports plugins for changing bugs.
-     - Still in development, join ~bughuggers
    * - `apport <http://launchpad.net/apport>`_
      - A crash detection system that automatically generates reports with debugging information from crashed programs and provides UI frontends for handling these reports.
      - See the script `apport-collect <https://git.launchpad.net/apport/tree/debian/local/apport-collect?id=02996dc1f74c1241e5e9f459ec2cff40ae68a175>`_, which adds apport data to existing bug reports.
@@ -32,15 +35,6 @@ Below are programs that use the :ref:`Launchpad APIs <launchpad-web-services-api
    * - `ubuntu-archive-tools <https://code.launchpad.net/~ubuntu-archive/ubuntu-archive-tools/>`_
      - A couple of small tools used by the Ubuntu archive administration team. Likely to grow as the Soyuz API gets richer.
      - Thanks to Colin Watson for pointing this one out.
-   * - `loco-directory <https://launchpad.net/loco-team-portal>`_
-     - LoCo Team organisation site
-     - 
    * - `MeMaker <http://launchpad.net/memaker>`_
      - Uses python-launchpadlib to update users mugshot on Launchpad.net.
      - 
-   * - `OpenHatch <http://openhatch.org/>`_
-     - A website for talking about your Free Software contributions and finding new ways to contribute
-     - We use launchpadlib to convert email addresses into lp.net usernames, and we pull information about your project experiences from your lp.net user page.
-   * - `Laika <https://launchpad.net/laika>`_
-     - "a guide dog for launchpad" -- prints a summary of the bugs you touched this week
-     -
