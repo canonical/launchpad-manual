@@ -50,7 +50,9 @@ branch:
 
 ::
 
-   % git checkout git+ssh://<me>@git.launchpad.net/~test-team/gnuhello/newfeature
+   git clone git+ssh://<me>@git.launchpad.net/~test-team/gnuhello
+   cd gnuhello
+   git switch newfeature
 
 Launchpad makes it extremely easy to administer the set of people who
 can commit to a branch like this, because they are simply the members of
