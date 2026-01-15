@@ -25,7 +25,9 @@ more detail later on.
 Watch the screencast
 --------------------
 
-If you prefer, you can `watch our screencast <http://youtu.be/_bG-SXNX9Ww>`_, which will take you through each of the steps you need to get a source package recipe up and running.
+If you prefer, you can `watch our screencast <http://youtu.be/_bG-SXNX9Ww>`_, 
+which will take you through each of the steps you need to get a source package 
+recipe up and running.
 
 Code in Launchpad
 =================
@@ -36,12 +38,7 @@ have uploaded to Launchpad (easier) or as :ref:`an import from elsewhere <code-i
 
 You can import code that is hosted anywhere on the internet, so long as
 Launchpad can reach it and it is available without needing a username
-and password. Launchpad can import code hosted in the following formats:
-
--  Bazaar
--  git
--  Subversion
--  CVS
+and password. Launchpad can only import code hosted in the git format.
 
 Packaging
 =========
@@ -53,7 +50,9 @@ information and you're pretty much sorted.
 Similarly, if there's a branch in Launchpad that contains packaging
 information for your software, you can use that.
 
-If there's no existing packaging, either for Debian or Ubuntu, you'll need to create your own. You should `read the Ubuntu community's guide to packaging <http://packaging.ubuntu.com/html/>`_ to get started.
+If there's no existing packaging, either for Debian or Ubuntu, you'll need to 
+create your own. You should `read the Ubuntu community's guide to packaging <https://canonical-ubuntu-packaging-guide.readthedocs-hosted.com/en/latest/>`_ 
+to get started.
 
 **Note:** you need to make sure that the build process specified by your
 packaging and deal with what's in your branch. For example, if you work
@@ -65,12 +64,12 @@ The recipe
 ----------
 
 The recipe is a simple description of what steps are needed to construct
-a package from your various Bazaar or Git branches. It specifies:
+a package from your various Git branches. It specifies:
 
 -  which branch to use: such as the project's trunk branch or an
    experimental branch
 -  where to find the packaging information: e.g. an Ubuntu source
-   package branch or some other Bazaar or Git branch
+   package branch or some other Git branch
 -  which version to give the package: this is important to allow users
    to upgrade to the stable version once it is released in their distro
 -  what to modify to make the source build properly.
@@ -79,21 +78,18 @@ Trying it out
 =============
 
 The best way to learn how to create a source package recipe is to try
-out a simple example. All you need is a text editor and the
-*bzr-builder* plugin for Bazaar, or the *git-build-recipe* program for
-Git.
-
-Getting bzr-builder
--------------------
-
-On recent Ubuntu releases you can `install the bzr-builder package <http://apt.ubuntu.com/p/bzr-builder>`_ to run tests locally.
+out a simple example. All you need is a text editor and the *git-build-recipe* 
+program.
 
 Getting git-build-recipe
 ------------------------
 
-As of Ubuntu 16.04, you can `install the git-build-recipe package <http://apt.ubuntu.com/p/git-build-recipe>`_ to run tests locally.
+You can install the git-build-recipe package to run tests locally. Run::
 
-On previous releases of Ubuntu, you can get the version running on
+   sudo apt update
+   sudo apt install git-build-recipe   
+
+On releases of Ubuntu predating 16.04, you can get the version running on 
 Launchpad's builders from the `buildd PPA <https://launchpad.net/~canonical-is-sa/+archive/ubuntu/buildd>`_.
 
 Writing a basic recipe
@@ -104,7 +100,8 @@ going to use the simplest: you use the project's trunk, which contains
 no packaging, and nest another branch that contains only packaging
 information.
 
-For this example, we'll use the `Wikkid wiki <https://launchpad.net/wikkid>`_ project.
+For this example, we'll use the `Wikkid wiki <https://launchpad.net/wikkid>`_ 
+project.
 
 The anatomy of a recipe
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -113,7 +110,7 @@ Open your text editor and enter:
 
 ::
 
-   # bzr-builder format 0.3 deb-version {debupstream}+{revno}+{revno:packaging}
+   # git-build-recipe format 0.4 deb-version {debupstream}-0~{revtime}
    lp:wikkid
    merge packaging lp:~thumper/wikkid/debian
 
@@ -127,7 +124,7 @@ This recipe is pretty straightforward to read, but let's look at each
 line in turn.
 
 The first line tells Launchpad which recipe version we're using (in this
-case it's 0.3), along with how we want to name the resultant package.
+case it's 0.4), along with how we want to name the resultant package.
 
 The next line specifies the code branch, using Launchpad's short name
 system.
@@ -149,25 +146,19 @@ running the Ubuntu version that you want to test against.
 
 **Note:** if you want to test a specific version, see the `Ubuntu guide <http://wiki.ubuntu.com/UsingDevelopmentReleases>`_.
 
-The bzr-builder plugin adds a *dailydeb* command to Bazaar.
-
 Let's try it out in your terminal:
 
 ::
 
-   $ bzr dailydeb --allow-fallback-to-native wikkid.recipe working-dir
+   $ git-build-recipe --allow-fallback-to-native wikkid.recipe working-dir
 
-This processes your recipe and creates a directory called
-``working-dir``, into which it places the resulting source tree and
-source package.
-
-Things are similar for git, but use ``git-build-recipe`` instead of
-``bzr dailydeb``.
+This processes your recipe and creates a directory called ``working-dir``, 
+into which it places the resulting source tree and source package.
 
 Testing the build
 ~~~~~~~~~~~~~~~~~
 
-If bzr-builder processed the recipe without any problems, you'll now
+If git-build processed the recipe without any problems, you'll now
 have a source package. Let's make sure it builds.
 
 First, you need to set up *pbuilder*, a tool that creates a clean,
