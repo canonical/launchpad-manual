@@ -46,5 +46,5 @@ Help for projects
 
 * :ref:`Overview of translating your project in Launchpad <translating-your-project>`
 
-  * :ref:`Read about translation licensing in Launchpad <translations-licensing-faq>`
-  * :ref:`Best practices guide to translating your project in Launchpad <launchpad-project-translation-best-practices>`
+* :ref:`Best practices guide to translating your project in Launchpad <launchpad-project-translation-best-practices>`
+
