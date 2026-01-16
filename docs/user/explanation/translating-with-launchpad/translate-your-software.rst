@@ -105,9 +105,6 @@ character in different options/tabs/checkboxes/etc., you will have to
 press the shortcut several times in the keyboard to walk through all of
 them.
 
-For other information about the accelerators in different languages,
-refer to http://bazaar-vcs.org/BzrTranslations/Tips
-
 Examples of menu accelerators:
 
 ::
