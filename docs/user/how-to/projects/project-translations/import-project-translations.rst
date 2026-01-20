@@ -32,7 +32,7 @@ file to an existing entry. The metadata consists of the translation
 domain and the template name. The latter is derived from the former
 which in turn is extracted from the path.
 
-These are the ways to specifiy the translation domain, the first match
+These are the ways to specify the translation domain, the first match
 will be used:
 
 1. In the file name itself: ``domain.pot`` or ``po/domain.pot``, etc.
@@ -68,7 +68,7 @@ these guidelines:
    circumstances:
 
    -  variants of international English: for example, ``en_GB.po``
-   -  Brazillian Portuguese: ``pt_BR.po`` (Brazillian Portuguese),
+   -  Brazilian Portuguese: ``pt_BR.po`` (Brazilian Portuguese),
       as opposed to ``pt.po`` for European Portuguese
    -  Chinese: traditional ``zh_TW.po`` and simplified
       ``zh_CN.po``

@@ -21,7 +21,7 @@ Setting your languages preferences
 Launchpad is usually good at guessing the languages that you are likely
 to speak. It uses the list of languages accepted by your browser, as
 well as information on the languages spoken in the country related to
-the IP adress you are connecting from. So if you have configured your
+the IP address you are connecting from. So if you have configured your
 browser for the languages you speak, Launchpad will use the same list.
 
 When Launchpad guesses wrong, you can tell it explicitly the languages

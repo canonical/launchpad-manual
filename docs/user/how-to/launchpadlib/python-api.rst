@@ -232,7 +232,7 @@ Fetching an object's raw JSON
 Launchpadlib provides a nice Python wrapper around JSON objects, but it
 does allow you to directly access the JSON itself. Each launchpadlib
 object has a ``[Iself_link`` property which you can use to view the JSON
-in a regular web brower, but you can not do this while using
+in a regular web browser, but you can not do this while using
 launchpadlib's access permissions. This recipe shows you how to fetch
 the JSON for an object with the same permissions as the currently
 running script.

@@ -13,8 +13,8 @@ Before reading your language specific guide please take a moment and
 read the :ref:`general translation guide <translating-your-software>`.
 
 This guides contains information about what strings should be translated
-and what not, what are plurar forms and other general things about
-working with Launchapad Translations (Rosetta).
+and what not, what are plural forms and other general things about
+working with Launchpad Translations (Rosetta).
 
 You are free to translate this guide and include it into your language
 specific guide, otherwise please make sure your language guide contains

@@ -51,7 +51,7 @@ that list to find a question to answer.
 Replying to a question
 ----------------------
 
-Once you found a quesiton on which you want to provide help, click on it
+Once you found a question on which you want to provide help, click on it
 to access the question page. There are two kinds of replies you can do
 on a question.
 
@@ -59,7 +59,7 @@ on a question.
    or if it doesn't contain enough context to allow you to diagnose, you
    should ask the submitter for more information. Enter your questions
    in the message box at the bottom of the screen and click on the ``Add
-   Information Request``. The person who asked the quesiton will receive
+   Information Request``. The person who asked the question will receive
    a notification with your request for more information.
 
 .. raw:: html
@@ -111,7 +111,7 @@ receive notifications for every change made on the questions. In
 addition, you will be allowed to reject invalid questions (questions
 that are spam, duplicate, or not really related to the project.)
 
-To register as answer contact, first go to the prokect that you want to
+To register as answer contact, first go to the project that you want to
 be an answer contact of. Click on the ``Answers`` tab. You then access the
 answer contact registration page by following the ``Set answer contact``
 link in the action menu. On that page you can register yourself (or any

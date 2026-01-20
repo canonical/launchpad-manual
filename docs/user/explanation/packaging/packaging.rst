@@ -352,8 +352,8 @@ substitution variables.
      - 0.3
 
 All variables other than ``time`` are derived from a particular
-branch. By default they use the base branch (eg. ``{revno}``), but
-they can also use a named branch (eg. ``{revno:packaging}``).
+branch. By default they use the base branch (e.g. ``{revno}``), but
+they can also use a named branch (e.g. ``{revno:packaging}``).
 
 ``debversion``, ``debupstream`` and ``debupstream-base``
 require ``debian/changelog`` to exist in the given branch. For

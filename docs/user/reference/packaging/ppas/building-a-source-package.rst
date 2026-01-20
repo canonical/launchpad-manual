@@ -60,7 +60,7 @@ named ``myapp_1.0-1ubuntu3ppa1~ubuntu16.10.1`` and for the Xenial
 Xerus (16.04) ``myapp_1.0-1ubuntu3ppa1~ubuntu16.04.1``. If you need to
 release an updated package, increment the ``ppa<n>`` suffix. It is
 important to note that specifying the version name here doesn't change
-the series that you are targetting; this must still be set correctly as
+the series that you are targeting; this must still be set correctly as
 described in the Ubuntu packaging guide's section on the `changelog file <https://canonical-ubuntu-packaging-guide.readthedocs-hosted.com/en/latest/reference/debian-dir-overview/#the-changelog-file>`_.
 
 Snapshots

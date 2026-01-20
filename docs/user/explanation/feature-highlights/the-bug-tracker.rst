@@ -263,7 +263,7 @@ of other projects that are using totally separate infrastructure. Of
 course, there is some loss of information, so projects that need to
 collaborate closely are still better off both using Launchpad, but if
 you need to collaborate with another project that has their own
-infrastructure then Launchpad can still make that as easy as posible.
+infrastructure then Launchpad can still make that as easy as possible.
 
 At the moment, Launchpad will only monitor remote bug status changes. In
 future, Launchpad will also bring remote bug comments into the Launchpad
@@ -427,7 +427,7 @@ XML-RPC interfaces
 
 Launchpad will support a full set of XML-RPC interfaces which will allow
 you to read and write any data which you might have access to through
-the web interface, programatically. We are committed to making any data
+the web interface, programmatically. We are committed to making any data
 you can read or write through the web interface also accessible via
 XML-RPC. This will have several benefits:
 

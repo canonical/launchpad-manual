@@ -37,7 +37,7 @@ Try to follow these rules:
 
 -  Be concise
 -  Focus your question in a few words
--  Avoid espressions such as "help me" or "I have got a problem" without
+-  Avoid expressions such as "help me" or "I have got a problem" without
    any clue about the real matter
 
 Once you have provided a summary and clicked the ``Continue`` button, you
@@ -60,7 +60,7 @@ Posting comments
 ~~~~~~~~~~~~~~~~
 
 When selecting a support request, a text box is shown at the bottom of
-the page where you can insert your feedbacks about the given ticket.
+the page where you can insert your feedback about the given ticket.
 
 You can also insert URLs by providing full address (such as
 http://launchpad.net) or bug reports (with the syntax ``bug #number``),
@@ -72,7 +72,7 @@ There are three types of feedback a user can submit:
 Additional information
 ^^^^^^^^^^^^^^^^^^^^^^
 
-If you are ticket's reporter, you can provide additional informations by
+If you are ticket's reporter, you can provide additional information by
 inserting a detailed description in the text box and pressing the ``I'm
 Providing More Information`` button.
 
@@ -80,7 +80,7 @@ Providing More Information`` button.
 Information and answers proposals
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If you think so, you can ask the reporter to provide more informations
+If you think so, you can ask the reporter to provide more information
 on a given ticket by inserting your motivation in the text box and
 pressing ``Add Information Request``. That ticket will be marked as ``Needs
 info`` in the support tracker page.
@@ -93,7 +93,7 @@ tracker page.
 Closing tickets
 ~~~~~~~~~~~~~~~
 
-If you are ticket's reporter and you have received sufficient feedbacks
+If you are ticket's reporter and you have received sufficient feedback
 to satisfy your request, you are encouraged to close that ticket. You
 can do that by providing a detailed description of the procedure
 followed to solve a specific issue and clicking the ``I Solved my Problem``

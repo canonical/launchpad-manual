@@ -199,7 +199,7 @@ Examples:
    Wrong: <puternic>Nume fișier</puternic>
    Right: <strong>Nume fișier</strong>
 
-Also you should not translate the xml tags attibutes and their values
+Also you should not translate the xml tags attributes and their values
 (if you translate their values, make sure you know what you are doing
 and check the developers comments). Examples:
 
