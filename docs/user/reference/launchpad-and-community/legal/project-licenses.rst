@@ -62,7 +62,7 @@ Proprietary
 
 - Creative Commons Noncommercial licenses (by-nc, by-nc-nd, by-nc-sa)
     - http://creativecommons.org/
-    - The noncommercial restrictions discriminate against a field of use (commercial edeavors).
+    - The noncommercial restrictions discriminate against a field of use (commercial endeavors).
 
 - Creative Commons No-Derivatives licenses (by-nd, by-nc-nd)
     - http://creativecommons.org/

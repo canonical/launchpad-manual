@@ -13,7 +13,7 @@ Launchpad's builders currently run with the following configuration for all arch
 
 - SWAP: 8 GB
 
-For ppc64el we have the folllowing spec in place:
+For ppc64el we have the following spec in place:
 
 - CPUs: 4
 

@@ -74,7 +74,7 @@ Mantis
    * - new
      - (*ignored*)
      - New
-   * - confirmed **or** ackowledged
+   * - confirmed **or** acknowledged
      - (*ignored*)
      - Confirmed
    * - resolved **or** closed

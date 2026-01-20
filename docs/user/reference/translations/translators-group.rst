@@ -50,12 +50,12 @@ languages.
 
 -  If there are any translations errors or bug in your project please assign them to the `Launchpad Translators team <https://launchpad.net/~launchpad-translators>`__. We will look at the problems and assign them to the proper team or person.
 
--  For your project Answers section, if people ask about specific translations or localization matters, you can assign those questions to the `Launchpad Translators Team <https://translations.launchpad.net/+groups/launchpad-translators/>`__. We will try to analyze it and have a knowledgable person take care or it.
+-  For your project Answers section, if people ask about specific translations or localization matters, you can assign those questions to the `Launchpad Translators Team <https://translations.launchpad.net/+groups/launchpad-translators/>`__. We will try to analyze it and have a knowledgeable person take care or it.
 
 Translators
 -----------
 
-All members of a Launchpad localization teams should be knowledgable in
+All members of a Launchpad localization teams should be knowledgeable in
 translating software into their own language, be aware about the work of
 other localization teams and about other translation projects.
 
@@ -126,7 +126,7 @@ Launchpad Translators group:
    team. As the coordinator, you are the primary contact person for the
    team and the person who make things happen.
 
-   -  As the coordinator of a Launchpad localization team, it is higly recommended to join the `Launchpad Translators team <https://launchpad.net/~launchpad-translators>`__.
+   -  As the coordinator of a Launchpad localization team, it is highly recommended to join the `Launchpad Translators team <https://launchpad.net/~launchpad-translators>`__.
 
 -  **Apply**. `Send a support request <https://answers.launchpad.net/rosetta/+addquestion>`__ for the Launchpad Translations Coordinators to appoint your team in the Launchpad Translators group. Please include a link to your team and a short note explaining how you have addressed the points above.
 

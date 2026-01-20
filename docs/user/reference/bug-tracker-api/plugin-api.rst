@@ -391,7 +391,7 @@ action from within Launchpad. Launchpad won't give the remote tracker
 the person's e-mail address due to privacy reasons. This is fine,
 though, the remote tracker users can ask the real reporter questions.
 Launchpad will relay all communication about the bug to/from the person
-in Launchpad. This imples that the remote tracker trusts Launchpad to
+in Launchpad. This implies that the remote tracker trusts Launchpad to
 relay comments back and forth.
 
 Each API below has a recommended name (like "report_bug") but the name

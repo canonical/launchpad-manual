@@ -30,7 +30,7 @@ Packaging:             :ref:`What is a PPA <personal-package-archive>` • :ref:
 
 Bug tracking:          :ref:`Using Bugzilla<use-the-bugzilla-plugin>` • :ref:`File a Bug<file-a-bug-in-launchpad>`
 
-Launchpad APIs:        :ref:`Lauchpadlib <get-started-with-launchpadlib>` • :ref:`Bug tracker API <bug-tracker-api-plugin>` • :ref:`Web services API <launchpad-web-service>`
+Launchpad APIs:        :ref:`Launchpadlib <get-started-with-launchpadlib>` • :ref:`Bug tracker API <bug-tracker-api-plugin>` • :ref:`Web services API <launchpad-web-service>`
 
 Community:             :ref:`Giving feedback <get-help>` • :ref:`Getting support<getting-support-in-launchpad>` • :ref:`Launchpad policies <launchpad-policies>`
 ===================    ==================

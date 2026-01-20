@@ -85,7 +85,7 @@ module <http://docs.python.org/library/gettext.html>`__.
 Translation domain
 ~~~~~~~~~~~~~~~~~~
 
-Gettext requires that your project has a unique translation doman. It
+Gettext requires that your project has a unique translation domain. It
 uses this domain and the user's locale (language and region) to find the
 translation catalog that is used to retrieve translations at run time.
 
@@ -202,7 +202,7 @@ into all the different languages. In fact, you may have come to
 Launchpad Translations in order to find translators.
 
 But how do you know the translations contributed through Launchpad and
-its commununity are correct and of good quality? That's what translation
+its community are correct and of good quality? That's what translation
 groups are for.
 
 Take a look at the `Launchpad translators <https://translations.launchpad.net/+groups/launchpad-translators>`__

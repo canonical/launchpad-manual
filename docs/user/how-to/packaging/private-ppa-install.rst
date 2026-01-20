@@ -63,7 +63,7 @@ If you're familiar with adding repositories to your Ubuntu's
 sources.list file, you'll see all the information you need there. Don't
 worry if you're not: it's easy and takes just a couple of minutes.
 
-**Step 1:** On the overview page for your Private PPA subcription is a
+**Step 1:** On the overview page for your Private PPA subscription is a
 box with three lines of text. Highlight the second line (beginning
 ``deb``) and copy it to your clipboard.
 

@@ -23,7 +23,7 @@ In effect, Launchpad provides Terminator with a lightweight blog; the
 most obvious difference being that Launchpad doesn't offer readers the
 opportunity to leave comments. However, if the Terminator community had
 a full blog, hosted elsewhere, they could link each announcement they
-make on Launchpad to the releated blog post.
+make on Launchpad to the related blog post.
 
 This helps make Terminator's Launchpad project overview page into a
 reference for all information about the project.

@@ -28,7 +28,7 @@ metadata consists of the translation domain and the template name. The
 latter is derived from the former which in turn is extracted from the
 path.
 
-These are the ways to specifiy the translation domain, the first match
+These are the ways to specify the translation domain, the first match
 will be used:
 
 1. In the file name itself: ``domain.pot`` or ``po/domain.pot``, etc.

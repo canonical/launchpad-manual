@@ -61,7 +61,7 @@ If you are uploading translation files, you should follow these rules:
 -  Translation files should be in the same directory as the template to
    which they relate.
 -  The translation files should be named for the appropriate language
-   code: e.g. *pt_BR.po* Portugese as spoken in Brazil or *fr.po* for
+   code: e.g. *pt_BR.po* Portuguese as spoken in Brazil or *fr.po* for
    French as spoken in France. Launchpad only accepts languages that
    have an `ISO 639 code <http://en.wikipedia.org/wiki/ISO_639>`__.
 

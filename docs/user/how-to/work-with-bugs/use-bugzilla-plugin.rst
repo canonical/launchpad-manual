@@ -133,7 +133,7 @@ If you can't see any suitable bugs already in Launchpad, you can create some tes
 Next steps
 ----------
 
-Once you've installed the plugin, `file a question using Launchpad Answers <https://answers.launchpad.net/malone>`_ to let the Launchapd team know that you're running the plugin. This will allow the Launchpad Bugs developers and sys admins to finish the setup from their end.
+Once you've installed the plugin, `file a question using Launchpad Answers <https://answers.launchpad.net/malone>`_ to let the Launchpad team know that you're running the plugin. This will allow the Launchpad Bugs developers and sys admins to finish the setup from their end.
 
 If you'd like to write a Launchpad plugin for another bug tracker,
 follow our :ref:`plugin API spec <bug-tracker-api-plugin>`.
