@@ -11,7 +11,7 @@ Launchpad gives you access to everything necessary to build and publish
 software including code hosting, issue tracking, and request tracking for bugs. 
 Features unique to this platform include build capacities for different 
 languages, and package formats for different architectures such as **AMD64**, 
-**ARM**, and **RISC-V**.
+**AMD64v3**, **ARM**, and **RISC-V**.
 
 Launchpad also offers tracking capabilities across issue trackers to 
 seamlessly communicate with upstream projects.

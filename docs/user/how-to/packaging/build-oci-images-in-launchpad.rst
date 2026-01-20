@@ -85,7 +85,7 @@ Select build processors
 Launchpad supports multiple CPU architectures. To see which ones are available::
 
     >>> [processor.name for processor in lp.processors]
-    ['ia64', 'sparc', 'hppa', 'amd64', 'armel', 'armhf', 'lpia', 'ppc64el', 's390x', 'arm64', 'powerpc', 'i386', 'riscv64']
+    ['ia64', 'sparc', 'hppa', 'amd64', 'armel', 'armhf', 'lpia', 'ppc64el', 's390x', 'arm64', 'powerpc', 'amd64v3', 'i386', 'riscv64']
 
 To set processors on which your recipe will be built::
 
