@@ -130,7 +130,7 @@ system.
 Finally, we specify where to find the packaging branch and say that we
 want to nest it into the code branch.
 
-Testing your recipe and build
+Testing your recipe
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You should always test your recipe locally before sending it to
