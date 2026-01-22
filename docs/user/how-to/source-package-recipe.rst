@@ -114,8 +114,8 @@ Now save the file as *wikkid.recipe*.
 
 .. important:: 
    
-   if for whatever reason either the Wikkid trunk or
-   Thumper's packaging branch become unbuildable you may need to try this
+   If for whatever reason, either the Wikkid trunk or Thumper's 
+   packaging branch becomes unbuildable, you may need to try this
    out with another project.
 
 This recipe is pretty straightforward to read, but let's look at each
