@@ -53,8 +53,8 @@ to get started.
 
 .. note::
 
-   you need to make sure that the build process specified by your
-   packaging and deal with what's in your branch. For example, if you work
+   you need to make sure that all the build steps and commands are
+   specified properly. For example, if you work
    on a C project with autotools, you might have to run ``autoreconf -i``
    at some stage during the build to make sure that all the auto-generated
    files (which are not in version control) are present.
@@ -163,15 +163,15 @@ minimal environment for the build. This ensures that the build will work
 everywhere and that it's not dependent on something unusual in your own
 environment.
 
-**Step 1:** Install pbuilder with ``sudo apt-get install pbuilder``
+- Install pbuilder with ``sudo apt-get install pbuilder``
 
-**Step 2:** Edit ``~/.pbuilderrc`` and add:
+- Edit ``~/.pbuilderrc`` and add:
 
-::
+  ::
 
-   COMPONENTS="main universe multiverse restricted"
+     COMPONENTS="main universe multiverse restricted"
 
-**Step 3:** ``sudo pbuilder create``
+- ``sudo pbuilder create``
 
 Now, kick off the test build with:
 
@@ -195,18 +195,18 @@ Browse to the branch you want to build in Launchpad and click
 
 Now fill in all the necessary details:
 
--  *Name:* a short name for the recipe. Remember: you might want more
+-  `Name:` a short name for the recipe. Remember: you might want more
    than one.
--  *Description:* make your intention clear and tell potential users of
+-  `Description:` make your intention clear and tell potential users of
    the build what they're signing up for.
--  *Owner:* select who drives these builds.
--  *Build daily:* enables automatic daily builds, rather than building
+-  `Owner:` select who drives these builds.
+-  `Build daily:` enables automatic daily builds, rather than building
    on-demand only.
--  *Daily build archive:* the PPA where you want to publish the package.
--  *Default Distribution Series:* select all the Ubuntu releases you
+-  `Daily build archive:` the PPA where you want to publish the package.
+-  `Default Distribution Series:` select all the Ubuntu releases you
    want to build the package for. Make sure all these builds work before
    you sign up for them!
--  *Recipe text:* paste your recipe in here.
+-  `Recipe text:` paste your recipe in here.
 
 Building
 --------
