@@ -265,6 +265,7 @@ favicon
 favicons
 fichier
 fichiers
+filebug
 filesystem
 filesystems
 FIXME
@@ -349,6 +350,7 @@ InformationInfrastructure
 infos
 init
 initialized
+Inkscape
 innerHTML
 installable
 instantiation
@@ -675,6 +677,9 @@ resultset
 ResultSets
 reupload
 reuploading
+revdate
+revno
+revtime
 rewordings
 rocketfuel
 rocktutorial
