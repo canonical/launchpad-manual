@@ -60,7 +60,7 @@ If you'd like additional control over the upload process, you can configure
 You'll need to:
 
 -  Change ``my-ppa`` to whatever name you want to use to refer to your PPA, 
-   while retaining the square brackets. Do not use just "ppa" as the name here: 
+   while retaining the square brackets. Do not use just "ppa" as the name here - 
    that conflicts with an entry in ``/etc/dput.cf``.
 -  If you're uploading to a team PPA, change ``~<your-launchpad-id>`` to 
    your team's Launchpad name (maintaining the tilde). You must be a member of 
