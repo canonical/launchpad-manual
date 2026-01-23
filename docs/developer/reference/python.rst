@@ -78,7 +78,7 @@ Docstrings
   ``"""See `IFoo`."""``
 
 Docstrings should be valid `reStructuredText
-<https://docutils.sourceforge.io/rst.html>`_ (with all the painful
+<https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_ (with all the painful
 indentation rules that implies) so that tools such as `pydoctor
 <https://pypi.org/project/pydoctor/>`_ can be used to automatically generate
 API documentation.
