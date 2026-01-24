@@ -1,3 +1,5 @@
+.. include:: /includes/bazaar-discontinued.rst
+
 How To Use Codehosting Locally
 ==============================
 
