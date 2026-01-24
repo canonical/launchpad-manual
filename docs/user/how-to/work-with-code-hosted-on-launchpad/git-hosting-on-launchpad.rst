@@ -1,3 +1,5 @@
+.. include:: /includes/bazaar-discontinued.rst
+
 .. _host-a-git-repository-on-launchpad:
 
 Host a Git repository on Launchpad
