@@ -1,3 +1,5 @@
+.. include:: /includes/bazaar-discontinued.rst
+
 Landing updates for Loggerhead
 ==============================
 
