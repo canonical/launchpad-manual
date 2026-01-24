@@ -1,9 +1,9 @@
-.. include:: /includes/bazaar-discontinued.rst
-
 .. _hosting-git-repositories:
 
 Hosting Git repositories
 ========================
+
+.. include:: /includes/bazaar-discontinued.rst
 
 .. include:: /includes/important_not_revised_help.rst
 
