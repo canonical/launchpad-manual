@@ -1,3 +1,5 @@
+.. include:: /includes/bazaar-discontinued.rst
+
 .. _code-concepts:
 
 Code Concepts
