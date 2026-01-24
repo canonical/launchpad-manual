@@ -1,7 +1,7 @@
-.. include:: /includes/bazaar-discontinued.rst
-
 Landing updates for Loggerhead
 ==============================
+
+.. include:: /includes/bazaar-discontinued.rst
 
 `Loggerhead <https://launchpad.net/loggerhead/>`_ is a web-based
 `Bazaar <https://en.wikipedia.org/wiki/GNU_Bazaar>`_ code browser.
