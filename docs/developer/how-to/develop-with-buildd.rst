@@ -120,7 +120,7 @@ Install dependencies
     $ cd launchpad-buildd
     $ sudo apt-add-repository ppa:launchpad/ubuntu/buildd-staging
     $ sudo apt-add-repository ppa:launchpad/ubuntu/ppa
-    $ vi /etc/apt/sources.list.d/launchpad-ubuntu-ppa-bionic.list <uncomment deb-src line>
+    $ vim /etc/apt/sources.list.d/launchpad-ubuntu-ppa-focal.list <uncomment deb-src line>
     $ sudo apt update
     $ sudo apt build-dep launchpad-buildd fakeroot
     $ sudo apt install -f
@@ -142,7 +142,7 @@ Make and install the package
     $ cd launchpad-buildd
     $ make
     $ cd ..
-    $ sudo dpkg -i ./python3-lpbuildd_<version>_all.deb ./launchpad-buildd_<version>_all.deb
+    $ sudo apt install ./python3-lpbuildd_260_all.deb  --fix-broken
 
 Run the buildd
 --------------
@@ -154,7 +154,7 @@ Edit ``/etc/launchpad-buildd/default`` and change ``ntphost`` to something valid
     $ sudo mkdir -p /var/run/launchpad-buildd
     $ sudo chown ubuntu: /var/run/launchpad-buildd
     $ cd launchpad-buildd
-    $ /usr/bin/python3 /usr/bin/twistd --no_save --pidfile /var/run/launchpad-buildd/default.pid --python /usr/lib/launchpad-buildd/buildd-slave.tac -n
+    $ /usr/bin/python3 /usr/bin/twistd3 --no_save --pidfile /var/run/launchpad-buildd/default.pid --python /usr/lib/launchpad-buildd/buildd.tac -n
 
 Making changes
 --------------
