@@ -20,7 +20,7 @@ viewing such messages in your mail reader, please see this guide to
 
 OpenPGP uses two types of digital keys: one public, one private. Each time you
 sign a document, OpenPGP appends a unique code to it, produced using the
-private key. That unique code is your digital signature and can be opened only
+private key. That unique code is your digital signature and can be verified
 with the public key.
 
 Manage OpenPGP keys
@@ -58,24 +58,19 @@ Publishing your key to a keyserver
    the menu.
 
 #. If it's the first time publishing your key, you may need to add a key
-   server. Select "Key Servers" button and select "Add keyserver": you should
-   select  "HTTP Key Server" and enter ``keyserver.ubuntu.com`` as the server
-   address.
+   server. Select the "Key Servers" button and select "Add keyserver": you
+   should select  "HTTP Key Server" and enter ``keyserver.ubuntu.com`` as the
+   server address.
    Once you have your server set up, select option
    ``hkp://keyserver.ubuntu.com`` from the "Publish keys to" drop-down.
 
 #. Select "Sync"
 
 It can take up to thirty minutes before your key is available to Launchpad.
-After that time, you're ready to import key into into Launchpad.
+After that time, you're ready to import the key into into Launchpad.
 
 Importing your key into Launchpad
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-OpenPGP uses two types of digital keys: one public, one private. Each time you
-sign a document, OpenPGP appends a unique code to it, produced using the
-private key. That unique code is your digital signature and can be opened only
-with the public key.
 
 #. From the "Passwords and Encryption Keys" tool, retrieve the Fingerprint from
    your new key. You should see it be opening the new PGP key.
