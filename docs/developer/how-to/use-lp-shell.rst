@@ -91,13 +91,13 @@ Or
 Alternatively, we can also connect to local development/test environments on
 our personal systems with ``dev``. However, this requires the deactivation of 
 SSL certification checks on lp-shell which is done through the environment
-variable ``LP_DISABLE_SSL_CERTIFICATE_VALIDATION`` to ``True``, either by 
+variable ``LP_DISABLE_SSL_CERTIFICATE_VALIDATION`` to ``1``, either by 
 setting the variable throughout the development environment or in the command
 itself with:
 
 .. code-block:: shell-session
 
-    LP_DISABLE_SSL_CERTIFICATE_VALIDATION=True lp-shell dev
+    LP_DISABLE_SSL_CERTIFICATE_VALIDATION=1 lp-shell dev
 
 In contrast, the second set of options we have, i.e. which API version/branch
 we connect to is less crippling since we only support the use of ``devel`` as
