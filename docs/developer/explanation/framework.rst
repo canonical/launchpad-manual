@@ -100,6 +100,6 @@ WSGI server
 -----------
 
 Launchpad's application server runs within `Gunicorn
-<https://docs.gunicorn.org/>`_, wrapped using `Talisker
+<https://gunicorn.org/>`_, wrapped using `Talisker
 <https://pypi.org/project/talisker/>`_ to add several useful operational
 facilities.

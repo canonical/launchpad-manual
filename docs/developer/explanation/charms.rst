@@ -14,7 +14,7 @@ Each of the subdirectories of ``charm/`` represents a single logical function
 which can be deployed as a Juju `application <https://documentation.ubuntu.com/juju/3.6/reference/application/>`_
 with one or more `units <https://documentation.ubuntu.com/juju/3.6/reference/unit/>`_.  
 The layers provide common code used by multiple charms.  The specs are used 
-with `Mojo <https://mojo.canonical.com/>`_ to coordinate whole deployments of 
+with `Mojo <https://launchpad.net/mojo>`_ to coordinate whole deployments of 
 multiple applications; they contain configuration of individual applications 
 and `integrations <https://documentation.ubuntu.com/juju/3.6/reference/relation/>`_ between applications.
 
