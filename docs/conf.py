@@ -117,7 +117,7 @@ html_context = {
     #
     # NOTE: If set, adding ':discourse: 123' to an .rst file
     #       will add a link to Discourse topic 123 at the bottom of the page.
-    "discourse": "https://discourse.ubuntu.com",
+    "discourse": "",
     # Your Mattermost channel URL
     #
     # TODO: Change to your Mattermost channel URL or leave empty.
@@ -184,7 +184,7 @@ slug = 'launchpad'
 
 # Use RTD canonical URL to ensure duplicate pages have a specific canonical URL
 
-html_baseurl = os.environ.get("READTHEDOCS_CANONICAL_URL", "/")
+html_baseurl = 'https://documentation.ubuntu.com/launchpad/'
 
 # sphinx-sitemap uses html_baseurl to generate the full URL for each page:
 
@@ -401,10 +401,7 @@ html_js_files = [
 # Add CSS files (located in .sphinx/_static/)
 html_css_files = ['cookie-banner.css']
 
-rst_epilog = """
-.. include:: /reuse/links.txt
-.. include:: /reuse/substitutions.txt
-"""
+rst_epilog = ''
 
 # Feedback button at the top; enabled by default
 #

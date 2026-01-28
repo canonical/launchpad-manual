@@ -1,4 +1,4 @@
-- [ ] Have you updated `CHANGELOG.md` with relevant non-documentation file changes?
-- [ ] Have you updated the documentation for this change?
+-   [ ] I ran `make linkcheck-discrete` locally to confirm new or edited links 
+        will pass the linkcheck CI.
 
 -----
