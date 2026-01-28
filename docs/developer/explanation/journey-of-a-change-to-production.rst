@@ -196,7 +196,7 @@ How to check the database patch application time in the ``staging`` environment?
 
 The automatic deployment and application of the database patches to the
 ``staging`` environment is done using the `auto-upgrade-staging script`_,
-which uses Mojo and the `Launchpad mojo specs`_
+which uses `Mojo <https://launchpad.net/mojo>`_ and the `Launchpad mojo specs`_
 to do its job, and the `staging_restore.sh script`_. These scripts are run
 periodically as cron jobs under the ``stg-launchpad`` account on the Launchpad
 bastion.
