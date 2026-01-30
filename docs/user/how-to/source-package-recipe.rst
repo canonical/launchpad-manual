@@ -171,7 +171,7 @@ environment.
 
      COMPONENTS="main universe multiverse restricted"
 
-- ``sudo pbuilder create``
+- Confirm build with ``sudo pbuilder``
 
 Now, kick off the test build with:
 
