@@ -202,8 +202,8 @@ Now fill in all the necessary details:
 -  ``Owner``: select who drives these builds.
 -  ``Build daily``: enables automatic daily builds, rather than building
    on-demand only.
--  `Daily build archive:` the PPA where you want to publish the package.
--  `Default Distribution Series:` select all the Ubuntu releases you
+-  ``Daily build archive``: the PPA where you want to publish the package.
+-  ``Default Distribution Series``: select all the Ubuntu releases you
    want to build the package for. Make sure all these builds work before
    you sign up for them!
 -  ``Recipe text``: paste your recipe in here.
