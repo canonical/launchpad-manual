@@ -131,10 +131,12 @@ Finally, we specify where to find the packaging branch and say that we
 want to nest it into the code branch.
 
 Testing your recipe
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
 
-You should always test your recipe locally before sending it to
-Launchpad.
+You should always confirm locally that your recipe can be processed before
+sending it to Launchpad.
+In this case, we'll assume you're running the Ubuntu version that you want
+to test against.
 
 Let's start by testing the recipe itself. For now, we'll assume you're
 running the Ubuntu version that you want to test against.
@@ -215,4 +217,4 @@ If you have checked "built daily", Launchpad will automatically schedule
 a build of your recipe once every day, if any of the branches specified
 have changed since the last build. However, it's a good idea to try
 building it yourself first, to make sure that everything is working
-correctly. You can use the "Request build(s)" link for this: **Manually request a build**
+correctly. You can use the "Request build(s)" link for this.
