@@ -197,7 +197,7 @@ Now fill in all the necessary details:
 
 -  ``Name``: a short name for the recipe. Remember: you might want more
    than one.
--  `Description:` make your intention clear and tell potential users of
+-  ``Description``: make your intention clear and tell potential users of
    the build what they're signing up for.
 -  ``Owner``: select who drives these builds.
 -  ``Build daily``: enables automatic daily builds, rather than building
