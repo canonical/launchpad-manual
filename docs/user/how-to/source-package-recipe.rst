@@ -199,8 +199,8 @@ Now fill in all the necessary details:
    than one.
 -  `Description:` make your intention clear and tell potential users of
    the build what they're signing up for.
--  `Owner:` select who drives these builds.
--  `Build daily:` enables automatic daily builds, rather than building
+-  ``Owner``: select who drives these builds.
+-  ``Build daily``: enables automatic daily builds, rather than building
    on-demand only.
 -  `Daily build archive:` the PPA where you want to publish the package.
 -  `Default Distribution Series:` select all the Ubuntu releases you
