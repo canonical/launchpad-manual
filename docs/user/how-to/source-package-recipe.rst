@@ -206,7 +206,7 @@ Now fill in all the necessary details:
 -  `Default Distribution Series:` select all the Ubuntu releases you
    want to build the package for. Make sure all these builds work before
    you sign up for them!
--  `Recipe text:` paste your recipe in here.
+-  ``Recipe text``: paste your recipe in here.
 
 Building
 --------
