@@ -53,7 +53,7 @@ to get started.
 
 .. note::
 
-   you need to make sure that all the build steps and commands are
+   You need to make sure that all the build steps and commands are
    specified properly. For example, if you work
    on a C project with autotools, you might have to run ``autoreconf -i``
    at some stage during the build to make sure that all the auto-generated
