@@ -22,35 +22,27 @@ In this documentation
 ==========================             ==================
 **Setting up Launchpad:**              :ref:`Get the source code <get-the-source-code>` • :ref:`Quick set up <setting-up-and-running-launchpad-quickstart>` • :ref:`Advanced set up <setting-up-and-running-launchpad-advanced>`
 
-**Operating Launchpad:**               :ref:`Manage users and teams <manage-users-and-teams-in-development-environments>` • :ref:`Using lp-shell <how-to-use-lp-shell>` • :ref:`Triaging bugs <triaging-launchpad-project-bugs>` 
+**Operating Launchpad:**               :ref:`Manage users and teams <manage-users-and-teams-in-development-environments>` • :ref:`Using lp-shell <how-to-use-lp-shell>`
 
 **Launchpad development:**             :ref:`Fixing bugs<fixing-bugs>` • :ref:`Contributing changes<contributing-changes>`
 
 ==========================             ==================
 
-There is more to discover in the Launchpad manual for developers. Explore by 
-category:
+How this documentation is organized
+-----------------------------------
 
-..  grid:: 1 1 2 2
+This documentation uses the
+`Diátaxis documentation structure <https://diataxis.fr/>`_.
 
-   ..  grid-item-card:: :doc:`Tutorials <tutorials/index>`
-
-       **Start here** -   hands-on introductions to Launchpad for new developers
-
-   ..  grid-item-card:: :doc:`How-to guides <how-to/index>`
-
-      **Step-by-step** instructions covering key operations and common tasks
-
-.. grid:: 1 1 2 2
-   :reverse:
-
-   .. grid-item-card:: :doc:`Reference <reference/index>`
-
-      **Technical information** - specifications, APIs, architecture
-
-   .. grid-item-card:: :doc:`Explanation <explanation/index>`
-
-      **Discussion** and clarification of key topics
+- The :doc:`Tutorial <tutorials/index>` takes you step-by-step through common
+  development tasks in Launchpad.
+- :doc:`How-to guides <how-to/index>` assume you have basic familiarity with
+  Launchpad. They cover setting up a development environment, contributing
+  changes, and operating a Launchpad instance.
+- :doc:`Reference <reference/index>` provides a guide to coding style and
+  Launchpad services.
+- :doc:`Explanation <explanation/index>` includes background on key concepts,
+  development best practices, and the deployment process of Launchpad.
 
 
 .. toctree::
