@@ -39,8 +39,7 @@ This documentation uses the
 - :doc:`How-to guides <how-to/index>` assume you have basic familiarity with
   Launchpad. They cover setting up a development environment, contributing
   changes, and operating a Launchpad instance.
-- :doc:`Reference <reference/index>` provides a guide to coding style and
-  Launchpad services.
+- :doc:`Reference <reference/index>` provides specifications of Launchpad services and coding style guides.
 - :doc:`Explanation <explanation/index>` includes background on key concepts,
   development best practices, and the deployment process of Launchpad.
 
