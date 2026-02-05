@@ -1,13 +1,10 @@
 .. _create-a-source-package-recipe:
 
 Create a source package recipe
-##############################
+==============================
 
-.. include:: /includes/important_not_revised_help.rst
-
-
-Overview
-========
+Prerequisites
+-------------
 
 To create your own source package recipes, you need:
 
@@ -30,7 +27,7 @@ which will take you through each of the steps you need to get a source package
 recipe up and running.
 
 Code in Launchpad
-=================
+-----------------
 
 The code that you want to use for your source package recipe must be in
 Launchpad as a :ref:`Git <host-a-git-repository-on-launchpad>` branch that you 
@@ -41,7 +38,7 @@ Launchpad can reach it and it is available without needing a username
 and password. Launchpad can only import code hosted in the git format.
 
 Packaging
-=========
+---------
 
 It's likely that someone has already packaged the software you want to
 build. If that's the case, Launchpad can borrow that packaging
@@ -54,11 +51,13 @@ If there's no existing packaging, either for Debian or Ubuntu, you'll need to
 create your own. You should `read the Ubuntu community's guide to packaging <https://canonical-ubuntu-packaging-guide.readthedocs-hosted.com/en/latest/>`_ 
 to get started.
 
-**Note:** you need to make sure that the build process specified by your
-packaging and deal with what's in your branch. For example, if you work
-on a C project with autotools, you might have to run ``autoreconf -i``
-at some stage during the build to make sure that all the auto-generated
-files (which are not in version control) are present.
+.. note::
+
+   You need to make sure that all the build steps and commands are
+   specified properly. For example, if you work
+   on a C project with autotools, you might have to run ``autoreconf -i``
+   at some stage during the build to make sure that all the auto-generated
+   files (which are not in version control) are present.
 
 The recipe
 ----------
@@ -75,14 +74,14 @@ a package from your various Git branches. It specifies:
 -  what to modify to make the source build properly.
 
 Trying it out
-=============
+-------------
 
 The best way to learn how to create a source package recipe is to try
 out a simple example. All you need is a text editor and the *git-build-recipe* 
 program.
 
 Getting git-build-recipe
-------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can install the git-build-recipe package to run tests locally. Run::
 
@@ -93,7 +92,7 @@ On releases of Ubuntu predating 16.04, you can get the version running on
 Launchpad's builders from the `buildd PPA <https://launchpad.net/~canonical-is-sa/+archive/ubuntu/buildd>`_.
 
 Writing a basic recipe
-----------------------
+~~~~~~~~~~~~~~~~~~~~~~
 
 There are different ways to write a recipe but, for this example, we're
 going to use the simplest: you use the project's trunk, which contains
@@ -102,9 +101,6 @@ information.
 
 For this example, we'll use the `Wikkid wiki <https://launchpad.net/wikkid>`_ 
 project.
-
-The anatomy of a recipe
-~~~~~~~~~~~~~~~~~~~~~~~
 
 Open your text editor and enter:
 
@@ -116,9 +112,11 @@ Open your text editor and enter:
 
 Now save the file as *wikkid.recipe*.
 
-**Important:** if for whatever reason either the Wikkid trunk or
-Thumper's packaging branch become unbuildable you may need to try this
-out with another project.
+.. important:: 
+   
+   If for whatever reason, either the Wikkid trunk or Thumper's 
+   packaging branch becomes unbuildable, you may need to try this
+   out with another project.
 
 This recipe is pretty straightforward to read, but let's look at each
 line in turn.
@@ -132,19 +130,20 @@ system.
 Finally, we specify where to find the packaging branch and say that we
 want to nest it into the code branch.
 
-Testing your recipe and build
------------------------------
+Testing your recipe
+~~~~~~~~~~~~~~~~~~~
 
-You should always test your recipe locally before sending it to
-Launchpad.
-
-Testing the recipe
-~~~~~~~~~~~~~~~~~~
+You should always confirm locally that your recipe can be processed before
+sending it to Launchpad.
+In this case, we'll assume you're running the Ubuntu version that you want
+to test against.
 
 Let's start by testing the recipe itself. For now, we'll assume you're
 running the Ubuntu version that you want to test against.
 
-**Note:** if you want to test a specific version, see the `Ubuntu guide <http://wiki.ubuntu.com/UsingDevelopmentReleases>`_.
+.. note:: 
+   
+   if you want to test a specific version, see the `Ubuntu guide <http://wiki.ubuntu.com/UsingDevelopmentReleases>`_.
 
 Let's try it out in your terminal:
 
@@ -166,15 +165,15 @@ minimal environment for the build. This ensures that the build will work
 everywhere and that it's not dependent on something unusual in your own
 environment.
 
-**Step 1:** Install pbuilder with ``sudo apt-get install pbuilder``
+- Install pbuilder with ``sudo apt-get install pbuilder``
 
-**Step 2:** Edit ``~/.pbuilderrc`` and add:
+- Edit ``~/.pbuilderrc`` and add:
 
-::
+  ::
 
-   COMPONENTS="main universe multiverse restricted"
+     COMPONENTS="main universe multiverse restricted"
 
-**Step 3:** ``sudo pbuilder create``
+- Confirm build with ``sudo pbuilder``
 
 Now, kick off the test build with:
 
@@ -186,7 +185,7 @@ If the build succeeds, you can test-install the resulting package from
 ``/var/cache/pbuilder/result/``.
 
 Setting up the recipe in Launchpad
-==================================
+----------------------------------
 
 Now that you've confirmed that both the recipe and build work, the rest
 is very simple.
@@ -198,24 +197,24 @@ Browse to the branch you want to build in Launchpad and click
 
 Now fill in all the necessary details:
 
--  *Name:* a short name for the recipe. Remember: you might want more
+-  ``Name``: a short name for the recipe. Remember: you might want more
    than one.
--  *Description:* make your intention clear and tell potential users of
+-  ``Description``: make your intention clear and tell potential users of
    the build what they're signing up for.
--  *Owner:* select who drives these builds.
--  *Build daily:* enables automatic daily builds, rather than building
+-  ``Owner``: select who drives these builds.
+-  ``Build daily``: enables automatic daily builds, rather than building
    on-demand only.
--  *Daily build archive:* the PPA where you want to publish the package.
--  *Default Distribution Series:* select all the Ubuntu releases you
+-  ``Daily build archive``: the PPA where you want to publish the package.
+-  ``Default Distribution Series``: select all the Ubuntu releases you
    want to build the package for. Make sure all these builds work before
    you sign up for them!
--  *Recipe text:* paste your recipe in here.
+-  ``Recipe text``: paste your recipe in here.
 
 Building
-========
+--------
 
 If you have checked "built daily", Launchpad will automatically schedule
 a build of your recipe once every day, if any of the branches specified
 have changed since the last build. However, it's a good idea to try
 building it yourself first, to make sure that everything is working
-correctly. You can use the "Request build(s)" link for this: **Manually request a build**
+correctly. You can use the "Request build(s)" link for this.
