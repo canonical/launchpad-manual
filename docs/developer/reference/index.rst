@@ -63,6 +63,14 @@ Git-related
    services/git-hosting.rst
    services/code-import.rst
 
+Others
+~~~~~~
+
+.. toctree::
+   :maxdepth: 1
+
+   services/mailing-lists-archives.rst
+
 Possibly out-of-date
 --------------------
 
