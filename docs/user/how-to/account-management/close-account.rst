@@ -36,15 +36,15 @@ Deactivating your account
 -------------------------
 
 1. Visit `your Launchpad profile <https://launchpad.net/~>`_.
-2. Click Change details. If you wish to ensure that your name is not displayed
+2. Click ``Change details``. If you wish to ensure that your name is not displayed
    on links to your account after deactivation, then edit your personal details
    here before continuing.
-3. Scroll to the bottom of the page and click Deactivate your account.
+3. Scroll to the bottom of the page and click ``Deactivate your account``.
 4. Optionally enter a description of why you are deactivating your Launchpad
    account.
 5. If you are certain that you want to permanently delete your subscriptions
    and other information associated with your Launchpad account, click the
-   "Deactivate my account" button.
+   ``Deactivate my account`` button.
 
 Launchpad will now deactivate your account.
 
