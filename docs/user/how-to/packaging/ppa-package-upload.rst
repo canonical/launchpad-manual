@@ -116,7 +116,7 @@ in the targeted Ubuntu suite.
 
 .. important::
     Although Launchpad will attempt to build the package, it
-    may not be able to meet all of the dependencies of a source created for
+    may not be able to include all the dependencies of a source created for
     another a distribution.
 
 If your package can be used on different versions of Ubuntu *without
