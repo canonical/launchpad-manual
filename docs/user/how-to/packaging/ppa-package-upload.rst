@@ -13,7 +13,7 @@ you need to upload it to Launchpad using the ``dput`` tool.
 
 .. note::
 
-   We ask that people include useful changelogs for each package, so that 
+   We ask that people include useful changelogs for each package so that 
    users and other developers can understand what new features they are 
    exploring in their work. Read the :ref:`PPA terms of use <project-eligibility>` 
    for more information.
