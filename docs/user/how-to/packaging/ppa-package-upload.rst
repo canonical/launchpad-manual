@@ -3,8 +3,6 @@
 Upload a package to a PPA
 =========================
 
-.. include:: /includes/important_not_revised_help.rst
-
 How you upload a source package to a PPA depends on whether you want to use 
 File Transfer Protocol (FTP) or Secure File Transfer Protocol (SFTP).
 
