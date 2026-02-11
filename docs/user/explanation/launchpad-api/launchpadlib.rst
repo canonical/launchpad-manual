@@ -18,6 +18,8 @@ Launchpad's web service currently exposes the following major parts of Launchpad
 * The project registry
 * Hosted files, such as bug attachments and mugshots.
 
+If you want to learn more about the web service, you can go to `https://api.launchpad.net/ <https://api.launchpad.net/>`_.
+
 As new features and capabilities are added to the web service, you'll be able to access most of
 them without having to update your copy of launchpadlib. You *will* have to upgrade launchpadlib
 to get new client-side features (like support for uploaded files). The Launchpad team will put
@@ -36,7 +38,7 @@ The Launchpad object has attributes corresponding to the major parts of Launchpa
 * ``.projects``: All the projects in Launchpad
 * ``.project_groups``: All the project groups in Launchpad
 
-As a super special secret, distributions, projects and project_groups are all actually the same thing.
+Distributions, projects and project_groups are the three main pillars of Launchpad.
 
 .. code-block::
 
@@ -123,7 +125,7 @@ but the owner of a bug is a person, with attributes of its own.
     # <person at https://api.staging.launchpad.net/beta/~sabdfl>
     print(owner.name)
     # sabdfl
-    print(owner.display_name
+    print(owner.display_name)
     # Mark Shuttleworth
 
 If you have permission, you can change an entry's attributes and write the data back
@@ -180,6 +182,14 @@ Named operations
 Entries can support special operations just like collections, but again note that,
 these methods don't support positional arguments, only keyword arguments.
 
+.. code-block::
+
+    bug_one.lp_operations
+    # ['canBeNominatedFor',
+    # 'getNominationFor',
+    # 'getNominations',
+    # ...
+
 Errors
 ------
 
@@ -192,10 +202,15 @@ To see the server-side error message, you'll need to print out the .content of t
 
 .. code-block::
 
+    from lazr.restfulclient.errors import HTTPError
+
     try:
         failing_thing()
     except HTTPError as http_error:
         print(http_error.content)
+
+Note that some dict-like lookups (e.g. ``launchpad.bugs[bug_id]``) may translate a server-side
+``NotFound`` response into ``KeyError``.
 
 Collections
 -----------
@@ -217,12 +232,13 @@ represented as a collection of 'bug task' entries.
 
     tasks \= bug_one.bug_tasks
     print(len(tasks))
-    # 17
+    # 31
     for task in tasks:
     print(task.bug_target_display_name)
+    # Clubdistro
     # Computer Science Ubuntu
-    # Ichthux
-    # JAK LINUX
+    # LibreOffice
+    # Jdylan.NET.Reflection
     # ...
 
 The person 'salgado' understands two languages, represented here as a collection of two language entries.
