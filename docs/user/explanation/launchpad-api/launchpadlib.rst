@@ -399,9 +399,9 @@ should be fine; otherwise run from the branch or the latest tarball).
 Planned improvements
 --------------------
 
-launchpadlib still has deficiencies. We track bugs in the launchpadlib bug tracker
-(`https://bugs.launchpad.net/launchpadlib <https://bugs.launchpad.net/launchpadlib>`_)
-and will be working to improve launchpadlib throughout the limited beta.
+launchpadlib still has deficiencies. We track bugs in the launchpadlib bug
+tracker(`https://bugs.launchpad.net/launchpadlib <https://bugs.launchpad.net/launchpadlib>`_).
+It is currently not actively maintained.
 
 Further information
 -------------------
