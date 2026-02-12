@@ -3,13 +3,9 @@
 Log into websites with OpenID
 =============================
 
-.. include:: /includes/important_not_revised_help.rst
-
-
-`OpenID <http://openid.net>`_ is a way to log into many websites using just one username and password. However, rather than entering that username and password at each website, you use a website you trust, such as `Launchpad <https://launchpad.net>`_ to confirm your identity to the other sites.
+`OpenID <https://openid.net/>`_ is a way to log into many websites using just one username and password. However, rather than entering that username and password at each website, you use a website you trust, such as `Launchpad <https://launchpad.net>`_ to confirm your identity to the other sites.
 
 Here's how it works:
-
 
 #. You visit a website that supports OpenID and it asks you to log in.
 #. Enter the Launchpad profile URL - ``https://launchpad.net/~your-nickname``
@@ -20,31 +16,20 @@ This means that you only need to remember your Launchpad profile URL, username a
 
 We will send your Launchpad nickname to the site but some websites may choose to refer to you by your Launchpad profile URL - e.g. ``https://launchpad.net/~your-nickname``.
 
-Launchpad supports both `OpenID 2.0 <http://openid.net/specs/openid-authentication-2_0.html>`_ and `1.1 <https://openid.net/specs/openid-authentication-1_1.html>`_.
-
-`Learn more about OpenID <https://openid.net/foundation/>`_.
-
-Where can I use it?
--------------------
-
-You can use Launchpad to log into any of the growing number of sites that support OpenID. These include:
-
-* `LiveJournal <http://livejournal.com>`_.
-
-Find out more about `where you can use OpenID <http://en.wikipedia.org/wiki/OpenID#Adoption>`_.
+Launchpad supports both OpenID `2.0 <http://openid.net/specs/openid-authentication-2_0.html>`_ and `1.1 <https://openid.net/specs/openid-authentication-1_1.html>`_.
 
 FAQs
 ----
 
 **Where can I see a list of bugs filed against Launchpad's OpenID implementation?**
 
-All of our `OpenID bugs are tagged <https://bugs.launchpad.net/launchpad-project/+bugs?field.tag=openid>`_ with the openid tag.
+All of our `OpenID bugs <https://bugs.launchpad.net/launchpad-project/+bugs?field.tag=openid>`_ are tagged with the openid tag.
 
 **Can I log into Launchpad with my existing OpenID?**
 
 Not at this time. Launchpad is currently an OpenID Provider (OP) and not a consumer (RP).
 
-**I Can I link my existing OpenID to my Launchpad OpenID?**
+**Can I link my existing OpenID to my Launchpad OpenID?**
 
 There is no way today to associate your other OpenIDs with your Launchpad OpenID.
 
@@ -54,4 +39,4 @@ Yes. You can `change your Launchpad id <https://launchpad.net/people/+me/+edit>`
 
 **Do you support immediate mode authentication requests?**
 
-Currently we do not support immediate mode properly since we do not support pre-authorising an RP to avoid the login page. We have some infrastructure to support pre-authorisation, but decided to leave it out because it complicated the UI.
+Currently we do not support immediate mode properly since we do not support pre-authorising an RP to avoid the login page.
