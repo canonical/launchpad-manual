@@ -3,6 +3,8 @@
 Hosting Git repositories
 ========================
 
+.. include:: /includes/bazaar-discontinued.rst
+
 .. include:: /includes/important_not_revised_help.rst
 
 Launchpad supports hosting `Git <http://git-scm.com/>`_ repositories.
