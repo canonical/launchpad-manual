@@ -16,7 +16,7 @@ This means that you only need to remember your Launchpad profile URL, username a
 
 We will send your Launchpad nickname to the site but some websites may choose to refer to you by your Launchpad profile URL - e.g. ``https://launchpad.net/~your-nickname``.
 
-Launchpad supports both OpenID `2.0 <http://openid.net/specs/openid-authentication-2_0.html>`_ and `1.1 <https://openid.net/specs/openid-authentication-1_1.html>`_.
+Launchpad supports both OpenID `2.0 <https://openid.net/specs/openid-authentication-2_0.html>`_ and `1.1 <https://openid.net/specs/openid-authentication-1_1.html>`_.
 
 FAQs
 ----
