@@ -21,7 +21,7 @@ Script`_, and to `Work with Unreleased or Forked Packages`_.
 .. _pip: https://pip.pypa.io/
 
 ======
-Set Up
+Set up
 ======
 
 If you use the ``rocketfuel-get`` script, run that, and you will be done.
@@ -47,10 +47,10 @@ work without the ``rocketfuel-*`` scripts.
 .. _`Everyday Usage: Manual`: Manual_
 
 ==============
-Everyday Usage
+Everyday usage
 ==============
 
-``rocketfuel`` Scripts
+``rocketfuel`` scripts
 ======================
 
 If you typically use ``rocketfuel-get``, and you don't change source
@@ -73,7 +73,7 @@ After this, retry your ``make``.
 That's it for everyday usage.
 
 =================================
-Managing Dependencies and Scripts
+Managing dependencies and scripts
 =================================
 
 What if you need to change or add dependencies or scripts?  As you might
@@ -178,7 +178,7 @@ file, and working with unreleased packages.
 .. _`requirements file`: https://pip.pypa.io/en/stable/reference/requirements-file-format/
 .. _`constraints file`: https://pip.pypa.io/en/stable/reference/requirement-specifiers/
 
-Add a Package
+Add a package
 =============
 
 Let's suppose that we want to add the "lazr.foo" package as a dependency.
@@ -287,7 +287,7 @@ confusion across build environments will happen.
 
 .. _upgrade-package:
 
-Upgrade a Package
+Upgrade a package
 =================
 
 Sometimes you need to upgrade a dependency.  This may require additional
@@ -304,7 +304,7 @@ given an explicit version number, pip prefers final releases over alpha and
 beta releases.  If you want to temporarily override this behaviour, use the
 ``--pre`` option to ``pip``.
 
-Add a Script
+Add a script
 ============
 
 We often need scripts that are run in a certain environment defined by Python
@@ -321,7 +321,7 @@ This will create a script named ``run`` in the ``bin`` directory that calls the
 ``start_launchpad`` function in the
 ``lp.scripts.runlaunchpad`` module.
 
-Work with Unreleased or Forked Packages
+Work with unreleased or forked packages
 =======================================
 
 Sometimes you need to work with unreleased or forked packages.  Hopefully,
@@ -340,7 +340,7 @@ on for further revisions.
 
 .. _`PEP 440`: https://www.python.org/dev/peps/pep-0440/
 
-Developing a Dependent Library In Parallel
+Developing a dependent library in parallel
 ==========================================
 
 Sometimes you need to iterate on change to a library used by Launchpad that
@@ -363,7 +363,7 @@ are free to revert the configuration to only develop Launchpad.  Make sure
 to test with the final distribution before submitting your branch.
 
 =====================
-Possible Future Goals
+Possible future goals
 =====================
 
 - Use wheels.

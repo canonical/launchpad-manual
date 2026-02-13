@@ -1,6 +1,6 @@
 .. _live-database-patching:
 
-Live Database Patching
+Live database patching
 ======================
 
 .. include:: ../../includes/important_not_revised.rst
@@ -47,7 +47,7 @@ by the full staging update).
 We will be automating this in future, to handle at least the happy-path
 and avoiding accidentally running a hot patch during a fastdowntime.
 
-Index Creation
+Index creation
 ~~~~~~~~~~~~~~
 
 Index creation for all but the smallest tables should be done in a hot
@@ -84,7 +84,7 @@ Views
 
 Run the CREATE OR REPLACE VIEW statements on the master.
 
-Stored Procedures
+Stored procedures
 ~~~~~~~~~~~~~~~~~
 
 Stored procedures can be changed (as long as the signature is still
@@ -92,14 +92,14 @@ consistent with any triggers).
 
 Table trigger definitions must be done as cold patches.
 
-Cold Patches
+Cold patches
 ------------
 
 Cold patches need to be applied with no other system activity to prevent
 locks holding the patch up. We have automation around this to do it as
 rapidly as possible.
 
-Patch Process Overview
+Patch process overview
 ~~~~~~~~~~~~~~~~~~~~~~
 
 1. Update wildcherry Launchpad source tree to the revision to run: make
@@ -112,7 +112,7 @@ Patch Process Overview
 
 3. Run full-update.py
 
-Table Creation
+Table creation
 ~~~~~~~~~~~~~~
 
 This can sometimes be done hot, but not reliably due to FK relations
@@ -123,7 +123,7 @@ seem to be edge cases where we cannot do this live (such as a table with
 foreign key constraints to a busy table, requiring locks on the busy
 table that will not be granted quickly enough).
 
-Table Renaming
+Table renaming
 ~~~~~~~~~~~~~~
 
 Because code is being deployed separately from database updates, we need

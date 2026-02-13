@@ -1,4 +1,4 @@
-Datetime Usage Guide
+Datetime usage guide
 ====================
 
 .. include:: ../../includes/important_not_revised.rst
@@ -16,7 +16,7 @@ Furthermore, there are two main ``datetime`` types in use:
 -  timestamps, which identify a particular point in time
 -  time deltas, which identify an interval in time
 
-Data Types
+Data types
 ----------
 
 Python
@@ -89,7 +89,7 @@ type. To wrap an interval database column, use the
        timestamp = DateTime(name='timestamp', tzinfo=pytz.UTC)
        interval = TimeDelta(name='interval')
 
-Page Templates
+Page templates
 ~~~~~~~~~~~~~~
 
 Inside page templates, use the following TALES formatters to present
@@ -117,7 +117,7 @@ For time interval objects, use the following formatters:
 -  ``fmt:exactduration``
 -  ``fmt:approximateduration``
 
-Two Concepts of "Now"
+Two concepts of "now"
 ---------------------
 
 When working with the database, there are two distinct concepts of "now"
@@ -139,7 +139,7 @@ In cases where you are comparing timestamps, mixing the two concepts of
 "now" can result in race conditions. In most cases in Launchpad, the
 database transaction time is the correct one to use.
 
-Database Transaction Time
+Database transaction time
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Storing the current database transaction time in the database use the
@@ -167,7 +167,7 @@ can make use of the fact that ``UTC_NOW`` is an ``SQL()`` type:
 The database transaction time can be retrieved using
 ``lp.services.database.sqlbase.get_transaction_timestamp``.
 
-Present Time
+Present time
 ~~~~~~~~~~~~
 
 To create a Python ``datetime`` object that represents the present time, use

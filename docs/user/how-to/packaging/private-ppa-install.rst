@@ -33,7 +33,7 @@ page.
 Once you've accepted the offer, Launchpad will generate a unique
 password that gives you access to the archive.
 
-Get ready to install software from the Private PPA
+Get ready to install software from the private PPA
 --------------------------------------------------
 
 Adding a Private PPA to your Ubuntu system is simple. Again, there are
@@ -44,7 +44,7 @@ two steps:
 2. Add the archive's security key to your computer so that Ubuntu can
    verify the authenticity of any software you download.
 
-Add the Private PPA to Ubuntu
+Add the private PPA to Ubuntu
 ------------------------------
 
 Ubuntu uses the Debian system of software archives, also called
@@ -83,7 +83,7 @@ Sources`` tab just as you did in step 4.
 Leave the ``Software Sources`` application open because shortly we'll use
 it to add the Private PPA's security key to your Ubuntu system.
 
-Add the Private PPA's security key to Ubuntu
+Add the private PPA's security key to Ubuntu
 --------------------------------------------
 
 Launchpad Personal Package Archives -- whether private or public -- each

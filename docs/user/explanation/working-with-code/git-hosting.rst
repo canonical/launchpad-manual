@@ -198,7 +198,7 @@ security fixes.
 HTTPS authentication
 --------------------
 
-Access Tokens
+Access tokens
 ~~~~~~~~~~~~~
 
 To push repositories over HTTPS, or to clone or pull private

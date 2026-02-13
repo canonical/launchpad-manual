@@ -1,6 +1,6 @@
 .. _project-groups:
 
-Project Groups
+Project groups
 ==============
 
 .. include:: /includes/important_not_revised_help.rst

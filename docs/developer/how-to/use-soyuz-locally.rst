@@ -61,7 +61,7 @@ To run the builder by default, you should make sure that other hosts on the Inte
 
  $ echo RUN_NETWORK_REQUESTS_AS_ROOT=yes > /etc/default/launchpad-buildd
 
-Launchpad Configuration
+Launchpad configuration
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 From your host system:

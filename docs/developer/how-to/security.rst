@@ -7,7 +7,7 @@ system is trying to model.
 
 This document is about security policy in Launchpad.
 
-Defining Permissions in Launchpad
+Defining permissions in Launchpad
 ---------------------------------
 
 .. note::
@@ -30,7 +30,7 @@ A new permission (see the note above) is defined in Launchpad in the file
       id="launchpad.View" title="Viewing something" access_level="read" />
 
 
-Defining Authorization Policies for Permissions
+Defining authorization policies for permissions
 -----------------------------------------------
 
 Once you've defined a permission, you'll probably want to define some logic

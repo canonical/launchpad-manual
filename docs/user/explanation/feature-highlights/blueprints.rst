@@ -59,7 +59,7 @@ Finally, the "delivery" status is all about implementation and
 execution. It tells you whether the work has been done, or whether it is
 on track to be done.
 
-Storing the detail of a Blueprint
+Storing the detail of a blueprint
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Launchpad itself only contains a summary of the Blueprint - usually just
@@ -81,7 +81,7 @@ leaders, and which are not, so they can choose to focus their
 contributions on those pieces most likely to be accepted into the
 project.
 
-Linking Blueprints
+Linking blueprints
 ------------------
 
 Launchpad allows you to link a blueprint and a bug, or a blueprint and a

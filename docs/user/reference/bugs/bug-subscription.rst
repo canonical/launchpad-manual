@@ -65,7 +65,7 @@ Launchpad uses email headers to help you automatically filter bug mail.
 
 .. _x-launchpad-bug:
 
-X-Launchpad-Bug
+X-launchpad-bug
 ^^^^^^^^^^^^^^^
 
 The ``X-Launchpad-Bug`` header collates most of the other

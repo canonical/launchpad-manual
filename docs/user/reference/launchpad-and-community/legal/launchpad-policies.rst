@@ -19,7 +19,7 @@ to show that your project uses Launchpad. Canonical may revoke your permission t
 if you make modifications to the images or use them incorrectly (e.g., on a project that does not
 use Launchpad.net).
 
-Help, Dev, and News Content Licence
+Help, dev, and news content licence
 -----------------------------------
 
 The documentation contained in the :ref:`Launchpad manual <launchpad-manual-for-users>`, the `Launchpad Development wiki <https://dev.launchpad.net/>`_, and on the `Launchpad blog <http://blog.launchpad.net/>`_ is owned by Canonical Ltd. and is licensed under a `Creative Commons Attribution 2.0 UK: England & Wales License <http://creativecommons.org/licenses/by/2.0/uk/>`_.

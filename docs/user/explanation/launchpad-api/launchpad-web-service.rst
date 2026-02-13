@@ -18,7 +18,7 @@ web service. It shows you how to read and write information about those
 resources by making HTTP requests. It assumes you have basic knowledge
 of how a web browser and web server interact.
 
-Launchpad Resources
+Launchpad resources
 -------------------
 
 Every object in Launchpad- everything you might think of as having a
@@ -805,7 +805,7 @@ the new version of the object (complete with a new ETag), work out any
 contradictions between the other person's change and the change you want
 to make, and re-submit with the new ETag.
 
-WADL Description
+WADL description
 ----------------
 
 Like most web service providers we publish `a prose document <http://launchpad.net/+apidoc/>`_ describing the capabilities

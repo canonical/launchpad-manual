@@ -70,7 +70,7 @@ in French "0 fichier, 1 fichier, 2 fichiers, etc." If your language
 works like this, then your plural expression is "n > 1", meaning "Use
 the plural form if the number of items is larger than 1". You are done.
 
-Treatment of Zero
+Treatment of zero
 -----------------
 
 Please be aware that normal grammatical plural rules may not include a

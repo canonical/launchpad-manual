@@ -1,4 +1,4 @@
-Launchpad Mail
+Launchpad mail
 ==============
 
 .. include:: ../../includes/important_not_revised.rst
@@ -19,7 +19,7 @@ page is really in draft state, so it's just a grab bag of various
 information. We'll continue to improve it; please :ref:`help <get-help>` us if
 you can.
 
-Configuring Mail
+Configuring mail
 ----------------
 
 Outgoing mail is configured using configs, so you'll need a config that

@@ -1,6 +1,6 @@
 .. _use-the-launchapd-email-interface:
 
-Use the Launchapd email interface
+Use the Launchpad email interface
 =================================
 
 .. include:: /includes/important_not_revised_help.rst

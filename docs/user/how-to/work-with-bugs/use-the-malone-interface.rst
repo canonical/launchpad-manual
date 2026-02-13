@@ -1,4 +1,4 @@
-Use the Malone (Launchpad) XMLRPC Interface
+Use the malone (Launchpad) XMLRPC interface
 ===========================================
 
 .. include:: /includes/important_not_revised_help.rst

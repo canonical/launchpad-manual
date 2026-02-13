@@ -58,7 +58,7 @@ worked on') get answers accurate enough... and how accurate do we need?
 We answer that question in the :ref:`bug triage policy <triaging-launchpad-project-bugs>` 
 itself.
 
-Bug Importance
+Bug importance
 --------------
 
 Bug importance in Launchpad is where we record the result of the triage process; 

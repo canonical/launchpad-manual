@@ -1,7 +1,7 @@
 .. _setting-up-and-running-launchpad-quickstart:
 
 =============================================
-Setting up and running Launchpad (Quickstart)
+Setting up and running Launchpad (quickstart)
 =============================================
 
 .. note::
@@ -52,7 +52,7 @@ LXD also has some nice snapshotting and ZFS capabilities, and is what other
 Launchpad developers use, so other people will be able to help you debug
 your setup if needed. 
 
-Setting up Launchpad Development Container
+Setting up Launchpad development container
 ==========================================
 
 .. code-block:: shell-session
@@ -157,7 +157,7 @@ This only runs the basic web application.  `Codehosting
 steps.
 
 
-CSS Watch
+CSS watch
 ---------
 
 While running a local instance of Launchpad, if you are interested in updating

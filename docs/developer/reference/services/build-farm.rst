@@ -118,7 +118,7 @@ builder-proxy (auth)
 * ``rless builder-proxy-auth.lp.internal::rutabaga-logs/rutabaga-error.log``
 * ``rless builder-proxy-auth.lp.internal::rutabaga-logs/rutabaga-purge.log``
 
-builder-proxy (squid) 
+builder-proxy (squid)
 ^^^^^^^^^^^^^^^^^^^^^
 
 * ``rless 10.131.48.38::squid-logs/access.log``
@@ -149,7 +149,7 @@ builder-proxy (auth)
 * ``rless builder-proxy-auth.staging.lp.internal::rutabaga-logs/rutabaga-error.log``
 * ``rless builder-proxy-auth.staging.lp.internal::rutabaga-logs/rutabaga-purge.log``
 
-builder-proxy (squid) 
+builder-proxy (squid)
 ^^^^^^^^^^^^^^^^^^^^^
 
 * ``rless 10.132.224.179::squid-logs/access.log``

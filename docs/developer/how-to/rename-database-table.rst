@@ -1,5 +1,5 @@
 =========================
-Renaming a Database Table
+Renaming a database table
 =========================
 
 Renaming a table involves a few steps:

@@ -1,4 +1,4 @@
-Storm Migration Guide
+Storm migration guide
 =====================
 
 .. include:: ../../includes/important_not_revised.rst
@@ -64,7 +64,7 @@ The second form is often more convenient, and is preferred if you don't
 need to make updates and want them to play nicely with objects from an
 unknown store (e.g. passed in via your method parameters).
 
-Utility methods and Stores
+Utility methods and stores
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you are writing a utility method like MailingListSet.get, use the
@@ -90,7 +90,7 @@ So the only times you'll run into trouble are if:
 We plan to address these issues better once we're using Python 2.5 and
 its support for **with** statements / context management.
 
-Adding Objects
+Adding objects
 ~~~~~~~~~~~~~~
 
 /!\\ **Note:** this section applies to classes that are not defined
@@ -120,7 +120,7 @@ object's store:
    owner = getUtility(IPersonSet).getByEmail('test@canonical.com')
    product = Product(owner=owner) # product added to owner's store
 
-Removing Objects
+Removing objects
 ~~~~~~~~~~~~~~~~
 
 Objects can be removed from the database using the \`Store.remove\`
@@ -133,7 +133,7 @@ method. To remove an object from its store, you can use:
 
    Store.of(some_object).remove(some_object)
 
-Getting Objects by ID
+Getting objects by ID
 ~~~~~~~~~~~~~~~~~~~~~
 
 The equivalent of SQLObject's \`Class.get()\` method is \`Store.get`. It
@@ -145,7 +145,7 @@ takes the class and the primary key of the object as arguments:
    store = getUtility(IZStorm).get('main')
    person = store.get(Person, 42)
 
-Querying Objects
+Querying objects
 ~~~~~~~~~~~~~~~~
 
 The equivalent of SQLObject's ``select``, ``selectBy``, ``selectOne``,
@@ -200,7 +200,7 @@ results with the ``__storm_order__`` class attribute.
 See the ``storm.store.ResultSet`` doc strings and the Storm tutorial for
 more details on what is possible.
 
-Defining Tables
+Defining tables
 ~~~~~~~~~~~~~~~
 
 Some of the primary differences between SQLObject and Storm database
@@ -248,7 +248,7 @@ class definitions are:
    otherwise your ``id`` column will not get set automatically and you
    will get an ``IntegrityError`` from PostgreSQL.
 
-Foreign Key References
+Foreign key references
 ^^^^^^^^^^^^^^^^^^^^^^
 
 The equivalent of SQLObject's ``ForeignKey`` class is ``Reference``. A
@@ -281,7 +281,7 @@ The ``Reference`` class is also used to replace SQLObject's
    # Storm
    import_job = Reference(id, 'CodeImportJob.code_importID', on_remote=True)
 
-Reference Sets
+Reference sets
 ^^^^^^^^^^^^^^
 
 The ``SQLMultipleJoin`` and ``SQLRelatedJoin`` classes are replaced by
@@ -315,7 +315,7 @@ include:
    reference set. This behaves a lot like ``Store.find()`` without the
    first argument.
 
-Property Setters / Validators
+Property setters / validators
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 SQLObject provided two ways of controlling how variables were set:
@@ -382,7 +382,7 @@ it. For example:
 
 This result set will return (product, owner, driver) tuples.
 
-Direct SQL Queries
+Direct SQL queries
 ~~~~~~~~~~~~~~~~~~
 
 To perform direct SQL queries, we previously used the ``cursor()``
@@ -401,7 +401,7 @@ It also supports iteration.
    result = store.execute("SELECT name FROM person ORDER BY name")
    names = result.get_all()
 
-Migration Plan
+Migration plan
 --------------
 
 A good order to migrate code is:
@@ -427,7 +427,7 @@ on dependencies between changes.
 For new code, consider using native Storm API from the start, rather
 than continuing to use the compatibility layer.
 
-Tips on Converting Tests
+Tips on converting tests
 ------------------------
 
 From "Tips in converting tests to Storm", May 30, 2008,

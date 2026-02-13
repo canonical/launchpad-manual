@@ -158,7 +158,7 @@ In case your build fails, you can:
 
     >>> oci_build.retry()
 
-Next Steps
+Next steps
 ------------------------------------------
 
 - :ref:`Build snaps on Launchpad <build-snaps-in-launchpad>`

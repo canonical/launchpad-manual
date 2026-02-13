@@ -6,7 +6,7 @@ This document describes expected practices when writing Python code.  There
 are occasions when you can break these rules, but be prepared to justify
 doing so when your code gets reviewed.
 
-Existing Conventions
+Existing conventions
 ====================
 
 There are well-established conventions in the Python community, and in
@@ -28,7 +28,7 @@ Coding standards other projects use:
 * `Zope developer guidelines
   <https://www.zope.org/developer/guidelines.html>`_
 
-Related Documents
+Related documents
 =================
 
 * `Exception guidelines <https://dev.launchpad.net/ExceptionGuidelines>`_

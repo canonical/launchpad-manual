@@ -26,7 +26,7 @@ the files to actually appear in your archive.
 If you only copy the source, the corresponding build records are created
 in the destination PPA immediately.
 
-Copy Errors
+Copy errors
 -----------
 
 Version numbers need to be unique

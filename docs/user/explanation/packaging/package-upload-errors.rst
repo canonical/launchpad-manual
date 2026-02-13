@@ -26,7 +26,7 @@ There are two main reasons for this:
 1. You failed to sign the .changes file on the source package that you uploaded.
 2. The signing key that you used is not known to Launchpad, `you need to add it to your account <https://launchpad.net/~/+editpgpkeys>`_.
 
-clearsign failed: secret key not available
+Clearsign failed: secret key not available
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you get an error when signing the changes file (``clearsign failed: secret key not available``), pass an additional option ``-k[key_id]`` to debuild. You can use ``gpg --list-keys`` to get the key ID. Look for line similar to ``pub 12345/12ABCDEF``; the key is the alphanumeric section after the forward slash.

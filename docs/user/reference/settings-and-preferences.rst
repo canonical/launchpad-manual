@@ -23,7 +23,7 @@ Changing settings
 
 ``GetText(Save)`` updates your profile (stored on the wiki server).
 
-Quick Links
+Quick links
 -----------
 
 Links placed here will appear in the navigation menu for your login. You

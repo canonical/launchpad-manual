@@ -130,7 +130,7 @@ Launchpad code should use the methods defined in lp.services.mail.sendmail
 to send emails (`simple_sendmail`, `sendmail` or possibly `raw_sendmail`)
 
 
-Functional Tests
+Functional tests
 ----------------
 
 The functional test harness is configured to allow easy testing of emails.

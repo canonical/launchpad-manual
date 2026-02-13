@@ -228,7 +228,7 @@ Any lines that are indented by two spaces, and are directly below your
 ``ubuntu-branding`` branch will be merged into ``pyfoo`` before
 it is nested in your primary branch.
 
-nest-part
+Nest-part
 ^^^^^^^^^
 
 ::

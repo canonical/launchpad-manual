@@ -86,7 +86,7 @@ Now, you can push a branch using a command such as this:
 HTTPS authentication
 --------------------
 
-Access Tokens
+Access tokens
 ~~~~~~~~~~~~~
 
 To push repositories over HTTPS, or to clone or pull private

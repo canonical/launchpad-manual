@@ -11,7 +11,7 @@ change. Read this document carefully for a description of the review
 process and what it entails. We use Launchpad Code Merge Proposals to
 manage this process.
 
-What are Pre-Merge Reviews?
+What are pre-merge reviews?
 ---------------------------
 
 Pre-merge reviews are peer reviews of source code modifications. They
@@ -23,7 +23,7 @@ changes to miss something that a second set of eyeballs will catch. This
 is particularly the case in some areas of Launchpad which have deep and
 unobvious coupling.
 
-Pre-Implementation Call
+Pre-implementation call
 -----------------------
 
 We recommend that new contributors chat to an experienced developer

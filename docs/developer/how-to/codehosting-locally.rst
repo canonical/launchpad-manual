@@ -1,4 +1,4 @@
-How To Use Codehosting Locally
+How to use codehosting locally
 ==============================
 
 **Note:** This guide is for bazaar hosting. For git hosting, see `the

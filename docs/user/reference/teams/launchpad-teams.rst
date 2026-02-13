@@ -1,6 +1,6 @@
 .. _ref-launchpad-teams:
 
-Launchpad Teams
+Launchpad teams
 ===============
 
 .. include:: /includes/important_not_revised_help.rst

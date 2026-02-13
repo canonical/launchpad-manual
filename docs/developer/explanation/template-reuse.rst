@@ -9,7 +9,7 @@ that only that definition need ever be changed, and you can't wind up
 with two definitions that are subtly different. There are two ways of
 avoiding this: fragment views and macros.
 
-Fragment Views
+Fragment views
 --------------
 
 Fragment views are the preferred method. When working with content
@@ -40,14 +40,14 @@ page that seems to have certain things repeated frequently, you can
 define a macro for the repeated code, then use the macro later in the
 page.
 
-Single-view Macros
+Single-view macros
 ~~~~~~~~~~~~~~~~~~
 
 To refer to the macro ``mymacro`` within the page where you defined it, you can
 use ``template/macros/mymacro``.
 ``template`` refers to the template that is currently being rendered.
 
-Context-wide Macros
+Context-wide macros
 ~~~~~~~~~~~~~~~~~~~
 
 If you have macros that need to be reused across pages for a given
@@ -58,7 +58,7 @@ You can then refer to it as ``context/@@/+macros/mymacro``. It is rarely a good
 idea for one view to refer to the macro of a "normal" view, because that reuse
 will not be obvious to the casual observer.
 
-Multi-context Macros
+Multi-context macros
 ~~~~~~~~~~~~~~~~~~~~
 
 If you wish to reuse macros for views across various context objects,

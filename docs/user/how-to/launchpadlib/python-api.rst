@@ -77,7 +77,7 @@ Does a bug have a release target?
       has_target(b, jaunty)
       ### ==> should evalute to True
 
-Listing the current package versions in a particular distroseries
+Listing the current package versions in a particular DistroSeries
 -----------------------------------------------------------------
 
 ::

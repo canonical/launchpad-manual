@@ -1,6 +1,6 @@
 .. _launchpadlib-api-compatibility:
 
-launchpadlib API compatibility
+Launchpadlib API compatibility
 ==============================
 
 .. include:: /includes/important_not_revised_help.rst
@@ -9,7 +9,7 @@ launchpadlib API compatibility
 The API compatibility of the launchpadlib Python library has not always
 been maintained as well as an author of a program using it would hope.
 
-&= 1.5.5 (&= Ubuntu Lucid Lynx)
+&= 1.5.5 (&= Ubuntu lucid lynx)
 -------------------------------------
 
 Version 1.5.5 added the support for accessing various different versions
@@ -30,7 +30,7 @@ and either will break in non-obvious ways if you give it the wrong form.
 Version 1.8.0 changed things, which 1.9.0 then changed again.
 And, it never went into any final Ubuntu release. Probably best to just pretend it doesn't exist.
 
-&= 1.9.0 (&= Ubuntu Natty Narwhal)
+&= 1.9.0 (&= Ubuntu natty narwhal)
 ----------------------------------------
 
 Version 1.9.x's changes versus 1.6.x include a major refactor of how

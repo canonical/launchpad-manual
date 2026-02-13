@@ -1,4 +1,4 @@
-Launchpad Code Hosting
+Launchpad code hosting
 ======================
 
 .. include:: ../../includes/important_not_revised.rst
