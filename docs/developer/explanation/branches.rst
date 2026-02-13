@@ -37,7 +37,7 @@ it is only cleared into foo-stable if the buildbot test runner succeeds.
 If you want to know how all of this works behind the scenes, read
 `Trunk/Glue <Trunk/Glue>`__ (after reading the rest of this page).
 
-Look at the Pretty Pictures
+Look at the pretty pictures
 ---------------------------
 
 Diagrams might be the best way to understand this. (If they don't work,
@@ -53,7 +53,7 @@ asked!
 
 It is also possible to submit directly to the **db-devel** branch.
 
-Let's Try That in Words
+Let's try that in words
 -----------------------
 
 Database changes can be destabilising to other work, so we isolate them
@@ -97,7 +97,7 @@ Problems that can occur
     manually submitting a branch to **db-devel** that includes the
     branch that failed to merge plus any necessary adjustments.
 
-Where to Send Merge Requests
+Where to send merge requests
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Merge requests that do any of the following should be targeted at the

@@ -49,7 +49,7 @@ Checklist of known problems
    later query rather than prejoining. E.g. using the pre_iter_hook of
    DecoratedResultSet to populate the storm cache.
 
-Many small queries [in a webapp context] -- Late Evaluation
+Many small queries [in a webapp context] -- late evaluation
 -----------------------------------------------------------
 
 Databases work best when used to work with sets of data, not objects -
@@ -95,7 +95,7 @@ manually invalidate if you are using storm directly).
 A word of warning too - Utilities will often get in the way of
 optimising this :)
 
-Diagnosis Tools and Approaches
+Diagnosis tools and approaches
 ------------------------------
 
 EXPLAIN ANALYZE on staging and qastaging can be used by LOSAs, the TAs,

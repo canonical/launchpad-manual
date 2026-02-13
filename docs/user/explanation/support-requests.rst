@@ -13,7 +13,7 @@ helps a lot in order to avoid to duplicate efforts. Remember, it is
 always a win choice to spend some time here before attempting to insert
 a new ticket.
 
-Where to Practice
+Where to practice
 -----------------
 
 If this is your first time with support requests and you do not feel too

@@ -134,7 +134,7 @@ trackers:
    pull and push information, and to relay information to users in
    Launchpad.
 
-General API Methods
+General API methods
 -------------------
 
 bugtracker_version(): Retrieve the version of the bug tracker
@@ -349,7 +349,7 @@ the following assumptions:
 
     The user of Launchpad in that bugtracker is generally used as the "user" who makes comments on bugs, or files new bugs.
 
-Required API Methods
+Required API methods
 ~~~~~~~~~~~~~~~~~~~~
 
 These are the methods that we expect the remote API to provide for
@@ -366,7 +366,7 @@ so we can identify them and avoid importing the same comment twice.
 -  **Input**: Remote bug id, comment text, title (optional)
 -  **Output**: comment id, unique with the bug and non-changing.
 
-get_comment(): Get comments by comment id
+get_comment(): Get comments by comment ID
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 When getting information about bugs using the API above, we will mostly
@@ -430,7 +430,7 @@ number in other reports and pages. It should be possible for users of
 the remote tracker to update the corresponding Launchpad bug number for
 any given bug in the remote tracker directly.
 
-get_launchpad_bug(): Retrieve the current Launchpad bug id for a given bugtracker bug
+get_launchpad_bug(): Retrieve the current Launchpad bug ID for a given bugtracker bug
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This is the read operation that matches set_launchpad_bug.

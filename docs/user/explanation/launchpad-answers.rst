@@ -1,5 +1,5 @@
 #####################
-Launchpad Answers
+Launchpad answers
 #####################
 .. include:: /includes/important_not_revised_help.rst
 

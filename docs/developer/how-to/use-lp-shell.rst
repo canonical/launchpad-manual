@@ -1,6 +1,6 @@
 .. _how-to-use-lp-shell:
 
-How to Use lp-shell
+How to use lp-shell
 =====================
 
 lp-shell is a CLI tool in the form of an interactive Python API client,
@@ -22,7 +22,7 @@ The way to install lp-shell is pretty straight forward. Only package needed is
 
 “lp-shell” resides in lptools, so this is all we need to connect to Launchpad.
 
-[Optional, Recommended] Install IPython
+[Optional, recommended] install IPython
 _______________________________________
 
 If we enter the lp-shell now, we will see that it is a python interpreter
@@ -34,7 +34,7 @@ exploration when inside the lp-shell.
 
     sudo apt install ipython3
 
-How to Connect
+How to connect
 --------------
 
 After installation, we can enter into lp-shell using:
@@ -61,7 +61,7 @@ All the resources open to API can be found in the `API Documentation
 <https://launchpad.net/+apidoc/>`_.
 
 
-Other Options
+Other options
 _____________
 
 The simple ``lp-shell`` command implicitly defaults two options: the environment
@@ -205,7 +205,7 @@ As a result, it will also show us the other exploration paths we can take.
     In [2]:dir(lp.me)
     Out[2]: [...]
 
-Using Special LP Object Entries
+Using special LP object entries
 _______________________________
 
 In the resultant list, we can find some of the more readily useful exploration

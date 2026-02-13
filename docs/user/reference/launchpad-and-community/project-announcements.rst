@@ -1,4 +1,4 @@
-Project Announcements
+Project announcements
 =====================
 
 .. include:: /includes/important_not_revised_help.rst

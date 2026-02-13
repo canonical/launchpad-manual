@@ -1,6 +1,6 @@
 .. _using-rosetta:
 
-Using Rosetta
+Using rosetta
 =============
 
 .. include:: /includes/important_not_revised_help.rst
@@ -13,7 +13,7 @@ Concepts
 
 FIXME: describe templates, products, distros,...
 
-Web Experience
+Web experience
 --------------
 
 Rosetta is designed to be easy to use and accessible to everyone. You
@@ -27,7 +27,7 @@ install anything on your existing system.
 
 FIXME: describe how translation works (with lots of screenshots)
 
-Fast Updates
+Fast updates
 ------------
 
 At the same time, Rosetta is a live system, and as soon as you submit
@@ -44,7 +44,7 @@ At the same time, even if upstream doesn't provide updated translations,
 you can work independently on them and make your language support better
 even if upstream packages never see another release.
 
-Translating Together
+Translating together
 --------------------
 
 Rosetta is used by thousands of users worldwide. That means that using
@@ -62,7 +62,7 @@ input from others, you're encouraged to mark your translation as the one
 needing review: as soon as someone goes over it, they'll either accept
 it as is, or fix it and enable it.
 
-Status Overview
+Status overview
 ---------------
 
 Whether you are a translator interested only in a subset of languages,
@@ -99,7 +99,7 @@ At the same time, Rosetta provides translations for Ubuntu language
 packs, and automatically imports any translations and templates from
 newly uploaded Ubuntu packages.
 
-Organizing Projects
+Organizing projects
 -------------------
 
 Maintainers of a software project can decide to make Rosetta their
@@ -112,7 +112,7 @@ For most projects, startin translation for new version is as simple as
 uploading a new template file for translation: all the translations will
 be automatically synced
 
-Organizing Teams
+Organizing teams
 ----------------
 
 Translating teams are groups of people working together on a single

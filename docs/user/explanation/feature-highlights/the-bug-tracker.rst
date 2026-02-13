@@ -51,7 +51,7 @@ This file can be used to provide additional information like logs, dumps
 and command outputs to bugs without burdening the users with finding and
 uploading the relevant files/details.
 
-File Format
+File format
 -----------
 
 The file containing the extra data should be a MIME multipart message.
@@ -102,7 +102,7 @@ become comments for the filed bug.
 Parts with a Content-Disposition of ``attachment`` will have have their
 contents added as attachments to the filed bug.
 
-Sample File
+Sample file
 ~~~~~~~~~~~
 
 ::
@@ -149,7 +149,7 @@ Sample File
 
    --boundary--
 
-Launchpad Bug Tracking Highlights
+Launchpad bug tracking highlights
 ---------------------------------
 
 This is a brief introduction to the use of Launchpad for bug tracking.
@@ -157,7 +157,7 @@ It examines the unique features of the Launchpad bug tracker, which may
 not be familiar to folks who have extensive experience with other bug
 trackers like Bugzilla.
 
-Cross-Project Collaboration
+Cross-project collaboration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Launchpad is a **platform for collaboration** - and crucially, that idea
@@ -215,7 +215,7 @@ An example will help to make this clear.
   their own sense of the priority of a particular issue, but if any of them fix it, or
   start work on a fix for it, the others can at least be aware of that progress.
 
-Email Commands and Comments
+Email commands and comments
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 An email interface to the Launchpad bug tracker lets you stay
@@ -292,7 +292,7 @@ on each of the projects that are affected, and privately to have a
 conversation with all of them, keeping track of their individual
 progress in addressing the issue before a public announcement is made.
 
-CVE Integration
+CVE integration
 ~~~~~~~~~~~~~~~
 
 CVEs are a standard registry of security vulnerabilities, so they can be
@@ -334,7 +334,7 @@ themselves. In this way people aren't arbitrarily made the assignee for
 bugs they did not select themselves, but there is still a general sense
 of the "group that is likely to want to fix this".
 
-Planned Features
+Planned features
 ----------------
 
 Some features of the Launchpad bug tracker are not yet complete, but

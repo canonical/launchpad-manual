@@ -1,4 +1,4 @@
-URL Traversal
+URL traversal
 =============
 
 .. include:: ../../includes/important_not_revised.rst
@@ -91,7 +91,7 @@ Note that this is using the context of the view to get the
 ICanonicalUrlData. If it were only using the view, you'd get infinite
 recursion.
 
-URL to View
+URL to view
 -----------
 
 The parent interface should have a

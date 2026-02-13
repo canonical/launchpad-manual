@@ -1,4 +1,4 @@
-Working with Code
+Working with code
 =================
 
 .. include:: /includes/important_not_revised_help.rst

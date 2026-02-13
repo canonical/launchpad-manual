@@ -1,6 +1,6 @@
 .. _build-snaps-in-launchpad:
 
-Build Snaps in Launchpad
+Build snaps in Launchpad
 ========================
 
 Snaps are containerised software packages that are designed to be simpler to 
@@ -270,7 +270,7 @@ Build with the API or the web interface(UI)
       running the ``snapcraft`` command. You can also go through the 
       ``buildlog`` and retry the build by selecting ``Request builds`` again.
 
-Next Steps
+Next steps
 ----------
 
 - `Install and run your built snap <https://documentation.ubuntu.com/snapcraft/stable/tutorials/craft-a-snap/#test-the-snap>`_

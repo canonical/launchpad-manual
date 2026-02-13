@@ -19,7 +19,7 @@ web service. It shows you how to read and write information about those
 resources by making HTTP requests. It assumes you have basic knowledge
 of how a web browser and web server interact.
 
-Launchpad Resources
+Launchpad resources
 ===================
 
 Every object in Launchpad--everything you might think of as having a
@@ -806,7 +806,7 @@ the new version of the object (complete with a new ETag), work out any
 contradictions between the other person's change and the change you want
 to make, and re-submit with the new ETag.
 
-WADL Description
+WADL description
 ================
 
 Like most web service providers we publish `a prose document <http://launchpad.net/+apidoc/>`_ describing the capabilities of all our resources. But we also publish a machine-readable document containing the same information. It's written in `WADL <https://www.w3.org/submissions/wadl/>`_ format, and you can use it as a basis for tools that interact with the web service. In fact, the reference documentation is just a human-readable transformation of the WADL document. The launchpadlib Python library is a thin wrapper on top of a generic WADL library: it becomes a Launchpad library when it reads in Launchpad's WADL file.

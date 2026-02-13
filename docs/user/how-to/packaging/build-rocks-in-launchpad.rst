@@ -1,6 +1,6 @@
 .. _build-rocks-in-launchpad:
 
-Build Rocks in Launchpad
+Build rocks in Launchpad
 ========================
 
 Rocks are Ubuntu LTS-based `OCI <https://opencontainers.org/>`_-compliant
@@ -43,7 +43,7 @@ return your own ``Person`` object::
     >>> lp.me
     <person at https://api.launchpad.net/devel/~username>
 
-Create the Rock Recipe
+Create the rock recipe
 ----------------------
 
 Creating a rock recipe in Launchpad means telling Launchpad from where to fetch
@@ -91,7 +91,7 @@ To get the methods associated with the object::
 To learn more about what you can do with the ``rock_recipe`` object, check the
 `rock recipe API documentation <https://api.launchpad.net/devel.html#rock_recipe>`_.
 
-Build the Rock Recipe
+Build the rock recipe
 ---------------------
 
 Requesting a build instructs Launchpad to compile and package the rock. This
@@ -143,7 +143,7 @@ You must query Launchpad to obtain the status of your build:
 To learn more about what you can do with the build object, refer to the
 `rock recipe build API documentation <https://api.launchpad.net/devel.html#rock_recipe_build>`_.
 
-Download the Rock
+Download the rock
 -----------------
 
 Once the build has completed successfully, fetch the build artifacts::
@@ -165,7 +165,7 @@ to download the rock::
     ... 
     Downloaded hello_latest_arm64.rock
 
-Build Failures
+Build failures
 --------------
 
 In case a build fails, ensure the rock can be built locally by running the 
@@ -175,7 +175,7 @@ and retry the build::
     >>> for build in rock_build:
     ...     build.retry()
 
-Next Steps
+Next steps
 ----------
 
 - Check out this tutorial on `running your rock <https://documentation.ubuntu.com/rockcraft/stable/tutorial/hello-world/>`_

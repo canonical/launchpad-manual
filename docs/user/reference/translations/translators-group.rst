@@ -93,7 +93,7 @@ To check the current status of Launchpad Translators Group, please consult the `
 
 If the Launchpad localization team appointed to your language is no longer active, or in case you encounter problems joining or working with the team, please let us know by contacting the `Launchpad Translation Coordinators <https://launchpad.net/~launchpad-translations-coordinators>`__.
 
-How to start a new team and join Launchpad Translators
+How to start a new team and join Launchpad translators
 ------------------------------------------------------
 
 Here's how you can create a new team for your language and join the

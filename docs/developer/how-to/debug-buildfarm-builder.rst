@@ -1,4 +1,4 @@
-Debug Build Farm on qastaging
+Debug build farm on qastaging
 =============================
 
 Access a builder

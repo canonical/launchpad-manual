@@ -1,6 +1,6 @@
 .. _code-concepts:
 
-Code Concepts
+Code concepts
 =============
 
 In order to fully understand the **\`lp.code\`** modules, it helps to
