@@ -1,11 +1,10 @@
-.. include:: /includes/bazaar-discontinued.rst
-
 .. _host-a-git-repository-on-launchpad:
 
 Host a Git repository on Launchpad
 ==================================
 
 .. include:: /includes/important_not_revised_help.rst
+.. include:: /includes/bazaar-discontinued.rst
 
 Launchpad supports hosting `Git <http://git-scm.com/>`_ repositories.
 Git repositories use a somewhat different model from Bazaar branches:
