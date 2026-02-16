@@ -169,7 +169,7 @@ self_link: the permanent ID
 
 Every entry has a ``self_link`` attribute. You can treat this as a permanent ID for
 the entry. If your program needs to keep track of Launchpad objects across
-multiple runs, a simple way to do it is to keep track of the ``self_link``s.
+multiple runs, a simple way to do it is to keep track of the ``self_link``\ s.
 
 .. code-block::
 
@@ -435,9 +435,9 @@ should be fine; otherwise run from the branch or the latest tarball).
 (From `the blog <http://blog.launchpad.net/api/three-tips-for-faster-launchpadlib-api-clients>`_).
 
 Report launchpadlib bugs
---------------------
+-----------------------
 
-launchpadlib still has deficiencies. You can `report bugs <https://bugs.launchpad.net/launchpadlib/+filebug>`_ 
+launchpadlib still has deficiencies. You can `report bugs <https://bugs.launchpad.net/launchpadlib/+filebug>`_
 affecting it, or browse bugs we are currently tracking in the `launchpadlib bug tracker <https://bugs.launchpad.net/launchpadlib>`_.
 
 Further information
