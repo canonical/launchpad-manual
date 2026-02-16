@@ -435,7 +435,7 @@ should be fine; otherwise run from the branch or the latest tarball).
 (From `the blog <http://blog.launchpad.net/api/three-tips-for-faster-launchpadlib-api-clients>`_).
 
 Report launchpadlib bugs
------------------------
+------------------------
 
 launchpadlib still has deficiencies. You can `report bugs <https://bugs.launchpad.net/launchpadlib/+filebug>`_
 affecting it, or browse bugs we are currently tracking in the `launchpadlib bug tracker <https://bugs.launchpad.net/launchpadlib>`_.
