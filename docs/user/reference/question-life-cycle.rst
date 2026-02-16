@@ -12,7 +12,7 @@ Status definitions
 
 The statuses defined for a questions are:
 
-``Open``: The question needs an answer. This may be because the quesiton is new or because a previous answer didn't solve completely the problem.
+``Open``: The question needs an answer. This may be because the question is new or because a previous answer didn't solve completely the problem.
 
 :literal:`Needs information`: More information is required from the reporter before an answer can be provided.
 
@@ -23,14 +23,14 @@ The statuses defined for a questions are:
 ``Expired``: A question in the ``Open`` or :literal:`Needs information` states that doesn't see any activity for more than two weeks
 is automatically set to this status.
 
-``Invalid``: The quesiton's content isn't really a valid support or help question related to the project.
+``Invalid``: The question's content isn't really a valid support or help question related to the project.
 
 A question starts its life in the ``open`` state and will change its state automatically based on users' actions.
 
 Actions that affect the question status
 ---------------------------------------
 
-The following actions are possible on a quesiton and will change its
+The following actions are possible on a question and will change its
 status in the described way.
 
 1. A person (other than the reporter) comes in requests more information. When the status of the question is ``Open``, this will change it to

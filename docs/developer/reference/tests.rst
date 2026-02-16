@@ -203,8 +203,7 @@ There is also an ``extract_text()`` helper that only renders the HTML text:
     klingon      30 Experimental  gnome-terminal
     junk.contrib 60 New 2005-10-31 12:03:57 ... weeks ago
 
-Read `Page tests <https://dev.launchpad.net/PageTests>`_ for other tips on
-writing page tests.
+Read :ref:`Page tests <page-tests>` for other tips on writing page tests.
 
 When to print and when to return values
 ---------------------------------------

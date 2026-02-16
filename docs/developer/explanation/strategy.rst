@@ -193,4 +193,4 @@ References
 
 * :doc:`scope`
 * :doc:`values`
-* `Feature checklist <https://dev.launchpad.net/FeatureChecklist>`_
+* :ref:`Feature checklist <launchpad-feature-highlights>`

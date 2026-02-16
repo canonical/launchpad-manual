@@ -105,9 +105,6 @@ character in different options/tabs/checkboxes/etc., you will have to
 press the shortcut several times in the keyboard to walk through all of
 them.
 
-For other information about the accelerators in different languages,
-refer to http://bazaar-vcs.org/BzrTranslations/Tips
-
 Examples of menu accelerators:
 
 ::
@@ -202,7 +199,7 @@ Examples:
    Wrong: <puternic>Nume fișier</puternic>
    Right: <strong>Nume fișier</strong>
 
-Also you should not translate the xml tags attibutes and their values
+Also you should not translate the xml tags attributes and their values
 (if you translate their values, make sure you know what you are doing
 and check the developers comments). Examples:
 

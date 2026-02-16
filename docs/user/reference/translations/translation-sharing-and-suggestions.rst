@@ -103,7 +103,7 @@ works in a similar way. There are some differences, though:
    package, unless the Ubuntu translators specifically chose a different
    translation
 -  if the the upstream project uses Launchpad for translation work, a
-   translation done in the Ubuntu packagage by a translator with the
+   translation done in the Ubuntu package by a translator with the
    right permissions will also update that translation in the upstream
    project.
 

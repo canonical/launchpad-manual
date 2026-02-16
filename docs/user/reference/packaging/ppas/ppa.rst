@@ -42,8 +42,8 @@ Supported architectures
 When Launchpad builds a source package in a PPA, by default it creates
 binaries for amd64.
 
-You may also request builds for arm64, armhf, i386, powerpc, ppc64el, riscv64
-and/or s390x. Use the "Change details" page for the PPA to enable the
+You may also request builds for arm64, armhf, i386, powerpc, ppc64el, riscv64,
+amd64v3, and/or s390x. Use the "Change details" page for the PPA to enable the
 architectures you want.
 
 Changing the set of architectures for which a PPA builds does not create

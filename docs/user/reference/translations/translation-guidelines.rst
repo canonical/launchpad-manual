@@ -14,7 +14,7 @@ see a big banner informing them about the guidelines.
 All new translators have good intentions and they want to submit
 translations of good quality, but they lack experience and domain
 knowledge about software translations. The existence of translation
-guidelines should help new translators to achive good quality even when
+guidelines should help new translators to achieve good quality even when
 doing their first suggestions.
 
 To help you with creating the guidelines for your team you may consult

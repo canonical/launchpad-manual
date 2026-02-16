@@ -78,7 +78,7 @@ four types of colour indications:
 
 -  green is for translations coming from "upstream", i.e. i.e. already provided along with the product when it was added to Rosetta
 - blue is for those translations coming from upstream which were
-  modified in Rosetta (eg. typos being fixed, rewordings, etc.)
+  modified in Rosetta (e.g. typos being fixed, rewordings, etc.)
 - purple is for new translations originally submitted through
   Rosetta: yes, that means your translations!
 - red indicates all the text messages which are untranslated or in

@@ -174,7 +174,7 @@ Further information
 Let :ref:`Launchpad and local translators know about your team guidelines <translation-guidelines>`
 
 Once people start using Launchpad to translate your project, you'll want
-to :ref:`export those translations <exporting-translations-from-launchpad>` for
+to :ref:`export those translations <how-to-export-translations>` for
 use in your software.
 
-For Lunchpad translators, find out more: :ref:`launchpad-translators-group`.
+For Launchpad translators, find out more: :ref:`launchpad-translators-group`.

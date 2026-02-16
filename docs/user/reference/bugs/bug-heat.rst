@@ -21,7 +21,7 @@ A calculated measure of a bug's significance
 Launchpad aims to help you judge the significance of a bug by providing
 you with a guide to how "hot" the bug is.
 
-Launchpad calculates bug heat by looking at thosefactors that are likely
+Launchpad calculates bug heat by looking at those factors that are likely
 to suggest the bug requires your attention. For example:
 
 -  the number of subscribers to the bug

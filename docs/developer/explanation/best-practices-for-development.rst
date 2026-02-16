@@ -9,6 +9,7 @@ Best practices for development
    bug-triage-process-background
    charms
    codeimport
+   page-tests
    performance
    template-reuse
    security-policy

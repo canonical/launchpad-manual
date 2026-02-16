@@ -5,7 +5,7 @@ Create and maintain a personal branch in Launchpad
 
 .. include:: /includes/important_not_revised_help.rst
 
-Branches hosted by Launchpad are usually asssociated with a project.
+Branches hosted by Launchpad are usually associated with a project.
 
 If you'd prefer to upload a branch to Launchpad without it showing up in
 any project's branch listings, you can use the ``+git``

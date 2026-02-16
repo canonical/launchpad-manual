@@ -11,7 +11,7 @@ Launchpad gives you access to everything necessary to build and publish
 software including code hosting, issue tracking, and request tracking for bugs. 
 Features unique to this platform include build capacities for different 
 languages, and package formats for different architectures such as **AMD64**, 
-**ARM**, and **RISC-V**.
+**AMD64v3**, **ARM**, and **RISC-V**.
 
 Launchpad also offers tracking capabilities across issue trackers to 
 seamlessly communicate with upstream projects.
@@ -24,36 +24,41 @@ In this documentation
 ===================    ==================
 
 ===================    ==================
-Code hosting:          :ref:`Host your project <host-your-project-code-on-launchpad>` • :ref:`Import code <code-imports>` • :ref:`Link code to bug reports <link-code-to-bug-reports-and-blueprints>`
+Code hosting:          :ref:`Host your project <host-your-project-code-on-launchpad>` • :ref:`Import code <code-imports>` • :ref:`Continuous integration <continuous-integration>`
 
 Packaging:             :ref:`What is a PPA <personal-package-archive>` • :ref:`Install software from PPAs <install-software-from-ppas>` • :ref:`Building a source package <building-a-source-package>` 
 
-Bug tracking:          :ref:`Using Bugzilla<use-the-bugzilla-plugin>` • :ref:`File a Bug<file-a-bug-in-launchpad>`
+Craft:                 :ref:`Build Snaps <build-snaps-in-launchpad>` • :ref:`Build Rocks <build-rocks-in-launchpad>` • :ref:`Build Charms <build-charms-in-launchpad>`
 
-Launchpad APIs:        :ref:`Lauchpadlib <get-started-with-launchpadlib>` • :ref:`Bug tracker API <bug-tracker-api-plugin>` • :ref:`Web services API <launchpad-web-service>`
+Bug tracking:          :ref:`File a Bug<file-a-bug-in-launchpad>` • :ref:`Link a bug to a branch <link-a-bug-reports-to-a-branch>`
 
 Community:             :ref:`Giving feedback <get-help>` • :ref:`Getting support<getting-support-in-launchpad>` • :ref:`Launchpad policies <launchpad-policies>`
 ===================    ==================
 
-There is more to discover in the Launchpad user manual. Explore this 
-documentation by category:
+How this documentation is organized
+-----------------------------------
 
-.. grid:: 1 1 3 3
+This documentation uses the `Diátaxis documentation structure <https://diataxis.fr/>`_.
 
-   .. grid-item-card:: :doc:`How-to guides <how-to/index>`
+* :ref:`How-to <user/how-to>`: step-by-step instructions for key operations and common tasks.
+* :ref:`Reference <user/reference>`: specifications, APIs, architecture.
+* :ref:`Explanation <user/explanation>`: discussion and clarification of user topics.
 
-      **Step-by-step** instructions for key operations and common tasks.
+Project and community
+---------------------
 
-   .. grid-item-card:: :doc:`Explanation <explanation/index>`
+Launchpad is a member of the Ubuntu family. It’s an open source project that
+warmly welcomes community contributions, suggestions, fixes and constructive
+feedback.
 
-      **Discussion** and clarification of user topics.
+Get involved
+++++++++++++
+* `Join our online chat on Matrix <https://matrix.to/#/#launchpad:ubuntu.com>`_
+* `Contribute <https://launchpad.net/launchpad/>`_
 
-   .. grid-item-card:: :doc:`Reference <reference/index>`
-
-      **Technical information** - specifications, APIs, architecture.
-
-
-
+Releases
+++++++++
+* :ref:`Release notes <release-notes>`
 
 .. toctree::
    :hidden:
@@ -62,5 +67,3 @@ documentation by category:
    How-to guides <how-to/index>
    Reference <reference/index>
    Explanation <explanation/index>
-
-

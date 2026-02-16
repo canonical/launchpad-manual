@@ -13,7 +13,7 @@ Branches that fix "Private Security" bugs can themselves be set to
 "Private Security" to ensure only trusted people can see the branch.
 
 Proprietary branches are a feature available on request for projects
-with commercial subcriptions. For more information, see
+with commercial subscriptions. For more information, see
 :ref:`Commercial Hosting<consumer-hosting>`.
 
 Bug sharing policies

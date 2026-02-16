@@ -85,7 +85,7 @@ module <http://docs.python.org/library/gettext.html>`__.
 Translation domain
 ~~~~~~~~~~~~~~~~~~
 
-Gettext requires that your project has a unique translation doman. It
+Gettext requires that your project has a unique translation domain. It
 uses this domain and the user's locale (language and region) to find the
 translation catalog that is used to retrieve translations at run time.
 
@@ -185,47 +185,6 @@ non-trivial topic and is covered elsewhere.
     `gtk+2.0 <https://translations.launchpad.net/ubuntu/lucid/+source/gtk+2.0/+translations>`__).
     This is an advanced topic not covered here.
 
-Creating a Bazaar branch
-------------------------
-
-Launchpad uses `Bazaar <http://www.bazaar-vcs.org/>`__ for source code
-repositories. Launchpad Translations makes use of these to import
-translation templates. Since your project needs to be Open Source in
-order to use Launchpad for free, you should use this as the way to
-publish your source code. Do *not* create a separate repository for your
-i18n-related files.
-
-If your project is stored locally in the ``frobnob`` directory, use these
-commands to create a ``trunk`` branch on Launchpad:
-
-::
-
-   cd frobnob
-   bzr init
-   bzr add
-   bzr commit -m "Initial commit."
-   bzr push --remember lp:~joe/frobnob/trunk
-
-.. note::
-    Be sure to add the ``po/`` directory and the template file ``po/frobnob.pot`` to the branch.
-
-.. note:: Template files are not usually added to a bzr branch because they are generated as needed. However, Launchpad Translations currently
-    uses the template file to learn what messages need translation, so it is necessary at this time to add it to bzr source control. (We expect that
-    this will not be necessary later.)
-
-Whenever the source code changes and you generate a new template file,
-update the branch on Launchpad with these commands:
-
-::
-
-   cd frobnob
-   bzr add # Only if new files were created.
-   bzr commit -m "Description of change."
-   bzr push
-
-You can view your branch in Launchpad by going to its URL
-https://code.launchpad.net/~joe/frobnob/trunk.
-
 Set up your project in Launchpad
 --------------------------------
 
@@ -235,45 +194,6 @@ Enabling Translations
 If not already done, enable translations for your project at this URL:
 https://launchpad.net/frobnob/+configure-translations
 
-Setting the source code branch
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-You may have noticed that you pushed the Bazaar branch to a URL under
-your own name. Now you need to tell Launchpad that this is the main
-source code location for your ``trunk`` series. A ``trunk`` series is a
-required part of every Launchpad project.
-
-Got to this URL https://launchpad.net/frobnob/trunk/+linkbranch and
-select the branch named ~joe/frobnob/trunk. To do this, click on
-``Choose`` and search for ``joe``. Your branch should come right up. Once
-this is done, you can refer to it as simply ``lp:frobnob``.
-
-Enabling translation imports
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Now you are ready to tell Launchpad to import your translation template
-from the branch you pushed to Launchpad. Go to this URL to do so:
-https://translations.launchpad.net/frobnob/trunk/+translations-settings
-
-At the bottom of the left side of the page select the second option:
-``Import template files``. Above that you see a reference to the official
-Bazaar branch you created in the last step. Click on ``Save settings`` to
-activate the import.
-
-Importing the template into Launchpad
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-The import of your template happens automatically whenever the file is
-updated in the trunk branch. You can watch the progress of the import on
-the import queue page for your project here:
-https://translations.launchpad.net/frobnob/+imports. It is initially
-marked as ``Approved`` and is later changed to ``Imported``. Depending on
-the server load, the import may take a few hours but usually happens
-much more quickly.
-
-Once your template has been imported, you can see it in Launchpad at
-this URL: https://translations.launchpad.net/frobnob/trunk/+pots/frobnob
-
 Translation permission and group
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -282,73 +202,45 @@ into all the different languages. In fact, you may have come to
 Launchpad Translations in order to find translators.
 
 But how do you know the translations contributed through Launchpad and
-its commununity are correct and of good quality? That's what translation
+its community are correct and of good quality? That's what translation
 groups are for.
 
-Take a look at the `Launchpad
-translators <https://translations.launchpad.net/+groups/launchpad-translators>`__
+Take a look at the `Launchpad translators <https://translations.launchpad.net/+groups/launchpad-translators>`__
 group and you will see that it consists of translation teams for many
 languages. The members of these teams are translation experts and are
 usually native speakers. These are the people that will help you ensure
 good quality translations.
 
-So, go to https://translations.launchpad.net/frobnob/+settings and chose
-``Launchpad Translators`` as the translation group and ``Structured`` as the
-translation permission. Then set the translation focus to ``Frobnob
-trunk`` and click ``Change``. Now translations for the languages covered by
-Launchpad Translators can only be approved by the members of the
-respective language team. Any registered user of Launchpad can still
-make suggestions, but it is these teams that review and accept or
-decline them.
+You can select the translation group when enabling translations, or change it 
+later. To add a translation group after enabling translations, Go to https://translations.launchpad.net/frobnob/, 
+select ``Configure Translations`` and chose ``Launchpad Translators`` as the 
+translation group and ``Structured`` as the translation permission. Then set 
+the translation focus to ``Frobnob trunk`` and click ``Change``. Now 
+translations for the languages covered by Launchpad Translators can only be 
+approved by the members of the respective language team. Any registered user of 
+Launchpad can still make suggestions, but it is these teams that review and 
+accept or decline them.
 
 Translate!
 ----------
 
 Now the actual translating can start!
 
-Please read the :ref:`Launchpad
-Translators <launchpad-translators-group>`
+Please read the :ref:`Launchpad Translators <launchpad-translators-group>`
 instructions for project maintainers. You should also join the `team on
 Launchpad <https://launchpad.net/~launchpad-translators>`__.
 
 .. _exporting-translations-from-launchpad:
 
-Exporting translations from Launchpad
+Export translations from Launchpad
 -------------------------------------
+Follow this guide to :ref:`export your project translations <how-to-export-translations>` 
+from Launchpad.
 
-Setting up export to your branch
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Translations done in Launchpad need to be exported back to your project
-branch so that you can include them in releases of your software.
-Launchpad provides automatic daily export of new translations to your
-branch. Go to the settings page to enable this:
-https://translations.launchpad.net/frobnob/trunk/+translations-settings
-
-In the right column click ``Choose a target branch``, then enter
-``lp:frobnob`` as the branch name and click ``Update``. This directs
-Launchpad to export the translations into the same branch where it
-imports the template from (the trunk branch). You can await the export
-on the branches page under ``Recent revisions``:
-https://code.launchpad.net/~joe/frobnob/trunk.
-
-.. note::
-    Exports only happen once a day and only if there are any new translations to export.
-
-Updating your local branch
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-To download the translations to your local copy of the branch, simply
-pull in the changes from Launchpad:
-
-::
-
-   cd frobnob
-   bzr pull
-
-The translations will be placed in the ``po`` directory where your
-template file resides. They are in PO format and are named according to
-the language code, e.g. ``po/fr.po`` for the French translations.
+Import translations to Launchpad 
+--------------------------------
+Follow this guide to :ref:`import your project translations <how-to-import-project-translations>` 
+to Launchpad.
 
 Deploying translations
 ----------------------
@@ -367,36 +259,8 @@ include it in you Makefile.
     Set up your package to use standard approaches for mo file
     generation and distribution. Do not try to write your own. Check packages in Ubuntu Main to use as examples.
 
-What if ... ?
--------------
-
-Some help for special situations or issues you might encounter.
-
-What if I made changes to my local copy of the branch while translations were exported into the Launchpad copy?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-When ever you make changes to your source code you should commit those
-changes as described above. If Launchpad exported translations while you
-committed to your local branch, the two copies will differ. A subsequent
-``bzr push`` or ``bzr pull`` will complain about the branches having
-diverged. You can simply merge the changes that Launchpad made to your
-branch into your local copy and then push that updated version back out
-to Launchpad. These are the commands to do that.
-
-::
-
-   cd frobnob
-   bzr  merge lp:frobnob
-   bzr commit -m "Merged translation exports."
-   bzr push
-
-Now both your branches will be identical again. You should not encounter
-any conflicts during the merge because the translations export will only
-touch PO files in the ``po`` directory which you should not be editing
-manually when working with Launchpad.
-
 What if the translation statistics never show my strings as "translated"?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------------------------------------------
 
 On the translations overview page for your project, project series or
 template, i.e. https://translations.launchpad.net/frobnob/trunk, you see
@@ -408,23 +272,3 @@ translated in Launchpad".
 
 There is work under way that will redefine and simplify the different
 statuses.
-
-What if I already have translations for my project?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-It is least error-prone to do a full switch to using Launchpad
-Translations. Any translations that you may already have when you begin
-using Launchpad Translations can be imported, though, so they are not
-lost. This assumes that these are already available in PO files.
-
-Place the PO files into your ``po`` directory, named the same way as
-Launchpad would do, e.g. ``po/fr.po`` for the French translations. Use
-``bzr add``, ``bzr commit`` and ``bzr push`` as described earlier to copy them
-to Launchpad. Now go to this page on Launchpad:
-https://translations.launchpad.net/frobnob/trunk/+request-bzr-import and
-click ``Request one-time import``. This will place all the translation
-files into the import queue from where they will eventually be imported.
-
-Please be aware that although all translations done in Launchpad are
-BSD-licensed, translations imported like this retain their original
-license.

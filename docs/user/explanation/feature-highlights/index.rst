@@ -36,8 +36,8 @@ previous questions before asking new ones.
 ---------------------------------------------------
 Launchpad has a build farm consisting of 450+ builders (and counting), allowing
 users to build packages such as snaps, rocks, and charms on the platform. The 
-builders are distributed across various architectures including AMD64, ARM64, 
-RISC-V, and more.   
+builders are distributed across various architectures including AMD64, AMD64v3,
+ARM64, RISC-V, and more.   
 
 You can check the status of the builders, length of queues, and even build
 histories of individual builders, before starting yours. 
