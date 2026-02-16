@@ -329,11 +329,11 @@ Hosted files
 
 Launchpad stores some data in the form of binary files. A good example is
 people's mugshots. With launchpadlib, you can read and write these binary files
-programatically.
+programmatically.
 
 If you have a launchpadlib reference to one of these hosted files, you can read
 its data by calling the ``open()`` method and treating the result as an open
-filehandle.
+file handle.
 
 .. code-block::
 
