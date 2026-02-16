@@ -1,7 +1,7 @@
-.. include:: /includes/bazaar-discontinued.rst
-
 How To Use Codehosting Locally
 ==============================
+
+.. include:: /includes/bazaar-discontinued.rst
 
 **Note:** This guide is for bazaar hosting. For git hosting, see `the
 turnip README <https://git.launchpad.net/turnip/tree/README.rst>`__.
