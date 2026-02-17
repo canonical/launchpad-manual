@@ -1,6 +1,6 @@
 .. _launchpadlib-api-compatibility:
 
-Launchpadlib API compatibility
+launchpadlib API compatibility
 ==============================
 
 .. include:: /includes/important_not_revised_help.rst
