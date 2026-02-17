@@ -21,7 +21,7 @@ For instance, if you want to run the `ec2 land` command (a tool to
 test a Launchpad branch and then submit it to the shared development
 branch if the tests pass) with lynx, try `BROWSER=lynx ec2 land`.
 
-lynx
+Lynx
 ----
 
 lynx is the text-based browser supported by Canonical Launchpad
@@ -38,7 +38,7 @@ following to /etc/lynx-cur/local.cfg , you should be able to proceed:
 
 Active bugs: https://bugs.launchpad.net/bugs/535456
 
-elinks
+Elinks
 ------
 
 Some users have reported success with elinks. Hints welcome!
@@ -50,7 +50,7 @@ Some users have reported success with w3m. Hints welcome!
 
 Active bugs: https://bugs.launchpad.net/bugs/556927
 
-links
+Links
 -----
 
 No users have reported success with links.
@@ -60,7 +60,7 @@ links2
 
 No users have reported success with links2.
 
-echo
+Echo
 ----
 
 If you have access to an open web browser in a separate window, you can

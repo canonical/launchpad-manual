@@ -1,6 +1,6 @@
 .. _launchpad-badge-kit:
 
-Launchpad Badges
+Launchpad badges
 ================
 
 .. include:: /includes/important_not_revised_help.rst

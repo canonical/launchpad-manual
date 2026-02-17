@@ -1,6 +1,6 @@
 .. _answer-tracker-for-community:
 
-Answer Tracker for building community support
+Answer tracker for building community support
 =============================================
 
 .. include:: /includes/important_not_revised_help.rst

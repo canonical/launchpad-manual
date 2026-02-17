@@ -134,7 +134,7 @@ sensitive: Example:
    Correct: Vea el <ulink url="http://ubuntustudio.org/">
    Wrong: Vea el <UlinK Url="http://ubuntustudio.org/">
 
-menuchoice tag
+Menuchoice tag
 ~~~~~~~~~~~~~~
 
 Don't include other tags or text outside of these tags.
@@ -282,7 +282,7 @@ ones might need some work.
 Here is an example of how statistics are shown for a translation
 template in a particular language in Ubuntu:
 
-Color meanings in the Status column
+Color meanings in the status column
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Depending on their status translation statistics can show different
@@ -378,7 +378,7 @@ into the guidelines for your language:
 -  A section, or a dedicated page, containing examples of strings that
    should not be translated.
 
-Common/Best practice
+Common/best practice
 ~~~~~~~~~~~~~~~~~~~~
 
 Below you will find a set of common practices for running a team

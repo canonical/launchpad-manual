@@ -1,4 +1,4 @@
-Bug Attachment
+Bug attachment
 ==============
 
 .. include:: /includes/important_not_revised_help.rst

@@ -24,7 +24,7 @@ Why the BSD license?
 The BSD license is universally compatible. This lets you share and
 combine with projects under GPL, LGPL, BSD, and many other licenses.
 
-Why not public domain like the FSF's Translation Project?
+Why not public domain like the FSF's translation project?
 ---------------------------------------------------------
 
 For all practical purposes, BSD license is very much like

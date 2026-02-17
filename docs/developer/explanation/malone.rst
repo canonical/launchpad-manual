@@ -10,7 +10,7 @@ was substantially different to anything that had gone before it. This
 document outlines that vision, explaining what it is that I hope Malone will
 do for the open source community.
 
-The Vision behind Malone
+The vision behind Malone
 ========================
 
 Malone is a unified bug tracker for the entire open source world. It is
@@ -20,7 +20,7 @@ across many projects. Malone presents a single page which gathers together
 the combined wisdom and knowledge of the open source world regarding a
 specific software defect.
 
-Upstream and Distributions
+Upstream and distributions
 ==========================
 
 A unique feature of Malone is that it understands the structure of the open
@@ -68,7 +68,7 @@ package on Ubuntu would be tracked in Malone. If the same bug has been
 identified upstream, it would be recorded in bugzilla.mozilla.org, and we
 would create a BugWatch in the Malone bug pointing at that upstream bug.
 
-Email Integration
+Email integration
 =================
 
 It's important that Malone be usable entirely in email. Many open source
@@ -77,7 +77,7 @@ Malone's features should be accessible via email, including changing the
 status of a bug, adding and updating watches, and possibly also requesting
 reports of bugs on a product or distribution.
 
-Distribution Bugs
+Distribution bugs
 =================
 
 Malone is designed to track bugs upstream, and in distributions. The
@@ -101,7 +101,7 @@ allows us to specify a milestone or a distroseries by which a bug needs to
 be fixed, which allows QA teams to keep track of the progress they are
 making towards a release.
 
-Version Tracking
+Version tracking
 ================
 
 One very difficult problem faced by support teams in the open source world
@@ -112,7 +112,7 @@ whether a bug is found in a particular version of a package or not.
 Future
 ======
 
-Bazaar Integration
+Bazaar integration
 ------------------
 
 Malone is part of Launchpad, a web based portal for open source

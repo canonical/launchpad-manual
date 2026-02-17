@@ -69,7 +69,7 @@ All bugmail also has:
 
        X-Launchpad-Notification-Type: bug
 
-Answer Tracker Mail
+Answer tracker mail
 -------------------
 
 The basic rationale headers are for the cases where you are directly
@@ -95,7 +95,7 @@ is an answer contact:
 
        X-Launchpad-Message-Rationale: Answer Contact (Launchpad) @launchpad-qa
 
-Code Hosting Mail
+Code hosting mail
 -----------------
 
 Mail is only sent to subscribers of branches. If you are directly
@@ -131,7 +131,7 @@ For notifications related to merge proposals:
 
        X-Launchpad-Notification-Type: code-review
 
-Build Mail
+Build mail
 ----------
 
 Notifications regarding the various types of builds that Launchpad can
@@ -176,7 +176,7 @@ notification. It will be one of:
        X-Launchpad-Notification-Type: livefs-build-status
        X-Launchpad-Notification-Type: snap-build-status
 
-Upload Mail
+Upload mail
 -----------
 
 Launchpad sends notifications in response to source package uploads. If
@@ -219,7 +219,7 @@ All package upload mail also has:
 
        X-Launchpad-Notification-Type: package-upload
 
-Team Membership Mail
+Team membership mail
 --------------------
 
 Launchpad sends notifications of team membership changes. For an

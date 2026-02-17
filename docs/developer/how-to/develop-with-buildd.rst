@@ -1,7 +1,7 @@
 How to develop with Buildd
 ==========================
 
-LXD VM Support
+LXD VM support
 --------------
 
 This is now on stable and allows for management of VMs with the same LXD CLI.
@@ -86,7 +86,7 @@ This will take a while to settle. You can monitor its progress with ``lxd consol
 
 Once it has complete cloud-init, you should then see an IP assigned in ``lxc list`` and be able to execute a bash shell with ``lxc exec <vm name> bash``.
 
-Configure password and ssh
+Configure password and SSH
 --------------------------
 
 This should be done by the cloud-init config in the profile, but the package is not installed at the time that is run, so do it afterwards manually:
@@ -257,7 +257,7 @@ First, you'll need to run some extra bits in Launchpad:
     $ utilities/soyuz-sampledata-setup.py
     $ make run
 
-Image Setup
+Image setup
 -----------
 
 Consult the 'Launchpad Configuration' section of :doc:`use-soyuz-locally` to do the correct ``manage-chroot`` dance to register an image with launchpad. Without this, you will have no valid buildable architectures.

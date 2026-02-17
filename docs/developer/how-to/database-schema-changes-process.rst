@@ -82,14 +82,14 @@ deploying them will require a 1 hour plus complete downtime window.
 Cold schema patches always land on ``db-devel``. After they are made live
 they will be promoted to ``master`` as part of the go-live process.
 
-Hot Patches
+Hot patches
 ~~~~~~~~~~~
 
 :doc:`../explanation/live-patching` explains how
 hot-patching works and what sorts of things we can hot-patch. It's the
 authority — we may be able to hot-patch more as our tooling improves.
 
-Cold Patches
+Cold patches
 ~~~~~~~~~~~~
 
 Anything that is not a hot patch is a cold patch and can only be applied
@@ -313,7 +313,7 @@ than it's worth. Instead, first resolve any conflicts in
    cd ../..
    bzr resolve database/sampledata/current.sql
 
-Notes on Changing security.cfg
+Notes on changing security.cfg
 ------------------------------
 
 If your changes to ``security.cfg`` are additive in nature like adding new

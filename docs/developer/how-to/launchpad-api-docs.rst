@@ -1,4 +1,4 @@
-Launchpad API Docs generation
+Launchpad API docs generation
 =============================
 
 The Launchpad API documentation portal is available at

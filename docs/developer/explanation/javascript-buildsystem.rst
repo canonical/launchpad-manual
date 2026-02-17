@@ -1,4 +1,4 @@
-The Launchpad JavaScript Build System
+The Launchpad JavaScript build system
 =====================================
 
 .. include:: ../../includes/important_not_revised.rst
@@ -42,7 +42,7 @@ needed, you'll need to create a link in
 ``lib/lp/contrib`` so the assets can be found. See
 ``lib/canonical/launchpad/icing/yui3-gallery`` for an example.
 
-New Combo loader Setup
+New combo loader setup
 ----------------------
 
 Currently an alternative JavaScript build process is under development
@@ -54,7 +54,7 @@ combo loader config that is constructed in the
 ``lib/lp/app/templates/base-layout-macros.pt``. These are combined and
 served out via the convoy WSGI application through Apache.
 
-Developing Javascript
+Developing JavaScript
 ~~~~~~~~~~~~~~~~~~~~~
 
 Because the JS files need to be copied from the Launchpad tree into the
@@ -64,7 +64,7 @@ can watch the launchpad tree for any JS changes and auto build as the
 changes occur. You can start that process with ``make jsbuild\watch``.
 This allows for faster JS development iterating.
 
-Adding new Javascript modules
+Adding new JavaScript modules
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To add new JS to Launchpad, it needs to go into a proper YUI module. All

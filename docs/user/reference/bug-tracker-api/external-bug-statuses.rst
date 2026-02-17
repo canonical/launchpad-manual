@@ -90,7 +90,7 @@ Mantis
      - won't fix
      - Won't Fix
 
-Request Tracker (RT)
+Request tracker (RT)
 ~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::

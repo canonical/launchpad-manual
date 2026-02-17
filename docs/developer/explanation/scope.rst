@@ -23,7 +23,7 @@ together two important networks:
 But first, a story.
 
 
-The Story of a Bug
+The story of a bug
 ==================
 
 *Arnold* writes software for a living, and he runs Ubuntu on his desktop. He
@@ -305,7 +305,7 @@ Launchpad has many major areas of functionality that are best considered as
 synchronizing with external systems.
 
 
-New World
+New world
 =========
 
 When Launchpad is really doing all of these things and doing them well, the

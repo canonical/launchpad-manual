@@ -56,7 +56,7 @@ easy to maintain, and allows good designs to emerge. Since the test
 harness is a page, you can develop a library/widget in many small
 branches before you decide it is ready to include in the zpt.
 
-The Harness and Runner
+The harness and runner
 ~~~~~~~~~~~~~~~~~~~~~~
 
 JS testing involves two parts. One is an html file that will bootstrap
@@ -100,7 +100,7 @@ you get any errors, correct them now before moving on to add more tests.
 Potential errors include missing dependency modules, typos in the names
 of the module, or the paths to the build directory being off.
 
-Running Tests
+Running tests
 ~~~~~~~~~~~~~
 
 In a browser
@@ -129,7 +129,7 @@ in any of the usual ways, use regular expressions, etc.):
 
 Unfortunately you may not run a single test.
 
-Considerations for Tests
+Considerations for tests
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 Use the get/set wrappers to access innerHTML to reset the HTML DOM for a
@@ -139,7 +139,7 @@ The Y.Node.create() methods expects a single root node in the raw
 markup. I had to strip whitespace to ensure the node was created in my
 library, so I tested that in the library tests.
 
-Mocking XHR Calls
+Mocking XHR calls
 ~~~~~~~~~~~~~~~~~
 
 Tests will often have a requirement that you want to see that the DOM is
