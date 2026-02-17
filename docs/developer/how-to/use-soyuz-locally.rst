@@ -1,3 +1,5 @@
+.. _use-soyuz-locally:
+
 How to use Soyuz locally
 ========================
 
