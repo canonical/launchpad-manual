@@ -37,7 +37,7 @@ reasonably fast code.
 As a base, you need to `choose the correct data structure`_, depending on
 whether you optimize for lookups, appending elements, or similar.
 
-.. _choose the correct data structure: https://wiki.python.org/moin/TimeComplexity
+.. _choose the correct data structure: https://www.pythonmorsels.com/time-complexities/
 
 You also should be aware of the `runtime complexity (Big O)`_ of your code.
 

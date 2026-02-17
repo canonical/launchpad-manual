@@ -94,7 +94,8 @@ Debugging With GDB
 
 Some kinds of bugs (segfaults, hung processes, out-of-control daemons)
 are hard to debug from within Python. See
-`Debugging with GDB <https://wiki.python.org/moin/DebuggingWithGdb>`__ for how to debug them.
+`Debugging with GDB <https://web.archive.org/web/20250818163237/https://wiki.python.org/moin/DebuggingWithGdb>`__ 
+for how to debug them.
 
 Debugging Core Dumps 
 --------------------
