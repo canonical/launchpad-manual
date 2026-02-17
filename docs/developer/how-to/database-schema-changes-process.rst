@@ -316,10 +316,16 @@ than it's worth. Instead, first resolve any conflicts in
 Notes on Changing security.cfg
 ------------------------------
 
-Changes to ``security.cfg`` should land on ``db-devel`` and require a
-fast-downtime deployment. This is because the permissions in ``security.cfg``
-are only applied during the DB deployment process.
+If your changes to ``security.cfg`` are additive in nature like adding new
+permissions to an existing role or adding a new role, then you can land them
+on ``master`` rather than ``db-devel``.
+These changes are deployed during no-downtime rollouts.
 
-Note that adding new users requires manual DB reconfiguration, so you
+Any update that revokes permissions from an existing role (including removing
+a role entirely), must be landed on ``db-devel`` and deployed during a
+fast-downtime deployment. This is because a full update (including revocation)
+requires resetting all permissions, which cannot be done without downtime.
+
+Note that adding new roles requires manual DB reconfiguration, so you
 need to file an RT ticket to grant access to relevant machines and make
 sure it is resolved **before landing the branch** that needs them.
