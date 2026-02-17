@@ -316,8 +316,9 @@ than it's worth. Instead, first resolve any conflicts in
 Notes on Changing security.cfg
 ------------------------------
 
-It is possible to land changes to security.cfg on ``master`` rather than
-``db-devel``. These changes are deployed during no-downtime rollouts.
+Changes to ``security.cfg`` should land on ``db-devel`` and require a
+fast-downtime deployment. This is because the permissions in ``security.cfg``
+are only applied during the DB deployment process.
 
 Note that adding new users requires manual DB reconfiguration, so you
 need to file an RT ticket to grant access to relevant machines and make
