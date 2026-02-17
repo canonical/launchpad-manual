@@ -43,17 +43,23 @@ Look at the pretty pictures
 Diagrams might be the best way to understand this. (If they don't work,
 there's text afterwards, don't worry.)
 
-.. XXX: add missing images
+.. image:: ../images/branches/codeflow.png
 
 Below, we break the process down a bit with a different diagramming
 approach. Here's what happens when you submit to **master**:
 
+.. image:: ../images/branches/db-devel-normal.png 
+
 Where are the expected potential problems in the process? Glad you
 asked!
 
+.. image:: ../images/branches/db-devel-problems.png 
+
 It is also possible to submit directly to the **db-devel** branch.
 
-Let's try that in words
+.. image:: ../images/branches/db-devel-direct.png 
+
+Let's Try That in Words
 -----------------------
 
 Database changes can be destabilising to other work, so we isolate them

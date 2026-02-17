@@ -3,40 +3,57 @@
 Launchpadlib
 ============
 
-.. include:: /includes/important_not_revised_help.rst
+launchpadlib is an open-source Python library that lets you treat the HTTP
+resources published by Launchpad's web service as Python objects responding to
+a standard set of commands. With launchpadlib you can integrate your
+applications into Launchpad without knowing a lot about HTTP client
+programming.
 
-launchpadlib is an open-source Python library that lets you treat the HTTP resources
-published by Launchpad's web service as Python objects responding to a standard set of commands.
-With launchpadlib you can integrate your applications into Launchpad without knowing a lot about
-HTTP client programming.
+Launchpad's web service currently exposes the following major parts of
+Launchpad:
 
-Launchpad's web service currently exposes the following major parts of Launchpad:
+- People and teams
+- Team memberships
+- Bugs and bugtasks
+- The project registry
+- Hosted files, such as bug attachments and mugshots.
 
-* People and teams
-* Team memberships
-* Bugs and bugtasks
-* The project registry
-* Hosted files, such as bug attachments and mugshots.
+If you want to learn more about the web service, you can go to
+`https://api.launchpad.net/ <https://api.launchpad.net/>`_.
 
-As new features and capabilities are added to the web service, you'll be able to access most of
-them without having to update your copy of launchpadlib. You *will* have to upgrade launchpadlib
-to get new client-side features (like support for uploaded files). The Launchpad team will put
-out an announcement whenever a server-side change means you should upgrade launchpadlib.
+.. note::
+
+    Launchpad API URLs include a version segment (for example, ``/devel/``). In
+    practice, ``devel`` is the recommended version to use, and Launchpad does
+    not frequently "promote" new versioned endpoints beyond it. Older labels
+    such as ``beta`` are retained for compatibility and may not gain new
+    features. Unless you have a specific compatibility requirement, prefer
+    ``devel`` when constructing API URLs or configuring launchpadlib.
+
+As new features and capabilities are added to the web service, you'll be able
+to access most of them without having to update your copy of launchpadlib. You
+*will* have to upgrade launchpadlib to get new client-side features (like
+support for uploaded files). The Launchpad team will put out an announcement
+whenever a server-side change means you should upgrade launchpadlib; for
+example, in the Launchpad Matrix room (see :ref:`get-help`). Canonical staff
+may also see updates on Mattermost.
 
 The top-level objects
 ---------------------
 
-The Launchpad object has attributes corresponding to the major parts of Launchpad. These are:
+The Launchpad object has attributes corresponding to the major parts of
+Launchpad. These are:
 
 
-* ``.bugs``: All the bugs in Launchpad
-* ``.people``: All the people in Launchpad
-* ``.me``: You
-* ``.distributions``: All the distributions in Launchpad
-* ``.projects``: All the projects in Launchpad
-* ``.project_groups``: All the project groups in Launchpad
+- ``.bugs``: All the bugs in Launchpad
+- ``.people``: All the people in Launchpad
+- ``.me``: You
+- ``.distributions``: All the distributions in Launchpad
+- ``.projects``: All the projects in Launchpad
+- ``.project_groups``: All the project groups in Launchpad
 
-As a super special secret, distributions, projects and project_groups are all actually the same thing.
+Distributions, projects and project_groups are the three main pillars of
+Launchpad.
 
 .. code-block::
 
@@ -44,8 +61,9 @@ As a super special secret, distributions, projects and project_groups are all ac
     print(me.name)
     # This should be your user name, e.g. 'salgado'
 
-The launchpad.people attribute gives you access to other people who use Launchpad.
-This code uses launchpad.people to look up the person with the Launchpad name "salgado".
+The ``launchpad.people`` attribute gives you access to other people who use
+Launchpad. This code uses ``launchpad.people`` to look up the person with the
+Launchpad name "salgado".
 
 .. code-block::
 
@@ -54,7 +72,8 @@ This code uses launchpad.people to look up the person with the Launchpad name "s
     print(salgado.display_name)
     # Guilherme Salgado
 
-You can search for objects in other ways. Here's another way of finding "salgado".
+You can search for objects in other ways. Here's another way of finding
+"salgado".
 
 .. code-block::
 
@@ -84,12 +103,13 @@ Some searches return more than one object.
 Entries
 -------
 
-Bugs, people, projects, team memberships, and most other objects published through
-Launchpad's web service, all work pretty much the same way. We call all these objects
-"entries". Each corresponds to a single piece of data within Launchpad.
+Bugs, people, projects, team memberships, and most other objects published
+through Launchpad's web service, all work in similar ways. We call all
+these objects "entries". Each corresponds to a single piece of data within
+Launchpad.
 
-You can use the web service to discover various facts about an entry. ``launchpadlib``
-makes the facts available as attributes of the entry object.
+You can use the web service to discover various facts about an entry.
+``launchpadlib`` makes the facts available as attributes of the entry object.
 
 name and display_name are facts about people.
 
@@ -113,21 +133,22 @@ private and description are facts about bugs.
     # This is a bug, which Ubuntu is designed to fix.
     # ...
 
-Some of an object's attributes are links to other entries. Bugs have an attribute owner,
-but the owner of a bug is a person, with attributes of its own.
+Some of an object's attributes are links to other entries. Bugs have an
+attribute owner, but the owner of a bug is a person, with attributes of its
+own.
 
 .. code-block::
 
     owner = bug_one.owner
     print(repr(owner))
-    # <person at https://api.staging.launchpad.net/beta/~sabdfl>
+    # <person at https://api.staging.launchpad.net/devel/~sabdfl>
     print(owner.name)
     # sabdfl
-    print(owner.display_name
+    print(owner.display_name)
     # Mark Shuttleworth
 
-If you have permission, you can change an entry's attributes and write the data back
-to the server using lp_save().
+If you have permission, you can change an entry's attributes and write the data
+back to the server using lp_save().
 
 .. code-block::
 
@@ -138,31 +159,32 @@ to the server using lp_save().
     print(people['my-user-name'].display_name)
     # A user who edits through the Launchpad web service.
 
-Having permission means not only being authorized to perform an operation on the
-Launchpad side, but using a launchpadlib Credentials object that authorizes the operation.
-If you've set up your launchpadlib Credentials for read-only access, you won't be able to
-change data through launchpadlib.
+Having permission means not only being authorized to perform an operation on
+the Launchpad side, but using a launchpadlib ``Credentials`` object that
+authorizes the operation. If you've set up your launchpadlib ``Credentials``
+for read-only access, you won't be able to change data through launchpadlib.
 
 self_link: the permanent ID
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Every entry has a self_link attribute. You can treat this as a permanent ID for the entry.
-If your program needs to keep track of Launchpad objects across multiple runs, a simple way
-to do it is to keep track of the self_links.
+Every entry has a ``self_link`` attribute. You can treat this as a permanent ID for
+the entry. If your program needs to keep track of Launchpad objects across
+multiple runs, a simple way to do it is to keep track of the ``self_link``\ s.
 
 .. code-block::
 
     print(salgado.self_link)
-    # https://api.staging.launchpad.net/beta/~salgado
+    # https://api.staging.launchpad.net/devel/~salgado
 
     bug_one.self_link
-    # https://api.staging.launchpad.net/beta/bugs/1
+    # https://api.staging.launchpad.net/devel/bugs/1
 
 web_link: the link to the Launchpad website
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Most of the entries published by the web service correspond to pages on the Launchpad website.
-You can get the website URL of an entry with the web_link attribute:
+Most of the entries published by the web service correspond to pages on the
+Launchpad website. You can get the website URL of an entry with the ``web_link``
+attribute:
 
 .. code-block::
 
@@ -172,76 +194,100 @@ You can get the website URL of an entry with the web_link attribute:
     bug_one.web_link
     # https://bugs.staging.launchpad.net/bugs/1
 
-Some entries don't correspond to any page on the Launchpad website: these entries won't have a web_link.
+Some entries don't correspond to any page on the Launchpad website: these
+entries won't have a ``web_link``.
 
 Named operations
 ~~~~~~~~~~~~~~~~
 
-Entries can support special operations just like collections, but again note that,
-these methods don't support positional arguments, only keyword arguments.
+Entries can support special operations just like collections, but, again, note
+that these methods don't support positional arguments, only keyword arguments.
+
+.. code-block::
+
+    bug_one.lp_operations
+    # ['canBeNominatedFor',
+    # 'getNominationFor',
+    # 'getNominations',
+    # ...
 
 Errors
 ------
 
-When the Launchpad web service encounters an error, it sends back an error message to launchpadlib,
-which raises an HTTPError exception. You'll see information about the HTTP request that caused the error,
-and the server-side error message. Depending on the error, you may be able to recover or change your code and try again.
+When the Launchpad web service encounters an error, it sends back an error
+message to launchpadlib, which raises an ``HTTPError`` exception. You'll see
+information about the HTTP request that caused the error, and the server-side
+error message. Depending on the error, you may be able to recover or change
+your code and try again.
 
-If you're using an old version of launchpadlib, the HTTPError may not be this helpful.
-To see the server-side error message, you'll need to print out the .content of the HTTPError exception.
+If you're using an old version of launchpadlib, the ``HTTPError`` may not be
+this helpful. To see the server-side error message, you'll need to print out
+the ``.content`` of the ``HTTPError`` exception.
 
 .. code-block::
+
+    from lazr.restfulclient.errors import HTTPError
 
     try:
         failing_thing()
     except HTTPError as http_error:
         print(http_error.content)
 
+Note that some dict-like lookups (e.g. ``launchpad.bugs[bug_id]``) may
+translate a server-side ``NotFound`` response into ``KeyError``.
+
 Collections
 -----------
 
-When Launchpad groups similar entries together, we call it a collection.
-You've already seen one collection: the list of people you get back when you call ``launchpad.people.find``.
+When Launchpad groups similar entries together, we call it a collection. You've
+already seen one collection: the list of people you get back when you call
+``launchpad.people.find``.
 
 .. code-block::
 
     for person in launchpad.people.find(text="salgado"):
         print(person.name)
 
-That's a collection of people-type entries. You can iterate over a collection as you can any Python list.
+That's a collection of people-type entries. You can iterate over a collection
+as you can any Python list.
 
-Some of an entry's attributes are links to related collections. Bug #1 has a number of associated bug tasks,
-represented as a collection of 'bug task' entries.
+Some of an entry's attributes are links to related collections. Bug #1 has a
+number of associated bug tasks, represented as a collection of 'bug task'
+entries.
 
 .. code-block::
 
     tasks \= bug_one.bug_tasks
     print(len(tasks))
-    # 17
+    # 31
     for task in tasks:
     print(task.bug_target_display_name)
+    # Clubdistro
     # Computer Science Ubuntu
-    # Ichthux
-    # JAK LINUX
+    # LibreOffice
+    # Jdylan.NET.Reflection
     # ...
 
-The person 'salgado' understands two languages, represented here as a collection of two language entries.
+The person 'salgado' understands two languages, represented here as a
+collection of two language entries.
 
 .. code-block::
 
     for language in salgado.languages:
     print(language.self_link)
-    # https://api.staging.launchpad.net/beta/+languages/en
-    # https://api.staging.launchpad.net/beta/+languages/pt_BR
+    # https://api.staging.launchpad.net/devel/+languages/en
+    # https://api.staging.launchpad.net/devel/+languages/pt_BR
 
-Because collections can be very large, it's usually a bad idea to iterate over them.
-Bugs generally have a manageable number of bug tasks, and people understand a manageable
-number of languages, but Launchpad tracks over 250,000 bugs. If you just iterate over a list,
-launchpadlib will just keep pulling down entries until it runs out, which might be forever
-(or, realistically, until your client is banned for making too many requests).
+Because collections can be very large, it's usually a bad idea to iterate over
+them. Bugs generally have a manageable number of bug tasks, and people
+understand a manageable number of languages, but Launchpad tracks over 250,000
+bugs. If you just iterate over a list, launchpadlib will just keep pulling down
+entries until it runs out, which might be forever (or, realistically, until
+your client is banned for making too many requests).
 
-That's why we recommend you slice Launchpad's collections into Python lists, and operate on the lists.
-Here's code that prints descriptions for the 10 most recently filed bugs.
+That's why we recommend you slice Launchpad's collections into Python lists,
+and operate on the lists. Here's code that prints descriptions for the 10 most
+recently filed bugs.
 
 .. code-block::
 
@@ -249,15 +295,17 @@ Here's code that prints descriptions for the 10 most recently filed bugs.
     for bug in bugs:
         print(bug.description)
 
-For performance reasons, we've put a couple restrictions on collection slices that don't apply
-to slices on regular Python lists. You can only slice from the beginning of a collection, not the end.
+For performance reasons, we've put a couple restrictions on collection slices
+that don't apply to slices on regular Python lists. You can only slice from the
+beginning of a collection, not the end.
 
 ::
 
     launchpad.bugs[-5:]
     # *** ValueError: Collection slices must have a nonnegative start point.
 
-And your slice needs to have a definite end point: you can't slice to the end of a collection.
+And your slice needs to have a definite end point: you can't slice to the end
+of a collection.
 
 .. code-block::
 
@@ -267,7 +315,8 @@ And your slice needs to have a definite end point: you can't slice to the end of
     bugs[:-5]
     # *** ValueError: Collection slices must have a definite, nonnegative end point.
 
-On the plus side, you can include a step number with your slice, as with a normal Python list:
+On the plus side, you can include a step number with your slice, as with a
+normal Python list:
 
 .. code-block::
 
@@ -278,11 +327,13 @@ On the plus side, you can include a step number with your slice, as with a norma
 Hosted files
 ------------
 
-Launchpad stores some data in the form of binary files. A good example is people's mugshots.
-With launchpadlib, you can read and write these binary files programmatically.
+Launchpad stores some data in the form of binary files. A good example is
+people's mugshots. With launchpadlib, you can read and write these binary files
+programmatically.
 
-If you have a launchpadlib reference to one of these hosted files, you can read its data
-by calling the open() method and treating the result as an open file handle.
+If you have a launchpadlib reference to one of these hosted files, you can read
+its data by calling the ``open()`` method and treating the result as an open
+file handle.
 
 .. code-block::
 
@@ -295,24 +346,26 @@ by calling the open() method and treating the result as an open file handle.
     mugshot_handle.last_modified
     # 'Wed, 12 Mar 2008 21:47:05 GMT'
 
-You'll get an error if the file doesn't exist: for instance, if a person doesn't have a mugshot.
+You'll get an error if the file doesn't exist: for instance, if a person
+doesn't have a mugshot.
 
 .. code-block::
 
     launchpad.people['has-no-mugshot'].mugshot
     # *** HTTPError: HTTP Error 404: Not Found
 
-To create or overwrite a file, open the hosted file object for write. You'll need to provide the
-access mode ("w"), the MIME type of the file you're sending to Launchpad, and the filename you
-want to give it on the server side.
+To create or overwrite a file, open the hosted file object for write. You'll
+need to provide the access mode ("w"), the MIME type of the file you're sending
+to Launchpad, and the filename you want to give it on the server side.
 
 .. code-block::
 
     with mugshot.open("w", "image/jpeg", "my-image.jpg") as mugshot_handle:
         mugshot_handle.write("image data goes here")
 
-If there's something wrong--maybe you provide a file of the wrong type--you'll get an HTTPError
-with a status code of 400. The content attribute will contain an error message.
+If there's something wrong--maybe you provide a file of the wrong type--you'll
+get an HTTPError with a status code of 400. The content attribute will contain
+an error message.
 
 .. code-block::
 
@@ -333,15 +386,16 @@ ID by calling str() on the object.
 .. code-block::
 
     print(str(bug_one))
-    # https://api.staging.launchpad.net/beta/bugs/1
+    # https://api.staging.launchpad.net/devel/bugs/1
 
-If you need to keep track of Launchpad objects over time, or pass references to Launchpad
-objects to other programs, use these strings. If you've got one of these strings, you can
-turn it into the corresponding Launchpad object by calling launchpad.load().
+If you need to keep track of Launchpad objects over time, or pass references to
+Launchpad objects to other programs, use these strings. If you've got one of
+these strings, you can turn it into the corresponding Launchpad object by
+calling ``launchpad.load()``.
 
 .. code-block::
 
-    bug_one = launchpad.load("https://api.staging.launchpad.net/beta/bugs/1")
+    bug_one = launchpad.load("https://api.staging.launchpad.net/devel/bugs/1")
     print(bug_one.title)
     Microsoft has a majority market share
 
@@ -380,15 +434,14 @@ should be fine; otherwise run from the branch or the latest tarball).
 
 (From `the blog <http://blog.launchpad.net/api/three-tips-for-faster-launchpadlib-api-clients>`_).
 
-Planned improvements
---------------------
+Report launchpadlib bugs
+------------------------
 
-launchpadlib still has deficiencies. We track bugs in the launchpadlib bug tracker
-(`https://bugs.launchpad.net/launchpadlib <https://bugs.launchpad.net/launchpadlib>`_)
-and will be working to improve launchpadlib throughout the limited beta.
+launchpadlib still has deficiencies. You can `report bugs <https://bugs.launchpad.net/launchpadlib/+filebug>`_
+affecting it, or browse bugs we are currently tracking in the `launchpadlib bug tracker <https://bugs.launchpad.net/launchpadlib>`_.
 
 Further information
 -------------------
 
-* `web service reference documentation <http://launchpad.net/+apidoc/>`_
+- `Web service reference documentation <http://launchpad.net/+apidoc/>`_
   for a list of all objects, operations, etc
