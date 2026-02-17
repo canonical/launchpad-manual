@@ -1,6 +1,6 @@
 .. _personal-package-archive:
 
-Personal package archive
+Personal Package Archive
 ========================
 
 .. include:: /includes/important_not_revised_help.rst

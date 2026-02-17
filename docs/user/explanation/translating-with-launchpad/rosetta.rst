@@ -1,6 +1,6 @@
 .. _using-rosetta:
 
-Using rosetta
+Using Rosetta
 =============
 
 .. include:: /includes/important_not_revised_help.rst

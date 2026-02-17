@@ -1,6 +1,6 @@
 .. _launchpadlib:
 
-Launchpadlib
+launchpadlib
 ============
 
 launchpadlib is an open-source Python library that lets you treat the HTTP

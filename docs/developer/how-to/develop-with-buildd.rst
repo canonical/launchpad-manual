@@ -1,4 +1,4 @@
-How to develop with buildd
+How to develop with Buildd
 ==========================
 
 LXD VM support
@@ -99,7 +99,7 @@ This should be done by the cloud-init config in the profile, but the package is 
 
 This will not be required once we can use the ``ubuntu:`` image source in LXD.
 
-Launchpad buildd
+Launchpad Buildd
 ----------------
 
 We'll need a clone of this and then build and install it for running.

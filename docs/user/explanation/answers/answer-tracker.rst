@@ -73,7 +73,7 @@ easy to build a two-layer bug reporting process where more knowledgeable
 users can identify and file bugs from questions.
 
 
-Launchpad answers for your project
+Launchpad Answers for your project
 ----------------------------------
 
 If you're a project owner, you can use Launchpad Answers to provide
