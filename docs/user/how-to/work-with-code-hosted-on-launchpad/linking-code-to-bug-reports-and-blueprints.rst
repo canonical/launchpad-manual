@@ -21,7 +21,7 @@ Fixing bugs in dedicated branches
 ---------------------------------
 
 Let's say you're new to a project. You spot a bug report and you're
-pretty certain you can fix it. You :ref:`pull down your own branch <host-a-git-repository-on-launchpad>` 
+pretty certain you can fix it. You :ref:`pull down your own branch <hosting-git-repositories>` 
 of the project's trunk and hack away. Every now and then, you push your branch 
 up to Launchpad.
 

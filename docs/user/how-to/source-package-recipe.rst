@@ -30,7 +30,7 @@ Code in Launchpad
 -----------------
 
 The code that you want to use for your source package recipe must be in
-Launchpad as a :ref:`Git <host-a-git-repository-on-launchpad>` branch that you 
+Launchpad as a :ref:`Git <hosting-git-repositories>` branch that you 
 have uploaded to Launchpad (easier) or as :ref:`an import from elsewhere <code-imports>`.
 
 You can import code that is hosted anywhere on the internet, so long as

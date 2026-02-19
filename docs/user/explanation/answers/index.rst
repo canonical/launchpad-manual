@@ -8,6 +8,5 @@ Answers
 
     Launchpad Answer Tracker <answer-tracker>
     Asking for help <asking-for-help>
-    Offering help <offering-help>
    
 

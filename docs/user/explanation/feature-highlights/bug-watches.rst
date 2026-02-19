@@ -53,4 +53,7 @@ Incidentally, you can subscribe to any bug, and if you are the assignee
 or the bug contact for this package or project then you will also be
 treated as a subscriber, and hence also notified:
 
-Now, scroll further down the page for `Bug #86103 <https://launchpad.net/bugs/86103>`_. You may notice that some of the comments on the bug look like emails. That's because Launchpad's bug tracker allows you to interact with it completely via email. That's the next stop on our tour: :ref:`the bug tracker email interface <launchpad-email-interface>`.
+Now, scroll further down the page for `Bug #86103 <https://launchpad.net/bugs/86103>`_. 
+You may notice that some of the comments on the bug look like emails. That's 
+because Launchpad's bug tracker allows you to interact with it completely via 
+email. That's the next stop on our tour: :ref:`the bug tracker email interface <use-the-launchapd-email-interface>`.

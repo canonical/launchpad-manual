@@ -2,6 +2,8 @@ Email interface command reference
 =================================
 
 .. include:: /includes/important_not_revised_help.rst
+This is a reference of the commands you can use when tracking bugs on Launchpad
+using email.
 
 You must write one email command per line. Remember that you need to
 start the line with a space, otherwise it will be treated as part of
@@ -28,6 +30,8 @@ For example:
    And this is some more description.
 
     assignee bradb
+
+.. _affects:
 
 affects
 -------

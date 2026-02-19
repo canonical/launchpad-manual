@@ -16,8 +16,8 @@ What you can do with Launchpad
 Launchpad is a hosting and collaboration service for software projects. You can
 use Launchpad to:
 
-* host, share and find code link missing 
-  :ref:`host-a-git-repository-on-launchpad`
+* host, share and find code 
+  :ref:`hosting-git-repositories`
 * create and host Ubuntu packages -
   :ref:`more about Personal Package Archives <ref-personal-package-archives>`
 * report and learn more about bugs in software you use -

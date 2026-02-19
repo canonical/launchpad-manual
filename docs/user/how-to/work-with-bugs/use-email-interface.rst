@@ -28,8 +28,32 @@ Messages that just add comments to a bug or merge proposal are not
 required to be signed. Messages that contain commands to change the
 state of an object do need to be signed.
 
-Get started with the email interface
-------------------------------------
+Anatomy of an email to the bug tracker
+--------------------------------------
+
+Let's look at the elements of a bug report email:
+
+-  **From address:** the address from which you send the email must be
+   `registered in your Launchpad account <https://launchpad.net/people/+me/+editemails>`_.
+-  **To address:** new@bugs.launchpad.net for new bugs;
+   ``bugnumber@bugs.launchpad.net`` to manipulate an existing bug
+   report; ``edit@bugs.launchpad.net`` for bulk edits.
+-  **Subject:** Launchpad uses this as the bug report or comment
+   summary.
+-  **Email body:** the text of your email forms the bug report or
+   comment detail. This is also where you can supply commands to
+   manipulate the bug.
+
+That last item, the email body, needs a little more explanation. When
+you want to use one of the email interface's commands, **you need to
+start the line with a space**. Otherwise, Launchpad will treat your
+command as a comment only and not as a command.
+
+**Note:** all commands are also posted as a comment to the bug. This is
+something we plan to fix.
+
+Getting started with the email interface
+========================================
 
 Let's take a look at an imaginary scenario, in which someone reports a
 bug requesting a screen cast to help demonstrate the bug tracker's email
@@ -273,5 +297,5 @@ If you deal with a large number of bug reports by email, you may find
 that you want to filter them to stop them cluttering your in-box.
 Launchpad appends custom headers to bug emails to help you filter them.
 
-You can find out :ref:`more about the headers <bug-mail-headers>`
+You can find out :ref:`more about the headers <bug-mail-filters>`
 that Launchpad uses in our article on bug subscriptions.

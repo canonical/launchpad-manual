@@ -11,7 +11,6 @@ How-to guides
    Import an OpenPGP key <import-openpgp-key>
    Import your SSH keys <import-ssh-keys>
    Log into websites with OpenID <using-openid>
-   Track issues with email <bug-tracking-with-email>
    Create a source package recipe <source-package-recipe>
    Help the community <community-help>
    Manage your account <account-management/index>

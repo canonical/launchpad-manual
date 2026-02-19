@@ -87,7 +87,7 @@ help <asking-for-help>` using Launchpad.
 
 Next, encourage members of your community to use Answers. In particular,
 you should consider encouraging members of your community to become
-:ref:`answer contacts <offering-help>`.
+:ref:`answer contacts <help-the-community>`.
 
 The Launchpad Answer Tracker offers tools to effectively build a support
 community around your project. It makes it easy for users to find help
@@ -108,7 +108,7 @@ a quick tour which shows the main features of the Answer Tracker.
 
 3. :ref:`Asking for help <asking-for-help>`:find out how to
    use Launchpad to get help with software.
-4. :ref:`Offering help <offering-help>`: how to help other
+4. :ref:`Offering help <help-the-community>`: how to help other
    people and become an ..answer contact.
 5. `Answer syntax parsing <Comments>`
 
