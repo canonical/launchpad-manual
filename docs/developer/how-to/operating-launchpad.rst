@@ -13,7 +13,6 @@ Operating Launchpad
    deploying-configuration-changes
    land-update-for-loggerhead
    transfer-project-ownership
-   create-bot-account
    porting-builders-to-newer-ubuntu-versions
    applying-a-cowboy-to-qastaging
    building-lpdev-images
