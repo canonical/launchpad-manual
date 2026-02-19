@@ -99,3 +99,7 @@ developer/LaunchpadHackingFAQ developer/explanation/hacking/
 developer/PolicyAndProcess/DatabaseSchemaChangesProcess developer/how-to/database-schema-changes-process/
 developer/Soyuz/HowToUseSoyuzLocally developer/how-to/use-soyuz-locally/
 developer/Soyuz/HowToDevelopWithBuildd developer/how-to/develop-with-buildd/
+user/explanation/answers/offering-help/ user/how-to/community-help.rst
+user/explanation/feature-highlights/email-interface/ user/how-to/work-with-bugs/use-email-interface.rst
+user/explanation/launchpad-answers/ user/explanation/answers/asking-for-help.rst
+user/how-to/launchpad-api/launchpad-web/ user/explanation/launchpad-api/launchpad-web-service.rst
