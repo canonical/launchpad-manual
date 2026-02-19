@@ -1,4 +1,4 @@
-Launchpad Registry
+Launchpad registry
 ==================
 
 .. include:: ../../includes/important_not_revised.rst
@@ -44,7 +44,7 @@ Ubuntu's releases are mirrored by other sites.
 | ``   * Distribution mirror prober: The process that checks the freshness of``
 | ``   mirrors.``
 
-Series, Milestones, and releases
+Series, milestones, and releases
 --------------------------------
 
 Projects and distributions have series of milestones that mark progress
@@ -61,7 +61,7 @@ tarballs or installers.
 | ``   releases on series.``
 | ``   * timelines: A representation of series, releases, and timelines.``
 
-Source Packages
+Source packages
 ---------------
 
 Distribution and distro series source packages summarise current and

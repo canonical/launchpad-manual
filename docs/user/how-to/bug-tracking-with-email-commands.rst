@@ -1,5 +1,5 @@
-Email interface command reference
-=================================
+Bug tracking with email command reference
+=========================================
 
 .. include:: /includes/important_not_revised_help.rst
 This is a reference of the commands you can use when tracking bugs on Launchpad
@@ -31,10 +31,11 @@ For example:
 
     assignee bradb
 
+
 .. _affects:
 
-Affects
--------
+affects
+~~~~~~~
 
 ``affects [distribution|package|product]``
 
@@ -60,29 +61,14 @@ The ``affects`` target can take the following forms:
 ::
 
     affects $product
-
-::
-
     affects $product/$product_series
-
-::
-
     affects $distribution
-
-::
-
     affects $distribution/$source_package
-
-::
-
     affects $distribution/$distro_series
-
-::
-
     affects $distribution/$distro_series/$source_package
 
-Summary
--------
+summary
+~~~~~~~
 
 ``summary "$summary"``
 
@@ -92,8 +78,8 @@ Change the one-line summary of the bug. Quotes are required.
 
     summary "A better summary"
 
-Assignee
---------
+assignee
+~~~~~~~~
 
 ``assignee [name|email|nobody]``
 
@@ -102,9 +88,6 @@ Assign a bug to someone.
 ::
 
     assignee bradb
-
-::
-
     assignee brad.bollenbach@ubuntu.com
 
 Unassign the bug.
@@ -113,11 +96,10 @@ Unassign the bug.
 
     assignee nobody
 
-Status
-------
+status
+~~~~~~
 
-``status
-[new|incomplete|invalid|wontfix|confirmed|triaged|inprogress|fixcommitted|fixreleased]``
+``status [new|incomplete|invalid|wontfix|confirmed|triaged|inprogress|fixcommitted|fixreleased]``
 
 Change the status of a bug.
 
@@ -125,8 +107,8 @@ Change the status of a bug.
 
     status fixreleased
 
-Importance
-----------
+importance
+~~~~~~~~~~
 
 ``importance [wishlist|low|medium|high|critical]``
 
@@ -136,14 +118,13 @@ Change the importance of a bug.
 
     importance high
 
-Milestone
----------
+milestone
+~~~~~~~~~
 
-``milestone $milestone``
+``milestone[I $milestone``
 
 Sets or clears the milestone of the bug. The milestone must already
-exist in Launchpad. :ref:`More about
-milestones <milestones>`.
+exist in Launchpad. :ref:`More about milestones <milestones>`.
 
 ::
 
@@ -155,11 +136,10 @@ You can clear the milestone by sending a hyphen:
 
     milestone -
 
-Informationtype
----------------
+informationtype
+~~~~~~~~~~~~~~~
 
-``informationtype
-[public|publicsecurity|privatesecurity|private|proprietary]``
+``informationtype [public|publicsecurity|privatesecurity|private|proprietary]``
 
 Changes the information type of the bug that affects visibility of the
 bug. Only the people that the project shares confidential information
@@ -169,8 +149,8 @@ with can see "Private", "Private Security", and "Proprietary" bugs.
 
     informationtype privatesecurity
 
-Subscribe
----------
+subscribe
+~~~~~~~~~
 
 ``subscribe [name|email]``
 
@@ -196,15 +176,15 @@ Subscribe Bjorn to the bug.
 
     subscribe bjornt
 
-Unsubscribe
------------
+unsubscribe
+~~~~~~~~~~~
 
 ``unsubscribe [name|email]``
 
 The opposite of the subscribe command.
 
-Duplicate
----------
+duplicate
+~~~~~~~~~
 
 ``duplicate $bugid``
 
@@ -220,8 +200,8 @@ To unmark the bug as a duplicate, specify 'no' as the bug id.
 
      duplicate no
 
-Bug
----
+bug
+~~~
 
 ``bug $bugid``
 
@@ -242,8 +222,8 @@ Send such emails to ``edit@bugs.launchpad.net``.
     bug 49
     status confirmed
 
-Tag
----
+tag
+~~~
 
 ``tag $tag``
 
@@ -266,8 +246,8 @@ Remove a tag by prefixing the tag name with ``-``.
 
     tag -foo
 
-Done
-----
+done
+~~~~
 
 ``done`` tells Launchpad to process no further commands.
 
@@ -282,3 +262,4 @@ For example:
 
 The line below ``done`` looks like an ``affects`` command but
 Launchpad will ignore it.
+

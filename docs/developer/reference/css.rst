@@ -7,7 +7,7 @@ Following the principles outlined in this document will minimize comments
 related to CSS conventions from reviewers.
 
 
-Class Names
+Class names
 -----------
 
 Overall, for naming a class we use lower case words separated by hyphens

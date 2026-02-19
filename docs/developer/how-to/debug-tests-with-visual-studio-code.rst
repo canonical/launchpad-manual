@@ -1,4 +1,4 @@
-Debug Tests with Visual Studio Code
+Debug tests with Visual Studio Code
 ===================================================
 
 Debugging Launchpad tests in Visual Studio Code (VS Code) can streamline your
@@ -6,7 +6,7 @@ development process by allowing you to inspect code, set breakpoints, and
 interactively solve problems within your tests. This guide will help you set up
 VS Code for debugging Launchpad tests.
 
-SSH Access to LXD Containers within VS Code
+SSH access to LXD containers within VS Code
 --------------------------------------------------
 
 To run and debug Launchpad tests inside a local LXD container using Visual
@@ -27,7 +27,7 @@ configured as described in the :doc:`Running <running>` section.
    local environment. You can now navigate to your project directory and run or
    debug tests without any additional configuration changes.
 
-Create the ``launch.json`` File
+Create the ``launch.json`` file
 -------------------------------
 
 First, you need to set up your debugging environment by creating a
@@ -64,7 +64,7 @@ arguments allow you to specify which test to debug; when you launch the
 debugger, a pop-up window will appear, prompting you to input the test name you
 want to debug using the ``${command:pickArgs}`` command.
 
-Launch the Debugger
+Launch the debugger
 -------------------
 
 After setting up the ``launch.json``, you can start the debugger using one of
@@ -83,7 +83,7 @@ the following methods:
    dropdown for your debug configurations—select the ``Python Debugger: Debug
    using launch.json`` option. Select the configuration you wish to launch.
 
-Additional Resources
+Additional resources
 --------------------
 
 For more detailed information on debugging with Visual Studio Code, especially

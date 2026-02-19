@@ -3,7 +3,7 @@ XXX policy
 
 .. include:: ../../includes/important_not_revised.rst
 
-Policy Statement
+Policy statement
 ----------------
 
 1. We put "XXX" in our code in a specific format to denote areas

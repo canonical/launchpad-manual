@@ -1,4 +1,4 @@
-Feature Flags
+Feature flags
 =============
 
 .. include:: ../../includes/important_not_revised.rst

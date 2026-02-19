@@ -265,7 +265,7 @@ linkcheck_ignore = [
     r"https://drive\.google\.com/file/d/1hUivL07Msoyej3wd_T4hMAX61EJzfE38/view\?usp=drive_link", #ignore, internal video
     "https://bugs.launchpad.net/charm-launchpad-buildd-image-modifier",  #private
     "https://bugs.launchpad.net/launchpad-vbuilder-manage",  #private
-    "http://example.com/.*",  #ignore, example links
+    "https://example.com/.*",  #ignore, example links
     "https://launchpad.net/canonical-mojo-specs",  # private
     r"https://launchpad\.test.*",  #ignore, local test setup
     r"https://bugs\.launchpad\.net/\+code/.*",

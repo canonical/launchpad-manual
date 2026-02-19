@@ -24,7 +24,7 @@ Recommendations
 - A bunch of projects already use "ppa" as their main ppa, so by making it ``daily`` this will be distinguishable from the normal PPA.
 - This will mean that daily PPAs will end up being ppa:projectname/daily.
 
-Other Tips
+Other tips
 ----------
 
 -  Use the term ``daily``, not dailies, nightlies, nightly, etc. that way

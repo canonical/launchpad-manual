@@ -1,6 +1,6 @@
 .. _setting-up-and-running-launchpad-advanced:
 
-Setting up and running Launchpad (Advanced)
+Setting up and running Launchpad (advanced)
 ===========================================
 
 .. note::
@@ -285,7 +285,7 @@ need to do ``make schema`` every time, and you should avoid it because it's
 expensive and because it will clean out any data you might have put into
 your test instance (through the web UI or by running other scripts).
 
-CSS Watch
+CSS watch
 ---------
 
 While running a local instance of Launchpad, if you are interested in updating

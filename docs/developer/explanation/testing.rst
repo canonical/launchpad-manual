@@ -3,7 +3,7 @@ Testing
 
 .. include:: ../../includes/important_not_revised.rst
 
-Testing Your Launchpad Changes
+Testing your Launchpad changes
 ------------------------------
 
 General usage
@@ -146,7 +146,7 @@ Headless tests
 
    xvfb-run -s '-screen 0 1024x768x24' bin/test YOUR_TEST_ARGUMENTS
 
-Testing Launchpad Translations
+Testing Launchpad translations
 ------------------------------
 
 -  Rosetta admin user - translations-deity@example.com
@@ -158,7 +158,7 @@ Testing Launchpad Translations
 Performance and stress tests
 ----------------------------
 
-Populate the db
+Populate the DB
 ~~~~~~~~~~~~~~~
 
 To add object into the database you can use:
@@ -212,7 +212,7 @@ View
    -  Files locate in lib/lp//stories
    -  More details: PageTests
 
-Javascript
+JavaScript
 ----------
 
 1. Unit testing

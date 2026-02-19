@@ -1,11 +1,11 @@
-Launchpad Database Setup
+Launchpad database setup
 ========================
 
 .. include:: ../../includes/important_not_revised.rst
 
 There are two ways to set up your launchpad database.
 
-Automated Launchpad Database Setup
+Automated Launchpad database setup
 ----------------------------------
 
 To set up PostgreSQL for running Launchpad, try using
@@ -20,7 +20,7 @@ tree.
     have on your system. If that is a problem for you, use the manual
     procedure instead and adapt to your needs.
 
-Manual Launchpad Database Setup
+Manual Launchpad database setup
 -------------------------------
 
 The initial Launchpad database should be done on your system with the

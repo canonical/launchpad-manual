@@ -17,7 +17,7 @@ appserver started via ``make run``, you can create a new account using the
 For example, to add user ``~test-user``, navigate to your local Launchpad repo 
 and run: ``utilities/make-lp-user test-user``.
 
-Staging/Qastaging
+Staging/qastaging
 ~~~~~~~~~~~~~~~~~
 
 Some development environments, such as those deployed using the :doc:`Mojo

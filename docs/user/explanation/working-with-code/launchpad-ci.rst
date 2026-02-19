@@ -1,6 +1,6 @@
 .. _continuous-integration:
 
-Continuous Integration
+Continuous integration
 ======================
 
 .. include:: /includes/important_not_revised_help.rst
@@ -32,7 +32,7 @@ Documentation
 You can find the syntax for the configuration file at
 https://lpci.readthedocs.io/en/latest/configuration.html.
 
-Feature Requests / Known Issues
+Feature requests / known issues
 -------------------------------
 
 Please note that Launchpad CI still has some rough edges.

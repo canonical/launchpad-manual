@@ -82,14 +82,14 @@ deploying them will require a 1 hour plus complete downtime window.
 Cold schema patches always land on ``db-devel``. After they are made live
 they will be promoted to ``master`` as part of the go-live process.
 
-Hot Patches
+Hot patches
 ~~~~~~~~~~~
 
 :doc:`../explanation/live-patching` explains how
 hot-patching works and what sorts of things we can hot-patch. It's the
 authority — we may be able to hot-patch more as our tooling improves.
 
-Cold Patches
+Cold patches
 ~~~~~~~~~~~~
 
 Anything that is not a hot patch is a cold patch and can only be applied
@@ -313,12 +313,19 @@ than it's worth. Instead, first resolve any conflicts in
    cd ../..
    bzr resolve database/sampledata/current.sql
 
-Notes on Changing security.cfg
+Notes on changing security.cfg
 ------------------------------
 
-It is possible to land changes to security.cfg on ``master`` rather than
-``db-devel``. These changes are deployed during no-downtime rollouts.
+If your changes to ``security.cfg`` are additive in nature like adding new
+permissions to an existing role or adding a new role, then you can land them
+on ``master`` rather than ``db-devel``.
+These changes are deployed during no-downtime rollouts.
 
-Note that adding new users requires manual DB reconfiguration, so you
+Any update that revokes permissions from an existing role (including removing
+a role entirely), must be landed on ``db-devel`` and deployed during a
+fast-downtime deployment. This is because a full update (including revocation)
+requires resetting all permissions, which cannot be done without downtime.
+
+Note that adding new roles requires manual DB reconfiguration, so you
 need to file an RT ticket to grant access to relevant machines and make
 sure it is resolved **before landing the branch** that needs them.

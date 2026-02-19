@@ -20,7 +20,7 @@ Owner
 Each branch has an owner, who is the only person or team, aside from
 admins, who can write to the branch.
 
-Review Team
+Review team
 ~~~~~~~~~~~
 
 Each branch may have a "review team". This is the group of people (or
@@ -75,7 +75,7 @@ They have edit rights on the merge proposal. Their reviews are not shown
 as "(community)". They can set the overall status of the merge proposal
 (i.e. mark it "approved"/"rejected"/"work in progress").
 
-Team Reviewers
+Team reviewers
 ~~~~~~~~~~~~~~
 
 Teams who have been requested to review. Members of these teams may
@@ -89,7 +89,7 @@ Review types are considered not to conflict if:
 -  One of them is blank, or
 -  both are the same
 
-Individual Reviewers
+Individual reviewers
 ~~~~~~~~~~~~~~~~~~~~
 
 People who have been requested to review or who have performed reviews.

@@ -1,4 +1,4 @@
-Static Assets
+Static assets
 ==============
 
 .. toctree::

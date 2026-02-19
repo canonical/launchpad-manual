@@ -76,7 +76,7 @@ old binary publications can (and should) hold their
 respective sources in the archive.
 
 
-Generate Sources and Packages
+Generate sources and packages
 -------------------------------------
 
 The publisher uses ``apt-ftparchive`` to generate all necessary index
@@ -85,7 +85,7 @@ Clients like ``apt`` use these index files to access a
 distribution source.
 
 
-Write out Release files
+Write out release files
 -------------------------------
 
 The publisher generates the Release files for each suite
