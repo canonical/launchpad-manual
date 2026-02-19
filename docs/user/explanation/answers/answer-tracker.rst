@@ -1,6 +1,6 @@
 .. _launchpad-answer-tracker:
 
-Launchpad Answer Tracker
+Launchpad answer tracker
 ========================
 
 .. include:: /includes/important_not_revised_help.rst
@@ -30,7 +30,7 @@ Launchpad Answers helps to solve these problems by:
 It also serves as a simple ticketing system for tracking admin requests.
 
 
-Key Features
+Key features
 ------------
 
 **Launchpad Integration:** The Answer Tracker is available for all

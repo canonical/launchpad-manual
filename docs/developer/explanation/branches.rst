@@ -37,21 +37,27 @@ it is only cleared into foo-stable if the buildbot test runner succeeds.
 If you want to know how all of this works behind the scenes, read
 `Trunk/Glue <Trunk/Glue>`__ (after reading the rest of this page).
 
-Look at the Pretty Pictures
+Look at the pretty pictures
 ---------------------------
 
 Diagrams might be the best way to understand this. (If they don't work,
 there's text afterwards, don't worry.)
 
-.. XXX: add missing images
+.. image:: ../images/branches/codeflow.png
 
 Below, we break the process down a bit with a different diagramming
 approach. Here's what happens when you submit to **master**:
 
+.. image:: ../images/branches/db-devel-normal.png 
+
 Where are the expected potential problems in the process? Glad you
 asked!
 
+.. image:: ../images/branches/db-devel-problems.png 
+
 It is also possible to submit directly to the **db-devel** branch.
+
+.. image:: ../images/branches/db-devel-direct.png 
 
 Let's Try That in Words
 -----------------------
@@ -97,7 +103,7 @@ Problems that can occur
     manually submitting a branch to **db-devel** that includes the
     branch that failed to merge plus any necessary adjustments.
 
-Where to Send Merge Requests
+Where to send merge requests
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Merge requests that do any of the following should be targeted at the

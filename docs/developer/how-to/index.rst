@@ -1,4 +1,4 @@
-How-to Guides
+How-to guides
 =============
 
 Getting started

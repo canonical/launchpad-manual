@@ -1,7 +1,7 @@
 Porting builders to newer Ubuntu versions
 =========================================
 
-QA Migration & Deployment
+QA migration & deployment
 -------------------------
 
 There are following steps to porting builders to newer Ubuntu versions.
@@ -34,7 +34,7 @@ There are following steps to porting builders to newer Ubuntu versions.
 
     ./manage-builders -l qastaging --disabled -a riscv64  --reset
 
-Notes & Helpful links
+Notes & helpful links
 ---------------------
 
 - With Ubuntu Noble, ``lxd`` is no longer a part of the base image and is pre-baked. Refer this `commit <https://git.launchpad.net/charm-launchpad-buildd-image-modifier/commit/?id=e0ea7d79767c09412e9fd16855e0d5f1810fe357>`_ that pre-bakes ``lxd`` if not available. `launchpad-buildd <https://code.launchpad.net/~launchpad/launchpad-buildd/>`_ uses ``lxd`` to run builds. 

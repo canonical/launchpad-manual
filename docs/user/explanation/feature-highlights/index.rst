@@ -10,7 +10,7 @@ build packages, track bugs, and more.
 
 Get familiar with some of Launchpad's most exciting features below.
 
-:ref:`Personal Package Archives (PPA) <personal-package-archives-highlights>`
+:ref:`Personal package archives (PPA) <personal-package-archives-highlights>`
 -----------------------------------------------------------------------------
 Personal package archives allow you to distribute software packages that can be
 installed on an Ubuntu system. Users who install these packages receive 

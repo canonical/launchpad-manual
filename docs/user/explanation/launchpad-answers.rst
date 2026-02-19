@@ -1,6 +1,5 @@
-#####################
 Launchpad Answers
-#####################
+=================
 .. include:: /includes/important_not_revised_help.rst
 
 

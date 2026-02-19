@@ -1,7 +1,9 @@
 .. _code-concepts:
 
-Code Concepts
+Code concepts
 =============
+
+.. include:: /includes/bazaar-discontinued.rst
 
 In order to fully understand the **\`lp.code\`** modules, it helps to
 have an understanding of a number of core concepts.

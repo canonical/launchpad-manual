@@ -20,7 +20,7 @@ are not the best place to test many corner cases or various similar
 possibilities.  This is best done in other unit tests or functional tests,
 which have ensuring complete test coverage as their main objective.
 
-Testable Documentation
+Testable documentation
 ======================
 
 Testable documentation includes system documentation doctests and page
@@ -32,7 +32,7 @@ Another trick to ensure the narrative is appropriately detailed is to
 mentally remove all of the code snippets and see if the narrative stands by
 itself.
 
-System Documentation
+System documentation
 --------------------
 
 These are doctests located under ``lib/lp/<app>/doc``.  They are used to
@@ -47,7 +47,7 @@ you need to configure the test layer in which the test will be run or need
 to customize the test fixture, you can add special instructions for the file
 in the system documentation harness in ``lib/lp/<app>/tests/test_doc.py``.)
 
-Use Cases Documentation: Page Tests
+Use cases documentation: Page tests
 -----------------------------------
 
 We use page tests to document all the use cases that Launchpad satisfies.
@@ -64,7 +64,7 @@ The page tests do not need to document and demonstrate each and every
 possible way to navigate the workflow.  This can usually be done in a more
 direct manner by testing the view object directly. 
 
-Browser View Tests
+Browser view tests
 ------------------
 
 View objects are usually documented that way along other system objects in
@@ -81,7 +81,7 @@ non-documentation doctest files should be converted to unit tests.
 **All new browser tests that are not testable documentation should be
 written as unit tests.**
 
-Common Conventions
+Common conventions
 ------------------
 
 The basic conventions for testable documentation are:
@@ -152,7 +152,7 @@ This means that something like this isn't considered a test, but test setup
 
 For the reason above, the assert statement shouldn't be used in doctests.
 
-Comparing Results
+Comparing results
 -----------------
 
 When writing doctests, make sure that if the test fails, the failure message
@@ -286,7 +286,7 @@ dictionary:
     >>> sorted(my_dict.items())
     [('a', 1), ('b', 2)]
 
-Global State
+Global state
 ------------
 
 Be especially careful of test code that changes global state.  For example,
@@ -307,7 +307,7 @@ monkey-patching a module's globals) then the test **must** be sure to
 restore the previous state, either in a ``try``-``finally`` clause, or at
 the end of the doctest, or in the test's ``tearDown`` hook.
 
-Style to Avoid
+Style to avoid
 --------------
 
 A very important consideration is that documentation tests are really
@@ -368,7 +368,7 @@ A good rule of thumb to know whether the narrative style works as
 documentation is to read the narrative as if the code examples were not
 there.  If the text style makes sense, the style is probably good.
 
-Using Sample Data
+Using sample data
 -----------------
 
 If possible, avoid using the existing sample data in tests, apart from some
@@ -400,7 +400,7 @@ possible use the ``example.{com,org,net}`` domains, e.g.
 exist, so it can't be possible to accidentally spam them if something goes
 wrong on our end.
 
-Fixtures and Helpers
+Fixtures and helpers
 --------------------
 
 Sometimes a lot of code is needed to set up a test, or to extract the
@@ -413,7 +413,7 @@ These helpers currently live in ``lib/lp/testing``.  New helpers should go
 there, unless they're very specific to a particular corner of the
 application; in such cases you can use something like ``lp.foo.testing``.
 
-Functional and Unit Tests
+Functional and unit tests
 =========================
 
 Complete test coverage without impairing documentation often requires
@@ -425,7 +425,7 @@ to a Python test case.
 Functional tests are found in the ``tests`` subdirectory of each directory
 containing code under test.
 
-Python Test Cases
+Python test cases
 -----------------
 
 Although Python test cases are not documentation they must still be
@@ -487,7 +487,7 @@ style guide <python>`), however when naming test methods:
   ``test_fooBarBaz_with_first_alternative()``,
   ``test_fooBarBaz_with_second_alternative()``, etc.
 
-How To Use the Correct Test URL
+How to use the correct test URL
 ===============================
 
 When tests run, and need to connect to the application server instance under

@@ -1,4 +1,4 @@
-Running Launchpad with Chameleon Template Engine
+Running Launchpad with Chameleon template engine
 ================================================
 
 .. include:: ../../includes/important_out_of_date.rst

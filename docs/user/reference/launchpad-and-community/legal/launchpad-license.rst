@@ -1,6 +1,6 @@
 .. _launchpad-license:
 
-Launchpad License
+Launchpad license
 =================
 
 Below are the licensing terms for Launchpad. Please use our :ref:`feedback <get-help>` 

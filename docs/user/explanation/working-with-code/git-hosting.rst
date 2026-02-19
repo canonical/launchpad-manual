@@ -4,6 +4,7 @@ Hosting Git repositories
 ========================
 
 .. include:: /includes/important_not_revised_help.rst
+.. include:: /includes/bazaar-discontinued.rst
 
 Launchpad supports hosting `Git <http://git-scm.com/>`_ repositories.
 This is distinct from the :ref:`code import <code-imports>` facility that
@@ -198,7 +199,7 @@ security fixes.
 HTTPS authentication
 --------------------
 
-Access Tokens
+Access tokens
 ~~~~~~~~~~~~~
 
 To push repositories over HTTPS, or to clone or pull private

@@ -1,4 +1,4 @@
-Integration Testing in JavaScript
+Integration testing in JavaScript
 =================================
 
 Launchpad's JavaScript testing is built around YUI 3's ``yuitest`` library.

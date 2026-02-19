@@ -1,4 +1,4 @@
-Debug Stories/Pagetests
+Debug stories/pagetests
 =======================
 
 Debugging stories (a.k.a. pagetests) can be kind of a pain because they
@@ -89,14 +89,15 @@ described in `John Meinel's excellent
 post <http://jam-bazaar.blogspot.com/2010/01/meliae-020.html>`__, and
 hopefully find what's leaking.
 
-Debugging With GDB
+Debugging with GDB
 ------------------
 
 Some kinds of bugs (segfaults, hung processes, out-of-control daemons)
 are hard to debug from within Python. See
-`Debugging with GDB <https://wiki.python.org/moin/DebuggingWithGdb>`__ for how to debug them.
+`Debugging with GDB <https://web.archive.org/web/20250818163237/https://wiki.python.org/moin/DebuggingWithGdb>`__ 
+for how to debug them.
 
-Debugging Core Dumps 
+Debugging core dumps
 --------------------
 
 A quick sketch of how to read core files produced from production machines by IS:
@@ -121,7 +122,7 @@ This puts you in a chroot with the same packages installed as on production.
 6. Read output and profit! 
 
 
-Debugging Buildd with the Visual Studio Code IDE
+Debugging buildd with the Visual Studio Code IDE
 ------------------------------------------------
 
 Although we `set up Buildd in a

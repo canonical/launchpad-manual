@@ -111,7 +111,7 @@ You can also use the ``sorted`` builtin to do this.
 
     members = sorted(getUtility(ITeamParticipationSet).getAllMembers())
 
-SQL Result Set Ordering
+SQL result set ordering
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 If the ordering of an SQL result set is not fully constrained, then your tests
@@ -367,7 +367,7 @@ Example:
     # will raise an Unauthorized error.
     bug.notifyLinkBug(self)
 
-Email Notifications
+Email notifications
 -------------------
 
 When I need to send a notification for a person/team, how do I know what email address(es) I have to send the notification to?
@@ -437,7 +437,7 @@ To format a time, use ``tal:content="context/datecreated/fmt:time``.
 To format a date and time, use ``tal:content="context/datecreated/fmt:datetime``.
 
 
-How should I generate notices like "Added Bug #1234" to the top of the page?
+How should I generate notices like "added bug #1234" to the top of the page?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: python
@@ -455,7 +455,7 @@ How do I add a new celebrity?
 
 See XXX AddingLaunchpadCelebrity.
 
-Global Configuration
+Global configuration
 --------------------
 
 How do I add items to launchpad-lazr.conf?
@@ -689,7 +689,7 @@ also exercised by many other tests and it's not immediately obvious which those
 might be without running the whole test suite. There is an **experimental**
 tool to help with this at XXX TestsFromChanges.
 
-Sample Data
+Sample data
 -----------
 
 Sampledata should be innocuous, such that if it is viewed by people outside
@@ -782,7 +782,7 @@ the HEAD of launchpad. It lets you see if your code changes actually work on
 the production system and performance is good.
 It lives at https://staging.launchpad.net/.
 
-Changing the launchpad dependency debs
+Changing the Launchpad dependency debs
 --------------------------------------
 
 The launchpad deb dependencies are in the ``~launchpad`` PPA:

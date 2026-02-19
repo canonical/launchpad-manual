@@ -50,7 +50,7 @@ and releases.
 Project maintainers and drivers can register series. When a driver registers a series, the user is also set as
 the series release manager. Project maintainers and series release managers can create and manage milestones and releases.
 
-Destination axis: Leading or trailing series?
+Destination axis: leading or trailing series?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 A *trailing series* is created **after** the work is completed.
@@ -187,7 +187,7 @@ As both these series represent separate code bases, implementing a bug fix in th
 
 Launchpad excels at tracking how an individual bug affects different communities and contexts; we'll see more of that later in this guide.
 
-Continuity axis: Continuous or discrete goals?
+Continuity axis: continuous or discrete goals?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Continuous goals are project goals to exist beyond the life of a series.

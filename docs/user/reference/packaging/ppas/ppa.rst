@@ -65,7 +65,7 @@ PPAs.
 Supported series
 ----------------
 
-When building a source package you can specify one of the supported series in your `changelog file <https://canonical-ubuntu-packaging-guide.readthedocs-hosted.com/en/latest/reference/debian-dir-overview/#the-changelog-file>`_, which are listed at `the Launchpad PPA page <https://launchpad.net/ubuntu/+ppas>`_.
+When building a source package you can specify one of the supported series in your `changelog file <https://ubuntu-packaging-guide.readthedocs.io/en/latest/ubuntu-packaging-guide/debian-dir-overview.html#the-changelog>`_, which are listed at `the Launchpad PPA page <https://launchpad.net/ubuntu/+ppas>`_.
 
 If you specify a different series the build will fail.
 
@@ -125,10 +125,10 @@ Further information
 You can familiarise yourself with how PPAs work by :ref:`installing a package from an existing PPA <install-software-from-ppas>`. You can also jump straight into :ref:`uploading your source packages <upload-a-package-to-a-ppa>`.
 
 
-Frequently Asked Questions
+Frequently asked questions
 --------------------------
 
-Non-Technical Questions
+Non-technical questions
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 Can anybody have a PPA?
@@ -190,7 +190,7 @@ The easiest option is to remove packages from it. While obvious, it isn't always
 If you believe you have good reason to request additional disk space, file a question with a written justification at `<https://answers.launchpad.net/soyuz>`_ and it will be considered. A Launchpad admin will consider your request and either defer it or provide you with alternative advice.
 
 
-Technical Questions
+Technical questions
 ~~~~~~~~~~~~~~~~~~~
 
 Why do builds fail?
@@ -251,7 +251,7 @@ What's this dput.cf stuff? What do I have to modify? I can't seem to follow the 
 
 ``dput.cf`` configures the ``dput`` tool, as suggested in the :ref:`Upload a package to a PPA <upload-a-package-to-a-ppa>` you have to modify the given template to match your Launchpad details (user-name). Be sure that you refer to the specific target you've edited when uploading your source (``dput my-ppa <source>.changes``) and also don't forget to sign it with a key already referenced in Launchpad as yours.
 
-How does this stuff differ from the Ubuntu archive? and REVU?
+How does this stuff differ from the Ubuntu archive? And REVU?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 PPA infrastructure is identical to the Ubuntu Primary archive, but it's a separate setup. It ie meant to provide a flat-learning-curve for users already used to the ubuntu/debian development tools. All the tools, procedures and features tend to be the same and shared between PPAs and ubuntu Primary archive. Our goal is to provide the shortest path between developers able to get things fixed or to add innovation to ubuntu context and the ubuntu users. `REVU <https://wiki.ubuntu.com/MOTU/Packages/REVU/>`_ is a parallel system currently maintained and used by `MOTU <https://wiki.ubuntu.com/MOTU/>`_ members to have structured and transparent procedures for "producing and reviewing new packages". PPAs will be soon provide similar features.

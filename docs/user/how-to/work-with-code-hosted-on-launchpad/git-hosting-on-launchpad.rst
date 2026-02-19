@@ -4,6 +4,7 @@ Host a Git repository on Launchpad
 ==================================
 
 .. include:: /includes/important_not_revised_help.rst
+.. include:: /includes/bazaar-discontinued.rst
 
 Launchpad supports hosting `Git <http://git-scm.com/>`_ repositories.
 Git repositories use a somewhat different model from Bazaar branches:
@@ -86,7 +87,7 @@ Now, you can push a branch using a command such as this:
 HTTPS authentication
 --------------------
 
-Access Tokens
+Access tokens
 ~~~~~~~~~~~~~
 
 To push repositories over HTTPS, or to clone or pull private

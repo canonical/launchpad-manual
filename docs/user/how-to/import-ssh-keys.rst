@@ -141,7 +141,7 @@ To do this:
     and specify the private-key file (with no ``.pub``)
     in the SSH configuration.
 
-Support for FIDO2 SSH Keys
+Support for FIDO2 SSH keys
 --------------------------
 
 Launchpad supports FIDO2 hardware-backed SSH key types: ``ed25519-sk`` and

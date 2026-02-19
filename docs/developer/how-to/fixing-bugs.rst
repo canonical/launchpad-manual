@@ -1,6 +1,6 @@
 .. _fixing-bugs:
 
-Fixing Bugs
+Fixing bugs
 ===========
 
 .. include:: ../../includes/important_not_revised.rst
@@ -21,7 +21,7 @@ of `open bugs marked as 'trivial'`_.
 You can also try a non-trivial bug, of course, but the trivial ones are
 probably the best place to start.
 
-Discuss It
+Discuss it
 ----------
 
 Don't just start hacking away. First, discuss the bug and your proposed fix in
@@ -35,7 +35,7 @@ undercommunication. If you have a question, ask it.
 It's much better to ask than to spend hours going down the wrong route, only to
 find out later.
 
-Making a Patch
+Making a patch
 --------------
 
 Once you're ready to develop a patch, please see XXX [[Patches]] for how to

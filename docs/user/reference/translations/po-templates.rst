@@ -1,4 +1,4 @@
-PO Templates
+PO templates
 ============
 
 .. include:: /includes/important_not_revised_help.rst
@@ -7,7 +7,7 @@ Some people may be confused by the term PO *Template* ''' because in
 traditional Gettext environments, they have only worked with '''PO
 *Files* '''. Here is a short explanation of the term.
 
-In Gettext
+In gettext
 ----------
 
 If you never encountered PO templates before, you have either only been
