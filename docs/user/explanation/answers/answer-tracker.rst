@@ -109,7 +109,7 @@ a quick tour which shows the main features of the Answer Tracker.
 3. :ref:`Asking for help <asking-for-help>`:find out how to
    use Launchpad to get help with software.
 4. :ref:`Offering help <help-the-community>`: how to help other
-   people and become an ..answer contact.
+   people and become an answer contact.
 5. `Answer syntax parsing <Comments>`
 
 ..

@@ -122,4 +122,4 @@ Next step
 ---------
 
 As well as using email to send updates about the status of bugs,
-Launchpad gives you a full :ref:`email interface to the bug tracker <use-the-launchapd-email-interface>`.
+Launchpad gives you a full :ref:`email interface to the bug tracker <use-the-launchpad-email-interface>`.
