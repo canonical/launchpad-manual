@@ -103,3 +103,4 @@ user/explanation/answers/offering-help/ user/how-to/community-help/
 user/explanation/feature-highlights/email-interface/ user/how-to/work-with-bugs/use-email-interface/
 user/explanation/launchpad-answers/ user/explanation/answers/asking-for-help/
 user/how-to/launchpad-api/launchpad-web/ user/explanation/launchpad-api/launchpad-web-service/
+user/YourAccount/NewAccount user/how-to/account-management/create-account
