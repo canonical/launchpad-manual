@@ -22,7 +22,7 @@ In this manual
 ==========================    ===========================
 
 ==========================    ===========================
-**User quick start:**         :ref:`Get started with launchpad <get-started-with-launchpad>`    • :ref:`Host a repository <host-a-git-repository-on-launchpad>` • :ref:`Community<help-the-community>` 
+**User quick start:**         :ref:`Get started with launchpad <get-started-with-launchpad>`    • :ref:`Host a repository <hosting-git-repositories>` • :ref:`Community<help-the-community>` 
 **Developer quick start:**    :ref:`What is Launchpad<what-is-launchpad>`             • :ref:`Setting up Launchpad<setting-up-and-running-launchpad-quickstart>` • :ref:`Get the source code<get-the-source-code>`
 ==========================    ===========================
 

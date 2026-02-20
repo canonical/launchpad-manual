@@ -80,10 +80,10 @@ are given along with the data.
 Automated querying
 ------------------
 
-We provide :ref:`data feeds <atom-feeds>` and a :ref:`web service API <launchpad-web-service>` for automated access to
-Launchpad's dataset. We strongly recommend you use the feeds and the web
-service API in preference to screen-scraping or other techniques. If you
-can't do what you need to do through the feeds and the API,
+We provide :ref:`data feeds <subscribe-bug-feeds>` and a :ref:`web service API <launchpad-web-service>` 
+for automated access to Launchpad's dataset. We strongly recommend you use the 
+feeds and the web service API in preference to screen-scraping or other 
+techniques. If you can't do what you need to do through the feeds and the API:
 
 -  please `file a bug <https://launchpad.net/launchpad/+filebug>`_ so
    we can improve our service

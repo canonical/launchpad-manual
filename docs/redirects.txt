@@ -49,12 +49,14 @@ user/Packaging/SourceBuilds	user/explanation/packaging/packaging/
 user/Packaging/PPA/Deleting	user/reference/packaging/ppas/deleting-packages/
 user/Legal	user/reference/launchpad-and-community/legal/launchpad-policies/
 #  user/InterBugTracking	https://web.archive.org/web/20120714093517/https://help.launchpad.net/Bugs/InterBugTracking (doc not migrated)
-user/Code/UploadingABranch	user/how-to/work-with-code-hosted-on-launchpad/git-hosting-on-launchpad/
+user/Code/UploadingABranch	user/explanation/working-with-code/git-hosting
+user/how-to/work-with-code-hosted-on-launchpad/git-hosting-on-launchpad/ user/explanation/working-with-code/git-hosting
 user/Code/PersonalBranches	user/how-to/work-with-code-hosted-on-launchpad/create-and-maintain-personal-branch/
 user/Code/BugAndBlueprintLinks	user/how-to/work-with-code-hosted-on-launchpad/linking-code-to-bug-reports-and-blueprints/
-user/BugTrackerEmailInterface	user/how-to/bug-tracking-with-email/
+user/BugTrackerEmailInterface user/how-to/work-with-bugs/use-email-interface/	
+user/how-to/bug-tracking-with-email/ user/how-to/work-with-bugs/use-email-interface/
 user/Bugs/PluginAPISpec	user/reference/bug-tracker-api/plugin-api/
-user/Bugs/EmailInterface	user/how-to/bug-tracking-with-email/
+user/Bugs/EmailInterface	user/how-to/work-with-bugs/use-email-interface/
 user/BlueprintDocumentation	user/explanation/feature-highlights/blueprints/
 user/API/launchpadlib	user/how-to/launchpadlib/using-launchpadlib/
 user/Answers	user/explanation/answers/answer-tracker/
@@ -97,4 +99,8 @@ developer/LaunchpadHackingFAQ developer/explanation/hacking/
 developer/PolicyAndProcess/DatabaseSchemaChangesProcess developer/how-to/database-schema-changes-process/
 developer/Soyuz/HowToUseSoyuzLocally developer/how-to/use-soyuz-locally/
 developer/Soyuz/HowToDevelopWithBuildd developer/how-to/develop-with-buildd/
+user/explanation/answers/offering-help/ user/how-to/community-help/
+user/explanation/feature-highlights/email-interface/ user/how-to/work-with-bugs/use-email-interface/
+user/explanation/launchpad-answers/ user/explanation/answers/asking-for-help/
+user/how-to/launchpad-api/launchpad-web/ user/explanation/launchpad-api/launchpad-web-service/
 user/YourAccount/NewAccount user/how-to/account-management/create-account

@@ -1,4 +1,4 @@
-.. _use-the-launchapd-email-interface:
+.. _use-the-launchpad-email-interface:
 
 Use the Launchpad email interface
 =================================
@@ -28,8 +28,32 @@ Messages that just add comments to a bug or merge proposal are not
 required to be signed. Messages that contain commands to change the
 state of an object do need to be signed.
 
-Get started with the email interface
-------------------------------------
+Anatomy of an email to the bug tracker
+--------------------------------------
+
+Let's look at the elements of a bug report email:
+
+-  **From address:** the address from which you send the email must be
+   `registered in your Launchpad account <https://launchpad.net/people/+me/+editemails>`_.
+-  **To address:** new@bugs.launchpad.net for new bugs;
+   ``bugnumber@bugs.launchpad.net`` to manipulate an existing bug
+   report; ``edit@bugs.launchpad.net`` for bulk edits.
+-  **Subject:** Launchpad uses this as the bug report or comment
+   summary.
+-  **Email body:** the text of your email forms the bug report or
+   comment detail. This is also where you can supply commands to
+   manipulate the bug.
+
+That last item, the email body, needs a little more explanation. When
+you want to use one of the email interface's commands, **you need to
+start the line with a space**. Otherwise, Launchpad will treat your
+command as a comment only and not as a command.
+
+**Note:** all commands are also posted as a comment to the bug. This is
+something we plan to fix.
+
+Getting started with the email interface
+----------------------------------------
 
 Let's take a look at an imaginary scenario, in which someone reports a
 bug requesting a screen cast to help demonstrate the bug tracker's email
@@ -38,7 +62,7 @@ interface.
 .. _report-a-bug:
 
 Report a bug
-------------
+~~~~~~~~~~~~
 
 Reporting a new bug by email is simple. Send an email to
 new@bugs.launchpad.net and describe the problem you're having. Tell
@@ -77,7 +101,7 @@ new line for each project/package:
     affects ubuntu/exaile
 
 Comment on and change the status of a bug
------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you've received a notification about a bug and you want to leave a
 comment, simply reply to the email. Otherwise, to comment on a bug, send
@@ -106,7 +130,7 @@ Joey has also marked the bug as affecting Launchpad itself, using its
 project name ``launchpad``.
 
 Assign and target the bug
--------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Matthew sees that his boss, Joey, thinks this a good idea, so he assigns
 it to himself and targets it to a future milestone:
@@ -138,7 +162,7 @@ and Launchpad would have selected the most likely project that bug is
 reported against. See the :ref:`affects command reference <affects>` for details.
 
 Attach a files to a bug
------------------------
+~~~~~~~~~~~~~~~~~~~~~~~
 
 Once Matthew's started work on the bug, he can attach an image from the
 screen cast to the bug report to show how he's getting on.
@@ -163,7 +187,7 @@ including:
 -  MacOS resource forks.
 
 Edit a bug that affects multiple contexts
------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Every package or project affected by a bug has its own fix status,
 assignee, milestone and so on. Use the :ref:`affects command <affects>` to
@@ -184,13 +208,13 @@ When a bug affects only one package or product, the ``affects`` command
 is unnecessary.
 
 What to expect when you submit an email
----------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Launchpad processes incoming bug mail every three minutes, so a slight
 delay between sending a mail and receiving a response is normal.
 
 On success
-~~~~~~~~~~
+^^^^^^^^^^
 
 If Launchpad processed your email successfully, it will reply by email
 to confirm the changes. This email is identical to the bug notification
@@ -221,7 +245,7 @@ You'll receive a response like:
             Status: Unconfirmed => Incomplete
 
 On partial failure
-~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^
 
 An email message to new@bugs.launchpad.net can (1) create a bug and (2)
 attempt a command on the bug. It is possible for the create to succeed
@@ -234,7 +258,7 @@ you would be prudent to check the web interface for new bugs before
 resending your bug with your attempted corrections to your commands.
 
 On failure
-~~~~~~~~~~
+^^^^^^^^^^
 
 If an error occurs while processing your email, Launchpad will send you
 a failure message.
@@ -267,11 +291,11 @@ If you've waited several minutes and still not received either a change
 notification or an error message, please :ref:`let us know <get-help>`.
 
 Filter bug mail
----------------
+~~~~~~~~~~~~~~~
 
 If you deal with a large number of bug reports by email, you may find
 that you want to filter them to stop them cluttering your in-box.
 Launchpad appends custom headers to bug emails to help you filter them.
 
-You can find out :ref:`more about the headers <bug-mail-headers>`
+You can find out :ref:`more about the headers <bug-mail-filters>`
 that Launchpad uses in our article on bug subscriptions.

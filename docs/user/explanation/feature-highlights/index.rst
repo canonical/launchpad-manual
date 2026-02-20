@@ -56,7 +56,7 @@ Additional features
 -------------------
 Other interesting features to explore on Launchpad include:
 
-- :ref:`Email interface <launchpad-email-interface>`: Interact with the bug tracker without a browser
+- :ref:`Email interface <use-the-launchpad-email-interface>`: Interact with the bug tracker without a browser
 - :ref:`Bug branch linking <linking-bugs-to-dedicated-branches>`: Link a branch fixing a specific bug to the bug report
 - :ref:`Blueprints <blueprints-lightweight-specifications>`: Short specifications of things to be worked on in a project, i.e., bugs, documentation, features, etc.
 - :ref:`Milestones <milestones-exp>`: Indicate bugs and blueprints you're prioritizing for your next release
@@ -70,7 +70,6 @@ Other interesting features to explore on Launchpad include:
     Personal Package Archives <personal-package-archives>
     Bug watches <bug-watches>
     Milestones <milestones>
-    Email interface <email-interface>
     Bug branch linking <bug-branch-linking>
     Product series <product-series>
     The bug tracker <the-bug-tracker>

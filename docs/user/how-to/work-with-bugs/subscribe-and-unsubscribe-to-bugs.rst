@@ -42,6 +42,8 @@ Launchpad sends bug notifications when:
 -  a bug is targeted to a milestone
 -  a bug is marked as affecting a new series, package or project.
 
+.. _bug-mail-filters:
+
 Filter your bug mail
 ~~~~~~~~~~~~~~~~~~~~
 
@@ -51,7 +53,7 @@ reported bugs from updates about previous bugs.
 
 Launchpad uses email headers to help you automatically filter bug mail.
 
--  ``X-Launchpad-Bug``: See the :ref:`X-Launchpad-Bug <x-launchpad-bug>` section.
+-  ``X-Launchpad-Bug``: See the :ref:`bug subscription reference <bug-subscription>` doc.
 -  ``X-Launchpad-Bug-Private``: ``yes`` or ``no``
 -  ``X-Launchpad-Bug-Security-Vulnerability``: ``yes`` or ``no``
 -  ``X-Launchpad-Bug-Commenters``: An alphabetical, space separated,
@@ -80,6 +82,8 @@ You can unsubscribe from bug notifications at any time.
     If you receive bug mail because you're in a team that is a
     reporter, commenter or assignee, you must leave that team to stop
     receiving the notifications.
+
+.. _subscribe-bug-feeds:
 
 Subscribe to bug feeds
 ----------------------
@@ -118,4 +122,4 @@ Next step
 ---------
 
 As well as using email to send updates about the status of bugs,
-Launchpad gives you a full :doc:`email interface to the bug tracker <../../explanation/feature-highlights/email-interface>`.
+Launchpad gives you a full :ref:`email interface to the bug tracker <use-the-launchpad-email-interface>`.
