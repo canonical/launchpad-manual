@@ -97,3 +97,4 @@ developer/LaunchpadHackingFAQ developer/explanation/hacking/
 developer/PolicyAndProcess/DatabaseSchemaChangesProcess developer/how-to/database-schema-changes-process/
 developer/Soyuz/HowToUseSoyuzLocally developer/how-to/use-soyuz-locally/
 developer/Soyuz/HowToDevelopWithBuildd developer/how-to/develop-with-buildd/
+user/YourAccount/NewAccount user/how-to/account-management/create-account
