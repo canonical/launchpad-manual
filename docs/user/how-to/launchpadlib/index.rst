@@ -17,3 +17,5 @@ knowing a lot about HTTP client programming.
    Get started with launchpadlib <using-launchpadlib> 
    Python API Examples <python-api>
    Authenticate from a text-based browser <auth-text-browser>
+   Authenticated access for website integration <integrate-website>
+   View supported fields and methods <view-supported-fields-and-methods>
