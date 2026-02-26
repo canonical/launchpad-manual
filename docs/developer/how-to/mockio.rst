@@ -1,3 +1,6 @@
+.. meta::
+   :description: Use the MockIo library to test JavaScript code that makes Y.io calls by intercepting requests and providing custom server responses.
+
 .. _mockio-library:
 
 MockIo library

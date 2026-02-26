@@ -1,3 +1,6 @@
+.. meta::
+   :description: Use the lp-shell CLI tool to access the Launchpad API.
+
 .. _how-to-use-lp-shell:
 
 How to use lp-shell

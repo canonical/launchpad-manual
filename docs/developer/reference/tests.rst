@@ -1,3 +1,6 @@
+.. meta::
+   :description: Summary of conventions for Launchpad Tests. 
+
 =================
 Tests style guide
 =================

@@ -1,3 +1,7 @@
+.. meta::
+   :description: Understand different aspects of the development of the 
+      Launchpad project.
+
 .. _developing-the-launchpad-project:
 
 Developing the Launchpad project

@@ -1,3 +1,7 @@
+.. meta::
+   :description: Understand what happens when you use the rocketfuel-setup 
+      script to set up a local instance of Launchpad.
+
 ==============================
 Launchpad installation details
 ==============================

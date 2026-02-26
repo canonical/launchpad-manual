@@ -1,3 +1,7 @@
+.. meta::
+   :description: Comprehensive guide for Launchpad developers covering setup, 
+      bug fixing, feature development, and contributing changes.
+
 .. _launchpad-manual-for-developers:
 
 Launchpad manual for developers

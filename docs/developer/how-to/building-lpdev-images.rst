@@ -1,3 +1,7 @@
+.. meta::
+   :description: Guide to building and publishing Launchpad LXD development 
+      images using LXD Image Builder and debootstrap.
+
 Building and publishing Launchpad development LXD images
 ========================================================
 

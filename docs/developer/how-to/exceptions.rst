@@ -1,3 +1,7 @@
+.. meta::
+   :description: Best practices for handling exceptions in Launchpad;
+      what to catch, what to avoid, and proper error logging with OOPS.
+
 ===================
 Handling exceptions
 ===================

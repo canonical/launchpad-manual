@@ -1,3 +1,7 @@
+.. meta::
+   :description: Understand the steps a package goes through when it enters the
+      Ubuntu archive publisher. 
+
 Ubuntu archive publisher
 ========================
 

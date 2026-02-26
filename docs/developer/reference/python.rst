@@ -1,3 +1,6 @@
+.. meta::
+   :description: Python coding style guide for Launchpad development.
+
 ==================
 Python style guide
 ==================

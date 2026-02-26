@@ -1,3 +1,7 @@
+.. meta::
+   :description: Guide to checking for availability of individual Launchpad 
+      frontend servers.
+
 ============================================
 Checking availability of Launchpad frontends
 ============================================

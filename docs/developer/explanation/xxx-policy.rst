@@ -1,3 +1,7 @@
+.. meta::
+   :description: Understand Launchpad's XXX policy for marking code areas 
+      requiring follow-up.
+
 XXX policy
 ==========
 

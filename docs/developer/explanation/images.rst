@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn where images should be located in Launchpad directory 
+      structure for proper organization and accessibility.
+
 Images
 ======
 

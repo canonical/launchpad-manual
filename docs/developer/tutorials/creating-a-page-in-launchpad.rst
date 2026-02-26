@@ -1,3 +1,6 @@
+.. meta::
+   :description: Step-by-step tutorial for adding custom pages in Launchpad.
+
 ================================
 Creating a new page in Launchpad
 ================================

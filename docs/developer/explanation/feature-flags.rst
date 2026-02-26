@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn how feature flags are implemented to allow runtime 
+      configuration changes in Launchpad.
+
 Feature flags
 =============
 

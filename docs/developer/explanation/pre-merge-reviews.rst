@@ -1,3 +1,7 @@
+.. meta::
+   :description: Understand the pre-merge review process, branch size limits,
+      and contributor responsibilities.
+
 Pre merge reviews
 =================
 

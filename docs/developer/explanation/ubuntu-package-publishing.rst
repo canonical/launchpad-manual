@@ -1,3 +1,7 @@
+.. meta::
+   :description: Understand the Ubuntu package lifecycle from source upload to 
+       archive publication.
+
 Ubuntu package publishing
 =========================
 

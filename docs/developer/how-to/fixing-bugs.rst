@@ -1,5 +1,8 @@
 .. _fixing-bugs:
 
+.. meta::
+   :description: Guide to getting started on fixing bugs in Launchpad.
+
 Fixing bugs
 ===========
 

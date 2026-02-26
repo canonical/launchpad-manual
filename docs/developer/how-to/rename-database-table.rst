@@ -1,3 +1,6 @@
+.. meta::
+   :description: How to rename database tables in Launchpad.
+
 =========================
 Renaming a database table
 =========================

@@ -1,3 +1,7 @@
+.. meta::
+  :description: Learn about Launchpad's architectural values and design 
+    principles for writing maintainable, transparent, and operational code.
+
 ===================
 Architectural guide
 ===================

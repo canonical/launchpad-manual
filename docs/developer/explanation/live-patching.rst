@@ -1,3 +1,7 @@
+.. meta::
+   :description: Understand live database patching techniques for deploying 
+      schema changes on Launchpad's PostgreSQL database.
+
 .. _live-database-patching:
 
 Live database patching

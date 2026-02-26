@@ -1,3 +1,7 @@
+.. meta::
+   :description: Comprehensive how-to guides for Launchpad development covering 
+      setup, common tasks, development tips, and operational procedures.
+
 How-to guides
 =============
 

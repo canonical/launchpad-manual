@@ -1,3 +1,7 @@
+.. meta::
+   :description: Comprehensive step-by-step guide for making database schema 
+      changes in Launchpad using hot and cold patches.
+
 Database schema changes process
 ===============================
 

@@ -1,3 +1,7 @@
+.. meta::
+   :description: Reference document for the Fetch service. Provides links to 
+      logs, git repositories, documentation, etc.
+
 Fetch service
 =============
 

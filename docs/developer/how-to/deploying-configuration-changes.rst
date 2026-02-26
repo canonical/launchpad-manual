@@ -1,3 +1,6 @@
+.. meta::
+   :description: Deploy configuration changes to production.
+
 =============================================
 Deploying configuration changes to production
 =============================================

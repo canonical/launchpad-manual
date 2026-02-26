@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn how to build charms in Launchpad for all Ubuntu 
+      architectures using Charmcraft and publish them to Charmhub efficiently.
+
 ##############################
  Building charms in Launchpad
 ##############################

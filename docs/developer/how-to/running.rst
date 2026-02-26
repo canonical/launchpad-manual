@@ -1,3 +1,6 @@
+.. meta::
+   :description: Advanced guide to setting up and running Launchpad.
+
 .. _setting-up-and-running-launchpad-advanced:
 
 Setting up and running Launchpad (advanced)
@@ -90,7 +93,7 @@ getting it installed and configured on your network.
     # configure profile
     cat << EOF | lxc profile edit $user
     name: $user
-    description: allow home dir mounting for $user
+      :description: allow home dir mounting for $user
     config:
       raw.idmap: |
         uid $uid $id

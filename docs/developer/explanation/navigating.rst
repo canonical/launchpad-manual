@@ -1,3 +1,7 @@
+.. meta::
+   :description: Navigate the Launchpad source tree with guidance on key 
+      directories including bin, utilities, lib, and database folders.
+
 ===================
 Navigating the tree
 ===================

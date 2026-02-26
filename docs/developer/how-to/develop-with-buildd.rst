@@ -1,3 +1,6 @@
+.. meta::
+   :description: How to develop with Buildd using LXD VM.
+
 How to develop with Buildd
 ==========================
 
@@ -59,7 +62,7 @@ and then:
           shell: /bin/bash
           sudo: ALL=(ALL) NOPASSWD:ALL
           ssh-import-id: <lp username>
-    description: ""
+      :description: ""
     devices:
       config:
         source: cloud-init:config

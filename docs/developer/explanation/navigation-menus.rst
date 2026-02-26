@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn how to use Navigation Menus to link views in Launchpad 
+      page templates.
+
 Navigation menus
 ================
 

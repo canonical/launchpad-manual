@@ -1,5 +1,8 @@
 .. _tagging-bugs-about-launchpad:
 
+.. meta::
+   :description: Standard bug tags reference for Launchpad's Bug Tracker.
+
 Tagging bugs about Launchpad
 ============================
 

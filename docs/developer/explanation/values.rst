@@ -1,3 +1,7 @@
+.. meta::
+   :description: Understand the values behind Launchpad; why certain decisions
+      were made, and why things are implemented as they are.
+
 ================
 Launchpad values
 ================

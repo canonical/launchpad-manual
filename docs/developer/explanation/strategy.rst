@@ -1,3 +1,8 @@
+.. meta::
+   :description: Understand Launchpad's strategy to make Ubuntu the world's 
+      best OS by improving Canonical's productivity and open source development 
+      efficiency.
+
 ==================
 Launchpad strategy
 ==================

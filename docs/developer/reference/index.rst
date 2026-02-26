@@ -1,3 +1,6 @@
+.. meta::
+   :description: Overview of Launchpad developer references and style guides.
+
 Reference
 =========
 

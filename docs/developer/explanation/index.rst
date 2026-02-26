@@ -1,3 +1,7 @@
+.. meta::
+   :description: Explanation documentation covering Launchpad ideas, setup, 
+      framework, parts, best practices, and deployment processes.
+
 Explanation
 ===========
 

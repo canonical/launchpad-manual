@@ -1,3 +1,6 @@
+.. meta::
+   :description: Set up and run the complete Bazaar codehosting stack locally.
+
 How to use codehosting locally
 ==============================
 

@@ -1,5 +1,8 @@
 .. _get-the-source-code:
 
+.. meta::
+   :description: Guide on how to get the Launchpad source code.
+
 Getting the source code
 =======================
 
