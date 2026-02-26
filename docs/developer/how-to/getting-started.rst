@@ -5,7 +5,7 @@ Getting started
    :maxdepth: 1
 
 
-   getting
+   get-source-code
    running-quickstart
    running
    database-setup
