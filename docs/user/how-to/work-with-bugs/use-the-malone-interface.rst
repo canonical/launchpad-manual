@@ -1,6 +1,6 @@
 .. meta::
    :description: Use the Malone XML-RPC interface for programmatic access to 
-       Launchpad's bug tracker.
+      Launchpad's bug tracker.
 
 Use the Malone (Launchpad) XMLRPC interface
 ===========================================

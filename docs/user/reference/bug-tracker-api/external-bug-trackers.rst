@@ -1,6 +1,6 @@
 .. meta::
    :description: Reference for level of interoperability between Launchpad
-     and external bug trackers.
+      and external bug trackers.
 
 .. _interoperability-with-external-bug-trackers:
 

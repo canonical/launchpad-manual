@@ -1,6 +1,6 @@
 .. meta::
    :description: Bug subscription reference for managing notifications and 
-       filters.
+      filters.
 
 .. _bug-subscription:
 

@@ -1,6 +1,6 @@
 .. meta::
    :description: Launchpadlib API compatibility guide for different Ubuntu 
-       version.
+      version.
 
 .. _launchpadlib-api-compatibility:
 
