@@ -1,3 +1,7 @@
+.. meta::
+   :description: Understand what Launchpad is - a complete system for gathering 
+      changes and collaboratively organizing them into packaged software.
+
 .. _what-is-launchpad:
 
 What is Launchpad?

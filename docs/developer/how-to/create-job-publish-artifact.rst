@@ -1,6 +1,10 @@
 
 .. _create_job_to_publish_artifacts:
 
+.. meta::
+   :description: Create automated Jenkins jobs to build and publish project 
+      artifacts.
+
 ==============================
 Create job to publish artifact
 ==============================

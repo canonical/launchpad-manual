@@ -1,3 +1,7 @@
+.. meta::
+   :description: Set up PostgreSQL databases for Launchpad development using 
+      automated scripts or manual configuration.
+
 Launchpad database setup
 ========================
 

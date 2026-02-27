@@ -1,3 +1,6 @@
+.. meta::
+   :description: datetime usage guidelines in Launchpad code.
+
 Datetime usage guide
 ====================
 

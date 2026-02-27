@@ -1,3 +1,7 @@
+.. meta::
+   :description: Overview of Launchpad's code hosting system including VCS 
+      clients, hosting infrastructure, and source code browsers.
+
 Launchpad code hosting
 ======================
 

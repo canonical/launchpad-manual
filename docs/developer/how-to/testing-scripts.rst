@@ -1,3 +1,6 @@
+.. meta::
+   :description: How to test CLI scripts in the context of Launchpad.
+
 ===================
 Testing CLI scripts
 ===================

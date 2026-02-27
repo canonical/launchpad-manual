@@ -1,3 +1,6 @@
+.. meta::
+   :description: Explanation of URL traversal methods in Launchpad.
+
 URL traversal
 =============
 

@@ -1,3 +1,7 @@
+.. meta::
+   :description: All about the archive of Launchpad's deprecated mailing list 
+      service.
+
 Launchpad public mailing lists archives
 =======================================
 

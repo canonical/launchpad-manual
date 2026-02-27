@@ -1,3 +1,6 @@
+.. meta::
+   :description: Overview of common Launchpad development tasks 
+
 Common development tasks
 =========================
 

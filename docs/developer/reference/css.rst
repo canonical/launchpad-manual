@@ -1,3 +1,6 @@
+.. meta::
+   :description: CSS and SCSS style guide for Launchpad development.
+
 ===============
 CSS style guide
 ===============

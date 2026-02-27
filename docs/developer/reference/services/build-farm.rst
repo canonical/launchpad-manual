@@ -1,3 +1,7 @@
+.. meta::
+   :description: Reference doc linking to resources related to the Launchpad 
+      build farm including documentation, git repositories, and bug trackers.
+
 Build farm
 ==========
 

@@ -1,3 +1,6 @@
+.. meta::
+   :description: Advanced guide to setting up and running Launchpad.
+
 .. _setting-up-and-running-launchpad-advanced:
 
 Setting up and running Launchpad (advanced)

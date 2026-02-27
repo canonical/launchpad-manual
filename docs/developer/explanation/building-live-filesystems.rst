@@ -1,3 +1,7 @@
+.. meta::
+    :description: Learn how Launchpad builds live filesystems using 
+        livecd-rootfs with LiveFS and LiveFSBuild objects.
+
 .. _building-live-filesystems:
 
 Building live filesystems in Launchpad

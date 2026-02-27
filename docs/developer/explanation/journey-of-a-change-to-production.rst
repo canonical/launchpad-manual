@@ -1,3 +1,7 @@
+.. meta::
+   :description: Follow the journey of a Launchpad change from a developer's 
+      branch to production deployment.
+
 =========================================================================
 The journey of a Launchpad change from a developer's branch to production
 =========================================================================

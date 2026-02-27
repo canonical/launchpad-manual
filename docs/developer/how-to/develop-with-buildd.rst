@@ -1,3 +1,6 @@
+.. meta::
+   :description: How to develop with Buildd using LXD VM.
+
 How to develop with Buildd
 ==========================
 

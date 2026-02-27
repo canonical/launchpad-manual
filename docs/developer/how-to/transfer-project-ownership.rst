@@ -1,3 +1,7 @@
+.. meta::
+   :description: How to transfer ownership of Launchpad projects, including 
+      private projects.
+
 Transferring ownership of a Launchpad project
 =============================================
 

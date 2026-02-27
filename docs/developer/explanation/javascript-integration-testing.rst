@@ -1,3 +1,7 @@
+.. meta::
+   :description: Understand JavaScript integration testing in Launchpad using 
+      the yuitest library.
+
 Integration testing in JavaScript
 =================================
 

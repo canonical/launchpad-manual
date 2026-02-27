@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn about database query optimization, common causes of 
+       performance issues, and diagnosis tools and approaches.
+
 Database performance
 ====================
 
