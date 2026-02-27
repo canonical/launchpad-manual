@@ -1,5 +1,5 @@
 .. meta::
-   :description: Overview of Launchpad API documentation
+   :description: Overview of Launchpad API documentation.
 
 .. _launchpad-api:
 

@@ -1,5 +1,5 @@
 .. meta::
-   :description: Guide to using Launchpad web services API 
+   :description: Guide to using Launchpad web services API. 
 
 .. _launchpad-web-services-api:
 

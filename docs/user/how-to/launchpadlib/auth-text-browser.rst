@@ -1,5 +1,5 @@
 .. meta::
-   :description: Authenticate launchpadlib from text-based browsers
+   :description: Authenticate launchpadlib from text-based browsers.
 
 
 Authenticate launchpadlib from a text-based browser

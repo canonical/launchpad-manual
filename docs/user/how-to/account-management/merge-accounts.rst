@@ -1,5 +1,5 @@
 .. meta::
-   :description: Learn how to merge multiple Launchpad accounts into one
+   :description: Learn how to merge multiple Launchpad accounts into one.
 
 .. _merging-accounts:
 

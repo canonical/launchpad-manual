@@ -1,5 +1,5 @@
 .. meta::
-   :description: Best practices when collaborating on Launchpad
+   :description: Best practices when collaborating on Launchpad.
 
 .. _collaborating-with-other-launchpad-users:
 

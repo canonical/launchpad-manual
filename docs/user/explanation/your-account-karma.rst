@@ -1,5 +1,5 @@
 .. meta::
-   :description: Understand Launchpad's karma system
+   :description: Understand Launchpad's karma system.
 
 .. _your-account-karma:
 

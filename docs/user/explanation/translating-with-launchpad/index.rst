@@ -1,5 +1,5 @@
 .. meta::
-   :description: Complete guide to translating software with Launchpad 
+   :description: Complete guide to translating software with Launchpad. 
 
 Translating
 ===========

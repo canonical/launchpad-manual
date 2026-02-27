@@ -1,5 +1,5 @@
 .. meta::
-   :description: Guide to closing your Launchpad projects
+   :description: Guide to closing your Launchpad projects.
 
 .. _closing-your-project:
 

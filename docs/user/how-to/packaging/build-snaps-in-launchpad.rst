@@ -1,5 +1,5 @@
 .. meta::
-   :description: Guide to building snap packages in Launchpad
+   :description: Guide to building snap packages in Launchpad.
 
 .. _build-snaps-in-launchpad:
 

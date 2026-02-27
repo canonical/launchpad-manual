@@ -1,6 +1,6 @@
 .. meta::
    :description: Guide to using the Python API to interact with Launchpad 
-      programmatically
+      programmatically.
 
 .. _use-the-python-api:
 
