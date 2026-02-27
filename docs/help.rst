@@ -1,3 +1,7 @@
+.. meta::
+   :description: Get help and support for Launchpad. Contact the team via 
+       Matrix, email, or the answer portal.
+
 .. _get-help:
 
 Get help

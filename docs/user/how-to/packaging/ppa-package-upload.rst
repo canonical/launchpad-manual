@@ -1,3 +1,6 @@
+.. meta::
+   :description: Guide to uploading packages to a PPA
+
 .. _upload-a-package-to-a-ppa:
 
 Upload a package to a PPA

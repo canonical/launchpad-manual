@@ -1,3 +1,6 @@
+.. meta::
+   :description: In-depth look at Launchpad's Git hosting system for users.
+
 .. _hosting-git-repositories:
 
 Hosting Git repositories

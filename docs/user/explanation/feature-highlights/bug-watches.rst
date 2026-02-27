@@ -1,3 +1,7 @@
+.. meta::
+   :description: Highlight of Launchpad's feature for tracking bugs in 
+      external bug trackers.
+
 .. _monitoring-bugs-in-other-bug-trackers:
 
 Monitoring bugs in other bug trackers

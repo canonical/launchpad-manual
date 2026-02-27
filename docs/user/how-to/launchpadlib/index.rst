@@ -1,3 +1,7 @@
+.. meta::
+   :description: Work with launchpadlib Python library to integrate 
+      applications with Launchpad web service.
+
 Work with launchpadlib
 ======================
 

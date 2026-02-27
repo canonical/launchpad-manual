@@ -1,3 +1,7 @@
+.. meta::
+   :description: Launchpad teams reference covering membership policies, 
+      finding teams, and learning more about them.
+
 .. _ref-launchpad-teams:
 
 Launchpad teams

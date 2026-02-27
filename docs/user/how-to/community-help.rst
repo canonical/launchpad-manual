@@ -1,4 +1,8 @@
 
+.. meta::
+   :description: Learn how to help the Launchpad community by answering 
+      questions, translating, triaging bugs, and improving documentation.
+
 .. _help-the-community:
 
 Help the community

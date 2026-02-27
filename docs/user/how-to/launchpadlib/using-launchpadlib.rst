@@ -1,3 +1,7 @@
+.. meta::
+   :description: Guide to getting started with launchpadlib; from installation 
+       to authenticated access of Launchpad resources.
+
 .. _get-started-with-launchpadlib:
 
 Get started with launchpadlib

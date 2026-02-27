@@ -1,3 +1,7 @@
+.. meta::
+   :description: Overview of Launchpad - a suite of web-based collaboration 
+      tools for creating free software, used by Ubuntu, Zope 3, and more.
+
 .. _exp-what-is-launchpad:
 
 What is Launchpad?

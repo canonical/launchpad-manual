@@ -1,3 +1,6 @@
+.. meta::
+   :description: Install software from a private PPA
+
 Install software from private PPAs
 ==================================
 

@@ -1,3 +1,7 @@
+.. meta::
+   :description: Language-specific translation guides for translators using 
+      Launchpad Translations.
+
 Language-specific translation guides
 ====================================
 

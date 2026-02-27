@@ -1,3 +1,7 @@
+.. meta::
+   :description: Understand Launchpad's answer tracker for building community 
+      support, helping users get help, and managing project questions.
+
 .. _launchpad-answer-tracker:
 
 Launchpad answer tracker

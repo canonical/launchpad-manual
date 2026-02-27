@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn how to file a bug report in Launchpad with to help 
+      developers understand and fix issues.
+
 .. _file-a-bug-in-launchpad:
 
 File a bug in Launchpad

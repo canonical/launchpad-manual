@@ -1,3 +1,7 @@
+.. meta::
+   :description: Reference for troubleshooting email address conflict during 
+      registration.
+
 .. _your-email-address-is-already-in-launchpad:
 
 Your email address is already in Launchpad

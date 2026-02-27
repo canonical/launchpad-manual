@@ -1,3 +1,7 @@
+.. meta::
+   :description: Reference guide for managing software translations in 
+      Launchpad.
+
 .. _translating-your-software-ref:
 
 Translating your software

@@ -1,3 +1,7 @@
+.. meta::
+   :description: Highlight of Personal Package Archives (PPAs) for publishing 
+      Ubuntu software packages.
+
 .. _personal-package-archives-highlights:
 
 Personal Package Archives

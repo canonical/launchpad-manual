@@ -1,3 +1,7 @@
+.. meta::
+   :description: Reference guide to external bug trackers and bug statuses 
+      in Launchpad.
+
 .. _external-bug-statuses:
 
 External bug statuses

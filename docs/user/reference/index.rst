@@ -1,3 +1,7 @@
+.. meta::
+   :description: Comprehensive Launchpad reference documentation covering API, 
+      bugs, packaging, translations, teams, troubleshooting guides, etc.
+
 .. _user/reference:
 
 Reference

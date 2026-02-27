@@ -1,3 +1,7 @@
+.. meta::
+   :description: Understand team management in Launchpad including subscription
+      policies and hierarchies.
+
 .. _exp-team-management:
 
 Team management

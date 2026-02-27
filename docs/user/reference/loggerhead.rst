@@ -1,3 +1,7 @@
+.. meta::
+   :description: Loggerhead web interface reference for browsing Bazaar 
+      repositories and viewing code history.
+
 Loggerhead
 ==========
 

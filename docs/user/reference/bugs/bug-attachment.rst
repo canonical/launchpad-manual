@@ -1,3 +1,7 @@
+.. meta::
+   :description: Bug attachment reference for adding screenshots, data files, 
+      patches, and documentation to Launchpad bug reports.
+
 Bug attachment
 ==============
 

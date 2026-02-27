@@ -1,3 +1,6 @@
+.. meta::
+   :description: Launchpad badge kit reference for adding and displaying badges.
+
 .. _launchpad-badge-kit:
 
 Launchpad badges

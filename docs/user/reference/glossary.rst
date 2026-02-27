@@ -1,3 +1,7 @@
+.. meta::
+   :description: Glossary of Launchpad terminology including technical terms, 
+      concepts, and definitions for developers and users.
+
 Glossary
 ========
 

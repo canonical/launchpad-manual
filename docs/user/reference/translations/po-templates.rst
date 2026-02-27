@@ -1,3 +1,6 @@
+.. meta::
+   :description: PO templates reference for gettext translation files.
+
 PO templates
 ============
 

@@ -1,3 +1,7 @@
+.. meta::
+   :description: Highlight of Answer tracker - a framework for capturing 
+      informal support and transforming it into structured knowledge.
+
 .. _answer-tracker-for-community:
 
 Answer tracker for building community support

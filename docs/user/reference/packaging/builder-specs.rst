@@ -1,3 +1,7 @@
+.. meta::
+   :description: Builder specifications for different architectures in 
+      Launchpad.
+
 .. _builder-specs:
 
 Builder specs

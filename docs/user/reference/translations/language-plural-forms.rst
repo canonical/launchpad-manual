@@ -1,3 +1,7 @@
+.. meta::
+   :description: Plural forms reference for different languages in Launchpad 
+      translations including grammar rules.
+
 .. _plural-forms-information-for-languages:
 
 Plural forms information for languages

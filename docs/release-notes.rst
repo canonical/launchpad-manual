@@ -1,3 +1,7 @@
+.. meta::
+   :description: Launchpad release notes documenting new features, improvements, 
+       and changes to the platform over time.
+
 .. _release-notes:
 
 Release Notes

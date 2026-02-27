@@ -1,3 +1,7 @@
+.. meta::
+   :description: Complete reference of email interface commands for managing 
+      Launchpad bugs via email including syntax and examples.
+
 Email interface command reference
 =================================
 

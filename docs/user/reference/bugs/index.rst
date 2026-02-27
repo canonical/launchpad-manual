@@ -1,3 +1,7 @@
+.. meta::
+   :description: Complete bug tracking reference for Launchpad including 
+      attachments, subscriptions, heat, expiry, and email interfaces.
+
 .. _bugs:
 
 Bugs

@@ -1,3 +1,7 @@
+.. meta::
+   :description: Create and personalise your Launchpad account with profile 
+      information, SSH keys, and GPG keys.
+
 .. _create-and-personalise-your-launchpad-account:
 
 Create and personalise your Launchpad account

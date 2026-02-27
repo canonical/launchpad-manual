@@ -1,3 +1,7 @@
+.. meta::
+   :description: Link code branches to bug reports and blueprints in Launchpad
+      to associate fixes with issues and track development work.
+
 .. _link-code-to-bug-reports-and-blueprints:
 
 Link code to bug reports and blueprints

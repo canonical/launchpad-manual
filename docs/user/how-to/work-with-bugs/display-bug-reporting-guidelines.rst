@@ -1,3 +1,7 @@
+.. meta::
+   :description: How to display your bug reporting guidelines to Launchpad 
+      users.
+
 Display bug reporting guidelines
 ================================
 

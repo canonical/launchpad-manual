@@ -1,3 +1,7 @@
+.. meta::
+   :description: Package deletion reference for removing packages from 
+      Launchpad PPAs including cleanup and version management.
+
 .. _package-deletion:
 
 Package deletion

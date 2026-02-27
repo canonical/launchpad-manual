@@ -1,3 +1,7 @@
+.. meta::
+   :description: Project announcements reference for publishing news, updates, 
+      and releases through Launchpad feeds.
+
 Project announcements
 =====================
 

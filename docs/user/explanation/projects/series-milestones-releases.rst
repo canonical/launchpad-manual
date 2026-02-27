@@ -1,3 +1,7 @@
+.. meta::
+   :description: Understand how Launchpad enables you to plan and record your 
+      software releases.
+
 .. _planning-and-recording-releases:
 
 Planning and recording releases

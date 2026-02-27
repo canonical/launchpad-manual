@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn how to subscribe and unsubscribe to bug reports in 
+      Launchpad to track issues and manage email notifications.
+
 .. _subscribe-and-unsubscribe-to-bugs:
 
 Subscribe and unsubscribe to bugs

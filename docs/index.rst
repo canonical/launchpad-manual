@@ -1,3 +1,6 @@
+.. meta::
+   :description: Official documentation for Launchpad users and developers.
+
 .. _home:
 
 Launchpad manual

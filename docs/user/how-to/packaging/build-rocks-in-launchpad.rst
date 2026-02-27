@@ -1,3 +1,7 @@
+.. meta::
+   :description: Build rocks (Ubuntu LTS-based OCI-compliant container images) 
+      in Launchpad using Rockcraft.
+
 .. _build-rocks-in-launchpad:
 
 Build rocks in Launchpad

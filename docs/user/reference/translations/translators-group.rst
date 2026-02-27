@@ -1,3 +1,7 @@
+.. meta::
+   :description: Launchpad translators group reference covering team structure, 
+      membership, permissions, and translation coordination.
+
 .. _launchpad-translators-group:
 
 Launchpad translators group

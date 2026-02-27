@@ -1,3 +1,7 @@
+.. meta::
+   :description: Comprehensive Launchpad user documentation covering code 
+      hosting, build services, bug tracking, account management, and more.
+
 .. _launchpad-manual-for-users:
 
 Launchpad user documentation

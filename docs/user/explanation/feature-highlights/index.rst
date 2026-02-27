@@ -1,3 +1,7 @@
+.. meta::
+   :description: Overview of Launchpad's key features including bug tracking, 
+      code hosting, answer tracker, and package management.
+
 .. _launchpad-feature-highlights:
 
 Launchpad feature highlights

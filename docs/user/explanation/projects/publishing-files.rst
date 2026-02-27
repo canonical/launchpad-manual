@@ -1,3 +1,7 @@
+.. meta::
+   :description: Understand how you can use Launchpad to distribute your 
+      software.
+
 .. _making-your-project-files-available-for-download:
 
 Making your project files available for download

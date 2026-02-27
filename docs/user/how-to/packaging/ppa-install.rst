@@ -1,3 +1,7 @@
+.. meta::
+   :description: Step-by-step guide to install software from PPAs on ubuntu
+      systems.
+
 .. _install-software-from-ppas:
 
 Install software from PPAs

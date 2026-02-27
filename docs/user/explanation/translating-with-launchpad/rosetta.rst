@@ -1,3 +1,7 @@
+.. meta::
+   :description: Understand Rosetta - Launchpad's web-based translation 
+      interface.
+
 .. _using-rosetta:
 
 Using Rosetta

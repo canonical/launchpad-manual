@@ -1,3 +1,7 @@
+.. meta::
+   :description: Documentation index for Launchpad Answers explanation 
+      documentation.
+
 Answers 
 =======
 

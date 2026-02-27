@@ -1,3 +1,7 @@
+.. meta::
+   :description: Personal Package Archives reference covering management, and 
+      building, copying, and deleting packages.
+
 .. _ref-personal-package-archives:
 
 Personal package archives

@@ -1,3 +1,6 @@
+.. meta::
+   :description: Explanation of team branches in Launchpad
+
 .. _team-branches:
 
 Team branches

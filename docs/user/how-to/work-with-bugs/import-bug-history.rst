@@ -1,3 +1,7 @@
+.. meta::
+   :description: Guide to importing your project's bug history into Launchpad 
+      from external trackers.
+
 Import your project's bug history
 =================================
 

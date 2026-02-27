@@ -1,3 +1,7 @@
+.. meta::
+   :description: Reference for getting support in Launchpad using the 
+      Answer tracker.
+
 .. _getting-support-in-launchpad:
 
 Getting support in Launchpad

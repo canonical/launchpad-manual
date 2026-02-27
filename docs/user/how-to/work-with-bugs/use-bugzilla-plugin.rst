@@ -1,3 +1,7 @@
+.. meta::
+   :description: Use the Bugzilla plugin to sync bug tracking between Launchpad 
+      and Bugzilla for cross-platform issue management.
+
 .. _use-the-bugzilla-plugin:
 
 Use the Bugzilla plugin

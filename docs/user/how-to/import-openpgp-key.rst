@@ -1,3 +1,7 @@
+.. meta::
+   :description: Step-by-step guide to import an OpenPGP key into Launchpad for 
+      signing code, packages, and verifying your identity.
+
 .. _import-an-openpgp-key:
 
 Import an OpenPGP key

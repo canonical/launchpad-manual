@@ -1,3 +1,7 @@
+.. meta::
+   :description: Understand how Launchpad enables you to make announcements 
+      related to your project.
+
 .. _publishing-project-announcements:
 
 Publishing project announcements

@@ -1,3 +1,6 @@
+.. meta::
+   :description: Extended highlight of the Launchpad's bug tracker.
+
 .. _the-launchpad-bug-tracker:
 
 The Launchpad bug tracker

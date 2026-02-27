@@ -1,3 +1,7 @@
+.. meta::
+   :description: Understand Launchpad concepts including accounts, karma, 
+      collaboration, answers, projects, teams, translations, and code hosting.
+
 .. _user/explanation:
 
 Explanation

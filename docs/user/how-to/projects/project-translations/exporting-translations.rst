@@ -1,3 +1,7 @@
+.. meta::
+   :description: Export translations from Launchpad in PO format for offline 
+      work, backup, or integration with other translation tools.
+
 .. _how-to-export-translations:
 
 Export translations

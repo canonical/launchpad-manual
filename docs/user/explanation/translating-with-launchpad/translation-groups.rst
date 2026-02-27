@@ -1,3 +1,7 @@
+.. meta::
+   :description: Understand how translation groups in Launchpad contribute to
+      better translations
+
 .. _translation-groups:
 
 Translation groups

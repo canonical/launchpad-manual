@@ -1,3 +1,7 @@
+.. meta::
+   :description: Guide to signing web requests to Launchpad API for secure 
+       authenticated API access.
+
 .. _sign-web-requests:
 
 Sign web requests

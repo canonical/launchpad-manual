@@ -1,3 +1,6 @@
+.. meta::
+   :description: Teams reference when creating and managing teams in Launchpad.
+
 Teams
 =========
 

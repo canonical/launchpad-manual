@@ -1,3 +1,7 @@
+.. meta::
+   :description: Get started with Launchpad's documentation for users and 
+       developers. Set up the repository, edit and build docs locally, and more.
+
 Launchpad Manual
 ================
 

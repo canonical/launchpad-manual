@@ -1,3 +1,7 @@
+.. meta::
+   :description: Tour Launchpad's page layout and navigation to understand how 
+      the platform connects communities and facilitates collaboration.
+
 Launchpad's page layout
 =======================
 

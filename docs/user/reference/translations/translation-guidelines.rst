@@ -1,3 +1,7 @@
+.. meta::
+   :description: Reference guide for adding translation guidelines for your 
+      project.
+
 .. _translation-guidelines:
 
 Translation guidelines

@@ -1,3 +1,6 @@
+.. meta::
+   :description: Resources you can use when translating software in Launchpad.
+
 .. _translating-with-launchpad:
 
 Translating with Launchpad

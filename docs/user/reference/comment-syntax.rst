@@ -1,3 +1,7 @@
+.. meta::
+   :description: Reference of Launchpad comment parsing syntax for linking bugs 
+      and branches using special markup in comments.
+
 .. _launchpad-comment-parsing:
 
 Launchpad comment parsing

@@ -1,3 +1,7 @@
+.. meta::
+   :description: Reference guide for code review roles in Launchpad including 
+      reviewers, owners, and team reviewers.
+
 .. _roles-in-code-review:
 
 Roles in code review

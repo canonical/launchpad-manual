@@ -1,3 +1,7 @@
+.. meta::
+   :description: Launchpad policies reference including terms of service, 
+      acceptable use, privacy, and community guidelines.
+
 .. _launchpad-policies:
 
 Launchpad policies

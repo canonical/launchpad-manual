@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn how to contribute to Launchpad documentation with 
+       suggestions, fixes, and improvements.
+
 .. _contribute-to-our-docs:
 
 Contribute to our docs

@@ -1,3 +1,7 @@
+.. meta::
+   :description: Packaging how-to guides for Launchpad including PPAs, snaps, 
+      charms, and OCI images.
+
 .. _packaging-how-to:
 
 Packaging

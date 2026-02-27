@@ -1,3 +1,6 @@
+.. meta::
+   :description: Understand OOPS error codes in Launchpad
+
 What is an OOPS?
 ================
 

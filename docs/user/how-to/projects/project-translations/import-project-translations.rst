@@ -1,3 +1,7 @@
+.. meta::
+   :description: Import your project's translations into Launchpad through the 
+      web interface.
+
 .. _how-to-import-project-translations:
 
 Import your project's translations

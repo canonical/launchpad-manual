@@ -1,3 +1,6 @@
+.. meta::
+   :description: A detailed exploration of project registration in Launchpad.
+
 .. _registering-your-project:
 
 Registering your project
