@@ -3,8 +3,6 @@
 Create and manage a merge proposal
 ==================================
 
-.. include:: /includes/important_not_revised_help.rst
-
 Thanks to git's distributed model, you can get full access to the code of any 
 repository hosted on Launchpad, with version control and history, right on your 
 own machine.
@@ -51,15 +49,12 @@ really easy. If you're new to this process, this is how it works:
 
    -  Accept your code, and it will be merged.
    -  Modify your code slightly, then merge it.
-   -  Tell you what to do with a :ref:`comment <launchpad-comment-parsing>`, marking your
-      review as "Needs Fixing".
-
-      -  If you're happy to, you do make the changes requested and push
-         them into your branch. Then :ref:`comment <launchpad-comment-parsing>` back on your
-         proposal that you have done that. You should now await further
-         action.
-
-   -  Reject the changes. At this point, you can either try again
+   -  Tell you what to do with a :ref:`comment <launchpad-comment-parsing>`,
+      marking your review as "Needs Fixing"; if you're happy to, you can make
+      the changes requested and push them into your branch. Then :ref:`comment <launchpad-comment-parsing>`
+      back on your proposal that you have done that. You should now await
+      further action.
+   -  Reject the changes. At this point, you can either try again or
       discuss with the branch owner how to make your changes acceptable
       or continue work in your own branch.
 
@@ -79,18 +74,16 @@ Code review
 -----------
 
 Once you've proposed a merge, anyone who has a Launchpad account can
-:ref:`comment <launchpad-comment-parsing>` and vote on the proposal. Taking part in a code
-review is virtually hassle-free:
+:ref:`comment <launchpad-comment-parsing>` and vote on the proposal. Taking
+part in a code review is virtually hassle-free:
 
--  **No barriers:** anyone can take part, so long as they have a
-   Launchpad account
--  **Convenient:** you can get updates and contribute using email, as
-   well as the web interface.
+-  No barriers: anyone can take part, so long as they have a Launchpad account
+-  Convenient: you can get updates and contribute using email, as well as the
+   web interface.
 
-Each review consists of votes - approve, abstain or disapprove - and a
-threaded conversation much as you might find on a web forum or a mailing
-list. If you're already familiar with :ref:`Launchpad Bugs <bugs>`, you'll
-be right at home with code reviews.
+Each review consists of votes and a threaded conversation much as you might
+find on a web forum or a mailing list. If you're already familiar with
+:ref:`Launchpad Bugs <bugs>`, you'll be right at home with code reviews.
 
 As a subscriber to the branch or a participant in the code review,
 you'll receive email updates each time someone adds a vote or message to
@@ -100,13 +93,13 @@ of the emails you receive. In effect, each code review becomes an ad-hoc
 mailing list that exists for the lifetime of the review.
 
 If you want to make your vote specific to one aspect of the proposed
-merge, you can add a tag. For example: if you wanted to vote disapprove,
-based on the user interface, you could add a tag of *ui*.
+merge, you can add a tag. For example, if you wanted to vote disapprove,
+based on the user interface, you could add a tag of *UI*.
 
-For an example of a review, take a look at a `code review in the Storm project <https://code.launchpad.net/~therve/storm/binary-and/+merge/387>`_.
+For an example of a review, take a look at a `code review in the Launchpad project <https://code.launchpad.net/~artemstreltsov/launchpad/+git/launchpad/+merge/500635>`_.
 
 Use the email interface
-~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------
 
 Using the code review email interface is straightforward. Reply to an
 email from the code review and your :ref:`comment <launchpad-comment-parsing>` is added to
@@ -159,15 +152,12 @@ proposal, you'd write::
 
 If you simply want to approve the proposal, using \`merge approved\`
 will also implicitly add an equivalent \`review approve\` unless you
+If you simply want to approve the proposal, using ``merge approved``
+will also implicitly add an equivalent ``review approve`` unless you
 specify a ``review`` command separately.
 
 Make the merge
 --------------
 
-Once you're ready to merge another branch into yours, follow the
-instructions on the page.
-
-Next steps
-----------
-
-You can pick choose which parts of Launchpad you want to use. However, when you use different parts of Launchpad together you can make them work together. Let's look at how you can :ref:`link bug report and blueprints to branches of code <link-a-bug-reports-to-a-branch>`.
+Once you're ready to merge another branch into yours, follow the instructions
+on the page.
