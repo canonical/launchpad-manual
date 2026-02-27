@@ -1,6 +1,6 @@
 .. meta::
     :description: Comprehensive hacking guide covering Python programming, 
-        version targeting, coding practices, and development tips for Launchpad.
+      version targeting, coding practices, and development tips for Launchpad.
 
 Hacking
 =======

@@ -1,6 +1,6 @@
 .. meta::
   :description: Learn about Launchpad's code import system for one-way 
-    synchronization from external repositories.
+      synchronization from external repositories.
 
 ====================
 Code import in depth

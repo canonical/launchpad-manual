@@ -1,6 +1,6 @@
 .. meta::
     :description: Understand the bug triage process and how Launchpad 
-        prioritizes bugs by balancing project health and user needs.
+      prioritizes bugs by balancing project health and user needs.
 
 .. _bug-triage-process-background:
 

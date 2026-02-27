@@ -1,6 +1,6 @@
 .. meta::
    :description: Understand Launchpad's pip integration for managing Python 
-       packages including setup, usage, and dependency management.
+      packages including setup, usage, and dependency management.
 
 Launchpad pip integration
 *************************

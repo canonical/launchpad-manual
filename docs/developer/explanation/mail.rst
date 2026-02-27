@@ -1,6 +1,6 @@
 .. meta::
     :description: Overview of email types in Launchpad and how the are 
-        configured.
+      configured.
 
 Launchpad mail
 ==============

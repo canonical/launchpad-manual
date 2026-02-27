@@ -1,6 +1,6 @@
 .. meta::
   :description: Overview of Launchpad CSS files including fonts, colors, and
-    base elements. 
+      base elements. 
 
 CSS
 ===
