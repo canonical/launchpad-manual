@@ -1,3 +1,7 @@
+.. meta::
+   :description: Source builds knowledge base with articles and guides for 
+      working with and troubleshooting Launchpad's daily builds feature.
+
 Source builds knowledge base
 ============================
 

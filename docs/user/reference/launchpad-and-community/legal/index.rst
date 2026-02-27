@@ -1,3 +1,7 @@
+.. meta::
+   :description: Legal reference for Launchpad covering licenses, policies, 
+      terms of service, and intellectual property requirements.
+
 .. _legal:
 
 Legal

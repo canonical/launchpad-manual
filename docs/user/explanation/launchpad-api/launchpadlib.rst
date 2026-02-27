@@ -1,3 +1,8 @@
+.. meta::
+   :description: Complete guide to launchpadlib - An open-source library that 
+      allows you to treat HTTP resources published by launchpadlib as Python 
+      objects.
+
 .. _launchpadlib:
 
 launchpadlib

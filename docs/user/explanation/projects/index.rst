@@ -1,3 +1,7 @@
+.. meta::
+   :description: Understand projects in Launchpad including planning releases, 
+      project announcements, and commercial features.
+
 Projects in Launchpad
 =====================
 

@@ -1,3 +1,7 @@
+.. meta::
+   :description: Guide to hosting your project's code on Launchpad with Git 
+      repositories.
+
 .. _host-your-project-code-on-launchpad:
 
 Host your project's code on Launchpad

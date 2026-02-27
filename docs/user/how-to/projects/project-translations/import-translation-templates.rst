@@ -1,3 +1,7 @@
+.. meta::
+   :description: Step-by-step guide to import translation templates (POT files) 
+      into Launchpad.
+
 .. _how-to-import-project-translation-templates:
 
 Import your project's translation templates

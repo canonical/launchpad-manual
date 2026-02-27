@@ -1,3 +1,7 @@
+.. meta::
+   :description: Reference guide for tracking bugs across multiple projects in 
+      Launchpad.
+
 .. _tracking-bugs-across-multiple-projects:
 
 Tracking bugs across multiple projects

@@ -1,3 +1,7 @@
+.. meta::
+   :description: Bug supervisor role reference covering responsibilities, 
+      permissions, and bug management workflows in Launchpad projects.
+
 Bug supervisor
 ==============
 

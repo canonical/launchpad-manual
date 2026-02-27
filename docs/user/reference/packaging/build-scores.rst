@@ -1,3 +1,7 @@
+.. meta::
+   :description: Reference for prioritizing builds in Launchpad using build 
+      scores.
+
 .. _prioritising-builds:
 
 Prioritising builds

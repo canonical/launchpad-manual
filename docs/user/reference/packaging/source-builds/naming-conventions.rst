@@ -1,3 +1,6 @@
+.. meta::
+   :description: Naming conventions for daily builds in Launchpad.
+
 .. _naming-conventions-for-daily-builds:
 
 Naming conventions for daily builds

@@ -1,3 +1,7 @@
+.. meta::
+   :description: Reference document for copying packages between PPAs and 
+      repositories in Launchpad.
+
 .. _copying-packages:
 
 Copying packages

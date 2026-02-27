@@ -1,3 +1,7 @@
+.. meta::
+   :description: Use Launchpad's email interface to interact with bug tracker 
+      features via email commands.
+
 .. _use-the-launchpad-email-interface:
 
 Use the Launchpad email interface

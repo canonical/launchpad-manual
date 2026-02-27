@@ -1,3 +1,7 @@
+.. meta::
+   :description: Reference guide to native language support in Launchpad for 
+      translations.
+
 Support in your native language
 ===============================
 

@@ -1,3 +1,6 @@
+.. meta::
+   :description: Launchpad bug tracker API plugin reference.
+
 .. _bug-tracker-api-plugin:
 
 Bug tracker API plugin

@@ -1,3 +1,6 @@
+.. meta::
+   :description: Guide to creating and managing merge proposals in Launchpad.
+
 .. _create-and-manage-a-merge-proposal:
 
 Create and manage a merge proposal

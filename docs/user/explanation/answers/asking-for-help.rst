@@ -1,3 +1,6 @@
+.. meta::
+   :description: Understand how to ask for help using Launchpad Answers.
+
 .. _asking-for-help:
 
 Asking for help

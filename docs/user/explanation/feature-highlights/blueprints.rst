@@ -1,3 +1,7 @@
+.. meta::
+   :description: Highlight of Launchpad's lightweight specifications for 
+      planning features, tracking work, and coordinating development.
+
 .. _blueprints-lightweight-specifications:
 
 Blueprints: lightweight specifications

@@ -1,3 +1,6 @@
+.. meta::
+   :description: Learn how to file support requests in Launchpad.
+
 .. _filing-new-support-request:
 
 Filing a new support request

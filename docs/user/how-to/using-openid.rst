@@ -1,3 +1,7 @@
+.. meta::
+   :description: Use your Launchpad account as an OpenID to log into other 
+      websites securely.
+
 .. _log-into-websites-with-openid:
 
 Log into websites with OpenID

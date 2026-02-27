@@ -1,3 +1,7 @@
+.. meta::
+   :description: Personal Package Archive reference for hosting and 
+      distributing custom Ubuntu packages through Launchpad.
+
 .. _personal-package-archive:
 
 Personal Package Archive

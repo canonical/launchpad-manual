@@ -1,3 +1,7 @@
+.. meta::
+   :description: An in-depth look at the software translation process in 
+      Launchpad.
+
 .. _translating-your-software:
 
 Translating your software

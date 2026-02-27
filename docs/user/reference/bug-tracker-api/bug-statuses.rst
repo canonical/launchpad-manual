@@ -1,3 +1,6 @@
+.. meta::
+   :description: Complete reference of bug statuses in Launchpad.
+
 .. _bug-status-in-launchpad:
 
 Bug statuses in Launchpad

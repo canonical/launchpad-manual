@@ -1,3 +1,7 @@
+.. meta::
+   :description: Understand how Launchpad CI helps improve the quality of your
+      code when you want to contribute.
+
 .. _continuous-integration:
 
 Continuous integration

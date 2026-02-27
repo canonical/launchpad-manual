@@ -1,3 +1,7 @@
+.. meta::
+   :description: Launchpad bug tracker references covering statuses, external 
+      tracker integration, and the API plugin.
+
 Bug tracker API
 ===============
 

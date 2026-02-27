@@ -1,3 +1,7 @@
+.. Should be moved to explanations
+.. meta::
+   :description: Understanding when to reuse a translation.
+
 Reusing packaged translations
 =============================
 

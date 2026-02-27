@@ -1,3 +1,7 @@
+.. meta::
+   :description: Step-by-step guides to work with code hosted on Launchpad 
+      including branching, merge proposals, and linking code to bugs.
+
 .. _work-with-code-hosted-launchpad:
 
 Work with code hosted on Launchpad

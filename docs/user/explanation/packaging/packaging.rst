@@ -1,3 +1,7 @@
+.. meta::
+   :description: Understand Launchpad's packaging system used for building and 
+      distributing packages for Ubuntu.
+
 .. _packaging:
 
 Packaging

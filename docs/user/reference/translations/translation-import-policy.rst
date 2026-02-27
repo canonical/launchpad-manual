@@ -1,3 +1,7 @@
+.. meta::
+   :description: Translation import policy reference for uploading and 
+      synchronizing translation files in Launchpad projects.
+
 .. _translation-import-policy:
 
 Translation import policy

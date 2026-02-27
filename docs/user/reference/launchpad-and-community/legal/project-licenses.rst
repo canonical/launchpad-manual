@@ -1,3 +1,7 @@
+.. meta::
+   :description: Project licenses reference for choosing and declaring software 
+      licenses for projects hosted on Launchpad.
+
 .. _project-licenses:
 
 Licenses

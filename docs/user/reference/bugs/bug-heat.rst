@@ -1,3 +1,8 @@
+.. Should be moved to explanation section
+.. meta::
+   :description: Understand the bug heat scoring system in Launchpad for 
+      prioritizing bugs based on activity, subscribers, and duplicate reports.
+
 .. _bug-heat:
 
 Bug heat

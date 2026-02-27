@@ -1,3 +1,7 @@
+.. meta::
+   :description: Link bug reports to code branches in Launchpad to track fixes 
+      and associate merge proposals with specific issues.
+
 .. _link-a-bug-reports-to-a-branch:
 
 Link a bug reports to a branch

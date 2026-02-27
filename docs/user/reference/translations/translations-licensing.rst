@@ -1,3 +1,7 @@
+.. meta::
+   :description: Translations licensing frequently asked questions covering 
+      copyright, licensing requirements, and legal considerations.
+
 .. _translations-licensing-faq:
 
 Translations licensing FAQ

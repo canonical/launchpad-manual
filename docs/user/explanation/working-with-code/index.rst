@@ -1,3 +1,7 @@
+.. meta::
+   :description: Understand what makes it possible to work with code in 
+      Launchpad.
+
 Working with code
 =================
 

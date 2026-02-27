@@ -1,3 +1,7 @@
+.. meta::
+   :description: Launchpad license reference covering AGPL licensing and 
+      trademarks.
+
 .. _launchpad-license:
 
 Launchpad license

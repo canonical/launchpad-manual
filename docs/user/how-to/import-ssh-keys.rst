@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn how to import SSH keys into Launchpad for secure Git 
+      repository access and code pushing without passwords.
+
 .. _import-your-ssh-keys:
 
 Import your SSH keys

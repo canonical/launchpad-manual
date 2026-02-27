@@ -1,3 +1,6 @@
+.. meta::
+   :description: Launchpad's SSH fingerprints for different SSH endpoints.
+
 .. _ssh-fingerprints:
 
 SSH fingerprints

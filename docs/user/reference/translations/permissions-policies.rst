@@ -1,3 +1,6 @@
+.. meta::
+   :description: Reference for permissions policies for Launchpad translations.
+
 .. _choosing-a-permissions-policy:
 
 Choosing a permissions policy

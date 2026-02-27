@@ -1,3 +1,7 @@
+.. meta::
+   :description: Set up webhooks in Launchpad to receive real-time HTTP 
+      notifications.
+
 .. _webhooks:
 
 Webhooks

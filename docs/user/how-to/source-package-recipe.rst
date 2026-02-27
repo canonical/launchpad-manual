@@ -1,3 +1,7 @@
+.. meta::
+   :description: Create source package recipes in Launchpad to automatically 
+      build packages from branches.
+
 .. _create-a-source-package-recipe:
 
 Create a source package recipe

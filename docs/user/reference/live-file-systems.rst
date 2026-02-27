@@ -1,3 +1,6 @@
+.. meta::
+   :description: Reference documentation for live file systems in Launchpad.
+
 .. _live-file-systems:
 
 Live file systems

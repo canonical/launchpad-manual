@@ -1,3 +1,7 @@
+.. meta::
+   :description: Malone XML-RPC interface reference for programmatic access to 
+      Launchpad's bug tracking system.
+
 .. _malone-xmlrpc-interface:
 
 The Malone xmlrpc interface

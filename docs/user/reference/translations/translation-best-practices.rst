@@ -1,3 +1,6 @@
+.. meta::
+   :description: Launchpad translation best practices for project maintainers.
+
 .. _launchpad-project-translation-best-practices:
 
 Launchpad project translation best practices

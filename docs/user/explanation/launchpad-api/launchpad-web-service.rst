@@ -1,3 +1,6 @@
+.. meta::
+   :description: An in-depth look at Launchpad's RESTful web service.
+
 .. _launchpad-web-service:
 
 Launchpad web service

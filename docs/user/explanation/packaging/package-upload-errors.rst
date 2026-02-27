@@ -1,3 +1,7 @@
+.. meta::
+   :description: Explanations for common causes of package upload errors when 
+      uploading to PPAs or the Ubuntu archive.
+
 .. _troubleshoot-package-upload-errors:
 
 Troubleshoot package upload errors

@@ -1,3 +1,7 @@
+.. meta::
+   :description: Understand how teams are created in Launchpad including 
+      membership policies, visibility, and roles.
+
 .. _creating-and-running-launchpad-teams:
 
 Creating and running Launchpad teams

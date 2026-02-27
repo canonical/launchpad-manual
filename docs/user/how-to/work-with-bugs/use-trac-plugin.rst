@@ -1,3 +1,7 @@
+.. meta::
+   :description: Use the Trac plugin to integrate Launchpad bug tracking with 
+      Trac.
+
 .. _use-the-trac-plugin:
 
 Use the Trac plugin

@@ -1,3 +1,7 @@
+.. meta::
+   :description: Practical how-to guides for using Launchpad features including 
+      account management, bug tracking, code hosting, and package building.
+
 .. _user/how-to:
 
 How-to guides

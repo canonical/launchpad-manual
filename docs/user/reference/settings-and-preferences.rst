@@ -1,3 +1,7 @@
+.. meta::
+   :description: Reference doc for Launchpad account settings and 
+      personalization options.
+
 Settings and preferences
 ========================
 

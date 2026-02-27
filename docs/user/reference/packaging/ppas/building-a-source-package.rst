@@ -1,3 +1,6 @@
+.. meta::
+   :description: Reference for building source packages in Launchpad PPAs 
+      including versioning, snapshots, and dependencies.
 .. _building-a-source-package:
 
 Building a source package

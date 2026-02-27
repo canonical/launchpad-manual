@@ -1,3 +1,8 @@
+.. meta::
+   :description: Get started with Launchpad - learn how to host code, create 
+      Ubuntu packages, track bugs, translate software, and collaborate on 
+      projects.
+
 .. _get-started-with-launchpad:
 
 Get started with Launchpad

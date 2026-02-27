@@ -1,3 +1,7 @@
+.. meta::
+   :description: Comprehensive table of applications and tools using Launchpad 
+      API for integration, automation, and additional functionality.
+
 .. _table-of-applications-using-the-api:
 
 Table of applications using the API

@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn about project groups in Launchpad for managing related 
+      projects from a single place.
+
 .. _project-groups:
 
 Project groups

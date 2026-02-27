@@ -1,3 +1,6 @@
+.. meta::
+   :description: Understand how partial PO files are generated in Launchpad.
+
 .. _exporting-partial-gettext-PO-files:
 
 Exporting partial gettext PO files
