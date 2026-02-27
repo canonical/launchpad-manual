@@ -105,3 +105,4 @@ user/explanation/launchpad-answers/ user/explanation/answers/asking-for-help/
 user/how-to/launchpad-api/launchpad-web/ user/explanation/launchpad-api/launchpad-web-service/
 user/YourAccount/NewAccount user/how-to/account-management/create-account
 developer/how-to/getting developer/how-to/get-source-code/
+developer/how-to/debug-tests-with-visual-studio-code developer/how-to/debugging-with-visual-studio-code
