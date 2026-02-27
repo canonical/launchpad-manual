@@ -1,3 +1,7 @@
+.. meta::
+   :description: How to get an overview of Launchpad's build farm 
+      infrastructure using web views or command-line tools.
+
 =============================================
 Getting an overview of Launchpad's build farm
 =============================================

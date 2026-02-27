@@ -1,3 +1,7 @@
+.. meta::
+   :description: Understand Launchpad's application framework built around the
+      Zope Toolkit.
+
 =====================
 Application framework
 =====================

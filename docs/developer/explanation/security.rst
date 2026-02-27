@@ -1,3 +1,7 @@
+.. meta::
+   :description: Overview of Launchpad's multi-layered security approach 
+      covering architecture, system design, processes, issue reporting, etc.
+
 About Launchpad security
 ========================
 

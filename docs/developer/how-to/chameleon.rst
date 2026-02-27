@@ -1,3 +1,6 @@
+.. meta::
+   :description: Configure and run Launchpad with the Chameleon template engine.
+
 Running Launchpad with Chameleon template engine
 ================================================
 

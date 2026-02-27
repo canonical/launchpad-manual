@@ -1,3 +1,6 @@
+.. meta::
+   :description: Learn how to use CSS sprites in Launchpad templates for 
+      improved website performance.
 
 Using CSS sprites
 =================

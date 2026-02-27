@@ -1,3 +1,6 @@
+.. meta::
+   :description: Set up and use Soyuz locally for package building and testing.
+
 How to use Soyuz locally
 ========================
 

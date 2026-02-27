@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn how to apply hotfix changes directly to qastaging 
+      instances.
+
 ==============================
 Applying a cowboy to qastaging
 ==============================

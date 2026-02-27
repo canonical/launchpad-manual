@@ -1,3 +1,7 @@
+.. meta::
+   :description: Ensure constant database query counts when reading or creating 
+      multiple items.
+
 ======================
 Preserving query count
 ======================

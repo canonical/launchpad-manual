@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn how Launchpad uses permissions to control access to 
+      views and object attributes and methods.
+
 Launchpad permissions
 ======================
 

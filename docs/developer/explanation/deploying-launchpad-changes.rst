@@ -1,3 +1,6 @@
+.. meta::
+   :description: Landing page for explanation on deploying Launchpad changes.
+
 Deploying Launchpad changes
 ===========================
 

@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn how SQLObject concepts map to Storm ORM equivalents 
+      for migrating Launchpad code to Storm database layer.
+
 Storm migration guide
 =====================
 

@@ -1,3 +1,6 @@
+.. meta::
+   :description: Complete guide to contributing changes to Launchpad.
+
 .. _contributing-changes:
 
 Contributing changes

@@ -1,3 +1,7 @@
+.. meta::
+   :description: Operational guides for running Launchpad instances covering 
+      build farm management, user administration, and deployment procedures.
+
 Operating Launchpad
 ===================
 

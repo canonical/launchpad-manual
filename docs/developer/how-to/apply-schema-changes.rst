@@ -1,3 +1,7 @@
+.. meta::
+   :description: Step-by-step guide to applying database schema changes to 
+      Launchpad's databases.
+
 .. _apply-database-schema-changes:
 
 ================================

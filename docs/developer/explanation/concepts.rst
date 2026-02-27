@@ -1,3 +1,7 @@
+.. meta::
+   :description: Understand core code concepts in lp.code modules including 
+      registry objects, branch, target, and merge proposal.
+
 .. _code-concepts:
 
 Code concepts

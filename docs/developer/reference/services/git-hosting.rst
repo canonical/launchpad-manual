@@ -1,3 +1,6 @@
+.. meta::
+   :description: Reference document for Launchpad's Git hosting service.
+
 Git hosting
 ===============
 

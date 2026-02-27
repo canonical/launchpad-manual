@@ -1,3 +1,7 @@
+.. meta::
+   :description: Complete guide to porting Launchpad builders to newer Ubuntu 
+      versions.
+
 Porting builders to newer Ubuntu versions
 =========================================
 

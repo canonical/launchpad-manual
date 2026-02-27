@@ -1,3 +1,7 @@
+.. meta::
+   :description: Guide to importing Ubuntu packages into your local Launchpad 
+      instance.
+
 ===========================
 Importing an Ubuntu package
 ===========================

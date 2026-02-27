@@ -1,3 +1,7 @@
+.. meta::
+   :description: Overview of database topics including PostgreSQL, live 
+      patching, Storm migration, and database performance optimization.
+
 Database
 =========
 

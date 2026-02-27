@@ -1,3 +1,7 @@
+.. meta::
+   :description: Quick guide to setting up and running Launchpad for 
+      development.
+
 .. _setting-up-and-running-launchpad-quickstart:
 
 =============================================

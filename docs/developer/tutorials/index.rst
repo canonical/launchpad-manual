@@ -1,3 +1,7 @@
+.. meta::
+   :description: Step-by-step tutorials to help you learn Launchpad development 
+      practices and workflows.
+
 :hide-toc:
 
 Tutorials

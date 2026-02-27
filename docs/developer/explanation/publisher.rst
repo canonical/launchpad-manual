@@ -1,3 +1,6 @@
+.. meta::
+   :description: Overview of Ubuntu publishing topics.
+
 Publisher
 ===================
 

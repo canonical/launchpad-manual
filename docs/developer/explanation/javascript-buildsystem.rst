@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn about the Launchpad JavaScript build system for bundling, 
+      minifying, and distributing Javascript modules.
+
 The Launchpad JavaScript build system
 =====================================
 

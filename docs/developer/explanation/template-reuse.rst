@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn template reuse techniques using fragment views and 
+      macros.
+
 Template reuse
 ==============
 

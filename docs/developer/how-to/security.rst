@@ -1,3 +1,6 @@
+.. meta::
+   :description: Guide on implementing security policies in Launchpad.
+
 Handling security policies
 ==========================
 

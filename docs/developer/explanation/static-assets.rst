@@ -1,3 +1,7 @@
+.. meta::
+   :description: Overview of static assets in Launchpad including CSS, CSS 
+      sprites, images, and favicons.
+
 Static assets
 ==============
 

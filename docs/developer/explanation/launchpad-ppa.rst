@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn about the PPA containing dependencies needed to run 
+      Launchpad.
+
 The Launchpad PPA
 =================
 

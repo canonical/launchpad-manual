@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn PostgreSQL was chosen for Launchpad and the degree 
+      of integration between the database and code.
+
 ========================
 PostgreSQL and Launchpad
 ========================

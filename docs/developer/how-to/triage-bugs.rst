@@ -1,3 +1,6 @@
+.. meta::
+   :description: Guide to triaging Launchpad project bugs.
+
 .. _triaging-launchpad-project-bugs:
 
 Triaging Launchpad project bugs

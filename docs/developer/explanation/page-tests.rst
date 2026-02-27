@@ -1,3 +1,6 @@
+.. meta::
+   :description: Learn how to use zope.testbrowser for page testing.
+
 .. _page-tests:
 
 Page tests

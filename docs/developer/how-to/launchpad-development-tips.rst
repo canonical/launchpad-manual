@@ -1,3 +1,7 @@
+.. meta::
+   :description: Essential Launchpad development tips covering configuration, 
+      debugging, testing, security policies, and performance optimization.
+
 Launchpad development tips
 ===========================
 

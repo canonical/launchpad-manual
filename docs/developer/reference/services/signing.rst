@@ -1,3 +1,7 @@
+.. meta::
+   :description: Reference document for Launchpad's signing service with links 
+      to documentation, deployment information, git repository, and bug tracker.
+
 Signing service
 ===============
 

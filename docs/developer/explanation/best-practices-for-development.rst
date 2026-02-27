@@ -1,3 +1,7 @@
+.. meta::
+   :description: Overview of best practices for Launchpad development including 
+      architecture, assertions, security, and performance guidelines.
+
 Best practices for development
 ==============================
 

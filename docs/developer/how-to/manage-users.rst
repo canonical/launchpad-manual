@@ -1,3 +1,7 @@
+.. meta::
+   :description: Guide to managing users and teams in Launchpad development 
+      environments.
+
 .. _manage-users-and-teams-in-development-environments:
 
 Manage users and teams in development environments

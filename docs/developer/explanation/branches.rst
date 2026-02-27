@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn about Launchpad's four master branches and branching 
+      strategy for development including stable releases and database changes.
+
 .. _about-launchpad-branches:
 
 About Launchpad branches

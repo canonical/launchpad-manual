@@ -1,3 +1,6 @@
+.. meta::
+   :description: Learn how to test different Launchpad changes locally.
+
 Testing
 =======
 

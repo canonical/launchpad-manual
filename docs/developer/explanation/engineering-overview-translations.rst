@@ -1,3 +1,7 @@
+.. meta::
+   :description: Engineering overview of Launchpad's Translations subsystem for 
+      Ubuntu and Launchpad-registered projects.
+
 Engineering overview: translations
 ==================================
 
