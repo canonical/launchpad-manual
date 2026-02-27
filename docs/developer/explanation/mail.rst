@@ -1,5 +1,5 @@
 .. meta::
-    :description: Overview of email types in Launchpad and how the are 
+   :description: Overview of email types in Launchpad and how the are 
       configured.
 
 Launchpad mail

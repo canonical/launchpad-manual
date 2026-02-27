@@ -1,5 +1,5 @@
 .. meta::
-  :description: Learn about Launchpad's code import system for one-way 
+   :description: Learn about Launchpad's code import system for one-way 
       synchronization from external repositories.
 
 ====================

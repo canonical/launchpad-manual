@@ -1,5 +1,5 @@
 .. meta::
-    :description: Introduction to using YUI.Test for JavaScript unit testing in 
+   :description: Introduction to using YUI.Test for JavaScript unit testing in 
       Launchpad.
 
 Developing with YUI.Test

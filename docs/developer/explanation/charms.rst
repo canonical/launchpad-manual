@@ -1,5 +1,5 @@
 .. meta::
-  :description: Overview of Juju charm development principles and process for 
+   :description: Overview of Juju charm development principles and process for 
       Launchpad deployments.
 
 =================

@@ -1,5 +1,5 @@
 .. meta::
-    :description: Understand when and how to use assertions in Launchpad code 
+   :description: Understand when and how to use assertions in Launchpad code 
       following best programming practices and guidelines.
 
 .. _assertions-in-launchpad:
