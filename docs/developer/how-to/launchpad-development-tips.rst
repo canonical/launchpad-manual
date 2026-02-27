@@ -16,7 +16,7 @@ Launchpad development tips
    exceptions
    preserve-query-count
    chameleon
-   debugging-with-visual-studio-code
+   debug-with-visual-studio-code
    debug-buildfarm-builder
    debugging
    launchpad-api-docs
