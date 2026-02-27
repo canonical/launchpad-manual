@@ -1,5 +1,5 @@
 .. meta::
-   :description: Understand the favicon files generated from SVG files
+   :description: Understand the favicon files generated from SVG files.
 
 Favicons: Why so many files and what do they do?
 ------------------------------------------------
