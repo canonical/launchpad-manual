@@ -104,6 +104,9 @@ linkcheck-discrete: install
 	. $(VENV) ; $(SPHINXBUILD) -b linkcheck "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) || { grep --color -F "[broken]" "$(BUILDDIR)/output.txt"; exit 1; }
 	exit 0
 
+linkcheck-specified-files: install
+	sphinx-build -b linkcheck "$(SOURCEDIR)" "$(BUILDDIR)" $(files)
+
 linkcheck: install
 	@echo "skipping linkcheck"
 	@true
