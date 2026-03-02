@@ -644,6 +644,7 @@ pypa
 PyPI
 Pyroom
 Pythonic
+pytest
 qa
 QAProcess
 qastaging
