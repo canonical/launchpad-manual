@@ -14,7 +14,7 @@ SSH access to LXD containers within VS Code
 
 To run and debug Launchpad tests inside a local LXD container using Visual
 Studio Code, you need to set up SSH access. This guide assumes that SSH has been
-configured as described in the :ref:`Running <running>` section.
+configured as described in the :ref:`Running <setting-up-and-running-launchpad-advanced>` section.
 
 1. **Install the SSH Extension**: Install the 'Remote - SSH' extension from the
    VS Code marketplace to enable SSH capabilities within your development
