@@ -1,20 +1,20 @@
 .. meta::
-   :description: Set up Visual Studio Code for debugging Launchpad tests.
+   :description: Set up Visual Studio Code for debugging Launchpad.
 
 Debug tests with Visual Studio Code
 ===================================================
 
-Debugging Launchpad tests in Visual Studio Code (VS Code) can streamline your
+Debugging Launchpad in Visual Studio Code (VS Code) can streamline your
 development process by allowing you to inspect code, set breakpoints, and
-interactively solve problems within your tests. This guide will help you set up
-VS Code for debugging Launchpad tests.
+interactively solve problems. This guide will help you set up VS Code for
+debugging Launchpad tests and the appserver.
 
 SSH access to LXD containers within VS Code
 --------------------------------------------------
 
 To run and debug Launchpad tests inside a local LXD container using Visual
 Studio Code, you need to set up SSH access. This guide assumes that SSH has been
-configured as described in the :doc:`Running <running>` section.
+configured as described in the :ref:`Running <setting-up-and-running-launchpad-advanced>` section.
 
 1. **Install the SSH Extension**: Install the 'Remote - SSH' extension from the
    VS Code marketplace to enable SSH capabilities within your development
@@ -66,6 +66,65 @@ project's ``bin`` directory, with verbose output. The additional test selection
 arguments allow you to specify which test to debug; when you launch the
 debugger, a pop-up window will appear, prompting you to input the test name you
 want to debug using the ``${command:pickArgs}`` command.
+
+Debug the Launchpad appserver
+-----------------------------
+
+To debug the Launchpad appserver, you first need to create a ``tasks.json``
+file under the ``.vscode`` directory. This file will define a task to build
+the necessary Launchpad services before launching the server.
+
+.. code-block:: json
+
+    {
+        "version": "2.0.0",
+        "tasks": [
+            {
+                "label": "Build Launchpad services",
+                "type": "shell",
+                "command": "make",
+                "args": [
+                    "build",
+                    "inplace",
+                    "stop"
+                ],
+                "problemMatcher": [],
+                "presentation": {
+                    "reveal": "always",
+                    "panel": "shared"
+                }
+            }
+        ]
+    }
+
+Next, add the following configuration to your ``launch.json`` file. This will
+allow you to launch and debug the Launchpad server.
+
+.. code-block:: json
+
+    {
+        "name": "Debug Launchpad Server",
+        "type": "debugpy",
+        "request": "launch",
+        "program": "${workspaceFolder}/bin/run",
+        "args": [
+            "-r",
+            "librarian,bing-webservice,memcached,rabbitmq",
+            "-i",
+            "development"
+        ],
+        "console": "integratedTerminal",
+        "preLaunchTask": "Build Launchpad services",
+        "justMyCode": false
+    }
+
+This configuration defines a launch profile named "Debug Launchpad Server" that
+runs the ``bin/run`` script with the necessary arguments to start the appserver
+in development mode. The ``preLaunchTask`` ensures that the "Build Launchpad
+services" task is executed before the debugger starts, and ``"justMyCode": false``
+allows the debugger to step into library code as well.
+
+Once you have added these configurations, you can launch the debugger.
 
 Launch the debugger
 -------------------
