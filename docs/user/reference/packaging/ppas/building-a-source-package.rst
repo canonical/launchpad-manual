@@ -1,12 +1,11 @@
 .. meta::
    :description: Reference for building source packages in Launchpad PPAs 
       including versioning, snapshots, and dependencies.
+
 .. _building-a-source-package:
 
 Building a source package
 =========================
-
-.. include:: /includes/important_not_revised_help.rst
 
 Ubuntu uses Debian's system of packaging software. To get software into
 a PPA, you need to build a source package. That includes the source code
@@ -14,12 +13,8 @@ for the software you want to distribute, along with the instructions for
 where the application should live in the file system and of any
 dependencies it has on other software.
 
-.. note::
-    If you're already familiar with building .deb source packages
-    for Ubuntu, you can skip straight to the :ref:`versioning` section.
-
 You can learn how to create .deb packages for Ubuntu by following the
-`Ubuntu packaging guide <http://packaging.ubuntu.com/html/>`_.
+`Ubuntu packaging guide <https://documentation.ubuntu.com/project/contributors/new-package/>`_.
 
 There are a couple of aspects of PPAs that work slightly differently to
 standard Ubuntu packages: **versioning** and **dependencies**. You
@@ -64,10 +59,10 @@ Xerus (16.04) ``myapp_1.0-1ubuntu3ppa1~ubuntu16.04.1``. If you need to
 release an updated package, increment the ``ppa<n>`` suffix. It is
 important to note that specifying the version name here doesn't change
 the series that you are targeting; this must still be set correctly as
-described in the Ubuntu packaging guide's section on the `changelog file <https://ubuntu-packaging-guide.readthedocs.io/en/latest/ubuntu-packaging-guide/debian-dir-overview.html#the-changelog>`_.
+described in the Ubuntu packaging guide's section on the `changelog file <https://documentation.ubuntu.com/project/how-ubuntu-is-made/concepts/debian-directory/>`_.
 
 Snapshots
-~~~~~~~~~
+---------
 
 You need snapshots when
 
@@ -102,12 +97,7 @@ To sum up a complete snapshot version number example would look like:
 Dependencies
 ------------
 
-Launchpad satisfies your package's
-
-::
-
-   Build-Depends
-
+Launchpad satisfies your package's `Build-Depends <https://documentation.ubuntu.com/project/how-ubuntu-is-made/concepts/debian-directory/#the-control-file>`_ 
 using:
 
 -  the most recent versions of the packages in the PPA you're uploading
@@ -117,8 +107,10 @@ using:
 -  **optionally:** other PPAs in Launchpad.
 
 .. note::
-    If you're already familiar with uploading to the Ubuntu primary archive, you should note that PPA builds do not have any build
-    dependency restrictions, unlike a build in the primary Ubuntu archive. If you want to build the same package in the primary Ubuntu archive at a
+    If you're already familiar with uploading to the Ubuntu primary archive, 
+    you should note that PPA builds do not have any build dependency 
+    restrictions, unlike a build in the primary Ubuntu archive. If you want 
+    to build the same package in the primary Ubuntu archive at a
     later point you may need to revise the package's component and/or pocket.
 
 Depending on other PPAs
@@ -140,12 +132,17 @@ Ubuntu's primary archive, you don't need to upload the
 
 So, the ``debuild`` options you'd use are:
 
--  alternative version of an existing package (will be uploaded without the ``.orig.tar.gz`` file): ``debuild -S -sd``
--  brand new package with no existing version in Ubuntu's repositories (will be uploaded with the ``.orig.tar.gz`` file): ``debuild -S -sa``
+-  alternative version of an existing package (will be uploaded without 
+   the ``.orig.tar.gz`` file): ``debuild -S -sd``
+-  brand new package with no existing version in Ubuntu's repositories (will 
+   be uploaded with the ``.orig.tar.gz`` file): ``debuild -S -sa``
 
 .. note::
 
-    If you get the error ``clearsign failed: secret key not available`` when signing the changes file, use an additional optionally ``--list-secret-keys`` to get the key ID. Look for a line like ``sec 12345/12ABCDEF``; the part after the slash is the key ID.
+   If you get the error ``clearsign failed: secret key not available`` when 
+   signing the changes file, use an additional optionally ``gpg --list-secret-keys``
+   to get the key ID. Look for a line like ``sec 12345/12ABCDEF``; the part 
+   after the slash is the key ID.
 
 Further information
 -------------------
