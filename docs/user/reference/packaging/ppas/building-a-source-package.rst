@@ -14,7 +14,7 @@ where the application should live in the file system and of any
 dependencies it has on other software.
 
 You can learn how to create .deb packages for Ubuntu by following the
-`Ubuntu packaging guide <https://documentation.ubuntu.com/project/contributors/new-package/>`_.
+`Ubuntu packaging guide <https://documentation.ubuntu.com/project/contributors/new-package/create-a-new-package/>`_.
 
 There are a couple of aspects of PPAs that work slightly differently to
 standard Ubuntu packages: **versioning** and **dependencies**. You
@@ -117,7 +117,7 @@ Depending on other PPAs
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 If you want Launchpad to satisfy your package dependencies using one or
-more other PPAs, follow the ``Edit PPA dependencies`` link on `your PPA <https://launchpad.net/people/+me/+archive>`_.
+more other PPAs, follow the ``Edit PPA dependencies`` link on the PPA page.
 
 Options when building
 ---------------------
