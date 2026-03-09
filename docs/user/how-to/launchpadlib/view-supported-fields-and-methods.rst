@@ -5,11 +5,11 @@ View supported fields and methods
 
 If you don't know the capabilities of one of the objects you've got, you can
 call ``dir()`` on it. You'll see all of its fields and all the custom methods it
-supports. Unfortunately, you'll also see a bunch of launchpadlib-specific junk
-that you don't care about. That's why we've made available these four lists:
+supports. Unfortunately, you'll also see other launchpadlib-specific things
+you won't need. For a more focused search experience, use these four lists:
 
 -  ``lp_attributes``: Data fields of this object. You can read from these
-   might be able to write to some of them.
+   and might be able to write to some of them.
 -  ``lp_collections``: List of launchpad objects associated with this
    object.
 -  ``lp_entries``: Other Launchpad objects associated with this one.
@@ -25,7 +25,7 @@ that you don't care about. That's why we've made available these four lists:
 
 If you need more detailed help, you can look the object up in
 `the API documentation <https://api.launchpad.net/devel.html>`_. First,
-find out the type of the object.
+find out the type of the object. For example:
 
 ::
 
@@ -33,7 +33,7 @@ find out the type of the object.
        # <bug at https://api.staging.launchpad.net/beta/bugs/1>
 
 This is a 'bug' type object. Now you use the type of the object as an anchor
-into the API documentation. To find out the capabilities of this object
+in the API documentation URL. To find out the capabilities of this object
 and what data is stored inside it, you'd visit
 `<https://api.launchpad.net/devel.html#bug>`_.
 

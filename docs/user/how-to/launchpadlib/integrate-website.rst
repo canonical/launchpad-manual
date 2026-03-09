@@ -20,7 +20,7 @@ You'll get back a string that looks like
 ``https://launchpad.net/+authorize-token?oauth_token=...``
 This is the URL your end-user needs to visit in order to authorize your token.
 
-At this point, you should redirect your user to that URL. Then, start
+At this point, you should redirect your user to that URL, then start
 periodically calling ``exchange_request_token_for_access_token()``:
 
 ::
