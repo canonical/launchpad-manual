@@ -4,140 +4,297 @@
 How to use Soyuz locally
 ========================
 
-.. include:: ../../includes/important_not_revised.rst
-
-You're going to run Soyuz in a branch you create for the purpose.  To get the whole experience, you'll also be installing the builder-side ``launchpad-buildd`` package on your system.
+This tutorial walks you through setting up Soyuz locally and running a build.
+By the end, you will be able to dput a package to your local development
+environment and build and publish it to a PPA.
 
 Initial setup
 -------------
 
-    * Run ``utilities/start-dev-soyuz.sh`` to ensure that some Soyuz-related services are running.  Some of these may already be running, in which case you'll get some failures that are probably harmless.  Note: these services eat lots of memory.
-    * Once you've set up your test database, run ``utilities/soyuz-sampledata-setup.py -e you@example.com`` (where ''you@example.com'' should be an email address you own and have a GPG key for).  This prepares more suitable sample data in the ``launchpad_dev`` database, including recent Ubuntu series.  If you get a "duplicate key" error, ``make schema`` and run again.
-    * `make run` (or if you also want to use codehosting, `make run_codehosting`—some services may fail to start up because you already started them, but it shouldn't be a problem).
-    * Open https://launchpad.test/~ppa-user/+archive/test-ppa in a browser to get to your pre-made testing PPA.  Log in with your own email address and password ''test''. This user has your GPG key associated, has signed the Ubuntu Code of Conduct, and is a member ``ubuntu-team`` (conferring upload rights to the primary archive).
+Ensure you have Launchpad set up locally. Follow the quickstart guide if you
+do not have it already. This tutorial assumes the Quickstart method, but the
+instructions are similar for the Advanced setup.
+
+Run the following steps from within the development environment.
+
+Start the Launchpad appserver:
+
+.. code-block:: sh
+
+    $ make run
+
+Ensure that Soyuz-related services are running:
+
+.. code-block:: sh
+
+    $ utilities/start-dev-soyuz.sh
+
+Some services may already be running, in which case you will see failures that are probably harmless. Logs and PID files for these processes are stored under ``/var/tmp``.
+
+.. note::
+
+  ``txpkgupload`` currently fails to start because Launchpad requires
+  PyYAML > 5.x, which is incompatible with ``txpkgupload``. While this is
+  being fixed, patch the txpkgupload package to use ``safe_load`` instead of
+  ``load``.
+
+  .. code-block:: python
+
+      # File: env/lib/python3.8/site-packages/txpkgupload/plugin.py
+      # Line 136
+      return cls.to_python(yaml.safe_load(stream))
+
+Create a GPG key for the ``ubuntu`` user:
+
+.. code-block:: sh
+
+    $ sudo -u ubuntu gpg --full-generate-key
+    $ sudo -u ubuntu gpg --list-keys
+
+Set up the Soyuz sample data (replace ``you@example.com`` with an email address you own and have a GPG key for):
+
+.. code-block:: sh
+
+    $ utilities/soyuz-sampledata-setup.py -e you@example.com
+
+This prepares sample data in the ``launchpad_dev`` database including recent Ubuntu series. If you get a "duplicate key" error, run ``make schema`` and try again.
+
+Open your test PPA in a browser:
+
+.. code-block:: text
+
+    https://launchpad.test/~ppa-user/+archive/test-ppa
+
+Log in with your email address and password ``test``. This user has your GPG key associated, has signed the Ubuntu Code of Conduct, and is a member of ``ubuntu-team`` (conferring upload rights to the primary archive).
 
 
 Extra PPA dependencies
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
-The testing PPA has an external dependency on Lucid.  If that's not enough, or not what you want:
+The testing PPA has an external dependency.  If that's not enough, or not what you want:
 
-    * Log in as `admin@canonical.com:test` (I suggest using a different browser so you don't break up your ongoing session).
-    * Open https://launchpad.test/~ppa-user/+archive/test-ppa/+admin
-    * Edit external dependencies.  They normally look like:
+* Log in as `admin@canonical.com:test` (I suggest using a different browser so you don't break up your ongoing session).
+* Open https://launchpad.test/~ppa-user/+archive/test-ppa/+admin
+* Edit external dependencies.  They normally look like:
 
-    .. code-block:: sh
+.. code-block:: sh
 
-        deb http://archive.ubuntu.com/ubuntu %(series)s main restricted universe multiverse
+    deb http://archive.ubuntu.com/ubuntu %(series)s main restricted universe multiverse
 
 
 Set up a builder
-----------------
+~~~~~~~~~~~~~~~~
 
-Set up for development
-^^^^^^^^^^^^^^^^^^^^^^
+Follow setup part in :doc:`develop-with-buildd` to set up ``launchpad-buildd``
+locally. 
 
-If you are intending to do any development on ``launchpad-buildd`` or similar, you possibly want :doc:`develop-with-buildd`.
 
-Installation
-^^^^^^^^^^^^
+.. note::
+    If using a lxc container, set ``lxc.aa_profile = unconfined`` in  
+    ``/var/lib/lxc/container-name/config`` which is required to disable 
+    ``AppArmor`` support.
 
- * Create a new focal virtual-machine with ``kvm`` (recommended), or alternatively a focal ``lxc`` container. If using lxc, set ``lxc.aa_profile = unconfined`` in  ``/var/lib/lxc/container-name/config`` which is required to disable ``AppArmor`` support.
+    If you are running Launchpad in a container, you will more than likely want 
+    your VMs network bridged on ``lxcbr0``. 
 
-If you are running Launchpad in a container, you will more than likely want your VMs network bridged on ``lxcbr0``.
-
-In your builder VM/lxc:
+In your builder VM/lxc, you need a few more additional packages:
 
 .. code-block:: sh
 
     $ sudo apt-add-repository ppa:launchpad/buildd-staging
     $ sudo apt-get update
-    $ sudo apt-get install launchpad-buildd bzr-builder quilt binfmt-support qemu-user-static
+    $ sudo apt-get install bzr-builder quilt binfmt-support qemu-user-static
 
-Alternatively, launchpad-buildd can be built from ``lp:launchpad-buildd`` with ``dpkg-buildpackage -b``.
-
- * Edit ``/etc/launchpad-buildd/default`` and make sure ``ntphost`` points to an existing NTP server. You can check the `NTP server pool <http://www.pool.ntp.org/>`_ to find one near you.
-
-To run the builder by default, you should make sure that other hosts on the Internet cannot send requests to it!  Then:
+To run the builder by default, you should make sure that other hosts on the 
+Internet cannot send requests to it!  Then:
 
 .. code-block:: sh
 
- $ echo RUN_NETWORK_REQUESTS_AS_ROOT=yes > /etc/default/launchpad-buildd
+ $ echo RUN_NETWORK_REQUESTS_AS_ROOT=yes | sudo tee /etc/default/launchpad-buildd
+ $ sudo systemctl restart launchpad-buildd
+
+Registering the builder
+~~~~~~~~~~~~~~~~~~~~~~~
+
+The buildd that you have just installed needs registering with Launchpad so that builds can be dispatched to it.
+
+1. Go to https://launchpad.test/builders and login using the ``admin@canonical.com`` admin user.
+
+2. Press ``Register a new build machine``.
+
+3. Fill in the details:
+
+   - The URL is probably ``http://<buildd-ip>:8221``.
+   - You can make the builder virtualized or non-virtualized. Each requires different setup.
+   - Most production builders are virtualized with automatic VM reset at build end.
+   - Non-virtualized builders are simpler but require careful security (no untrusted code).
+
+4. Change the builder from ``manual`` to ``auto`` mode via the UI.
+
+5. After 30 seconds, the builder status should be ``Idle``. Refresh the page (it does not auto-update).
 
 Launchpad configuration
-^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~
 
-From your host system:
+.. _configuring-launchpad:
 
- * Get an Ubuntu ``buildd chroot`` from Launchpad, using ``manage-chroot`` from ``https://code.launchpad.net/+branch/ubuntu-archive-tools|lp:ubuntu-archive-tools``:
- * ``manage-chroot -s precise -a i386 get``
- * ``LP_DISABLE_SSL_CERTIFICATE_VALIDATION=1 manage-chroot -l dev -s precise -a i386 -f chroot-ubuntu-precise-i386.tar.bz2 set``
- * Register a new builder with the URL pointed to ``http://YOUR-BUILDER-IP:8221/`` (https://launchpad.test/builders/+new)
+You need to make some changes on the Launchpad appserver to enable builds.
 
-Shortly thereafter, the new builder should report a successful status of 'idle'.
+Change https://launchpad.test/ubuntu/+pubconf as admin from ``http://archive.launchpad.test`` to ``http://archive.ubuntu.com``.
 
-If you want to test just the builder without a Launchpad instance, then, instead of using ``manage-chroot -l dev set``, you can copy the ``chroot`` tarball to ``/home/buildd/filecache-default/``; the base name of the file should be its ``sha1sum``.  You'll need to copy any other needed files (e.g. source packages) into the cache in the same way.  You can then send XML-RPC instructions to the builder as below.
+In ``launchpad/launchpad/configs/development/launchpad-lazr.conf``, set the following configuration to point builders to your local environment:
 
-Drive builder through RPC
--------------------------
+.. code-block:: ini
 
-With librarian running, fire up a ``python3`` shell and:
+    git_browse_root = http://git.launchpad.test:9419/
+    git_ssh_root = git+ssh://git.launchpad.test:9422/
+    builder_proxy_host = none
+    builder_proxy_port = none
 
-.. code-block:: python
+In ``launchpad/launchpad/lib/lp/services/config/schema-lazr.conf``, add OCI credential keys under the ``[oci]`` tag (example values):
 
-    from xmlrpc.client import ServerProxy
-    proxy = ServerProxy('http://localhost:8221/rpc')
-    proxy.ensurepresent('d267a7b39544795f0e98d00c3cf7862045311464', 'http://launchpad.test:58080/93/chroot-ubuntu-lucid-i386.tar.bz2', '', '')
-    proxy.build('1-1', 'translation-templates', 'd267a7b39544795f0e98d00c3cf7862045311464', {},
-    {'archives': ['deb http://archive.ubuntu.com/ubuntu/ lucid main'], 'branch_url': '/home/buildd/gimp-2.6.8'})
-    proxy.status()
-    proxy.clean() # Clean up if it failed
+.. code-block:: ini
 
-You may have to calculate a new ``sha1sum`` of the ``chroot`` file.
+    registry_secrets_private_key = U6mw5MTwo+7F+t86ogCw+GXjcoOJfK1f9G/khlqhXc4=
+    registry_secrets_public_key = ijkzQTuYOIbAV9F5gF0loKNG/bU9kCCsCulYeoONXDI=
+
+Setting up chroots
+~~~~~~~~~~~~~~~~~~
+
+Get an Ubuntu ``buildd chroot`` from Launchpad using ``manage-chroot`` from `lp:ubuntu-archive-tools <https://code.launchpad.net/~launchpad-dev/ubuntu-archive-tools/>`_:
+
+.. code-block:: sh
+
+    $ manage-chroot -s noble -a amd64 -i chroot get
+    $ LP_DISABLE_SSL_CERTIFICATE_VALIDATION=1 manage-chroot -l dev -s noble -a amd64 -i chroot -f livecd.ubuntu-base.rootfs.tar.gz set
+
+
+User setup
+----------
+
+Add your user to the correct groups so you can interact without being logged in as admin:
+
+1. Log in as ``admin@canonical.com:test``
+2. Go to https://launchpad.test/~launchpad-buildd-admins and add your user
+3. Go to https://launchpad.test/~ubuntu-team and add your user
+
 
 Upload a source to the PPA
 --------------------------
 
-    * Run ``scripts/process-upload.py /var/tmp/txpkgupload`` (creates hierarchy) 
-    * Add to ``~/.dput.cf``:
+First, set up the upload directory and configure dput:
 
-    .. code-block:: yaml
+.. code-block:: sh
 
-        [lpdev]
-        fqdn = ppa.launchpad.test:2121
-        method = ftp
-        incoming = %(lpdev)s
-        login = anonymous
+    $ scripts/process-upload.py /var/tmp/txpkgupload
 
-    * Find a source package ``some_source`` with a changes file ``some_source.changes``
-    * ``dput -u lpdev:~ppa-user/test-ppa/ubuntu some_source.changes``
-    * ``scripts/process-upload.py /var/tmp/txpkgupload -C absolutely-anything -vvv # Accept the source upload.``
-    * If this is your first time running soyuz locally, you'll also need to publish ubuntu: ``scripts/publish-distro.py -C``
-    * Within five seconds of upload acceptance, the buildd should start building. Wait until it is complete (the build page will say "Uploading build").
-    * ``scripts/process-upload.py -vvv --builds -C buildd /var/tmp/builddmaster # Process the build upload.``
-    * ``scripts/process-accepted.py -vv --ppa ubuntu # Create publishings for the binaries.``
-    * ``scripts/publish-distro.py -vv --ppa # Publish the source and binaries.``
-    * Note that private archive builds will not be dispatched until their source is published.
+Add the ``lpdev`` configuration to ``~/.dput.cf``:
+
+.. code-block:: ini
+
+    [lpdev]
+    fqdn = ppa.launchpad.test:2121
+    method = ftp
+    incoming = %(lpdev)s
+    login = anonymous
+
+Upload your source package:
+
+.. code-block:: sh
+
+    $ dput -u lpdev:~ppa-user/test-ppa/ubuntu some_source.changes
+
+Accept the source upload in the processing queue:
+
+.. code-block:: sh
+
+    $ scripts/process-upload.py /var/tmp/txpkgupload -C absolutely-anything -vvv
+
+If this is your first time building with Soyuz locally, publish the ubuntu archive:
+
+.. code-block:: sh
+
+    $ scripts/publish-distro.py -C
+
+The builder should start building within five seconds. Wait until the build page shows "Uploading build", then process the completed build:
+
+.. code-block:: sh
+
+    $ scripts/process-upload.py -vvv --builds -C buildd /var/tmp/builddmaster
+
+Create publishings for the binaries:
+
+.. code-block:: sh
+
+    $ scripts/process-accepted.py -vv --ppa ubuntu
+
+Publish the source and binaries:
+
+.. code-block:: sh
+
+    $ scripts/publish-distro.py -vv --ppa
+
+.. note::
+
+    Private archive builds will not be dispatched until their source is published.
 
 Build an OCI image
 ------------------
 
-    * Using Launchpad interface, create a new OCI project and a recipe for it.
-    * On the OCI Recipe page, click on "Request builds", and select which architectures should be built on the following screen.
-    * Once you have requested a build, you should run ``./cronscripts/process-job-source.py -v IOCIRecipeRequestBuildsJobSource`` to create builds for that build request.
-    * If you have builders idle, this should start the build. Make sure to have run ``utilities/start-dev-soyuz.sh``, and check builders status at ``/builders`` page.
-    * Once the build finishes, run ``./scripts/process-upload.py -M --builds /var/tmp/builddmaster/`` on Launchpad to make it collect the built layers and manifests.
-    * At this point, in each build page you should have the files listed.
-    * You can upload the built image to registry by running ``./cronscripts/process-job-source.py -v IOCIRegistryUploadJobSource`` in Launchpad. You can manage the push rules at OCI recipe's page, clicking at "Edit push rules" button.
+Using the Launchpad interface, create a new OCI project and recipe. Once you have requested a build, create the actual build jobs:
+
+.. code-block:: sh
+
+    $ ./cronscripts/process-job-source.py -v IOCIRecipeRequestBuildsJobSource
+
+If you have idle builders, the build should start. Make sure ``utilities/start-dev-soyuz.sh`` has run and check the builders status at the ``/builders`` page on Launchpad.
+
+Once the build finishes, collect the built layers and manifests:
+
+.. code-block:: sh
+
+    $ ./scripts/process-upload.py -M --builds /var/tmp/builddmaster/
+
+At this point, each build page should display the built files. To upload the built image to a registry, run:
+
+.. code-block:: sh
+
+    $ ./cronscripts/process-job-source.py -v IOCIRegistryUploadJobSource
+
+You can manage the push rules via the ``Edit push rules`` button on the OCI recipe page.
+
 
 Dealing with the primary archive
 --------------------------------
 
-    * ``dput lpdev:ubuntu some_source.changes``
-    * ``scripts/process-upload.py -vvv /var/tmp/txpkgupload``
-    * Watch the output -- the upload might end up in NEW.
-    * If it does, go to the queue and accept it. 
-    * Your builder should now be busy. Once it finishes, the binaries might go into NEW. Accept them if required.
-    * ``scripts/process-accepted.py -vv ubuntu``
-    * ``scripts/publish-distro.py -vv``
-    * The first time, add ``-C`` to ensure a full publication of the archive.
+Upload your source package to the primary archive:
+
+.. code-block:: sh
+
+    $ dput lpdev:ubuntu some_source.changes
+
+Process the upload:
+
+.. code-block:: sh
+
+    $ scripts/process-upload.py -vvv /var/tmp/txpkgupload
+
+Watch the output — the upload might end up in NEW. If it does, go to the queue and accept it. Your builder should then start building. Once finished, the binaries might go into NEW as well. Accept them if required.
+
+Create publishings for accepted packages:
+
+.. code-block:: sh
+
+    $ scripts/process-accepted.py -vv ubuntu
+
+Publish the distro:
+
+.. code-block:: sh
+
+    $ scripts/publish-distro.py -vv
+
+On the first run, add ``-C`` to ensure a full publication of the archive:
+
+.. code-block:: sh
+
+    $ scripts/publish-distro.py -vv -C
