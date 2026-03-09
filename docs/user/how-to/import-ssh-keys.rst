@@ -54,15 +54,16 @@ Launchpad supports RSA, ECDSA and ED25519 key types.
           (public key) and ``id_ed25519`` (private key).
 
       Now you need to upload the public portion of your SSH key to Launchpad.
+      Output the contents of ``id_ed25519.pub`` using the ``cat`` command and 
+      copy the public key from the terminal::
+        
+        cat ~/.ssh/id_ed25519.pub
 
       .. note::
-          You may need to run ``ssh-add`` with the id file if you created
-          an id file other than ``~/.ssh/id_ed25519``.
-          Do ``ssh-add /path/to/file/id_ed25519_newfile``.
-          If you’re on the Mac, you can execute the following on the
-          command line::
+          If you created the id file in a location other than ``~/.ssh`` you may 
+          need to run ``ssh-add`` with the correct file path, i.e., ``ssh-add /path/to/file/id_ed25519_newfile``, 
+          so that the SSH agent can locate it.
 
-              cat ~/.ssh/id_ed25519.pub | pbcopy
 
    .. tab-item:: Windows (PuTTY)
       :sync: os-ssh
