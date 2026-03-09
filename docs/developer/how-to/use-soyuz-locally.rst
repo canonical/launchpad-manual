@@ -11,9 +11,8 @@ environment and build and publish it to a PPA.
 Initial setup
 -------------
 
-Ensure you have Launchpad set up locally. Follow the quickstart guide if you
-do not have it already. This tutorial assumes the Quickstart method, but the
-instructions are similar for the Advanced setup.
+Ensure you have Launchpad set up locally. Follow the :doc:`quickstart guide <running-quickstart>` if you
+do not have it already.
 
 Run the following steps from within the development environment.
 
@@ -124,10 +123,13 @@ The buildd that you have just installed needs registering with Launchpad so that
 
 3. Fill in the details:
 
-   - The URL is probably ``http://<buildd-ip>:8221``.
-   - You can make the builder virtualized or non-virtualized. Each requires different setup.
-   - Most production builders are virtualized with automatic VM reset at build end.
-   - Non-virtualized builders are simpler but require careful security (no untrusted code).
+   - URL: ``http://<buildd-ip>:8221``
+   - Builder type: Choose between:
+     
+     - *Virtualized* (similar to production): Automatically resets VMs after each build
+     - *Non-virtualized* (simpler for local development): Non-virtualized builders are simpler but require careful security (no untrusted code)
+   
+   For local development, chose ``non-virtualized`` builder.
 
 4. Change the builder from ``manual`` to ``auto`` mode via the UI.
 

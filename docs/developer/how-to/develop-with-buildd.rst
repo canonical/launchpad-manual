@@ -24,8 +24,8 @@ This is a convenience helper profile for VMs that will add users and run
 pass the options on the ``lxc`` command.
 
 For now, we are using the LXD provided cloud images as it has the LXD agent and
- ``cloud-init`` preinstalled. This requires a smaller LXD profile, but needs 
- some extra commands afterwards.
+``cloud-init`` preinstalled. This requires a smaller LXD profile, but needs 
+some extra commands afterwards.
 
 To create this run:
 
