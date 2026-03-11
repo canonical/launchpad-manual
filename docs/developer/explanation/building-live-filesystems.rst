@@ -51,6 +51,13 @@ they are a very easy way to consume lots of time on the Launchpad build farm,
 so only members of the `launchpad-livefs-builders <https://launchpad.net/~launchpad-livefs-builders>`_ 
 team can create new LiveFS or LiveFSBuild objects. 
 
+Neither LiveFS nor LiveFSBuild objects have inherent privacy controls of their 
+own. Instead, a LiveFS is always public unless its owner is a private team or 
+person. Similarly, a LiveFSBuild is public unless either the owner of the 
+LiveFS is private, or the archive or PPA that the LiveFSBuild uses as a source 
+is private. This means that privacy is inherited from related objects rather 
+than being directly configurable on the LiveFS or LiveFSBuild itself.
+
 Secondly, building a live filesystem involves executing code from packages in 
 the source archive. Therefore, in order to build live filesystems on 
 devirtualized builders (which, occasionally, support architectures not 
