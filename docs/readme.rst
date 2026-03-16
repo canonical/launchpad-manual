@@ -31,7 +31,7 @@ docs locally by following these steps:
 
 #.  Clone this repository::
 
-      git clone https://github.com/canonical/ubuntu-core-docs.git
+      git clone https://github.com/canonical/launchpad-manual.git
 
 #. Navigate to the ``/docs`` directory::
 
@@ -46,8 +46,8 @@ docs locally by following these steps:
       make run 
 
 The documentation will be served at ``http://127.0.0.1:8000`` by default. After
-the initial build, you only need to run ``make run`` to build the documentation
-on subsequent occasions.
+the first build, you can skip the first and third steps when rebuilding the 
+documentation in the future.
 
 Edit the documentation
 ----------------------
@@ -59,13 +59,13 @@ It's a good idea to ensure that the documentation builds locally with no errors
 or warnings before proposing to merge your changes. Changes that fail CI checks 
 due to avoidable errors will not be approved for merging. 
 
-**TIP**: The starter pack caches certain changes after the initial build. As a 
-result, your changes may not always show in a local build. To clear the cache, 
-use the ``make clean`` command before the next build.
+**TIP**: Some parts of the build, e.g., the HTML output and the document 
+structure are cached. Therefore, your changes may not show in subsequent builds. 
+Use the ``make clean`` command to clear the cache before building.
 
 Submit a pull request
 ---------------------
-You can't create a new branch of this repository. To create a pull request, 
+You can't create a new branch in this repository. To create a pull request, 
 your changes must be in a fork of this repository.
 
 CI checks
@@ -84,9 +84,9 @@ If your pull request fails a CI check due to avoidable issues in your changes,
 you will be required to make the necessary changes to ensure your PR passes the 
 relevant CI check.
 
-It is considered good practice to run the CI checks locally to catch any errors
+It is considered good practice to run the checks locally to catch any errors
 before submitting your PR and asking for a review. The commands you can use to
-run various CI checks locally include:
+run checks locally include:
 
 - ``make spelling``: Catch spelling errors or unrecognized words 
 - ``make linkcheck-discrete``: Identify broken or timing out links 
