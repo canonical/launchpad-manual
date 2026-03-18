@@ -23,8 +23,8 @@ To merge your accounts:
    `account merger page <https://launchpad.net/people/+requestmerge>`_.
 
 2. Enter the Launchpad name of the duplicate account. This is the name that
-   appears in the URL of your profile page: e.g.
-   ``https://launchpad.net/~john.doe``. If you're not sure what the account's
+   appears in the URL of your profile page: i.e.
+   ``https://launchpad.net/~<account-name>``. If you're not sure what the account's
    name is, click :kbd:`Choose` to search.
 
 3. Launchpad will send an email to the primary email address registered in the
