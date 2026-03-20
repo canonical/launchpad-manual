@@ -2,6 +2,8 @@
    :description: Work with launchpadlib Python library to integrate 
       applications with Launchpad web service.
 
+.. _work-with-launchpadlib:
+
 Work with launchpadlib
 ======================
 

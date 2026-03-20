@@ -2,6 +2,8 @@
    :description: Comprehensive guides for working with bugs in Launchpad 
       including filing, tracking, and plugin integrations.
 
+.. _work-with-bugs:
+
 Work with bugs
 ==============
 

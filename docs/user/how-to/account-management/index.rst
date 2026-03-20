@@ -2,6 +2,8 @@
    :description: Get started with Launchpad - create an account, integrate 
       applications, merge accounts, and manage your account settings.
 
+.. _account-management:
+
 Welcome to Launchpad!
 =====================
 
