@@ -2,6 +2,8 @@
    :description: Learn about Launchpad's privacy policy, email address 
       protection, data handling, and security issue disclosure practices.
 
+.. _privacy-confidentiality-disclosure:
+
 Privacy, confidentiality and disclosure
 =======================================
 

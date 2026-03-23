@@ -2,6 +2,8 @@
    :description: Understand what makes it possible to work with code in 
       Launchpad.
 
+.. _working-with-code:
+
 Working with code
 =================
 

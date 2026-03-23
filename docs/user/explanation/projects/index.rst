@@ -2,6 +2,8 @@
    :description: Understand projects in Launchpad including planning releases, 
       project announcements, and commercial features.
 
+.. _exp-projects-in-launchpad:
+
 Projects in Launchpad
 =====================
 
