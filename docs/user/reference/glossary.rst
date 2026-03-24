@@ -2,6 +2,8 @@
    :description: Glossary of Launchpad terminology including technical terms, 
       concepts, and definitions for developers and users.
 
+.. _glossary:
+
 Glossary
 ========
 
@@ -28,7 +30,7 @@ Glossary
 - **Suite:** The combination of a distro *series* and a *pocket* is called a suite: e.g. Hardy backports.
 
 Request a definition
-====================
+--------------------
 
 If you're unsure of a term that we use in Launchpad, add it here and we'll provide the definition. Subscribe to this page to receive an email notification when we update the page.
 

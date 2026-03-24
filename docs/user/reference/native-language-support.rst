@@ -2,6 +2,8 @@
    :description: Reference guide to native language support in Launchpad for 
       translations.
 
+.. _support-native-language:
+
 Support in your native language
 ===============================
 
