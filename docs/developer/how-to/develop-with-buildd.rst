@@ -83,7 +83,7 @@ and then you can setup a LXD VM profile using the following template:
 Start the LXD VM
 ~~~~~~~~~~~~~~~~
 
-Start a VM via downloading the images: cloud image
+Start the LXD VM
 
 .. code-block:: sh
   
