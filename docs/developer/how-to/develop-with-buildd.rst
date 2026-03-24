@@ -202,9 +202,9 @@ Note: You still need to edit ``/etc/launchpad-buildd/default`` and set ``ntphost
 Making changes
 ~~~~~~~~~~~~~~
 
-To make changes to launchpad-buildd code:
+To make changes to the `launchpad-buildd` code:
 
-- If you installed from PPA (Option 1): Clone the repository first, make your changes, then follow Option 2 or Option 3 above.
+- If you installed `buildd` from the PPA (Option 1): Clone the repository first, make your changes, then follow Option 2 or Option 3 above.
 - If you built and installed (Option 2): Make your changes, rebuild with ``make``, and reinstall the package.
 - If you're running directly (Option 3): Make your changes and restart the server. This is the fastest iteration cycle for development.
 

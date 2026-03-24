@@ -224,7 +224,7 @@ The builder should start building within five seconds. Wait until the build page
 
     $ scripts/process-upload.py -vvv --builds -C buildd /var/tmp/builddmaster
 
-Create publishings for the binaries:
+Create publications for the binaries:
 
 .. code-block:: sh
 
