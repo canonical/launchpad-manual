@@ -95,7 +95,7 @@ This will take a while to settle. You can monitor its progress with:
   
   $ lxd console build
 
-Once it has complete cloud-init, you should then see an IP assigned in 
+Once it has completed running `cloud-init`, you should see an IP address assigned to the VM in
 ``lxc list`` and be able to execute a bash shell with 
 
 .. code-block:: sh
