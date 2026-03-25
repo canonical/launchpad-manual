@@ -71,7 +71,7 @@ Report a bug
 Reporting a new bug by email is simple. Send an email to
 new@bugs.launchpad.net and describe the problem you're having. Tell
 Launchpad which project, distribution or distribution package the bug
-affects by using the ```affects`` command.
+affects by using the ``affects`` command.
 
 .. important::
 
