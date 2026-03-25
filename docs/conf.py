@@ -167,7 +167,7 @@ if os.getenv("OPENAPI", ""):
 # - https://git.launchpad.net/example
 #
 html_theme_options = {
-    "source_edit_link": "https://github.com/canonical/launchpad-manual/",
+    "source_edit_link": "https://github.com/canonical/launchpad-manual",
 #    "sidebar_hide_name": True,
 }
 
