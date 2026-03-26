@@ -7,8 +7,6 @@
 How-to guides
 =============
 
-.. include:: /includes/important_not_revised_help.rst
-
 If you are already familiar with Launchpad, these how-to guides can provide 
 guidance on how to achieve specific goals when using the platform. You can
 adapt these to meet other needs, but you may need to refer to some explanation 
@@ -33,7 +31,7 @@ Hosting your project code on Launchpad allows you to collaborate with others,
 build software packages from the code for distribution, translate the project 
 into other languages, and more.
 
-- :ref:`Projects <howto-projects>`
+- :ref:`Manage projects <howto-projects>`
 - :ref:`Work with code hosted on Launchpad <work-with-code-hosted-launchpad>`
 
 Software Packages
@@ -61,8 +59,8 @@ applications, and other websites. You can also use ``launchpadlib`` which allows
 you to treat the resources published by the API as Python objects. This makes 
 integration with other applications more straightforward.
 
-- :ref:`Launchpad web services API <launchpad-web-services-api>`
-- :ref:`launchpadlib <work-with-launchpadlib>`
+- :ref:`Use the Launchpad web services API <launchpad-web-services-api>`
+- :ref:`Work with launchpadlib <work-with-launchpadlib>`
 
 Contribute to the community 
 ---------------------------
