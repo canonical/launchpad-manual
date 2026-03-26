@@ -9,8 +9,8 @@ Get started with launchpadlib
 
 This document shows how to use a Python client to read and write Launchpad's
 data using the launchpadlib library. It doesn't cover the HTTP requests and
-responses that go back and forth behind the scenes: for that, see
-:ref:the `"hacking" document <developing-the-launchpad-project>`. This
+responses that go back and forth behind the scenes: for that, see the
+:ref:`"hacking" document <developing-the-launchpad-project>`. This
 document also doesn't cover the full range of what's possible with Launchpad's
 web service: for that, see the
 `web service reference documentation <http://launchpad.net/+apidoc/>`_. Check
