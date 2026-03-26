@@ -7,8 +7,6 @@
 Explanation
 ===========
 
-.. include:: /includes/important_not_revised_help.rst
-
 To make the most of your experience on Launchpad, it helps to understand what 
 takes place behind the scenes. The user explanation documentation can help with 
 that. To start getting more familiar with the platform, you can go through the 
@@ -47,10 +45,10 @@ integrate it with your project, and how to ask for or give help.
 
 Managing, packaging, releasing, and translating software 
 --------------------------------------------------------
-Registering your project on Launchpad allows others to work on it, but that is 
-just the start. Launchpad provides additional features you can use for planning,
-and managing releases, translating software, and making project files available 
-for download.
+Registering your project on Launchpad allows you to collaborate with others, 
+but that is just the start. You also get access to additional features you can 
+use for planning and managing releases, translating software, and building and
+distributing software through PPAs.
 
 - :ref:`Managing projects on Launchpad <exp-projects-in-launchpad>`
 - :ref:`Packaging your software for release <exp-packaging>`
@@ -58,9 +56,9 @@ for download.
 
 Working with code
 -----------------
-There are different ways to work with code on Launchpad including hosting git 
-repositories, importing git repositories from other platforms, and configuring 
-the CI to help you catch bugs early.
+There are different ways to `work with code on Launchpad <https://code.launchpad.net/>`_ 
+including hosting git repositories, importing git repositories from other 
+platforms, and configuring the CI to help you catch bugs early.
 
 - :ref:`Understand how to work with code on Launchpad <working-with-code>`
 
@@ -74,8 +72,9 @@ feature to effectively to manage your teams and what they work on.
 
 Launchpad API and launchpadlib 
 ------------------------------
-Understanding the Launchpad web services API and launchpadlib is essential when 
-you want to use Launchpad without the web interface.
+Understanding the `Launchpad web services API <https://api.launchpad.net/>`_ 
+and launchpadlib is essential when you want to use Launchpad without the web 
+interface.
 
 - :ref:`Launchpad API and launchpadlib <launchpad-api>`
 
