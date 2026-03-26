@@ -60,12 +60,11 @@ and then you can setup a LXD VM profile using the following template:
           shell: /bin/bash
           sudo: ALL=(ALL) NOPASSWD:ALL
           ssh-import-id: <lp username>
-    description: ""
     config:
       raw.idmap: |
         uid <output of "id -u"> 1000
         gid <output of "id -g"> 1000
-        devices:
+    devices:
       config:
         source: cloud-init:config
         type: disk
