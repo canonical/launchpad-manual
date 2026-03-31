@@ -106,3 +106,5 @@ user/how-to/launchpad-api/launchpad-web/ user/explanation/launchpad-api/launchpa
 user/YourAccount/NewAccount user/how-to/account-management/create-account
 developer/how-to/getting developer/how-to/get-source-code/
 developer/how-to/debug-tests-with-visual-studio-code developer/how-to/debug-with-visual-studio-code
+user/reference/packaging/ppas/copying-packages/ user/how-to/packaging/copying-packages/
+user/reference/packaging/ppas/deleting-packages/ user/how-to/packaging/deleting-packages/
