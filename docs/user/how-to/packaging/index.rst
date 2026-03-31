@@ -19,3 +19,5 @@ Packaging
     build-charms-in-launchpad
     build-oci-images-in-launchpad
     use-ppa-snapshot-service
+    copying-packages
+    deleting-packages
