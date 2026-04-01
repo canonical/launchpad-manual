@@ -1,6 +1,8 @@
 .. meta::
    :description: Complete guide to translating software with Launchpad. 
 
+.. _exp-translating:
+
 Translating
 ===========
 

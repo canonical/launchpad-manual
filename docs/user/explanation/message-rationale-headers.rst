@@ -1,6 +1,8 @@
 .. meta::
    :description: Understand rationale headers used in Launchpad emails.
 
+.. _rationale-headers-in-email:
+
 Rationale headers in Launchpad email
 ====================================
 
