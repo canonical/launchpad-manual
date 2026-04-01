@@ -2,6 +2,8 @@
    :description: Launchpad bug tracker references covering statuses, external 
       tracker integration, and the API plugin.
 
+.. _ref-bug-tracker-api:
+
 Bug tracker API
 ===============
 

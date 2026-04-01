@@ -2,6 +2,8 @@
    :description: Reference guide for branch information type to ensure Privacy 
       and confidentiality.
 
+.. _branch-information-types:
+
 Branch information types
 ========================
 

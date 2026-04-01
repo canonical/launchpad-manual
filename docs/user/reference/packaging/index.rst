@@ -2,6 +2,8 @@
    :description: Packaging reference for Launchpad including PPAs and source
       builds.
 
+.. _ref-packaging:
+
 Packaging
 =========
 

@@ -1,6 +1,8 @@
 .. meta::
    :description: Troubleshooting guide for resolving common Launchpad issues.
 
+.. _ref-troubleshooting:
+
 Troubleshooting
 ===============
 
