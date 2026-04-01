@@ -2,6 +2,8 @@
    :description: Practical guides for managing projects in Launchpad including 
       registration and translation management.
 
+.. _howto-projects:
+
 Projects
 ========
 
