@@ -46,7 +46,7 @@ user/QuestionLifeCycle	user/reference/question-life-cycle/
 user/ProjectGroups	user/reference/project-groups/
 user/Packaging/SourceBuilds/Recipes	user/how-to/source-package-recipe/
 user/Packaging/SourceBuilds	user/explanation/packaging/packaging/
-user/Packaging/PPA/Deleting	user/reference/packaging/ppas/deleting-packages/
+user/Packaging/PPA/Deleting	user/how-to/packaging/deleting-packages/
 user/Legal	user/reference/launchpad-and-community/legal/launchpad-policies/
 #  user/InterBugTracking	https://web.archive.org/web/20120714093517/https://help.launchpad.net/Bugs/InterBugTracking (doc not migrated)
 user/Code/UploadingABranch	user/explanation/working-with-code/git-hosting
@@ -106,3 +106,5 @@ user/how-to/launchpad-api/launchpad-web/ user/explanation/launchpad-api/launchpa
 user/YourAccount/NewAccount user/how-to/account-management/create-account
 developer/how-to/getting developer/how-to/get-source-code/
 developer/how-to/debug-tests-with-visual-studio-code developer/how-to/debug-with-visual-studio-code
+user/reference/packaging/ppas/copying-packages/ user/how-to/packaging/copying-packages/
+user/reference/packaging/ppas/deleting-packages/ user/how-to/packaging/deleting-packages/

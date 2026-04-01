@@ -4,16 +4,15 @@
 
 .. _copying-packages:
 
-Copying packages
-================
-
-.. include:: /includes/important_not_revised_help.rst
+Copy packages from PPAs
+==========================
 
 You can copy packages from other PPAs into any PPA that you can upload
 to. You also have the option of copying packages between distro-series
-(i.e different distribution releases).
+(i.e. different distribution releases).
 
-For example: take a look at the `Launchpad team's PPA copy packages <https://launchpad.net/~launchpad/+archive/ubuntu/ppa/+copy-packages>`_ page.
+For example: take a look at the `Launchpad team's PPA copy packages <https://launchpad.net/~launchpad/+archive/ubuntu/ppa/+copy-packages>`_
+page.
 
 Here you can:
 
@@ -36,11 +35,10 @@ Copy errors
 Version numbers need to be unique
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Once a version number is used, you cannot reuse it for the same archive
-/ PPA.
+Once a version number is used, you cannot reuse it for the same archive or PPA.
 
 When you try to copy packages to an archive or a PPA where the version
-number already exists, you will see an error message as following:
+number already exists, you will see the following error message:
 
 ::
 
