@@ -19,19 +19,19 @@ use of the Launchpad.net services. Canonical may revoke your permission
 to use these images if you make modifications to the images or use them
 incorrectly (e.g., on a project that does not use Launchpad.net).
 
-.. image:: ../../../developer/images/badges/launchpad-badge-w120px.png
+.. image:: ../../../user/images/badges/Launchpad_120px_badge.png
       :alt: Launchpad Badge 1
       :width: 120px
 
-.. image:: ../../../developer/images/badges/launchpad-badge-w160px.png
+.. image:: ../../../user/images/badges/Launchpad_160px_badge.png
    :alt: Launchpad Badge 2
    :width: 160px
 
-.. image:: ../../../developer/images/badges/launchpad-badge-w200px.png
+.. image:: ../../../user/images/badges/Launchpad_200px_badge.png
    :alt: Launchpad Badge 3
    :width: 200px
 
-.. image:: ../../../developer/images/badges/launchpad-badge-w250px.png
+.. image:: ../../../user/images/badges/Launchpad_250px_badge.png
    :alt: Launchpad Badge 4
    :width: 250px
 
