@@ -4,7 +4,7 @@
 
 .. _package-deletion:
 
-Deleting packages from PPAs
+Delete packages from PPAs
 ===========================
 
 You can delete any package from your PPA. However, it can take some time
