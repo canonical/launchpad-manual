@@ -636,6 +636,7 @@ proname
 proxied
 psql
 pstats
+publishings
 px
 py
 pydoctor
