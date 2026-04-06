@@ -52,7 +52,7 @@ Create a branch from a reasonable point, such as ``master``.
     git checkout -b <descriptive-branch-name>
 
 Make your changes on the branch. Be sure to test them locally by setting up a
-local :doc:`Launchpad development instance <running>`.
+local :ref:`Launchpad development instance <setting-up-and-running-launchpad-advanced>`.
 
 When it comes to commit messages, please follow these guidelines:
 
@@ -77,7 +77,7 @@ Commit body
 Run the pre-commit hook
 -----------------------
 
-If you followed the instructions to :doc:`set up and run Launchpad <running>`,
+If you followed the instructions to :ref:`set up and run Launchpad <setting-up-and-running-launchpad-advanced>`,
 you should already have ``pre-commit`` installed and have the
 :ref:`pre-commit git hook <pre-commit>` installed. If not, complete these steps
 before proceeding.

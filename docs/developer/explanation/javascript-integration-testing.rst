@@ -2,6 +2,8 @@
    :description: Understand JavaScript integration testing in Launchpad using 
       the yuitest library.
 
+.. _integration-testing-in-javascript:
+
 Integration testing in JavaScript
 =================================
 
@@ -10,7 +12,7 @@ We use the Graded Browser Support chart to determine which browser's code should
 be regularly tested in.
 
 Every JavaScript component should be tested first and foremost using
-:doc:`unit testing <javascript-unittesting>`.
+:ref:`unit testing <developing-with-yui-test>`.
 
 We have infrastructure to write tests centred on the integration
 between the JavaScript component and the app server (regular API or

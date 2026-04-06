@@ -1,6 +1,8 @@
 .. meta::
    :description: How to land updates for the Loggerhead Bazaar code browser.
 
+.. _landing-updates-for-loggerhead:
+
 Landing updates for Loggerhead
 ==============================
 

@@ -1,6 +1,8 @@
 .. meta::
    :description: Debug Launchpad pagetests using pdb breakpoints.
 
+.. _debug-stories-pagetests:
+
 Debug stories/pagetests
 =======================
 

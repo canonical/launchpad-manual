@@ -1,6 +1,8 @@
 .. meta::
    :description: Python coding style guide for Launchpad development.
 
+.. _python-style-guide:
+
 ==================
 Python style guide
 ==================
@@ -37,7 +39,7 @@ Related documents
 * `Exception guidelines <https://dev.launchpad.net/ExceptionGuidelines>`_
 * :ref:`Assertions <assertions-in-launchpad>`
 * `Launchpad hacking FAQ <https://dev.launchpad.net/LaunchpadHackingFAQ>`_
-* :doc:`Tests style guide <tests>`
+* :ref:`Tests style guide <tests-style-guide>`
 
 Formatting
 ==========

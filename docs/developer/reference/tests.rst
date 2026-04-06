@@ -1,6 +1,8 @@
 .. meta::
    :description: Summary of conventions for Launchpad Tests. 
 
+.. _tests-style-guide:
+
 =================
 Tests style guide
 =================
@@ -89,8 +91,8 @@ Common conventions
 
 The basic conventions for testable documentation are:
 
-* Example code is wrapped at 78 columns, follows the regular :doc:`Python
-  style guide <python>`, and is indented 4 spaces.
+* Example code is wrapped at 78 columns, follows the regular :ref:`Python
+  style guide <python-style-guide>`, and is indented 4 spaces.
 * Narrative text may be wrapped at either 72 or 78 columns.
 * You can use regular Python comments for explanations related to the code
   and not to the documentation.
@@ -480,8 +482,8 @@ prefer this:
         foo="expected",
         bar="more expected"))
 
-In general, you should follow Launchpad coding conventions (see :doc:`Python
-style guide <python>`), however when naming test methods:
+In general, you should follow Launchpad coding conventions (see :ref:`Python
+style guide <python-style-guide>`), however when naming test methods:
 
 * Use PEP 8 names, e.g. ``test_for_my_feature()``
 * When testing a specific Launchpad method, a mix of PEP 8 and camel case is

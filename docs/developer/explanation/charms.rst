@@ -2,6 +2,8 @@
    :description: Overview of Juju charm development principles and process for 
       Launchpad deployments.
 
+.. _charm-development:
+
 =================
 Charm development
 =================

@@ -26,9 +26,9 @@ system. The major sub-systems are:
 -  Email processing
 -  Code imports (from CVS, Subversion, git and Mercurial)
 -  Branch source code browser (`cgit <https://git.zx2c4.com/cgit/>`__
-   for Git; :doc:`loggerhead <../how-to/land-update-for-loggerhead>` for Bazaar)
+   for Git; :ref:`loggerhead <landing-updates-for-loggerhead>` for Bazaar)
 -  Source package recipes (`git-build-recipe`/`bzr-builder\` integration
-   with :doc:`Soyuz ../how-to/use-soyuz-locally`)
+   with :ref:`Soyuz <how-to-use-soyuz-locally>`)
 
 Each of these subsystems also have multiple moving parts and some have
 other asynchronous jobs associated with them.
@@ -36,7 +36,7 @@ other asynchronous jobs associated with them.
 The `codehosting overview diagram :attachment:../images/codehosting.png`
 summarises how some of these systems interact.
 
-You can :doc:`run the codehosting system locally <../how-to/codehosting-locally>`.
+You can :ref:`run the codehosting system locally <how-to-use-codehosting-locally>`.
 
 We no longer put significant effort into bzr hosting beyond making sure
 it remains functional. The future of bzr is
@@ -210,7 +210,7 @@ branch.
 -  loggerhead itself - community project but with major contributions
    from Canonical
 
-See :doc:`Loggerhead for Launchpad developers <../how-to/land-update-for-loggerhead>` for details on
+See :ref:`Loggerhead for Launchpad developers <landing-updates-for-loggerhead>` for details on
 how to land changes to Launchpad loggerhead.
 
 Source package recipes

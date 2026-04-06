@@ -11,7 +11,7 @@ greeting from a specific user. This will be available at ``/~username/+hello``.
 Pre-requisites
 ==============
 
-You have the :doc:`Launchpad development environment set up <../how-to/running>`.
+You have the :ref:`Launchpad development environment set up <setting-up-and-running-launchpad-advanced>`.
 
 Introduction
 ============

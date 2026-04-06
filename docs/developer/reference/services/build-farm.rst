@@ -2,6 +2,8 @@
    :description: Reference doc linking to resources related to the Launchpad 
       build farm including documentation, git repositories, and bug trackers.
 
+.. _build-farm:
+
 Build farm
 ==========
 
@@ -37,7 +39,7 @@ package builds, ``snapcraft`` for snap builds, etc.
 Builders do not have direct access to the Internet, but rather need to
 acquire an authentication token to be able to access a restricted set of
 URLs on the Internet via a proxy. This can either be a squid proxy or the
-:doc:`fetch service <fetch-service>`, determined by a ``use_fetch_service``
+:ref:`fetch service <fetch-service>`, determined by a ``use_fetch_service``
 flag. Currently, the fetch service can only be used for building snaps, charms,
 rocks and sourcecraft packages.
 
@@ -133,7 +135,7 @@ builder-proxy (squid)
 fetch-service
 ^^^^^^^^^^^^^
 
-See :doc:`Fetch Service <fetch-service>` logs section.
+See :ref:`Fetch Service <fetch-service>` logs section.
 
 
 Staging
@@ -164,7 +166,7 @@ builder-proxy (squid)
 fetch-service
 ^^^^^^^^^^^^^
 
-See :doc:`Fetch Service <fetch-service>` logs section.
+See :ref:`Fetch Service <fetch-service>` logs section.
 
 Monitoring
 ----------

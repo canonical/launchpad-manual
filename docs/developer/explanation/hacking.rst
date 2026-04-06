@@ -9,7 +9,7 @@ Hacking
 
 .. note::
 
-    Want to navigate the source tree? Look at :doc:`Navigating <navigating>`.
+    Want to navigate the source tree? Look at :ref:`Navigating <navigating-the-tree>`.
 
 Python programming
 ------------------
@@ -809,7 +809,7 @@ We use virtualenv and pip for our build system.
 Where can I read about it?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Also see the :doc:`explanation about our pip setup <pip>`.
+Also see the :ref:`explanation about our pip setup <launchpad-pip-integration>`.
 
 You can read more general information on https://pip.pypa.io/en/stable/.
 

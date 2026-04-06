@@ -2,6 +2,8 @@
    :description: Understand the values behind Launchpad; why certain decisions
       were made, and why things are implemented as they are.
 
+.. _launchpad-values:
+
 ================
 Launchpad values
 ================
@@ -10,9 +12,9 @@ Whenever we are thinking about what Launchpad should be, or how we should
 implement a change, or whether something is a good idea or not, we have
 recourse to three distinct sets of guidelines.
 
-The first is :doc:`strategy`, which reminds us why we are making Launchpad and
+The first is :ref:`launchpad-strategy`, which reminds us why we are making Launchpad and
 helps us answer questions such as "How does this help Launchpad meet its
-goals?".  The second is :doc:`scope`, which helps us answer questions like "Is
+goals?".  The second is :ref:`what-is-launchpad`, which helps us answer questions like "Is
 this in scope?".  Together, they sort out the 'matter' of Launchpad.
 
 The third is this document, the Launchpad Values.  It tries to address the
@@ -20,7 +22,7 @@ The third is this document, the Launchpad Values.  It tries to address the
 you.  Rather, it will rule out certain options and decisions before they are
 even considered.
 
-Like the :doc:`strategy`, this document is living: it should be changed and
+Like the :ref:`launchpad-strategy`, this document is living: it should be changed and
 improved as we learn more about how to make Launchpad.  It is also
 aspirational: not all of Launchpad lives up to these values.
 
@@ -172,5 +174,5 @@ then sent back to the upstream.
 References
 ==========
 
-* :doc:`strategy`
-* :doc:`scope`
+* :ref:`launchpad-strategy`
+* :ref:`what-is-launchpad`

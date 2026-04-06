@@ -19,7 +19,7 @@ fundamentally secure.
 
 We only use Ubuntu LTS releases, which gets professional security support.
 
-We monitor updates of both system and :doc:`Python packages <pip>` closely,
+We monitor updates of both system and :ref:`Python packages <launchpad-pip-integration>` closely,
 and update or patch our systems and applications accordingly.
 
 We use a restrictive network setup between all our systems, especially
@@ -76,7 +76,7 @@ especially important given the interactions between visibility and mutability
 rules of multiple objects found on many Launchpad pages.
 
 You can learn more about how we use it in
-:doc:`Handling security policies <../how-to/security>`.
+:ref:`Handling security policies <handling-security-policies>`.
 
 Permissions
 -----------
