@@ -1,6 +1,8 @@
 .. meta::
    :description: How to rename database tables in Launchpad.
 
+.. _rename-database-table:
+
 =========================
 Renaming a database table
 =========================

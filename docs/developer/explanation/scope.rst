@@ -341,6 +341,6 @@ Downstream
 References
 ==========
 
-* :doc:`strategy`
-* :doc:`values`
+* :ref:`launchpad-strategy`
+* :ref:`launchpad-values`
 * :ref:`Feature highlights <launchpad-feature-highlights>`

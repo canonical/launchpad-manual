@@ -24,8 +24,8 @@ and run: ``utilities/make-lp-user test-user``.
 Staging/qastaging
 ~~~~~~~~~~~~~~~~~
 
-Some development environments, such as those deployed using the :doc:`Mojo
-spec <../explanation/charms>`, use production Single Sign-On for
+Some development environments, such as those deployed using the :ref:`Mojo
+spec <charm-development>`, use production Single Sign-On for
 authentication.  In these environments, you should not use
 ``utilities/make-lp-user``; instead, log into 
 ``https://{qastaging,staging}.launchpad.net/`` via SSO as you would on 

@@ -3,6 +3,8 @@
       best OS by improving Canonical's productivity and open source development 
       efficiency.
 
+.. _launchpad-strategy:
+
 ==================
 Launchpad strategy
 ==================
@@ -196,6 +198,6 @@ than many open source and even proprietary projects.
 References
 ==========
 
-* :doc:`scope`
-* :doc:`values`
+* :ref:`what-is-launchpad`
+* :ref:`launchpad-values`
 * :ref:`Feature checklist <launchpad-feature-highlights>`

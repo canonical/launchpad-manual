@@ -1,6 +1,8 @@
 .. meta::
    :description: How to develop with Buildd using LXD VM.
 
+.. _develop-with-buildd:
+
 How to develop with Buildd
 ==========================
 
@@ -263,7 +265,7 @@ First, you'll need to run some extra bits in Launchpad:
 Image setup
 -----------
 
-Consult the 'Launchpad Configuration' section of :doc:`use-soyuz-locally` to do the correct ``manage-chroot`` dance to register an image with launchpad. Without this, you will have no valid buildable architectures.
+Consult the 'Launchpad Configuration' section of :ref:`use-soyuz-locally` to do the correct ``manage-chroot`` dance to register an image with launchpad. Without this, you will have no valid buildable architectures.
 
 User setup
 ----------

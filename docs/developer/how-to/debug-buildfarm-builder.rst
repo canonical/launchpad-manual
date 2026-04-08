@@ -82,7 +82,7 @@ Cowboy builder
 
 .. tip::
 
-   Either :ref:`disable<disable-builder>` or switch to manual every
+   Either :ref:`disable <disable-builder>` or switch to manual every
    builder in the same architecture except one, and make the cowboy on that
    builder only. Otherwise, the location of the next triggered build will be
    randomized.

@@ -37,7 +37,7 @@ directly related to code structure or quality.
 Related documents
 -----------------
 
-The :doc:`Python style guide <../reference/python>` specifies coding style guidelines.
+The :ref:`Python style guide <python-style-guide>` specifies coding style guidelines.
 
 Values
 ======

@@ -2,11 +2,13 @@
    :description: Navigate the Launchpad source tree with guidance on key 
       directories including bin, utilities, lib, and database folders.
 
+.. _navigating-the-tree:
+
 ===================
 Navigating the tree
 ===================
 
-See :doc:`../how-to/running` to learn how to get Launchpad's code and set up
+See :ref:`set-up-and-run-launchpad-advanced` to learn how to get Launchpad's code and set up
 a local development environment.
 
 The Launchpad tree is big, messy and changing.  Sorry about that.  Don't panic
