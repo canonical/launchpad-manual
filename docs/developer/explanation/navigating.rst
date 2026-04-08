@@ -8,7 +8,7 @@
 Navigating the tree
 ===================
 
-See :ref:`setting-up-and-running-launchpad-advanced` to learn how to get Launchpad's code and set up
+See :ref:`set-up-and-run-launchpad-advanced` to learn how to get Launchpad's code and set up
 a local development environment.
 
 The Launchpad tree is big, messy and changing.  Sorry about that.  Don't panic

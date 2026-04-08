@@ -15,7 +15,7 @@ Alternative trunk
 -----------------
 
 Check out the \`db-devel\` branch in your :ref:`existing git
-clone <setting-up-and-running-launchpad-advanced>`:
+clone <set-up-and-run-launchpad-advanced>`:
 
 ::
 

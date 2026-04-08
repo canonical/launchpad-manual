@@ -29,4 +29,4 @@ If you're dealing with sprites you will need to build the image:
 
    make sprite_image
 
-More info on :ref:`sprites <using-css-sprites>`.
+More info on :ref:`sprites <use-css-sprites>`.

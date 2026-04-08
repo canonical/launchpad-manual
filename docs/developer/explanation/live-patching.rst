@@ -132,7 +132,7 @@ Table renaming
 
 Because code is being deployed separately from database updates, we need
 to maintain a fully updateable working alias for the old table name to
-the new table name. See :ref:`Rename Database Table <renaming-a-database-table>` for an example
+the new table name. See :ref:`Rename Database Table <rename-database-table>` for an example
 database patch.
 
 Adding columns

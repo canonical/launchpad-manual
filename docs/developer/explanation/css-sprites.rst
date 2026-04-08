@@ -2,7 +2,7 @@
    :description: Learn how to use CSS sprites in Launchpad templates for 
       improved website performance.
 
-.. _using-css-sprites:
+.. _use-css-sprites:
 
 Using CSS sprites
 =================

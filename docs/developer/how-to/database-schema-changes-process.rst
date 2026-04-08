@@ -13,7 +13,7 @@ Step-by-step procedure
 ----------------------
 
 1. Prepare a branch containing just :ref:`your database
-   patch <making-a-database-patch>` for review.
+   patch <make-a-database-patch>` for review.
 
    -  The patch must either be a hot patch (function / trigger / index)
       or a cold patch (model change / model change + function/trigger).
@@ -91,9 +91,9 @@ they will be promoted to ``master`` as part of the go-live process.
 Hot patches
 ~~~~~~~~~~~
 
-:ref:`live-database-patching` explains how
-hot-patching works and what sorts of things we can hot-patch. It's the
-authority — we may be able to hot-patch more as our tooling improves.
+:ref:`live-database-patching` explains how hot-patching works and what sorts of 
+things we can hot-patch. It's the authority — we may be able to hot-patch more 
+as our tooling improves.
 
 Cold patches
 ~~~~~~~~~~~~
@@ -152,7 +152,7 @@ deployments, **no-one should use a -0 patch.**
 Instructions for choosing a patch number are in the docs in the
 dbpatches repository.
 
-.. _making-a-database-patch:
+.. _make-a-database-patch:
 
 Making a database patch
 -----------------------

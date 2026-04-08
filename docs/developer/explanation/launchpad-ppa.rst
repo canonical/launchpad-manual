@@ -158,4 +158,4 @@ In progress
 -  Focal (next, next production LTS?)
 
 When the supported series change, remember to also update
-:ref:`get-the-source-code` and :ref:`setting-up-and-running-launchpad-advanced`.
+:ref:`get-the-source-code` and :ref:`set-up-and-run-launchpad-advanced`.

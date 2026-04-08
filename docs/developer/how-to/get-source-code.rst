@@ -22,8 +22,8 @@ Launchpad is a core of service-specific code surrounding various third-party
 libraries.
 
 The process of building Launchpad locally requires a number of steps. You can
-follow the quick start instructions in :ref:`Running <setting-up-and-running-launchpad-quickstart>` or
-the advanced instructions in :ref:`Running <setting-up-and-running-launchpad-advanced>`.
+follow the quick start instructions in :ref:`Running <set-up-and-run-launchpad-quickstart>` or
+the advanced instructions in :ref:`Running <set-up-and-run-launchpad-advanced>`.
 
 
 Clone the repository

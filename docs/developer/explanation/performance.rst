@@ -73,7 +73,7 @@ in order to avoid querying the database more often then necessary.
 
 When changing code, it can easily happen to increase the query count. You can
 avoid this by using a helper to
-:ref:`preserve query count <preserving-query-count>`.
+:ref:`preserve query count <preserve-query-count>`.
 
 When you face performance or even timeout issues, you should learn more about
 `timeout analysis`_ (internal video).

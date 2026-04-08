@@ -2,7 +2,7 @@
    :description: Quick guide to setting up and running Launchpad for 
       development.
 
-.. _setting-up-and-running-launchpad-quickstart:
+.. _set-up-and-run-launchpad-quickstart:
 
 =============================================
 Setting up and running Launchpad (quickstart)

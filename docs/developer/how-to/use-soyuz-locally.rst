@@ -1,7 +1,7 @@
 .. meta::
    :description: Set up and use Soyuz locally for package building and testing.
 
-.. _how-to-use-soyuz-locally:
+.. _use-soyuz-locally:
 
 How to use Soyuz locally
 ========================
@@ -39,7 +39,8 @@ Set up a builder
 Set up for development
 ^^^^^^^^^^^^^^^^^^^^^^
 
-If you are intending to do any development on ``launchpad-buildd`` or similar, you possibly want :ref:`how-to-develop-with-buildd`.
+If you are intending to do any development on ``launchpad-buildd`` or similar, 
+you possibly want to :ref:`develop-with-buildd`.
 
 Installation
 ^^^^^^^^^^^^
