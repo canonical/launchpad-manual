@@ -22,3 +22,4 @@ Launchpad development tips
    launchpad-api-docs
    codehosting-locally
    rename-database-table
+   mockio
