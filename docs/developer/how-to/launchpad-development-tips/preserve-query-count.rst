@@ -2,6 +2,8 @@
    :description: Ensure constant database query counts when reading or creating 
       multiple items.
 
+.. _preserve-query-count:
+
 ======================
 Preserving query count
 ======================

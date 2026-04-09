@@ -43,7 +43,7 @@ If you are dealing with sprites you may also have to run:
 
    make sprite_image
 
-:doc:`More info on sprites <css-sprites>`.
+:ref:`More info on sprites <use-css-sprites>`.
 
 Fonts
 -----

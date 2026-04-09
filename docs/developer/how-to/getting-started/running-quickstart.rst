@@ -2,7 +2,7 @@
    :description: Quick guide to setting up and running Launchpad for 
       development.
 
-.. _setting-up-and-running-launchpad-quickstart:
+.. _set-up-and-run-launchpad-quickstart:
 
 =============================================
 Setting up and running Launchpad (quickstart)
@@ -19,7 +19,7 @@ own machine, using a `LXD
 `install <https://canonical.com/lxd/install>`_ LXD as a snap. 
 
 After you've done this, you may want to read about
-:doc:`../explanation/navigating`.
+:ref:`navigating-the-tree`.
 
 Supported operating systems
 ===========================

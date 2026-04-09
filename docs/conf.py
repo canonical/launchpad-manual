@@ -331,6 +331,7 @@ linkcheck_ignore = [
     "/../YourProject/ImportingTemplates",
     "Answer syntax parsing <Comments>",
     "https://help.ubuntu.com/community/SSO/FAQs", #timeout, should be temporary
+    "https://requesttracker.com/request-tracker/",  #URL is rate limited
 ]
 
 

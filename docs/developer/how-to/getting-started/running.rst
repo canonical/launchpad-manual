@@ -1,7 +1,7 @@
 .. meta::
    :description: Advanced guide to setting up and running Launchpad.
 
-.. _setting-up-and-running-launchpad-advanced:
+.. _set-up-and-run-launchpad-advanced:
 
 Setting up and running Launchpad (advanced)
 ===========================================
@@ -17,7 +17,7 @@ own machine, using a `LXD
 isolate it from the rest of your system.
 
 After you've done this, you may want to read about
-:doc:`../explanation/navigating`.
+:ref:`navigating-the-tree`.
 
 .. _supported_operating_systems:
 
@@ -177,7 +177,7 @@ Then:
    $ curl https://git.launchpad.net/launchpad/plain/utilities/rocketfuel-setup >rocketfuel-setup
 
 Read through the rocketfuel-setup script at this point and make sure you're
-OK with what it's going to do.  (See :doc:`../explanation/running-details` if you want to
+OK with what it's going to do.  (See :ref:`launchpad-installation-details` if you want to
 know more.)
 
 .. code-block:: shell-session
@@ -362,7 +362,7 @@ self-signed certificate. You can log in as ``admin@canonical.com`` without
 a password. (This is only for development convenience, and assumes that you
 trust machines that can route to your LXD containers; of course a production
 deployment would need real authentication.). If you want to create more user
-accounts, see :doc:`./manage-users`.
+accounts, see :ref:`manage-users-and-teams-in-development-environments`.
 
 Accessing launchpad.test from a single host over SSH
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -450,7 +450,7 @@ Email
 Development Launchpads don't send email to the outside world, for obvious
 reasons.  They connect to the local SMTP server and send to root.  To create
 new users, create a new account and check the local mailbox, or see
-:doc:`./manage-users`.
+:ref:`manage-users-and-teams-in-development-environments`.
 
 .. _database-permissions:
 

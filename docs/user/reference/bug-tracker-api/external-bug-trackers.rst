@@ -24,7 +24,7 @@ This table shows you what level of interoperability Launchpad has with which ext
      - `Trac <http://trac.edgewall.org/>`_
      - `Mantis <http://www.mantisbt.org/>`_
      - `SourceForge <http://sourceforge.net/>`_
-     - `Request Tracker <http://bestpractical.com/rt>`_
+     - `Request Tracker <https://requesttracker.com/request-tracker/>`_
      - Savane
      - `GitHub <https://github.com/>`_
      - `GitLab <https://gitlab.com/>`_
