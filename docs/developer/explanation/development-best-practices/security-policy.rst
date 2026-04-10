@@ -2,10 +2,12 @@
    :description: Learn how Launchpad uses permissions to control access to 
       views and object attributes and methods.
 
+.. _launchpad-permissions:
+
 Launchpad permissions
 ======================
 
-.. include:: ../../includes/important_not_revised.rst
+.. include:: ../../../includes/important_not_revised.rst
 
 Launchpad uses "permission" to control access to views, object
 attributes and object methods.

@@ -1,6 +1,8 @@
 .. meta::
    :description: Learn techniques and tools for improving Launchpad performance.
 
+.. _about-launchpad-performance:
+
 About Launchpad performance
 ===========================
 

@@ -2,10 +2,12 @@
    :description: Understand Launchpad's XXX policy for marking code areas 
       requiring follow-up.
 
+.. _xxx-policy:
+
 XXX policy
 ==========
 
-.. include:: ../../includes/important_not_revised.rst
+.. include:: ../../../includes/important_not_revised.rst
 
 Policy statement
 ----------------

@@ -1,10 +1,12 @@
 .. meta::
    :description: datetime usage guidelines in Launchpad code.
 
+.. _datetime-usage-guide:
+
 Datetime usage guide
 ====================
 
-.. include:: ../../includes/important_not_revised.rst
+.. include:: ../../../includes/important_not_revised.rst
 
 There are a number of places in Launchpad where ``datetime`` types are used:
 

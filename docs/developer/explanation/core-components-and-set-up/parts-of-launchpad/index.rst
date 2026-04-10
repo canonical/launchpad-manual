@@ -1,6 +1,8 @@
 .. meta::
    :description: Overview of the different parts of Launchpad.
 
+.. _parts-of-launchpad:
+
 Parts of Launchpad
 ===================
 

@@ -1,6 +1,8 @@
 .. meta::
    :description: Learn how to develop against Launchpad's db-devel branch.
 
+.. _working-with-db-devel:
+
 Working with db-devel
 =====================
 

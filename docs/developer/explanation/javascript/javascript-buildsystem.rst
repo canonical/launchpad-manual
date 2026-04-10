@@ -2,10 +2,12 @@
    :description: Learn about the Launchpad JavaScript build system for bundling, 
       minifying, and distributing Javascript modules.
 
+.. _javascript-build-system:
+
 The Launchpad JavaScript build system
 =====================================
 
-.. include:: ../../includes/important_not_revised.rst
+.. include:: ../../../includes/important_not_revised.rst
 
 **Current in process of deprecating, see combo loader docs below.**
 

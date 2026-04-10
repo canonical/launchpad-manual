@@ -2,6 +2,8 @@
    :description: Learn PostgreSQL was chosen for Launchpad and the degree 
       of integration between the database and code.
 
+.. _postgresql-and-launchpad:
+
 ========================
 PostgreSQL and Launchpad
 ========================

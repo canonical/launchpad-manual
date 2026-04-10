@@ -5,7 +5,7 @@
 Engineering overview: translations
 ==================================
 
-.. include:: ../../includes/important_not_revised.rst
+.. include:: ../../../../includes/important_not_revised.rst
 
 This is for engineers who are already familiar with the Launchpad
 codebase, but are going to work on the Translations subsystem.

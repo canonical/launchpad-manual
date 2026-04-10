@@ -1,10 +1,12 @@
 .. meta::
    :description: Learn how to test different Launchpad changes locally.
 
+.. _testing-launchpad-changes:
+
 Testing
 =======
 
-.. include:: ../../includes/important_not_revised.rst
+.. include:: ../../../includes/important_not_revised.rst
 
 Testing your Launchpad changes
 ------------------------------

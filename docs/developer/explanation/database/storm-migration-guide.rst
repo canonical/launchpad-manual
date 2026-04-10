@@ -2,10 +2,12 @@
    :description: Learn how SQLObject concepts map to Storm ORM equivalents 
       for migrating Launchpad code to Storm database layer.
 
+.. _storm-migration-guide:
+
 Storm migration guide
 =====================
 
-.. include:: ../../includes/important_not_revised.rst
+.. include:: ../../../includes/important_not_revised.rst
 
 This guide explains how certain SQLObject concepts map to equivalent
 Storm concepts. It expects a level of familiarity in how SQLObject works

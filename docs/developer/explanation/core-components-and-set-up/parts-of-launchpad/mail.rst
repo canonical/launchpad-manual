@@ -5,7 +5,7 @@
 Launchpad mail
 ==============
 
-.. include:: ../../includes/important_not_revised.rst
+.. include:: ../../../../includes/important_not_revised.rst
 
 There are various kinds of emails in Launchpad:
 

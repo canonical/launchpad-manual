@@ -2,10 +2,12 @@
    :description: Comprehensive hacking guide covering Python programming, 
       version targeting, coding practices, and development tips for Launchpad.
 
+.. _hacking-guide:
+
 Hacking
 =======
 
-.. include:: ../../includes/important_not_revised.rst
+.. include:: ../../../includes/important_not_revised.rst
 
 .. note::
 

@@ -2,10 +2,12 @@
    :description: Overview of Launchpad CSS files including fonts, colors, and
       base elements. 
 
+.. _launchpad-css:
+
 CSS
 ===
 
-.. include:: ../../includes/important_not_revised.rst
+.. include:: ../../../includes/important_not_revised.rst
 
 Files
 -----

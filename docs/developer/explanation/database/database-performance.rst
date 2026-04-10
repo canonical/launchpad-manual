@@ -2,10 +2,12 @@
    :description: Learn about database query optimization, common causes of 
       performance issues, and diagnosis tools and approaches.
 
+.. _database-performance:
+
 Database performance
 ====================
 
-.. include:: ../../includes/important_not_revised.rst
+.. include:: ../../../includes/important_not_revised.rst
 
 Poor query times - looks right, takes ages
 ------------------------------------------

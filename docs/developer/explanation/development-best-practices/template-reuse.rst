@@ -2,10 +2,12 @@
    :description: Learn template reuse techniques using fragment views and 
       macros.
 
+.. _template-reuse:
+
 Template reuse
 ==============
 
-.. include:: ../../includes/important_not_revised.rst
+.. include:: ../../../includes/important_not_revised.rst
 
 It's wasteful, and generally harmful, to have the same code repeated in
 multiple places, even if that code is HTML. A single definition means

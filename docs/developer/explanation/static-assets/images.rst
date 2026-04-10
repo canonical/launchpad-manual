@@ -2,6 +2,8 @@
    :description: Learn where images should be located in Launchpad directory 
       structure for proper organization and accessibility.
 
+.. _launchpad-images:
+
 Images
 ======
 

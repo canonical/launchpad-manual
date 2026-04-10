@@ -1,6 +1,8 @@
 .. meta::
    :description: Understand the favicon files generated from SVG files.
 
+.. _launchpad-favicons:
+
 Favicons: Why so many files and what do they do?
 ------------------------------------------------
 

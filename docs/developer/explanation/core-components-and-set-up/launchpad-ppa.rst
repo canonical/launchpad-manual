@@ -2,10 +2,12 @@
    :description: Learn about the PPA containing dependencies needed to run 
       Launchpad.
 
+.. _the-launchpad-ppa:
+
 The Launchpad PPA
 =================
 
-.. include:: ../../includes/important_not_revised.rst
+.. include:: ../../../includes/important_not_revised.rst
 
 The Launchpad PPA (https://launchpad.net/~launchpad/+archive/ppa)
 contains dependencies for running Launchpad.

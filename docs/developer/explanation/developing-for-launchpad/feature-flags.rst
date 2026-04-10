@@ -2,10 +2,12 @@
    :description: Learn how feature flags are implemented to allow runtime 
       configuration changes in Launchpad.
 
+.. _feature-flags:
+
 Feature flags
 =============
 
-.. include:: ../../includes/important_not_revised.rst
+.. include:: ../../../includes/important_not_revised.rst
 
 **Feature Flags allow Launchpad's configuration to be changed while it's
 running, and for particular features or behaviours to be exposed to only

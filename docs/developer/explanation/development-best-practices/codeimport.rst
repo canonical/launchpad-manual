@@ -2,6 +2,8 @@
    :description: Learn about Launchpad's code import system for one-way 
       synchronization from external repositories.
 
+.. _code-import-in-depth:
+
 ====================
 Code import in depth
 ====================

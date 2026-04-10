@@ -5,7 +5,7 @@
 Launchpad code hosting
 ======================
 
-.. include:: ../../includes/important_not_revised.rst
+.. include:: ../../../../includes/important_not_revised.rst
 .. include:: /includes/bazaar-discontinued.rst
 
 Launchpad hosts source code using `Git <https://git-scm.com/>`__ and

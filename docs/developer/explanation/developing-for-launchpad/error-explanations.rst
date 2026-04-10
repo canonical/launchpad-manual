@@ -1,6 +1,8 @@
 .. meta::
    :description: Debug error messages in Launchpad.
 
+.. _error-explanations:
+
 Error explanations
 ==================
 
