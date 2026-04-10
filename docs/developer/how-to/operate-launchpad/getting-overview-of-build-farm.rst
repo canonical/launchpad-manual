@@ -2,6 +2,8 @@
    :description: How to get an overview of Launchpad's build farm 
       infrastructure using web views or command-line tools.
 
+.. _get-overview-of-build-farm:
+
 =============================================
 Getting an overview of Launchpad's build farm
 =============================================

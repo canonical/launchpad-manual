@@ -2,6 +2,8 @@
    :description: Guide to building and publishing Launchpad LXD development 
       images using LXD Image Builder and debootstrap.
 
+.. _build-and-publish-launchpad-development-lxd-images:
+
 Building and publishing Launchpad development LXD images
 ========================================================
 

@@ -1,6 +1,8 @@
 .. meta::
    :description: Deploy configuration changes to production.
 
+.. _deploy-config-changes-to-production:
+
 =============================================
 Deploying configuration changes to production
 =============================================

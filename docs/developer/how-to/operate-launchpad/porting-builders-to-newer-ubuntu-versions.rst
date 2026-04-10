@@ -2,6 +2,8 @@
    :description: Complete guide to porting Launchpad builders to newer Ubuntu 
       versions.
 
+.. _port-builders-to-newer-ubuntu-versions:
+
 Porting builders to newer Ubuntu versions
 =========================================
 

@@ -1,6 +1,8 @@
 .. meta::
    :description: Set up Visual Studio Code for debugging Launchpad.
 
+.. _debug-with-visual-studio-code:
+
 Debug tests with Visual Studio Code
 ===================================================
 

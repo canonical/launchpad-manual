@@ -2,6 +2,8 @@
    :description: Learn how to apply hotfix changes directly to qastaging 
       instances.
 
+.. _apply-cowboy-to-qastaging:
+
 ==============================
 Applying a cowboy to qastaging
 ==============================

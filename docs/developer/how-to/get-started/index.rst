@@ -1,8 +1,8 @@
 .. meta::
    :description: Overview of how to get started with Launchpad development.
 
-Getting started
-===============
+Get started
+===========
 
 .. toctree::
    :maxdepth: 1

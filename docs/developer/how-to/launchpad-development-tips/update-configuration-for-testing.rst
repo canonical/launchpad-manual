@@ -1,6 +1,8 @@
 .. meta::
    :description: Update Launchpad's global configuration for tests.
 
+.. _update-global-configuration-for-tests:
+
 Updating the global configuration for tests
 ===========================================
 

@@ -2,8 +2,8 @@
    :description: Operational guides for running Launchpad instances covering 
       build farm management, user administration, and deployment procedures.
 
-Operating Launchpad
-===================
+Operate Launchpad
+=================
 
 .. toctree::
    :maxdepth: 1

@@ -2,6 +2,8 @@
    :description: Guide to checking for availability of individual Launchpad 
       frontend servers.
 
+.. _check-availability-of-frontends:
+
 ============================================
 Checking availability of Launchpad frontends
 ============================================

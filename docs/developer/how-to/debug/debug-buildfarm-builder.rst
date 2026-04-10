@@ -1,6 +1,8 @@
 .. meta::
    :description: Debug build farm builders on qastaging.
 
+.. _debug-buildfarm-qastaging:
+
 Debug build farm on qastaging
 =============================
 

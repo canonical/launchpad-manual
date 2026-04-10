@@ -2,6 +2,8 @@
    :description: How to transfer ownership of Launchpad projects, including 
       private projects.
 
+.. _transfer-ownership-of-a-project:
+
 Transferring ownership of a Launchpad project
 =============================================
 

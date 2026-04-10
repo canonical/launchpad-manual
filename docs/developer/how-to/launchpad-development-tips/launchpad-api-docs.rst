@@ -1,6 +1,8 @@
 .. meta::
    :description: How to generate Launchpad API documentation.
 
+.. _launchpad-api-docs-generation:
+
 Launchpad API docs generation
 =============================
 

@@ -8,7 +8,6 @@ Launchpad development tips
 .. toctree::
    :maxdepth: 1
 
-
    update-configuration-for-testing
    using-breakpoints
    security
@@ -16,9 +15,6 @@ Launchpad development tips
    exceptions
    preserve-query-count
    chameleon
-   debug-with-visual-studio-code
-   debug-buildfarm-builder
-   debugging
    launchpad-api-docs
    codehosting-locally
    rename-database-table
