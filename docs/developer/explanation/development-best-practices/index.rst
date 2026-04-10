@@ -15,5 +15,5 @@ Best practices for development
    codeimport
    page-tests
    performance
-   template-reuse
    security-policy
+   template-reuse

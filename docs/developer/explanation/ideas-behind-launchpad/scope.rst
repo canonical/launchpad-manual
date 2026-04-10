@@ -28,7 +28,7 @@ But first, a story.
 
 
 The story of a bug
-==================
+------------------
 
 *Arnold* writes software for a living, and he runs Ubuntu on his desktop. He
 wishes he could contribute to open source, but he doesn't have much spare
@@ -104,19 +104,19 @@ actually fixed. It is, and all is right with the world.
 
 
 Distinctive traits
-==================
+------------------
 
 Launchpad is different from other "forges" in a few important ways:
 
 
 Cross-project collaboration
----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 No project lives in isolation.  Each project is part of an ecosystem of
 software.  Projects must be able to interact with each other, share bugs,
 teams, goals and code with each other.
 
-.. image:: ../images/cross-project-collab.png
+.. image:: ../../images/cross-project-collab.png
 
 Launchpad takes every chance it gets to show the connections between projects
 and to bring the opportunities created by those connections to light.
@@ -129,7 +129,7 @@ participate in other parts of that picture when they feel the need.
 
 
 Front-end to open source
-------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 Launchpad aims to be a front-end to open source.  Whether or not a project
 chooses to host on Launchpad, opportunistic developers can use Launchpad to
@@ -138,7 +138,7 @@ uniform interface to the projects we have.
 
 
 Centralized service
--------------------
+~~~~~~~~~~~~~~~~~~~
 
 Because Launchpad emphasizes cross-project collaboration, and because
 Launchpad aims to be a front-end to all of open source, it necessarily has to
@@ -147,7 +147,7 @@ servers.
 
 
 Networks of collaborators
--------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Launchpad understands that much of the human interaction around open source is
 not primarily social, but rather collaborative: many people working together
@@ -160,14 +160,14 @@ thing done?”, “can I rely on the advice offered by this person?” and so fo
 
 
 Distributions are projects too
-------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Launchpad hosts Linux distributions in much the same way as it hosts projects,
 allowing for developers to feel at home when interacting with distributions.
 
 
 Gated development
------------------
+~~~~~~~~~~~~~~~~~
 
 Sometimes, secrets are necessary.  Launchpad understands that sometimes
 development needs to be done privately, and the results only later shared with
@@ -176,7 +176,7 @@ services with open source clients are all examples of these.
 
 
 Hardware matters
-----------------
+~~~~~~~~~~~~~~~~
 
 Many software developers like to pretend that hardware does not really
 exist. When people distribute software as part of an operating system, they
@@ -185,7 +185,7 @@ often need to acknowledge and work around differences thrown up by hardware.
 
 
 We don't care if you use Launchpad, sort of
--------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Many other forges define their success by how many users they have.  Although
 we love our users and welcome every new user, Launchpad does not judge its
@@ -194,7 +194,7 @@ on another platform, Launchpad acts as a front-end to that platform.
 
 
 One project, many communities
------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Any given project can have many distinct communities interested in it.  These
 communities have different interests and different motivations, but all work
@@ -203,7 +203,7 @@ efforts.
 
 
 Scope
-=====
+-----
 
 Launchpad has many major components. These can be broken up into four major
 areas of functionality:
@@ -215,10 +215,10 @@ areas of functionality:
    users and other developers, and vice-versa
 4. major supporting features
 
-.. image:: ../images/scope.png
+.. image:: ../../images/scope.png
 
 Work
-----
+~~~~
 
 At the core of every software project is the actual code that makes up that
 project. Here "code" is a broad term that also includes the project's
@@ -244,7 +244,7 @@ build and publish packages of latest snapshots of code.
 
 
 Plans
------
+~~~~~
 
 People who are interested in doing something great will need to coordinate
 their work, keep track of the defects in the things they have already done and
@@ -278,7 +278,7 @@ plan when the work is finished.
 
 
 Community
----------
+~~~~~~~~~
 
 Not everything that's done on a project is work toward a particular outcome,
 or plans for how to get there. Every project needs to have some things that
@@ -302,7 +302,7 @@ projects, which projects share contributors with other projects and so forth.
 
 
 Supporting features
--------------------
+~~~~~~~~~~~~~~~~~~~
 
 Launchpad has many major areas of functionality that are best considered as
 “supporting features”: APIs, migration services, privacy, the mail UI,
@@ -310,7 +310,7 @@ synchronizing with external systems.
 
 
 New world
-=========
+---------
 
 When Launchpad is really doing all of these things and doing them well, the
 world of open source software will be significantly changed.
@@ -325,7 +325,7 @@ downstream developers can seamlessly access both sets of bugs.
 
 
 Glossary
-========
+--------
 
 Upstream
   A software project itself, as opposed to the packaged version of a software
@@ -339,7 +339,7 @@ Downstream
 
 
 References
-==========
+----------
 
 * :ref:`launchpad-strategy`
 * :ref:`launchpad-values`

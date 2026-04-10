@@ -10,5 +10,5 @@ Static assets
 
    css
    css-sprites
-   images
    favicon
+   images

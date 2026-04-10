@@ -11,9 +11,10 @@ Developing the Launchpad project
    :maxdepth: 1
 
    branches
-   pre-merge-reviews
-   error-explanations
-   hacking
-   feature-flags
    datetime-usage
+   error-explanations
+   feature-flags
+   hacking
+   journey-of-a-change-to-production
+   pre-merge-reviews
    xxx-policy

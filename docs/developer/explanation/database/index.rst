@@ -8,8 +8,8 @@ Database
 .. toctree::
    :maxdepth: 1
    
-   postgresql
-   working-with-db-devel
-   live-patching
-   storm-migration-guide
    database-performance
+   live-patching
+   postgresql
+   storm-migration-guide
+   working-with-db-devel

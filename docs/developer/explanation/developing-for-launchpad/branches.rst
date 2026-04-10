@@ -7,7 +7,7 @@
 About Launchpad branches
 ========================
 
-.. include:: ../../includes/important_not_revised.rst
+.. include:: ../../../includes/important_not_revised.rst
 
 Where's trunk?
 --------------
@@ -47,21 +47,21 @@ Look at the pretty pictures
 Diagrams might be the best way to understand this. (If they don't work,
 there's text afterwards, don't worry.)
 
-.. image:: ../images/branches/codeflow.png
+.. image:: ../../images/branches/codeflow.png
 
 Below, we break the process down a bit with a different diagramming
 approach. Here's what happens when you submit to **master**:
 
-.. image:: ../images/branches/db-devel-normal.png 
+.. image:: ../../images/branches/db-devel-normal.png 
 
 Where are the expected potential problems in the process? Glad you
 asked!
 
-.. image:: ../images/branches/db-devel-problems.png 
+.. image:: ../../images/branches/db-devel-problems.png 
 
 It is also possible to submit directly to the **db-devel** branch.
 
-.. image:: ../images/branches/db-devel-direct.png 
+.. image:: ../../images/branches/db-devel-direct.png 
 
 Let's Try That in Words
 -----------------------

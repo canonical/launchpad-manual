@@ -2,17 +2,19 @@
    :description: Overview for setting up and understanding Launchpad covering 
       installation, framework, navigation, pip, PPA, testing, and concepts.
 
-Setting up and understanding Launchpad
-=======================================
+Core components and setting up Launchpad
+========================================
 
 .. toctree::
    :maxdepth: 1
 
-   running-details
+   parts-of-launchpad/index
+   publisher/index
    framework
+   concepts
+   launchpad-ppa
    navigating
    pip
-   launchpad-ppa
+   running-details
    testing
-   concepts
    building-live-filesystems

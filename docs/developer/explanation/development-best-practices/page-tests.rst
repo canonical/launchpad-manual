@@ -19,7 +19,7 @@ will also give a traceback for 404 pages and pages you don't have permission to
 view.
 
 How to write testbrowser tests
-==============================
+-------------------------------
 
 Read ``lib/zope/testbrowser/README.txt`` or the `online version <https://zopetestbrowser.readthedocs.io/en/latest/>`_, 
 to find out everything you can do with the testbrowser.

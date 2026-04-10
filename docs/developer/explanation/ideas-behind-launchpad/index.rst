@@ -10,6 +10,6 @@ The ideas behind Launchpad
    :maxdepth: 1
 
    scope
+   security
    strategy
    values
-   security
