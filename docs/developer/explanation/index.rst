@@ -5,6 +5,11 @@
 Explanation
 ===========
 
+Launchpad is a large project developed over many years. The explanation 
+documentation take you through the ideas behind its development, the different 
+parts that make up the platform, how typical Launchpad developers approach 
+their roles, and more.
+
 The ideas behind Launchpad
 ---------------------------
 
