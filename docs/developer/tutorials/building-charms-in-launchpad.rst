@@ -2,9 +2,10 @@
    :description: Learn how to build charms in Launchpad for all Ubuntu 
       architectures using Charmcraft and publish them to Charmhub efficiently.
 
-##############################
- Building charms in Launchpad
-##############################
+.. _tutorial-building-charms-in-launchpad:
+
+Building charms in Launchpad
+=============================
 
 Launchpad supports building charms using `Charmcraft
 <https://documentation.ubuntu.com/juju/3.6/howto/manage-charms/#build-a-charm>`_.
