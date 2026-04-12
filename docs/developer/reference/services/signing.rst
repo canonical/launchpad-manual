@@ -2,6 +2,8 @@
    :description: Reference document for Launchpad's signing service with links 
       to documentation, deployment information, git repository, and bug tracker.
 
+.. _signing-service:
+
 Signing service
 ===============
 

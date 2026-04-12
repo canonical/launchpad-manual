@@ -14,13 +14,10 @@ Style guides give a clear guideline how certain aspects of Launchpad's code
 should be formatted, styled and handled, especially for the cases when there is
 no tooling available to enforce those rules.
 
-.. toctree::
-   :maxdepth: 1
-
-   python
-   tests
-   css
-   bug-tags
+- :ref:`Python style guide <python-style-guide>`
+- :ref:`Tests style guide <tests-style-guide>`
+- :ref:`CSS style guide <css-style-guide>`
+- :ref:`Tagging bugs about Launchpad <tagging-bugs-about-launchpad>`
 
 Services
 --------
@@ -32,54 +29,60 @@ hold of the log files, and where to find further information.
 Build-related
 ~~~~~~~~~~~~~
 
-.. toctree::
-   :maxdepth: 1
-
-   services/build-farm
-   services/signing
-   services/fetch-service
-   services/buildbot
+- :ref:`Build farm <build-farm-reference>`
+- :ref:`Signing service <signing-service>`
+- :ref:`Fetch service <fetch-service>`
+- :ref:`Buildbot <buildbot-reference>`
 
 Translation
 ~~~~~~~~~~~
 
-.. toctree::
-   :maxdepth: 1
-
-   services/automatic-translations-export.rst
+- :ref:`Automatic translations tarball exports <automatic-translations-export>`
 
 Ubuntu-related
 ~~~~~~~~~~~~~~
 
-.. toctree::
-   :maxdepth: 1
-
-   services/mirror-prober.rst
-   services/ubuntu-mirrors-index.rst
+- :ref:`Mirror prober <mirror-prober-reference>`
+- :ref:`Ubuntu mirrors index <ubuntu-mirrors-index>`
 
 Git-related
 ~~~~~~~~~~~~~~
 
+- :ref:`Git hosting <git-hosting-reference>`
+- :ref:`Code import <code-import-reference>`
+
+Archived
+~~~~~~~~
+These services are no longer available but you can still access the archived 
+information.
+
+- :ref:`Launchpad public mailing lists archives <mailing-lists-archives>`
+
+Email (outdated)
+----------------
+This information on the email services may contain outdated information and 
+will be updated in due course.
+
+- :ref:`Launchpad and email <email-reference>`
+   
 .. toctree::
-   :maxdepth: 1
+   :hidden:
 
-   services/git-hosting.rst
-   services/code-import.rst
-
-Others
-~~~~~~
-
-.. toctree::
-   :maxdepth: 1
-
-   services/mailing-lists-archives.rst
-
-Possibly out-of-date
---------------------
-
-We will update these items as soon as possible.
-
-.. toctree::
-   :maxdepth: 1
-
+   python
+   tests
+   css
+   bug-tags
+   services/build-farm
+   services/signing
+   services/fetch-service
+   services/buildbot
+   services/automatic-translations-export
+   services/mirror-prober
+   services/ubuntu-mirrors-index
+   services/git-hosting
+   services/code-import
+   services/mailing-lists-archives
    email
+
+   
+

@@ -1,6 +1,8 @@
 .. meta::
    :description: Launchpad email processing reference. 
 
+.. _email-reference:
+
 Launchpad and email
 ===================
 
