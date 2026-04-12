@@ -5,6 +5,10 @@
 How-to guides
 =============
 
+These how-to guides take you through common processes for Launchpad developers, 
+from creating a local setup and contributing changes, to operating and 
+debugging the platform. 
+
 Get started
 -----------
 
