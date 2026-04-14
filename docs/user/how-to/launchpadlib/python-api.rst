@@ -21,7 +21,7 @@ Find out if your launchpadlib version is recent enough (>= 1.5.1)
       import launchpadlib
       print(launchpadlib.__version__)
 
-**1.5.1** or above is the answer you're looking for; almost all
+**2.1.0** or above is the answer you're looking for; almost all
 subsequent examples assume you have at least that recent a launchpadlib.
 
 Hello Launchpad!
@@ -143,7 +143,7 @@ re-published.
 Cache Launchpad credentials per application
 -------------------------------------------
 
-This one is for older launchpadlibs. If you are using a current
+This one is for older launchpadlibs < `1.5.1`. If you are using a current
 version, just replace the code below with ``Launchpad.login_with.*``
 
 From `<https://launchpad.net/hydrazine>`_ - use your own application name.
