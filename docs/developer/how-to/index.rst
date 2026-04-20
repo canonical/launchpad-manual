@@ -43,10 +43,8 @@ production, etc.
 Common development tasks
 ------------------------
 
-As a Launchpad developer, there is plenty you can do to contribute to the teams
-development efforts including fixing bugs and contributing features changes. 
-You may also need to import Ubuntu packages and applying database schema 
-changes.
+As a developer working on Launchpad, below are some of the common tasks
+that you might need to do.
 
 - :ref:`Fix bugs <fixing-bugs>`
 - :ref:`Contribute changes <contributing-changes>`
