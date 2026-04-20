@@ -14,16 +14,20 @@ Projects
     :maxdepth: 1
 
     Register your project <register-your-project>
+    Transfer ownership of a project <transfer-ownership-of-a-project>
     Project translations <project-translations/index>
     
 Registration
 ------------
 - :ref:`Register your project<how-to-register-your-project>`
 
+Transfer
+--------
+- :ref: `Transfer ownership of your project <transfer-ownership-of-a-project>`
 
 Translate your projects
 -----------------------
 - :ref:`Import project translations<how-to-import-project-translations>` 
 - :ref:`Import translation templates<how-to-import-project-translation-templates>`
 - :ref:`Export translations<how-to-export-translations>`
-   
+
