@@ -39,7 +39,6 @@ production, etc.
 - :ref:`Land updates for Loggerhead <land-updates-loggerhead>`
 - :ref:`Transfer ownership of a project <transfer-ownership-of-a-project>`
 - :ref:`Port builders to newer Ubuntu versions <port-builders-to-newer-ubuntu-versions>`
-- :ref:`Apply cowboy to qastaging <apply-cowboy-to-qastaging>`
 - :ref:`Build and publish Launchpad development LXD images <build-and-publish-launchpad-development-lxd-images>`
 - :ref:`Use lp-shell <how-to-use-lp-shell>`
 
@@ -84,7 +83,6 @@ Launchpad has many moving parts and identifying the source of an error isn't
 always straightforward. There are a some ways to simplify debugging efforts.
 
 - :ref:`Debug tests with Visual Studio Code <debug-with-visual-studio-code>`
-- :ref:`Debug build farm on qastaging <debug-buildfarm-qastaging>`
 - :ref:`Debug stories and pagetests <debug-stories-pagetests>`
 
 .. toctree::
