@@ -38,7 +38,6 @@ production, etc.
 - :ref:`Triage Launchpad project bugs <triaging-launchpad-project-bugs>`
 - :ref:`Land updates for Loggerhead <land-updates-loggerhead>`
 - :ref:`Transfer ownership of a project <transfer-ownership-of-a-project>`
-- :ref:`Port builders to newer Ubuntu versions <port-builders-to-newer-ubuntu-versions>`
 - :ref:`Build and publish Launchpad development LXD images <build-and-publish-launchpad-development-lxd-images>`
 - :ref:`Use lp-shell <how-to-use-lp-shell>`
 
