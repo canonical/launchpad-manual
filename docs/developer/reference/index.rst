@@ -58,10 +58,8 @@ information.
 
 - :ref:`Launchpad public mailing lists archives <mailing-lists-archives>`
 
-Email (outdated)
-----------------
-This information on the email services may contain outdated information and 
-will be updated in due course.
+Email
+-----
 
 - :ref:`Launchpad and email <email-reference>`
    
