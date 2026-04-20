@@ -135,16 +135,13 @@ developer/how-to/security/ developer/how-to/launchpad-development-tips/security/
 developer/how-to/testing-scripts/ developer/how-to/launchpad-development-tips/testing-scripts/
 developer/how-to/update-configuration-for-testing/ developer/how-to/launchpad-development-tips/update-configuration-for-testing/
 developer/how-to/using-breakpoints/ developer/how-to/launchpad-development-tips/using-breakpoints/
-developer/how-to/applying-a-cowboy-to-qastaging/ developer/how-to/operate-launchpad/applying-a-cowboy-to-qastaging/
 developer/how-to/building-lpdev-images/ developer/how-to/operate-launchpad/building-lpdev-images/
 developer/how-to/checking-availability-of-launchpad-frontends/ developer/how-to/operate-launchpad/checking-availability-of-launchpad-frontends/
 developer/how-to/create-job-publish-artifact/ developer/how-to/operate-launchpad/create-job-publish-artifact/
-developer/how-to/deploying-configuration-changes/ developer/how-to/operate-launchpad/deploying-configuration-changes/
 developer/how-to/getting-overview-of-build-farm/ developer/how-to/operate-launchpad/getting-overview-of-build-farm/
 developer/how-to/land-update-for-loggerhead/ developer/how-to/operate-launchpad/land-update-for-loggerhead/
 developer/how-to/manage-users/ developer/how-to/operate-launchpad/manage-users/
 developer/how-to/operating-launchpad/ developer/how-to/operate-launchpad/
-developer/how-to/porting-builders-to-newer-ubuntu-versions/ developer/how-to/operate-launchpad/porting-builders-to-newer-ubuntu-versions/
 developer/how-to/transfer-project-ownership/ developer/how-to/operate-launchpad/transfer-project-ownership/
 developer/how-to/triage-bugs/ developer/how-to/operate-launchpad/triage-bugs/
 developer/how-to/use-lp-shell/ developer/how-to/operate-launchpad/use-lp-shell/
