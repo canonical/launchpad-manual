@@ -36,7 +36,6 @@ production, etc.
 - :ref:`Manage users and teams in development environments <manage-users-and-teams-in-development-environments>`
 - :ref:`Create job to publish artifact <create_job_to_publish_artifacts>`
 - :ref:`Triage Launchpad project bugs <triaging-launchpad-project-bugs>`
-- :ref:`Deploy config changes to production <deploy-config-changes-to-production>`
 - :ref:`Land updates for Loggerhead <land-updates-loggerhead>`
 - :ref:`Transfer ownership of a project <transfer-ownership-of-a-project>`
 - :ref:`Port builders to newer Ubuntu versions <port-builders-to-newer-ubuntu-versions>`
