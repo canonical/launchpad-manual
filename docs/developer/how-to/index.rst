@@ -66,7 +66,6 @@ tools for this, understanding how to test Launchpad scripts, using breakpoints,
 etc.
 
 - :ref:`Update the global configuration for tests <update-global-configuration-for-tests>`
-- :ref:`Use breakpoints <use-breakpoints>`
 - :ref:`Handle security policies <handle-security-policies>`
 - :ref:`Test CLI scripts <test-cli-scripts>`
 - :ref:`Handle exceptions <handle-exceptions>`
@@ -84,6 +83,7 @@ always straightforward. There are a some ways to simplify debugging efforts.
 
 - :ref:`Debug tests with Visual Studio Code <debug-with-visual-studio-code>`
 - :ref:`Debug stories and pagetests <debug-stories-pagetests>`
+- :ref:`Troubleshoot breakpoint issues when running multiple test layers <troubleshoot-breakpoints-tests>`
 
 .. toctree::
    :hidden:
