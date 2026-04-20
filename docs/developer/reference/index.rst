@@ -51,10 +51,10 @@ Git-related
 - :ref:`Git hosting <git-hosting-reference>`
 - :ref:`Code import <code-import-reference>`
 
-Archived
-~~~~~~~~
-These services are no longer available but you can still access the archived 
-information.
+Mailing Lists
+~~~~~~~~~~~~~
+Launchpad mailing lists are not available any more, but you can still 
+access the archived information.
 
 - :ref:`Launchpad public mailing lists archives <mailing-lists-archives>`
 
