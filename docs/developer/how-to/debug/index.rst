@@ -7,5 +7,5 @@ Debug
     :maxdepth: 1
 
     debug-with-visual-studio-code
-    debug-buildfarm-builder
     debugging
+    troubleshoot-breakpoint-issues-when-running-tests

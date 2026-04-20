@@ -14,10 +14,6 @@ Operate Launchpad
    manage-users
    create-job-publish-artifact
    triage-bugs
-   deploying-configuration-changes
    land-update-for-loggerhead
-   transfer-project-ownership
-   porting-builders-to-newer-ubuntu-versions
-   applying-a-cowboy-to-qastaging
    building-lpdev-images
    use-lp-shell

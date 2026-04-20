@@ -14,7 +14,7 @@ Projects
     :maxdepth: 1
 
     Register your project <register-your-project>
-    Transfer ownership of a project <transfer-ownership-of-a-project>
+    Transfer ownership of a project <transfer-project-ownership>
     Project translations <project-translations/index>
     
 Registration

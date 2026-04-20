@@ -9,7 +9,6 @@ Launchpad development tips
    :maxdepth: 1
 
    update-configuration-for-testing
-   using-breakpoints
    security
    testing-scripts
    exceptions

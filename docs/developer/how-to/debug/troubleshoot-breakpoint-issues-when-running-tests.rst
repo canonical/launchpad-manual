@@ -4,9 +4,9 @@
 
 .. _troubleshoot-breakpoints-tests:
 
-=================
-Using breakpoints
-=================
+================================================================
+Troubleshoot breakpoint issues when running multiple test layers
+================================================================
 
 When you set a breakpoint, e.g. via ``import pdb;pdb.set_trace()``
 and run a collection of tests,
