@@ -711,6 +711,7 @@ screencast
 ScreenCasts
 scss
 sdist
+SDKs
 SecurityProxy
 segfaulted
 SELinux
