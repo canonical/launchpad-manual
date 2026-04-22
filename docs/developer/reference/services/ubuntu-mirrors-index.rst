@@ -1,6 +1,8 @@
 .. meta::
    :description: Reference document for the Ubuntu mirrors index service.
 
+.. _ubuntu-mirrors-index:
+
 Ubuntu mirrors index
 ==================== 
 

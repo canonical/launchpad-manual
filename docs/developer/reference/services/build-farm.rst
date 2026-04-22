@@ -2,7 +2,7 @@
    :description: Reference doc linking to resources related to the Launchpad 
       build farm including documentation, git repositories, and bug trackers.
 
-.. _build-farm:
+.. _build-farm-reference:
 
 Build farm
 ==========

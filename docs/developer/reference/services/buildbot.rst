@@ -2,6 +2,8 @@
    :description: Reference doc for the Buildbot CI testing framework used by 
       Launchpad linking to documentation, log files, git repositories, etc.
 
+.. _buildbot-reference:
+
 Buildbot
 ========
 
