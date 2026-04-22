@@ -56,10 +56,9 @@ that you might need to do.
 Launchpad development tips
 --------------------------
 
-Developing for Launchpad can be challenging, but there are different ways you
-can make things easier such as understanding how to debug and using specific 
-tools for this, understanding how to test Launchpad scripts, using breakpoints, 
-etc.
+Developing for Launchpad can be challenging, but there are approaches that can
+make things easier whether your goal is to use Launchpad for codehosting
+locally, test CLI scripts, generate API docs, etc.
 
 - :ref:`Update the global configuration for tests <update-global-configuration-for-tests>`
 - :ref:`Handle security policies <handle-security-policies>`
@@ -74,8 +73,9 @@ etc.
 
 Debug
 -----
-Launchpad has many moving parts and identifying the source of an error isn't 
-always straightforward. There are a some ways to simplify debugging efforts.
+Launchpad has many moving parts. This means identifying the source of an error
+isn't always straightforward, but there are several ways to simplify debugging
+efforts.
 
 - :ref:`Debug tests with Visual Studio Code <debug-with-visual-studio-code>`
 - :ref:`Debug stories and pagetests <debug-stories-pagetests>`

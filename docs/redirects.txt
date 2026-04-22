@@ -143,3 +143,4 @@ developer/how-to/operating-launchpad/ developer/how-to/operate-launchpad/
 developer/how-to/transfer-project-ownership/ user/how-to/projects/transfer-project-ownership/
 developer/how-to/triage-bugs/ developer/how-to/operate-launchpad/triage-bugs/
 developer/how-to/use-lp-shell/ developer/how-to/operate-launchpad/use-lp-shell/
+developer/how-to/using-breakpoints/ developer/how-to/debug/troubleshoot-breakpoint-issues-when-running-tests/
