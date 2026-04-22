@@ -6,7 +6,7 @@
 Triaging Launchpad project bugs
 ===============================
 
-.. include:: ../../includes/important_not_revised.rst
+.. include:: ../../../includes/important_not_revised.rst
 
 Our triage process is basically this: make sure that *Critical* and
 *High* bugs are correctly marked.

@@ -7,7 +7,7 @@
 Database schema changes process
 ===============================
 
-.. include:: ../../includes/important_not_revised.rst
+.. include:: ../../../includes/important_not_revised.rst
 
 Step-by-step procedure
 ----------------------

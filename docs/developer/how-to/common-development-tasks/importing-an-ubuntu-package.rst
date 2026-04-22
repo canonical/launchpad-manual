@@ -2,6 +2,8 @@
    :description: Guide to importing Ubuntu packages into your local Launchpad 
       instance.
 
+.. _import-ubuntu-package:
+
 ===========================
 Importing an Ubuntu package
 ===========================

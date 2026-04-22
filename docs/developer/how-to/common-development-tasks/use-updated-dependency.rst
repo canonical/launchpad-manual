@@ -1,6 +1,8 @@
 .. meta::
    :description: Update Launchpad dependencies using rocketfuel.
 
+.. _use-updated-dependency:
+
 ===========================
 Using an updated dependency
 ===========================

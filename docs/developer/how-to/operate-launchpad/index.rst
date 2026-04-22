@@ -2,8 +2,8 @@
    :description: Operational guides for running Launchpad instances covering 
       build farm management, user administration, and deployment procedures.
 
-Operating Launchpad
-===================
+Operate Launchpad
+=================
 
 .. toctree::
    :maxdepth: 1
@@ -14,10 +14,6 @@ Operating Launchpad
    manage-users
    create-job-publish-artifact
    triage-bugs
-   deploying-configuration-changes
    land-update-for-loggerhead
-   transfer-project-ownership
-   porting-builders-to-newer-ubuntu-versions
-   applying-a-cowboy-to-qastaging
    building-lpdev-images
    use-lp-shell

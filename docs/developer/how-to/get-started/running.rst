@@ -22,7 +22,7 @@ After you've done this, you may want to read about
 .. _supported_operating_systems:
 
 Supported operating systems
-===========================
+---------------------------
 
 For the host system, any reasonably modern Ubuntu release should work.
 Other Linux distributions that have LXD should work too, though we don't
@@ -43,7 +43,7 @@ maximize the number of installations; our goal is to improve the `instance
 we're already running <https://launchpad.net/>`_.
 
 Why use LXD containers?
-=======================
+-----------------------
 
 Launchpad development setup makes significant changes to your machine; it's
 nice to be unaffected by those when you're not doing such development.
@@ -61,7 +61,7 @@ running inside such a container.  If you run it on your host system, it may
 well break it.
 
 Create a LXD container
-======================
+----------------------
 
 This assumes you already have LXD set up.  If not, follow the `instructions
 <https://documentation.ubuntu.com/lxd/en/latest/getting_started/>`_ for
@@ -155,7 +155,7 @@ getting it installed and configured on your network.
    IP address of the ``lpdev`` container.
 
 Getting Launchpad
-=================
+-----------------
 
 Do all this *inside* the container you set up previously.  Be aware that
 changes in your home directory inside the container will also be seen
@@ -226,7 +226,7 @@ The source dependencies actually live in ``../lp-sourcedeps``.
 .. _pre-commit:
 
 Installing the pre-commit hook
-==============================
+------------------------------
 
 If you intend to make any changes to Launchpad, you should also set up
 `pre-commit <https://pre-commit.com/>`__ now:
@@ -244,7 +244,7 @@ If you intend to make any changes to Launchpad, you should also set up
    your newly-cloned ``launchpad`` repository.
 
 Building
-========
+--------
 
 Before you can run Launchpad for the first time, you need to set up PostgreSQL.
 
@@ -270,7 +270,7 @@ Finally, build the database schema (this may take several minutes):
 If you encounter an error while building Python wheels, see :ref:`pynacl-fix`.
 
 Running
-=======
+-------
 
 Now you should be able to start up Launchpad:
 
@@ -289,7 +289,7 @@ expensive and because it will clean out any data you might have put into
 your test instance (through the web UI or by running other scripts).
 
 CSS watch
----------
+~~~~~~~~~
 
 While running a local instance of Launchpad, if you are interested in updating
 CSS or SCSS files, they will not re-render automatically.
@@ -302,7 +302,7 @@ To enable that and make frontend changes more straight-forward, you can run:
 This should be run in a separate terminal session alongside ``make run``.
 
 Accessing your web application
-==============================
+------------------------------
 
 When running ``make run``, your application is running in your container, but it
 is not yet accessible outside of it - this includes your host machine, i.e.,
@@ -313,7 +313,7 @@ probably want to make your new Launchpad instance accessible from other
 machines on the same local network, or in particular from the host system.
 
 Amending the Apache configuration
----------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Launchpad's default development Apache config
 (``/etc/apache2/sites-available/local-launchpad.conf``) only listens on
@@ -326,7 +326,7 @@ on everything:
     $ sudo make LISTEN_ADDRESS='*' install
 
 Amending the hosts file
------------------------
+~~~~~~~~~~~~~~~~~~~~~~~
 
 Launchpad makes extensive use of virtual hosts, so you'll need to add
 entries to ``/etc/hosts`` on any machine from which you want to access the
@@ -365,7 +365,7 @@ deployment would need real authentication.). If you want to create more user
 accounts, see :ref:`manage-users-and-teams-in-development-environments`.
 
 Accessing launchpad.test from a single host over SSH
-----------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 As an alternative to the above, SSH provides a SOCKS proxy.  By running that
 proxy on the target machine, you can view its Launchpad web site as if you
@@ -379,7 +379,7 @@ network.  To do so:
 Then set your browser's SOCKS proxy settings to use ``target-machine:8110``.
 
 Stopping
-========
+--------
 
 You can stop Launchpad by hitting **Control-C** in the terminal where you
 started it:
@@ -397,12 +397,12 @@ Or you can be at a prompt in the same directory and run this:
     $ make stop
 
 Troubleshooting
-===============
+---------------
 
 .. _network-connectivity:
 
 Network connectivity
---------------------
+~~~~~~~~~~~~~~~~~~~~
 
 "The LXC container is not getting an IPv4 address assigned and the network
 connectivity inside the container doesn't work."
@@ -424,7 +424,7 @@ the bridge interface on your computer):
 .. _pynacl-fix:
 
 Error building Python wheels
-----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 When running ``make schema`` on some machines, ``pynacl`` `fails to build <https://github.com/pyca/pynacl/issues/553>`_, leading to ``ERROR: Failed building wheel for pynacl``.
 
@@ -443,7 +443,7 @@ Then add the following line to the ``Makefile`` under the ``PIP_ENV`` commands:
 Then run `make schema` again.
 
 Email
------
+~~~~~
 
 "I have Launchpad running but emails are not sent."
 
@@ -455,7 +455,7 @@ new users, create a new account and check the local mailbox, or see
 .. _database-permissions:
 
 Database permissions
---------------------
+~~~~~~~~~~~~~~~~~~~~
 
 "My database permissions keep getting deleted!"
 

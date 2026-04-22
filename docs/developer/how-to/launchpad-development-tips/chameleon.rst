@@ -1,10 +1,12 @@
 .. meta::
    :description: Configure and run Launchpad with the Chameleon template engine.
 
+.. _run-launchpad-with-chameleon-template-engine:
+
 Running Launchpad with Chameleon template engine
 ================================================
 
-.. include:: ../../includes/important_out_of_date.rst
+.. include:: ../../../includes/important_not_revised.rst
 
 - Uncomment ``<include package="z3c.ptcompat" />`` in ``zcml/zopeapp.zcml``
   to enable ``z3c.pt``.

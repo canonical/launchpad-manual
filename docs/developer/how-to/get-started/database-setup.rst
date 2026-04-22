@@ -2,10 +2,12 @@
    :description: Set up PostgreSQL databases for Launchpad development using 
       automated scripts or manual configuration.
 
+.. _database-setup:
+
 Launchpad database setup
 ========================
 
-.. include:: ../../includes/important_not_revised.rst
+.. include:: ../../../includes/important_not_revised.rst
 
 There are two ways to set up your launchpad database.
 

@@ -45,7 +45,7 @@ contributions, suggestions, fixes and constructive feedback.
 * `Code of conduct <https://ubuntu.com/community/ethos/code-of-conduct>`_
 * :doc:`Get help <help>`
 * :ref:`Feature highlights <launchpad-feature-highlights>` 
-* :doc:`Contribute to our code <developer/how-to/contributing-changes>`
+* :doc:`Contribute to our code <developer/how-to/common-development-tasks/contributing-changes>`
 
 .. toctree::
    :hidden:
