@@ -34,7 +34,7 @@ author = "Canonical Ltd."
 #
 # copyright = f"2026-{datetime.date.today().year}"
 
-copyright = f"{datetime.date.today().year}"
+copyright = "%s CC-BY-SA, %s" % (datetime.date.today().year, author)
 
 # Sidebar documentation title; best kept reasonably short
 #
@@ -149,8 +149,8 @@ html_context = {
     #       it inherits the code license instead; specify it instead of 'CC-BY-SA'.
 
     "license": {
-        "name": "CC-BY-SA-3.0",
-        "url": "https://github.com/canonical/sphinx-docs-starter-pack/blob/main/LICENSE",
+        "name": "CC BY 2.0 UK",
+        "url": "https://creativecommons.org/licenses/by/2.0/uk/",
     },
 }
 
