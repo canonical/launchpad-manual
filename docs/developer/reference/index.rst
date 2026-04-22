@@ -34,6 +34,17 @@ Build-related
 - :ref:`Fetch service <fetch-service>`
 - :ref:`Buildbot <buildbot-reference>`
 
+Email
+~~~~~
+
+- :ref:`Launchpad and email <email-reference>`
+
+Git-related
+~~~~~~~~~~~~~~
+
+- :ref:`Git hosting <git-hosting-reference>`
+- :ref:`Code import <code-import-reference>`
+
 Translation
 ~~~~~~~~~~~
 
@@ -45,12 +56,6 @@ Ubuntu-related
 - :ref:`Mirror prober <mirror-prober-reference>`
 - :ref:`Ubuntu mirrors index <ubuntu-mirrors-index>`
 
-Git-related
-~~~~~~~~~~~~~~
-
-- :ref:`Git hosting <git-hosting-reference>`
-- :ref:`Code import <code-import-reference>`
-
 Mailing Lists
 ~~~~~~~~~~~~~
 Launchpad mailing lists are not available any more, but you can still 
@@ -58,10 +63,6 @@ access the archived information.
 
 - :ref:`Launchpad public mailing lists archives <mailing-lists-archives>`
 
-Email
------
-
-- :ref:`Launchpad and email <email-reference>`
    
 .. toctree::
    :hidden:
