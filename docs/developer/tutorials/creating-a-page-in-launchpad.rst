@@ -1,7 +1,8 @@
 .. meta::
    :description: Step-by-step tutorial for adding custom pages in Launchpad.
 
-================================
+.. _tutorial-creating-page-in-launchpad:
+
 Creating a new page in Launchpad
 ================================
 
@@ -9,12 +10,12 @@ In this tutorial, we will be creating a new page in Launchpad that shows a
 greeting from a specific user. This will be available at ``/~username/+hello``.
 
 Pre-requisites
-==============
+--------------
 
 You have the :ref:`Launchpad development environment set up <set-up-and-run-launchpad-advanced>`.
 
 Introduction
-============
+------------
 
 A page in Launchpad requires a view class, an interface it is related to,
 and a page template to render the HTML. These are then mapped to a page
@@ -22,14 +23,14 @@ at a specific URL using a `ZCML directive <https://zopecomponent.readthedocs.io/
 the following sections.
 
 Identifying the interface
-=========================
+-------------------------
 
 Since the page should show a greeting from a user, the context should be the
 user. In Launchpad, a user is represented by the ``IPerson`` interface, which
 is defined in ``lib/lp/registry/interfaces/person.py``.
 
 Creating a view class
-=====================
+---------------------
 
 The view classes are implemented in the ``browser/`` subdirectory of a package
 in Launchpad. Since this view is providing functionality related to the Registry
@@ -56,7 +57,7 @@ named ``label`` and assigned its value to the ``page_title`` attribute of the
 class.
 
 Creating the page template
-==========================
+--------------------------
 
 We need a page template to render the data provided by the view class as HTML.
 So create a file named ``person-hello.pt`` in the ``lib/lp/registry/templates``
@@ -85,7 +86,7 @@ With this, we get a page that looks like many of the existing pages in
 Launchpad, without having to write any other HTML or page template code.
 
 Connecting the view, the interface, and the template
-====================================================
+----------------------------------------------------
 
 Now we have to configure Launchpad to serve this page. To do so, add the
 following ZCML directive to ``lib/lp/registry/browser/configure.zcml``, above
@@ -111,7 +112,7 @@ the URL of the ``IPerson`` interface. So if the URL for an ``IPerson`` page is
 ``/~username``, this page should be available at ``/~username/+hello``.
 
 Viewing the page in the browser
-===============================
+-------------------------------
 Navigate to the top-level directory of the Launchpad repository inside the
 Launchpad LXC container. Run ``make run`` to start the development server and wait
 for it to finish loading.
