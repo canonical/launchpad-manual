@@ -110,7 +110,7 @@ html_context = {
     # Product tag image; the orange part of your logo, shown in the page header
     #
     # TODO: To add a tag image, uncomment and update as needed.
-    'product_tag': '_static/tag.png',
+    'product_tag': '_static/Launchpad-tag.png',
     # Your Discourse instance URL
     #
     # TODO: Change to your Discourse instance URL or leave empty.
@@ -126,6 +126,8 @@ html_context = {
     # TODO: Change to your Matrix channel URL or leave empty.
     "matrix": "https://matrix.to/#/#launchpad:ubuntu.com",
     # Your documentation GitHub repository URL
+    #
+    "answers": "https://answers.launchpad.net/",
     #
     # TODO: Change to your documentation GitHub repository URL or leave empty.
     #
