@@ -56,6 +56,12 @@
           </li>
           {% endif %}
 
+          {% if answers %}
+          <li>
+            <a href="{{ answers }}" class="p-navigation__sub-link p-dropdown__link">Launchpad Answers</a>
+          </li>
+          {% endif %}
+
           {% if github_url %}
           <li>
             <a href="{{ github_url }}" class="p-navigation__sub-link p-dropdown__link">GitHub</a>
