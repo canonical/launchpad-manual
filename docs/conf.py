@@ -391,6 +391,7 @@ extensions = [
 
 exclude_patterns = [
     "readme.rst",
+    "includes/*",
 ]
 
 # Add JavaScript files (located in .sphinx/_static/)
