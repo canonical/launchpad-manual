@@ -9,6 +9,11 @@ Release Notes
 
 April 2026
 ++++++++++
+23 April
+
+- Changed most user-facing help.launchpad.net links to documentation.ubuntu.com/launchpad 
+  links.
+
 13 April
 
 - Added the `build_path` option to snap package recipes, allowing for having multiple
