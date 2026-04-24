@@ -16,6 +16,9 @@ April 2026
 - Released a new version of the distro series page. See
   `launchpad.net/ubuntu/resolute <https://launchpad.net/ubuntu/resolute>`_
   for an example.
+- Released a new version of the distro series page. See
+  `launchpad.net/ubuntu/resolute <https://launchpad.net/ubuntu/resolute>`_
+  for an example.
 
 13 April
 
