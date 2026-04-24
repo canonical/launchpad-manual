@@ -47,6 +47,14 @@ February 2026
 
 - Bug fix #1893791: Allow users to add a package back to a bug task with existing packages.  
 
+January 2026
++++++++++++
+
+5 Jan
+
+- Add more builder metrics in the builder overview page. 
+
+
 December 2025
 +++++++++++++
 
