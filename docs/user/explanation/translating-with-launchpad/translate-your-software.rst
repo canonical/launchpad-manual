@@ -402,7 +402,7 @@ Below you will find a set of common practices for running a team
          already finished translations. For languages with few
          translators and translations already done team acceptance could
          be lower than in the case of a language with many translators,
-         translations made and the presence of GTP, OpenOffice , etc
+         translations made and the presence of GTP, LibreOffice, etc
          upstream translation projects.
       -  Before accepting a member you may ask him/her to provide some
          translation. If the translations are great you may accept the
