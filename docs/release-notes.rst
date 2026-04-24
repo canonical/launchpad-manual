@@ -14,6 +14,12 @@ April 2026
 - Added the `build_path` option to snap package recipes, allowing for having multiple
   `snapcraft.yaml` in the same repository.
 
+February 2026
++++++++++++++
+16 February
+
+- Add a Package column in the milestone page
+
 December 2025
 +++++++++++++
 
