@@ -13,6 +13,9 @@ April 2026
 
 - Changed most user-facing help.launchpad.net links to documentation.ubuntu.com/launchpad 
   links.
+- Released a new version of the distro series page. See
+  `launchpad.net/ubuntu/resolute <https://launchpad.net/ubuntu/resolute>`_
+  for an example.
 
 13 April
 
