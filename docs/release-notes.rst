@@ -43,6 +43,10 @@ February 2026
 
 - Add a Package column in the milestone page
 
+9 Feb
+
+- Bug fix #1893791: Allow users to add a package back to a bug task with existing packages.  
+
 December 2025
 +++++++++++++
 
