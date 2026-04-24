@@ -9,6 +9,13 @@ Release Notes
 
 April 2026
 ++++++++++
+
+23 April
+
+- Released a new version of the distro series page. See
+  `launchpad.net/ubuntu/resolute <https://launchpad.net/ubuntu/resolute>`_
+  for an example.
+
 13 April
 
 - Added the `build_path` option to snap package recipes, allowing for having multiple
