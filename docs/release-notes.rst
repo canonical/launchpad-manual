@@ -7,6 +7,14 @@
 Release Notes
 =============
 
+April 2026
+++++++++++
+
+13 April
+
+- Added build_path option to snap package recipes, allowing for having multiple
+snapcraft.yaml in the same repository.
+
 December 2025
 +++++++++++++
 
