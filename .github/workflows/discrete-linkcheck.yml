@@ -1,7 +1,11 @@
-name: Daily link check
+name: Discrete link check
 on:
   schedule:
     - cron: '0 22 * * *'  # Every day at 22:00 UTC
+
+  push:
+    branches:
+      - main
 
   workflow_dispatch:  # Manual trigger
 
