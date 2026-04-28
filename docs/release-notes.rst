@@ -9,6 +9,12 @@ Release Notes
 
 April 2026
 ++++++++++
+
+28 April
+
+- Deployed the changes to support "Valid-Until" tag in the Release files on the
+archve. The tag is disabled by default for all the series. 
+
 13 April
 
 - Added the `build_path` option to snap package recipes, allowing for having multiple
