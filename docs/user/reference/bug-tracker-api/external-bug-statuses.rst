@@ -10,7 +10,7 @@ External bug statuses
 .. include:: /includes/important_not_revised_help.rst
 
 
-Bugs in free software projects are often tracked in more than one place. For example: a bug in Firefox may be tracked in Launchpad by Ubuntu's Firefox team and in Firefox's own Bugzilla instance.
+Bugs in free software projects are often tracked in more than one place. For example: a bug in Firefox may be tracked in Launchpad by the Ubuntu Mozilla Team and in Firefox's own Bugzilla instance.
 
 Translating the status of external bug watches
 ----------------------------------------------
