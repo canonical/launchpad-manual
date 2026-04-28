@@ -44,6 +44,7 @@ How this documentation is organized
 
 This documentation uses the `Diátaxis documentation structure <https://diataxis.fr/>`_.
 
+* :ref:`Tutorial <user/tutorial>`: tutorials to help you interact with Launchpad.
 * :ref:`How-to <user/how-to>`: step-by-step instructions for key operations and common tasks.
 * :ref:`Reference <user/reference>`: specifications, APIs, architecture.
 * :ref:`Explanation <user/explanation>`: discussion and clarification of user topics.
@@ -68,6 +69,7 @@ Releases
    :hidden:
 
    Get started <get-started>
+   Tutorial <tutorial/index>
    How-to guides <how-to/index>
    Reference <reference/index>
    Explanation <explanation/index>

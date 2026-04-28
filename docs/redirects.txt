@@ -109,6 +109,7 @@ developer/how-to/getting developer/how-to/get-started/get-source-code/
 developer/how-to/debug-tests-with-visual-studio-code developer/how-to/debug/debug-with-visual-studio-code
 user/reference/packaging/ppas/copying-packages/ user/how-to/packaging/copying-packages/
 user/reference/packaging/ppas/deleting-packages/ user/how-to/packaging/deleting-packages/
+user/how-to/launchpadlib/get-started-with-lauchpadlib user/how-to/launchpadlib/using-launchpadlib
 developer/how-to/apply-schema-changes/ developer/how-to/common-development-tasks/apply-schema-changes/
 developer/how-to/contributing-changes/ developer/how-to/common-development-tasks/contributing-changes/
 developer/how-to/database-schema-changes-process/ developer/how-to/common-development-tasks/database-schema-changes-process/
