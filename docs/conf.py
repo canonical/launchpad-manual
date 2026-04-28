@@ -31,7 +31,9 @@ author = "Canonical Ltd."
 # Sidebar documentation title; best kept reasonably short
 #
 # TODO: To include a version number, add it here (hardcoded or automated).
-#
+# version = "beta"
+
+
 # TODO: To disable the title, set to an empty string.
 
 html_title = project + " manual"
@@ -60,8 +62,7 @@ html_title = project + " manual"
 #         -H 'Accept: application/vnd.github.v3.raw' \
 #         https://api.github.com/repos/canonical/<REPO> | jq '.created_at'
 
-copyright = "%s CC-BY-SA, %s" % (datetime.date.today().year, author)
-
+copyright = f"{datetime.date.today().year}"
 
 # Documentation website URL
 #
@@ -84,7 +85,7 @@ ogp_site_name = project
 #
 # TODO: To customise the preview image, update as needed.
 
-ogp_image = "https://assets.ubuntu.com/v1/cc828679-docs_illustration.svg"
+ogp_image = "https://assets.ubuntu.com/v1/253da317-image-document-ubuntudocs.svg"
 
 
 # Product favicon; shown in bookmarks, browser tabs, etc.
@@ -97,70 +98,122 @@ html_favicon = '_static/favicon.png'
 # Dictionary of values to pass into the Sphinx context for all pages:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_context
 
+# TODO: Adjust to point to the repository where your documentation source files
+# are stored.
+
+github_repo = "https://github.com/canonical/launchpad-manual"
+
+# TODO: Select the default syntax for docs source files.
+# This is for a fallback view/edit source code buttons.
+
+default_source_extension = ".rst"
+
+# TODO: Change to your product website URL,
+#       dropping the 'https://' prefix, e.g. 'ubuntu.com/lxd'.
+#       If there is no such website - set to '/' or remove the {{ product_page }}
+#       link from the page header template.
+
+product_page = "launchpad.net/"
+
 html_context = {
     # Product page URL; can be different from product docs URL
-    #
-    # TODO: Change to your product website URL,
-    #       dropping the 'https://' prefix, e.g. 'ubuntu.com/lxd'.
     #
     # TODO: If there's no such website,
     #       remove the {{ product_page }} link from the page header template
     #       (usually .sphinx/_templates/header.html; also, see README.rst).
-    "product_page": "launchpad.net",
+    "product_page": product_page,
     # Product tag image; the orange part of your logo, shown in the page header
     #
     # TODO: To add a tag image, uncomment and update as needed.
-    'product_tag': '_static/Tag-Launchpad-Orange-Digital.svg',
+    # 'product_tag': '_static/tag.png',
+    # 
+    # Inherit project name
+    "project": project, 
+    # Inherit the author value
+    "author": author,
+    # Licensing information
+    # 
+    # TODO: Change your product's license name and a link to its file.
+    # For the name, we recommend using the standard shorthand identifier from
+    # https://spdx.org/licenses
+    # For the URL, link directly to the product's license statement, typically found on
+    # the product's home page or in its GitHub project.
+    "license": {
+        "name": "LGPL-3.0-only",
+        "url": github_repo + "/blob/main/LICENSE",
+    },
     # Your Discourse instance URL
     #
     # TODO: Change to your Discourse instance URL or leave empty.
     #
     # NOTE: If set, adding ':discourse: 123' to an .rst file
     #       will add a link to Discourse topic 123 at the bottom of the page.
-    "discourse": "",
+    "discourse": "https://discourse.ubuntu.com",
     # Your Mattermost channel URL
     #
     # TODO: Change to your Mattermost channel URL or leave empty.
+    "mattermost": "https://chat.canonical.com/canonical/channels/documentation",
     # Your Matrix channel URL
     #
     # TODO: Change to your Matrix channel URL or leave empty.
     "matrix": "https://matrix.to/#/#launchpad:ubuntu.com",
     # Your documentation GitHub repository URL
     #
-    # Link to Launchpad's answer portal for users.
-    "answers": "https://answers.launchpad.net/",
-    #
     # TODO: Change to your documentation GitHub repository URL or leave empty.
     #
     # NOTE: If set, links for viewing the documentation source files
     #       and creating GitHub issues are added at the bottom of each page.
-    "github_url": "https://github.com/canonical/launchpad-manual",
+    "github_url": github_repo,
     # Docs branch in the repo; used in links for viewing the source files
     #
     # TODO: To customise the branch, uncomment and update as needed.
-    'repo_default_branch': 'main',
+    "repo_default_branch": "main",
     # Docs location in the repo; used in links for viewing the source files
     #
-
-
     # TODO: To customise the directory, uncomment and update as needed.
     "repo_folder": "/docs/",
     # TODO: To enable or disable the Previous / Next buttons at the bottom of pages
     # Valid options: none, prev, next, both
-    "sequential_nav": "none",
+    # "sequential_nav": "both",
     # TODO: To enable listing contributors on individual pages, set to True
     "display_contributors": False,
 
     # Required for feedback button    
-    'github_issues': 'enabled',
+    "feedback": True,
+    "github_issues": "enabled",
+    "default_source_extension": default_source_extension,
+    "default_edit_url": github_repo + "/edit/main/docs/index" + default_source_extension,
+    "default_view_url": github_repo + "/blob/main/docs/index" + default_source_extension,
+
+    # Horizontal Nav Menu
+    "company": "Canonical",
+    # "link1_URL": "https://canonical-starter-pack.readthedocs-hosted.com/",
+    # "link1_name": "First optional link",
+    # "link2_URL": "https://canonical-starter-pack.readthedocs-hosted.com/",
+    # "link2_name": "Second optional link",
+
+    # Canonical Product menu
+    # Uncomment if you need a product menu added on the top of every page
+    # "add_product_menu": True,
+    
+    # Main Horizontal menu
+    # "is_docs": False, # Purpose unknown
+    "logo_link_URL": "https://documentation.ubuntu.com",
+    "logo_img_URL": "https://assets.ubuntu.com/v1/82818827-CoF_white.svg",
+    "logo_title": "Canonical",
+
+    # TODO: Customize the footer.
+    "footer": {
+        # Whether to add the product name as the first entry.
+        "product": True,
+        # Whether to add the license as the second entry.
+        "license": True,
+        # List your footer entries. Accepts HTML tags.
+        "entries": [
+            '<a class="js-revoke-cookie-manager" href="#tracker-settings">Manage your tracker settings</a>',
+        ]
+    }
 }
-
-html_extra_path = []
-
-# Allow opt-in build of the OpenAPI "Hello" example so docs stay clean by default.
-if os.getenv("OPENAPI", ""):
-    tags.add("openapi")
-    html_extra_path.append("how-to/assets/openapi.yaml")
 
 # TODO: To enable the edit button on pages, uncomment and change the link to a
 # public repository on GitHub or Launchpad. Any of the following link domains
@@ -169,49 +222,46 @@ if os.getenv("OPENAPI", ""):
 # - https://launchpad.net/example
 # - https://git.launchpad.net/example
 #
-html_theme_options = {
-    "source_edit_link": "https://github.com/canonical/launchpad-manual",
-#    "sidebar_hide_name": True,
-}
+# html_theme_options = {
+# 'source_edit_link': 'https://github.com/canonical/sphinx-docs-starter-pack',
+# }
 
 # Project slug; see https://meta.discourse.org/t/what-is-category-slug/87897
 #
 # TODO: If your documentation is hosted on https://docs.ubuntu.com/,
 #       uncomment and update as needed.
 
-slug = 'launchpad'
+# slug = ''
+
+# Limit the number of levels for Table of contents
+localtoc_max_depth = 3
 
 #######################
 # Sitemap configuration: https://sphinx-sitemap.readthedocs.io/
 #######################
 
-# Use RTD canonical URL to ensure duplicate pages have a specific canonical URL
+# Base URL of RTD hosted project
 
-html_baseurl = 'https://documentation.ubuntu.com/launchpad/'
+html_baseurl = "https://canonical-starter-pack.readthedocs-hosted.com/"
 
-# sphinx-sitemap uses html_baseurl to generate the full URL for each page:
+# URL scheme. Add language and version scheme elements.
+# When configured with RTD variables, check for RTD environment so manual runs succeed:
 
-sitemap_url_scheme = '{link}'
+if "READTHEDOCS_VERSION" in os.environ:
+    version = os.environ["READTHEDOCS_VERSION"]
+    sitemap_url_scheme = "{version}{link}"
+else:
+    sitemap_url_scheme = "MANUAL/{link}"
 
 # Include `lastmod` dates in the sitemap:
 
 sitemap_show_lastmod = True
 
-# Exclude generated pages from the sitemap:
-
-sitemap_excludes = [
-    '404/',
-    'genindex/',
-    'search/',
-]
-
-# TODO: Add more pages to sitemap_excludes if needed. Wildcards are supported.
-#       For example, to exclude module pages generated by autodoc, add '_modules/*'.
-
 #######################
 # Template and asset locations
 #######################
 
+html_theme = "ulwazi"
 html_static_path = ["_static"]
 templates_path = ["_templates"]
 
@@ -231,9 +281,6 @@ templates_path = ["_templates"]
 
 redirects = {}
 
-# Add redirects, so they can be updated here to land alongside docs being moved
-rediraffe_branch = "main"
-rediraffe_redirects = "redirects.txt"
 
 ###########################
 # Link checker exceptions #
@@ -244,98 +291,9 @@ rediraffe_redirects = "redirects.txt"
 # TODO: Remove or adjust the ACME entry after you update the contributing guide
 
 linkcheck_ignore = [
-    r"https://matrix\.to/.*",
-    r"http://www\.gnu\.org/.*",
-    r"https://www\.gnu\.org/.*",
-    r"http://www.fsf\.org/.*",
-    r"http://sourceforge\.net/.*", #ignore, as works in browser
-    "https://sourceforge.net/",
     "http://127.0.0.1:8000",
-    r"https://app\.diagrams\.net.*",  # ignore, as works in browser, but link checker has some issues
-    "https://archive.ph/CAqQm",  # ignore, as works in browser, but link checker has some issues
-    r"http://bazaar\.launchpad\.net/.*",  #bazaar is in the process of being shutdown
-    r"http://www\.searchtools\.com/.*",  #ignore, example link, was never intended to be clicked
-    "https://bazaar.launchpad.net/lp-production-config",  # private
-    "https://bazaar.staging.launchpad.net",  # broken, unclear why XXX 2023-10-14: jugmac00- check with team
-    r"https://www\.breezy-vcs\.org/.*",  # broken, returns "Connection refused" on port 443
-    r"http://doc\.bazaar-vcs\.org/.*",  #broken, bazaar being shut down
-    "https://www.bazaar-vcs.org",  #broken, bazaar being shut down
-    r"http://bazaar-vcs\.org",  #broken, bazaar being shut down
-    "http://www.bazaar-vcs.org/",  #broken, bazaar being shut down
-    r"https://launchpad\.net/~bugsquad/\+mentoring",  #broken, offering may be outdated
-    r"https://launchpad\.net/\+access-token",  #broken, access restricted
-    r"https://launchpad\.net/\+request-token",  #broken, access restricted 
-    r"https://drive\.google\.com/file/d/1hUivL07Msoyej3wd_T4hMAX61EJzfE38/view\?usp=drive_link", #ignore, internal video
-    "https://bugs.launchpad.net/charm-launchpad-buildd-image-modifier",  #private
-    "https://bugs.launchpad.net/launchpad-vbuilder-manage",  #private
-    "https://example.com/.*",  #ignore, example links
-    "https://launchpad.net/canonical-mojo-specs",  # private
-    r"https://launchpad\.test.*",  #ignore, local test setup
-    r"https://bugs\.launchpad\.net/\+code/.*",
-    r"https://bugs\.qastaging\.launchpad\.net/.*",  #ignore, example link, was never intended to be clicked
-    r"http://code\.beta\.launchpad\.net/.*",
-    "http://diacritice.svn.sourceforge.net/viewvc/diacritice/trunk/",  #ignore, as works in browser, but link checker has some issues
-    "http://epydoc.sourceforge.net/fields.html",  #ignore, as works in browser, but link checker has some issues
-    r"http://api\.staging\.launchpad\.net/.*",  #ignore, as works in browser, but link checker has some issues
-    "http://i18n.ro/Ghidul_traducatorului_de_software",  #broken
-    "http://roundup.sourceforge.net/",  #ignore, as works in browser
-    "http://trac-hacks.org/wiki/XmlRpcPlugin",
-    "http://www.mysite.com/oauth-callback",  #ignore, not a real website
-    r"https://help\.launchpad\.net/.*",  #ignore, all critical links changed, others will redirect to the manual's landing page
-    r"https://bugs\.beta\.launchpad\.net/.*",  #broken, bazaar being shut down
-    "https://code.launchpad.net/~joe/frobnob/trunk",  #ignore, example link, was never intended to be clicked 
-    "https://deployable.ols.canonical.com/project/launchpad",  #private
-    "https://docutils.sourceforge.net/docs/user/rst/quickref.html",  #Ignore, works in browser
-    "https://epydoc.sourceforge.net/fields.html",  #Ignore, works in browser
-    "https://git.launchpad.net/launchpad/tree/doc/bug-export.rnc",  #broken. Process may need to be replaced/upgraded
-    "http://code.beta.launchpad.net/beagle",  #broken, bazaar being shut down
-    "https://launchpad.net/drupal/main",  #broken, should be replaced in the example
-    r"https://launchpad\.net/frobnob/.*",
-    r"https://buildbot\.net.*", #ignore, expired SSL certificate
-    r"https://docs\.buildbot\.net/.*", #ignore, expired SSL certificate
-    "https://documentation.help/Bazaar-help/sending_changes.html#understanding-merge-directives",  #403 error. The link works in browser
-    "Trunk/Glue",  #  needs update
-    "/Background",
-    "/Concepts",  #  needs update
-    "JavascriptUnitTesting/MockIo",  #needs update
-    "https://git.launchpad.net/launchpad-mojo-specs/tree/mojo-lp-git/services",  #private
-    "https://deployable.ols.canonical.com/project/launchpad-db",  #private
-    "irc.libera.chat",  #this is not an HTTP link
-    r"https://github\.com/canonical/fetch-service*",  #private
-    r"https://github\.com/canonical/fetch-operator*",  #private
-    r"https://git\.launchpad\.net/charm\-launchpad\-buildd\-image\-modifier/.*",  #private
-    "https://git.zx2c4.com/cgit/",  #unfortunately very flaky
-    "https://staging.launchpad.net",  #ignore, staging launchpad
-    r"https://wiki\.canonical\.com/.*",  #private
-    r"https://www\.nongnu\.org/.*",
-    r"https://www\.socialtext\.net/.*",
-    r"https://translations\.launchpad\.net/.*",
-    r"http://localhost.*",
-    "http://www.ubuntu.com/community/ubuntustory/licensing",  #works in browser, linkchecker issue
-    "http://www.boost.org/LICENSE_1_0.txt",  #Unexpected, Should be working
-    #Uncertain Dead - May not be replaceable
-     "Translations/Czech",  #Not a valid link
-    r"http://www\.softcatala\.org/.*",  #Broken, content not valid
-    "/Estonian",  #Not a valid link
-    "/Georgian",  #Not a valid link
-    "/Indonesian",  #Not a valid link
-    "/Italian",  #Not a valid link
-    "/Korean",  #Not a valid link
-    "/Russian",  #Not a valid link
-    "../Vietnamese",  #Not a valid link
-    "faq-2",  #Not a link
-    "faq=2",  #Not a link
-    "faq_#2",  #Not a link
-    "faq_1",  #Not a link
-    "faq_item_1",  #Not a link
-    "faq_number_2",  #Not a link
-    "/../POTemplates",  # - https://docs.lokalise.com/en/articles/1400767-gettext-po-pot
-    "API",
-    "/../YourProject/ImportingTemplates",
-    "Answer syntax parsing <Comments>",
-    "https://help.ubuntu.com/community/SSO/FAQs", #timeout, should be temporary
-    "https://requesttracker.com/request-tracker/",  #URL is rate limited
-]
+    "https://github.com/canonical/ACME/*"
+    ]
 
 
 # A regex list of URLs where anchors are ignored by 'make linkcheck'
@@ -343,7 +301,7 @@ linkcheck_ignore = [
 linkcheck_anchors_ignore_for_url = [r"https://github\.com/.*"]
 
 # give linkcheck multiple tries on failure
-linkcheck_timeout = 90
+# linkcheck_timeout = 30
 linkcheck_retries = 3
 
 ########################
@@ -356,62 +314,83 @@ linkcheck_retries = 3
 # NOTE: By default, the following MyST extensions are enabled:
 #       substitution, deflist, linkify
 
-# myst_enable_extensions = set()
+myst_enable_extensions = {
+    "colon_fence",
+    "deflist",
+    "substitution",
+    "tasklist"
+}
 
 
 # Custom Sphinx extensions; see
 # https://www.sphinx-doc.org/en/master/usage/extensions/index.html
 
 # NOTE: The canonical_sphinx extension is required for the starter pack.
+#       It automatically enables the following extensions:
+#       - custom-rst-roles
+#       - myst_parser
+#       - notfound.extension
+#       - related-links
+#       - sphinx_copybutton
+#       - sphinx_design
+#       - sphinx_reredirects
+#       - sphinx_tabs.tabs
+#       - sphinxcontrib.jquery
+#       - sphinxext.opengraph
+#       - terminal-output
+#       - youtube-links
 
 extensions = [
-    "canonical_sphinx",
-    "notfound.extension",
-    "sphinx_design",
-    "sphinx_reredirects",
-    "sphinx_tabs.tabs",
-    "sphinxcontrib.jquery",
-    "sphinxext.opengraph",
-    "sphinx_config_options",
-    "sphinx_contributor_listing",
-    "sphinx_filtered_toctree",
-    "sphinx_related_links",
-    "sphinx_roles",
     "sphinx_terminal",
-    "sphinx_ubuntu_images",
-    "sphinx_youtube_links",
     "sphinxcontrib.cairosvgconverter",
     "sphinx_last_updated_by_git",
     "sphinx.ext.intersphinx",
     "sphinx_sitemap",
-    "sphinxext.rediraffe",
+    "ulwazi",
+    "canonical_sphinx_config",
+    "myst_parser",
+    "sphinxcontrib.jquery",
+    "sphinx_tabs.tabs",
+    "sphinx_design",
 ]
 
 # Excludes files or directories from processing
 
 exclude_patterns = [
-    "readme.rst",
+    "doc-cheat-sheet*",
+    "_build", 
+    "Thumbs.db", 
+    ".DS_Store"
 ]
 
-# Add JavaScript files (located in .sphinx/_static/)
+# Adds custom CSS files, located under 'html_static_path'
 
-html_js_files = [
-    'js/bundle.js',
-    'issue_links.js',
-]
+# html_css_files = []
+
+
+# Adds custom JavaScript files, located under 'html_static_path'
+
+# html_js_files = []
+
+
+# Syntax highlighting settings
+
+highlight_language = "none" # default
+pygments_style = "autumn" # see https://pygments.org/styles for more
+pygments_dark_style = "github-dark" # see https://pygments.org/styles for more
 
 # Specifies a reST snippet to be appended to each .rst file
 
-# Add CSS files (located in .sphinx/_static/)
-html_css_files = ['cookie-banner.css']
-
-rst_epilog = ''
+rst_epilog = """
+.. include:: /reuse/links.txt
+.. include:: /reuse/substitutions.txt
+"""
 
 # Feedback button at the top; enabled by default
 #
-# To disable the button, uncomment this.
+# TODO: To disable the button, uncomment this.
 
-disable_feedback_button = True
+# disable_feedback_button = True
 
 
 # Your manpage URL
@@ -449,13 +428,14 @@ if "discourse_prefix" not in html_context and "discourse" in html_context:
 
 # Workaround for substitutions.yaml
 
-if os.path.exists('./reuse/substitutions.yaml'):
-    with open('./reuse/substitutions.yaml', 'r') as fd:
+if os.path.exists("./reuse/substitutions.yaml"):
+    with open("./reuse/substitutions.yaml", "r") as fd:
         myst_substitutions = yaml.safe_load(fd.read())
 
 # Add configuration for intersphinx mapping
 
-intersphinx_mapping = {
-    'starter-pack': ('https://canonical-example-product-documentation.readthedocs-hosted.com/en/latest', None),
-    'sphinxcontrib-mermaid': ('https://sphinxcontrib-mermaid-demo.readthedocs.io/en/latest', None)
-}
+intersphinx_mapping = {}
+
+# PDF
+
+set_modern_pdf_config = True
