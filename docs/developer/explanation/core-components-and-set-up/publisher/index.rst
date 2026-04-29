@@ -11,3 +11,4 @@ Publisher
 
    ubuntu-package-publishing
    ubuntu-archive-publisher
+   valid-until
