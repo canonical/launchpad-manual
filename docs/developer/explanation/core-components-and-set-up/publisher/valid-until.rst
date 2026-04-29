@@ -60,5 +60,7 @@ This configurations above is used during the publishing runs:
 
 -  ``refresh_threshold``: Refresh the Valid-Until tag, when it is within this 
    many days from being expired. 
--  ``validity_period``: Number of days the Release file will remain valid from 
-   the day of refreshing. 
+-  ``validity_period``: The number of days before expiration at which the 
+   Valid-Until value is refreshed.
+
+
