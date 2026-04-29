@@ -13,7 +13,7 @@ April 2026
 28 April
 
 - Deployed the changes to support "Valid-Until" tag in the Release files on the
-archive. The tag is disabled by default for all the series. (`Bug #716535 <https://bugs.launchpad.net/launchpad/+bug/716535>`_) 
+  archive. The tag is disabled by default for all the series. (`Bug #716535 <https://bugs.launchpad.net/launchpad/+bug/716535>`_) 
 
 13 April
 
