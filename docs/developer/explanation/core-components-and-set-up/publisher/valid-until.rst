@@ -56,5 +56,9 @@ for a distribution series using the Launchpad API::
     In [9]: stonking.valid_until_config
     Out[9]: {'Backports': {'refresh_threshold': 7, 'validity_period': 14}}
 
-This example sets a ``refresh_threshold`` of 7 days and a ``validity_period`` 
-of 14 days for the Release file.
+This configurations above is used during the publishing runs:
+
+-  ``refresh_threshold``: Refresh the Valid-Until tag, when it is within this 
+   many days from being expired. 
+-  ``validity_period``: Number of days the Release file will remain valid from 
+   the day of refreshing. 
