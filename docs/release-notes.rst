@@ -9,6 +9,13 @@ Release Notes
 
 April 2026
 ++++++++++
+
+28 April
+
+- Deployed the changes to support "Valid-Until" tag in the Release files on the
+  archive. The tag is disabled by default for all the series. For more information,
+  see :ref:`valid-until-config`. (`Bug #716535 <https://bugs.launchpad.net/launchpad/+bug/716535>`_) 
+
 13 April
 
 - Added the `build_path` option to snap package recipes, allowing for having multiple
