@@ -14,6 +14,23 @@ April 2026
 - Added the `build_path` option to snap package recipes, allowing for having multiple
   `snapcraft.yaml` in the same repository.
 
+
+March 2026
+++++++++++
+31 March
+
+- Fixed Ubuntu milestones timeout.
+
+20 March
+
+- Fixed snap, charm and source package listings and Merge Proposals active
+  reviews timeouts.
+
+12 March
+
+- Export `BinaryPackageBuild.distro_series` to the API.
+- Add admin-only `cancel_upload` API endpoint for builds.
+
 December 2025
 +++++++++++++
 
