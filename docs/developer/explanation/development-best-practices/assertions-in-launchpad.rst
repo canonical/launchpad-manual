@@ -57,7 +57,7 @@ we should be raising an error, instead::
 
 It is interesting to note what Tim Peters thinks of assertions.
 
-http://mail.python.org/pipermail/python-dev/2000-November/010670.html
+https://web.archive.org/web/20260216031622/http://mail.python.org/pipermail/python-dev/2000-November/010670.html
 
 Testing your asserts
 --------------------
