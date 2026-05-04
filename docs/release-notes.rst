@@ -9,6 +9,13 @@ Release Notes
 
 April 2026
 ++++++++++
+
+28 April
+
+- Deployed the changes to support "Valid-Until" tag in the Release files on the
+  archive. The tag is disabled by default for all the series. For more information,
+  see :ref:`valid-until-config`. (`Bug #716535 <https://bugs.launchpad.net/launchpad/+bug/716535>`_) 
+
 23 April
 
 - Changed most user-facing help.launchpad.net links to documentation.ubuntu.com/launchpad 
