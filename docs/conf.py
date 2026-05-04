@@ -248,20 +248,13 @@ linkcheck_ignore = [
     r"https://www\.gnu\.org/.*",
     r"http://www.fsf\.org/.*",
     r"http://sourceforge\.net/.*", #ignore, as works in browser
-    "https://sourceforge.net/",
     "http://127.0.0.1:8000",
     r"https://app\.diagrams\.net.*",  # ignore, as works in browser, but link checker has some issues
     "https://archive.ph/CAqQm",  # ignore, as works in browser, but link checker has some issues
-    r"http://bazaar\.launchpad\.net/.*",  #bazaar is in the process of being shutdown
     r"http://www\.searchtools\.com/.*",  #ignore, example link, was never intended to be clicked
     "https://bazaar.launchpad.net/lp-production-config",  # private
     "https://bazaar.staging.launchpad.net",  # broken, unclear why XXX 2023-10-14: jugmac00- check with team
     r"https://www\.breezy-vcs\.org/.*",  # broken, returns "Connection refused" on port 443
-    r"http://doc\.bazaar-vcs\.org/.*",  #broken, bazaar being shut down
-    "https://www.bazaar-vcs.org",  #broken, bazaar being shut down
-    r"http://bazaar-vcs\.org",  #broken, bazaar being shut down
-    "http://www.bazaar-vcs.org/",  #broken, bazaar being shut down
-    r"https://launchpad\.net/~bugsquad/\+mentoring",  #broken, offering may be outdated
     r"https://launchpad\.net/\+access-token",  #broken, access restricted
     r"https://launchpad\.net/\+request-token",  #broken, access restricted 
     r"https://drive\.google\.com/file/d/1hUivL07Msoyej3wd_T4hMAX61EJzfE38/view\?usp=drive_link", #ignore, internal video
@@ -282,17 +275,14 @@ linkcheck_ignore = [
     "http://www.mysite.com/oauth-callback",  #ignore, not a real website
     r"https://help\.launchpad\.net/.*",  #ignore, all critical links changed, others will redirect to the manual's landing page
     r"https://bugs\.beta\.launchpad\.net/.*",  #broken, bazaar being shut down
-    "https://code.launchpad.net/~joe/frobnob/trunk",  #ignore, example link, was never intended to be clicked 
     "https://deployable.ols.canonical.com/project/launchpad",  #private
     "https://docutils.sourceforge.net/docs/user/rst/quickref.html",  #Ignore, works in browser
     "https://epydoc.sourceforge.net/fields.html",  #Ignore, works in browser
     "https://git.launchpad.net/launchpad/tree/doc/bug-export.rnc",  #broken. Process may need to be replaced/upgraded
     "http://code.beta.launchpad.net/beagle",  #broken, bazaar being shut down
-    "https://launchpad.net/drupal/main",  #broken, should be replaced in the example
     r"https://launchpad\.net/frobnob/.*",
     r"https://buildbot\.net.*", #ignore, expired SSL certificate
     r"https://docs\.buildbot\.net/.*", #ignore, expired SSL certificate
-    "https://documentation.help/Bazaar-help/sending_changes.html#understanding-merge-directives",  #403 error. The link works in browser
     "Trunk/Glue",  #  needs update
     "/Background",
     "/Concepts",  #  needs update
@@ -302,7 +292,6 @@ linkcheck_ignore = [
     "irc.libera.chat",  #this is not an HTTP link
     r"https://github\.com/canonical/fetch-service*",  #private
     r"https://github\.com/canonical/fetch-operator*",  #private
-    r"https://git\.launchpad\.net/charm\-launchpad\-buildd\-image\-modifier/.*",  #private
     "https://git.zx2c4.com/cgit/",  #unfortunately very flaky
     "https://staging.launchpad.net",  #ignore, staging launchpad
     r"https://wiki\.canonical\.com/.*",  #private
