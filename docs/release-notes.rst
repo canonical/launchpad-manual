@@ -22,6 +22,7 @@ April 2026
 - Added the `build_path` option to snap package recipes, allowing for having multiple
   `snapcraft.yaml` in the same repository.
 - Removed blog posts from front page (link to blog is still available in the footer)
+
 6 April
 
 - Switched to `python-debian` from `apt_pkg` to process upload files. 
