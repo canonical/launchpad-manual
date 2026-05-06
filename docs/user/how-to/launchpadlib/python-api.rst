@@ -114,7 +114,7 @@ Copy an old version of a package into your PPA for a newer release
 ------------------------------------------------------------------
 
 Sometimes you want to build the older version of a package from an
-earlier Ubuntu release on the newest Ubuntu. You can use the API to
+earlier Ubuntu release on the newest Ubuntu: you can use the API to
 easily copy the old release's version into your PPA where it can be
 re-published.
 
