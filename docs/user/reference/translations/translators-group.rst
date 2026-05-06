@@ -1,3 +1,7 @@
+.. meta::
+   :description: Launchpad translators group reference covering team structure, 
+      membership, permissions, and translation coordination.
+
 .. _launchpad-translators-group:
 
 Launchpad translators group
@@ -14,7 +18,7 @@ software.
 There is one Launchpad localization team appointed for each language.
 
 We encourage Ubuntu, Debian, Fedora, GNOME, KDE, Mozilla,
-OpenOffice.org and all other translators dedicated to a specific
+LibreOffice and all other translators dedicated to a specific
 project to join the localization team appointed for their language.
 
 We also encourage project maintainers to appoint the **Launchpad
@@ -93,7 +97,7 @@ To check the current status of Launchpad Translators Group, please consult the `
 
 If the Launchpad localization team appointed to your language is no longer active, or in case you encounter problems joining or working with the team, please let us know by contacting the `Launchpad Translation Coordinators <https://launchpad.net/~launchpad-translations-coordinators>`__.
 
-How to start a new team and join Launchpad Translators
+How to start a new team and join Launchpad translators
 ------------------------------------------------------
 
 Here's how you can create a new team for your language and join the

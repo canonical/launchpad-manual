@@ -1,3 +1,7 @@
+.. meta::
+   :description: Packaging how-to guides for Launchpad including PPAs, snaps, 
+      charms, and OCI images.
+
 .. _packaging-how-to:
 
 Packaging
@@ -15,3 +19,5 @@ Packaging
     build-charms-in-launchpad
     build-oci-images-in-launchpad
     use-ppa-snapshot-service
+    copying-packages
+    deleting-packages

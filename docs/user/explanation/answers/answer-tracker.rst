@@ -1,6 +1,10 @@
+.. meta::
+   :description: Understand Launchpad's answer tracker for building community 
+      support, helping users get help, and managing project questions.
+
 .. _launchpad-answer-tracker:
 
-Launchpad Answer Tracker
+Launchpad answer tracker
 ========================
 
 .. include:: /includes/important_not_revised_help.rst
@@ -30,7 +34,7 @@ Launchpad Answers helps to solve these problems by:
 It also serves as a simple ticketing system for tracking admin requests.
 
 
-Key Features
+Key features
 ------------
 
 **Launchpad Integration:** The Answer Tracker is available for all
@@ -87,7 +91,7 @@ help <asking-for-help>` using Launchpad.
 
 Next, encourage members of your community to use Answers. In particular,
 you should consider encouraging members of your community to become
-:ref:`answer contacts <offering-help>`.
+:ref:`answer contacts <help-the-community>`.
 
 The Launchpad Answer Tracker offers tools to effectively build a support
 community around your project. It makes it easy for users to find help
@@ -108,8 +112,8 @@ a quick tour which shows the main features of the Answer Tracker.
 
 3. :ref:`Asking for help <asking-for-help>`:find out how to
    use Launchpad to get help with software.
-4. :ref:`Offering help <offering-help>`: how to help other
-   people and become an ..answer contact.
+4. :ref:`Offering help <help-the-community>`: how to help other
+   people and become an answer contact.
 5. `Answer syntax parsing <Comments>`
 
 ..

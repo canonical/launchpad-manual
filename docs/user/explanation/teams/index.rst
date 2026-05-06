@@ -1,3 +1,9 @@
+.. meta::
+   :description: First step to understanding how to make the best use of 
+      Launchpad's team feature.
+
+.. _exp-launchpad-teams:
+
 Launchpad teams
 ===============
 

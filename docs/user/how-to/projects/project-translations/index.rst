@@ -1,3 +1,7 @@
+.. meta::
+   :description: How-to guides for managing project translations in Launchpad 
+      including importing templates and exporting translations.
+
 Projects
 ========
 

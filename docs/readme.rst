@@ -1,311 +1,120 @@
+.. meta::
+   :description: Get started with Launchpad's documentation for users and 
+       developers. Set up the repository, edit and build docs locally, and more.
+
 Launchpad Manual
 ================
 
 Welcome to the official Launchpad Manual. This manual is designed to help users,
 developers, and contributors understand and utilize the extensive features of
-Launchpad more effectively. It covers a wide range of topics, from basic
-navigation within Launchpad to advanced features such as code hosting, bug
-tracking, and translations. The documentation is structured to provide guidance
-for all levels of users, whether you are new to Launchpad or an experienced user
-looking to deepen your knowledge.
+Launchpad effectively. It covers a wide range of topics, from basic navigation 
+within Launchpad to advanced features such as bug tracking, and using the API. 
 
-For more specialized needs, including non-public information relevant to the
-Launchpad team and other internal developers, a separate documentation resource
-is available. This ensures that all participants, from public users to internal
-developers, have access to tailored information that meets their specific
-requirements.
+The documentation is separated into a user and a developer section. The former 
+covers standard use cases to help you make use of Launchpad features, while the
+latter offers an in-depth look at the inner workings of the platform for those 
+interested in contributing to feature development and bug fixing.
 
-This manual is continuously updated to reflect the latest features and
-improvements. You can access the latest version of the documentation `here
-<https://documentation.ubuntu.com/launchpad/en/latest/>`_.
+The Launchpad Admin Manual is an accompanying set of internal docs containing 
+non-public information used by Launchpad and other internal teams to run the 
+platform and address user issues.
 
-Documentation starter pack
---------------------------
+You can access the latest version of the documentation at
+`https://documentation.ubuntu.com/launchpad/ <https://documentation.ubuntu.com/launchpad/>`_.
 
-See the `Sphinx and Read the Docs 
-<https://canonical-documentation-with-sphinx-and-readthedocscom.readthedocs-hosted.com/>`_
-guide for instructions on how to get started with Sphinx documentation.
+Build the documentation
+-----------------------
 
-Then go through the following sections to use this starter pack to set up your
-docs repository.
+The launchpad manual uses `Canonical's sphinx documentation starter pack <https://github.com/canonical/sphinx-docs-starter-pack>`_ 
+to build the docs, and Read the Docs (RTD) to publish them. You can build the 
+docs locally by following these steps:
 
-Set up your documentation repository
-------------------------------------
+#.  Clone this repository::
 
-You can either create a standalone documentation project based on this
-repository or include the files from this repository in a dedicated
-documentation folder in an existing code repository.
+      git clone https://github.com/canonical/launchpad-manual.git
 
-**Note:** We're planning to provide the contents of this repository as an
-installable package in the future, but currently, you need to copy and update
-the required files manually.
+#. Navigate to the ``/docs`` directory::
 
-Standalone documentation repository
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      cd docs 
 
-To create a standalone documentation repository, clone this starter pack
-repository, `update the configuration <#configure-the-documentation>`_, and then
-commit all files to the documentation repository.
+#. Install the prerequisities::
 
-You don't need to move any files, and you don't need to do any special
-configuration on Read the Docs.
+      make install 
 
-Here is one way to do this for newly-created fictional docs repository
-``canonical/alpha-docs``:
+#. Build and serve the documentation::
 
-.. code-block:: none
+      make run 
 
-   git clone git@github.com:canonical/sphinx-docs-starter-pack alpha-docs
-   cd alpha-docs
-   rm -rf .git
-   git init
-   git branch -m main
-   UPDATE THE CONFIGURATION AND BUILD THE DOCS
-   git add -A
-   git commit -m "Import sphinx-docs-starter-pack"
-   git remote add upstream git@github.com:canonical/alpha-docs
-   git push -f upstream main
+The documentation will be served at ``http://127.0.0.1:8000`` by default. After
+the first build, you can skip the first and third steps when rebuilding the 
+documentation in the future.
 
-Documentation in a code repository
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Edit the documentation
+----------------------
+The Launchpad Manual docs are written in reStructuredText (RST) only. To make 
+changes to this documentation, you'll need to clone the repository and update 
+the relevant rst file(s) and/or add new ones.
 
-To add documentation to an existing code repository:
+It's a good idea to ensure that the documentation builds locally with no errors 
+or warnings before proposing to merge your changes. Changes that fail CI checks 
+due to avoidable errors will not be approved for merging. 
 
-#. create a directory called ``docs`` at the root of the code repository
-#. populate the above directory with the contents of the starter pack repository
-   (with the exception of the ``.git`` directory)
-#. copy the file(s) located in the ``docs/.github/workflows`` directory into the
-   code repository's ``.github/workflows`` directory
-#. in the above workflow file(s), change the value of the ``working-directory``
-   field from ``.`` to ``docs``
-#. in file ``docs/.readthedocs.yaml`` set the following:
+**TIP**: Some parts of the build, e.g., the HTML output and the document 
+structure are cached. Therefore, your changes may not show in subsequent builds. 
+Use the ``make clean`` command to clear the cache before building.
 
-   * ``configuration: docs/conf.py``
-   * ``requirements: docs/.sphinx/requirements.txt``
+Submit a pull request
+---------------------
+You can't create a new branch in this repository. To create a pull request, 
+your changes must be in a fork of this repository.
 
-**Note:** When configuring RTD itself for your project, the setting "Path for
-``.readthedocs.yaml``" (under **Advanced Settings**) will need to be given the
-value of ``docs/.readthedocs.yaml``.
+CI checks
+~~~~~~~~~
+Pull requests are subjected to multiple CI checks before they can be merged. 
+These include checks for:
 
-Getting started
----------------
+- Spelling
+- Inclusive language 
+- Deleted or moved files 
+- Broken or timing out links 
+- Signing of `Canonical's contributor licensing agreement <https://canonical.com/legal/contributors/agreement?type=individual>`_
+- Ability to build with no errors or warnings 
 
-There are make targets defined in the ``Makefile`` that do various things. To
-get started, we will:
+If your pull request fails a CI check due to avoidable issues in your changes, 
+you will be required to make the necessary changes to ensure your PR passes the 
+relevant CI check.
 
-* install prerequisite software
-* view the documentation
+It is considered good practice to run the checks locally to catch any errors
+before submitting your PR and asking for a review. The commands you can use to
+run checks locally include:
 
-Install prerequisite software
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- ``make spelling``: Catch spelling errors or unrecognized words 
+- ``make linkcheck-discrete``: Identify broken or timing out links 
+- ``make woke``: Check for non-inclusive language 
 
-To install the prerequisites:
+Read more about the CI checks in the 
+`upstream Starter pack documentation <https://canonical-starter-pack.readthedocs-hosted.com/stable/reference/automatic_checks/>`_.
 
-.. code-block:: none
+Redirects
+~~~~~~~~~
 
-   make install
+This documentation uses rediraffe to handle redirects. If your changes include 
+moving, deleting, or renaming a file, add a redirect by adding the old and new 
+paths in ``redirects.txt``. If a redirect is not added, the pull request will 
+fail at least one CI check.
 
-This will create a virtual environment (``.sphinx/venv``) and install dependency
-software (``.sphinx/requirements.txt``) within it.
+Review and approval
+~~~~~~~~~~~~~~~~~~~
+Pull requests can only be merged after being reviewed and approved by a user 
+with  by a reviewer with write access. Currently, this means they must be a 
+member of the Launchpad team.
 
-A complete set of pinned, known-working dependencies is included in
-``.sphinx/pinned-requirements.txt``.
+Your PR may not be reviewed immediately after submission depending on certain 
+factors, but the Launchpad team remains eager to collaborate with the community
+and will try to address all issues and pull requests as soon as possible.
 
-View the documentation
-~~~~~~~~~~~~~~~~~~~~~~
-
-To view the documentation:
-
-.. code-block:: none
-
-   make run
-
-This will do several things:
-
-* activate the virtual environment
-* build the documentation
-* serve the documentation on **127.0.0.1:8000**
-* rebuild the documentation each time a file is saved
-* send a reload page signal to the browser when the documentation is rebuilt
-
-The ``run`` target is therefore very convenient when preparing to submit a
-change to the documentation.
-
-Local checks
-~~~~~~~~~~~~
-
-Before committing and pushing changes, it's a good practice to run various
-checks locally to catch issues early in the development process.
-
-Local build
-^^^^^^^^^^^
-
-Run a clean build of the docs to surface any build errors that would occur in
-RTD:
-
-.. code-block:: none
-
-   make clean-doc make html
-
-Spelling check
-^^^^^^^^^^^^^^
-
-Ensure there are no spelling errors in the documentation:
-
-.. code-block:: shell
-
-   make spelling
-
-Inclusive language check
-^^^^^^^^^^^^^^^^^^^^^^^^
-
-Ensure the documentation uses inclusive language:
-
-.. code-block:: shell
-
-   make woke
-
-Link check
-^^^^^^^^^^
-
-Validate links within the documentation:
-
-.. code-block:: shell
-
-   make linkcheck
-
-Configure the documentation
----------------------------
-
-You must modify some of the default configuration to suit your project. To
-simplify keeping your documentation in sync with the starter pack, all custom
-configuration is located in the ``custom_conf.py`` file. You should never modify
-the common ``conf.py`` file.
-
-Go through all settings in the ``Project information`` section of the
-``custom_conf.py`` file and update them for your project.
-
-See the following sections for further customisation.
-
-Configure the header
-~~~~~~~~~~~~~~~~~~~~
-
-By default, the header contains your product tag, product name (taken from the
-``project`` setting in the ``custom_conf.py`` file), a link to your product
-page, and a drop-down menu for "More resources" that contains links to Discourse
-and GitHub.
-
-You can change any of those links or add further links to the "More resources"
-drop-down by editing the ``.sphinx/_templates/header.html`` file. For example,
-you might want to add links to announcements, tutorials, getting started guides,
-or videos that are not part of the documentation.
-
-Configure the spelling check
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-If your documentation uses US English instead of UK English, change this in the
-``.sphinx/spellingcheck.yaml`` file.
-
-To add exceptions for words the spelling check marks as wrong even though they
-are correct, edit the ``.custom_wordlist.txt`` file. You shouldn't edit
-``.wordlist.txt``, because this file is maintained and updated centrally and
-contains words that apply across all projects.
-
-Configure the inclusive-language check
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-If you can't avoid non-inclusive language in some cases, you'll need to
-configure exemptions for them.
-
-In-file exemptions
-^^^^^^^^^^^^^^^^^^
-
-Suppose a reST file has a link to some site you don't control, and the address
-contains "\m\a\s\t\e\r" — a non-inclusive word. You can't change the link, but
-the remainder of the file must be checked for inclusive language. Here the
-``woke`` tool's `next-line ignore
-<https://docs.getwoke.tech/ignore/#in-line-and-next-line-ignoring>`_ feature is
-useful, as follows.
-
-If the link is in-line, move the definition to a line of its own (e.g. among
-``.. LINKS`` at the bottom of the file). Above the definition, invoke the
-``wokeignore`` rule for the offending word:
-
-.. code-block:: ReST
-
-   .. LINKS
-   .. wokeignore:rule=master
-   .. _link anchor: https://some-external-site.io/master/some-page.html
-
-Exempt an entire file
-^^^^^^^^^^^^^^^^^^^^^
-
-If it's necessary *and safe*, you can exempt a whole file from
-inclusive-language checks. To exempt ``docs/foo/bar.rst`` for example, add the
-following line to ``.wokeignore``:
-
-.. code-block:: none
-
-   foo/bar.rst
-
-.. note::
-
-   For ``.wokeignore`` to take effect, you must also move it into your project's
-   root directory. If you leave it in ``docs/``, the ``woke`` tool won't find it
-   and no files will be exempt.
-
-Change checked file-types and locations
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-By default, only reST files are checked for inclusive language — and only those
-in the documentation folder (usually ``docs/``) and its subfolders. To check
-Markdown files for example, or files outside the ``docs/`` subtree, you must
-change how the ``woke`` tool is invoked.
-
-The ``woke`` command is issued from ``docs/Makefile``. The command's syntax is
-out of scope here — consult the `woke User Guide
-<https://docs.getwoke.tech/usage/#file-globs>`_.
-
-Configure the link check
-~~~~~~~~~~~~~~~~~~~~~~~~
-
-If you have links in the documentation that you don't want to be checked (for
-example, because they are local links or give random errors even though they
-work), you can add them to the ``linkcheck_ignore`` variable in the
-``custom_conf.py`` file.
-
-Activate/deactivate feedback button
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-A feedback button is included by default, which appears at the top of each page
-in the documentation. It redirects users to your GitHub issues page, and
-populates an issue for them with details of the page they were on when they
-clicked the button.
-
-If your project does not use GitHub issues, set the ``github_issues`` variable
-in the ``custom_conf.py`` file to an empty value to disable both the feedback
-button and the issue link in the footer. If you want to deactivate only the
-feedback button, but keep the link in the footer, set
-``disable_feedback_button`` in the ``custom_conf.py`` file to ``True``.
-
-Add redirects
-~~~~~~~~~~~~~
-
-You can add redirects to make sure existing links and bookmarks continue working
-when you move files around. To do so, specify the old and new paths in the
-``redirects`` setting of the ``custom_conf.py`` file.
-
-Add custom configuration
-~~~~~~~~~~~~~~~~~~~~~~~~
-
-To add custom configurations for your project, see the ``Additions to default
-configuration`` and ``Additional configuration`` sections in the
-``custom_conf.py`` file. These can be used to extend or override the common
-configuration, or to define additional configuration that is not covered by the
-common ``conf.py`` file.
-
-(Optional) Synchronise GitHub issues to Jira
---------------------------------------------
+(Optional - Launchpad team only) Synchronise GitHub issues to Jira
+------------------------------------------------------------------
 
 If you wish to sync issues from your documentation repository on GitHub to your
 Jira board, configure the `GitHub/Jira sync bot
@@ -321,10 +130,3 @@ contains configuration for syncing issues from the starter pack repository to
 its documentation Jira board. Therefore, it does not work out of the box for
 other repositories in GitHub, and you must update it if you want to use the
 synchronisation feature.
-
-Change log
-----------
-
-See the `change log
-<https://github.com/canonical/sphinx-docs-starter-pack/wiki/Change-log>`_ for a
-list of relevant changes to the starter pack.

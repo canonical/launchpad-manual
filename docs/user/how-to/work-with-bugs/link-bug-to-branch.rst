@@ -1,3 +1,7 @@
+.. meta::
+   :description: Link bug reports to code branches in Launchpad to track fixes 
+      and associate merge proposals with specific issues.
+
 .. _link-a-bug-reports-to-a-branch:
 
 Link a bug reports to a branch
@@ -13,7 +17,7 @@ Fix a bug in a dedicated branch
 -------------------------------
 
 Let's say you're new to a project. You spot a bug report and you're pretty 
-certain you can fix it. You :ref:`pull down your own branch <host-a-git-repository-on-launchpad>` 
+certain you can fix it. You :ref:`pull down your own branch <hosting-git-repositories>` 
 of the project's trunk and hack away. Every now and then, you push your branch 
 up to Launchpad.
 

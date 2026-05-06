@@ -1,3 +1,9 @@
+.. meta::
+   :description: Reference document for the the mirror prober script and how to
+      access the log files.
+
+.. _mirror-prober-reference:
+
 Mirror prober
 =============
 

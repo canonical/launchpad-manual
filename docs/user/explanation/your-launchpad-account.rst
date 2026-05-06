@@ -1,3 +1,7 @@
+.. meta::
+   :description: Understand how you can set up and manage your Launchpad 
+      account.
+
 .. _your-launchpad-account:
 
 Your Launchpad account

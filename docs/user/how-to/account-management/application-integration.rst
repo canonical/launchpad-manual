@@ -1,3 +1,7 @@
+.. meta::
+   :description: Integrate third-party applications with your Launchpad account 
+      using OAuth authentication.
+
 .. _application-integration:
 
 Application integration

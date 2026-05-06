@@ -1,6 +1,9 @@
+.. meta::
+   :description: Launchpad translation best practices for project maintainers.
+
 .. _launchpad-project-translation-best-practices:
 
-Launchpad project translation Best Practices
+Launchpad project translation best practices
 ============================================
 
 .. include:: /includes/important_not_revised_help.rst
@@ -109,7 +112,7 @@ frobnob.pot.)
     named ``limewire``, and here is the Launchpad URL to it:
     https://translations.launchpad.net/limewire/trunk/+pots/limewire)
 
-Important Notes on Gettext
+Important notes on gettext
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 It is important that you use the gettext API in your source code
@@ -188,7 +191,7 @@ non-trivial topic and is covered elsewhere.
 Set up your project in Launchpad
 --------------------------------
 
-Enabling Translations
+Enabling translations
 ~~~~~~~~~~~~~~~~~~~~~
 
 If not already done, enable translations for your project at this URL:

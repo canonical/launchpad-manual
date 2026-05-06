@@ -1,7 +1,13 @@
+.. meta::
+   :description: Complete reference of email interface commands for managing 
+      Launchpad bugs via email including syntax and examples.
+
 Email interface command reference
 =================================
 
 .. include:: /includes/important_not_revised_help.rst
+This is a reference of the commands you can use when tracking bugs on Launchpad
+using email.
 
 You must write one email command per line. Remember that you need to
 start the line with a space, otherwise it will be treated as part of
@@ -29,7 +35,9 @@ For example:
 
     assignee bradb
 
-affects
+.. _affects:
+
+Affects
 -------
 
 ``affects [distribution|package|product]``
@@ -77,7 +85,7 @@ The ``affects`` target can take the following forms:
 
     affects $distribution/$distro_series/$source_package
 
-summary
+Summary
 -------
 
 ``summary "$summary"``
@@ -88,7 +96,7 @@ Change the one-line summary of the bug. Quotes are required.
 
     summary "A better summary"
 
-assignee
+Assignee
 --------
 
 ``assignee [name|email|nobody]``
@@ -109,7 +117,7 @@ Unassign the bug.
 
     assignee nobody
 
-status
+Status
 ------
 
 ``status
@@ -121,7 +129,7 @@ Change the status of a bug.
 
     status fixreleased
 
-importance
+Importance
 ----------
 
 ``importance [wishlist|low|medium|high|critical]``
@@ -132,7 +140,7 @@ Change the importance of a bug.
 
     importance high
 
-milestone
+Milestone
 ---------
 
 ``milestone $milestone``
@@ -151,7 +159,7 @@ You can clear the milestone by sending a hyphen:
 
     milestone -
 
-informationtype
+Informationtype
 ---------------
 
 ``informationtype
@@ -165,7 +173,7 @@ with can see "Private", "Private Security", and "Proprietary" bugs.
 
     informationtype privatesecurity
 
-subscribe
+Subscribe
 ---------
 
 ``subscribe [name|email]``
@@ -192,14 +200,14 @@ Subscribe Bjorn to the bug.
 
     subscribe bjornt
 
-unsubscribe
+Unsubscribe
 -----------
 
 ``unsubscribe [name|email]``
 
 The opposite of the subscribe command.
 
-duplicate
+Duplicate
 ---------
 
 ``duplicate $bugid``
@@ -216,7 +224,7 @@ To unmark the bug as a duplicate, specify 'no' as the bug id.
 
      duplicate no
 
-bug
+Bug
 ---
 
 ``bug $bugid``
@@ -238,7 +246,7 @@ Send such emails to ``edit@bugs.launchpad.net``.
     bug 49
     status confirmed
 
-tag
+Tag
 ---
 
 ``tag $tag``
@@ -262,7 +270,7 @@ Remove a tag by prefixing the tag name with ``-``.
 
     tag -foo
 
-done
+Done
 ----
 
 ``done`` tells Launchpad to process no further commands.

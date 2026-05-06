@@ -1,3 +1,7 @@
+.. meta::
+   :description: Reference guide for working with multi-project bugs in 
+      Launchpad and external bug trackers.
+
 .. _about-multi-project-bugs:
 
 Multi-project bugs

@@ -1,3 +1,9 @@
+.. meta::
+   :description: Translations reference for Launchpad covering language 
+      guidelines, licensing, permissions, etc.
+
+.. _ref-translations:
+
 Translations
 ============
 

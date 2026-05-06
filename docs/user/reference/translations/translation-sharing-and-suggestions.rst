@@ -1,3 +1,8 @@
+.. should be moved to explanations
+.. meta::
+   :description: Translation sharing and suggestions in Launchpad for reusing 
+      translations.
+
 Translation sharing and suggestions
 ===================================
 

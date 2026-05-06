@@ -1,3 +1,7 @@
+.. meta::
+   :description: Set up webhooks in Launchpad to receive real-time HTTP 
+      notifications.
+
 .. _webhooks:
 
 Webhooks
@@ -124,7 +128,7 @@ events happened, but (as with any distributed service) you cannot rely
 on this. If ordering is important to your application, then you should
 sort events by the numeric ``X-Launchpad-Delivery`` header.
 
-Filter Git Repository Webhook deliveries
+Filter Git repository webhook deliveries
 ----------------------------------------
 
 Git Repository Webhooks specifically have an optional
@@ -143,7 +147,7 @@ finishes (webhook is not triggered), the same commit is later pushed to
 a branch whose git reference match the ``git_ref_pattern`` but the
 webhook is not triggered because there is no change to the CI Build.
 
-Pattern Rules
+Pattern rules
 ~~~~~~~~~~~~~
 
 You can use the following wildcards to create your pattern:

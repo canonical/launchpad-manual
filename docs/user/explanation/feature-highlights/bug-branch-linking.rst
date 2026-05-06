@@ -1,3 +1,6 @@
+.. meta::
+   :description: Highlight of Launchpad's bug-branch-linking feature.
+
 .. _linking-bugs-to-dedicated-branches:
 
 Linking bugs to dedicated branches

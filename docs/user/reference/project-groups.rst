@@ -1,6 +1,10 @@
+.. meta::
+   :description: Learn about project groups in Launchpad for managing related 
+      projects from a single place.
+
 .. _project-groups:
 
-Project Groups
+Project groups
 ==============
 
 .. include:: /includes/important_not_revised_help.rst

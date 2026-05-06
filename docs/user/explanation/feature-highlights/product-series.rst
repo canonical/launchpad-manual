@@ -1,3 +1,7 @@
+.. meta::
+   :description: Highlight of the product-series development approach enabled 
+      by Launchpad.
+
 .. _series-major-stable-and-development-branches:
 
 Series: major stable and development branches

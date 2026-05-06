@@ -1,6 +1,10 @@
+.. meta::
+   :description: Launchpad teams reference covering membership policies, 
+      finding teams, and learning more about them.
+
 .. _ref-launchpad-teams:
 
-Launchpad Teams
+Launchpad teams
 ===============
 
 .. include:: /includes/important_not_revised_help.rst

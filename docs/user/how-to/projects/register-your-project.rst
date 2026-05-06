@@ -1,3 +1,7 @@
+.. meta::
+   :description: Step-by-step guide to register your project in Launchpad and 
+      configure it for collaboration, code hosting, and bug tracking.
+
 .. _how-to-register-your-project:
 
 Register your project

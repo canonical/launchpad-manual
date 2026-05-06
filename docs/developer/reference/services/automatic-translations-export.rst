@@ -1,3 +1,8 @@
+.. meta::
+   :description: The schedule of automatic translations tarball exports from 
+      Launchpad.
+
+.. _automatic-translations-export:
 
 Automatic translations tarball exports
 ======================================

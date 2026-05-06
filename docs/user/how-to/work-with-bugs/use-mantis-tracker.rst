@@ -1,3 +1,6 @@
+.. meta::
+   :description: Track bugs with Mantis bug tracker integration in Launchpad.
+
 Track bugs with Mantis
 ======================
 

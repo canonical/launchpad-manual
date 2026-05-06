@@ -1,3 +1,8 @@
+.. Should be moved to explanation section
+.. meta::
+   :description: Understanding bug expiry in Launchpad including automatic 
+      expiration rules, time frames, and incomplete bug lifecycle.
+
 .. _bug-expiry:
 
 Bug expiry

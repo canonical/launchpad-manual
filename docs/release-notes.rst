@@ -1,7 +1,72 @@
+.. meta::
+   :description: Launchpad release notes documenting new features, improvements, 
+       and changes to the platform over time.
+
 .. _release-notes:
 
 Release Notes
 =============
+
+April 2026
+++++++++++
+
+28 April
+
+- Deployed the changes to support "Valid-Until" tag in the Release files on the
+  archive. The tag is disabled by default for all the series. For more information,
+  see :ref:`valid-until-config`. (`Bug #716535 <https://bugs.launchpad.net/launchpad/+bug/716535>`_) 
+
+23 April
+
+- Changed most user-facing help.launchpad.net links to documentation.ubuntu.com/launchpad 
+  links.
+- Released a new version of the distro series page. See
+  `launchpad.net/ubuntu/resolute <https://launchpad.net/ubuntu/resolute>`_
+  for an example.
+
+13 April
+
+- Added the `build_path` option to snap package recipes, allowing for having multiple
+  `snapcraft.yaml` in the same repository.
+- Removed blog posts from front page (link to blog is still available in the footer)
+
+6 April
+
+- Switched to `python-debian` from `apt_pkg` to process upload files. 
+
+March 2026
+++++++++++
+31 March
+
+- Fixed Ubuntu milestones timeout.
+
+20 March
+
+- Fixed snap, charm and source package listings and Merge Proposals active
+  reviews timeouts.
+
+12 March
+
+- Export `BinaryPackageBuild.distro_series` to the API.
+- Add admin-only `cancel_upload` API endpoint for builds.
+
+February 2026
++++++++++++++
+16 February
+
+- Add a Package column in the milestone page
+
+9 Feb
+
+- Bug fix #1893791: Allow users to add a package back to a bug task with existing packages.  
+
+January 2026
+++++++++++++
+
+5 Jan
+
+- Add more builder metrics in the builder overview page. 
+
 
 December 2025
 +++++++++++++

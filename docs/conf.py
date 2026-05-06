@@ -27,6 +27,14 @@ import yaml
 project = "Launchpad"
 author = "Canonical Ltd."
 
+# The year in the copyright statement defaults to the current year, so
+# individual document versions show when they were built.
+# TODO: If the date must be a range, like in a software license, replace 
+# 2026 with the starting year of development and use:
+#
+# copyright = f"2026-{datetime.date.today().year}"
+
+copyright = "%s CC-BY-SA, %s" % (datetime.date.today().year, author)
 
 # Sidebar documentation title; best kept reasonably short
 #
@@ -35,32 +43,6 @@ author = "Canonical Ltd."
 # TODO: To disable the title, set to an empty string.
 
 html_title = project + " manual"
-
-
-# Copyright string; shown at the bottom of the page
-#
-# Now, the starter pack uses CC-BY-SA as the license
-# and the current year as the copyright year.
-#
-# TODO: If your docs need another license, specify it instead of 'CC-BY-SA'.
-#
-# TODO: If your documentation is a part of the code repository of your project,
-#       it inherits the code license instead; specify it instead of 'CC-BY-SA'.
-#
-# NOTE: For static works, it is common to provide the first publication year.
-#       Another option is to provide both the first year of publication
-#       and the current year, especially for docs that frequently change,
-#       e.g. 2022–2023 (note the en-dash).
-#
-#       A way to check a repo's creation date is to get a classic GitHub token
-#       with 'repo' permissions; see https://github.com/settings/tokens
-#       Next, use 'curl' and 'jq' to extract the date from the API's output:
-#
-#       curl -H 'Authorization: token <TOKEN>' \
-#         -H 'Accept: application/vnd.github.v3.raw' \
-#         https://api.github.com/repos/canonical/<REPO> | jq '.created_at'
-
-copyright = "%s CC-BY-SA, %s" % (datetime.date.today().year, author)
 
 
 # Documentation website URL
@@ -110,7 +92,7 @@ html_context = {
     # Product tag image; the orange part of your logo, shown in the page header
     #
     # TODO: To add a tag image, uncomment and update as needed.
-    'product_tag': '_static/tag.png',
+    'product_tag': '_static/Tag-Launchpad-Orange-Digital.svg',
     # Your Discourse instance URL
     #
     # TODO: Change to your Discourse instance URL or leave empty.
@@ -126,6 +108,9 @@ html_context = {
     # TODO: Change to your Matrix channel URL or leave empty.
     "matrix": "https://matrix.to/#/#launchpad:ubuntu.com",
     # Your documentation GitHub repository URL
+    #
+    # Link to Launchpad's answer portal for users.
+    "answers": "https://answers.launchpad.net/",
     #
     # TODO: Change to your documentation GitHub repository URL or leave empty.
     #
@@ -150,6 +135,26 @@ html_context = {
 
     # Required for feedback button    
     'github_issues': 'enabled',
+
+    # Inherit the author value
+    "author": author,
+
+    # The starter pack uses CC-BY-SA as the license
+    #
+    # TODO: If your docs need another license, specify it instead of 'CC-BY-SA'.
+    # For the name, we recommend using the standard shorthand identifier from
+    # https://spdx.org/licenses
+    #
+    # For the URL, link directly to the license statement, typically found on
+    # the product's home page or in its GitHub project.
+    #
+    # TODO: If your documentation is a part of the code repository of your project,
+    #       it inherits the code license instead; specify it instead of 'CC-BY-SA'.
+
+    "license": {
+        "name": "CC BY 2.0 UK",
+        "url": "https://creativecommons.org/licenses/by/2.0/uk/",
+    },
 }
 
 html_extra_path = []
@@ -167,7 +172,7 @@ if os.getenv("OPENAPI", ""):
 # - https://git.launchpad.net/example
 #
 html_theme_options = {
-    "source_edit_link": "https://github.com/canonical/launchpad-manual/",
+    "source_edit_link": "https://github.com/canonical/launchpad-manual",
 #    "sidebar_hide_name": True,
 }
 
@@ -217,20 +222,17 @@ templates_path = ["_templates"]
 # Redirects #
 #############
 
-# To set up redirects: https://documatt.gitlab.io/sphinx-reredirects/usage.html
-# For example: 'explanation/old-name.html': '../how-to/prettify.html',
+# Add redirects to the 'redirects.txt' file
+# https://sphinxext-rediraffe.readthedocs.io/en/latest/
 
 # To set up redirects in the Read the Docs project dashboard:
 # https://docs.readthedocs.io/en/stable/guides/redirects.html
 
-# NOTE: If undefined, set to None, or empty,
-#       the sphinx_reredirects extension will be disabled.
-
-redirects = {}
-
-# Add redirects, so they can be updated here to land alongside docs being moved
-rediraffe_branch = "main"
 rediraffe_redirects = "redirects.txt"
+
+# Strips '/index.html' from destination URLs when building with 'dirhtml'
+rediraffe_dir_only = True
+
 
 ###########################
 # Link checker exceptions #
@@ -246,26 +248,19 @@ linkcheck_ignore = [
     r"https://www\.gnu\.org/.*",
     r"http://www.fsf\.org/.*",
     r"http://sourceforge\.net/.*", #ignore, as works in browser
-    "https://sourceforge.net/",
     "http://127.0.0.1:8000",
     r"https://app\.diagrams\.net.*",  # ignore, as works in browser, but link checker has some issues
     "https://archive.ph/CAqQm",  # ignore, as works in browser, but link checker has some issues
-    r"http://bazaar\.launchpad\.net/.*",  #bazaar is in the process of being shutdown
     r"http://www\.searchtools\.com/.*",  #ignore, example link, was never intended to be clicked
     "https://bazaar.launchpad.net/lp-production-config",  # private
     "https://bazaar.staging.launchpad.net",  # broken, unclear why XXX 2023-10-14: jugmac00- check with team
     r"https://www\.breezy-vcs\.org/.*",  # broken, returns "Connection refused" on port 443
-    r"http://doc\.bazaar-vcs\.org/.*",  #broken, bazaar being shut down
-    "https://www.bazaar-vcs.org",  #broken, bazaar being shut down
-    r"http://bazaar-vcs\.org",  #broken, bazaar being shut down
-    "http://www.bazaar-vcs.org/",  #broken, bazaar being shut down
-    r"https://launchpad\.net/~bugsquad/\+mentoring",  #broken, offering may be outdated
     r"https://launchpad\.net/\+access-token",  #broken, access restricted
     r"https://launchpad\.net/\+request-token",  #broken, access restricted 
     r"https://drive\.google\.com/file/d/1hUivL07Msoyej3wd_T4hMAX61EJzfE38/view\?usp=drive_link", #ignore, internal video
     "https://bugs.launchpad.net/charm-launchpad-buildd-image-modifier",  #private
     "https://bugs.launchpad.net/launchpad-vbuilder-manage",  #private
-    "http://example.com/.*",  #ignore, example links
+    "https://example.com/.*",  #ignore, example links
     "https://launchpad.net/canonical-mojo-specs",  # private
     r"https://launchpad\.test.*",  #ignore, local test setup
     r"https://bugs\.launchpad\.net/\+code/.*",
@@ -280,17 +275,14 @@ linkcheck_ignore = [
     "http://www.mysite.com/oauth-callback",  #ignore, not a real website
     r"https://help\.launchpad\.net/.*",  #ignore, all critical links changed, others will redirect to the manual's landing page
     r"https://bugs\.beta\.launchpad\.net/.*",  #broken, bazaar being shut down
-    "https://code.launchpad.net/~joe/frobnob/trunk",  #ignore, example link, was never intended to be clicked 
     "https://deployable.ols.canonical.com/project/launchpad",  #private
     "https://docutils.sourceforge.net/docs/user/rst/quickref.html",  #Ignore, works in browser
     "https://epydoc.sourceforge.net/fields.html",  #Ignore, works in browser
     "https://git.launchpad.net/launchpad/tree/doc/bug-export.rnc",  #broken. Process may need to be replaced/upgraded
     "http://code.beta.launchpad.net/beagle",  #broken, bazaar being shut down
-    "https://launchpad.net/drupal/main",  #broken, should be replaced in the example
     r"https://launchpad\.net/frobnob/.*",
     r"https://buildbot\.net.*", #ignore, expired SSL certificate
     r"https://docs\.buildbot\.net/.*", #ignore, expired SSL certificate
-    "https://documentation.help/Bazaar-help/sending_changes.html#understanding-merge-directives",  #403 error. The link works in browser
     "Trunk/Glue",  #  needs update
     "/Background",
     "/Concepts",  #  needs update
@@ -300,7 +292,6 @@ linkcheck_ignore = [
     "irc.libera.chat",  #this is not an HTTP link
     r"https://github\.com/canonical/fetch-service*",  #private
     r"https://github\.com/canonical/fetch-operator*",  #private
-    r"https://git\.launchpad\.net/charm\-launchpad\-buildd\-image\-modifier/.*",  #private
     "https://git.zx2c4.com/cgit/",  #unfortunately very flaky
     "https://staging.launchpad.net",  #ignore, staging launchpad
     r"https://wiki\.canonical\.com/.*",  #private
@@ -331,6 +322,7 @@ linkcheck_ignore = [
     "/../YourProject/ImportingTemplates",
     "Answer syntax parsing <Comments>",
     "https://help.ubuntu.com/community/SSO/FAQs", #timeout, should be temporary
+    "https://requesttracker.com/request-tracker/",  #URL is rate limited
 ]
 
 
@@ -364,6 +356,7 @@ extensions = [
     "canonical_sphinx",
     "notfound.extension",
     "sphinx_design",
+    "sphinx_rerediraffe",
     "sphinx_reredirects",
     "sphinx_tabs.tabs",
     "sphinxcontrib.jquery",
@@ -380,7 +373,6 @@ extensions = [
     "sphinx_last_updated_by_git",
     "sphinx.ext.intersphinx",
     "sphinx_sitemap",
-    "sphinxext.rediraffe",
 ]
 
 # Excludes files or directories from processing
@@ -388,6 +380,7 @@ extensions = [
 exclude_patterns = [
     "readme.rst",
     "includes/*",
+    ".venv*",
 ]
 
 # Add JavaScript files (located in .sphinx/_static/)

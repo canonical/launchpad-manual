@@ -1,3 +1,6 @@
+.. meta::
+   :description: Guide to using Launchpad web services API. 
+
 .. _launchpad-web-services-api:
 
 Launchpad web services API
@@ -53,7 +56,10 @@ Find out more:
 .. toctree::
    :maxdepth: 1
 
-   Access web services <launchpad-web>
    Sign web requests <launchpad-web-signing>
    Webhooks <webhooks>
 
+Further reading
+---------------
+For more information on this topic, check out our in-depth explanation of the 
+:ref:`Launchpad web service <launchpad-web-service>`.

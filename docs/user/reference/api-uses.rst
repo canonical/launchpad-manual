@@ -1,3 +1,7 @@
+.. meta::
+   :description: Comprehensive table of applications and tools using Launchpad 
+      API for integration, automation, and additional functionality.
+
 .. _table-of-applications-using-the-api:
 
 Table of applications using the API
@@ -6,7 +10,7 @@ Table of applications using the API
 
 
 Below are programs that use the :ref:`Launchpad APIs <launchpad-web-services-api>` 
-(usually through the :ref:`launchpadlib <get-started-with-launchpadlib>` Python interface) 
+(usually through the :ref:`launchpadlib <using-launchpadlib>` Python interface) 
 that you can use as examples if you're starting out with Launchpad API programming. 
 See also the :ref:`API Examples <use-the-python-api>` page, which contains code 
 snippets specifically meant as examples, the `Clients <https://blog.launchpad.net/tag/api-clients>`_ 

@@ -1,3 +1,7 @@
+.. meta::
+   :description: Build OCI container images in Launchpad for Docker, Kubernetes, 
+      and other container runtimes.
+
 .. _build-oci-images-in-launchpad:
 
 Build OCI images in Launchpad
@@ -158,7 +162,7 @@ In case your build fails, you can:
 
     >>> oci_build.retry()
 
-Next Steps
+Next steps
 ------------------------------------------
 
 - :ref:`Build snaps on Launchpad <build-snaps-in-launchpad>`

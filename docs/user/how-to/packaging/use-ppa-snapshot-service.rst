@@ -1,3 +1,9 @@
+.. This doc is a duplication of https://snapshot.ppa.launchpadcontent.net/. Consider deletion.
+
+.. meta::
+   :description: Use the PPA snapshot service to preserve specific package 
+      versions.
+
 .. _use-ppa-snapshot-service:
 
 Use the PPA snapshot service

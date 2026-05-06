@@ -1,3 +1,9 @@
+.. meta::
+   :description: Reference document for the question life cycle in Launchpad 
+      Answers including statuses, transitions, and roles.
+
+.. _question-life-cycle:
+
 Question Life-cycle
 ===================
 

@@ -1,3 +1,7 @@
+.. meta::
+   :description: Launchpad policies reference including terms of service, 
+      acceptable use, privacy, and community guidelines.
+
 .. _launchpad-policies:
 
 Launchpad policies
@@ -19,7 +23,7 @@ to show that your project uses Launchpad. Canonical may revoke your permission t
 if you make modifications to the images or use them incorrectly (e.g., on a project that does not
 use Launchpad.net).
 
-Help, Dev, and News Content Licence
+Help, dev, and news content licence
 -----------------------------------
 
 The documentation contained in the :ref:`Launchpad manual <launchpad-manual-for-users>`, the `Launchpad Development wiki <https://dev.launchpad.net/>`_, and on the `Launchpad blog <http://blog.launchpad.net/>`_ is owned by Canonical Ltd. and is licensed under a `Creative Commons Attribution 2.0 UK: England & Wales License <http://creativecommons.org/licenses/by/2.0/uk/>`_.
@@ -80,10 +84,10 @@ are given along with the data.
 Automated querying
 ------------------
 
-We provide :ref:`data feeds <atom-feeds>` and a :ref:`web service API <launchpad-web-service>` for automated access to
-Launchpad's dataset. We strongly recommend you use the feeds and the web
-service API in preference to screen-scraping or other techniques. If you
-can't do what you need to do through the feeds and the API,
+We provide :ref:`data feeds <subscribe-bug-feeds>` and a :ref:`web service API <launchpad-web-service>` 
+for automated access to Launchpad's dataset. We strongly recommend you use the 
+feeds and the web service API in preference to screen-scraping or other 
+techniques. If you can't do what you need to do through the feeds and the API:
 
 -  please `file a bug <https://launchpad.net/launchpad/+filebug>`_ so
    we can improve our service

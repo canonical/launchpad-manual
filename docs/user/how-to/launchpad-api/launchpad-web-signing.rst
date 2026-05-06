@@ -1,3 +1,7 @@
+.. meta::
+   :description: Guide to signing web requests to Launchpad API for secure 
+      authenticated API access.
+
 .. _sign-web-requests:
 
 Sign web requests
@@ -6,7 +10,7 @@ Sign web requests
 .. include:: /includes/important_not_revised_help.rst
 
 
-The :ref:`Launchpad web service hacking document <access-web-services>` describes a
+The :ref:`Launchpad web service hacking document <launchpad-web-service>` describes a
 lot of requests you can send to launchpad.net. But if you send them in
 the simple form presented in that document, you'll get a response code
 of 401 ("Unauthorized"). Launchpad's web service only responds to

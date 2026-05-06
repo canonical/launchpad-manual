@@ -1,4 +1,9 @@
-Ubuntu Mirrors Index
+.. meta::
+   :description: Reference document for the Ubuntu mirrors index service.
+
+.. _ubuntu-mirrors-index:
+
+Ubuntu mirrors index
 ==================== 
 
 Short description
@@ -31,7 +36,7 @@ Documentation
 - Charmhub ubuntu-mirrors - https://charmhub.io/ubuntu-mirrors	
 - Launchpad lib/lp/registry/doc/distribution-mirror.rst - explains how distribution mirrors are created and managed in Launchpad.
 
-Git Repositories
+Git repositories
 ----------------
 The source repository for the Ubuntu mirrors charm is located in https://launchpad.net/ubuntu-mirrors	
 

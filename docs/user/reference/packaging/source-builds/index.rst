@@ -1,3 +1,7 @@
+.. meta::
+   :description: Source builds reference documents including naming conventions, 
+      and the knowledge base.
+
 Source builds
 =============
 

@@ -1,3 +1,9 @@
+.. meta::
+   :description: Reference document for the Fetch service. Provides links to 
+      logs, git repositories, documentation, etc.
+
+.. _fetch-service:
+
 Fetch service
 =============
 
@@ -9,7 +15,7 @@ proxy. When used, it keeps track of requests and dependencies for the build.
 Detailed description
 --------------------
 The fetch service is a proxy service used by Launchpad builders (see
-:doc:`Build Farm <build-farm>`) that keeps track of dependencies downloaded
+:ref:`Build Farm <build-farm-reference>`) that keeps track of dependencies downloaded
 during a build. This ensures developers have a trustworthy record of all the
 parts that make up the software being built.
 

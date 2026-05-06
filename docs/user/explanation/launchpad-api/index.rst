@@ -1,3 +1,6 @@
+.. meta::
+   :description: Overview of Launchpad API documentation.
+
 .. _launchpad-api:
 
 Launchpad API

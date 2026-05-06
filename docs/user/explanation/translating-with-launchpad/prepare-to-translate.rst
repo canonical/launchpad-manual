@@ -1,3 +1,6 @@
+.. meta::
+   :description: What you need to know before translating software in Launchpad.
+
 .. _preparing-to-translate:
 
 Preparing to translate

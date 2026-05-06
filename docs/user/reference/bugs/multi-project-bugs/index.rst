@@ -1,3 +1,7 @@
+.. meta::
+   :description: Multi-project bug tracking reference for managing issues 
+      that span multiple software projects in Launchpad.
+
 Multi-project bugs
 ==================
 

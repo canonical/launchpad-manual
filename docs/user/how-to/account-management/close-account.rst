@@ -1,3 +1,7 @@
+.. meta::
+   :description: Step-by-step instructions to close your Launchpad account,
+      and understand what happens to your data and contributions.
+
 .. _how-to-close-account:
 
 Close your account

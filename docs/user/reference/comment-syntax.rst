@@ -1,3 +1,7 @@
+.. meta::
+   :description: Reference of Launchpad comment parsing syntax for linking bugs 
+      and branches using special markup in comments.
+
 .. _launchpad-comment-parsing:
 
 Launchpad comment parsing
@@ -80,7 +84,7 @@ will look like this:
 
    But they're still just two paragraphs
 
-Mention a single Launchpad Bug
+Mention a single Launchpad bug
 ------------------------------
 
 Synopsis
@@ -141,7 +145,7 @@ will look like this:
 | `bug=123 <https://bugs.launchpad.net/bugs/123>`_
 | debug #52
 
-Mention multiple Launchpad Bugs
+Mention multiple Launchpad bugs
 -------------------------------
 
 Synopsis
@@ -244,7 +248,7 @@ will look like this:
 | `lp:///foo <https://bugs.launchpad.net/+code/foo>`_
 | `lp:///foo <https://bugs.launchpad.net/+code/foo>`_
 
-Mention an FAQ Thread
+Mention an FAQ thread
 ---------------------
 
 You can link a launchpad FAQ thread by mentioning the number.
@@ -381,7 +385,7 @@ will look like this:
 Others
 ------
 
-``"`` Removal
+``"`` removal
 -------------
 
 If the entire comment is encapsulated in ``"`` like this:

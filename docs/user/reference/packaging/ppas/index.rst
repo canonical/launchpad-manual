@@ -1,3 +1,7 @@
+.. meta::
+   :description: Personal Package Archives reference covering management, and 
+      building, copying, and deleting packages.
+
 .. _ref-personal-package-archives:
 
 Personal package archives
@@ -10,5 +14,3 @@ Personal package archives
 
     Personal Package Archive <ppa>
     Building a source package <building-a-source-package>
-    Copy packages <copying-packages>
-    Deleting packages <deleting-packages>

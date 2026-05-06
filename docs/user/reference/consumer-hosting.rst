@@ -1,3 +1,6 @@
+.. meta::
+   :description: Reference guide to consumer hosting for projects on Launchpad.
+
 .. _consumer-hosting:
 
 Consumer hosting

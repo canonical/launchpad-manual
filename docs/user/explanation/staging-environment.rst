@@ -1,3 +1,9 @@
+.. meta::
+   :description: Use Launchpad's staging environment to experiment with real 
+      data and functionality without affecting production.
+
+.. _staging-environment:
+
 Staging — Launchpad's sandbox
 =============================
 

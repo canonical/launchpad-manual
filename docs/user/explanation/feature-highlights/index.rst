@@ -1,3 +1,7 @@
+.. meta::
+   :description: Overview of Launchpad's key features including bug tracking, 
+      code hosting, answer tracker, and package management.
+
 .. _launchpad-feature-highlights:
 
 Launchpad feature highlights
@@ -10,7 +14,7 @@ build packages, track bugs, and more.
 
 Get familiar with some of Launchpad's most exciting features below.
 
-:ref:`Personal Package Archives (PPA) <personal-package-archives-highlights>`
+:ref:`Personal package archives (PPA) <personal-package-archives-highlights>`
 -----------------------------------------------------------------------------
 Personal package archives allow you to distribute software packages that can be
 installed on an Ubuntu system. Users who install these packages receive 
@@ -56,7 +60,7 @@ Additional features
 -------------------
 Other interesting features to explore on Launchpad include:
 
-- :ref:`Email interface <launchpad-email-interface>`: Interact with the bug tracker without a browser
+- :ref:`Email interface <use-the-launchpad-email-interface>`: Interact with the bug tracker without a browser
 - :ref:`Bug branch linking <linking-bugs-to-dedicated-branches>`: Link a branch fixing a specific bug to the bug report
 - :ref:`Blueprints <blueprints-lightweight-specifications>`: Short specifications of things to be worked on in a project, i.e., bugs, documentation, features, etc.
 - :ref:`Milestones <milestones-exp>`: Indicate bugs and blueprints you're prioritizing for your next release
@@ -70,7 +74,6 @@ Other interesting features to explore on Launchpad include:
     Personal Package Archives <personal-package-archives>
     Bug watches <bug-watches>
     Milestones <milestones>
-    Email interface <email-interface>
     Bug branch linking <bug-branch-linking>
     Product series <product-series>
     The bug tracker <the-bug-tracker>

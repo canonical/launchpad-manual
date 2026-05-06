@@ -1,3 +1,9 @@
+.. meta::
+   :description: Learn about Launchpad's privacy policy, email address 
+      protection, data handling, and security issue disclosure practices.
+
+.. _privacy-confidentiality-disclosure:
+
 Privacy, confidentiality and disclosure
 =======================================
 
@@ -31,7 +37,7 @@ not honour Launchpad's confidentiality rules. Users may include
 confidential information in emails that cannot be seen in Launchpad, but
 are shown in the public archive.
 
-Private (Proprietary) teams
+Private (proprietary) teams
 ---------------------------
 
 When you maintain a project with a commercial subscription, you will see
@@ -77,12 +83,12 @@ Public
 
 Everyone can see this information.
 
-Public Security
+Public security
 ~~~~~~~~~~~~~~~
 
 Everyone can see this security related information.
 
-Private Security
+Private security
 ~~~~~~~~~~~~~~~~
 
 Only the security group can see this information. The information pertains to a critical vulnerability or exploit that

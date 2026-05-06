@@ -1,4 +1,8 @@
-Bug Attachment
+.. meta::
+   :description: Bug attachment reference for adding screenshots, data files, 
+      patches, and documentation to Launchpad bug reports.
+
+Bug attachment
 ==============
 
 .. include:: /includes/important_not_revised_help.rst

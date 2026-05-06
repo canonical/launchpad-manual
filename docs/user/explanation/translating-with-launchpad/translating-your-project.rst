@@ -1,3 +1,6 @@
+.. meta::
+   :description: What you need to know when translating a project in Launchpad.
+
 .. _translating-your-project:
 
 Translating your project

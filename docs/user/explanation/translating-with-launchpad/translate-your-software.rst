@@ -1,3 +1,7 @@
+.. meta::
+   :description: An in-depth look at the software translation process in 
+      Launchpad.
+
 .. _translating-your-software:
 
 Translating your software
@@ -134,7 +138,7 @@ sensitive: Example:
    Correct: Vea el <ulink url="http://ubuntustudio.org/">
    Wrong: Vea el <UlinK Url="http://ubuntustudio.org/">
 
-menuchoice tag
+Menuchoice tag
 ~~~~~~~~~~~~~~
 
 Don't include other tags or text outside of these tags.
@@ -282,7 +286,7 @@ ones might need some work.
 Here is an example of how statistics are shown for a translation
 template in a particular language in Ubuntu:
 
-Color meanings in the Status column
+Color meanings in the status column
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Depending on their status translation statistics can show different
@@ -378,7 +382,7 @@ into the guidelines for your language:
 -  A section, or a dedicated page, containing examples of strings that
    should not be translated.
 
-Common/Best practice
+Common/best practice
 ~~~~~~~~~~~~~~~~~~~~
 
 Below you will find a set of common practices for running a team
@@ -398,7 +402,7 @@ Below you will find a set of common practices for running a team
          already finished translations. For languages with few
          translators and translations already done team acceptance could
          be lower than in the case of a language with many translators,
-         translations made and the presence of GTP, OpenOffice , etc
+         translations made and the presence of GTP, LibreOffice, etc
          upstream translation projects.
       -  Before accepting a member you may ask him/her to provide some
          translation. If the translations are great you may accept the

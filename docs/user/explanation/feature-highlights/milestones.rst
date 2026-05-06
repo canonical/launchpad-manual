@@ -1,3 +1,7 @@
+.. meta::
+   :description: Highlight of the milestone feature in Launchpad for improved
+      organization in your development.
+
 .. _milestones-exp:
 
 Milestones

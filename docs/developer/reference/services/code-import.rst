@@ -1,3 +1,8 @@
+.. meta::
+   :description: Reference doc for Launchpad's Git import system.
+
+.. _code-import-reference:
+
 Code import
 ===========
 

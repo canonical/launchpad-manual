@@ -1,3 +1,7 @@
+.. meta::
+   :description: Reference doc for Launchpad account settings and 
+      personalization options.
+
 Settings and preferences
 ========================
 
@@ -23,7 +27,7 @@ Changing settings
 
 ``GetText(Save)`` updates your profile (stored on the wiki server).
 
-Quick Links
+Quick links
 -----------
 
 Links placed here will appear in the navigation menu for your login. You

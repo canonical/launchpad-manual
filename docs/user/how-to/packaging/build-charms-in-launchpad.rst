@@ -1,3 +1,6 @@
+.. meta::
+   :description: Quick guide to building charms in Launchpad.
+
 .. _build-charms-in-launchpad:
 
 Build charms in Launchpad

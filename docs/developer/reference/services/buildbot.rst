@@ -1,3 +1,9 @@
+.. meta::
+   :description: Reference doc for the Buildbot CI testing framework used by 
+      Launchpad linking to documentation, log files, git repositories, etc.
+
+.. _buildbot-reference:
+
 Buildbot
 ========
 
@@ -121,7 +127,7 @@ that adds the missing units in the spec.
 Log files
 ---------
 
-Buildbot Master Logs: 
+Buildbot master logs:
 ^^^^^^^^^^^^^^^^^^^^^^
 
 ::
@@ -129,7 +135,7 @@ Buildbot Master Logs:
    # Master runs as a twisted server and the logs can be found at
    tail -f /srv/buildbot/lpbuildbot/twistd.log
 
-Buildbot Slave Logs:
+Buildbot slave logs:
 ^^^^^^^^^^^^^^^^^^^^
 
 ::

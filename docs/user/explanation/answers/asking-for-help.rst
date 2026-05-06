@@ -1,3 +1,6 @@
+.. meta::
+   :description: Understand how to ask for help using Launchpad Answers.
+
 .. _asking-for-help:
 
 Asking for help
@@ -114,4 +117,4 @@ Actions that change a question's status
 More information
 ----------------
 
-If you're already familiar with a piece of software, and want to help other people use it, you can :ref:`offer support <offering-help>` using Launchpad.
+If you're already familiar with a piece of software, and want to help other people use it, you can :ref:`offer support <help-the-community>` using Launchpad.

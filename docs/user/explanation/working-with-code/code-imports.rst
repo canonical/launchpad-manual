@@ -1,3 +1,6 @@
+.. meta::
+   :description: Understand how Launchpad's code import process works.
+
 .. _code-imports:
 
 Code imports

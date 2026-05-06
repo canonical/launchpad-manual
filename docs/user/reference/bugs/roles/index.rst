@@ -1,3 +1,6 @@
+.. meta::
+   :description: Reference guide to bug tracking roles in Launchpad.
+
 Roles
 =====
 

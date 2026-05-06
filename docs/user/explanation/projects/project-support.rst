@@ -1,5 +1,9 @@
-Providing support throughLaunchpad
-==================================
+.. meta::
+   :description: Understand how you can assist users of a project hosted on 
+      Launchpad.
+
+Providing support through Launchpad
+===================================
 
 .. include:: /includes/important_not_revised_help.rst
 

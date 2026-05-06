@@ -1,3 +1,7 @@
+.. meta::
+   :description: Create and maintain personal branches in Launchpad for 
+      experimental work, feature development, and personal code repositories.
+
 .. _create-and-maintain-personal-branch-in-launchpad:
 
 Create and maintain a personal branch in Launchpad

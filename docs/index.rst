@@ -1,3 +1,6 @@
+.. meta::
+   :description: Official documentation for Launchpad users and developers.
+
 .. _home:
 
 Launchpad manual
@@ -22,8 +25,8 @@ In this manual
 ==========================    ===========================
 
 ==========================    ===========================
-**User quick start:**         :ref:`Get started with launchpad <get-started-with-launchpad>`    • :ref:`Host a repository <host-a-git-repository-on-launchpad>` • :ref:`Community<help-the-community>` 
-**Developer quick start:**    :ref:`What is Launchpad<what-is-launchpad>`             • :ref:`Setting up Launchpad<setting-up-and-running-launchpad-quickstart>` • :ref:`Get the source code<get-the-source-code>`
+**User quick start:**         :ref:`Get started with launchpad <get-started-with-launchpad>`    • :ref:`Host a repository <hosting-git-repositories>` • :ref:`Community<help-the-community>` 
+**Developer quick start:**    :ref:`What is Launchpad<what-is-launchpad>`             • :ref:`Setting up Launchpad<set-up-and-run-launchpad-quickstart>` • :ref:`Get the source code<get-the-source-code>`
 ==========================    ===========================
 
 The Launchpad manual is divided into two sections, according to the user:
@@ -42,7 +45,7 @@ contributions, suggestions, fixes and constructive feedback.
 * `Code of conduct <https://ubuntu.com/community/ethos/code-of-conduct>`_
 * :doc:`Get help <help>`
 * :ref:`Feature highlights <launchpad-feature-highlights>` 
-* :doc:`Contribute to our code <developer/how-to/contributing-changes>`
+* :doc:`Contribute to our code <developer/how-to/common-development-tasks/contributing-changes>`
 
 .. toctree::
    :hidden:

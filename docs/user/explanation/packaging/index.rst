@@ -1,3 +1,8 @@
+.. meta::
+   :description: Explanations related to packaging in Launchpad. 
+
+.. _exp-packaging:
+
 Packaging
 =========
 
