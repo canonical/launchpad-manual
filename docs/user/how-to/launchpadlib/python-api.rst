@@ -7,8 +7,6 @@
 Use the Python API
 ==================
 
-.. include:: /includes/important_not_revised_help.rst
-
 This page has a bunch of examples of how to use ``launchpadlib`` and the
 Python APIs. Think of it like a cookbook that you can add your favourite
 recipe to.
@@ -21,7 +19,7 @@ Find out if your launchpadlib version is recent enough (>= 1.5.1)
       import launchpadlib
       print(launchpadlib.__version__)
 
-**1.5.1** or above is the answer you're looking for; almost all
+**2.1.0** or above is the answer you're looking for; almost all
 subsequent examples assume you have at least that recent a launchpadlib.
 
 Hello Launchpad!
@@ -116,7 +114,7 @@ Copy an old version of a package into your PPA for a newer release
 ------------------------------------------------------------------
 
 Sometimes you want to build the older version of a package from an
-earlier Ubuntu release on the newest Ubuntu. You can use the API to
+earlier Ubuntu release on the newest Ubuntu: you can use the API to
 easily copy the old release's version into your PPA where it can be
 re-published.
 
@@ -143,7 +141,7 @@ re-published.
 Cache Launchpad credentials per application
 -------------------------------------------
 
-This one is for older launchpadlibs. If you are using a current
+This one is for older launchpadlibs (< `1.5.1`). If you are using a current
 version, just replace the code below with ``Launchpad.login_with.*``
 
 From `<https://launchpad.net/hydrazine>`_ - use your own application name.
