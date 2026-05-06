@@ -7,8 +7,6 @@
 Use the Python API
 ==================
 
-.. include:: /includes/important_not_revised_help.rst
-
 This page has a bunch of examples of how to use ``launchpadlib`` and the
 Python APIs. Think of it like a cookbook that you can add your favourite
 recipe to.
@@ -143,7 +141,7 @@ re-published.
 Cache Launchpad credentials per application
 -------------------------------------------
 
-This one is for older launchpadlibs < `1.5.1`. If you are using a current
+This one is for older launchpadlibs (< `1.5.1`). If you are using a current
 version, just replace the code below with ``Launchpad.login_with.*``
 
 From `<https://launchpad.net/hydrazine>`_ - use your own application name.
