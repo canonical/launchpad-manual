@@ -379,6 +379,7 @@ extensions = [
 
 exclude_patterns = [
     "readme.rst",
+    "includes/*",
     ".venv*",
 ]
 
