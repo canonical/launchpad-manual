@@ -7,7 +7,8 @@
 Builder specs
 =============
 
-Launchpad's builders currently run with the following configuration for all architectures except for ppc64el:
+Launchpad's builders currently run with the following configuration for all
+architectures except for ppc64el and amd64:
 
 - CPUs: 8
 
@@ -17,7 +18,7 @@ Launchpad's builders currently run with the following configuration for all arch
 
 - SWAP: 8 GB
 
-For ppc64el we have the following spec in place:
+For ppc64el and amd64 we have the following spec in place:
 
 - CPUs: 4
 
