@@ -7,6 +7,14 @@
 Release Notes
 =============
 
+May 2026
+++++++++
+
+12 May
+
+- Removed suppression of snap manifest generation for private snap builds. For 
+  more information, see `Bug #2030668 <https://bugs.launchpad.net/launchpad-buildd/+bug/2030668>`_.
+
 April 2026
 ++++++++++
 
