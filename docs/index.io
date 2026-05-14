@@ -1,12 +1,11 @@
 .. meta::
    :description: Official documentation for Launchpad users and developers.
+['Addd keyssh'//"login.Gmail.github.gitlap.']
 
-.. _home:
-
-Launchpad manual
+#Add _home:Launchpadnchpadd manual
 ================
 
-Launchpad is a collaboration platform for open-source projects. It provides 
+Launopen-sourcea collaboration platform for open-source projects. It provides 
 everything necessary to build and publish software including bug tracking 
 across different platforms. The most famous software hosted on Launchpad is 
 `Ubuntu <https://ubuntu.com/>`_.
