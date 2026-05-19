@@ -94,7 +94,7 @@ Setting up VSCode IDE for development
 
 We recommend the following setup for easier development of Launchpad. 
 
-1. Install `VSCode <https://code.visualstudio.com/docs/setup/linux#_snap>`_
+1. Install `VSCode <https://code.visualstudio.com/docs/setup/linux>`_
 2. Install `Remote SSH VSCode Extension <https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh>`_
 3. Setup a SSH connection to your LXC container. You can use the ``ssh`` command from the script's output.
 4. Once you have connected to your container. Open the path ``/home/ubuntu/launchpad-workdir/launchpad`` in VSCode either via UI
