@@ -10,6 +10,15 @@ Release Notes
 May 2026
 ++++++++
 
+13 May
+
+- Provide an RSS feed for accepted uploads in an Ubuntu
+  series similar to the emails sent to the configured mailing list address on
+  lists.ubuntu.com.
+
+- Fixed the CD image mirror prober to check the Content-Type returned by the probed
+  URLs for the .iso images to better detect broken mirrors.
+
 12 May
 
 - Removed suppression of snap manifest generation for private snap builds. For 
