@@ -1,41 +1,44 @@
 .. meta::
-   :description: Get started with Launchpad - create an account, integrate 
-      applications, merge accounts, and manage your account settings.
+   :description: How-to guides for creating, customizing, and managing your
+      Launchpad account, including merging accounts and application integration.
 
 .. _account-management:
 
-Welcome to Launchpad!
-=====================
+Manage your account
+===================
 
-.. include:: /includes/important_not_revised_help.rst
-
+These guides help you create and manage your Launchpad account.
 
 .. toctree::
    :hidden:
    :maxdepth: 1
 
-   Create and personalise your Launchpad account <create-account>
+   Create and personalize your Launchpad account <create-account>
    Merge two or more accounts <merge-accounts>
    Application integration <application-integration>
    Close your account <close-account>
 
-Depending on how you want to use Launchpad, you'll need to give us some
-information.
+To get started with Launchpad, you need to create a user account. You can
+`sign up here <https://launchpad.net/+login>`_.
 
-At the very least, you need to create a user account.
+Once your account is set up, you can personalize your profile, integrate
+third-party applications, and manage other account settings.
 
-- `Create your user account <https://launchpad.net/+login>`__.
-  :ref:`Need help with this? <create-and-personalise-your-launchpad-account>`
-- `Register your project <https://launchpad.net/projects/+new>`__: use one or
-  all of Launchpad's tools, or just tell the world more about your
-  project. :ref:`Need help with this? <how-to-register-your-project>`
-- `Create a team in Launchpad <https://launchpad.net/people/+newteam>`__: work with
-  other people in your community and take shared responsibilities.
-  :ref:`Need help with this? <creating-and-running-launchpad-teams>`
-- :ref:`Close your account <how-to-close-account>`
+- :ref:`Create and personalize your account <create-and-personalise-your-launchpad-account>`:
+  Set up your Launchpad account and customize your profile.
+- :ref:`Merge two or more accounts <merging-accounts>`: Combine duplicate
+  accounts into one.
+- :ref:`Application integration <application-integration>`:
+  Grant third-party applications access to your Launchpad account.
+- :ref:`Close your account <how-to-close-account>`: Deactivate your account
+  if you no longer need it.
 
-Next steps
-----------
+Further reading
+---------------
 
-You can find out more about Launchpad by looking at the :ref:`Launchpad user
-guide <get-started-with-launchpad>`.
+- `Register your project <https://launchpad.net/projects/+new>`__: Use
+  Launchpad's tools for your project, or tell the world more about it.
+  :ref:`Learn more <how-to-register-your-project>`.
+- `Create a team <https://launchpad.net/people/+newteam>`__: Work with
+  other people in your community and share responsibilities.
+  :ref:`Learn more <creating-and-running-launchpad-teams>`.
