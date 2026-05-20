@@ -1,6 +1,7 @@
 .. meta::
    :description: How-to guides for creating, customizing, and managing your
-      Launchpad account, including merging accounts and application integration.
+      Launchpad account, including merging accounts and integrating with
+      third-party applications.
 
 .. _account-management:
 
@@ -8,15 +9,6 @@ Manage your account
 ===================
 
 These guides help you create and manage your Launchpad account.
-
-.. toctree::
-   :hidden:
-   :maxdepth: 1
-
-   Create and personalize your Launchpad account <create-account>
-   Merge two or more accounts <merge-accounts>
-   Application integration <application-integration>
-   Close your account <close-account>
 
 To get started with Launchpad, you need to create a user account. You can
 `sign up here <https://launchpad.net/+login>`_.
@@ -42,3 +34,12 @@ Further reading
 - `Create a team <https://launchpad.net/people/+newteam>`__: Work with
   other people in your community and share responsibilities.
   :ref:`Learn more <creating-and-running-launchpad-teams>`.
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+
+   Create and personalize your Launchpad account <create-account>
+   Merge two or more accounts <merge-accounts>
+   Application integration <application-integration>
+   Close your account <close-account>
