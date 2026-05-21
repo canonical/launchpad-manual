@@ -1,0 +1,35 @@
+name: "LinkCheck - Changed files"
+on:
+  pull_request:
+    paths:
+      - 'docs/**'   # Only run on changes to the docs directory
+
+jobs:
+  prose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Get changed files
+        id: changed-files
+        uses: tj-actions/changed-files@v24
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+
+      - name: Run linkcheck on .rst and .md files
+        run: |
+          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+            if [ "${file: -4}" == ".rst" ] || [ "${file: -3}" == ".md" ]
+              then
+                var="$var $file"
+            fi
+          done
+          if [ -z "$var" ]
+          then
+                echo "No *.rst or *.md changed files to check."
+          else
+                make files="$var" linkcheck-specified-files
+          fi
