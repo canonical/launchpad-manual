@@ -56,6 +56,7 @@ and which applications currently use the API and how they use it.
 
 - :ref:`API compatibility <launchpadlib-api-compatibility>`
 - :ref:`Applications using launchpadlib <table-of-applications-using-the-api>`
+- :ref:`Webhooks <webhooks>`
 
 Project groups and team membership
 ----------------------------------
@@ -97,3 +98,4 @@ and how whitespace is addressed.
    Troubleshooting <troubleshooting/index>
    Question life cycle <question-life-cycle>
    User preferences <settings-and-preferences>
+   Webhooks <webhooks>
