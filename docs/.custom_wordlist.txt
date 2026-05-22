@@ -111,6 +111,7 @@ charmhub
 checksums
 chr
 chroot
+chroots
 CLI
 Cmd
 CMDLINE
