@@ -56,7 +56,7 @@ others. Private teams have additional privileges:
 
 -  **P3A**: the team can have many private personal package archives (sometimes called ``P3As``) to distribute packages.
 
-   Non-member subscribers to an archive may know the team's `Launchpad-Id`.
+   Non-member subscribers to an archive may know the team's ``Launchpad-Id``.
 
 -  **Branches**: code branches pushed to the team's personal repository are Proprietary, visible only to the team.
 
