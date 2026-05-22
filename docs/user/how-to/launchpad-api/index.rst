@@ -57,7 +57,6 @@ Find out more:
    :maxdepth: 1
 
    Sign web requests <launchpad-web-signing>
-   Webhooks <webhooks>
 
 Further reading
 ---------------
