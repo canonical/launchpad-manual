@@ -1,5 +1,5 @@
 .. meta::
-   :description: Understand how teams are created in Launchpad including 
+   :description: Understand how teams are created in Launchpad including
       membership policies, visibility, and roles.
 
 .. _creating-and-running-launchpad-teams:
@@ -14,7 +14,7 @@ within a project is often crucial to its success. Launchpad teams help
 you to bring people together by offering:
 
 -  a focal point of collaboration.
--  tools for members to communicate
+-  tools for members to communicate.
 -  the ability for many people to share a role, such as a project's maintainer or driver.
 
 Teams are easy to use: Launchpad doesn't impose rules or a particular
@@ -26,7 +26,7 @@ Anyone can create a team. To get going, visit the `new team <https://launchpad.n
 Of course, there are some differences. When you first register a team,
 keep an eye out for:
 
--  **Membership policies**: whether you want the team inclusive to anyone or exclusive to a few people control something in Launchpad.
+-  **Membership policies**: whether you want the team inclusive to anyone or exclusive to a few people is something you can control in Launchpad.
 -  **Subscription period**: (optional) Set a period when membership expires.
 -  **Membership renewals**: (optional) Choose how expired members renew their membership.
 
@@ -43,11 +43,11 @@ You can choose ``Private`` to hide the team from non-members.
 
 You may be able to change a "Public" team to a "Private" team if it is
 not subscribed or own something that can only be public. Once the team
-is in a public relationship, it cannot ever be made "Private" Private
+is in a public relationship, it cannot ever be made "Private". A private
 team **cannot** ever be made ``Public``. Do not choose to make team
 "Private" if you want it to be public in the future.
 
-Non-members team cannot see that the team exists in Launchpad.
+Non-members cannot see that the team exists in Launchpad.
 Non-members cannot see any of the team's pages. Private teams can choose
 to be in some public relationships, such as subscribed to a public bug,
 but doing so requires the team to agree to reveal its Launchpad Id and
@@ -56,7 +56,7 @@ others. Private teams have additional privileges:
 
 -  **P3A**: the team can have many private personal package archives (sometimes called ``P3As``) to distribute packages.
 
-   Non-member subscribers to an archive may know the team's Launchpad-Id``
+   Non-member subscribers to an archive may know the team's ``Launchpad-Id``.
 
 -  **Branches**: code branches pushed to the team's personal repository are Proprietary, visible only to the team.
 
@@ -94,7 +94,7 @@ team:
 
 -  **Administrator**: can add, approve or reject members. They can subscribe the team to bugs, branches, and blueprints.
 
--  **Owner**: the owner can change the team's description and membership rules, and appoint team admins. The owner is also an administrator by default, but can choose to leave the team.``
+-  **Owner**: the owner can change the team's description and membership rules, and appoint team admins. The owner is also an administrator by default, but can choose to leave the team.
 
 These roles can be held by other teams, as well as by people.
 
@@ -105,13 +105,13 @@ Membership policies
 
 There are four kinds of membership policies that control who and how a user
 or team can become a member. The choice of policy reflects the need to
-build a community (``inclusive``) versus the need to control control
+build a community (``inclusive``) versus the need to control
 Launchpad projects, branches, and PPAs (``exclusive``).
 
 Open
 ~~~~
 
-Membership is inclusive; any user or team can join, and noapproval is required.
+Membership is inclusive; any user or team can join, and no approval is required.
 
 Delegated
 ~~~~~~~~~
@@ -188,7 +188,7 @@ members`` link below the ``Proposed members`` list.
 Teams joining teams
 -------------------
 
-`Pyroom <https://launchpad.net/pyroom>`_ is a simple text editor designed to minimise distractions. The Pyroom developers use Launchpad to track bugs, host code and make translations. In addition to a general `Pyroom team <https://launchpad.net/~pyroom-team>`_, they also have a `bug team <https://launchpad.net/~pyroom-bugsquad>`_ that acts as the project's bug contact and a `dev team <https://launchpad.net/~pyroom-dev>`_ that has owns its trunk development branch.
+`Pyroom <https://launchpad.net/pyroom>`_ is a simple text editor designed to minimise distractions. The Pyroom developers use Launchpad to track bugs, host code and make translations. In addition to a general `Pyroom team <https://launchpad.net/~pyroom-team>`_, they also have a `bug team <https://launchpad.net/~pyroom-bugsquad>`_ that acts as the project's bug contact and a `dev team <https://launchpad.net/~pyroom-dev>`_ that owns its trunk development branch.
 
 Because teams behave just like people in Launchpad, the Pyroom bug and
 dev teams can join the main Pyroom team. Thanks to that, members of
