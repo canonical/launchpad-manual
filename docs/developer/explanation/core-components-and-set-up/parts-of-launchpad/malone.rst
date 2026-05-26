@@ -2,6 +2,8 @@
    :description: Understand the Malone bug tracker and what makes it 
       substantially different from existing bug tracking tools.
 
+.. _malone:
+
 ============
 About Malone
 ============
