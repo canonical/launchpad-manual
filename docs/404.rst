@@ -25,6 +25,6 @@ Page not found
         or search for a similar page.
 
     .. grid-item::
-        .. image:: 404.svg
+        .. image:: _static/404.svg
             :align: center
             :alt: Penguin with a question mark
