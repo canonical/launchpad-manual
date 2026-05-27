@@ -1,0 +1,30 @@
+:orphan:
+
+.. meta::
+   :description: Custom 404 error page that appears when users cannot find a
+                 documentation page they were looking for, providing guidance
+                 on how to navigate further.
+
+Page not found
+==============
+
+.. grid:: 1 1 2 2
+    :gutter: 5
+
+    .. grid-item::
+        **Sorry, but the documentation page that you are looking for was
+        not found.**
+
+        Documentation changes over time, and pages are moved around.
+        We try to redirect you to the updated content where possible,
+        but that didn't work this time
+        (perhaps, the content you were looking for does not exist
+        in this version of the documentation).
+
+        You can use the navigation to locate the content you're looking for,
+        or search for a similar page.
+
+    .. grid-item::
+        .. image:: 404.svg
+            :align: center
+            :alt: Penguin with a question mark
