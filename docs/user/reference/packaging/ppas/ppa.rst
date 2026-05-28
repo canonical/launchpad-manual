@@ -26,7 +26,7 @@ them, they're superseded by another package that you upload or the
 version of Ubuntu against which they're built becomes obsolete.
 
 .. note::
-    :ref:`consumer-hosting` allow you to have private PPAs.
+    :ref:`Proprietary hosting <proprietary-hosting>` allow you to have private PPAs.
 
 .. note:: 
     We do not allow uploading pre-built binary packages.

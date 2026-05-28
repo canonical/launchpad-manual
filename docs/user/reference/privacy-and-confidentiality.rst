@@ -20,7 +20,7 @@ Branches that fix "Private Security" bugs can themselves be set to
 
 Proprietary branches are a feature available on request for projects
 with commercial subscriptions. For more information, see
-:ref:`Commercial Hosting<consumer-hosting>`.
+:ref:`proprietary hosting <proprietary-hosting>`.
 
 Bug sharing policies
 --------------------
