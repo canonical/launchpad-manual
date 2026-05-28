@@ -16,7 +16,7 @@ Account options
 Look up consumer hosting options, troubleshooting options for your Launchpad 
 account, and fingerprints for SSH end points.
 
-- :ref:`Consumer hosting options <consumer-hosting>`
+- :ref:`Proprietary hosting options <proprietary-hosting>`
 - :ref:`Troubleshooting your account <ref-troubleshooting>`
 - :ref:`SSH fingerprints <ssh-fingerprints>`
 
@@ -79,7 +79,7 @@ and how whitespace is addressed.
    Bugs <bugs/index>
    Bug tracker API <bug-tracker-api/index>
    Commenting syntax <comment-syntax>
-   Consumer hosting <consumer-hosting>
+   Proprietary hosting <proprietary-hosting>
    Glossary <glossary>
    Launchpad and community <launchpad-and-community/index>
    launchpadlib API compatibility <launchpadlib-api-compatibility>
