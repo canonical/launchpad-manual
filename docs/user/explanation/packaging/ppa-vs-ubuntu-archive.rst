@@ -8,9 +8,9 @@ PPAs and the Ubuntu archive
 ===========================
 
 
-A PPA shares the *infrastructure* of the Ubuntu primary archive — the
+A PPA shares the *infrastructure* of the Ubuntu primary archive - the
 same package tools, the same distribution mechanics, the same Debian
-pool layout — but it is a separate publication system. Packages
+pool layout - but it is a separate publication system. Packages
 uploaded to a PPA never appear in the Ubuntu archive automatically,
 and packages in the Ubuntu archive are not mirrored into PPAs. The two
 flows are independent.
