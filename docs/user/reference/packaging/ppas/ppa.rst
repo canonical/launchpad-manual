@@ -1,5 +1,5 @@
 .. meta::
-   :description: Personal Package Archive reference: supported series
+   :description: Personal Package Archive reference - supported series
       and architectures, quotas, retention, and signing key facts.
 
 .. _personal-package-archive:
