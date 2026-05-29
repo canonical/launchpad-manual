@@ -34,7 +34,7 @@ reused across the owner's PPAs. Consumers can verify that a downloaded
 package was built and signed by Launchpad on behalf of that owner.
 
 This is the only trust signal a PPA provides; it is not a security or
-quality review. PPA packages are standard Debian packages: they run
+quality review. PPA packages are standard Debian packages; they run
 unsandboxed, execute maintainer scripts as root during installation,
 and can install or replace any package on the system. Adding a PPA
 therefore grants its owner the same level of trust as installing
