@@ -14,6 +14,11 @@ Packaging
     Install software from PPAs <ppa-install>
     Install software from private PPAs <private-ppa-install>
     Upload a package to a PPA <ppa-package-upload>
+    Create a PPA <create-a-ppa>
+    Delete a PPA <delete-a-ppa>
+    Grant upload permission to a non-team-member <manage-ppa-upload-permissions>
+    Enable additional build architectures <request-ppa-architectures>
+    Free up disk space in a PPA <free-up-ppa-disk-space>
     build-snaps-in-launchpad
     build-rocks-in-launchpad
     build-charms-in-launchpad
