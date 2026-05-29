@@ -57,7 +57,7 @@ Supported architectures
 
 Enabling an architecture affects new uploads only. To produce builds
 for an already-published source on a newly-enabled architecture, see
-:ref:`request-ppa-architectures` and :ref:`copying-packages`.
+:ref:`request-ppa-architectures`.
 
 See https://launchpad.net/builders/ for the live list.
 
