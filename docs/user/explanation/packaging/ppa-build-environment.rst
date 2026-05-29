@@ -15,9 +15,9 @@ Launchpad runs each PPA build inside an isolated cloud instance,
 provisioned for that build alone. Each build starts in a clean chroot
 and is torn down on completion. This guarantees two properties:
 
-- each build depends only on the source package and its declared
-  build dependencies, with no carry-over from prior builds;
-- one developer's build cannot affect another's, accidentally or
+- Each build depends only on the source package and its declared
+  build dependencies, with no carry-over from prior builds
+- One developer's build cannot affect another's, accidentally or
   otherwise.
 
 Implications for architecture coverage
