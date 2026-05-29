@@ -36,7 +36,7 @@ PPAs use the standard ``debian pool`` layout. Source and binary files
 live in name-based pool locations, and any number of per-series
 indexes (``dists``) can reference the same files. As a result, a
 single uploaded source revision can be *published* into multiple
-Ubuntu series through a copy operation, rather than re-uploaded once
+Ubuntu series through a copy operation, rather than being uploaded once
 per series. See :ref:`building-a-source-package` for the per-series
 version-naming pattern and :ref:`copying-packages` for the copy
 operation itself.
