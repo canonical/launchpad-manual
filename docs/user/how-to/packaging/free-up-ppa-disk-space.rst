@@ -20,4 +20,4 @@ Step 2 — Request a larger quota
 To increase the PPA's quota beyond the 8 GiB default, file a question
 with a written justification at https://answers.launchpad.net/launchpad.
 A Launchpad administrator will consider the request and either grant
-it or provide alternative advice.
+it or recommend an alternative approach.
