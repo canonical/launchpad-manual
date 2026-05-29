@@ -8,8 +8,6 @@
 PPA overview
 ============
 
-What a PPA is
--------------
 
 A Personal Package Archive (PPA) is a per-user or per-team apt
 repository hosted by Launchpad. A developer uploads source packages,
