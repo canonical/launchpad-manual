@@ -23,7 +23,7 @@ Building existing sources for new architectures
 Enabling an architecture affects only new uploads; sources already
 published in the PPA are not built for it. To build an
 already-published source for a newly-enabled architecture, copy the
-source within the PPA: use the :ref:`copying-packages` workflow with
+source within the PPA. Use the :ref:`copying-packages` workflow with
 "This PPA" as the destination, "The same series", and "Copy existing
 binaries". Launchpad then creates the missing builds, with no re-upload
 needed.
