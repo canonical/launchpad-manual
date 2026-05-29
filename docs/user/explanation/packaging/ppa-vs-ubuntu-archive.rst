@@ -7,8 +7,6 @@
 PPAs and the Ubuntu archive
 ===========================
 
-Two separate systems
---------------------
 
 A PPA shares the *infrastructure* of the Ubuntu primary archive — the
 same package tools, the same distribution mechanics, the same Debian
