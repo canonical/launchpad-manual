@@ -51,8 +51,6 @@ Examples
           | sit | amet | consectetur |
           | adipiscing | elit | sed |
 
-       (Whitespace between non-whitespace characters gets reduced to
-       just one)
 
 Paragraphs
 ----------
@@ -274,18 +272,18 @@ Examples
 
    * - Input
      - Output
-   * - ``faq 1``
-     - `faq 1 <faq_1>`_
-   * - ``faq #2``
-     - `faq #2 <faq_#2>`_
-   * - ``faq-2``
-     - `faq-2 <faq-2>`_
-   * - ``faq=2``
-     - `faq=2 <faq=2>`_
-   * - ``faq item 1``
-     - `faq item 1 <faq_item_1>`_
-   * - ``faq  number  2``
-     - `faq number 2 <faq_number_2>`_
+   * - ``faq 3041``
+     - `faq 3041 <https://answers.launchpad.net/ubuntu/+faq/3041>`_
+   * - ``faq #3041``
+     - `faq #3041 <https://answers.launchpad.net/ubuntu/+faq/3041>`_
+   * - ``faq-3041``
+     - `faq-3041 <https://answers.launchpad.net/ubuntu/+faq/3041>`_
+   * - ``faq=3041``
+     - `faq=3041 <https://answers.launchpad.net/ubuntu/+faq/3041>`_
+   * - ``faq item 3041``
+     - `faq item 3041 <https://answers.launchpad.net/ubuntu/+faq/3041>`_
+   * - ``faq  number  3041``
+     - `faq number 3041 <https://answers.launchpad.net/ubuntu/+faq/3041>`_
 
 URIs
 ----
