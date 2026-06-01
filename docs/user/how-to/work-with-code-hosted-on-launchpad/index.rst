@@ -9,6 +9,10 @@ Work with code hosted on Launchpad
 
 .. include:: /includes/important_not_revised_help.rst
 
+Launchpad hosts Git repositories for your projects and provides tools for
+branching, code review, and merge proposals. You can also link commits and
+branches directly to bugs and blueprints.
+
 .. toctree::
     :maxdepth: 1
 

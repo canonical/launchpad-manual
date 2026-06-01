@@ -8,7 +8,8 @@
 Manage your account
 ===================
 
-These guides help you create and manage your Launchpad account.
+A Launchpad account gives you access to the platform's full range of features,
+including code hosting, bug tracking, and package publishing.
 
 To get started with Launchpad, you need to create a user account. You can
 `sign up here <https://launchpad.net/+login>`_.

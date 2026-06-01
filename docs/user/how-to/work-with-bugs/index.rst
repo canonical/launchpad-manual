@@ -9,6 +9,10 @@ Work with bugs
 
 .. include:: /includes/important_not_revised_help.rst
 
+Launchpad's bug tracker lets you file and manage bugs across projects and
+distributions. You can subscribe to bugs, link them to code branches, manage
+them through email, and integrate with external trackers.
+
 .. toctree::
     :maxdepth: 1
 

@@ -9,6 +9,10 @@ Projects
 
 .. include:: /includes/important_not_revised_help.rst
 
+Launchpad gives your project a central hub for tracking development activity.
+You can register a project, manage ownership and permissions, and coordinate
+translations into multiple languages.
+
 .. toctree::
     :hidden:
     :maxdepth: 1
