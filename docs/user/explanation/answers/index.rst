@@ -4,8 +4,13 @@
 
 .. _exp-answers:
 
-Answers 
+Answers
 =======
+
+Launchpad Answers provides a question and answer system where users can ask for
+help with projects hosted on Launchpad. Understand how the Answer Tracker works,
+how to ask questions effectively, and how to help your community as an answer
+contact.
 
 .. include:: /includes/important_not_revised_help.rst
 
