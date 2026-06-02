@@ -11,14 +11,13 @@ Launchpad brings together tools for hosting code, tracking bugs, publishing
 packages, coordinating translations, and more. These pages explain how the key
 features and systems work. For an overview, see
 :ref:`feature highlights <launchpad-feature-highlights>` or
-:ref:`What is Launchpad? <exp-what-is-launchpad>`.
+:ref:`What is Launchpad <exp-what-is-launchpad>`.
 
 Your Launchpad account
 ----------------------
-There are different ways to participate in Launchpad, and your contributions
+There are different ways to contribute in Launchpad, and your contributions
 are tracked through a Karma points system. You can also subscribe to get email
-notifications to keep you informed about projects, bugs, and teams you
-are following.
+notifications to stay informed on projects, bugs, and teams you are following.
 
 - :ref:`What can you do with a Launchpad account? <your-launchpad-account>`
 - :ref:`Account Karma <your-account-karma>`
@@ -27,7 +26,7 @@ are following.
 Community and collaboration
 ---------------------------
 You can contact other contributors on Launchpad, but also manage who can see
-your contact information. There are also defined policies around privacy,
+your contact information. There are defined policies around privacy,
 confidentiality, and the disclosure of personal and project information.
 
 - :ref:`Contacting others and managing your contact information <collaborating-with-other-launchpad-users>`
@@ -62,7 +61,7 @@ your code.
 
 Teams
 -----
-Teams allows you to group contributor and assign them roles, permissions, and
+Teams allow you to group contributors and assign them roles, permissions, and
 responsibilities across projects. Teams can own projects, have their own code
 branches, and act collectively as answer contacts or reviewers.
 
