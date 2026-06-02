@@ -22,8 +22,10 @@ sharing policies for proprietary repositories, and look up SSH fingerprints.
 
 Community and support
 ---------------------
-Frequently asked questions, platform and licensing policies, support best 
-practices, and data handling policies.
+Download and display the Launchpad badge, templates for asking questions plus
+the question lifecycle, platform and licensing policies, control who knows
+about your branch, and navigate getting or providing support in your native
+language.
 
 - :ref:`Launchpad and community <launchpad-and-community>`
 - :ref:`Privacy and confidentiality <branch-information-types>`
