@@ -8,8 +8,8 @@ How-to guides
 =============
 
 Launchpad supports a wide range of workflows - from managing accounts and
-hosting code, to building packages and tracking bugs. The guides in this
-section provide step-by-step instructions for specific tasks.
+hosting code, to building packages and tracking bugs. This section provides
+step-by-step instructions for specific tasks.
 
 Manage your account and access
 ------------------------------
@@ -60,8 +60,7 @@ the API directly from other languages or tools.
 Contribute to the community 
 ---------------------------
 Launchpad Answers lets you respond to support questions from other users. You
-can also take on an ongoing role as an answer contact for a specific project or
-distribution, ensuring questions get timely responses.
+can also take on an ongoing role as an answer contact for a specific project.
 
 - :ref:`Help the community <help-the-community>`
 
