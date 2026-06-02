@@ -7,8 +7,8 @@ Launchpad API
 =============
 
 Launchpad exposes most of its functionality through a web service API that lets
-you programmatically access and manipulate Launchpad data. Explore the
-REST-based web service architecture and the official launchpadlib Python
+you programmatically access and manipulate Launchpad data. This section
+explores the REST-based web service architecture and the launchpadlib Python
 library for building applications that integrate with Launchpad.
 
 .. include:: /includes/important_not_revised_help.rst
