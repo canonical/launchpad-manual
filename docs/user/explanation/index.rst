@@ -15,9 +15,9 @@ features and systems work. For an overview, see
 
 Your Launchpad account
 ----------------------
-There is a lot of freedom when it comes to what you can work on in Launchpad. 
-Launchpad tracks your contributions through a Karma points system and sends
-email notifications to keep you informed about projects, bugs, and teams you
+There are different ways to participate in Launchpad, and your contributions
+are tracked through a Karma points system. You can also subscribe to get email
+notifications to keep you informed about projects, bugs, and teams you
 are following.
 
 - :ref:`What can you do with a Launchpad account? <your-launchpad-account>`
