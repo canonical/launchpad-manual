@@ -22,10 +22,9 @@ sharing policies for proprietary repositories, and look up SSH fingerprints.
 
 Community and support
 ---------------------
-Download and display the Launchpad badge, templates for asking questions plus
-the question lifecycle, platform and licensing policies, control who knows
-about your branch, and navigate getting or providing support in your native
-language.
+Launchpad badges, templates for asking questions plus the question lifecycle,
+platform and licensing policies, branch privacy, and getting or providing
+support in your native language.
 
 - :ref:`Launchpad and community <launchpad-and-community>`
 - :ref:`Privacy and confidentiality <branch-information-types>`
@@ -45,8 +44,7 @@ code review roles, and Live Filesystems.
 Bugs
 ----
 Available options when using the Launchpad bug tracker and the bug tracker API,
-including supported external bug trackers, bug roles, and available bug
-statuses.
+including supported external bug trackers, bug roles, and bug statuses.
 
 - :ref:`Bugs references <bugs>`
 - :ref:`Bug tracker API <ref-bug-tracker-api>`
@@ -76,24 +74,24 @@ and how whitespace is addressed.
    :hidden:
    :maxdepth: 1
 
-   Consumer hosting <consumer-hosting>
-   SSH fingerprints <ssh-fingerprints>
-   Privacy and confidentiality <privacy-and-confidentiality>
-   Troubleshooting <troubleshooting/index>
-   Support in your native language <native-language-support>
-   Project groups <project-groups>
-   Teams <teams/index>
-   Roles in code review <code-review-roles>
-   Packaging <packaging/index>
-   Live-file-systems <live-file-systems>
    Bugs <bugs/index>
    Bug tracker API <bug-tracker-api/index>
-   launchpadlib API compatibility <launchpadlib-api-compatibility>
-   Table of applications using the API <api-uses>
-   Loggerhead <loggerhead>
-   Launchpad and community <launchpad-and-community/index>
-   Question life cycle <question-life-cycle>
-   Translations <translations/index>
    Commenting syntax <comment-syntax>
+   Consumer hosting <consumer-hosting>
    Glossary <glossary>
+   Launchpad and community <launchpad-and-community/index>
+   launchpadlib API compatibility <launchpadlib-api-compatibility>
+   Live-file-systems <live-file-systems>
+   Loggerhead <loggerhead>
+   Packaging <packaging/index>
+   Privacy and confidentiality <privacy-and-confidentiality>
+   Project groups <project-groups>
+   Question life cycle <question-life-cycle>
+   Roles in code review <code-review-roles>
+   SSH fingerprints <ssh-fingerprints>
+   Support in your native language <native-language-support>
+   Table of applications using the API <api-uses>
+   Teams <teams/index>
+   Translations <translations/index>
+   Troubleshooting <troubleshooting/index>
    User preferences <settings-and-preferences>
