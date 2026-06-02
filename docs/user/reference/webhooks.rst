@@ -11,9 +11,9 @@ Some objects in Launchpad support
 `webhooks <https://en.wikipedia.org/wiki/Webhook>`__. When these objects
 change, Launchpad will send an HTTP POST request to the delivery URL
 configured for each webhook with some information about the event that
-prompted the notification. You can use this to integrate with all kinds
-of external services, and if you control an HTTP server reachable from
-the Internet it's easy to write your own webhook endpoint.
+prompted the notification. You can use this to integrate with different
+external services. If you control an HTTP server reachable from the
+Internet, it's easy to write your own webhook endpoint.
 
 Objects and events
 ------------------
@@ -47,9 +47,9 @@ You can create webhooks on any of these target objects:
 +-------------------------------------------------------------------------------------------------------+------------------------------------------------+
 
 Events have a type (used in the API) and a name (shown in the web UI).
-The types are versioned: if we ever change an event payload in an
-incompatible way, we'll bump the version so that you can adapt your code
-gracefully. We may add more key/value pairs to dictionaries without
+The types are versioned. If an event payload is ever changed in an
+incompatible way, the version will be bumped so that you can adapt your
+code gracefully. More key/value pairs may be added to dictionaries without
 bumping the version.
 
 +-------------------------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------+
@@ -221,8 +221,7 @@ appropriate) from all the IP addresses associated with
 The proxy used for delivering webhooks does not generally allow access to
 Canonical's own IP space. If you are a Canonical employee and want to set
 up a webhook-based integration with another service hosted by Canonical,
-please `contact the Launchpad team
-<https://answers.launchpad.net/launchpad/+addquestion>`_ with details.
+please contact the Launchpad team with details.
 
 Event payloads
 --------------
