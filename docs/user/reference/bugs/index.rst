@@ -7,6 +7,11 @@
 Bugs
 ====
 
+Technical reference for Launchpad's bug tracking system, including bug
+attachments, subscriptions, expiry policies, heat calculations, and the email
+interface, plus multi-project bug management and bug integration with other
+Launchpad features.
+
 .. include:: /includes/important_not_revised_help.rst
 
 .. toctree::

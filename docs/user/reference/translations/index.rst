@@ -7,6 +7,10 @@
 Translations
 ============
 
+Translation workflows, language-specific guidelines, permissions and policies,
+licensing requirements, and best practices, including options for managing
+translations, sharing across projects, and supporting multiple languages.
+
 .. include:: /includes/important_not_revised_help.rst
 
 .. toctree::

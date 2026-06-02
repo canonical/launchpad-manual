@@ -6,6 +6,9 @@
 Teams
 =========
 
+Teams customization options on Launchpad - setting team policies, managing
+membership, and team roles and responsibilities.
+
 .. include:: /includes/important_not_revised_help.rst
 
 .. toctree::
