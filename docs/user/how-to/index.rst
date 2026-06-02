@@ -42,8 +42,9 @@ Package Archives (PPAs), as well as snaps, rocks, charms, and OCI images.
 Manage bugs
 -----------
 The bug tracker lets you file, subscribe to, and manage bugs across your
-projects. It also integrates with external trackers - including Bugzilla, Trac,
-and Mantis - and can link bug reports directly to code branches.
+projects. It also integrates with external trackers including Bugzilla, Trac,
+GitLab, and Mantis, allows you to link bug reports directly to code branches,
+and more.
 
 - :ref:`Work with bugs <work-with-bugs>`
 
@@ -51,16 +52,17 @@ Use the API
 -----------
 Launchpad exposes most of its data and actions through a REST API.
 ``launchpadlib``, the official Python client library, lets you script Launchpad
-operations as Python objects without dealing with raw HTTP. You can also call
-the API directly from other languages or tools.
+operations as Python objects without dealing with raw HTTP. You can also use
+the API directly.
 
 - :ref:`Use the Launchpad web services API <launchpad-web-services-api>`
 - :ref:`Work with launchpadlib <work-with-launchpadlib>`
 
 Contribute to the community 
 ---------------------------
-Launchpad Answers lets you respond to support questions from other users. You
-can also take on an ongoing role as an answer contact for a specific project.
+As an answer contact, you will be called upon to help the community by
+responding to both new and frequently asked questions. You may also receive
+a lot of mail which you can filter based on your personal preferences.
 
 - :ref:`Help the community <help-the-community>`
 
