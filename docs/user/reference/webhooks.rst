@@ -120,9 +120,9 @@ the ``newWebhook`` method on one of those objects via the
 Authentication
 --------------
 
-When you create a webhook, can optionally add a secret. If you do, Launchpad
-will add an ``X-Hub-Signature`` HTTP header to each webhook delivery containing
-an HMAC-SHA1 signature of the body with that secret, as in the
+When you create a webhook, you can optionally add a secret. If you do,
+Launchpad will add an ``X-Hub-Signature`` HTTP header to each webhook delivery
+containing an HMAC-SHA1 signature of the body with that secret, as in the
 `PubSubHubbub specification <https://pubsubhubbub.github.io/PubSubHubbub/pubsubhubbub-core-0.4.html#rfc.section.8>`_.
 
 You can't currently change the secret for an existing webhook using the
@@ -173,7 +173,7 @@ both the source and target branches of a merge proposal).
 
 .. note::
 
-   Regarding CI Builds events specifically, Launchpad doesn't re-run
+   Regarding CI Build events, specifically, Launchpad doesn't re-run
    the build if it has run already for a given commit. This could lead to a
    scenario where commit A is pushed to a branch whose git reference
    doesn't match the ``git_ref_pattern``, the CI Build is triggered and
@@ -207,21 +207,21 @@ Examples
 - ``refs/heads/foo[-_]bar`` will match both ``refs/heads/foo-bar`` and
   ``refs/heads/foo_bar``
 - ``refs/heads/foo[!-]*`` will match all git refs that don't have a ``-``
-  character in front of ``refs/heads/foo``
+  character after ``refs/heads/foo``
 
 Network considerations
 ----------------------
 
 You should ensure that your firewall allows HTTP/HTTPS access (as
 appropriate) from all the IP addresses associated with
-``webhooks-proxy.launchpad.net``. If you are testing from the `qastaging
+``webhooks-proxy.launchpad.net``. If you are testing from `qastaging
 <https://qastaging.launchpad.net/>`_, you should also allow
 ``webhooks-proxy.qastaging.paddev.net``.
 
 The proxy used for delivering webhooks does not generally allow access to
 Canonical's own IP space. If you are a Canonical employee and want to set
 up a webhook-based integration with another service hosted by Canonical,
-please contact the Launchpad team with details.
+please contact the Launchpad team with the details.
 
 Event payloads
 --------------
