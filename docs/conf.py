@@ -27,7 +27,7 @@ project = "Launchpad"
 author = "Canonical Ltd."
 
 # The year in the copyright statement
-copyright = f"{datetime.date.today().year}"
+copyright = "%s CC-BY-SA, %s" % (datetime.date.today().year, author)
 
 # Sidebar documentation title
 # To disable the title, set it to an empty string.
