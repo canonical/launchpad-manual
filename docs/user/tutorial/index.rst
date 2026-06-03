@@ -6,7 +6,9 @@
 Tutorials
 =========
 
-These tutorials will help you get started working with Launchpad.
+Explore Launchpad through a series of comprehensive and guided tutorials,
+starting with launchpadlib, a Python library that allows you to interact with
+Launchpad's API.
 
 .. toctree::
    :maxdepth: 2
