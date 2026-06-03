@@ -8,6 +8,11 @@ Packaging
 =========
 .. include:: /includes/important_not_revised_help.rst
 
+Launchpad builds software packages from your source code using its own build
+infrastructure. You can publish Debian packages through a Personal Package
+Archive (PPA), or build snaps, rocks, charms, and OCI images for other
+distribution channels.
+
 .. toctree::
     :maxdepth: 1
 
