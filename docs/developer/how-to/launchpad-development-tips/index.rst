@@ -13,6 +13,7 @@ Launchpad development tips
    testing-scripts
    exceptions
    preserve-query-count
+   ../../../user/how-to/profile-launchpad
    chameleon
    launchpad-api-docs
    codehosting-locally
