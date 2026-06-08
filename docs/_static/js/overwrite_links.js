@@ -1,5 +1,5 @@
 // Replace oldDomain with newDomain
-const oldDomain = 'documentation.ubuntu.com/launchpad';
+const oldDomain = 'canonical-launchpad-documentation.readthedocs-hosted.com';
 const newDomain = 'ubuntu.com/docs/launchpad';
 
 // Use a MutationObserver to wait for the RTD flyout element to appear in the DOM
