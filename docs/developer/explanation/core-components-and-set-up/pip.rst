@@ -368,6 +368,18 @@ in to Launchpad, as well as sending your patch upstream.  At that point you
 are free to revert the configuration to only develop Launchpad.  Make sure
 to test with the final distribution before submitting your branch.
 
+Using prebuilt wheels
+=====================
+
+Sometimes we are unable to use a source distribution and instead need to rely
+on a prebuilt wheel. A common example of this is Python libraries with Rust 
+dependencies that are unable to build on focal due to its outdated Rust version.
+
+In such cases, it is acceptable to add a wheel to ``download-cache/dist`` if a
+build pipeline using :ref:`lpci <continuous-integration>` or :ref:`sourcepackage recipes <create-a-source-package-recipe>`
+has been set up to build the wheel on a Launchpad builder.
+An example can be seen at https://code.launchpad.net/~launchpad/launchpad/+git/isal-whl/+ref/main.
+
 =====================
 Possible future goals
 =====================
