@@ -7,6 +7,16 @@
 Release Notes
 =============
 
+June 2026
+++++++++++++
+
+9 June
+
+- Added support for filtering by `distro_series`, `published_since`, and
+  `published_until`, as well as sorting by `order_by_published` in Archive
+  APIs. For more information, see
+  `Launchpad's API documentation <https://api.launchpad.net/devel.html>`_.
+  
 May 2026
 ++++++++
 
