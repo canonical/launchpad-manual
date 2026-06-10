@@ -34,6 +34,11 @@ May 2026
 - Removed suppression of snap manifest generation for private snap builds. For 
   more information, see `Bug #2030668 <https://bugs.launchpad.net/launchpad-buildd/+bug/2030668>`_.
 
+10 May
+
+- Enabled post-quantum key exchange algorithms for SFTP package uploads and
+  git operations using the git+ssh protocol.
+
 April 2026
 ++++++++++
 
