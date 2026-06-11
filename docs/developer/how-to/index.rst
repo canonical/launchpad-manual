@@ -5,31 +5,30 @@
 How-to guides
 =============
 
-These how-to guides take you through common processes for Launchpad developers, 
-from creating a local setup and contributing changes, to operating and 
-debugging the platform. 
+Instructions to take you through common processes for Launchpad developers, from
+creating a local setup and contributing changes, to operating and debugging the
+platform. 
 
 Get started
 -----------
 
-To get started with Launchpad, you'll need to get the source code and run a 
-local development instance. You can also set up buildd and Soyuz to enable 
-building using your local Launchpad instance.
+To get started with Launchpad development, you'll need to get the source code
+and run a local Launchpad instance. You can also set up buildd and Soyuz to
+enable local builds.
 
 - :ref:`Get the Launchpad source code <get-the-source-code>`
 - :ref:`Run Launchpad locally with quick set up <set-up-and-run-launchpad-quickstart>`
 - :ref:`Run Launchpad locally with advanced set up <set-up-and-run-launchpad-advanced>`
-- :ref:`Database set up <database-setup>`
+- :ref:`Set up the database <database-setup>`
 - :ref:`Deploy Soyuz locally <use-soyuz-locally>`
 - :ref:`Develop with Buildd <develop-with-buildd>`
 
 Operate Launchpad
 -----------------
 
-Once you have your own instance of Launchpad up and running, there are some 
-common tasks you may need to undertake such as observing the build farm, 
-checking the availability of frontends, triaging bugs, deploying changes to 
-production, etc.
+Managing a running Launchpad instance involves monitoring the build farm,
+checking frontend availability, triaging bugs, administering users, and
+shipping changes to production.
 
 - :ref:`Get overview of build farm <get-overview-of-build-farm>`
 - :ref:`Check availability of frontends <check-availability-of-frontends>`
@@ -43,8 +42,9 @@ production, etc.
 Common development tasks
 ------------------------
 
-As a developer working on Launchpad, below are some of the common tasks
-that you might need to do.
+The Launchpad development cycle involves fixing bugs, contributing and
+reviewing changes, updating dependencies, and keeping the database schema
+current.
 
 - :ref:`Fix bugs <fixing-bugs>`
 - :ref:`Contribute changes <contributing-changes>`
@@ -56,9 +56,10 @@ that you might need to do.
 Launchpad development tips
 --------------------------
 
-Developing for Launchpad can be challenging, but there are approaches that can
-make things easier whether your goal is to use Launchpad for codehosting
-locally, test CLI scripts, generate API docs, etc.
+This section covers a range of helpful techniques for Launchpad development:
+writing and configuring tests, handling exceptions and security policies,
+running codehosting locally, generating API docs, and working with the
+database.
 
 - :ref:`Update the global configuration for tests <update-global-configuration-for-tests>`
 - :ref:`Handle security policies <handle-security-policies>`
@@ -73,9 +74,12 @@ locally, test CLI scripts, generate API docs, etc.
 
 Debug
 -----
-Launchpad has many moving parts. This means identifying the source of an error
-isn't always straightforward, but there are several ways to simplify debugging
-efforts.
+
+Launchpad's layered architecture means bugs can surface far from their origin.
+Visual Studio Code has features that can be useful when debugging. Using ``pdb``
+breakpoints to debug pagetests can make your development experience easier.
+However, you can also run into some issues when using breakpoints to
+troubleshoot across multiple test layers.
 
 - :ref:`Debug tests with Visual Studio Code <debug-with-visual-studio-code>`
 - :ref:`Debug stories and pagetests <debug-stories-pagetests>`
