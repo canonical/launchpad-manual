@@ -7,16 +7,13 @@
 Webhooks
 ########
 
-.. include:: /includes/important_not_revised_help.rst
-
-
 Some objects in Launchpad support
 `webhooks <https://en.wikipedia.org/wiki/Webhook>`__. When these objects
 change, Launchpad will send an HTTP POST request to the delivery URL
 configured for each webhook with some information about the event that
-prompted the notification. You can use this to integrate with all kinds
-of external services, and if you control an HTTP server reachable from
-the Internet it's easy to write your own webhook endpoint.
+prompted the notification. You can use this to integrate with different
+external services. If you control an HTTP server reachable from the
+Internet, it's easy to write your own webhook endpoint.
 
 Objects and events
 ------------------
@@ -34,6 +31,10 @@ You can create webhooks on any of these target objects:
 +-------------------------------------------------------------------------------------------------------+------------------------------------------------+
 | `OCI recipe <https://launchpad.net/+apidoc/devel.html#oci_recipe>`_                                   | ocrecipe:build:0.1                             |
 +-------------------------------------------------------------------------------------------------------+------------------------------------------------+
+| `Charm recipe <https://launchpad.net/+apidoc/devel.html#charm_recipe>`_                               | charm-recipe:build:0.1                         |
++-------------------------------------------------------------------------------------------------------+------------------------------------------------+
+| `Craft recipe <https://launchpad.net/+apidoc/devel.html#craft_recipe>`_                               | craft-recipe:build:0.1                         |
++-------------------------------------------------------------------------------------------------------+------------------------------------------------+
 | `Project <https://launchpad.net/+apidoc/devel.html#project>`_                                         | bug:0.1, bug:comment:0.1                       |
 +-------------------------------------------------------------------------------------------------------+------------------------------------------------+
 | `Distribution <https://launchpad.net/+apidoc/devel.html#distribution>`_                               | bug:0.1, bug:comment:0.1                       |
@@ -46,9 +47,9 @@ You can create webhooks on any of these target objects:
 +-------------------------------------------------------------------------------------------------------+------------------------------------------------+
 
 Events have a type (used in the API) and a name (shown in the web UI).
-The types are versioned: if we ever change an event payload in an
-incompatible way, we'll bump the version so that you can adapt your code
-gracefully. We may add more key/value pairs to dictionaries without
+The types are versioned. If an event payload is ever changed in an
+incompatible way, the version will be bumped so that you can adapt your
+code gracefully. More key/value pairs may be added to dictionaries without
 bumping the version.
 
 +-------------------------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------+
@@ -68,6 +69,10 @@ bumping the version.
 +-------------------------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------+
 | :ref:`ocirecipe:build:0.1 <oci-recipe-build>`                     | OCI recipe build      | Any time the status of an OCI image build changes                                                           |
 +-------------------------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------+
+| :ref:`charm-recipe:build:0.1 <charm-recipe-build>`                | Charm recipe build    | Any time the status of a charm recipe build changes                                                         |
++-------------------------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------+
+| :ref:`craft-recipe:build:0.1 <craft-recipe-build>`                | Craft recipe build    | Any time the status of a craft recipe build changes                                                         |
++-------------------------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------+
 | :ref:`bug:0.1 <bug-created-updated>`                              | Bug                   | When a bug or bug task changes                                                                              |
 +-------------------------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------+
 | :ref:`bug:comment:0.1 <bug-comment-created>`                      | Bug Comment           | When a comment is added to a bug                                                                            |
@@ -79,20 +84,45 @@ bumping the version.
 | :ref:`archive:binary-build:0.1 <binary-build>`                    | Binary build          | When the status of a binary build changes                                                                   |
 +-------------------------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------+
 
+Sub-event types
+~~~~~~~~~~~~~~~
+
+Some events have sub-event types that allow users to filter more specifically
+which events they want to receive. A webhook with a sub-event type will only
+be triggered by a more specific event, but will have the same payload as the
+parent event. When selecting event types for a webhook, you can choose either
+the parent event type or specific sub-event types, but not both.
+
+For example, a ``merge-proposal:0.1`` event has sub-event types:
+
+- ``merge-proposal:0.1::create`` - triggered when a merge proposal is created
+- ``merge-proposal:0.1::push`` - triggered when a new commit is pushed to the
+  source branch of a merge proposal
+- ``merge-proposal:0.1::review`` - triggered when a merge proposal is reviewed
+- ``merge-proposal:0.1::edit`` - triggered when a merge proposal is edited
+- ``merge-proposal:0.1::status-change`` - triggered when the status changes
+- ``merge-proposal:0.1::delete`` - triggered when a merge proposal is deleted
+
+If a webhook is subscribed to `merge-proposal:0.1`, it will be triggered by all
+of the above events.
+If a webhook is subscribed to `merge-proposal:0.1::create`, it will only be
+triggered when a merge proposal is created.
+
+
 Creating webhooks
 -----------------
 
 You can create new webhooks by visiting a supported object in the
 Launchpad web UI and following the "Manage webhooks" link, or by using
-the ``newWebhook`` method on one of those objects via the :ref:`Launchpad API <launchpad-web-services-api>`.
+the ``newWebhook`` method on one of those objects via the 
+:ref:`Launchpad API <launchpad-web-services-api>`.
 
 Authentication
 --------------
 
-When you create a webhook, you will be asked for a secret. You don't
-have to provide one, but if you do, Launchpad will add an
-``X-Hub-Signature`` HTTP header to each webhook delivery containing an
-HMAC-SHA1 signature of the body with that secret, as in the
+When you create a webhook, you can optionally add a secret. If you do,
+Launchpad will add an ``X-Hub-Signature`` HTTP header to each webhook delivery
+containing an HMAC-SHA1 signature of the body with that secret, as in the
 `PubSubHubbub specification <https://pubsubhubbub.github.io/PubSubHubbub/pubsubhubbub-core-0.4.html#rfc.section.8>`_.
 
 You can't currently change the secret for an existing webhook using the
@@ -108,20 +138,22 @@ Testing
 
 You can use the
 `ping <https://launchpad.net/+apidoc/devel.html#webhook-ping>`__ API
-method to send a test event:
-
-::
+method to send a test event::
 
    obj = launchpad.load('/path/to/object')
    webhook = obj.webhooks[0]
    webhook.ping()
 
+Deliveries
+----------
+
 Recent deliveries of a webhook are shown on its page in the Launchpad
 web UI. They are also available in the ``webhook.deliveries`` API
-collection, and you can look at `various attributes of the delivery <https://launchpad.net/+apidoc/devel.html#webhook_delivery>`_ there.
+collection, and you can look at `various attributes of the delivery 
+<https://launchpad.net/+apidoc/devel.html#webhook_delivery>`_ there.
 
 Delivery ordering
------------------
+~~~~~~~~~~~~~~~~~
 
 Webhooks will generally be delivered in roughly the order in which the
 events happened, but (as with any distributed service) you cannot rely
@@ -131,21 +163,23 @@ sort events by the numeric ``X-Launchpad-Delivery`` header.
 Filter Git repository webhook deliveries
 ----------------------------------------
 
-Git Repository Webhooks specifically have an optional
-``git_ref_pattern`` field that can be used to filter which events are
-triggered according to the `git references <https://git-scm.com/book/en/v2/Git-Internals-Git-References>`_
+Git Repository Webhooks have an optional ``git_ref_pattern`` field that
+can be used to filter which events are triggered according to the `git
+references <https://git-scm.com/book/en/v2/Git-Internals-Git-References>`_
 that originated them. This is relevant to all event types related to the
 Git Repository: ``ci:build:0.1`` , ``git:push:0.1``,
 ``merge-proposal:0.1`` (where for a merge proposal, we match against
 both the source and target branches of a merge proposal).
 
-Note: Regarding CI Builds events specifically, Launchpad doesn't re-run
-the build if it has run already for a given commit. This could lead to a
-scenario where commit A is pushed to a branch whose git reference
-doesn't match the ``git_ref_pattern``, the CI Build is triggered and
-finishes (webhook is not triggered), the same commit is later pushed to
-a branch whose git reference match the ``git_ref_pattern`` but the
-webhook is not triggered because there is no change to the CI Build.
+.. note::
+
+   Regarding CI Build events, specifically, Launchpad doesn't re-run
+   the build if it has run already for a given commit. This could lead to a
+   scenario where commit A is pushed to a branch whose git reference
+   doesn't match the ``git_ref_pattern``, the CI Build is triggered and
+   finishes (webhook is not triggered), the same commit is later pushed to
+   a branch whose git reference match the ``git_ref_pattern`` but the
+   webhook is not triggered because there is no change to the CI Build.
 
 Pattern rules
 ~~~~~~~~~~~~~
@@ -170,15 +204,24 @@ Examples
 - ``refs/heads/main`` will match only the ``main`` branch
 - ``*foo*`` will match anything that contains the word ``foo``
 - ``refs/heads/*`` will match any branch
-- ``refs/heads/foo[-_]bar`` will match both ``refs/heads/foo-bar`` and ``refs/heads/foo_bar``
-- ``refs/heads/foo[!-]*`` will match all git refs that don't have a ``-`` character in front of ``refs/heads/foo``
+- ``refs/heads/foo[-_]bar`` will match both ``refs/heads/foo-bar`` and
+  ``refs/heads/foo_bar``
+- ``refs/heads/foo[!-]*`` will match all git refs that don't have a ``-``
+  character after ``refs/heads/foo``
 
 Network considerations
 ----------------------
 
-You should ensure that your firewall allows HTTP/HTTPS access (as appropriate) from all the IP addresses associated with ``webhooks-proxy.launchpad.net``. If you are testing from the `qastaging sandbox <https://qastaging.launchpad.net/>`_, you should also allow ``webhooks-proxy.qastaging.paddev.net``.
+You should ensure that your firewall allows HTTP/HTTPS access (as
+appropriate) from all the IP addresses associated with
+``webhooks-proxy.launchpad.net``. If you are testing from `qastaging
+<https://qastaging.launchpad.net/>`_, you should also allow
+``webhooks-proxy.qastaging.paddev.net``.
 
-The proxy used for delivering webhooks does not generally allow access to Canonical's own IP space. If you are a Canonical employee and want to set up a webhook-based integration with another service hosted by Canonical, please `contact the Launchpad team <https://answers.launchpad.net/launchpad/+addquestion>`_ with details.
+The proxy used for delivering webhooks does not generally allow access to
+Canonical's own IP space. If you are a Canonical employee and want to set
+up a webhook-based integration with another service hosted by Canonical,
+please contact the Launchpad team with the details.
 
 Event payloads
 --------------
@@ -371,6 +414,9 @@ payload is:
 OCI recipe build
 ~~~~~~~~~~~~~~~~
 
+Triggered any time the status of an OCI recipe build changes. The
+payload is:
+
 +----------------------------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Key                        | Type     | Value                                                                                                                                                                                                                                                                            |
 +============================+==========+==================================================================================================================================================================================================================================================================================+
@@ -385,6 +431,52 @@ OCI recipe build
 | ``status``                 | string   | The current status of the build job: one of "Needs building", "Successfully built", "Failed to build", "Dependency wait", "Chroot problem", "Build for superseded Source", "Currently building", "Failed to upload", "Uploading build", "Cancelling build", or "Cancelled build" |
 +----------------------------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | ``registry_upload_status`` | string   | The current status of uploading this image to the registry: one of "Unscheduled", "Pending", "Failed to upload", or "Uploaded"                                                                                                                                                   |
++----------------------------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+.. _charm-recipe-build:
+
+Charm recipe build
+~~~~~~~~~~~~~~~~~~
+
+Triggered any time the status of a charm recipe build changes. The
+payload is:
+
++----------------------------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Key                        | Type     | Value                                                                                                                                                                                                                                                                            |
++============================+==========+==================================================================================================================================================================================================================================================================================+
+| ``recipe_build``           | url-path | The charm recipe build                                                                                                                                                                                                                                                           |
++----------------------------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ``action``                 | string   | "created" or "status-changed"                                                                                                                                                                                                                                                    |
++----------------------------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ``recipe``                 | url-path | The charm recipe                                                                                                                                                                                                                                                                 |
++----------------------------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ``build_request``          | url-path | The associated charm recipe build request, if any                                                                                                                                                                                                                                |
++----------------------------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ``status``                 | string   | The current status of the build job: one of "Needs building", "Successfully built", "Failed to build", "Dependency wait", "Chroot problem", "Build for superseded Source", "Currently building", "Failed to upload", "Uploading build", "Cancelling build", or "Cancelled build" |
++----------------------------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ``store_upload_status``    | string   | The current status of uploading this build to the store: one of "Unscheduled", "Pending", "Failed to upload", "Failed to release to channels", or "Uploaded"                                                                                                                     |
++----------------------------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+.. _craft-recipe-build:
+
+Craft recipe build
+~~~~~~~~~~~~~~~~~~
+
+Triggered any time the status of a craft recipe build changes. The
+payload is:
+
++----------------------------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Key                        | Type     | Value                                                                                                                                                                                                                                                                            |
++============================+==========+==================================================================================================================================================================================================================================================================================+
+| ``craft_build``            | url-path | The craft recipe build                                                                                                                                                                                                                                                           |
++----------------------------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ``action``                 | string   | "status-changed"                                                                                                                                                                                                                                                                 |
++----------------------------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ``recipe``                 | url-path | The craft recipe                                                                                                                                                                                                                                                                 |
++----------------------------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ``build_request``          | url-path | The associated craft recipe build request, if any                                                                                                                                                                                                                                |
++----------------------------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ``status``                 | string   | The current status of the build job: one of "Needs building", "Successfully built", "Failed to build", "Dependency wait", "Chroot problem", "Build for superseded Source", "Currently building", "Failed to upload", "Uploading build", "Cancelling build", or "Cancelled build" |
 +----------------------------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. _bug-created-updated:
@@ -448,7 +540,7 @@ Triggered any time a new comment is added to a bug. The payload is:
 +-----------------+----------+------------------------------------------------------------------------------------------+
 | Key             | Type     | Value                                                                                    |
 +=================+==========+==========================================================================================+
-| ``action``      | string   | What happened to the bug: ``created`` or ``<field>-changed``                             |
+| ``action``      | string   | What happened to the comment: ``created`` or ``<field>-changed``                         |
 +-----------------+----------+------------------------------------------------------------------------------------------+
 | ``target``      | url-path | A path to the bug target (can be a product, distribution or distribution source package) |
 +-----------------+----------+------------------------------------------------------------------------------------------+
@@ -491,7 +583,7 @@ Triggered when the status of a source package upload changes. The payload is:
 +-------------------------+----------+---------------------------------------------------------------------------------------+
 | ``package_name``        | string   | Name of the accepted source package if it is available                                |
 +-------------------------+----------+---------------------------------------------------------------------------------------+
-| ``package_version``     | string   | Name of the accepted source package if it is available                                |
+| ``package_version``     | string   | Version of the accepted source package if it is available                             |
 +-------------------------+----------+---------------------------------------------------------------------------------------+ 
 
 .. _binary-package-upload:
