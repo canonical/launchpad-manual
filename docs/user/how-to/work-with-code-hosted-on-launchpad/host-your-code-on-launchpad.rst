@@ -24,7 +24,7 @@ This guide shows you how to:
 .. note::
 
     Launchpad is free of charge for :ref:`open source projects <project-eligibility>`.
-    To host non-open code on Launchpad, check out this doc on :ref:`consumer hosting <consumer-hosting>`.
+    To host proprietary code on Launchpad, see :ref:`proprietary hosting <proprietary-hosting>`.
 
 Enable code hosting for your project
 -------------------------------------

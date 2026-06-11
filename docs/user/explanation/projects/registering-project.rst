@@ -65,7 +65,7 @@ note:
 
 If you choose the "Other/Proprietary" license, your project will be
 awarded a 30-day trial commercial subscription that entitles you to explore the
-:ref:`commercial hosting features <consumer-hosting>`.
+:ref:`proprietary hosting features <proprietary-hosting>`.
 
 Note that once you have registered your project you will not be able to
 change its name by yourself. If you wish to change it you can ask an
@@ -119,7 +119,7 @@ The bug and branch sharing policies determine the default bug or branch
 information type, and control what types they may be changed to.
 Non-commercial projects cannot configure the policies. Bugs and branches
 are Public by default, but can be changed to Private Security or Private
-later. Projects with :ref:`commercial subscriptions <consumer-hosting>`
+later. Projects with :ref:`commercial subscriptions <proprietary-hosting>`
 can choose other rules to ensure confidential information is never
 disclosed.
 
