@@ -13,7 +13,7 @@ Get started
 -----------
 
 To get started with Launchpad development, you'll need to get the source code
-and run a local Launchpad instance. You can also set up buildd and Soyuz to
+and run a local Launchpad instance. You can also set up Buildd and Soyuz to
 enable local builds.
 
 - :ref:`Get the Launchpad source code <get-the-source-code>`
