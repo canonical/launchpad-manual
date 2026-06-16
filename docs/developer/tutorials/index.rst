@@ -7,8 +7,9 @@
 Tutorials
 =========
 
-If you are considering becoming a Launchpad developer, these tutorials guide 
-you through different tasks to familiarize you with the experience. 
+Working on Launchpad means navigating a large, feature-rich codebase and a
+well-defined development workflow. Build some familiarity with both by working
+through these tutorials.
 
 - :ref:`Creating a new page in Launchpad <tutorial-creating-page-in-launchpad>`
 - :ref:`Building charms in Launchpad <tutorial-building-charms-in-launchpad>`
