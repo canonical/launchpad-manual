@@ -1,20 +1,21 @@
 .. meta::
-   :description: Explanation documentation covering Launchpad ideas, setup, 
+   :description: Documentation covering Launchpad ideas, setup, 
       framework, parts, best practices, and deployment processes.
 
 Explanation
 ===========
 
-Launchpad is a large project developed over many years. The explanation 
-documentation take you through the ideas behind its development, the different 
-parts that make up the platform, how typical Launchpad developers approach 
-their roles, and more.
+Launchpad is a large platform built over many years on the Zope Toolkit,
+PostgreSQL, and a substantial body of Python and JavaScript. These pages
+explain the ideas behind the project, the components that make up the platform,
+and the practices its developers follow.
 
 The ideas behind Launchpad
----------------------------
+--------------------------
 
-Explore these pages for an overview of the concepts and motivations behind the 
-Launchpad project. 
+Launchpad connects the networks of people who make software with the network of
+dependencies between their projects. Understanding why Launchpad exists, who it
+serves, and the values that guide it provides the context for everything else.
 
 - :ref:`What is Launchpad? <what-is-launchpad>`
 - :ref:`About Launchpad security <about-launchpad-security>`
@@ -22,13 +23,11 @@ Launchpad project.
 - :ref:`Launchpad values <launchpad-values>`
 
 
-Understand the Launchpad set up and components
-----------------------------------------------
+Core components and setup
+-------------------------
 
-To make meaningful contributions to the project, you'll need to understand how 
-Launchpad is installed and configured, how to navigate the codebase and test 
-your changes. You should also understand the different components that make up
-the application.
+Launchpad is made up of many interdependent components. Knowing how these
+pieces fit together helps you navigate the codebase and run a working instance.
 
 - :ref:`Parts of Launchpad <parts-of-launchpad>`
 - :ref:`Publisher <explanation-publisher>`
@@ -45,8 +44,10 @@ the application.
 Database
 --------
 
-This section gives an overview of how Launchpad interacts with the PostgreSQL 
-database.
+Launchpad stores its data in PostgreSQL and depends heavily on
+PostgreSQL-specific features such as stored procedures, triggers, and language
+extensions. Its schema is patched on a live system and managed with Storm, the
+object-relational mapper Launchpad uses.
 
 - :ref:`Database performance <database-performance>`
 - :ref:`Live database patching <live-database-patching>`
@@ -57,8 +58,10 @@ database.
 Developing for the Launchpad project
 ------------------------------------
 
-These pages help explain important aspects of the developer experience when 
-you start contributing to Launchpad.
+Contributing to Launchpad means working across several long-lived branches,
+guarding new behaviour behind feature flags, and shepherding each change
+through review and into production. These topics cover the conventions and
+processes that shape day-to-day development.
 
 - :ref:`About Launchpad branches <about-launchpad-branches>`
 - :ref:`Datetime usage guide <datetime-usage-guide>`
@@ -70,10 +73,11 @@ you start contributing to Launchpad.
 - :ref:`XXX policy <xxx-policy>`
 
 Best practices for development
--------------------------------
+------------------------------
 
-By using these principled approaches to development, you can improve Launchpad 
-in a way that is sustainable and maintainable.
+Launchpad aims to be fast, always available, and safe to change. These
+principles inform how its code is structured, how performance and permissions
+are handled, and how its templates and tests are written.
 
 - :ref:`Architectural guide <architectural-guide>`
 - :ref:`Assertions in Launchpad <assertions-in-launchpad>`
@@ -89,8 +93,9 @@ in a way that is sustainable and maintainable.
 JavaScript
 ----------
 
-These pages explain how to develop, test, and build using the YUI Test 
-framework.
+Launchpad's interactive front end is written in JavaScript built on the YUI
+library, with its own build system and both unit and integration test
+frameworks.
 
 - :ref:`JavaScript build system <javascript-build-system>`
 - :ref:`Integration testing in JavaScript <integration-testing-in-javascript>`
@@ -100,8 +105,9 @@ framework.
 Static assets
 -------------
 
-Launchpad's visual style is controlled by CSS and images that you set up and 
-build.
+Launchpad's visual style comes from CSS and images that are compiled and
+optimized as part of the build, including CSS sprites that combine many small
+images into one.
 
 - :ref:`CSS <launchpad-css>`
 - :ref:`CSS sprites <use-css-sprites>`
