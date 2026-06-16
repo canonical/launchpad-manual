@@ -5,6 +5,10 @@
 JavaScript
 ===========
 
+Launchpad's interactive front end is built on the YUI 3 library and ships
+its JavaScript through a custom build system that bundles and minifies
+modules into a single ``launchpad.js`` file.
+
 .. toctree::
    :maxdepth: 1
 

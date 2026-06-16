@@ -7,6 +7,9 @@
 Static assets
 ==============
 
+Launchpad's visual style uses a set of carefully organised static assets that
+include CSS, images, and favicons, and css-sprites.
+
 .. toctree::
    :maxdepth: 1
 

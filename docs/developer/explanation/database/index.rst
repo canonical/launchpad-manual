@@ -7,6 +7,10 @@
 Database
 =========
 
+Launchpad is deeply integrated with PostgreSQL, making deliberate use of
+stored procedures, triggers, functional indexes, and full-text search —
+features that go well beyond what a generic ORM layer would expose.
+
 .. toctree::
    :maxdepth: 1
    
