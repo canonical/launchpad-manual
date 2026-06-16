@@ -1,18 +1,18 @@
 .. meta::
-   :description: Overview of Launchpad developer references and style guides.
+   :description: Coding conventions and service reference for Launchpad developers.
 
 Reference
 =========
 
-These references provide succinct information about Launchpad and its services.
-You will also find style guides on how to work with Launchpad as a developer.
+Launchpad contributors are expected to follow certain coding standards. You'll
+also need technical reference material for services that make up the Launchpad
+platform when making contributions.
 
-Style guides
-------------
+Code conventions
+----------------
 
-Style guides give a clear guideline how certain aspects of Launchpad's code
-should be formatted, styled and handled, especially for the cases when there is
-no tooling available to enforce those rules.
+Launchpad follows established conventions for Python, CSS, tests, and bug
+tagging. These standards are enforced during code review.
 
 - :ref:`Python style guide <python-style-guide>`
 - :ref:`Tests style guide <tests-style-guide>`
@@ -22,9 +22,8 @@ no tooling available to enforce those rules.
 Services
 --------
 
-Launchpad consists of many services. These pages provide a succinct description
-of the services, what they are, how they work, their tech stack, how to get
-hold of the log files, and where to find further information.
+Launchpad is composed of many services that handle builds, code hosting,
+signing, translations, mirroring, and more.
 
 Build-related
 ~~~~~~~~~~~~~
@@ -40,7 +39,7 @@ Email
 - :ref:`Launchpad and email <email-reference>`
 
 Git-related
-~~~~~~~~~~~~~~
+~~~~~~~~~~~
 
 - :ref:`Git hosting <git-hosting-reference>`
 - :ref:`Code import <code-import-reference>`
@@ -56,10 +55,11 @@ Ubuntu-related
 - :ref:`Mirror prober <mirror-prober-reference>`
 - :ref:`Ubuntu mirrors index <ubuntu-mirrors-index>`
 
-Mailing Lists
-~~~~~~~~~~~~~
-Launchpad mailing lists are not available any more, but you can still 
-access the archived information.
+Mailing lists (archived)
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Launchpad mailing lists are no longer active, but the archives remain
+accessible.
 
 - :ref:`Launchpad public mailing lists archives <mailing-lists-archives>`
 
