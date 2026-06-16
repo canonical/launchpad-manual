@@ -20,6 +20,10 @@ June 2026
 May 2026
 ++++++++
 
+22 May
+
+- Updated resolute chroots in build farm. The builds will start faster now.
+
 13 May
 
 - Provide an RSS feed for accepted uploads in an Ubuntu
