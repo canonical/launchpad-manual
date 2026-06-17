@@ -5,17 +5,17 @@
 Explanation
 ===========
 
-Launchpad is a large platform built over many years on the Zope Toolkit,
-PostgreSQL, and a substantial body of Python and JavaScript. These pages
-explain the ideas behind the project, the components that make up the platform,
-and the practices its developers follow.
+Launchpad is a large platform built over many years. These pages explain the
+ideas behind the project, its components, and the best practices its developers
+follow.
 
 The ideas behind Launchpad
 --------------------------
 
-Launchpad connects the networks of people who make software with the network of
-dependencies between their projects. Understanding why Launchpad exists, who it
-serves, and the values that guide it provides the context for everything else.
+Launchpad connects the people who make software with users and other developers,
+and offers the resources they need to make their software available.
+Understanding why Launchpad exists, whom it serves, and the values that guide
+it provides the context for everything else.
 
 - :ref:`What is Launchpad? <what-is-launchpad>`
 - :ref:`About Launchpad security <about-launchpad-security>`
@@ -26,8 +26,8 @@ serves, and the values that guide it provides the context for everything else.
 Core components and setup
 -------------------------
 
-Launchpad is made up of many interdependent components. Knowing how these
-pieces fit together helps you navigate the codebase and run a working instance.
+Launchpad is made up of many components. Knowing how these pieces fit together
+helps you navigate the codebase, and design and test your changes.
 
 - :ref:`Parts of Launchpad <parts-of-launchpad>`
 - :ref:`Publisher <explanation-publisher>`
@@ -44,10 +44,9 @@ pieces fit together helps you navigate the codebase and run a working instance.
 Database
 --------
 
-Launchpad stores its data in PostgreSQL and depends heavily on
-PostgreSQL-specific features such as stored procedures, triggers, and language
-extensions. Its schema is patched on a live system and managed with Storm, the
-object-relational mapper Launchpad uses.
+Launchpad stores its data in PostgreSQL and depends on PostgreSQL-specific
+features. Its schema is patched on a live system and managed with Storm, the
+ORM Launchpad uses.
 
 - :ref:`Database performance <database-performance>`
 - :ref:`Live database patching <live-database-patching>`
@@ -58,10 +57,10 @@ object-relational mapper Launchpad uses.
 Developing for the Launchpad project
 ------------------------------------
 
-Contributing to Launchpad means working across several long-lived branches,
-guarding new behaviour behind feature flags, and shepherding each change
-through review and into production. These topics cover the conventions and
-processes that shape day-to-day development.
+Contributing to Launchpad means working across several branches, guarding new
+behaviour behind feature flags, and guiding each change through review and
+into production. This day-to-day development is expected to follow specific
+processes and conventions.
 
 - :ref:`About Launchpad branches <about-launchpad-branches>`
 - :ref:`Datetime usage guide <datetime-usage-guide>`
@@ -75,7 +74,8 @@ processes that shape day-to-day development.
 Best practices for development
 ------------------------------
 
-Launchpad aims to be fast, always available, and safe to change. These
+Launchpad aims to be fast and always available. It should also be safe to
+change parts of it with a low risk of breaking other parts of the system. These
 principles inform how its code is structured, how performance and permissions
 are handled, and how its templates and tests are written.
 
@@ -93,9 +93,8 @@ are handled, and how its templates and tests are written.
 JavaScript
 ----------
 
-Launchpad's interactive front end is written in JavaScript built on the YUI
-library, with its own build system and both unit and integration test
-frameworks.
+Launchpad's front end is written in JavaScript built on the YUI library, with
+its own build system and both unit and integration test frameworks.
 
 - :ref:`JavaScript build system <javascript-build-system>`
 - :ref:`Integration testing in JavaScript <integration-testing-in-javascript>`
@@ -106,8 +105,7 @@ Static assets
 -------------
 
 Launchpad's visual style comes from CSS and images that are compiled and
-optimized as part of the build, including CSS sprites that combine many small
-images into one.
+optimized as part of the build using CSS sprites.
 
 - :ref:`CSS <launchpad-css>`
 - :ref:`CSS sprites <use-css-sprites>`

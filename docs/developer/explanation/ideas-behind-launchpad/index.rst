@@ -6,8 +6,8 @@
 The ideas behind Launchpad
 ==========================
 
-Before writing a line of Launchpad code it helps to understand the foundational
-ideas behind the platform, what it aims to achieve and how.
+Before you start contributing to Launchpad, it helps to understand the
+foundational ideas behind the platform, what it aims to achieve and how.
 
 .. toctree::
    :maxdepth: 1

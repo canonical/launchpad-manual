@@ -7,9 +7,9 @@
 Database
 =========
 
-Launchpad is deeply integrated with PostgreSQL, making deliberate use of
-stored procedures, triggers, functional indexes, and full-text search —
-features that go well beyond what a generic ORM layer would expose.
+Launchpad uses a PostgreSQL database, making use of stored procedures, triggers,
+functional indexes, and other PostgreSQL-specific features. It uses `Storm <https://storm-orm.readthedocs.io/en/latest/>`_
+as its object-relational mapper (ORM).
 
 .. toctree::
    :maxdepth: 1

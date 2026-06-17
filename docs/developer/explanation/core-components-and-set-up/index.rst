@@ -5,9 +5,8 @@
 Core components and setting up Launchpad
 ========================================
 
-Launchpad is a large, Zope Toolkit-based application made up of many
-interdependent subsystems including code hosting, the publisher, mailing system,
-and pip. 
+Launchpad is a Zope-based application made up of many subsystems including code 
+hosting, a bug tracker, build farm, and package publisher. 
 
 .. toctree::
    :maxdepth: 1
