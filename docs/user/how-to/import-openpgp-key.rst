@@ -92,16 +92,14 @@ Importing your key into Launchpad
    password you chose for the new key.
 
    .. tip::
-      Launchpad encrypts the email, using your public key, so that it can be
-      sure that the key is yours. If your email software doesn't support
-      OpenPGP encryption, copy the encrypted email's contents (including the 
-      ``-----BEGIN PGP MESSAGE-----`` and ``-----END PGP MESSAGE-----`` lines),
-      type ``gpg`` in your terminal, then paste the email contents into your
-      terminal window, followed by ctrl-D (an 
-      `EOF <http://en.wikipedia.org/wiki/End-of-file>`_ character).
+      Launchpad encrypts the email using your public key to ascertain that the
+      key is yours. If your email software doesn't support OpenPGP encryption,
+      copy the encrypted part of the email (From ``-----BEGIN PGP MESSAGE-----``
+      to ``-----END PGP MESSAGE-----``), paste and save the contents in a text
+      file, and run ``gpg --decrypt <filename>``, in your terminal.
 
-#. Follow the instructions in the email to complete the key import process. The
-   email will redirect you to a Launchpad page where you can confirm the key
+#. Follow the decrypted instructions to complete the key import process. The
+   link will redirect you to a Launchpad page where you can confirm the key
    import.
 
 You can now sign the Ubuntu Code of Conduct and use the Bug Tracker's email 
