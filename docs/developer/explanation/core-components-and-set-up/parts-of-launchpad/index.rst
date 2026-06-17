@@ -7,7 +7,7 @@ Parts of Launchpad
 ===================
 
 Launchpad is not a single application but a collection of distinct functional
-areas that share a common codebase and component architecture.
+units that share a codebase.
 
 .. toctree::
    :maxdepth: 1

@@ -7,7 +7,7 @@ Publisher
 ===================
 
 The Launchpad publisher is the subsystem responsible for taking accepted
-packages and making them available to ``apt`` clients.
+packages and making them available in the Ubuntu archive or a PPA.
 
 .. toctree::
    :maxdepth: 1
