@@ -44,9 +44,8 @@ helps you navigate the codebase, and design and test your changes.
 Database
 --------
 
-Launchpad stores its data in PostgreSQL and depends on PostgreSQL-specific
-features. Its schema is patched on a live system and managed with Storm, the
-ORM Launchpad uses.
+Launchpad uses PostgreSQL and depends on PostgreSQL-specific features. Its
+schema is patched on a live system and managed by Storm, the ORM Launchpad uses.
 
 - :ref:`Database performance <database-performance>`
 - :ref:`Live database patching <live-database-patching>`
