@@ -7,83 +7,81 @@
 Explanation
 ===========
 
-To make the most of your experience on Launchpad, it helps to understand what 
-takes place behind the scenes. The user explanation documentation can help with 
-that. To start getting more familiar with the platform, you can go through the 
-:ref:`feature highlights <launchpad-feature-highlights>` or look into 
-:ref:`what you can use your Launchpad account for <exp-what-is-launchpad>`.
+Launchpad brings together tools for hosting code, tracking bugs, publishing
+packages, coordinating translations, and more. These pages explain how the key
+features and systems work. For an overview, see
+:ref:`feature highlights <launchpad-feature-highlights>` or
+:ref:`What is Launchpad <exp-what-is-launchpad>`.
 
 Your Launchpad account
 ----------------------
-There is a lot of freedom when it comes to what you can work on in Launchpad. 
-The Karma points system allows you and others to measure your activity and you 
-will also receive emails from the platform to help you keep track of projects,
-bugs, and other things you may be interested in.
+There are different ways to contribute in Launchpad, and your contributions
+are tracked through a Karma points system. You can also subscribe to get email
+notifications to stay informed on projects, bugs, and teams you are following.
 
 - :ref:`What can you do with a Launchpad account? <your-launchpad-account>`
 - :ref:`Account Karma <your-account-karma>`
 - :ref:`Understanding rationale headers in Launchpad mail <rationale-headers-in-email>`
 
-Working in the community
-------------------------
-Collaborating on creating and improving open source software is a great 
-experience, but it comes with certain challenges and perils. It's important to 
-know how to safely interact with others, and also understand the legal 
-frameworks under which you are collaborating.
+Community and collaboration
+---------------------------
+You can contact other contributors on Launchpad, but also manage who can see
+your contact information. There are defined policies around privacy,
+confidentiality, and the disclosure of personal and project information.
 
 - :ref:`Contacting others and managing your contact information <collaborating-with-other-launchpad-users>`
 - :ref:`Privacy, confidentiality, and disclosure of information <privacy-confidentiality-disclosure>` 
 
 Launchpad Answers
 -----------------
-`Launchpad's answer tracker <https://answers.launchpad.net/>`_ is the first 
-stop for many users when they encounter an issue. You can ask questions or
-provide answers to others, so it's useful to know its features, how to 
-integrate it with your project, and how to ask for or give help.
+`Launchpad Answers <https://answers.launchpad.net>`_ is a community Q&A tracker
+where users can post questions about projects and receive answers from other
+community members or designated answer contacts. Projects can embed the tracker
+in their support workflow and build up a library of stock answers.
 
 - :ref:`Understanding Launchpad Answers <exp-answers>`
 
-Managing, packaging, releasing, and translating software 
---------------------------------------------------------
-Registering your project on Launchpad allows you to collaborate with others, 
-but that is just the start. You also get access to additional features you can 
-use for planning and managing releases, translating software, and building and
-distributing software through PPAs.
+Projects, packages, and translations
+-------------------------------------
+Launchpad organizes software around projects, which can have series,
+milestones, and releases. You can distribute packages through Personal Package
+Archives (PPAs) and coordinate localization using the Translations feature.
 
 - :ref:`Managing projects on Launchpad <exp-projects-in-launchpad>`
 - :ref:`Packaging your software for release <exp-packaging>`
 - :ref:`Translating with Launchpad <exp-translating>`
 
-Working with code
------------------
-There are different ways to `work with code on Launchpad <https://code.launchpad.net/>`_ 
-including hosting git repositories, importing git repositories from other 
-platforms, and configuring the CI to help you catch bugs early.
+Code hosting
+------------
+Launchpad hosts Git repositories, supports importing code from external
+platforms, and provides a CI pipeline for running automated checks against
+your code.
 
 - :ref:`Understand how to work with code on Launchpad <working-with-code>`
 
-Teams on Launchpad 
-------------------
-Forming a team is a great way to organize a community around a specific effort 
-or project. The teams explanation docs will help you understand how to use this 
-feature to effectively to manage your teams and what they work on.
+Teams
+-----
+Teams allow you to group contributors and assign them roles, permissions, and
+responsibilities across projects. Teams can own projects, have their own code
+branches, and act collectively as answer contacts or reviewers.
 
 - :ref:`Understanding Launchpad Teams <exp-launchpad-teams>`
 
-Launchpad API and launchpadlib 
+Launchpad API and launchpadlib
 ------------------------------
-Understanding the `Launchpad web services API <https://api.launchpad.net/>`_ 
-and launchpadlib is essential when you want to use Launchpad without the web 
-interface.
+Launchpad exposes most of its objects and actions through a REST API.
+``launchpadlib`` is the official Python client that wraps this API, letting
+you work with Launchpad resources as Python objects in scripts and
+applications.
 
 - :ref:`Launchpad API and launchpadlib <launchpad-api>`
 
-Testing and troubleshooting Launchpad
--------------------------------------
-Launchpad provides test environments you can use to test things without 
-affecting the experience of other Launchpad users. In case you encounter an 
-issue while using Launchpad, reaching out to the team with an OOPs ID helps to
-narrow down the cause faster.
+Testing and troubleshooting
+---------------------------
+Launchpad provides a staging environment where you can test integrations and
+workflows without affecting production data. When errors occur, Launchpad
+generates an OOPS ID that you can include when filing a support request to help
+the team investigate.
 
 - :ref:`The staging environment <staging-environment>`
 - :ref:`Understanding OOPSes <what-is-an-oops>`

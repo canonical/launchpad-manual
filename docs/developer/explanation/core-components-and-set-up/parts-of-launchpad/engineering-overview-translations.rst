@@ -2,6 +2,8 @@
    :description: Engineering overview of Launchpad's Translations subsystem for 
       Ubuntu and Launchpad-registered projects.
 
+.. _engineering-overview-translations:
+
 Engineering overview: translations
 ==================================
 

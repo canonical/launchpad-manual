@@ -6,6 +6,10 @@
 Translating
 ===========
 
+Launchpad's translation system allows developers and translators to collaborate
+on localizing software into multiple languages. This section explores the 
+workflows, tools, and best practices for managing translations.
+
 .. include:: /includes/important_not_revised_help.rst
 
 .. toctree::

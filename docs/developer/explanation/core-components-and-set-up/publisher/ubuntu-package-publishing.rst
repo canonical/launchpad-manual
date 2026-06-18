@@ -2,6 +2,8 @@
    :description: Understand the Ubuntu package lifecycle from source upload to 
       archive publication.
 
+.. _ubuntu-package-publishing:
+
 Ubuntu package publishing
 =========================
 

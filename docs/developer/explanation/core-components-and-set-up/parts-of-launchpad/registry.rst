@@ -1,6 +1,8 @@
 .. meta::
    :description: Understand the Launchpad registry and its core domains.
 
+.. _developer-registry:
+
 Launchpad registry
 ==================
 

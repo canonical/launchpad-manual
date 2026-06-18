@@ -7,6 +7,9 @@
 Launchpad and community
 =======================
 
+Badges and recognition systems for Launchpad users, legal and licensing
+requirements, and support resources.
+
 .. include:: /includes/important_not_revised_help.rst
 
 .. toctree::

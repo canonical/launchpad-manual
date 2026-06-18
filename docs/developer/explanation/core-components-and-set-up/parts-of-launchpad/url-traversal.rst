@@ -1,6 +1,8 @@
 .. meta::
    :description: Explanation of URL traversal methods in Launchpad.
 
+.. _url-traversal:
+
 URL traversal
 =============
 

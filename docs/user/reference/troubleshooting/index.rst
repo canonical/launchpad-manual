@@ -6,6 +6,8 @@
 Troubleshooting
 ===============
 
+Solutions for common Launchpad issues and errors.
+
 .. toctree::
     :maxdepth: 1
 

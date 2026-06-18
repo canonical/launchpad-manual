@@ -7,8 +7,22 @@
 Release Notes
 =============
 
+June 2026
+++++++++++++
+
+9 June
+
+- Added support for filtering by `distro_series`, `published_since`, and
+  `published_until`, as well as sorting by `order_by_published` in Archive
+  APIs. For more information, see
+  `Launchpad's API documentation <https://api.launchpad.net/devel.html>`_.
+  
 May 2026
 ++++++++
+
+22 May
+
+- Updated resolute chroots in build farm. The builds will start faster now.
 
 13 May
 
@@ -23,6 +37,11 @@ May 2026
 
 - Removed suppression of snap manifest generation for private snap builds. For 
   more information, see `Bug #2030668 <https://bugs.launchpad.net/launchpad-buildd/+bug/2030668>`_.
+
+10 May
+
+- Enabled post-quantum key exchange algorithms for SFTP package uploads and
+  git operations using the git+ssh protocol.
 
 April 2026
 ++++++++++
