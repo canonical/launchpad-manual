@@ -6,7 +6,7 @@ Core components and setting up Launchpad
 ========================================
 
 Launchpad is a Zope-based application made up of many subsystems including code 
-hosting, a bug tracker, build farm, and package publisher. 
+hosting, a bug tracker, a build farm, and a package publisher. 
 
 .. toctree::
    :maxdepth: 1
