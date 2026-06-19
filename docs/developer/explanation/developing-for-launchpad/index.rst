@@ -7,6 +7,9 @@
 Developing the Launchpad project
 ================================
 
+Contributing to Launchpad means navigating a workflow shaped by the project's
+scale and its continuous-deployment model.
+
 .. toctree::
    :maxdepth: 1
 

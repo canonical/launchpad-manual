@@ -7,6 +7,10 @@
 Database
 =========
 
+Launchpad uses PostgreSQL, making use of stored procedures, triggers,
+functional indexes, and other PostgreSQL-specific features. It uses `Storm <https://storm-orm.readthedocs.io/en/latest/>`_
+as its object-relational mapper (ORM).
+
 .. toctree::
    :maxdepth: 1
    

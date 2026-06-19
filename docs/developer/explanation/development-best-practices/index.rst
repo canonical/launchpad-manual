@@ -5,6 +5,10 @@
 Best practices for development
 ==============================
 
+Good Launchpad code is fast, available, and modifiable with limited risk to
+other subsystems. This is achieved by sticking to established best practices for
+Launchpad development.
+
 .. toctree::
    :maxdepth: 1
 
