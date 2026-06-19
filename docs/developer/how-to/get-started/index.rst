@@ -4,6 +4,11 @@
 Get started
 ===========
 
+Before you can contribute to Launchpad, you need a working local development
+environment. This requires obtaining the source code, setting up a local
+Launchpad instance, and configuring the supporting services, e.g., database,
+Buildd, and Soyuz when necessary.
+
 .. toctree::
    :maxdepth: 1
 
