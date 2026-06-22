@@ -40,7 +40,7 @@ html_title = project + " manual"
 # NOTE: The Open Graph Protocol (OGP) enhances page display in a social graph
 #       and is used by social media platforms; see https://ogp.me/
 
-ogp_site_url = f"https://ubuntu.com/docs/launchpad/"
+ogp_site_url = "https://ubuntu.com/docs/launchpad/"
 
 
 # Preview name of the documentation website
@@ -129,7 +129,7 @@ slug = 'docs/launchpad'
 
 # Use RTD canonical URL to ensure duplicate pages have a specific canonical URL
 
-html_baseurl = f"https://ubuntu.com/docs/launchpad/"
+html_baseurl = "https://ubuntu.com/docs/launchpad/"
 
 # sphinx-sitemap uses html_baseurl to generate the full URL for each page:
 
