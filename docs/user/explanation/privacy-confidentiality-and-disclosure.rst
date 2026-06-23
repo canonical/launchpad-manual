@@ -193,7 +193,7 @@ Project sharing policies
 Project maintainers can set policies that govern which information types
 bugs, branches, and blueprints can become. The policy sets the default
 type and what types users can change to. Public projects only have the
-default "Public" policy. :ref:`Commercial projects <consumer-hosting>` can
+default "Public" policy. :ref:`Commercial projects <proprietary-hosting>` can
 choose other policies to control the what, if any, project information
 is disclosed.
 
