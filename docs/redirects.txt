@@ -30,6 +30,7 @@ user/YourAccount/Merging	user/how-to/account-management/merge-accounts/
 user/Translations/YourProject/ImportPolicy	user/reference/translations/translation-import-policy/
 user/Translations/StartingToTranslate	user/explanation/translating-with-launchpad/prepare-to-translate/
 user/Translations/ImportPolicy	user/reference/translations/translation-import-policy/
+user/Code/Git user/explanation/working-with-code/git-hosting/
 user/Code/Review	user/how-to/work-with-code-hosted-on-launchpad/create-and-manage-a-merge-proposal/
 user/Bugs/Subscriptions	user/how-to/work-with-bugs/subscribe-and-unsubscribe-to-bugs/
 user/Bugs/Expiry	user/reference/bugs/bug-expiry/
