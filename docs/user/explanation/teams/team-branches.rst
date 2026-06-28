@@ -1,55 +1,97 @@
 .. meta::
    :description: Explanation of team branches in Launchpad.
 
-.. _team-branches:
+.. _team-repositories:
 
-Team branches
-=============
+Team repositories
+=================
 
-.. include:: /includes/important_not_revised_help.rst
+In Launchpad, a team can own a Git repository just like an individual user.
+When a team owns a repository, every member of that team can push to it. When
+you push a branch to the repository, anyone on the team can commit to it.
 
-The combination of Git hosting and teams gives you a very powerful capability 
-to collaborate on code. Essentially, you can push a branch into a shared space, 
-and anyone on that team can then commit to the branch.
+A team-owned repository lives at a path based on the owning team, for example 
+``~test-team/gnuhello`` for the team's repository for the ``gnuhello`` project.
+The full path would be ``~test-team/gnuhello/+git/gnuhello``.
 
-Git checkouts
-----------------
+Access to team repositories is governed by membership. By default, any member
+of the owning team can push to any branch in the repository. When someone is
+removed from the team they won't be able to push to these branches anymore.
+Repository owners can optionally define access rules for specific branch
+patterns if finer-grained control is needed.
 
-It is possible for multiple people in a team each to ``git push`` their 
-branches to the same location in the team space. For example, ``~team/gnuhello/newfeature``.
+Working on a team repository
+----------------------------
 
-Git will make sure that each push doesn't overwrite the work that is
-already there. Instead, it must extend that work. However, this is not
-usually the most optimal arrangement because each "push" can change the
-history of the branch in a dramatic way.
+It is possible for multiple people in a team to push their commits to the same
+branch in a team-owned repository. Git will make sure that each push doesn't
+overwrite the work that is already there. If there is a conflicting commit
+already pushed by someone else, your push is rejected until you integrate
+their commits by fetching and merging or rebasing, before pushing again.
 
-We usually recommend that people use git ``checkouts`` of a team branch. A 
-checkout is essentially JUST the working code tree, without all the branch 
-history, because the branch history stays on the central server.
+Unlike with lightweight checkouts in the now deprecated Bazaar VCS, every team
+member who clones the repository gets a complete local copy of its branches and
+full history. You can commit to, branch, and inspect the entire history offline,
+and then share your work by pushing it back to a branch of the team repository.
 
-When using Git in this fashion it behaves very similarly to SVN. You
-cannot commit locally, because the knowledge of your branch history is
-on the remote server. But it does mean that you use less space locally,
-because you don't need to store all of that history locally too.
+A typical workflow looks like this:
 
-Setting up a team branch
-------------------------
+#. Clone the shared repository so you have a full local copy.
+#. Switch to a branch or create a new one, and create commits locally.
+#. Fetch and integrate any new commits your teammates have pushed.
+#. Push your commits to the upstream branch in the team repository.
 
-To create a team branch, simply push a branch into a team space. For example, 
-if you are still in the ``gnuhello`` branch you created during the earlier 
-example, and you are a member of the ``test-team`` team, then you could create 
-a shared branch of GNU Hello called "newfeature" using the following command:
+Setting up a team repository
+----------------------------
+
+There are two ways to create a team-owned repository. You can create a new one
+under the team, or hand over ownership of an existing personal repository to a
+team.
+
+Create a new team repository
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you are a member of a team, you can push directly into the team's namespace
+and Launchpad will create the repository under the team for you. For example,
+to create a repository for the ``gnuhello`` project owned by ``test-team``:
 
 ::
 
-   git remote add origin git+ssh://<me>@git.launchpad.net/~test-team/gnuhello 
+   git push git+ssh://<me>@git.launchpad.net/~test-team/gnuhello main
+
+Launchpad creates the repository at ``~test-team/gnuhello`` with the team as
+its owner. Every member of ``test-team`` can immediately push to it.
+
+Convert an existing repository to a team repository
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you already have a personal repository (for example, ``~me/gnuhello``) and
+want the whole team to be able to push to it, change its owner to the team.
+
+Go to the repository's page in Launchpad, edit its details, and set the owner
+to the team. Once you save the change, the repository moves into the team's
+namespace (``~test-team/gnuhello``) and every team member can push to it.
+
+Adding a team branch
+~~~~~~~~~~~~~~~~~~~~~~
+If you are a member of a team, you can add a new branch to a shared repository
+by creating it locally and pushing to the team repository. For example, if you
+are a member of ``test-team`` which owns the ``gnuhello`` repository, you could
+add a shared branch called ``newfeature`` by creating it locally, committing
+changes, and pushing them. Launchpad will automatically create the new branch:
+
+::
+   
+   git clone git+ssh://<me>@git.launchpad.net/~test-team/gnuhello
+   cd gnuhello
+   git checkout -b newfeature
+   # create and commit changes
    git push origin newfeature
 
-Now, it is possible for anybody else to branch from that branch. It is
-also possible for anyone in the test-team to push an updated version of
-that branch to the same location. But the preferred approach, in
-general, is to encourage other team members to use a checkout of the
-branch:
+Other members of ``test team`` will be able to to fetch the new branch and
+base their own work on it. They will also be able to push new commits to the
+same branch. To start working on it, a team member clones the repository and
+switches to the ``newfeature`` branch:
 
 ::
 
@@ -57,48 +99,49 @@ branch:
    cd gnuhello
    git switch newfeature
 
-Launchpad makes it extremely easy to administer the set of people who
-can commit to a branch like this, because they are simply the members of
-the team.
+Administering team repositories
+-------------------------------
+
+Launchpad makes it easy to control who can commit to a team branch because they
+are simply the members of the team that owns the repository. Granting or
+revoking commit access is just a matter of adding or removing a team member.
 
 This means that it is trivial to create a team to collaborate on a
-feature. Create a new Launchpad team, with the people that you want to
-be able to commit to the feature's mainline branch. Push the initial
-branch to that team space. Then, tell everyone to commit there!
+feature. Create a new Launchpad team with the people that you want to be able
+to commit to the feature's mainline branch. Push the initial branch to the
+team space, and tell everyone to commit there!
 
-Team branches are a very popular way for the Ubuntu teams to
-collaborate. For example, you can set up teams around a single package
-or set of packages, and work on shared branches that contain the latest
-version of the relevant code.
+Team branches are a very popular way for the Ubuntu teams to collaborate. For
+example, you can set up teams around a single package or set of packages, and
+work on shared branches that contain the latest version of the relevant code.
 
-The best example is the Ubuntu Core Development Team. It has branches
-for many projects that are shared and to which any team member can
-commit: https://code.launchpad.net/~ubuntu-core-dev
+A good example is the Ubuntu Core Development Team. It has branches for many
+projects that are shared and to which any team member can commit: https://code.launchpad.net/~ubuntu-core-dev
 
-Here's a snippet from that page showing some of their branches:
+Using forks alongside the shared repository
+-------------------------------------------
 
-Notice how this is being used to keep track of packages that the team
-maintains both in Debian and Ubuntu. Shared branches can be used for
-cross-project collaboration in a very efficient way, with branches for
-specific projects and shared branches for work that is common to both of
-them.
+Team members don't have to commit directly to the shared main branch. A common
+approach is to do your work on a separate fork and only integrate it into the
+shared branch once it's ready.
 
-Combining branches and checkouts
---------------------------------
+In the above example, a member of the team might create their own feature
+branch on a fork and commit to it freely. They can push that branch to a
+repository in their own personal space in Launchpad (for example,
+``~me/gnuhello``) rather than the team-owned repository, giving them a
+backup and a place to share work in progress without affecting the team's
+mainline.
 
-It is of course possible to get the best of both worlds, by combining
-branches and checkouts.
+When they are ready to contribute their work to the shared team branch, they
+can integrate it themselves by making sure their copy of the shared branch is
+up to date, fetching the latest commits, merging their personal branch into it,
+and pushing the result back to the team space.
 
-In the above example, a member of the team might have a checkout of the
-mainline branch to which they can commit, but then separately make their
-own branch locally which allows them to commit locally.
-
-They would develop on their own local branch, perhaps pushing that up to
-the server in their own space rather than the team space. This gives
-them full revision control in their own branch. When they are ready to
-commit their work to the shared team mainline branch for the feature,
-they simply make sure their checkout of that branch is up to date, then
-merge from their local branch, and commit to the central server.
+Alternatively they can open a *merge proposal* asking for their branch to be
+merged into the shared branch. This is Launchpad's equivalent of a pull request.
+It lets teammates review the changes and approve them before they land in the
+shared branch. This is the recommended path for non-trivial changes.
+See :ref:`create-and-manage-a-merge-proposal` for details.
 
 Next steps
 ----------
