@@ -244,6 +244,7 @@ linkcheck_ignore = [
     r"https://launchpad\.net/frobnob/.*",
     r"https://buildbot\.net.*", #ignore, expired SSL certificate
     r"https://docs\.buildbot\.net/.*", #ignore, expired SSL certificate
+    "https://realpython.com/vim-and-python-a-match-made-in-heaven/",  # 403 Error
     "Trunk/Glue",  #  needs update
     "/Background",
     "/Concepts",  #  needs update
