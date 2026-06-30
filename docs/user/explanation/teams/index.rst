@@ -26,4 +26,4 @@ access to.
     Creating and running teams <creating-and-running-teams>
     Indirect team members <indirect-team-members>
     Team management <team-management>
-    Team branches <team-repositories>
+    Team repositories <team-repositories>

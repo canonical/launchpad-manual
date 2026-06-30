@@ -24,6 +24,7 @@ user/Translations/YourProject	user/reference/translations/translation-best-pract
 user/OpenID	user/how-to/using-openid/
 user/EmailInterface	user/how-to/work-with-bugs/use-email-interface/
 user/Teams	user/reference/teams/launchpad-teams/
+user/explanation/teams/team-branches/ user/explanation/teams/team-repositories/
 user/Code	user/how-to/work-with-code-hosted-on-launchpad/index/
 user/Bugs	user/how-to/work-with-bugs/
 user/YourAccount/Merging	user/how-to/account-management/merge-accounts/
