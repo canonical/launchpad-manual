@@ -130,7 +130,7 @@ these guidelines to build your charm for Launchpad:
 
 4. **Add configurations:** Have a look at configurations related to your app
    in `lp-production-configs 
-   <https://bazaar.launchpad.net/lp-production-config>`_ - what is common
+   <https://git.launchpad.net/lp-production-configs>`_ - what is common
    between environments and what changes. You should be able to create a config
    Jinja template in your charm ``/templates`` folder with all the base
    configurations, where the configuration that changes between environments
