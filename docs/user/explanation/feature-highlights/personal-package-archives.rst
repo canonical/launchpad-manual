@@ -7,7 +7,6 @@
 Personal Package Archives
 =========================
 
-.. include:: /includes/important_not_revised_help.rst
 
 Personal Package Archives (PPAs) are one of Launchpad's most popular
 and exceptional features. Using a PPA you can publish your own software
@@ -23,19 +22,27 @@ Creating and distributing a package using your PPA is simple:
    world to see.
 4. Give your PPA's public archive URL to friends.
 
-Your friends can then add your PPA's URL to their
-``/etc/apt/sources.list`` file then install your packages just like
-any other and receive automatic updates when you upload an updated
-version.
+Managing PPAs
+-------------
 
-Ubuntu versions
----------------
+To install a PPA, you can add it to your apt sources:
+``add-apt-repository ppa:user/ppa-name``
 
-You can compile the package against any currently supported version of
-Ubuntu. At the time of writing, that included Ubuntu 6.06 (Dapper),
-Ubuntu 6.10 (Edgy), ubuntu 7.04 (Feisty) and Ubuntu 7.10 (Gutsy).
-When you upload the package, you specify which version it is designed to
-be built for.
+Make sure to update your apt packages before installing:
+``apt update``
+
+Removing a PPA can be done with: 
+``add-apt-repository --remove ppa:user/ppa-name``
+
+Supported Ubuntu Versions
+-------------------------
+You can build your package against any currently supported version of Ubuntu, including active Long Term Support (LTS) releases and active interim releases. Launchpad automatically manages the build environments for these active targets.
+
+For example, this includes target distributions such as Ubuntu 22.04 (Jammy), Ubuntu 24.04 (Noble), and Ubuntu 26.04 (Resolute), as well as current interim versions.
+
+When you upload your source package, you specify the exact target distribution codename in your Debian changelog file to dictate which version it will be built for.
+
+Note: While older releases transitioning into Expanded Security Maintenance (ESM) may still exist in corporate environments, Launchpad building capabilities generally mirror the actively maintained distribution cycles.
 
 Team PPAs
 ---------
@@ -48,12 +55,11 @@ whole bunch of packages which work together as a set.
 Activating your PPA
 -------------------
 
-On your home page, look for an option to "Activate Personal Package
+On your Launchpad profile page, look for an option to "Activate Personal Package
 Archive". You will need to accept the terms of service, which basically
 say that you will only use the free PPA system for free software
 packages. At this point you can start uploading your source packages
-immediately. You can watch the build farm, which turns those source
-packages into binaries, at work at https://launchpad.net/+builds
+immediately. Package builds can be actively monitored from the **Builds** page found in your PPA's Launchpad page.
 
 Try the :ref:`Quick Start Guide for PPAs <personal-package-archive>` if you want to
 learn more!
