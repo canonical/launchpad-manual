@@ -16,9 +16,9 @@ The full path would be ``~test-team/gnuhello/+git/gnuhello``.
 
 Access to team repositories is governed by membership. By default, any member
 of the owning team can push to any branch in the repository. When someone is
-removed from the team they won't be able to push to these branches anymore.
+removed from the team, they won't be able to push to these branches anymore.
 Repository owners can optionally define access rules for specific branch
-patterns if finer-grained control is needed.
+patterns if more fine-grained control is needed.
 
 Working on a team repository
 ----------------------------
@@ -27,20 +27,19 @@ It's possible for multiple people in a team to push their commits to the same
 branch in a team-owned repository. Git will make sure that each push doesn't
 overwrite the work that is already there. If there is a conflicting commit
 already pushed by someone else, your push is rejected until you integrate
-their commits by fetching and merging or rebasing, before pushing again.
+their commits by fetching and merging or rebasing.
 
-Unlike with lightweight checkouts in the now deprecated Bazaar, every team
-member who clones a git repository gets a complete local copy of its branches
-and full commit history. You can commit to existing branches or create new ones,
-and inspect the entire history offline. To share your work with the team, push
-it to a branch of the team repository.
+Every team member who clones a git repository gets a complete local copy of its
+branches and full commit history. You can commit to existing branches or create
+new ones, and inspect the entire history offline. To share your work with the
+team, push it to a branch of the team repository.
 
 A typical workflow looks like this:
 
 #. Clone the shared repository so you have a full local copy.
 #. Switch to a branch (or create a new one) and commit changes to it.
 #. Fetch and integrate any new commits your teammates have pushed.
-#. Push your commits to the upstream branch in the team repository.
+#. Push your commits to the remote branch in the team repository.
 
 Setting up a team repository
 ----------------------------
@@ -89,7 +88,7 @@ changes, and pushing them. Launchpad will automatically create the new branch:
    # create and commit changes
    git push <remote-name> newfeature
 
-Other members of ``test team`` will be able to to fetch the new branch and
+Other members of ``test-team`` will be able to to fetch the new branch and
 base their own work on it. They will also be able to push new commits to the
 same branch. To start working on it, a team member clones the repository and
 switches to the ``newfeature`` branch:
@@ -138,20 +137,17 @@ up to date, merging the branch with your changes into it, and pushing the
 result back to the team space.
 
 Alternatively you can open a *merge proposal* asking for your branch to be
-merged into the shared branch. This is Launchpad's equivalent of a pull request.
-It lets teammates review the changes and approve them before they land in the
-shared branch. This is the recommended path for non-trivial changes.
-See :ref:`create-and-manage-a-merge-proposal` for details.
+merged into the shared branch. This lets teammates review the changes and
+approve them before they land in the shared branch. This is the recommended
+path for non-trivial changes. See :ref:`create-and-manage-a-merge-proposal` for
+details.
 
 Next steps
 ----------
 
 One of the most useful things you can do is to link your branches to a
-description of the work they implement.
-
-For example, if your branch fixes a bug, link the branch to the bug
-report! And if it's a new feature, track that feature in Launchpad (we
-call it a Blueprint) and link the branch to that.
+description of the work they implement. For example, if your branch fixes a bug,
+you can link the branch to the bug report.
 
 That's the :ref:`next stop <linking-bugs-to-dedicated-branches>` in our
 review of Launchpad.
