@@ -16,4 +16,7 @@ Package Archives (PPAs), build processes, and package management on Launchpad.
     :maxdepth: 1
 
     Packaging <packaging>
-    Package upload errors <package-upload-errors> 
+    PPA overview <ppa-overview>
+    PPAs and the Ubuntu archive <ppa-vs-ubuntu-archive>
+    PPA build environment <ppa-build-environment>
+    Package upload errors <package-upload-errors>

@@ -371,6 +371,7 @@ kcachegrind
 KCacheGrind
 keyring
 keypair
+keyservers
 kiko
 kompare
 Konqueror
@@ -790,6 +791,7 @@ TLS
 tmp
 TODO
 tokenserver
+toolchain
 Trac
 traceback
 tracebacks
@@ -823,6 +825,7 @@ unmark
 unobvious
 unproxied
 Unassign
+unsandboxed
 unsuffixed
 unshare
 unsharing

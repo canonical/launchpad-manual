@@ -18,5 +18,6 @@ and scoring, and source build management.
 
     Personal Package Archives <ppas/index>
     Build scores <build-scores>
+    Build failure states <build-failure-states>
     Builder Specs <builder-specs>
     Source builds <source-builds/index>
