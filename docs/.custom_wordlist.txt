@@ -5,7 +5,6 @@ adapter
 adapter's
 adapters
 AddingLaunchpadCelebrity
-addons
 Affero
 analyze
 analyzer
@@ -53,7 +52,6 @@ batchnavigator
 BatchNavigator
 Becca
 BEM
-binarypackage
 Bionic's
 Bjorn
 Blacklist
@@ -66,7 +64,6 @@ breakpoint
 browserconfig
 BrowserNotificationMessages
 brz
-bugfix
 bughistory
 bugmail
 BugSubscription
@@ -105,8 +102,6 @@ Centralized
 cfg
 cgi
 cgit
-cgroup
-cgroups
 changelog
 changeset
 changesets
@@ -116,6 +111,7 @@ charmhub
 checksums
 chr
 chroot
+chroots
 CLI
 Cmd
 CMDLINE
@@ -137,7 +133,6 @@ config
 configs
 ConfiguringWebApplications
 contactuser
-cowboyed
 cron
 cronjobs
 cronscripts
@@ -149,7 +144,6 @@ cryptographic
 cryptographically
 CSCVS
 css
-ctl
 Ctrl
 customisable
 customisations
@@ -203,7 +197,6 @@ devirtualized
 devops
 devpad
 dh
-dia
 dir
 DirectDelivery
 directDelivery
@@ -235,18 +228,13 @@ dtrt
 dulwich
 dumb
 dupefinder
-EBS
-ec
 EChangePolicy
 edubuntu
 Eesti
-EKS
 el
 else's
 elinks
 emphasizes
-emphazising
-Enigmail
 ENOSPC
 EnumCol
 environ
@@ -277,7 +265,6 @@ fmt
 fnmatch
 FooBar
 foofunc
-foos
 FooSet
 ForbiddenAttribute
 ForeignKey
@@ -286,7 +273,6 @@ formatters
 formlib
 FormOverlay
 Fosstodon
-FreshLogs
 frontend
 frontends
 frobnob
@@ -294,7 +280,6 @@ fsync
 fsyncs
 ftest
 fti
-functiondef
 ganesha
 gangotri
 Gantt
@@ -319,13 +304,9 @@ gzip
 HackingLazrLibraries
 hang
 haproxy
-hba
-helloworld
 hg
 hirsute's
 hostnames
-hotfix
-hotfixes
 howto
 HSTS
 html
@@ -333,7 +314,6 @@ http
 https
 HTTPError
 hugdaylist
-IAM
 IBranchMergeProposal
 IBranchTarget
 ICanonicalUrlData
@@ -361,16 +341,13 @@ io
 IOError
 ip
 IPerson
-IPv
 IPython
 IRangeFactory
 irc
 ircid
 IrcId
-IRCMeetings
 ircnickname
 IrcNickname
-iter
 iterable
 Italiano
 Javadoc
@@ -397,10 +374,8 @@ keypair
 kiko
 kompare
 Konqueror
-Kubeflow
 Kubuntu
 Kubernetes
-LandingChanges
 langpack
 LaunchpadAuthentication
 LaunchpadDatabaseRevision
@@ -412,8 +387,6 @@ LaunchpadPpa
 LaunchpadStatementTracer
 LaunchpadView
 lazr
-libera
-libgit
 lifecycle
 Limewire
 listdir
@@ -422,7 +395,6 @@ livefs
 LiveFS
 livefses
 LiveFSBuild
-LivePatching
 LiveScript
 LocationError
 logfile
@@ -454,12 +426,10 @@ lxd
 LXD's
 macOS
 macquarie
-mailinglists
 mailinglist
 MailingListSet
 massfile
 Makefile
-Mantic
 ManualCdImageMirrorProber
 Master
 master
@@ -479,12 +449,9 @@ memcache
 milestoneoverlay
 minified
 minifies
-minify
 minimize
-mltest
 mmm
 MockIo
-mockups
 moin
 mojo
 msginit
@@ -509,7 +476,6 @@ newTeam
 nfs
 ng
 nightlies
-NodePort
 noapproval
 nodowntime
 normalized
@@ -520,14 +486,12 @@ num
 NULLs
 né
 OAuth
-observability
 OCI
 oci
 OEM
 oem
 oid
 ok
-OLM
 ols
 omg
 OOPSes
@@ -538,7 +502,6 @@ opstats
 optimization
 optimize
 optimizing
-optstats
 organize
 organizing
 ordinality
@@ -560,14 +523,11 @@ PageTests
 pagetests
 pamola
 params
-PatchSubmission
 pbuilder
 pdb
-pelpsi
 pentested
 performant
 PerLanguageStatisticsView
-Permalink
 PersonBranchTarget
 Plone
 Podman
@@ -577,7 +537,6 @@ pgsql
 pgSQL
 pipermail
 pipx
-pkey
 plaintext
 png
 po
@@ -646,7 +605,6 @@ Pyroom
 Pythonic
 pytest
 qa
-QAProcess
 qastaging
 QAStaging
 qemu
@@ -656,7 +614,6 @@ queueddelivery
 QueuedDelivery
 quickref
 quickstart
-randomized
 rc
 rctp
 ReadMe
@@ -670,7 +627,6 @@ ReleaseCycles
 repl
 repo
 reposurgeon
-RequestLogging
 requestsync
 reST
 RESTful
@@ -684,7 +640,6 @@ revno
 revtime
 rewordings
 rocketfuel
-rocktutorial
 rollout
 rollouts
 rootsite
@@ -706,17 +661,15 @@ Savane
 sbuild
 scalability
 schroot
-schroots
 screencast
-ScreenCasts
 scss
 sdist
+SDKs
 SecurityProxy
 segfaulted
 SELinux
 sendmail
 SendmailMailer
-seqscan
 setSecret
 setUp
 setupDTCBrowser
@@ -758,7 +711,6 @@ SQLObjectResultSets
 sqltrace
 SRE
 SREs
-SRU
 srv
 SshConnectionMultiplexing
 SSL
@@ -778,20 +730,17 @@ StormRangeFactory
 StormStatementRecorder
 stubMailer
 stubmailer
-StyleGuides
 stylesheet
 stylesheets
 subclassing
 subdirectories
 subdirectory
-subfolders
 subpages
 subprocess
 subproject
 subselects
 subteam
 subteams
-subtree
 subvertpy
 sudo
 SuggestivePOTemplate
@@ -810,7 +759,6 @@ sys
 sysctl
 systemd
 systray
-TableRenamePatch
 TAL
 tal
 talisker
@@ -828,7 +776,6 @@ testMailer
 TestMailer
 testr
 testrepository
-testrockpelpsi
 testrunner
 testrunner's
 TestsFromChanges
@@ -842,12 +789,10 @@ TipsForReviewers
 TLS
 tmp
 TODO
-todrop
 tokenserver
 Trac
 traceback
 tracebacks
-tradeoff
 tradeoffs
 Transactional
 TranslationGroup
@@ -855,12 +800,10 @@ TranslationImportQueue
 TranslationMessage
 TranslationTemplateItem
 traveled
-traversers
 Tretyak
 triaged
 triaging
 Triaging
-tsearch
 txt
 tzinfo
 Ubuntu
@@ -869,7 +812,6 @@ ubuntustudio
 UCT
 ui
 UI
-UltimateVimPythonSetup
 unauthorized
 unbuildable
 uncheck
@@ -878,7 +820,6 @@ undercommunication
 unittest
 unittests
 unmark
-unmounting
 unobvious
 unproxied
 Unassign
@@ -891,7 +832,6 @@ Untar
 untriaged
 untrusted
 Unported
-upd
 updatable
 updateable
 upstreams
@@ -928,7 +868,6 @@ wadl
 wcag
 Weathervane
 webapp
-webdav
 webhook
 Webhooks
 webserver
@@ -974,7 +913,6 @@ yui
 YUI
 yuilibrary
 yuitest
-yuixhr
 yy
 zcml
 ZFS

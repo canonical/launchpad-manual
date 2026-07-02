@@ -7,6 +7,10 @@
 Packaging
 =========
 
+Technical specifications for Launchpad's package build infrastructure, including
+Personal Package Archives (PPAs), build specifications, builder availability
+and scoring, and source build management. 
+
 .. include:: /includes/important_not_revised_help.rst
 
 .. toctree::

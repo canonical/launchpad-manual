@@ -2,10 +2,10 @@
    :description: Guide to getting started with launchpadlib; from installation 
       to authenticated access of Launchpad resources.
 
-.. _get-started-with-launchpadlib:
+.. _using-launchpadlib:
 
-Get started with launchpadlib
-=============================
+Using launchpadlib
+==================
 
 This document shows how to use a Python client to read and write Launchpad's
 data using the launchpadlib library. It doesn't cover the HTTP requests and

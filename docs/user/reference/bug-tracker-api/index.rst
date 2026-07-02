@@ -7,6 +7,11 @@
 Bug tracker API
 ===============
 
+The bug tracker API provides programmatic access to Launchpad's bug tracking
+features. Review API-specific details including bug statuses, integration with
+external bug trackers, and the plugin API for extending bug tracker
+functionality.
+
 .. include:: /includes/important_not_revised_help.rst
 
 .. toctree::

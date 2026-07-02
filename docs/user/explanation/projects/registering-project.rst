@@ -20,8 +20,8 @@ Let's have a quick recap of how you can use Launchpad for your project:
 Of course, you can pick and choose almost any combination of what
 Launchpad has to offer. The first step is to register your project.
 
-Types of project you can register
----------------------------------
+Types of projects you can register
+----------------------------------
 
 You can register any free software project in Launchpad free of charge.
 To find out what we mean by "free software", take a look at our
@@ -60,16 +60,16 @@ note:
    Window Navigator``.
 -  **Summary and description:** both appear on your project's home page
    but only the summary is returned in search results.
--  **Licenses:** Explain the terms under which that users can modify and
+-  **Licenses:** Explains the terms under which users can modify and
    distribute your project's code
 
 If you choose the "Other/Proprietary" license, your project will be
-awarded a 30-day trial commercial subscription that entitles explore the
+awarded a 30-day trial commercial subscription that entitles you to explore the
 :ref:`commercial hosting features <consumer-hosting>`.
 
 Note that once you have registered your project you will not be able to
-change its name by yourself. If you wish change it you can ask an
-administrator to that for you, read the :ref:`Feedback <get-help>` page for
+change its name by yourself. If you wish to change it you can ask an
+administrator to do that for you, read the :ref:`Feedback <get-help>` page for
 more information.
 
 Project groups
@@ -111,9 +111,9 @@ We recommend that projects share all information types with their
 developer teams. Sharing with your organisation team will also ensure
 your co-workers are informed and can do their job. Avoid sharing with
 users because they leave projects and organisations; if a user needs
-access to confidential information either add the user a team that is
+access to confidential information either add the user to a team that is
 already shared with or subscribe the user to just the bugs and branches
-then need to work with.
+they need to work with.
 
 The bug and branch sharing policies determine the default bug or branch
 information type, and control what types they may be changed to.
@@ -139,8 +139,8 @@ the two most important roles are:
    can register and manage the series milestones and releases.
 
 By default, whoever registered the project is its maintainer. However,
-you can change this to any other person or team in Launchpad use the
-``edit`` link next next to the maintainer on the project overview
+you can change this to any other person or team in Launchpad using the
+``edit`` link next to the maintainer on the project overview
 page.
 
 Similarly, you can set the driver for the whole of your project with

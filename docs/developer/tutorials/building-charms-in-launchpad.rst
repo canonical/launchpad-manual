@@ -18,7 +18,7 @@ Canonical employees.
 ******************************
 
 If you haven't done so already, `register your charm's name with Charmhub
-<https://canonical-charmcraft.readthedocs-hosted.com/stable/howto/manage-charms/#publish-a-charm-on-charmhub>`_
+<https://documentation.ubuntu.com/charmcraft/latest/howto/manage-charms/#publish-a-charm>`_
 using ``charmcraft login`` and ``charmcraft register``.
 
 Make sure that your charm has a suitable ``charmcraft.yaml``. A minimal example

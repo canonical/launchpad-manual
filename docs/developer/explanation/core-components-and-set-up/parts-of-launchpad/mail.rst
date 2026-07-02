@@ -2,6 +2,8 @@
    :description: Overview of email types in Launchpad and how the are 
       configured.
 
+.. _launchpad-mail:
+
 Launchpad mail
 ==============
 

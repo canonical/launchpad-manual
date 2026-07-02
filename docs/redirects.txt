@@ -24,12 +24,14 @@ user/Translations/YourProject	user/reference/translations/translation-best-pract
 user/OpenID	user/how-to/using-openid/
 user/EmailInterface	user/how-to/work-with-bugs/use-email-interface/
 user/Teams	user/reference/teams/launchpad-teams/
+user/explanation/teams/team-branches/ user/explanation/teams/team-repositories/
 user/Code	user/how-to/work-with-code-hosted-on-launchpad/index/
 user/Bugs	user/how-to/work-with-bugs/
 user/YourAccount/Merging	user/how-to/account-management/merge-accounts/
 user/Translations/YourProject/ImportPolicy	user/reference/translations/translation-import-policy/
 user/Translations/StartingToTranslate	user/explanation/translating-with-launchpad/prepare-to-translate/
 user/Translations/ImportPolicy	user/reference/translations/translation-import-policy/
+user/Code/Git user/explanation/working-with-code/git-hosting/
 user/Code/Review	user/how-to/work-with-code-hosted-on-launchpad/create-and-manage-a-merge-proposal/
 user/Bugs/Subscriptions	user/how-to/work-with-bugs/subscribe-and-unsubscribe-to-bugs/
 user/Bugs/Expiry	user/reference/bugs/bug-expiry/
@@ -109,6 +111,7 @@ developer/how-to/getting developer/how-to/get-started/get-source-code/
 developer/how-to/debug-tests-with-visual-studio-code developer/how-to/debug/debug-with-visual-studio-code
 user/reference/packaging/ppas/copying-packages/ user/how-to/packaging/copying-packages/
 user/reference/packaging/ppas/deleting-packages/ user/how-to/packaging/deleting-packages/
+user/how-to/launchpadlib/get-started-with-lauchpadlib user/how-to/launchpadlib/using-launchpadlib
 developer/how-to/apply-schema-changes/ developer/how-to/common-development-tasks/apply-schema-changes/
 developer/how-to/contributing-changes/ developer/how-to/common-development-tasks/contributing-changes/
 developer/how-to/database-schema-changes-process/ developer/how-to/common-development-tasks/database-schema-changes-process/

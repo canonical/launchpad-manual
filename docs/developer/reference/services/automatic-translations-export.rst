@@ -35,9 +35,9 @@ langpack-o-matic picks them up the next day.
 +-----------+-------------------+----------------------+--------------------+
 | Tuesday   | Focal             | Jammy (archive)      |                    |
 +-----------+-------------------+----------------------+--------------------+
-| Wednesday |                   | Focal (PPA)          |                    |
+| Wednesday | Stonking          | Focal (PPA)          |                    |
 +-----------+-------------------+----------------------+--------------------+
-| Thursday  | Bionic            |                      | Ubuntu Release day |
+| Thursday  | Bionic            | Stonking             | Ubuntu Release day |
 +-----------+-------------------+----------------------+--------------------+
 | Friday    | Resolute          | Bionic (PPA)         |                    |
 +-----------+-------------------+----------------------+--------------------+
