@@ -18,6 +18,7 @@ effectively and avoid common pitfalls.
    testing-scripts
    exceptions
    preserve-query-count
+   ../../../user/how-to/profile-launchpad
    chameleon
    launchpad-api-docs
    codehosting-locally
