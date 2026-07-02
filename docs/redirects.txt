@@ -87,6 +87,8 @@ user/Bugs/MultiProjectBugs	user/reference/bugs/multi-project-bugs/about-multi-pr
 user/Bugs/BugBranchLinks	user/how-to/work-with-bugs/link-bug-to-branch/
 user/Blueprint	user/explanation/feature-highlights/blueprints/
 user/API/launchpadlib/	user/how-to/launchpadlib/using-launchpadlib/
+user/API/webhooks user/reference/webhooks/
+user/how-to/launchpad-api/webhooks/	user/reference/webhooks/
 user/API	user/how-to/launchpad-api/
 user/AnswerTrackerDocumentation	user/explanation/answers/answer-tracker/
 developer/Translations/LanguagePackSchedule developer/reference/services/automatic-translations-export

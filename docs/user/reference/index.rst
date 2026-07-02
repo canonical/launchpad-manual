@@ -55,6 +55,7 @@ Check compatibility between launchpadlib and different Ubuntu versions, plus
 list of applications using it.
 - :ref:`API compatibility <launchpadlib-api-compatibility>`
 - :ref:`Applications using launchpadlib <table-of-applications-using-the-api>`
+- :ref:`Webhooks <webhooks>`
 
 Project groups and team membership
 ----------------------------------
@@ -95,3 +96,4 @@ and how whitespace is addressed.
    Translations <translations/index>
    Troubleshooting <troubleshooting/index>
    User preferences <settings-and-preferences>
+   Webhooks <webhooks>
