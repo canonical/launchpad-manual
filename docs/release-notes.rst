@@ -64,7 +64,7 @@ April 2026
 
 - Added the `build_path` option to snap package recipes, allowing for having multiple
   `snapcraft.yaml` in the same repository.
-- Now private teams can subscribe to PPAs. Fixed `LP: #2116990 <https://bugs.launchpad.net/launchpad/+bug/2116990>`_
+- Fixed bug that prevented private teams from subscribing to PPAs. Fixed `LP: #2116990 <https://bugs.launchpad.net/launchpad/+bug/2116990>`_
 - Removed blog posts from front page (link to blog is still available in the footer)
 
 6 April
