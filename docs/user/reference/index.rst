@@ -49,10 +49,11 @@ including supported external bug trackers, bug roles, and bug statuses.
 - :ref:`Bugs references <bugs>`
 - :ref:`Bug tracker API <ref-bug-tracker-api>`
 
-API 
----
-Check compatibility between launchpadlib and different Ubuntu versions, plus
-list of applications using it.
+API and Integrations
+--------------------
+Access technical details regarding the Launchpad API, client compatibility with
+launchpadlib, and webhooks for automating external integrations.
+
 - :ref:`API compatibility <launchpadlib-api-compatibility>`
 - :ref:`Applications using launchpadlib <table-of-applications-using-the-api>`
 - :ref:`Webhooks <webhooks>`
