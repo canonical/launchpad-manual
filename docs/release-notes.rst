@@ -7,8 +7,19 @@
 Release Notes
 =============
 
+July 2026
++++++++++
+
+3 July
+
+- Changed the publisher to hold a per-series configurable list of published
+  hashes in `allowed_hashes`
+
+- Fixed the serialization of `Phased-Update-Percentage` to publish the attribute
+  if it is set to 0
+
 June 2026
-++++++++++++
++++++++++
 
 9 June
 
