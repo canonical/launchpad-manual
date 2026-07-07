@@ -14,6 +14,7 @@ share a common codebase.
 
    code
    engineering-overview-translations
+   librarian
    mail
    malone
    navigation-menus
