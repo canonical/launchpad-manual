@@ -55,7 +55,7 @@ Launchpad exposes most of its data and actions through a REST API.
 operations as Python objects without dealing with raw HTTP. You can also use
 the API directly.
 
-- :ref:`Use the Launchpad web services API <launchpad-web-services-api>`
+- :ref:`Sign web requests to the Launchpad API <sign-web-requests>`
 - :ref:`Work with launchpadlib <work-with-launchpadlib>`
 
 Contribute to the community 
@@ -79,7 +79,7 @@ a lot of mail which you can filter based on your personal preferences.
    Manage your account <account-management/index>
    Projects <projects/index>
    Packaging <packaging/index>
-   Launchpad web services API <launchpad-api/index>
+   Sign web requests <launchpad-web-signing>
    Work with launchpadlib <launchpadlib/index>
    Work with bugs <work-with-bugs/index>
    Work with code hosted on Launchpad <work-with-code-hosted-on-launchpad/index>

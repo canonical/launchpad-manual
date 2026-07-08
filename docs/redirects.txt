@@ -16,7 +16,7 @@ user/Packaging/BuildScores	user/reference/packaging/build-scores/
 user/BugExpiry	user/reference/bugs/bug-expiry/
 user/Legal/ProjectLicensing	user/reference/launchpad-and-community/legal/project-licenses/
 user/CommercialHosting	user/reference/consumer-hosting/
-user/API/	user/how-to/launchpad-api/
+user/API/	user/explanation/launchpad-api/
 user/Packaging/UploadErrors.	user/explanation/packaging/package-upload-errors/
 user/Packaging/PPA/Uploading	user/how-to/packaging/ppa-package-upload/
 user/Feeds	user
@@ -89,7 +89,7 @@ user/Blueprint	user/explanation/feature-highlights/blueprints/
 user/API/launchpadlib/	user/how-to/launchpadlib/using-launchpadlib/
 user/API/webhooks user/reference/webhooks/
 user/how-to/launchpad-api/webhooks/	user/reference/webhooks/
-user/API	user/how-to/launchpad-api/
+user/API	user/explanation/launchpad-api/
 user/AnswerTrackerDocumentation	user/explanation/answers/answer-tracker/
 developer/Translations/LanguagePackSchedule developer/reference/services/automatic-translations-export
 user/Packaging/BuilderSpecs user/reference/packaging/builder-specs/
@@ -108,6 +108,9 @@ user/explanation/answers/offering-help/ user/how-to/community-help/
 user/explanation/feature-highlights/email-interface/ user/how-to/work-with-bugs/use-email-interface/
 user/explanation/launchpad-answers/ user/explanation/answers/asking-for-help/
 user/how-to/launchpad-api/launchpad-web/ user/explanation/launchpad-api/launchpad-web-service/
+user/how-to/launchpad-api/launchpad-web-signing/ user/how-to/launchpad-web-signing/
+user/how-to/launchpad-api/index/ user/explanation/launchpad-api/
+user/how-to/launchpad-api/ user/explanation/launchpad-api/
 user/YourAccount/NewAccount user/how-to/account-management/create-account
 developer/how-to/getting developer/how-to/get-started/get-source-code/
 developer/how-to/debug-tests-with-visual-studio-code developer/how-to/debug/debug-with-visual-studio-code
