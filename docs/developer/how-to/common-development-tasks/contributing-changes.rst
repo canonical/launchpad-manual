@@ -54,6 +54,8 @@ Create a branch from a reasonable point, such as ``master``.
 Make your changes on the branch. Be sure to test them locally by setting up a
 local :ref:`Launchpad development instance <set-up-and-run-launchpad-advanced>`.
 
+Make sure you add or update existing unit tests for your changes.
+
 When it comes to commit messages, please follow these guidelines:
 
 - The title should be short, but descriptive.
@@ -67,6 +69,23 @@ When it comes to commit messages, please follow these guidelines:
   except for hyperlinks.
 - Where relevant, it should contain a reference to a Launchpad bug, e.g.
   `LP: #2086655`.
+
+
+Run the unit tests
+------------------
+To run the complete test suite (which may take hours depending on your machine),
+run the following command from the top of the Launchpad repository:
+
+.. code-block:: bash
+
+    xvfb-run bin/test -vvc
+
+To run specific tests, you can use the ``-t`` option to specify test patterns
+or files. For example:
+
+.. code-block:: bash
+
+    bin/test -vvc -t test-pattern-1 -t dotted.path.to.file
 
 
 Run the pre-commit hook
