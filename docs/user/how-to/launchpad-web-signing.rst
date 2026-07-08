@@ -15,7 +15,7 @@ signed with a Launchpad user's authorization key. Unsigned requests receive a
 
 This key has nothing to do with your Launchpad password. It's a way of
 delegating a limited set of privileges to a program, using the
-`OAuth standard <http://oauth.net>`_. If a program proves untrustworthy, the
+`OAuth standard <http://oauth.net>`__. If a program proves untrustworthy, the
 user only needs to revoke that program's key.
 
 If you're writing a console-based script with :ref:`launchpadlib`, you don't
@@ -25,13 +25,13 @@ below is only needed if you implement the OAuth exchange yourself, for example
 in a website or GUI application.
 
 Get credentials
---------------
+---------------
 
 The workflow to create a set of credentials is always the same, with minor
 differences between standalone applications and websites.
 
 Step 0: Pick a consumer key
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The consumer key identifies your application and should be hard-coded in your
 code. Every user of your application sends the same consumer key. We recommend
@@ -39,7 +39,7 @@ using the name of your program, without a version number (otherwise users get
 new application keys for every release). This example uses ``just testing``.
 
 Step 1: Get a request token
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The request token lets Launchpad track your program between steps. To obtain
 one, send a form-URL-encoded POST request to
@@ -92,7 +92,7 @@ their privileges:
 tell you when they're done, for example by clicking a button or pressing Enter.
 
 Step 3: Exchange the request token for an access token
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Once the user has delegated their authority (a website knows this when
 Launchpad hits its ``oauth_callback``; a standalone program when the user
@@ -130,11 +130,11 @@ request you make on the user's behalf. Store them so the user doesn't have to
 repeat this process.
 
 Sign requests with the credentials
----------------------------------
+----------------------------------
 
 Signing a request is standardized and mechanical, and OAuth libraries exist for
 most languages, so this section only covers the Launchpad-specific details. See
-the `OAuth standard <http://oauth.net/core/1.0/>`_ for the full algorithm.
+the `OAuth standard <http://oauth.net/core/1.0/>`__ for the full algorithm.
 
 Launchpad only supports OAuth's
 `Authorization header method <http://oauth.net/core/1.0/#auth_header>`_ for
