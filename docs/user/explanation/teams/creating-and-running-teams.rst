@@ -35,7 +35,7 @@ You can change any of these details later using the ``Change details`` link on y
 Private (proprietary) teams
 ---------------------------
 
-When you maintain a :ref:`project with a commercial subscription <consumer-hosting>`, you will see the visibility field on the team registration and ``Change details`` pages.
+When you maintain a :ref:`project with a commercial subscription <proprietary-hosting>`, you will see the visibility field on the team registration and ``Change details`` pages.
 
 Visibility
 ~~~~~~~~~~

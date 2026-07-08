@@ -14,7 +14,7 @@ registered, people can work on your project using Launchpad and can also
 find out where to find the project's code, bugs and other information.
 
 -  :ref:`Registering your project <registering-your-project>` in Launchpad.
--  :ref:`Enabling commercial features <consumer-hosting>` for your project.
+-  :ref:`Enabling commercial features <proprietary-hosting>` for your project.
 -  :ref:`Planning and recording releases <planning-and-recording-releases>`.
 -  :ref:`Making your project files available for download <making-your-project-files-available-for-download>`.
 -  :ref:`Publishing project announcements <publishing-project-announcements>`.

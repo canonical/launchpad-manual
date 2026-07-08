@@ -16,7 +16,7 @@ Account setup and security
 Configure your Launchpad account credentials and access methods, compare
 sharing policies for proprietary repositories, and look up SSH fingerprints.
 
-- :ref:`Consumer hosting options <consumer-hosting>`
+- :ref:`Proprietary hosting options <proprietary-hosting>`
 - :ref:`Troubleshooting your account <ref-troubleshooting>`
 - :ref:`SSH fingerprints <ssh-fingerprints>`
 
@@ -79,7 +79,7 @@ and how whitespace is addressed.
    Bugs <bugs/index>
    Bug tracker API <bug-tracker-api/index>
    Commenting syntax <comment-syntax>
-   Consumer hosting <consumer-hosting>
+   Proprietary hosting <proprietary-hosting>
    Glossary <glossary>
    Launchpad and community <launchpad-and-community/index>
    launchpadlib API compatibility <launchpadlib-api-compatibility>

@@ -15,7 +15,8 @@ user/Packaging/PPA	user/reference/packaging/ppas/ppa/
 user/Packaging/BuildScores	user/reference/packaging/build-scores/
 user/BugExpiry	user/reference/bugs/bug-expiry/
 user/Legal/ProjectLicensing	user/reference/launchpad-and-community/legal/project-licenses/
-user/CommercialHosting	user/reference/consumer-hosting/
+user/CommercialHosting	user/reference/proprietary-hosting/
+user/reference/consumer-hosting/	user/reference/proprietary-hosting/
 user/API/	user/how-to/launchpad-api/
 user/Packaging/UploadErrors.	user/explanation/packaging/package-upload-errors/
 user/Packaging/PPA/Uploading	user/how-to/packaging/ppa-package-upload/

@@ -14,7 +14,8 @@ staff into open and proprietary groups. Licenses that comply with
 :ref:`project-eligibility` are considered
 to be open, and the projects that use them are free to use Launchpad.
 Licenses that do not comply are considered to be proprietary. Projects
-with proprietary licenses can :ref:`seek approval from Canonical <consumer-hosting>` or change to an open license.
+requiring proprietary licenses can :ref:`ask for approval <proprietary-hosting>`
+or change to an open license.
 
 Open
 ----
