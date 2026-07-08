@@ -56,22 +56,17 @@ local :ref:`Launchpad development instance <set-up-and-run-launchpad-advanced>`.
 
 When it comes to commit messages, please follow these guidelines:
 
-Commit title
-~~~~~~~~~~~~
-
-* Short, but descriptive
-* Uses imperative wording, e.g. "Add character limit to bug title's summary
-  field"
-* Always starts with a capitalized word
-* No dot at the end
-
-
-Commit body
-~~~~~~~~~~~
-* Gives more context about the motivation of the change
-* Line length should not exceed 72 characters for better readability, with the
-  exception for hyperlinks
-* Could contain a reference to a Launchpad bug, e.g. `LP: #2086655`
+- The title should be short, but descriptive.
+- The title should use imperative wording, e.g. "Add character limit to bug
+  title's summary field".
+- The title should always start with a capitalized word and should not end with
+  a full stop.
+- If required, give more context about the motivation of the change in the
+  commit body.
+- Any line length should not exceed 72 characters for better readability,
+  except for hyperlinks.
+- Where relevant, it should contain a reference to a Launchpad bug, e.g.
+  `LP: #2086655`.
 
 
 Run the pre-commit hook
