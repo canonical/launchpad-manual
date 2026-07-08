@@ -9,7 +9,7 @@ Table of applications using the API
 .. include:: /includes/important_not_revised_help.rst
 
 
-Below are programs that use the :ref:`Launchpad APIs <launchpad-web-services-api>` 
+Below are programs that use the :ref:`Launchpad APIs <launchpad-api>` 
 (usually through the :ref:`launchpadlib <using-launchpadlib>` Python interface) 
 that you can use as examples if you're starting out with Launchpad API programming. 
 See also the :ref:`API Examples <use-the-python-api>` page, which contains code 
