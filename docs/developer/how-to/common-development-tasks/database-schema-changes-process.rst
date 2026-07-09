@@ -170,7 +170,8 @@ steps ensure that the sample data will include this new column.
 3. Commit and directly push to the main branch. No review is needed.
 
 # Create a SQL file in ``database/schema/`` containing the changes you
-want. It should look like this:
+want. It should look like this - make sure to update the year to the current
+one:
 
 ::
 
