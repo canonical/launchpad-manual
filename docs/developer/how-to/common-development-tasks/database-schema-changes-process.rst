@@ -164,9 +164,10 @@ steps ensure that the sample data will include this new column.
 
 1. Run ``make schema`` to get a pristine database of sample data.
 
-2. Claim a patch number in `the dbpatches
-   repository <https://code.launchpad.net/~launchpad/+git/dbpatches>`__
-   (be sure to commit and push back to the ``main`` branch).
+2. Add a patch number in `the dbpatches
+   repository <https://code.launchpad.net/~launchpad/+git/dbpatches>`__.
+
+3. Commit and directly push to the main branch. No review is needed.
 
 # Create a SQL file in ``database/schema/`` containing the changes you
 want. It should look like this:
