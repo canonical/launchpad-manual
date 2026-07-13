@@ -234,6 +234,7 @@ el
 else's
 elinks
 emphasizes
+enablement
 ENOSPC
 EnumCol
 environ
@@ -588,6 +589,8 @@ proc
 ProdStack
 ProductBranchTarget
 ProductSeries
+profiler
+profilers
 programmatically
 prometheus
 proname
@@ -714,6 +717,7 @@ srv
 SshConnectionMultiplexing
 SSL
 SSO
+stacktraces
 StagingServer
 standardized
 startin

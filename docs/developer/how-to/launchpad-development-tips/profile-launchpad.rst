@@ -30,7 +30,7 @@ Verify profiling is enabled by checking
     profiling_allowed: True
     profile_dir: /var/tmp/lp_profile
 
-**Feature flag enablement** (for production/staging):
+**Feature flag enablement**:
 
 Alternatively, enable profiling using the ``profiling.enabled`` feature flag.
 
@@ -50,8 +50,8 @@ Navigate to any Launchpad page and insert ``/++profile++/`` in the URL:
 
     http://launchpad.test/++profile++/
 
-The ``++profile++`` help page provides interactive examples and is the best
-starting point when learning to use the profiler.
+
+This leads to a help page, that provides further information and examples. 
 
 Profile with pstats
 ~~~~~~~~~~~~~~~~~~~
@@ -79,6 +79,8 @@ To analyze the profile file from the command line:
 .. code:: shell
 
     python -m pstats /var/tmp/lp_profile/2026-06-02_10:15:30-PageName-OOPS-ID-ThreadName.prof
+
+The profiling files are written to ``/var/tmp`` in development environment.
 
 Type ``help`` at the pstats prompt for available commands.
 
