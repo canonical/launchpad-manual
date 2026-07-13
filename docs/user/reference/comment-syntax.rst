@@ -384,7 +384,7 @@ Quote removal
 -------------
 
 If a comment is entirely enclosed in double quotes (``"Content"``),
-Launchpad will remove them.
+Launchpad will drop the quotes.
 
 Examples
 ~~~~~~~~
