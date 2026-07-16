@@ -35,7 +35,7 @@ Step 0: Pick a consumer key
 
 The consumer key identifies your application and should be hard-coded in your
 code. Every user of your application sends the same consumer key. We recommend
-using the name of your program, without a version number (otherwise users get
+using the name of your program without a version number (otherwise users get
 new application keys for every release). This example uses ``just testing``.
 
 Step 1: Get a request token
