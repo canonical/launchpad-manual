@@ -41,7 +41,7 @@ Launchpad users can create PPAs via the web user interface or using the API.
     .. tab-item:: Web service API
 
         #. Open lp-shell on the terminal::
-            
+
             lp-shell production devel
 
         #. Fetch your user or team profile and store it in a variable. For a
@@ -57,7 +57,7 @@ Launchpad users can create PPAs via the web user interface or using the API.
            associated with your profile::
 
             [print(ppa.name) for ppa in owner.ppas]
-        
+
         All parameters used to create PPAs are optional. However, you can't
         create a PPA with the same name as an existing one. If ``distribution``
         is not declared, Ubuntu is used by default.
