@@ -31,15 +31,15 @@ The workflow to create a set of credentials is always the same, with minor
 differences between standalone applications and websites.
 
 Pick a consumer key
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
 
 The consumer key identifies your application and should be hard-coded in your
 code. Every user of your application sends the same consumer key. We recommend
 using the name of your program without a version number (otherwise users get
 new application keys for every release). This example uses ``just testing``.
 
-Step 1: Get a request token
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Get a request token
+~~~~~~~~~~~~~~~~~~~
 
 The request token lets Launchpad track your program between steps. To obtain
 one, send a form-URL-encoded POST request to
@@ -65,14 +65,14 @@ The response contains an ``oauth_token`` and ``oauth_token_secret``:
 
    oauth_token=9kDgVhXlcVn52HGgCWxq&oauth_token_secret=jMth55Zn3pbkPGNht450XHNcHVGTJm9Cqf5ww5HlfxfhEEPKFflMqCXHNVWnj2sWgdPjqDJNRDFlt92f
 
-Save both values; you'll need them in step 3.
+Save both values; you'll need them when exchanging the request token.
 
-Step 2: Authenticate the user
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Authenticate the user
+~~~~~~~~~~~~~~~~~~~~~
 
 The user now needs to log in to Launchpad and choose how much authority to
 delegate to your program. Send them to the following URL, where ``{oauth_token}``
-is the token from step 1:
+is the token from the previous step:
 
 ::
 
@@ -91,8 +91,8 @@ their privileges:
 ``open_url_in_browser()`` works well on most Linux systems), then have the user
 tell you when they're done, for example by clicking a button or pressing Enter.
 
-Step 3: Exchange the request token for an access token
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Exchange the request token for an access token
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Once the user has delegated their authority (a website knows this when
 Launchpad hits its ``oauth_callback``; a standalone program when the user
@@ -101,11 +101,11 @@ signals they're done), exchange the temporary token for permanent credentials.
 Send a form-encoded POST request to ``<https://launchpad.net/+access-token>``_
 (again, *not* ``api.launchpad.net``) with:
 
-- ``oauth_token``: the ``oauth_token`` from step 1
-- ``oauth_consumer_key``: your consumer key from step 0
+- ``oauth_token``: the ``oauth_token`` from the previous response
+- ``oauth_consumer_key``: the consumer key you chose
 - ``oauth_signature_method``: the string ``PLAINTEXT``
 - ``oauth_signature``: the string ``&`` followed by the ``oauth_token_secret``
-  from step 1, calculated with the
+  from the previous step, calculated with the
   `PLAINTEXT algorithm <http://oauth.net/core/1.0/#anchor22>`_
 
 ::
@@ -125,7 +125,7 @@ The response returns a new, more powerful ``oauth_token`` and
 
    oauth_token=PsK9cpbll1KwehhRDckr&oauth_token_secret=M2hsnmsfEIAjS3bTWg6t8X2GKhlm152PRDjLLmtQdr9C8KFZWPl9c8QbLfWddE0qpz5L56pMKKFKEfv1&lp.context=None
 
-These replace the token and secret from step 1 and are required for every
+These replace the token and secret from the first step and are required for every
 request you make on the user's behalf. Store them so the user doesn't have to
 repeat this process.
 
@@ -158,9 +158,9 @@ request looks like this:
 
 Where:
 
-- ``oauth_consumer_key`` identifies your application (from step 0).
-- ``oauth_token`` is the access token from step 3.
+- ``oauth_consumer_key`` identifies your application.
+- ``oauth_token`` is the access token you got from the response.
 - ``oauth_signature`` uses the PLAINTEXT algorithm with the
-  ``oauth_token_secret`` from step 3.
+  ``oauth_token_secret`` you got along the access token.
 - ``oauth_nonce`` and ``oauth_timestamp`` are as defined in the
   `OAuth docs <http://oauth.net/core/1.0/#nonce>`_.
