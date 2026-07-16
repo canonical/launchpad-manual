@@ -30,7 +30,7 @@ Get credentials
 The workflow to create a set of credentials is always the same, with minor
 differences between standalone applications and websites.
 
-Step 0: Pick a consumer key
+Pick a consumer key
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The consumer key identifies your application and should be hard-coded in your
