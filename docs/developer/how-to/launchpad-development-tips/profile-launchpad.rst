@@ -76,8 +76,9 @@ To view pstats results in your browser:
 
     http://launchpad.test/++profile++pstats&show/
 
-The browser displays profile statistics sorted by time, cumulative time, and
-call counts.
+The browser displays profile statistics sorted by internal time, 
+cumulative time, and call count. For details about these metrics, see the
+`pstats documentation <https://docs.python.org/bn-in/dev/library/pstats.html>`_.
 
 To analyze the profile file from the command line:
 
