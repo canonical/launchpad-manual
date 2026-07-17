@@ -30,8 +30,8 @@ Profiling is disabled by default in the schema
     profiling_allowed: False
     profile_dir: .
 
-In development, ``configs/development/launchpad-lazr.conf`` overrides
-``profiling_allowed`` to ``True``, so profiling is enabled out of the box.
+The local development config at ``configs/development/launchpad-lazr.conf`` overrides
+``profiling_allowed`` to ``True``, so profiling is enabled out of the box in local Launchpad setup.
 Profile output is written to ``profile_dir``, which defaults to the current
 working directory (``.``).
 
