@@ -44,9 +44,9 @@ database queries.
 Get profiling help
 ~~~~~~~~~~~~~~~~~~
 
-Navigate to any Launchpad page and insert ``/++profile++/`` in the URL:
+Navigate to any Launchpad page and append ``/++profile++/`` in the URL:
 
-.. code:: shell
+.. code::
 
     http://launchpad.test/++profile++/
 
@@ -58,7 +58,7 @@ Profile with pstats
 
 To generate a pstats profile (Python's standard library profiler):
 
-.. code:: shell
+.. code::
 
     http://launchpad.test/++profile++pstats/
 
@@ -67,7 +67,7 @@ includes a timestamp, page ID, OOPS ID, and thread name for easy identification.
 
 To view pstats results in your browser:
 
-.. code:: shell
+.. code::
 
     http://launchpad.test/++profile++pstats&show/
 
@@ -91,7 +91,7 @@ PyInstrument is a modern statistical profiler that provides interactive HTML
 reports with flame graphs and call trees. It uses sampling rather than tracing,
 resulting in lower overhead and more accurate timing:
 
-.. code:: shell
+.. code::
 
     http://launchpad.test/++profile++pyinstrument/
 
@@ -100,7 +100,7 @@ to view the interactive visualization.
 
 To see both the file output and browser results:
 
-.. code:: shell
+.. code::
 
     http://launchpad.test/++profile++pyinstrument&show/
 
@@ -109,13 +109,13 @@ Profile SQL queries
 
 To profile SQL queries with Python stacktraces:
 
-.. code:: shell
+.. code::
 
     http://launchpad.test/++profile++sqltrace/
 
 This can be slow on large pages. Filter SQL traces to specific statements:
 
-.. code:: shell
+.. code::
 
     # Get stacktraces for SQL containing "Product.blueprints_usage"
     http://launchpad.test/++profile++sqltrace:includes Product.blueprints_usage/
@@ -131,7 +131,7 @@ This can be slow on large pages. Filter SQL traces to specific statements:
 
 To see only SQL queries without stacktraces:
 
-.. code:: shell
+.. code::
 
     http://launchpad.test/++profile++sql/
 
@@ -195,7 +195,7 @@ View inline profiling results
 
 After making a request with inline profiling code, view the results:
 
-.. code:: shell
+.. code::
 
     http://launchpad.test/your-page/++profile++show/
 
