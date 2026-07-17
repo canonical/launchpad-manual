@@ -21,14 +21,19 @@ Profiling must be enabled through configuration or a feature flag.
 
 **Configuration-based enablement** (default for development):
 
-Verify profiling is enabled by checking 
-``configs/development/launchpad-lazr.conf``:
+Profiling is disabled by default in the schema
+(``lib/lp/services/config/schema-lazr.conf``):
 
 .. code:: ini
 
     [profiling]
-    profiling_allowed: True
-    profile_dir: /var/tmp/lp_profile
+    profiling_allowed: False
+    profile_dir: .
+
+In development, ``configs/development/launchpad-lazr.conf`` overrides
+``profiling_allowed`` to ``True``, so profiling is enabled out of the box.
+Profile output is written to ``profile_dir``, which defaults to the current
+working directory (``.``).
 
 **Feature flag enablement**:
 
@@ -78,9 +83,12 @@ To analyze the profile file from the command line:
 
 .. code:: shell
 
-    python -m pstats /var/tmp/lp_profile/2026-06-02_10:15:30-PageName-OOPS-ID-ThreadName.prof
+    python -m pstats 2026-06-02_10:15:30-PageName-OOPS-ID-ThreadName.prof
 
-The profiling files are written to ``/var/tmp`` in development environment.
+.. note::
+
+    The profiling files are written to ``profile_dir``, which defaults to the
+    current working directory (``.``) in the local development environment.
 
 Type ``help`` at the pstats prompt for available commands.
 
@@ -223,5 +231,13 @@ For test layer profiling, use the ``@profiled`` decorator:
             # This method's execution time is tracked
             expensive_setup()
 
-This is primarily used for tracking layer setup/teardown performance across
-test runs.
+This is used primarily for profiling the runtime of Launchpad's test layers.
+Layer profiling is enabled only when three or more ``-v`` (verbose) flags are
+passed to the test runner:
+
+.. code:: shell
+
+    bin/test -vvvct
+
+When enabled, the test runner prints a profiling report at the end of the run,
+listing the number of calls and total time spent in each decorated method.
