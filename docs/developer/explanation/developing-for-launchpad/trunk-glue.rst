@@ -1,9 +1,7 @@
 How the 4 trunk branches and buildbot work together
 ===================================================
 
-This page aims to explain the mechanisms that make the wonderful diagrams on the `"where is trunk?"`_ page work. You'll need to read that page for this one to make any sense at all.
-
-.. _"where is trunk?": https://dev.launchpad.net/Trunk
+This page aims to explain the mechanisms that make the wonderful diagrams on the :ref:`about-launchpad-branches` page work. You'll need to read that page for this one to make any sense at all.
 
 There are three main components:
 
