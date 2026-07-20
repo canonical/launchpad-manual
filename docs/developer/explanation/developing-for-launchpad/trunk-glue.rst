@@ -12,7 +12,7 @@ There are three main components:
 * `buildbot <https://lpbuildbot.canonical.com/>`__ -- this is what runs the tests.
 * buildbot-poll.py -- this script monitors the branches and builds on buildbot and implements much of our policy. 
 
-There is a (currently private) `branch on launchpad <https://code.launchpad.net/~canonical-launchpad-branches/lpbuildbot/production>`__ that contains the buildbot config and the buildbot-poll.py script.
+There is a (currently private) `branch on Launchpad <https://code.launchpad.net/~canonical-launchpad-branches/lpbuildbot/production>`__ that contains the buildbot config and the buildbot-poll.py script.
 
 The buildbot UI is currently also private, but this will change, hopefully soon.
 
@@ -28,7 +28,7 @@ Buildbot
 
 Buildbot is our continuous integration tool of choice.
 
-At one level, it's fairly simple: when a change is detected on the master or db-devel branches on launchpad, the tests are run on that branch and their success or failure noted.
+At one level, it's fairly simple: when a change is detected on the master or db-devel branches on Launchpad, the tests are run on that branch and their success or failure noted.
 
 In general in buildbot, a "change source" produces "changes" which are fed to a "scheduler" which can examines the change to determine whether to trigger a build.
 
