@@ -279,7 +279,6 @@ linkcheck_ignore = [
     "faq_number_2",  #Not a link
     "/../POTemplates",  # - https://docs.lokalise.com/en/articles/1400767-gettext-po-pot
     "API",
-    "/../YourProject/ImportingTemplates",
     "Answer syntax parsing <Comments>",
     "https://help.ubuntu.com/community/SSO/FAQs", #timeout, should be temporary
     "https://requesttracker.com/request-tracker/",  #URL is rate limited

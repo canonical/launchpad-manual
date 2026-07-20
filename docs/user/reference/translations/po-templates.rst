@@ -45,13 +45,12 @@ sections 5 and 6.
 In Launchpad
 ------------
 
-In Launchpad you make translating your project possible by `importing a
-PO template file </../YourProject/ImportingTemplates>`__. After the
-import, all the English strings from the template are available in
-Launchpad for being translated. When a translator starts translating
-your project into their language, for which there were no translations
-before, a new (virtual) PO file is created in the Launchpad database. It
-becomes a real PO file when you chose to download it.
+In Launchpad you make translating your project possible by importing a
+PO template file. After the import, all the English strings from the
+template are available in Launchpad for being translated. When a translator
+starts translating your project into their language, for which there were
+no translations before, a new (virtual) PO file is created in the Launchpad
+database. It becomes a real PO file when you chose to download it.
 
 Please make sure to keep the PO template in Launchpad current by importing 
 updated versions of the file you create from your source code.
