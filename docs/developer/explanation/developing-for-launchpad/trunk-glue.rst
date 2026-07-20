@@ -30,11 +30,11 @@ Buildbot is our continuous integration tool of choice.
 
 At one level, it's fairly simple: when a change is detected on the master or db-devel branches on Launchpad, the tests are run on that branch and their success or failure noted.
 
-In general in buildbot, a "change source" produces "changes" which are fed to a "scheduler" which can examines the change to determine whether to trigger a build.
+In general in buildbot, a "change source" produces "changes" that are fed to a "scheduler" which can examine the change to determine whether to trigger a build.
 
-The change source we use is the customised version of "GitPoller" in bzrbuildbot/poller.py in the lpbuildbot branch. It is configured with a list of URLs to watch and when it sees a new revision in one of these branches, it feeds it to buildbot.
+The change source we use is the customized version of "GitPoller" in bzrbuildbot/poller.py in the lpbuildbot branch. It is configured with a list of URLs to watch, and when it sees a new revision in one of these branches, it feeds it to buildbot.
 
-The scheduler we use for the two trunk builders is "AggregatingScheduler". An AggregatingScheduler is configured with a branch and watches for changes that affect this branch. When it sees a change that affect its branch, it checks to see if the last build succeeded or failed. If it failed, then it only starts a new build if the commit message contains '[testfix]'.
+The scheduler we use for the two trunk builders is "AggregatingScheduler". An AggregatingScheduler is configured with a branch and watches for changes that affect this branch. When it sees a change that affects its branch, it checks to see if the last build succeeded or failed. If it failed, then it only starts a new build if the commit message contains '[testfix]'.
 
 We have a custom web UI that adds a page that lets you force a build. (Buildbot's built-in "Force Build" button doesn't work for us for rather boring reasons.)
 
@@ -45,6 +45,6 @@ buildbot-poll.py
 
 This script checks the status of the builds (via the JSON API) on buildbot, and may push to the stable and/or db-stable branches depending on what it finds.
 
-For each development branch (i.e. master or db-devel), if the most recent build succeeded the script pushes the revision of the development branch that was tested into the corresponding stable branch (i.e. stable or db-stable).
+For each development branch (i.e., master or db-devel), if the most recent build succeeded, the script pushes the revision of the development branch that was tested into the corresponding stable branch (i.e., stable or db-stable).
 
 It runs out of cron every 5 minutes, on the Patch Queue Manager (PQM) box.
