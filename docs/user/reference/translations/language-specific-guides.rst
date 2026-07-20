@@ -30,7 +30,7 @@ Language-specific guides
 C
 ~
 
--  `Catalan <http://www.softcatala.org/wiki/Guia_d%27estil/Guia_2010>`__
+-  `Catalan <https://www.softcatala.org/guia-estil-de-softcatala/>`__
 -  `Czech <Translations/Czech>`__
 
 E

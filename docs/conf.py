@@ -265,7 +265,6 @@ linkcheck_ignore = [
     "http://www.boost.org/LICENSE_1_0.txt",  #Unexpected, Should be working
     #Uncertain Dead - May not be replaceable
      "Translations/Czech",  #Not a valid link
-    r"http://www\.softcatala\.org/.*",  #Broken, content not valid
     "/Estonian",  #Not a valid link
     "/Georgian",  #Not a valid link
     "/Indonesian",  #Not a valid link
