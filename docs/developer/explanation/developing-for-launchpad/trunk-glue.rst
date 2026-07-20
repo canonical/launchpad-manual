@@ -8,7 +8,7 @@ This page aims to explain the mechanisms that make the wonderful diagrams on the
 
 There are three main components:
 
-* `Jenkins <https://jenkins.ols.canonical.com/online-services/job/launchpad/>`__ -- this is how changes get into the master and db-devel branches
+* `Jenkins <https://jenkins.ols.canonical.com/online-services/job/launchpad/>`__ (private) -- this is how changes get into the master and db-devel branches
 * `buildbot <https://lpbuildbot.canonical.com/>`__ -- this is what runs the tests.
 * buildbot-poll.py -- this script monitors the branches and builds on buildbot and implements much of our policy. 
 
