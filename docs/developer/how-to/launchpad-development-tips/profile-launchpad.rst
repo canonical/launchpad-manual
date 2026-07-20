@@ -120,7 +120,7 @@ To see both the file output and browser results:
     http://launchpad.test/++profile++pyinstrument&show/
 
 
-Profile with PyInstrument
+Profile with Callgrind
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 TBD
