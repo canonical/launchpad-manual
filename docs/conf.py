@@ -245,7 +245,6 @@ linkcheck_ignore = [
     r"https://buildbot\.net.*", #ignore, expired SSL certificate
     r"https://docs\.buildbot\.net/.*", #ignore, expired SSL certificate
     "https://realpython.com/vim-and-python-a-match-made-in-heaven/",  # 403 Error
-    "Trunk/Glue",  #  needs update
     "/Background",
     "/Concepts",  #  needs update
     "JavascriptUnitTesting/MockIo",  #needs update
@@ -285,6 +284,7 @@ linkcheck_ignore = [
     "Answer syntax parsing <Comments>",
     "https://help.ubuntu.com/community/SSO/FAQs", #timeout, should be temporary
     "https://requesttracker.com/request-tracker/",  #URL is rate limited
+    r"https://jenkins\.ols\.canonical\.com/online-services/.*",  #private
 ]
 
 
