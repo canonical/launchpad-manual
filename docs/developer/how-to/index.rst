@@ -66,6 +66,7 @@ database.
 - :ref:`Test CLI scripts <test-cli-scripts>`
 - :ref:`Handle exceptions <handle-exceptions>`
 - :ref:`Preserve query count <preserve-query-count>`
+- :ref:`Profile Launchpad performance <profile-launchpad>`
 - :ref:`Run Launchpad with Chameleon template engine <run-launchpad-with-chameleon-template-engine>`
 - :ref:`Generate Launchpad API docs <launchpad-api-docs-generation>`
 - :ref:`Use codehosting locally <use-codehosting-locally>`
