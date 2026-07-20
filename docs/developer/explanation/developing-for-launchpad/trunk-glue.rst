@@ -47,4 +47,4 @@ This script checks the status of the builds (via the JSON API) on buildbot, and 
 
 For each development branch (i.e. master or db-devel), if the most recent build succeeded the script pushes the revision of the development branch that was tested into the corresponding stable branch (i.e. stable or db-stable).
 
-It runs out of cron every 5 minutes, on the PQM box. 
+It runs out of cron every 5 minutes, on the Patch Queue Manager (PQM) box.
