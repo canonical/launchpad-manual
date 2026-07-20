@@ -41,7 +41,7 @@ Alternatively, enable profiling using the ``profiling.enabled`` feature flag.
 
 .. note::
     ``profiling.enabled`` flag has higher precedence over the ``profiling_allowed``
-    config. However, they both use `profiling_dir` as the base folder to write
+    config. However, they both use `profile_dir` as the base folder to write
     profiling results.   
 
 
