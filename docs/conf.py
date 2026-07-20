@@ -230,7 +230,6 @@ linkcheck_ignore = [
     "http://diacritice.svn.sourceforge.net/viewvc/diacritice/trunk/",  #ignore, as works in browser, but link checker has some issues
     "http://epydoc.sourceforge.net/fields.html",  #ignore, as works in browser, but link checker has some issues
     r"http://api\.staging\.launchpad\.net/.*",  #ignore, as works in browser, but link checker has some issues
-    "http://i18n.ro/Ghidul_traducatorului_de_software",  #broken
     "http://roundup.sourceforge.net/",  #ignore, as works in browser
     "http://trac-hacks.org/wiki/XmlRpcPlugin",
     "http://www.mysite.com/oauth-callback",  #ignore, not a real website
@@ -263,14 +262,6 @@ linkcheck_ignore = [
     "http://www.ubuntu.com/community/ubuntustory/licensing",  #works in browser, linkchecker issue
     "http://www.boost.org/LICENSE_1_0.txt",  #Unexpected, Should be working
     #Uncertain Dead - May not be replaceable
-     "Translations/Czech",  #Not a valid link
-    "/Estonian",  #Not a valid link
-    "/Georgian",  #Not a valid link
-    "/Indonesian",  #Not a valid link
-    "/Italian",  #Not a valid link
-    "/Korean",  #Not a valid link
-    "/Russian",  #Not a valid link
-    "../Vietnamese",  #Not a valid link
     "faq-2",  #Not a link
     "faq=2",  #Not a link
     "faq_#2",  #Not a link
