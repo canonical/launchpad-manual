@@ -52,7 +52,7 @@ Launchpad uses GNU gettext's file formats to import and and export
 translations:
 
 -  ``.pot``: a template that includes the English text that you want
-   people to translate. `What's this? </../POTemplates>`__
+   people to translate. `What's this? <https://docs.lokalise.com/en/articles/1400767-gettext-po-pot>`__
 -  ``.po``: translations for one language in a human-readable and
    editable form.
 -  ``.mo``: a compiled binary form of a .po file.

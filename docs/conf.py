@@ -268,7 +268,6 @@ linkcheck_ignore = [
     "faq_1",  #Not a link
     "faq_item_1",  #Not a link
     "faq_number_2",  #Not a link
-    "/../POTemplates",  # - https://docs.lokalise.com/en/articles/1400767-gettext-po-pot
     "API",
     "Answer syntax parsing <Comments>",
     "https://help.ubuntu.com/community/SSO/FAQs", #timeout, should be temporary
