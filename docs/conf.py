@@ -258,7 +258,6 @@ linkcheck_ignore = [
     "https://staging.launchpad.net",  #ignore, staging launchpad
     r"https://wiki\.canonical\.com/.*",  #private
     r"https://www\.nongnu\.org/.*",
-    r"https://www\.socialtext\.net/.*",
     r"https://translations\.launchpad\.net/.*",
     r"http://localhost.*",
     "http://www.ubuntu.com/community/ubuntustory/licensing",  #works in browser, linkchecker issue

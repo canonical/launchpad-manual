@@ -39,7 +39,7 @@ case-by-case basis (but it's incredibly rare that that would come up).
     - http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html
 
 - CPAL -- Common Public Attribution License
-    - https://www.socialtext.net/open/index.cgi?cpal_osd_compliance
+    - https://opensource.org/license/CPAL-1.0
 
 - Creative Commons Attribution
     - http://creativecommons.org/
