@@ -1,3 +1,7 @@
+.. meta::
+   :description: Learn which tools are used for managing Launchpad's four
+      master branches and how these tools work.
+
 .. _branches-trunk-glue:
 
 
