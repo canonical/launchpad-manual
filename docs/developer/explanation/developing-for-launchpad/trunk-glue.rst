@@ -1,3 +1,6 @@
+.. _branches-trunk-glue:
+
+
 How the 4 trunk branches and buildbot work together
 ===================================================
 
