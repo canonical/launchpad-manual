@@ -4,6 +4,8 @@
 How the 4 trunk branches and buildbot work together
 ===================================================
 
+.. include:: ../../../includes/important_not_revised.rst
+
 This page aims to explain the mechanisms that make the wonderful diagrams on the :ref:`about-launchpad-branches` page work. You'll need to read that page for this one to make any sense at all.
 
 There are three main components:
