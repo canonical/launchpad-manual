@@ -227,7 +227,7 @@ linkcheck_ignore = [
     r"https://bugs\.launchpad\.net/\+code/.*",
     r"https://bugs\.qastaging\.launchpad\.net/.*",  #ignore, example link, was never intended to be clicked
     r"http://code\.beta\.launchpad\.net/.*",
-    "http://diacritice.svn.sourceforge.net/viewvc/diacritice/trunk/",  #ignore, as works in browser, but link checker has some issues
+    "https://sourceforge.net/p/diacritice/code/HEAD/tree/",  #ignore, as works in browser, but link checker has some issues
     "http://epydoc.sourceforge.net/fields.html",  #ignore, as works in browser, but link checker has some issues
     r"http://api\.staging\.launchpad\.net/.*",  #ignore, as works in browser, but link checker has some issues
     "http://roundup.sourceforge.net/",  #ignore, as works in browser
