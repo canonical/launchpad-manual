@@ -205,19 +205,12 @@ if os.environ.get("READTHEDOCS"):
 # A regex list of URLs that are ignored by 'make linkcheck'
 linkcheck_ignore = [
     r"https://matrix\.to/.*",
-    r"http://www\.gnu\.org/.*",
-    r"https://www\.gnu\.org/.*",
-    r"http://www.fsf\.org/.*",
     r"http://sourceforge\.net/.*", #ignore, as works in browser
     "http://127.0.0.1:8000",
     r"https://app\.diagrams\.net.*",  # ignore, as works in browser, but link checker has some issues
-    "https://archive.ph/CAqQm",  # ignore, as works in browser, but link checker has some issues
     r"http://www\.searchtools\.com/.*",  #ignore, example link, was never intended to be clicked
     "https://bazaar.launchpad.net/lp-production-config",  # private
     "https://bazaar.staging.launchpad.net",  # broken, unclear why XXX 2023-10-14: jugmac00- check with team
-    r"https://www\.breezy-vcs\.org/.*",  # broken, returns "Connection refused" on port 443
-    r"https://launchpad\.net/\+access-token",  #broken, access restricted
-    r"https://launchpad\.net/\+request-token",  #broken, access restricted 
     r"https://drive\.google\.com/file/d/1hUivL07Msoyej3wd_T4hMAX61EJzfE38/view\?usp=drive_link", #ignore, internal video
     "https://bugs.launchpad.net/charm-launchpad-buildd-image-modifier",  #private
     "https://bugs.launchpad.net/launchpad-vbuilder-manage",  #private
@@ -225,13 +218,10 @@ linkcheck_ignore = [
     "https://launchpad.net/canonical-mojo-specs",  # private
     r"https://launchpad\.test.*",  #ignore, local test setup
     r"https://bugs\.launchpad\.net/\+code/.*",
-    r"https://bugs\.qastaging\.launchpad\.net/.*",  #ignore, example link, was never intended to be clicked
     r"http://code\.beta\.launchpad\.net/.*",
     "https://sourceforge.net/p/diacritice/code/HEAD/tree/",  #ignore, as works in browser, but link checker has some issues
     "http://epydoc.sourceforge.net/fields.html",  #ignore, as works in browser, but link checker has some issues
-    r"http://api\.staging\.launchpad\.net/.*",  #ignore, as works in browser, but link checker has some issues
     "http://roundup.sourceforge.net/",  #ignore, as works in browser
-    "http://trac-hacks.org/wiki/XmlRpcPlugin",
     "http://www.mysite.com/oauth-callback",  #ignore, not a real website
     r"https://help\.launchpad\.net/.*",  #ignore, all critical links changed, others will redirect to the manual's landing page
     r"https://bugs\.beta\.launchpad\.net/.*",  #broken, bazaar being shut down
@@ -241,13 +231,7 @@ linkcheck_ignore = [
     "https://git.launchpad.net/launchpad/tree/doc/bug-export.rnc",  #broken. Process may need to be replaced/upgraded
     "http://code.beta.launchpad.net/beagle",  #broken, bazaar being shut down
     r"https://launchpad\.net/frobnob/.*",
-    r"https://buildbot\.net.*", #ignore, expired SSL certificate
-    r"https://docs\.buildbot\.net/.*", #ignore, expired SSL certificate
-    "https://realpython.com/vim-and-python-a-match-made-in-heaven/",  # 403 Error
     "Trunk/Glue",  #  needs update
-    "/Background",
-    "/Concepts",  #  needs update
-    "JavascriptUnitTesting/MockIo",  #needs update
     "https://git.launchpad.net/launchpad-mojo-specs/tree/mojo-lp-git/services",  #private
     "https://deployable.ols.canonical.com/project/launchpad-db",  #private
     "irc.libera.chat",  #this is not an HTTP link
@@ -256,21 +240,9 @@ linkcheck_ignore = [
     "https://git.zx2c4.com/cgit/",  #unfortunately very flaky
     "https://staging.launchpad.net",  #ignore, staging launchpad
     r"https://wiki\.canonical\.com/.*",  #private
-    r"https://www\.nongnu\.org/.*",
     r"https://translations\.launchpad\.net/.*",
     r"http://localhost.*",
-    "http://www.ubuntu.com/community/ubuntustory/licensing",  #works in browser, linkchecker issue
-    "http://www.boost.org/LICENSE_1_0.txt",  #Unexpected, Should be working
     #Uncertain Dead - May not be replaceable
-    "faq-2",  #Not a link
-    "faq=2",  #Not a link
-    "faq_#2",  #Not a link
-    "faq_1",  #Not a link
-    "faq_item_1",  #Not a link
-    "faq_number_2",  #Not a link
-    "API",
-    "Answer syntax parsing <Comments>",
-    "https://help.ubuntu.com/community/SSO/FAQs", #timeout, should be temporary
     "https://requesttracker.com/request-tracker/",  #URL is rate limited
 ]
 
