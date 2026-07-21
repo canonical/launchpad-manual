@@ -199,7 +199,7 @@ managed either through the web user interface or using the API.
 
             For details on how APT interprets pin priority values, see the
             `apt_preferences(5) manual page
-            <https://manpages.ubuntu.com/manpages/stonking/man5/apt_preferences.5.html>`_.
+            <https://manpages.ubuntu.com/manpages/resolute/man5/apt_preferences.5.html>`_.
 
         #. To add a dependency with a custom pin priority, include a value for
            `pin_priority` when declaring the dependency::
