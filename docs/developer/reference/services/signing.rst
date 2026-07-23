@@ -69,4 +69,4 @@ Common support cases
 
 More information
 ----------------
-`Launchpad services diagram <https://app.diagrams.net/?src=about#Uhttps%3A%2F%2Fgit.launchpad.net%2Flaunchpad%2Fplain%2Fdoc%2Fdiagrams%2Farchitecture.html#%7B%22pageId%22%3A%2214glVH8XSJX-2FxTRWny%22%7D>`_
+`Launchpad services diagram <https://app.diagrams.net/?src=about#Uhttps://raw.githubusercontent.com/canonical/launchpad-manual/refs/heads/main/docs/developer/diagrams/architecture.html#%7B%22pageId%22%3A%2214glVH8XSJX-2FxTRWny%22%7D>`_
