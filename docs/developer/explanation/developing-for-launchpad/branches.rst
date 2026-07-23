@@ -39,7 +39,7 @@ In summary: **db-stable** is the post-test-run counterpart of
 it is only cleared into foo-stable if the buildbot test runner succeeds.
 
 If you want to know how all of this works behind the scenes, read
-`Trunk/Glue <Trunk/Glue>`__ (after reading the rest of this page).
+:ref:`branches-trunk-glue` (after reading the rest of this page).
 
 Look at the pretty pictures
 ---------------------------

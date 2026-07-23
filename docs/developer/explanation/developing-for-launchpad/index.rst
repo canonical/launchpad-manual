@@ -21,3 +21,4 @@ scale and its continuous-deployment model.
    journey-of-a-change-to-production
    pre-merge-reviews
    xxx-policy
+   trunk-glue
