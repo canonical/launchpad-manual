@@ -86,6 +86,14 @@ troubleshoot across multiple test layers.
 - :ref:`Debug stories and pagetests <debug-stories-pagetests>`
 - :ref:`Troubleshoot breakpoint issues when running multiple test layers <troubleshoot-breakpoints-tests>`
 
+Testing
+-------
+
+Launchpad has a large test suite. These guides cover running the tests locally
+and, over time, writing them and measuring their coverage.
+
+- :ref:`Running tests <running-tests>`
+
 .. toctree::
    :hidden:
 
@@ -94,3 +102,4 @@ troubleshoot across multiple test layers.
    common-development-tasks/index
    launchpad-development-tips/index
    debug/index
+   testing/index
