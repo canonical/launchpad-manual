@@ -73,19 +73,15 @@ When it comes to commit messages, please follow these guidelines:
 
 Run the unit tests
 ------------------
-To run the complete test suite (which may take hours depending on your machine),
-run the following command from the top of the Launchpad repository:
+Before proposing your change, run the tests that cover it. For example, to run
+the whole suite from the top of the Launchpad repository:
 
 .. code-block:: bash
 
     xvfb-run bin/test -vvc
 
-To run specific tests, you can use the ``-t`` option to specify test patterns
-or files. For example:
-
-.. code-block:: bash
-
-    bin/test -vvc -t test-pattern-1 -t dotted.path.to.file
+See :ref:`running-tests` for how to run specific tests, select layers, and
+speed up runs.
 
 
 Run the pre-commit hook
