@@ -64,7 +64,7 @@ before it can be activated.
 
 ``CREATE INDEX CONCURRENTLY`` cannot run inside a transaction. If the index
 cannot be built for some reason, such as trying to build a ``UNIQUE`` index on
-non-unique data, manual repair is needed to back out the changes.
+non-unique data, manual repair is needed to roll back the changes.
 
 .. warning::
 
