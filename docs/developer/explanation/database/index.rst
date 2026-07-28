@@ -15,7 +15,7 @@ as its object-relational mapper (ORM).
    :maxdepth: 1
    
    database-performance
-   live-patching
+   database-patching
    postgresql
    storm-migration-guide
    working-with-db-devel

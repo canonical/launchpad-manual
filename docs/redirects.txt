@@ -179,7 +179,8 @@ developer/explanation/javascript-integration-testing/ developer/explanation/java
 developer/explanation/javascript-unittesting/ developer/explanation/javascript/javascript-unittesting/
 developer/explanation/journey-of-a-change-to-production/ developer/explanation/developing-for-launchpad/journey-of-a-change-to-production/
 developer/explanation/launchpad-ppa/ developer/explanation/core-components-and-set-up/launchpad-ppa/
-developer/explanation/live-patching/ developer/explanation/database/live-patching/
+developer/explanation/live-patching/ developer/explanation/database/database-patching/
+developer/explanation/database/live-patching/ developer/explanation/database/database-patching/
 developer/explanation/mail/ developer/explanation/core-components-and-set-up/parts-of-launchpad/mail/
 developer/explanation/malone/ developer/explanation/core-components-and-set-up/parts-of-launchpad/malone/
 developer/explanation/navigating/ developer/explanation/core-components-and-set-up/navigating/

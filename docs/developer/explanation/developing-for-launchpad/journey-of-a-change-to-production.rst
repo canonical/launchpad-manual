@@ -225,7 +225,7 @@ What is the ``fastdowntime`` deployment process?
 Deploying cold database patches to the production Launchpad database requires
 having a very short downtime (usually < 10 seconds). That is why the process
 to deploy such cold database patches is called ``fastdowntime``. For details
-about hot and cold database patches, see :ref:`Live Patching <live-database-patching>`.
+about hot and cold database patches, see :ref:`Database patching <database-patching>`.
 
 
 How do code changes in the ``stable`` branch get added to the ``db-stable`` branch?

@@ -48,7 +48,7 @@ Launchpad uses PostgreSQL and depends on PostgreSQL-specific features. Its
 schema is patched on a live system and managed by Storm, the ORM Launchpad uses.
 
 - :ref:`Database performance <database-performance>`
-- :ref:`Live database patching <live-database-patching>`
+- :ref:`Database patching <database-patching>`
 - :ref:`PostgreSQL and Launchpad <postgresql-and-launchpad>`
 - :ref:`Storm migration guide <storm-migration-guide>`
 - :ref:`Working with db-devel <working-with-db-devel>`

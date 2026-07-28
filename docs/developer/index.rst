@@ -142,7 +142,7 @@ database migrations, renaming tables, and maintaining query efficiency.
   :ref:`Working with db-devel <working-with-db-devel>`
 * **Performance & optimization**:
   :ref:`Database performance <database-performance>` •
-  :ref:`Live database patching <live-database-patching>` •
+  :ref:`Database patching <database-patching>` •
   :ref:`Preserve query count <preserve-query-count>`
 * **Schema management**:
   :ref:`Rename a database table <rename-database-table>`

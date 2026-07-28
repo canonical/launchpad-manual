@@ -1,11 +1,11 @@
 .. meta::
-   :description: Understand live database patching techniques for deploying 
+   :description: Understand database patching techniques for deploying 
       schema changes on Launchpad's PostgreSQL database.
 
-.. _live-database-patching:
+.. _database-patching:
 
-Live database patching
-======================
+Database patching
+=================
 
 This page describes the schema changes that we can deploy on Launchpad's
 replicated PostgreSQL database, and the two mechanisms we use to apply them:

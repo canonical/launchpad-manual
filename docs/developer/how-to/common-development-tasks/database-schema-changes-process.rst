@@ -91,7 +91,7 @@ they will be promoted to ``master`` as part of the go-live process.
 Hot patches
 ~~~~~~~~~~~
 
-:ref:`live-database-patching` explains how hot-patching works and what sorts of 
+:ref:`database-patching` explains how hot-patching works and what sorts of 
 things we can hot-patch. It's the authority — we may be able to hot-patch more 
 as our tooling improves.
 
