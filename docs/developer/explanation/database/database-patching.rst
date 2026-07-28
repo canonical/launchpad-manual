@@ -7,20 +7,20 @@
 Database patching
 =================
 
-This page describes the schema changes that we can deploy on Launchpad's
-replicated PostgreSQL database, and the two mechanisms we use to apply them:
+This page describes the schema changes that can be deployed on Launchpad's
+replicated PostgreSQL database, and the two mechanisms used to apply them:
 
 - **Hot schema changes** deploy changes without causing any downtime.
 - **Cold schema changes** deploy changes with minimal downtime (a few seconds
   per change).
 
-In both cases, we deploy the changes without altering the running appserver
+In both cases, the changes are deployed without altering the running appserver
 code, so each change must be compatible with the existing live code. This means
-that, before landing a database patch, we may need to land code first so that
+that, before landing a database patch, you may need to land code first so that
 everything runs both with and without the patch applied. For the end-to-end
 workflow, see :ref:`database-schema-changes-process`.
 
-We land cold schema changes on ``db-devel`` and hot ones on ``devel``. All
+Cold schema changes  are landed on ``db-devel`` and hot ones on ``devel``. All
 schema changes must land without appserver code changes, although test changes
 may be included when trigger or database function changes are being landed. For
 more on developing against the ``db-devel`` branch, see
@@ -36,7 +36,7 @@ more on developing against the ``db-devel`` branch, see
 Hot patches
 -----------
 
-We can apply some database patches live. We currently apply them by crafting an
+Some database patches can be applied live. These are currently applied by crafting an
 appropriate wrapper script and then running it directly on the master database
 node, from where it replicates to the slaves.
 
@@ -45,7 +45,7 @@ The ``(major, minor, patch)`` revision tuple must be manually inserted into the
 next full upgrade because the system attempts to apply a patch that has already
 been applied. This situation is normally caught by the full staging update.
 
-We intend to automate this in the future, to at least handle the happy path and
+This should be automated in the future, to at least handle the happy path and
 avoid accidentally running a hot patch during a fastdowntime deployment.
 
 Index creation
