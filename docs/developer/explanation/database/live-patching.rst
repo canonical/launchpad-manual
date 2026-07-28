@@ -58,7 +58,7 @@ transactions to create, populate, and activate the index. This adds some
 contention, but it is minimal.
 
 Don't start index creation while there are long-running transactions in
-progress: the index will not complete until those transactions have completed,
+progress: the index will not complete until those transactions have completed
 because it has to wait for the existing read transactions on the table to finish
 before it can be activated.
 
