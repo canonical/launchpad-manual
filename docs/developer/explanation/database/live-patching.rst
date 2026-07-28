@@ -96,19 +96,6 @@ Cold patches must be applied with no other system activity to prevent locks
 from holding the patch up. We have automation around this to apply them as
 rapidly as possible.
 
-Patch process overview
-~~~~~~~~~~~~~~~~~~~~~~
-
-1. Update the ``wildcherry`` Launchpad source tree to the revision to run. Make
-   sure that the revision will include only one new patch. We apply one patch
-   at a time to reduce the debugging burden if something goes wrong after
-   applying it, and run ``make clean build``.
-
-2. Run ``full-update.py --dry-run`` and check that only the expected database
-   patch will be applied.
-
-3. Run ``full-update.py``.
-
 Table creation
 ~~~~~~~~~~~~~~
 
