@@ -42,7 +42,7 @@ node, from where it replicates to the slaves.
 
 The ``(major, minor, patch)`` revision tuple must be manually inserted into the
 ``LaunchpadDatabaseRevision`` table on the master. Failing to do this aborts the
-next full upgrade, because the system attempts to apply a patch that has already
+next full upgrade because the system attempts to apply a patch that has already
 been applied. This situation is normally caught by the full staging update.
 
 We intend to automate this in the future, to at least handle the happy path and
