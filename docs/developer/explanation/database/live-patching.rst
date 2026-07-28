@@ -62,16 +62,16 @@ progress: the index will not complete until those transactions have completed
 because it has to wait for the existing read transactions on the table to finish
 before it can be activated.
 
-``CREATE INDEX CONCURRENTLY`` cannot run inside a transaction, so if the index
+``CREATE INDEX CONCURRENTLY`` cannot run inside a transaction. If the index
 cannot be built for some reason, such as trying to build a ``UNIQUE`` index on
 non-unique data, manual repair is needed to back out the changes.
 
 .. warning::
 
-   Deleting an index requires a fastdowntime deploy.
+   Deleting an index requires a fastdowntime deployment.
 
 Run index creation from a ``screen(1)`` session or similar to avoid network
-dropouts: for ``CREATE INDEX CONCURRENTLY``, an early disconnection results in
+dropouts. For ``CREATE INDEX CONCURRENTLY``, an early disconnection results in
 an invalid index rather than a rollback.
 
 Once the index is built on the master, it replicates automatically to the
@@ -92,7 +92,7 @@ with any triggers. Table trigger definitions must be done as cold patches.
 Cold patches
 ------------
 
-Cold patches must be applied with no other system activity, to prevent locks
+Cold patches must be applied with no other system activity to prevent locks
 from holding the patch up. We have automation around this to apply them as
 rapidly as possible.
 
@@ -101,7 +101,7 @@ Patch process overview
 
 1. Update the ``wildcherry`` Launchpad source tree to the revision to run. Make
    sure that the revision will include only one new patch. We apply one patch
-   at a time to reduce the debugging burden when something goes wrong after
+   at a time to reduce the debugging burden if something goes wrong after
    applying it, and run ``make clean build``.
 
 2. Run ``full-update.py --dry-run`` and check that only the expected database
@@ -112,14 +112,13 @@ Patch process overview
 Table creation
 ~~~~~~~~~~~~~~
 
-Creating a table can sometimes be done hot, but not reliably, because foreign
-key relations need exclusive table locks to activate. Do it as a cold patch.
+Creating a table can sometimes be done hot, but not reliably. It should be done as a cold patch because foreign key relations need exclusive table locks to activate.
 
 .. warning::
 
    Don't attempt to create a table without the DBA available. There are still
    edge cases where we cannot do this live, such as a table with foreign key
-   constraints to a busy table, which requires locks on the busy table that
+   constraints to a busy table which requires locks on the busy table that
    will not be granted quickly enough.
 
 Table renaming
