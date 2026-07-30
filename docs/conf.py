@@ -246,8 +246,6 @@ linkcheck_ignore = [
     r"https://docs\.buildbot\.net/.*", #ignore, expired SSL certificate
     "https://realpython.com/vim-and-python-a-match-made-in-heaven/",  # 403 Error
     "/Background",
-    "/Concepts",  #  needs update
-    "JavascriptUnitTesting/MockIo",  #needs update
     "https://git.launchpad.net/launchpad-mojo-specs/tree/mojo-lp-git/services",  #private
     "https://deployable.ols.canonical.com/project/launchpad-db",  #private
     "irc.libera.chat",  #this is not an HTTP link
