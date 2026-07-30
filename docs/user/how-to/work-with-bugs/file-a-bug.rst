@@ -1,85 +1,74 @@
 .. meta::
-   :description: Learn how to file a bug report in Launchpad with to help 
-      developers understand and fix issues.
+   :description: Learn how to file a bug report to help developers understand
+      and fix issues.
 
 .. _file-a-bug-in-launchpad:
 
 File a bug in Launchpad
 =======================
 
-.. include:: /includes/important_not_revised_help.rst
-
-Prior to filing a bug the extra data file needs to be stored in
-Launchpad. This can be done via the page
-`<https://launchpad.net/+storeblob>`_. Upon successful storing of the file a
-token will be provided both within the page and contained in the HTTP
-headers as ``X-Launchpad-Blob-Token``.
-
-Filing a bug can be achieved by accessing the page
-``https://launchpad.net/bugs/+filebug/<token>`` replacing ``<token>`` with the token
-received previously. However this page requires the user to specify the
-Distribution/Package or Project. An alternative is to use the URL syntax
-``https://bugs.launchpad.net/<distribution>/+source/<package>/+filebug/`` or
-``https://bugs.launchpad.net/<project>/+filebug/`` replacing ``<distribution>``, ``<package>``, ``<project>`` as appropriate.
-
-The process after this point is the same as filing a bug normally except
-that certain fields may be pre-populated.
-
 Getting started
 ---------------
 
-When you :ref:`registered your project <how-to-register-your-project>` in
-Launchpad, you had the option to specify where its bugs are tracked. If
-you chose an option other than ``Bugs are tracked in Launchpad``, you
-now need to activate the Launchpad bug tracker for your project.
+After you :ref:`register a project <how-to-register-your-project>` in
+Launchpad, you have the option to configure where its bugs are tracked. If
+you chose any option other than Launchpad, you will need to activate the
+Launchpad bug tracker for your project to continue with the steps on this page.
 
-Follow the ``Change details`` link on your project's overview page.
-
-You can also choose whether Launchpad should automatically expire
-inactive bugs. There's more on what Launchpad considers an inactive bug
-in our article on :ref:`bug-expiry`.
+To do so, in your project's "Bugs" tab, click on "Configure Bugs", choose
+Launchpad as the bug tracker, and save your changes.
 
 Importing your existing bug history
 -----------------------------------
 
-In some cases, the Launchpad team can import your existing bug history
-from another bug tracker. This may mean you can switch to Launchpad's
-bug tracker without having to maintain your previous bug tracker in a
-read-only mode.
+In some cases, the Launchpad team can import your existing bug history from
+another bug tracker. This may mean that you can switch to Launchpad's bug
+tracker without having to maintain your previous bug tracker for historical
+purposes.
 
 :ref:`Get in touch <get-help>` to see if we can help.
 
 Setting roles
 ---------------
 
-- A bug supervisor handles day to day management and triage
+Bug supervisor
+~~~~~~~~~~~~~~~
 
-Many projects :ref:`create specific teams <creating-and-running-launchpad-teams>` to act as
-the bug supervisor, allowing several people to triage bugs without gain.
+A bug supervisor has bug-editing privileges. This allows them to handle the
+day-to-day management of bugs — triaging new bugs, planning bug work, ensuring
+that existing bugs are properly managed, etc.
 
-If you'd prefer not to set these - perhaps because your project is small
-enough not to need specific contacts - you, as project owner, take them
-by default.
+Many projects :ref:`create specific teams <creating-and-running-launchpad-teams>`
+to act as the bug supervisor, allowing several people to manage bugs without
+giving them access to other administrative functions.
 
-The bug supervisor's role
-~~~~~~~~~~~~~~~~~~~~~~~~~
+By default, the project owner is the bug supervisor. This can be changed by
+visiting the "Bugs" tab of your project and clicking the edit icon next to the
+bug supervisor role.
 
-You may want to give some people extra bug editing privileges: The bug
-supervisor's role is to manage the planning of bug work and the triage
-of newly reported bugs.
+File a bug with extra data in Launchpad
+----------------------------------------
 
-Launchpad helps them do this by giving them access to:
+Prior to filing a bug, extra data can be stored in Launchpad via
+`<https://launchpad.net/+storeblob>`_. This blob needs to follow a specific
+format which can be understood by Launchpad. Please see the
+`apport report format`_ for more details about the format. Upon successful submission of the blob, a
+ticket ID will be provided which can be used to reference the blob when filing
+a bug. This ID can also be found in the ``X-Launchpad-Blob-Token`` HTTP header.
 
--  target bugs to a milestone
--  set the importance of a bug
--  set certain :ref:`bug statuses <old-unattended-and-incomplete>`.
+A bug can be filed by visiting ``https://bugs.launchpad.net/<distribution>/+source/<package>/+filebug/<token>``
+or ``https://bugs.launchpad.net/<project>/+filebug/<token>`` replacing
+``<token>`` with the ticket ID received previously, and ``<distribution>``,
+``<package>``, and ``<project>`` as appropriate.
 
-To set your project's bug supervisor, visit its bug overview page - for
-example: https://bugs.launchpad.net/inkscape - then choose the edit link
-next the the bug supervisor role listed on the page.
+The process after this point is the same as filing a bug normally, except
+that certain fields may be pre-populated.
 
 Next step
 ---------
-Now you've set up the basics, you're ready to start managing your
-project's bug reports in Launchpad. However, let's first look at how
-Launchpad :ref:`tracks the hottest bugs <bug-heat>`.
+Now that you have set up the basics, you're ready to start managing your
+project's bug reports in Launchpad. However, let's first look at how Launchpad
+:ref:`tracks the hottest bugs <bug-heat>`.
+
+
+.. _apport report format: https://ubuntu.com/project/docs/contributors/debugging/apport/#report-format
