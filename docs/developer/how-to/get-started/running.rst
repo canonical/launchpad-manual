@@ -13,7 +13,7 @@ Setting up and running Launchpad (advanced)
 
 This page explains how to set up and run Launchpad (for development) on your
 own machine, using a `LXD
-<https://documentation.ubuntu.com/lxd/en/latest/>`_-managed container to
+<https://canonical.com/lxd/docs/latest/>`_-managed container to
 isolate it from the rest of your system.
 
 After you've done this, you may want to read about
@@ -64,7 +64,7 @@ Create a LXD container
 ----------------------
 
 This assumes you already have LXD set up.  If not, follow the `instructions
-<https://documentation.ubuntu.com/lxd/en/latest/getting_started/>`_ for
+<https://canonical.com/lxd/docs/latest/getting_started/>`_ for
 getting it installed and configured on your network.
 
 1. If you haven't done so already, run this script to set up LXD to let you
@@ -150,7 +150,7 @@ getting it installed and configured on your network.
    LXD provides a way to access the LXD containers using DNS names, for example, ``lpdev.lxd``,
    where ``.lxd`` is the default base domain name for the LXD bridge and ``lpdev`` is the name of
    the LXD container. To set this up, follow the instructions in
-   https://documentation.ubuntu.com/lxd/en/latest/howto/network_bridge_resolved/.
+   https://canonical.com/lxd/docs/latest/howto/network_bridge_resolved/.
    Once the setup is done, you can use ``lpdev.lxd`` in the above command instead of the
    IP address of the ``lpdev`` container.
 
