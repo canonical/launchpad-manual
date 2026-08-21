@@ -28,7 +28,8 @@ For the host system, any reasonably modern Ubuntu release should work.
 Other Linux distributions that have LXD should work too, though we don't
 test on them.
 
-For the Development container, the LXD container that runs Launchpad requires Ubuntu 20.04 LTS with Python 3.8. Ubuntu 22.04 is known not
+For the Development container, the LXD container that runs Launchpad 
+requires Ubuntu 20.04 LTS with Python 3.8. Ubuntu 22.04 is known not
 to work yet.
 
 We'd like Launchpad to run on other operating systems, especially `Debian
