@@ -157,16 +157,14 @@ managed either through the web user interface or using the API.
              or :guilabel:`Backports`).
            - Add another PPA as a dependency by entering it in the
              :guilabel:`Add PPA dependency` field.
-           - Remove existing dependencies by selecting them under
-             :guilabel:`Extra dependencies`.
+           - Set the :guilabel:`Pin priority` for any existing PPA dependency
+             listed in the :guilabel:`Dependencies on other PPAs` table. The
+             value must be an integer between ``-100`` and ``2000``; the
+             default is ``500``.
+           - Remove an existing dependency by ticking its
+             :guilabel:`Remove on save` checkbox.
 
         #. Save any changes you've made.
-
-        .. note::
-
-            Pin priorities cannot currently be set through the web interface.
-            To assign a custom pin priority to a dependency, use the API as
-            described in the next tab.
 
 
     .. tab-item:: Web service API
@@ -192,8 +190,7 @@ managed either through the web user interface or using the API.
         integer that controls the APT pin priority used for packages provided
         by the dependency. Higher values make packages from the dependency
         preferred over others. The value must be in the range ``-100`` to
-        ``2000``; if omitted, it defaults to ``500``. Pin priorities can only
-        be set through the API; the web interface does not yet expose them.
+        ``2000``; if omitted, it defaults to ``500``.
 
         .. seealso::
 
