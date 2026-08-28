@@ -6,6 +6,14 @@
 
 Release Notes
 =============
+August 2026
++++++++++
+
+28 August
+
+- Allowed pin priority setting for PPA dependencies. For more information, see
+   `Launchpad Manual create a Personal Package Archive page
+   <https://ubuntu.com/docs/launchpad/user/how-to/packaging/create-ppa/>`_.
 
 July 2026
 +++++++++
