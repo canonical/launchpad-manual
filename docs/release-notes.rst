@@ -8,7 +8,7 @@ Release Notes
 =============
 
 August 2026
-+++++++++
++++++++++++
 
 28 August
 
