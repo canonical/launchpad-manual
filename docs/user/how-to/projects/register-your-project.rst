@@ -1,5 +1,5 @@
 .. meta::
-   :description: Step-by-step guide to register your project in Launchpad and 
+   :description: Step-by-step guide to register your project in Launchpad and
       configure it for collaboration, code hosting, and bug tracking.
 
 .. _how-to-register-your-project:
@@ -87,7 +87,7 @@ Identify the project group (optional)
 If your project is part of a wider project group, you can
 tell Launchpad by changing the project's details. On the project overview page,
 select :guilabel:`Change details` and enter the project group's name in the
-:guilabel:`Part of` text-box. If you're not sure of the project group's exact
+:guilabel:`Part of` text box. If you're not sure of the project group's exact
 Launchpad name, you can also search for it.
 
 For example: Blueprint is part of the launchpad-project group.
