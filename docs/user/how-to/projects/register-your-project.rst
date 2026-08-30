@@ -51,18 +51,10 @@ These fields have different purposes:
 - **URL**: The short identifier used at the end of your project's Launchpad URL, for example, ``blueprint`` in ``https://launchpad.net/blueprint``.
 - **Summary**: A short description of your project's work.
 
-In the second step, complete the registration details. You can optionally add a
-:guilabel:`Description` and :guilabel:`Homepage URL`, select the appropriate
-license under :guilabel:`Licences`, and confirm the :guilabel:`Maintainer`.
-
-The additional fields have different purposes:
-
-- **Description**: More detailed information about the project's work, goals,
-   and how to contribute.
-- **Homepage URL**: The project's external home page.
-- **Licences**: The licenses under which the project is released.
-- **Maintainer**: The person or team responsible for maintaining the project's
-   information in Launchpad.
+In the second step, select the appropriate license under :guilabel:`Licences`
+and confirm the project's :guilabel:`Maintainer`. You can also optionally add
+a :guilabel:`Description` (more detailed information about the project's
+work, goals, and how to contribute) and an external :guilabel:`Homepage URL`.
 
 Your project summary and description are used on your project's homepage. A
 portion of the summary is also shown in search results.
