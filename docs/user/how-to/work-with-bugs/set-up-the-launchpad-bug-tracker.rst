@@ -1,21 +1,18 @@
 .. meta::
-   :description: Learn how to file a bug report to help developers understand
-      and fix issues.
+   :description: Learn how to set up the Launchpad bug tracker.
 
-.. _file-a-bug-in-launchpad:
+.. _set-up-the-launchpad-bug-tracker:
 
-File a bug in Launchpad
-=======================
-
-Getting started
----------------
+Set up the Launchpad bug tracker
+================================
 
 After you :ref:`register a project <how-to-register-your-project>` in
 Launchpad, you have the option to configure where its bugs are tracked. If
-you chose any option other than Launchpad, you will need to activate the
-Launchpad bug tracker for your project to continue with the steps on this page.
+you want to track your project's bugs on Launchpad, you will need to activate
+the Launchpad bug tracker for your project to continue with the steps on this
+page.
 
-To do so, in your project's "Bugs" tab, click on "Configure Bugs", choose
+In your project's "Bugs" tab, click on "Configure Bugs", choose
 Launchpad as the bug tracker, and save your changes.
 
 Importing your existing bug history
@@ -52,11 +49,12 @@ File a bug with extra data in Launchpad
 Prior to filing a bug, extra data can be stored in Launchpad via
 `<https://launchpad.net/+storeblob>`_. This blob needs to follow a specific
 format which can be understood by Launchpad. Please see the
-`apport report format`_ for more details about the format. Upon successful submission of the blob, a
-ticket ID will be provided which can be used to reference the blob when filing
-a bug. This ID can also be found in the ``X-Launchpad-Blob-Token`` HTTP header.
+`apport report format`_ for more details about this. Upon successful submission
+of the blob, a ticket ID will be provided which can be used to reference the
+blob when filing a bug. This ID can also be found in the
+``X-Launchpad-Blob-Token`` HTTP header.
 
-A bug can be filed by visiting ``https://bugs.launchpad.net/<distribution>/+source/<package>/+filebug/<token>``
+You can file a bug by visiting ``https://bugs.launchpad.net/<distribution>/+source/<package>/+filebug/<token>``
 or ``https://bugs.launchpad.net/<project>/+filebug/<token>`` replacing
 ``<token>`` with the ticket ID received previously, and ``<distribution>``,
 ``<package>``, and ``<project>`` as appropriate.

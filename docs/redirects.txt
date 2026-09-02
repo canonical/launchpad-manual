@@ -83,7 +83,7 @@ user/LaunchpadMessageRationale.	user/explanation/message-rationale-headers/
 # user/FAQ/Translations	"https://answers.launchpad.net/launchpad/+faqs"
 user/CrossProjectBugTracking	user/reference/bugs/multi-project-bugs/tracking-multi-project-bugs/
 user/Code/MirroredBranches	user/how-to/work-with-code-hosted-on-launchpad/index/
-user/Bugs/YourProject	user/how-to/work-with-bugs/file-a-bug/
+user/Bugs/YourProject	user/how-to/work-with-bugs/set-up-the-launchpad-bug-tracker/
 user/Bugs/MultiProjectBugs	user/reference/bugs/multi-project-bugs/about-multi-project-bugs/
 user/Bugs/BugBranchLinks	user/how-to/work-with-bugs/link-bug-to-branch/
 user/Blueprint	user/explanation/feature-highlights/blueprints/
