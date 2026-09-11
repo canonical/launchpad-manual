@@ -7,6 +7,16 @@
 Release Notes
 =============
 
+September 2026
+++++++++++++++
+
+11 September
+
+- Launchpad now sets the ``noudeb`` and ``derivative.ubuntu`` build profiles on ``sbuild`` during a deb build. 
+  More context: https://bugs.launchpad.net/launchpad-buildd/+bug/2166467 
+  The changes are rolled out on the ``268~803~ubuntu24.04.1`` buildd version
+- Bug Fixes `LP: 2155115<https://bugs.launchpad.net/launchpad/+bug/2155115>`_, `LP: 1940431<https://bugs.launchpad.net/launchpad/+bug/1940431>`_
+
 August 2026
 +++++++++++
 
