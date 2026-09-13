@@ -17,7 +17,7 @@ them through email, and integrate with external trackers.
     :maxdepth: 1
 
     Display bug reporting guidelines <display-bug-reporting-guidelines>
-    File a bug <file-a-bug>
+    Set up the Launchpad bug tracker <set-up-the-launchpad-bug-tracker>
     Link a bug to a branch <link-bug-to-branch>
     Managing bugs through email <manage-bugs-with-email-interface>
     Use the Bugzilla plugin <use-bugzilla-plugin>

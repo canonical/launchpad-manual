@@ -136,7 +136,7 @@ changes, and integrate reports from external trackers such as Bugzilla, Trac,
 GitLab, and Mantis.
 
 * **File and manage bugs**:
-  :ref:`File a bug <file-a-bug-in-launchpad>` •
+  :ref:`Set up the Launchpad bug tracker <set-up-the-launchpad-bug-tracker>` •
   :ref:`Display bug reporting guidelines <display-bug-reporting-guidelines>` •
   :ref:`Link a bug to a branch <link-a-bug-reports-to-a-branch>` •
   :ref:`Subscribe and unsubscribe to bugs <subscribe-and-unsubscribe-to-bugs>` •
