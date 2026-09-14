@@ -13,7 +13,7 @@ August 2026
 28 August
 
 - Allowed pin priority setting for PPA dependencies. For more information, see
-  `Launchpad Manual create a Personal Package Archive page
+  the `guide on creating a Personal Package Archive (PPA)
   <https://ubuntu.com/docs/launchpad/user/how-to/packaging/create-ppa/>`_.
 - Added ``maintained_by``, ``changed_by``, ``signed_by``, ``packageset`` and ``team``
   filters to ``Archive.getPublishedSources()``.
