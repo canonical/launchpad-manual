@@ -15,8 +15,7 @@ September 2026
 - Launchpad now sets the ``noudeb`` and ``derivative.ubuntu`` build profiles on ``sbuild`` during a deb build. 
   More context: https://bugs.launchpad.net/launchpad-buildd/+bug/2166467 
   The changes are rolled out on the ``268~803~ubuntu24.04.1`` buildd version
-- Bug Fix `#2155115 <https://bugs.launchpad.net/launchpad/+bug/2155115>`_ : Trailing slash in ``build_path`` of
-  charm recipes was causing path resolution errors internally. 
+- Bug Fix `#2155115 <https://bugs.launchpad.net/launchpad/+bug/2155115>`_ : Strips trailing slash from the ``build_path`` of charm recipes to avoid internal path resolution errors. 
 - Bug Fix `#1940431 <https://bugs.launchpad.net/launchpad/+bug/1940431>`_ : Makes Edit/Delete comment buttons 
   editable immediately after posting. 
 
