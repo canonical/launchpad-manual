@@ -1,5 +1,5 @@
 .. meta::
-   :description: Step-by-step guide to register your project in Launchpad and 
+   :description: Step-by-step guide to register your project in Launchpad and
       configure it for collaboration, code hosting, and bug tracking.
 
 .. _how-to-register-your-project:
@@ -10,70 +10,76 @@ Register your project
 Registering your project in Launchpad takes just a few minutes and
 allows you to use Launchpad to do all or any of the following:
 
--  track your project's bugs
--  translate your project's user interface
--  host git branches of your project's code
--  import git repositories of your project's code
--  plan and manage the development of features for your project
--  offer an easy way for your project's users to post and answer support
+- track your project's bugs
+- translate your project's user interface
+- host git branches of your project's code
+- import git repositories of your project's code
+- plan and manage the development of features for your project
+- offer an easy way for your project's users to post and answer support
    questions.
 
-   .. tip::
-      If you want to register a translation or Ubuntu loco team in Launchpad,
-      please create a new team, not a project.
+.. important::
+
+   If you want to register a translation team or an Ubuntu Local Community
+   (LoCo) team, create a Launchpad team instead of a project.
+
+   For information about project translations, see
+   :doc:`Project translations <project-translations/index>`.
+
+   See :ref:`Creating and running Launchpad teams
+   <creating-and-running-launchpad-teams>` for information about creating
+   and managing Launchpad teams.
 
 Log in to Launchpad
---------------------------- 
+-------------------
 Log in to Launchpad and visit https://launchpad.net/projects/
 
 Register a project
--------------------------- 
+------------------
 Select :guilabel:`Register a project` in the left-hand side menu.
 
 Enter project details
------------------------------------ 
-Fill in the ``Name``, ``Display Name`` and ``Title`` fields.
+---------------------
+Registering a project is a two-step process.
 
-Launchpad uses these three different names for your project in different
-contexts:
+In the first step, fill in the :guilabel:`Name`, :guilabel:`URL` and
+:guilabel:`Summary` fields.
 
--  **Name:** This is the short name that Launchpad will use for your
-   project in URLs. For example: "blueprint" in
-   ``https://launchpad.net/blueprint`` for Launchpad's Blueprint
-   Tracker.
--  **Display name:** This is the name Launchpad uses for your project in
-   the breadcrumb at the top of the screen. For example: "Blueprint".
--  **Title:** This is the long form of your project's name and is the
-   most common name that Launchpad uses for your project. For example:
-   "The Blueprint Feature Tracker".
+These fields have different purposes:
 
-Review project summary and description
----------------------------------------------- 
+- **Name**: The name of your project as it should appear in text.
+- **URL**: The short identifier used at the end of your project's Launchpad URL, for example, ``blueprint`` in ``https://launchpad.net/blueprint``.
+- **Summary**: A short description of your project's work.
+
+In the second step, select the appropriate license under :guilabel:`Licences`
+and confirm the project's :guilabel:`Maintainer`. You can also optionally add
+a :guilabel:`Description` (more detailed information about the project's
+work, goals, and how to contribute) and an external :guilabel:`Homepage URL`.
+
 Your project summary and description are used on your project's homepage. A
 portion of the summary is also shown in search results.
 
-In this screen-shot of the Blueprint Tracker's project page, the summary
-is highlighted with a red line and the description with a blue line.
+In this screenshot of the Blueprint Tracker's project page, the summary is
+highlighted with a red line and the description with a blue line.
 
 .. figure:: /user/images/launchpad-summary-description.png
    :alt: Screenshot showing Launchpad project summary and description.
 
-Add your project
------------------------- 
-When you're ready, click the button to complete the registration. Launchpad
-will now take you straight to your new project page.
+Complete registration
+---------------------
+When you're ready, select :guilabel:`Complete Registration`. Launchpad will
+take you straight to your new project page.
 
-.. tip::
-   Once you've registered your project, you can use Launchpad to host your 
-   project's downloadable files. Find out more about 
-   :ref:`file downloads <making-your-project-files-available-for-download>`.
+Once you've registered your project, you can use Launchpad to host your
+project's downloadable files. Find out more about
+:ref:`file downloads <making-your-project-files-available-for-download>`.
 
 Identify the project group (optional)
--------------------------------------- 
+-------------------------------------
 If your project is part of a wider project group, you can
 tell Launchpad by changing the project's details. On the project overview page,
 select :guilabel:`Change details` and enter the project group's name in the
-:guilabel:`Part of` text-box. If you're not sure of the project group's exact
+:guilabel:`Part of` text box. If you're not sure of the project group's exact
 Launchpad name, you can also search for it.
 
 For example: Blueprint is part of the launchpad-project group.
@@ -83,7 +89,8 @@ and decisions around bug tracking, translation and security policy will
 also apply to this project.
 
 .. note::
-   You can request a new project group by emailing feedback@launchpad.net. 
+
+   You can request a new project group by emailing feedback@launchpad.net.
    Describe your project, its constituent parts and why a project group is the
-   best way to organise them. Launchpad team administrators will reply to let
+   best way to organize them. Launchpad team administrators will reply to let
    you know if your request has been successful.
