@@ -78,12 +78,9 @@ applications.
 
 Testing and troubleshooting
 ---------------------------
-Launchpad provides a staging environment where you can test integrations and
-workflows without affecting production data. When errors occur, Launchpad
-generates an OOPS ID that you can include when filing a support request to help
-the team investigate.
+When errors occur, Launchpad generates an OOPS ID that you can include when
+filing a support request to help the team investigate.
 
-- :ref:`The qastaging environment <qastaging-environment>`
 - :ref:`Understanding OOPSes <what-is-an-oops>`
 - :ref:`Filing and managing support requests <filing-new-support-request>`
 
@@ -103,7 +100,6 @@ the team investigate.
     Packaging <packaging/index>
     Privacy, confidentiality and disclosure <privacy-confidentiality-and-disclosure>
     Projects <projects/index>
-    Qastaging environment <qastaging-environment>
     Support requests <support-requests>
     Teams <teams/index>
     Translating <translating-with-launchpad/index>
