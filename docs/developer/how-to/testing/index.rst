@@ -18,7 +18,7 @@ This section is being built up incrementally. Planned guides:
   and speed up runs.
 - **Writing tests** *(planned)* — author Python unit tests, doctests, page
   tests, CLI script tests, and JavaScript tests.
-- **Measuring coverage** *(planned)* — generate and read test coverage reports.
+- **Measuring coverage** — generate and read test coverage reports.
 
 For help debugging a failing test, see the :ref:`debugging guides
 <how-to-debug>`.
@@ -27,3 +27,4 @@ For help debugging a failing test, see the :ref:`debugging guides
    :maxdepth: 1
 
    running-tests
+   measuring-coverage
