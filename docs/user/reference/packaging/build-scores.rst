@@ -180,4 +180,4 @@ build score for their live filesystem.
 Snap builds get a score of 2510 plus any relative build score for their
 source archive.
 
-OCI recipe builds get a score of 2510.
+OCI recipe builds get a score of 4010.
