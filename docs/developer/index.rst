@@ -38,19 +38,21 @@ builds.
   :ref:`Deploy Soyuz locally <use-soyuz-locally>` •
   :ref:`Develop with Buildd <develop-with-buildd>` •
   :ref:`Use codehosting locally <use-codehosting-locally>`
+* **Dependencies reference**:
+  :ref:`The Launchpad PPA <the-launchpad-ppa>`
 
 Core concepts and architecture
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Understand the foundational design, vision, and internal architecture that
 power Launchpad. Explore the philosophical goals, values, and essential
-components that define the framework and its application flow.
+components that define the platform and its application flow.
 
 * **Vision & values**:
   :ref:`What is Launchpad? <what-is-launchpad>` •
   :ref:`Launchpad values <launchpad-values>` •
   :ref:`Launchpad strategy <launchpad-strategy>` •
-  :ref:`About Launchpad security <about-launchpad-security>`
+  :ref:`About the Launchpad bug tracker <malone>`
 * **Internal components**:
   :ref:`Navigation menus <navigation-menus>` •
   :ref:`URL traversal <url-traversal>` •
@@ -59,7 +61,6 @@ components that define the framework and its application flow.
 * **Framework & environment**:
   :ref:`Application framework <application-framework>` •
   :ref:`Code concepts <code-concepts>` •
-  :ref:`The Launchpad PPA <the-launchpad-ppa>` •
   :ref:`Navigating the tree <navigating-the-tree>` •
   :ref:`Launchpad pip integration <launchpad-pip-integration>` •
   :ref:`Launchpad installation details <launchpad-installation-details>` •
@@ -86,7 +87,6 @@ build farm, git/code hosting, mail services, and packaging pipelines.
   :ref:`Automatic translations tarball exports <automatic-translations-export>` •
   :ref:`Mirror prober <mirror-prober-reference>` •
   :ref:`Ubuntu mirrors index <ubuntu-mirrors-index>` •
-  :ref:`Malone <malone>`
 * **Mail services**:
   :ref:`Launchpad public mailing lists archives <mailing-lists-archives>` •
   :ref:`Launchpad and email <email-reference>` •
@@ -186,7 +186,8 @@ Python conventions.
   :ref:`Python style guide <python-style-guide>` •
   :ref:`XXX policy <xxx-policy>` •
   :ref:`Assertions in Launchpad <assertions-in-launchpad>` •
-  :ref:`Launchpad permissions <launchpad-permissions>`
+  :ref:`Launchpad permissions <launchpad-permissions>` •
+  :ref:`About Launchpad security <about-launchpad-security>`
 * **Process & infrastructure**:
   :ref:`Bug triage process background <bug-triage-process-background>` •
   :ref:`Charm development <charm-development>` •
