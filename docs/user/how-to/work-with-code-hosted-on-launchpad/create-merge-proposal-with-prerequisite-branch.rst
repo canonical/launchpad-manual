@@ -81,11 +81,10 @@ You can also verify this using the API:
     {'some_file.py': (12, 0)}
 
 Only files changed in the second branch are returned, and the line counts for
-what was added and what was removed only counts changes in the dependent branch.
+what was added and what was removed only counts changes in the second branch.
 
 Launchpad also links your proposal from the prerequisite branch's page as a
-dependent landing. The link remains until your proposal reaches a final state
-(for example, merged or rejected).
+dependent landing.
 
 .. code-block:: python
 
