@@ -40,28 +40,6 @@ features, and a tour of a standard Launchpad page.
   :ref:`Bug watches <monitoring-bugs-in-other-bug-trackers>` •
   :ref:`Bug branch linking <linking-bugs-to-dedicated-branches>`
 
-Accounts and access
-~~~~~~~~~~~~~~~~~~~
-
-Set up and secure your Launchpad identity by creating an account and adding
-SSH and OpenPGP keys. Signing in to other sites, understand how your
-contributions are tracked and how to manage mail from Launchpad.
-
-* **Manage your account**:
-  :ref:`Create and personalize your account <create-and-personalise-your-launchpad-account>` •
-  :ref:`Manage your account <account-management>` •
-  :ref:`Merge two or more accounts <merging-accounts>` •
-  :ref:`Close your account <how-to-close-account>`
-* **Keys and sign-in**:
-  :ref:`Import your SSH key <import-your-ssh-keys>` •
-  :ref:`Verify Launchpad's SSH fingerprints <ssh-fingerprints>` •
-  :ref:`Import an OpenPGP key <import-an-openpgp-key>`
-* **Understand your account**:
-  :ref:`What can you do with a Launchpad account? <your-launchpad-account>` •
-  :ref:`Account karma <your-account-karma>` •
-  :ref:`Rationale headers in email <rationale-headers-in-email>` •
-  :ref:`Troubleshoot your account <ref-troubleshooting>`
-
 Projects and code hosting
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -79,7 +57,7 @@ how code hosting, imports, and continuous integration fit together.
   :ref:`Create and manage a merge proposal <create-and-manage-a-merge-proposal>` •
   :ref:`Code imports <code-imports>` •
   :ref:`Branch privacy <branch-information-types>`
-* **Manage software projects**:
+* **Create and run software projects**:
   :ref:`Project registration options <registering-your-project>` •
   :ref:`Project groups <project-groups>` •
   :ref:`Planning and recording releases <planning-and-recording-releases>` •
@@ -109,7 +87,7 @@ PPAs, as well as snaps, rocks, charms, and OCI images.
   :ref:`Install software from a PPA snapshot <use-ppa-snapshot-service>` •
   :ref:`Create a PPA <create-ppa>` •
   :ref:`Upload a package to a PPA <upload-a-package-to-a-ppa>`
-* **Manage PPAs**:
+* **Work with PPAs**:
   :ref:`Copy packages <copying-packages>` •
   :ref:`Delete packages <package-deletion>` •
   :ref:`Create a source package recipe <create-a-source-package-recipe>` •
@@ -135,7 +113,7 @@ File, subscribe to, and manage bugs across your projects. Link them to code
 changes, and integrate reports from external trackers such as Bugzilla, Trac,
 GitLab, and Mantis.
 
-* **File and manage bugs**:
+* **Work with bugs**:
   :ref:`File a bug <file-a-bug-in-launchpad>` •
   :ref:`Display bug reporting guidelines <display-bug-reporting-guidelines>` •
   :ref:`Link a bug to a branch <link-a-bug-reports-to-a-branch>` •
@@ -162,6 +140,52 @@ GitLab, and Mantis.
   :ref:`Email interface commands <email-interface-command-reference>` •
   :ref:`The Malone XMLRPC interface <malone-xmlrpc-interface>` •
   :ref:`Bug supervisor role <bug-supervisor>`
+
+API and automation
+~~~~~~~~~~~~~~~~~~
+
+Script Launchpad operations through its REST-style API and the ``launchpadlib``
+Python client, and automate external integrations with webhooks.
+
+* **Tutorial**:
+  :ref:`Get started with launchpadlib <launchpadlib-tutorial>`
+* **Use the API**:
+  :ref:`Launchpad API <launchpad-api>` •
+  :ref:`Sign web requests <sign-web-requests>` •
+  :ref:`Using launchpadlib <using-launchpadlib>` •
+  :ref:`The Python API <use-the-python-api>` •
+  :ref:`Authenticate with a text browser <auth-launchpadlib-text-browser>` •
+  :ref:`Integrate a website <authenticated-access-site-integration>` •
+  :ref:`View supported fields and methods <view-supported-fields-and-methods>`
+* **Understand the API**:
+  :ref:`The launchpadlib API <launchpadlib>` •
+  :ref:`Integrate third-party applications <application-integration>` •
+  :ref:`Launchpad web service <launchpad-web-service>`
+* **API and automation specifications**:
+  :ref:`API compatibility <launchpadlib-api-compatibility>` •
+  :ref:`Applications using the API <table-of-applications-using-the-api>` •
+  :ref:`Webhooks <webhooks>`
+
+Accounts and access
+~~~~~~~~~~~~~~~~~~~
+
+Set up and secure your Launchpad identity by creating an account and adding
+SSH and OpenPGP keys. Signing in to other sites, understand how your
+contributions are tracked and how to manage mail from Launchpad.
+
+* **Account basics**:
+  :ref:`Create and personalize your account <create-and-personalise-your-launchpad-account>` •
+  :ref:`Merge two or more accounts <merging-accounts>` •
+  :ref:`Close your account <how-to-close-account>`
+* **Keys and sign-in**:
+  :ref:`Import your SSH key <import-your-ssh-keys>` •
+  :ref:`Verify Launchpad's SSH fingerprints <ssh-fingerprints>` •
+  :ref:`Import an OpenPGP key <import-an-openpgp-key>`
+* **Understand your account**:
+  :ref:`What can you do with a Launchpad account? <your-launchpad-account>` •
+  :ref:`Account karma <your-account-karma>` •
+  :ref:`Rationale headers in email <rationale-headers-in-email>` •
+  :ref:`Troubleshoot your account <ref-troubleshooting>`
 
 Teams and community
 ~~~~~~~~~~~~~~~~~~~
@@ -216,30 +240,6 @@ from preparing your project to importing, exporting, and sharing translations.
   :ref:`PO templates <po-templates>` •
   :ref:`Translation sharing and suggestions <translation-sharing-and-suggestions>`
 
-API and automation
-~~~~~~~~~~~~~~~~~~
-
-Script Launchpad operations through its REST-style API and the ``launchpadlib``
-Python client, and automate external integrations with webhooks.
-
-* **Tutorial**:
-  :ref:`Get started with launchpadlib <launchpadlib-tutorial>`
-* **Use the API**:
-  :ref:`Launchpad API <launchpad-api>` •
-  :ref:`Sign web requests <sign-web-requests>` •
-  :ref:`Using launchpadlib <using-launchpadlib>` •
-  :ref:`The Python API <use-the-python-api>` •
-  :ref:`Authenticate with a text browser <auth-launchpadlib-text-browser>` •
-  :ref:`Integrate a website <authenticated-access-site-integration>` •
-  :ref:`View supported fields and methods <view-supported-fields-and-methods>`
-* **Understand the API**:
-  :ref:`The launchpadlib API <launchpadlib>` •
-  :ref:`Integrate third-party applications <application-integration>` •
-  :ref:`Launchpad web service <launchpad-web-service>`
-* **API and automation specifications**:
-  :ref:`API compatibility <launchpadlib-api-compatibility>` •
-  :ref:`Applications using the API <table-of-applications-using-the-api>` •
-  :ref:`Webhooks <webhooks>`
 
 How this documentation is organized
 -----------------------------------

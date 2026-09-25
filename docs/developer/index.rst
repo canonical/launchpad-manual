@@ -38,6 +38,78 @@ builds.
   :ref:`Deploy Soyuz locally <use-soyuz-locally>` •
   :ref:`Develop with Buildd <develop-with-buildd>` •
   :ref:`Use codehosting locally <use-codehosting-locally>`
+* **Dependencies reference**:
+  :ref:`The Launchpad PPA <the-launchpad-ppa>`
+
+Core concepts and architecture
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Understand the foundational design, vision, and internal architecture that
+power Launchpad. Explore the philosophical goals, values, and essential
+components that define the platform and its application flow.
+
+* **Vision & values**:
+  :ref:`What is Launchpad? <what-is-launchpad>` •
+  :ref:`Launchpad values <launchpad-values>` •
+  :ref:`Launchpad strategy <launchpad-strategy>` •
+  :ref:`About the Launchpad bug tracker <malone>`
+* **Internal components**:
+  :ref:`Navigation menus <navigation-menus>` •
+  :ref:`URL traversal <url-traversal>` •
+  :ref:`Registry <developer-registry>` •
+  :ref:`Engineering overview translations <engineering-overview-translations>`
+* **Framework & environment**:
+  :ref:`Application framework <application-framework>` •
+  :ref:`Code concepts <code-concepts>` •
+  :ref:`Navigating the tree <navigating-the-tree>` •
+  :ref:`Launchpad pip integration <launchpad-pip-integration>` •
+  :ref:`Launchpad installation details <launchpad-installation-details>` •
+  :ref:`Building live filesystems <building-live-filesystems>`
+
+Services and components
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Background services and standalone modules that support Launchpad including the
+build farm, git/code hosting, mail services, and packaging pipelines.
+
+* **Build & package pipelines**:
+  :ref:`Build farm <build-farm-reference>` •
+  :ref:`Signing service <signing-service>` •
+  :ref:`Fetch service <fetch-service>` •
+  :ref:`Buildbot <buildbot-reference>` •
+  :ref:`Ubuntu package publishing <ubuntu-package-publishing>` •
+  :ref:`Ubuntu archive publisher <ubuntu-archive-publisher>`
+* **Code & git hosting**:
+  :ref:`Git hosting <git-hosting-reference>` •
+  :ref:`Code import <code-import-reference>` •
+  :ref:`Code <code-hosting>`
+* **Infrastructure services**:
+  :ref:`Automatic translations tarball exports <automatic-translations-export>` •
+  :ref:`Mirror prober <mirror-prober-reference>` •
+  :ref:`Ubuntu mirrors index <ubuntu-mirrors-index>` •
+* **Mail services**:
+  :ref:`Launchpad public mailing lists archives <mailing-lists-archives>` •
+  :ref:`Launchpad and email <email-reference>` •
+  :ref:`Mail <launchpad-mail>`
+
+Database
+~~~~~~~~
+
+Explore Launchpad's relational database layer, its performance optimization
+strategies, and schema management practices. Understand workflows for executing
+database migrations, renaming tables, and maintaining query efficiency.
+
+* **Relational database fundamentals**:
+  :ref:`Database overview <database-overview>` •
+  :ref:`PostgreSQL and Launchpad <postgresql-and-launchpad>` •
+  :ref:`Storm migration guide <storm-migration-guide>` •
+  :ref:`Working with db-devel <working-with-db-devel>`
+* **Performance & optimization**:
+  :ref:`Database performance <database-performance>` •
+  :ref:`Database patching <database-patching>` •
+  :ref:`Preserve query count <preserve-query-count>`
+* **Schema management**:
+  :ref:`Rename a database table <rename-database-table>`
 
 Day-to-day development
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -76,7 +148,7 @@ management, and utilizing diagnostic CLI tools.
   :ref:`Create a job to publish an artifact <create_job_to_publish_artifacts>`
 * **Environment administration**:
   :ref:`Check availability of frontends <check-availability-of-frontends>` •
-  :ref:`Manage users and teams in development environments <manage-users-and-teams-in-development-environments>` •
+  :ref:`Add users and teams in development environments <manage-users-and-teams-in-development-environments>` •
   :ref:`Build and publish Launchpad development LXD images <build-and-publish-launchpad-development-lxd-images>`
 * **Bugs**:
   :ref:`Triage Launchpad project bugs <triaging-launchpad-project-bugs>` •
@@ -102,51 +174,6 @@ troubleshoot breakpoints, and integrate debugging tools into VS Code.
   :ref:`Test CLI scripts <test-cli-scripts>` •
   :ref:`Tests style guide <tests-style-guide>`
 
-Core concepts and architecture
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Understand the foundational design, vision, and internal architecture that
-power Launchpad. Explore the philosophical goals, values, and essential
-components that define the framework and its application flow.
-
-* **Vision & values**:
-  :ref:`What is Launchpad? <what-is-launchpad>` •
-  :ref:`Launchpad values <launchpad-values>` •
-  :ref:`Launchpad strategy <launchpad-strategy>` •
-  :ref:`About Launchpad security <about-launchpad-security>`
-* **Internal components**:
-  :ref:`Navigation menus <navigation-menus>` •
-  :ref:`URL traversal <url-traversal>` •
-  :ref:`Registry <developer-registry>` •
-  :ref:`Engineering overview translations <engineering-overview-translations>`
-* **Framework & environment**:
-  :ref:`Application framework <application-framework>` •
-  :ref:`Code concepts <code-concepts>` •
-  :ref:`The Launchpad PPA <the-launchpad-ppa>` •
-  :ref:`Navigating the tree <navigating-the-tree>` •
-  :ref:`Launchpad pip integration <launchpad-pip-integration>` •
-  :ref:`Launchpad installation details <launchpad-installation-details>` •
-  :ref:`Building live filesystems <building-live-filesystems>`
-
-Database
-~~~~~~~~
-
-Explore Launchpad's relational database layer, its performance optimization
-strategies, and schema management practices. Understand workflows for executing
-database migrations, renaming tables, and maintaining query efficiency.
-
-* **Relational database fundamentals**:
-  :ref:`Database overview <database-overview>` •
-  :ref:`PostgreSQL and Launchpad <postgresql-and-launchpad>` •
-  :ref:`Storm migration guide <storm-migration-guide>` •
-  :ref:`Working with db-devel <working-with-db-devel>`
-* **Performance & optimization**:
-  :ref:`Database performance <database-performance>` •
-  :ref:`Database patching <database-patching>` •
-  :ref:`Preserve query count <preserve-query-count>`
-* **Schema management**:
-  :ref:`Rename a database table <rename-database-table>`
-
 Development best practices
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -159,7 +186,8 @@ Python conventions.
   :ref:`Python style guide <python-style-guide>` •
   :ref:`XXX policy <xxx-policy>` •
   :ref:`Assertions in Launchpad <assertions-in-launchpad>` •
-  :ref:`Launchpad permissions <launchpad-permissions>`
+  :ref:`Launchpad permissions <launchpad-permissions>` •
+  :ref:`About Launchpad security <about-launchpad-security>`
 * **Process & infrastructure**:
   :ref:`Bug triage process background <bug-triage-process-background>` •
   :ref:`Charm development <charm-development>` •
@@ -188,33 +216,6 @@ testing interfaces.
   :ref:`Favicons <launchpad-favicons>` •
   :ref:`Images <launchpad-images>` •
   :ref:`CSS style guide <css-style-guide>`
-
-Services and components
-~~~~~~~~~~~~~~~~~~~~~~~
-
-Background services and standalone modules that support Launchpad including the
-build farm, git/code hosting, mail services, and packaging pipelines.
-
-* **Build & package pipelines**:
-  :ref:`Build farm <build-farm-reference>` •
-  :ref:`Signing service <signing-service>` •
-  :ref:`Fetch service <fetch-service>` •
-  :ref:`Buildbot <buildbot-reference>` •
-  :ref:`Ubuntu package publishing <ubuntu-package-publishing>` •
-  :ref:`Ubuntu archive publisher <ubuntu-archive-publisher>`
-* **Code & git hosting**:
-  :ref:`Git hosting <git-hosting-reference>` •
-  :ref:`Code import <code-import-reference>` •
-  :ref:`Code <code-hosting>`
-* **Infrastructure services**:
-  :ref:`Automatic translations tarball exports <automatic-translations-export>` •
-  :ref:`Mirror prober <mirror-prober-reference>` •
-  :ref:`Ubuntu mirrors index <ubuntu-mirrors-index>` •
-  :ref:`Malone <malone>`
-* **Mail services**:
-  :ref:`Launchpad public mailing lists archives <mailing-lists-archives>` •
-  :ref:`Launchpad and email <email-reference>` •
-  :ref:`Mail <launchpad-mail>`
 
 How this documentation is organized
 -----------------------------------
