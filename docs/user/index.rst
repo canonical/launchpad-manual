@@ -113,7 +113,7 @@ File, subscribe to, and manage bugs across your projects. Link them to code
 changes, and integrate reports from external trackers such as Bugzilla, Trac,
 GitLab, and Mantis.
 
-* **Working with bugs**:
+* **Work with bugs**:
   :ref:`File a bug <file-a-bug-in-launchpad>` •
   :ref:`Display bug reporting guidelines <display-bug-reporting-guidelines>` •
   :ref:`Link a bug to a branch <link-a-bug-reports-to-a-branch>` •
