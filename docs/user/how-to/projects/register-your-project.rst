@@ -16,9 +16,9 @@ allows you to use Launchpad to do all or any of the following:
 - import git repositories of your project's code
 - plan and manage the development of features for your project
 - offer an easy way for your project's users to post and answer support
-   questions.
+  questions.
 
-.. important::
+.. note::
 
    If you want to register a translation team or an Ubuntu Local Community
    (LoCo) team, create a Launchpad team instead of a project.
@@ -30,13 +30,13 @@ allows you to use Launchpad to do all or any of the following:
    <creating-and-running-launchpad-teams>` for information about creating
    and managing Launchpad teams.
 
-Log in to Launchpad
--------------------
+Visit the Launchpad projects page
+---------------------------------
 Log in to Launchpad and visit https://launchpad.net/projects/
 
 Register a project
 ------------------
-Select :guilabel:`Register a project` in the left-hand side menu.
+Select :guilabel:`Register a project` in the side menu.
 
 Enter project details
 ---------------------
@@ -47,19 +47,21 @@ In the first step, fill in the :guilabel:`Name`, :guilabel:`URL` and
 
 These fields have different purposes:
 
-- **Name**: The name of your project as it should appear in text.
-- **URL**: The short identifier used at the end of your project's Launchpad URL, for example, ``blueprint`` in ``https://launchpad.net/blueprint``.
-- **Summary**: A short description of your project's work.
+- **Name**: The name of your project as it should appear on the project page.
+- **URL**: The short identifier used at the end of your project's Launchpad
+  URL, for example, ``blueprint`` in ``https://launchpad.net/blueprint``.
+- **Summary**: A short description of your project.
 
-In the second step, select the appropriate license under :guilabel:`Licences`
-and confirm the project's :guilabel:`Maintainer`. You can also optionally add
+In the second step, confirm that your project isn't a duplicate of an
+existing project, then select an appropriate license under :guilabel:`Licences`
+and confirm the project's :guilabel:`Maintainer`. You can optionally add
 a :guilabel:`Description` (more detailed information about the project's
 work, goals, and how to contribute) and an external :guilabel:`Homepage URL`.
 
 Your project summary and description are used on your project's homepage. A
 portion of the summary is also shown in search results.
 
-In this screenshot of the Blueprint Tracker's project page, the summary is
+In this screenshot of Launchpad's own project page, the summary is
 highlighted with a red line and the description with a blue line.
 
 .. figure:: /user/images/launchpad-summary-description.png
@@ -70,8 +72,8 @@ Complete registration
 When you're ready, select :guilabel:`Complete Registration`. Launchpad will
 take you straight to your new project page.
 
-Once you've registered your project, you can use Launchpad to host your
-project's downloadable files. Find out more about
+You can now use Launchpad to host your project's downloadable files.
+Find out more about
 :ref:`file downloads <making-your-project-files-available-for-download>`.
 
 Identify the project group (optional)
@@ -82,11 +84,8 @@ select :guilabel:`Change details` and enter the project group's name in the
 :guilabel:`Part of` text box. If you're not sure of the project group's exact
 Launchpad name, you can also search for it.
 
-For example: Blueprint is part of the launchpad-project group.
-
-If you make this project part of a project group, the group preferences
-and decisions around bug tracking, translation and security policy will
-also apply to this project.
+For example: `Launchpad itself <https://launchpad.net/launchpad>`_ is part of
+the `Launchpad-project group <https://launchpad.net/launchpad-project>`_.
 
 .. note::
 
@@ -94,3 +93,7 @@ also apply to this project.
    Describe your project, its constituent parts and why a project group is the
    best way to organize them. Launchpad team administrators will reply to let
    you know if your request has been successful.
+
+If you make your project part of a project group, the group preferences
+and decisions around bug tracking, translation and security policy will
+also apply to your project.
