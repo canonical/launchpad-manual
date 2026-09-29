@@ -30,7 +30,10 @@ Prerequisites
 To build charms in Launchpad you need:
 
 - A :ref:`Launchpad account <create-and-personalise-your-launchpad-account>`
-- A Git repository with the files needed for your charm, including a charmcraft.yaml file. If you don't have one, follow `Charmcraft's tutorials <https://documentation.ubuntu.com/charmcraft/stable/tutorial/>`_ to create a charm from scratch, and push it to Launchpad:
+- A Git repository with the files needed for your charm, including a ``charmcraft.yaml``
+  file. If you don't have one, follow `Charmcraft's tutorials <https://documentation.ubuntu.com/charmcraft/stable/tutorial/>`_
+  or `Ops' tutorials <https://canonical.com/juju/docs/ops/latest/tutorial/>`_
+  to create a charm from scratch, and push it to Launchpad:
 
 .. code:: shell
         

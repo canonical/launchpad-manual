@@ -18,7 +18,7 @@ In both cases, the changes are deployed without altering the running appserver
 code, so each change must be compatible with the existing live code. This means
 that, before landing a database patch, you may need to land code first so that
 everything runs both with and without the patch applied. For the end-to-end
-workflow, see :ref:`database-schema-changes-process`.
+workflow, see :ref:`create-a-db-patch`.
 
 Cold schema changes  are landed on ``db-devel`` and hot ones on ``devel``. All
 schema changes must land without appserver code changes, although test changes

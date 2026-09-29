@@ -7,13 +7,26 @@
 Release Notes
 =============
 
+September 2026
+++++++++++++++
+
+11 September
+
+- Launchpad now sets the ``noudeb`` and ``derivative.ubuntu`` build profiles on ``sbuild`` during a deb build. 
+  More context: https://bugs.launchpad.net/launchpad-buildd/+bug/2166467 
+  The changes are rolled out on the ``268~803~ubuntu24.04.1`` buildd version
+- Bug Fix `#2155115 <https://bugs.launchpad.net/launchpad/+bug/2155115>`_ : Strips trailing slash from the ``build_path`` of charm recipes to avoid internal path resolution errors. 
+- Bug Fix `#1940431 <https://bugs.launchpad.net/launchpad/+bug/1940431>`_ : Makes Edit/Delete comment buttons 
+  editable immediately after posting. 
+
+
 August 2026
 +++++++++++
 
 28 August
 
 - Allowed pin priority setting for PPA dependencies. For more information, see
-  `Launchpad Manual create a Personal Package Archive page
+  the `guide on creating a Personal Package Archive (PPA)
   <https://ubuntu.com/docs/launchpad/user/how-to/packaging/create-ppa/>`_.
 - Added ``maintained_by``, ``changed_by``, ``signed_by``, ``packageset`` and ``team``
   filters to ``Archive.getPublishedSources()``.

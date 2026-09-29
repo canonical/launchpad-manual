@@ -133,7 +133,7 @@ Creating webhooks
 You can create new webhooks by visiting a supported object in the
 Launchpad web UI and following the "Manage webhooks" link, or by using
 the ``newWebhook`` method on one of those objects via the 
-:ref:`Launchpad API <launchpad-web-services-api>`.
+:ref:`Launchpad API <launchpad-api>`.
 
 Authentication
 --------------

@@ -49,7 +49,7 @@ current.
 - :ref:`Fix bugs <fixing-bugs>`
 - :ref:`Contribute changes <contributing-changes>`
 - :ref:`Use an updated dependency <use-updated-dependency>`
-- :ref:`Database schema changes process <database-schema-changes-process>`
+- :ref:`Create a database patch <create-a-db-patch>`
 - :ref:`Apply database schema changes <apply-database-schema-changes>`
 - :ref:`Import an Ubuntu package <import-ubuntu-package>`
 

@@ -17,7 +17,7 @@ user/BugExpiry	user/reference/bugs/bug-expiry/
 user/Legal/ProjectLicensing	user/reference/launchpad-and-community/legal/project-licenses/
 user/CommercialHosting	user/reference/proprietary-hosting/
 user/reference/consumer-hosting/	user/reference/proprietary-hosting/
-user/API/	user/how-to/launchpad-api/
+user/API/	user/explanation/launchpad-api/
 user/Packaging/UploadErrors.	user/explanation/packaging/package-upload-errors/
 user/Packaging/PPA/Uploading	user/how-to/packaging/ppa-package-upload/
 user/Feeds	user
@@ -90,14 +90,14 @@ user/Blueprint	user/explanation/feature-highlights/blueprints/
 user/API/launchpadlib/	user/how-to/launchpadlib/using-launchpadlib/
 user/API/webhooks user/reference/webhooks/
 user/how-to/launchpad-api/webhooks/	user/reference/webhooks/
-user/API	user/how-to/launchpad-api/
+user/API	user/explanation/launchpad-api/
 user/AnswerTrackerDocumentation	user/explanation/answers/answer-tracker/
 developer/Translations/LanguagePackSchedule developer/reference/services/automatic-translations-export
 user/Packaging/BuilderSpecs user/reference/packaging/builder-specs/
 developer/Code/HowToUseCodehostingLocally developer/how-to/launchpad-development-tips/codehosting-locally/
 developer/DatabaseSetup developer/how-to/get-started/database-setup/
 developer/ExceptionGuidelines developer/how-to/launchpad-development-tips/exceptions/
-developer/PolicyAndProcess/DatabaseSchemaChangesProcess developer/how-to/common-development-tasks/database-schema-changes-process/
+developer/PolicyAndProcess/DatabaseSchemaChangesProcess developer/how-to/common-development-tasks/create-a-db-patch/
 developer/Soyuz/HowToUseSoyuzLocally developer/how-to/get-started/use-soyuz-locally/
 developer/Soyuz/HowToDevelopWithBuildd developer/how-to/get-started/develop-with-buildd/
 developer/LEP/FeatureFlags developer/explanation/developing-for-launchpad/feature-flags/
@@ -109,6 +109,8 @@ user/explanation/answers/offering-help/ user/how-to/community-help/
 user/explanation/feature-highlights/email-interface/ user/how-to/work-with-bugs/use-email-interface/
 user/explanation/launchpad-answers/ user/explanation/answers/asking-for-help/
 user/how-to/launchpad-api/launchpad-web/ user/explanation/launchpad-api/launchpad-web-service/
+user/how-to/launchpad-api/launchpad-web-signing/ user/how-to/launchpad-web-signing/
+user/how-to/launchpad-api/index/ user/explanation/launchpad-api/
 user/YourAccount/NewAccount user/how-to/account-management/create-account
 developer/how-to/getting developer/how-to/get-started/get-source-code/
 developer/how-to/debug-tests-with-visual-studio-code developer/how-to/debug/debug-with-visual-studio-code
@@ -117,7 +119,7 @@ user/reference/packaging/ppas/deleting-packages/ user/how-to/packaging/deleting-
 user/how-to/launchpadlib/get-started-with-lauchpadlib user/how-to/launchpadlib/using-launchpadlib
 developer/how-to/apply-schema-changes/ developer/how-to/common-development-tasks/apply-schema-changes/
 developer/how-to/contributing-changes/ developer/how-to/common-development-tasks/contributing-changes/
-developer/how-to/database-schema-changes-process/ developer/how-to/common-development-tasks/database-schema-changes-process/
+developer/how-to/database-schema-changes-process/ developer/how-to/common-development-tasks/create-a-db-patch/
 developer/how-to/fixing-bugs/ developer/how-to/common-development-tasks/fixing-bugs/
 developer/how-to/importing-an-ubuntu-package/ developer/how-to/common-development-tasks/importing-an-ubuntu-package/
 developer/how-to/use-updated-dependency/ developer/how-to/common-development-tasks/use-updated-dependency/
@@ -229,3 +231,5 @@ user/HelpText/ProjectOverview/DOAP user/
 user/HelpOnUpdating user/
 user/how-to/work-with-bazaar/create-and-publish-branches/ user/explanation/working-with-code/
 developer/how-to/porting-builders-to-newer-ubuntu-versions/ developer/
+developer/how-to/common-development-tasks/database-schema-changes-process/ developer/how-to/common-development-tasks/create-a-db-patch
+user/explanation/staging-environment/ developer/how-to/get-started/running-quickstart/

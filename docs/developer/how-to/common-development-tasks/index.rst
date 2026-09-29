@@ -14,7 +14,7 @@ through the conventions you should follow as a Launchpad developer.
    fixing-bugs
    contributing-changes
    use-updated-dependency
-   database-schema-changes-process
+   create-a-db-patch
    apply-schema-changes
    importing-an-ubuntu-package
    

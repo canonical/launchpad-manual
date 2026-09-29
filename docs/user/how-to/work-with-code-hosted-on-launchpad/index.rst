@@ -21,6 +21,7 @@ bugs (including via commit messages) and associate your work with blueprints.
     Link code to bug reports and blueprints <linking-code-to-bug-reports-and-blueprints>
     Create and maintain a personal branch in Launchpad <create-and-maintain-personal-branch>
     Create and manage a merge proposal <create-and-manage-a-merge-proposal>
+    Create a merge proposal with a prerequisite branch <create-merge-proposal-with-prerequisite-branch>
 
 To find out more about hosting repositories in Launchpad, check out our 
 detailed explanation on :ref:`hosting git repositories <hosting-git-repositories>`
