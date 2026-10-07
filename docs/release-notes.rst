@@ -10,6 +10,11 @@ Release Notes
 September 2026
 ++++++++++++++
 
+14 September
+
+- Launchpad now supports hardware bound api tokens under the Fido2 standard.
+- Hardware bound api tokens can be created and stored within the `Add hardware authenticator` tab, or through the Launchpad API.
+
 11 September
 
 - Launchpad now sets the ``noudeb`` and ``derivative.ubuntu`` build profiles on ``sbuild`` during a deb build. 
