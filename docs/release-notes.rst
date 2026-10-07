@@ -15,6 +15,8 @@ October 2026
 - Launchpad API now shows ``cve.references`` as the list of references/links for that CVE.
 - Launchpad API now shows 3 new ``bugtask`` fields: ``package_type``, ``channel`` and ``metadata``.
 - Bug tracker UI now shows a Bug Presence portlet when the bug has associated a ``BugPresence``.
+- Bug Fix `#2165957 <https://bugs.launchpad.net/launchpad/+bug/2165957>`_ : Corrects ``ArchivePermission`` viewing for anonymous and authenticated users.
+
 
 September 2026
 ++++++++++++++
