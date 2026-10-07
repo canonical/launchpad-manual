@@ -12,7 +12,7 @@ October 2026
 
 7 October
 
-- Launchpad API now shows ``cve.references`` as the list of references/links for that Cve.
+- Launchpad API now shows ``cve.references`` as the list of references/links for that CVE.
 - Launchpad API now shows 3 new ``bugtask`` fields: ``package_type``, ``channel`` and ``metadata``.
 - Bug tracker UI now shows a Bug Presence portlet when the bug has associated a ``BugPresence``.
 
