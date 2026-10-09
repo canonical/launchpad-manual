@@ -10,6 +10,11 @@ Release Notes
 October 2026
 ++++++++++++++
 
+9 October
+
+- CVE UI now shows its CVSS.
+- Vulnerability UI now shows date notice issued, date coordinated release and CVSS.
+
 7 October
 
 - Launchpad API now shows ``cve.references`` as the list of references/links for that CVE.
