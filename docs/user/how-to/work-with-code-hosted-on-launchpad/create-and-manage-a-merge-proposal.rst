@@ -101,6 +101,10 @@ based on the user interface, you could add a tag of *UI*.
 
 For an example of a review, take a look at a `code review in the Launchpad project <https://code.launchpad.net/~artemstreltsov/launchpad/+git/launchpad/+merge/500635>`_.
 
+.. note::
+   For LLM-assisted code reviews, please follow the instructions on
+   `mobot.launchpad.net <https://mobot.launchpad.net/>`_.
+
 Use the email interface
 -----------------------
 
