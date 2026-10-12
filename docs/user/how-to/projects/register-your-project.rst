@@ -21,14 +21,8 @@ allows you to use Launchpad to do all or any of the following:
 .. note::
 
    If you want to register a translation team or an Ubuntu Local Community
-   (LoCo) team, create a Launchpad team instead of a project.
-
-   For information about project translations, see
-   :doc:`Project translations <project-translations/index>`.
-
-   See :ref:`Creating and running Launchpad teams
-   <creating-and-running-launchpad-teams>` for information about creating
-   and managing Launchpad teams.
+   (LoCo) team, :ref:`create a Launchpad team <creating-and-running-launchpad-teams>`
+   instead of a project.
 
 Visit the Launchpad projects page
 ---------------------------------
