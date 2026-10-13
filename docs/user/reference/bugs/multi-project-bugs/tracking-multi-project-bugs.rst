@@ -19,6 +19,9 @@ Bugs that affect multiple communities
 
 Here's an example: https://launchpad.net/bugs/86103
 
+.. image:: ../../../images/multi-project-bugs.png
+   :alt: Bug table showing different affected communities.
+
 The screen-shot shows that this bug currently affects at least three
 communities:
 
