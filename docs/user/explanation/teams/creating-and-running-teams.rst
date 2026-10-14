@@ -141,17 +141,17 @@ have three components:
 -  **Reply address**: the prospective member's primary email address
 -  **Subject**: ``<their Launchpad system name>`` wants to join.
 
-Let's take a look at the `membership list for the Launchpad Beta Testers team <https://launchpad.net/~launchpad-beta-testers/+members>`_. As a team administrator, you'll see a pencil icon beside each member's name. This allows you to edit existing memberships and new applications.
+Let's take a look at the `membership list for the Launchpad Beta Testers team <https://launchpad.net/~launchpad-beta-testers/+members>`_.
+As a team administrator, you'll see a pencil icon beside each member's name.
+This allows you to edit existing memberships and new applications.
 
-This is Chris Jones' application.
-
-Here, Launchpad links Chris's name to his profile. A person's profile
+Launchpad links the person's name to their profile. A person's profile
 page offers you an accurate reflection of the sort of work they do in
 Launchpad. Not only does it give you the information they've written
 about themselves but it also automatically tells you which teams they're
-most active in, what sort of work they do and on which projects. If you
-still need more information, Chris's profile shows you different ways of
-getting in touch with him.
+most active in, what sort of work they do and on which projects. The profile
+can also show you different ways of getting in touch with a member (or
+prospective member) if you need more information from them.
 
 Whether you choose to accept or reject a membership application,
 Launchpad will inform the prospective member and all the team's
