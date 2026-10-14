@@ -1,5 +1,5 @@
 .. meta::
-   :description: Understand Launchpad's XXX policy for marking code areas 
+   :description: Understand Launchpad's XXX policy for marking code areas
       requiring follow-up.
 
 .. _xxx-policy:
@@ -7,21 +7,19 @@
 XXX policy
 ==========
 
-.. include:: ../../../includes/important_not_revised.rst
-
 Policy statement
 ----------------
 
 1. We put "XXX" in our code in a specific format to denote areas
    requiring follow up.
 
-   * Python
+   - Python
 
      .. code:: python
 
         # XXX: SteveAlexander YYYY-MM-DD bug=NNNN: Comment here.
 
-   * TAL
+   - TAL
 
      .. code:: xml
 
@@ -34,11 +32,11 @@ Policy statement
      (See also `bug 120005 <http://launchpad.net/bugs/120005>`__, "Page
      template comment syntax is too verbose".)
 
-   *  Consider filing a bug or spec for an XXX.
-   *  Our current tools use the following regex (XXX:?|TODO|FIXME) which
-      means XXX will be found even if it does not have a colon.
-   *  TODO comments are permitted in the same format.
-   *  FIXME items should be listed as XXX.
+   - Consider filing a bug or spec for an XXX.
+   - Our current tools use the following regex (XXX:?|TODO|FIXME) which
+     means XXX will be found even if it does not have a colon.
+   - TODO comments are permitted in the same format.
+   - FIXME items should be listed as XXX.
 
 
 2. Reviewers will not approve code that does not follow this format.
@@ -55,13 +53,13 @@ our code which may need further attention.
 Principles
 ----------
 
--  Each XXX is an indicator of tech debt (not the debt itself)
--  We must strive to eliminate tech debt
--  Marking existing code that ought to be cleaned with an XXX is good
--  Actually cleaning up code is best
+- Each XXX is an indicator of tech debt (not the debt itself)
+- We must strive to eliminate tech debt
+- Marking existing code that ought to be cleaned with an XXX is good
+- Actually cleaning up code is best
 
 Scope
 -----
 
--  Affects: All Launchpad Code
--  Term: Permanent
+- Affects: All Launchpad Code
+- Term: Permanent
