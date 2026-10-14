@@ -28,8 +28,6 @@ here are the latest questions for Ubuntu:
 
 https://answers.launchpad.net/ubuntu
 
-And here's a snapshot of those at the time of writing:
-
 Note that some of the questions are general "Ubuntu" questions, and
 others are focused on the use of a specific package.
 
@@ -38,8 +36,7 @@ Answer contacts
 
 There's no joy in posting questions into a vacuum. Launchpad lets
 members of your community become "answer contacts", who are notified
-each time a new question is asked. Here are some of the answer contacts
-for Ubuntu:
+each time a new question is asked.
 
 In the case of Ubuntu, you can become an answer contact for any package,
 or for the distribution as a whole. This lets people focus on the areas
@@ -86,15 +83,12 @@ which answer was the one that solved his problem. Launchpad then
 displays that answer more prominently so as to help the next user who
 has the same problem.
 
-Here's an example of part of a page with the best answer highlighted:
-
 An incremental knowledge base
 -----------------------------
 
 When a user asks a question, they will see a list of similar questions
-that have previously been answered:
-
-Each answered question builds the knowledge base for your project.
+that have previously been answered. Therefore, each answered question builds
+the knowledge base for your project.
 
 Escalation to developers
 ------------------------
