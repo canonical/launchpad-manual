@@ -39,13 +39,9 @@ stable version" and recommended for new users, and a trunk which
 represents the current line of active development and is the source of
 snapshot test releases for the next stable version.
 
-Take a look at the Zope3 project: https://launchpad.net/zope3
+For example see the :guilabel:`Series and milestones` section of the
+Zope3 project: https://launchpad.net/zope3.
 
-The stable and trunk series are shown in the "Timeline" section of the
-page:
-
-The trunk series here is identified with the words "Current development
-focus".
 
 Naming series
 -------------
