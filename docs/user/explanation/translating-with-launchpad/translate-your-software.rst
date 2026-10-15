@@ -148,8 +148,8 @@ Example:
 ::
 
    Original: <menuchoice><guimenu>Applications</guimenu><guisubmenu>Multimedia</guisubmenu><guimenuitem>Movie Player</guimenuitem></menuchoice>
-   Correct: <menuchoice><guimenu>Apliaciones</guimenu><guisubmenu>Multimedia</guisubmenu><guimenuitem>Reproductor de películas</guimenuitem>
-   Wrong: <menuchoice><guimenu>Apliaciones</guimenu><guisubmenu>Multimedia</guisubmenu>Reproductor de <guimenuitem>películas</guimenuitem>
+   Correct: <menuchoice><guimenu>Aplicaciones</guimenu><guisubmenu>Multimedia</guisubmenu><guimenuitem>Reproductor de películas</guimenuitem></menuchoice>
+   Wrong: <menuchoice><guimenu>Aplicaciones</guimenu><guisubmenu>Multimedia</guisubmenu>Reproductor de <guimenuitem>películas</guimenuitem></menuchoice>
 
 What should not be translated
 -----------------------------
@@ -190,7 +190,7 @@ Examples:
 Formatting/XML tags
 ~~~~~~~~~~~~~~~~~~~
 
-You may see HTML/XML tags, such as , used to format text in a string.
+You may see HTML/XML tags, such as ``<strong>``, used to format text in a string.
 Copy these tags exactly as you find them and apply them to the relevant
 part of the text, remembering to close the tags as appropriate. You may
 also see other tags, such as XML, and should treat them the same way.
@@ -401,38 +401,38 @@ Below you will find a set of common practices for running a team
 
 -  Define a procedure for accepting new team members.
 
-      -  The acceptance level may vary according to the percentage of
-         already finished translations. For languages with few
-         translators and translations already done team acceptance could
-         be lower than in the case of a language with many translators,
-         translations made and the presence of GTP, LibreOffice, etc
-         upstream translation projects.
-      -  Before accepting a member you may ask him/her to provide some
-         translation. If the translations are great you may accept the
-         new member. Otherwise giving feedback about why the translation
-         are not good is a great help. Try to use a forum, mailinglist
-         or IRC channel for giving feedback to potential new members.
+   -  The acceptance level may vary according to the percentage of
+      already finished translations. For languages with few
+      translators and translations already done team acceptance could
+      be lower than in the case of a language with many translators,
+      translations made and the presence of GTP, LibreOffice, etc
+      upstream translation projects.
+   -  Before accepting a member you may ask him/her to provide some
+      translation. If the translations are great you may accept the
+      new member. Otherwise giving feedback about why the translation
+      are not good is a great help. Try to use a forum, mailinglist
+      or IRC channel for giving feedback to potential new members.
 
 -  Create a webpage/wikipage for the translations guide. This guide
    should contain:
 
-      -  First rule: "If a translation does not make sense for you /
-         your grandmother, definitely it is wrong!".
-      -  Second rule: "Make your translation useful and adapt to the
-         context. Don't follow always the original text". Like for
-         example "Tile children" may sound funny in many languages so
-         try "Arrange windows as tile". The original text is not always
-         the correct one.
-      -  a common terminology or a link to a common terminology dictionary or glossary.
-         You can also install the glossary used by Romanian teams.(`here is the code <https://sourceforge.net/p/diacritice/code/HEAD/tree/trunk/>`__)
-      -  information about what should be translated and what not
-      -  specific rules for translating into your language
-      -  a list of frequent errors.
-      -  explaining the plural form for your language and how to use
-         them
-      -  how you should translate menu accelerators / shortcuts
-      -  inform the translators about other translation project and how
-         we should cooperate and work together
+   -  First rule: "If a translation does not make sense for you /
+      your grandmother, definitely it is wrong!".
+   -  Second rule: "Make your translation useful and adapt to the
+      context. Don't follow always the original text". Like for
+      example "Tile children" may sound funny in many languages so
+      try "Arrange windows as tile". The original text is not always
+      the correct one.
+   -  a common terminology or a link to a common terminology dictionary or glossary.
+      You can also install the glossary used by Romanian teams.(`here is the code <https://sourceforge.net/p/diacritice/code/HEAD/tree/trunk/>`__)
+   -  information about what should be translated and what not
+   -  specific rules for translating into your language
+   -  a list of frequent errors.
+   -  explaining the plural form for your language and how to use
+      them
+   -  how you should translate menu accelerators / shortcuts
+   -  inform the translators about other translation project and how
+      we should cooperate and work together
 
 -  Make sure you have a good communication channel for all members of
    the team or subteam. Try to reach all communication types:

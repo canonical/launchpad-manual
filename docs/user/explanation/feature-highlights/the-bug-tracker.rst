@@ -11,7 +11,7 @@ The Launchpad bug tracker
 This document describes the extra data interface to
 the bug tracker in Launchpad that can be used by bug reporting tools
 such as `Apport <https://launchpad.net/Apport>`__. If you have questions
-or comments about this document, please `reach out to us <get-help>`.
+or comments about this document, please :ref:`reach out to us <get-help>`.
 
 Overview
 --------
@@ -43,7 +43,8 @@ shown in `bug
 Here, the bug report in Launchpad is about Ubuntu's package of the Gnome
 Panel. However, there's also a link to the bug as tracked in Gnome's
 Bugzilla, along with its status there. This lets the Ubuntu desktop bugs
-team monitor the progress upstream and implement their fix when it
+team monitor the progress upstream and implement their fix when it becomes
+available.
 
 The bug tracker provides an extra interface for filing bugs. By
 uploading a specifically formatted file to Launchpad prior to filing a
@@ -102,8 +103,8 @@ to the bug description after it is filed.
 Additional parts that have a Content-Disposition of ``inline`` will
 become comments for the filed bug.
 
-Parts with a Content-Disposition of ``attachment`` will have have their
-contents added as attachments to the filed bug.
+Parts with a Content-Disposition of ``attachment`` will have their contents
+added as attachments to the filed bug.
 
 Sample file
 ~~~~~~~~~~~
@@ -233,8 +234,8 @@ productive, especially when combined with distributed revision control
 which lets developers work entirely offline while still maintaining
 version control integrity.
 
-See UsingMaloneEmail for details of how you can use email to triage and
-manage bugs.
+See :ref:`Using email interface <use-the-launchpad-email-interface>` for
+details of how you can use email to triage and manage bugs.
 
 Integration with existing bug trackers
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -344,7 +345,7 @@ Some features of the Launchpad bug tracker are not yet complete, but
 should be in place by the end of the year. I will discuss three of them
 in particular. The list of planned features itself can be found here:
 
-     https://launchpad.net/products/malone/+specs
+https://launchpad.net/products/malone/+specs
 
 Branch integration
 ~~~~~~~~~~~~~~~~~~
@@ -369,8 +370,9 @@ manage your bugs with that in mind.
 Launchpad has a general mechanism to describe the overall structure of
 the project:
 
-- The **product** is the overall application or library. For example,
-  :literal:`you will find products registered in Launchpad for Python, Zope, PyCrypto, Firefox, etc.`
+- The **product** is the overall application or library. For example, you will
+  find products registered in Launchpad for Python, Zope, PyCrypto, Firefox,
+  etc.
 
 - A **series** is a "series of releases" and generally represents a:
 
@@ -434,25 +436,21 @@ the web interface, programmatically. We are committed to making any data
 you can read or write through the web interface also accessible via
 XML-RPC. This will have several benefits:
 
--  **No lock in.** You can extract all of your data from Launchpad
+- **No lock in.** You can extract all of your data from Launchpad without
+  having to resort to screen scraping.
 
-``without having to resort to screen scraping.``
+- **Integration with other systems.** To the extent that you have your own
+  infrastructure for managing some of the things that Launchpad tracks, you can
+  integrate that with Launchpad behind the scenes.
 
--  **Integration with other systems.** To the extent that you have your
+- **Improved reporting and display.** If you prefer to list items in a
+  different way, or to integrate listings of bugs etc on your web site rather
+  than point folks at the relevant pages on Launchpad, you can easily do so
+  while using Launchpad as a safe repository of the data.
 
-| ``own infrastructure for managing some of the things that Launchpad tracks,``
-| ``you can integrate that with Launchpad behind the scenes.``
-
--  **Improved reporting and display.** If you prefer to list items in a
-
-| ``different way, or to integrate listings of bugs etc on your web site rather``
-| ``than point folks at the relevant pages on Launchpad, you can easily do so``
-| ``while using Launchpad as a safe repository of the data.``
-
--  **Custom processes.** If you want to add additional data, say, to the
-
-| ``bug tracker you can design your own bug reporting tool, capture the``
-| ``relevant data and then store it all conveniently in Launchpad.``
+- **Custom processes.** If you want to add additional data, say, to the bug
+  tracker you can design your own bug reporting tool, capture the relevant data
+  and then store it all conveniently in Launchpad.
 
 The bug tracker is a primary focus area for us w.r.t. the XML-RPC
 interfaces. We expect the first version of these to be available before

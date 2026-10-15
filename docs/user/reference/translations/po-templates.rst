@@ -8,9 +8,9 @@ PO templates
 
 .. include:: /includes/important_not_revised_help.rst
 
-Some people may be confused by the term PO *Template* ''' because in
-traditional Gettext environments, they have only worked with '''PO
-*Files* '''. Here is a short explanation of the term.
+Some people may be confused by the term PO *Template* because in
+traditional Gettext environments, they have only worked with PO *Files*.
+Here is a short explanation of the term.
 
 In gettext
 ----------
@@ -25,11 +25,11 @@ like this in your po directory:
 
    $ xgettext -o eo.po -D ../src
 
-Then you started translating by filling out *eo.po*. Actually, this is
+Then you started translating by filling out ``eo.po``. Actually, this is
 where you just created a PO template file but you did not save it. The
 correct approach is to have the template generated once during build and
 start new translations by copying the template file. The gettext package
-provides the *msginit* utility to do the copying and adjust header
+provides the msginit utility to do the copying and adjust header
 information in the newly created PO file.
 
 ::
@@ -53,7 +53,7 @@ the import, all the English strings from the template are available in
 Launchpad for being translated. When a translator starts translating your
 project into their language, for which there were no translations before,
 a new (virtual) PO file is created in the Launchpad database. It becomes a
-real PO file when you chose to download it.
+real PO file when you choose to download it.
 
 Please make sure to keep the PO template in Launchpad current by importing 
 updated versions of the file you create from your source code.
