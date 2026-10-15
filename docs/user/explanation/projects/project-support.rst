@@ -59,18 +59,14 @@ Once you found a question on which you want to provide help, click on it
 to access the question page. There are two kinds of replies you can do
 on a question.
 
-1. First, if it is not clear from the description what the problem is,
+#. First, if it is not clear from the description what the problem is,
    or if it doesn't contain enough context to allow you to diagnose, you
    should ask the submitter for more information. Enter your questions
    in the message box at the bottom of the screen and click on the ``Add
    Information Request``. The person who asked the question will receive
    a notification with your request for more information.
 
-.. raw:: html
-
-   <!-- end list -->
-
-1. Sometimes you just know from the start how the user's problem could
+#. Sometimes you just know from the start how the user's problem could
    be solved. When this happens, you just enter the answer in the
    message box and click the ``Add Answer`` button. The user will receive
    an email notification with your answer. The question status will be
@@ -97,12 +93,12 @@ action menu.
 If you choose not to subscribe to the question, you can still see that
 feedback was provided by looking at the ``Needs Attention`` report. To
 access that report, go to your Launchpad home page and click on the
-'Answers' tab . You will find the link to the ``Needs Attention`` report
+``Answers`` tab . You will find the link to the ``Needs Attention`` report
 in the action menu.
 
-``This report lists all the questions on which you provided an answer
-or a request for more information that received a reply.
-To read the reply, you will need to visit the question's page.``
+This report lists all the questions on which you provided an answer or a
+request for more information that received a reply. To read the reply, you will
+need to visit the question's page.
 
 Registering as an answer contact
 --------------------------------
@@ -153,14 +149,13 @@ changes.)
 If an existing bug report is related to the question, you can record the
 link by using the ``Link existing bug`` link in the action menu on the
 related question. You simply enter the bug report number and click
-'Link' to record the link.
+``Link`` to record the link.
 
 If there is no existing bug report, you can create a new bug at the same
 time as recording the link by using the ``Create bug report`` link in the
 action menu on the related question. You will then have to enter a
-summary of the bug report. The summary should describe the the software
-defect in some details. The bug report description defaults to the
-question's description, but it is a good idea to edit it to summarize
-the problem better. You then click on the ``Create Bug Report`` button to
-finish the process. The created bug report will be linked to the
-original question.
+summary of the bug report. The summary should describe the software defect in
+some details. The bug report description defaults to the question's description,
+but it is a good idea to edit it to summarize the problem better. You then
+click on the ``Create Bug Report`` button to finish the process. The created
+bug report will be linked to the original question.

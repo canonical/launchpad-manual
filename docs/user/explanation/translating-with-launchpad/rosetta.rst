@@ -12,10 +12,7 @@ Using Rosetta
 Rosetta is an easy-to-use web interface allowing translation of many
 software projects.
 
-Concepts
---------
-
-FIXME: describe templates, products, distros,...
+.. FIXME: describe templates, products, distros,...
 
 Web experience
 --------------
@@ -29,7 +26,7 @@ web browser.
 This means Rosetta runs from any operating system, and you don't need to
 install anything on your existing system.
 
-FIXME: describe how translation works (with lots of screenshots)
+.. FIXME: describe how translation works (with lots of screenshots)
 
 Fast updates
 ------------
