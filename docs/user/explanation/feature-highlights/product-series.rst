@@ -54,12 +54,11 @@ There's some flexibility in the way projects name and organise
 themselves. For example, in the GNOME project, the "development trunk"
 is a series with an "odd" version number, such as 2.17. When it is ready
 for release, it is branched with an "even" version number, such as 2.18.
-Once GNOME make the stable release, the branch it to create 2.19, the
+Once GNOME make the stable release, they branch it to create 2.19, the
 new "trunk".
 
-Sometimes, projects also call the trunk "MAIN", a term from the days of
-CVS. In the Zope3 example above, the 3.4 series was the trunk at the
-time of writing.
+"Main" has also become a common name for the main development branch. In the
+Zope3 example above, the 3.4 series was the trunk at the time of writing.
 
 For convention, we encourage projects to call their development focus
 "trunk" and leave it as the same branch over time. When creating a new
