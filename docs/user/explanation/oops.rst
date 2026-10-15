@@ -19,9 +19,10 @@ What does an OOPS look like?
 
 In the web UI, it will look something like the image below.
 
+.. image:: ../images/oops.png
 
-The red highlight is around the OOPS ID -- that is the code that lets us
-look up the error and see what went wrong.
+The error ID which starts with ``OOPS-`` is the code that lets us look up the
+error and see what went wrong.
 
 In response to a command email, it will be a plain text message with an
 OOPS id.

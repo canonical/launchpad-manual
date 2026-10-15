@@ -34,11 +34,8 @@ bugs natural and effortless.
 At the top of each bug report in Launchpad is a table that shows you
 which communities are tracking that bug.
 
-\||<tablestyle="font-size: 0.8em; background:#F1F1ED; margin: 1em 1em
-1em 0;" style="padding:0.5em;">|\|
-
-To tell Launchpad that the bug also affects your project, use the link
-directly below the table. It's a simple as that.
+If another project or distribution/package is also affected by a bug, use the
+links below the table on the bug report page to tell Launchpad.
 
 As soon as Launchpad knows that you also want to track that bug, the
 report shows up just like any other bug reported against your project.
@@ -59,10 +56,10 @@ Just as you can share a bug report with other projects inside Launchpad,
 you can also monitor how other projects are tracking that same bug
 outside of Launchpad.
 
-Let's take a look at `an
-example <https://bugs.launchpad.net/ubuntu/+source/mozilla-thunderbird/+bug/24220>`__.
+Let's take a look at this
+`Thunderbird bug example <https://bugs.launchpad.net/ubuntu/+source/mozilla-thunderbird/+bug/24220>`__.
 
-Here, the bug is tracked directly in Launchpad by the maintainers of the
+The bug is tracked directly in Launchpad by the maintainers of the
 Ubuntu Mozilla Thunderbird package. However, Launchpad is also importing
 status information about the bug from two external bug trackers: Debian
 BTS, for the Debian Thunderbird package, and Bugzilla for the upstream

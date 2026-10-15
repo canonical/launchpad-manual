@@ -31,7 +31,7 @@ Most pages in Launchpad look something like this:
 
 If you want to see this page in Launchpad itself, you'll find it at:
 
-    https://launchpad.net/bzr
+https://launchpad.net/bzr
 
 That tells you where you are in Launchpad, what you can do there, and
 what other applications might be relevant here. Let's highlight a couple

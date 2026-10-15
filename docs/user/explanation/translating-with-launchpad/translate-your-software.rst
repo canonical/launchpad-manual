@@ -284,7 +284,10 @@ that translators can easily see which translations are done and which
 ones might need some work.
 
 Here is an example of how statistics are shown for a translation
-template in a particular language in Ubuntu:
+template in a particular language:
+
+.. image:: ../../images/translation-statistics.png
+
 
 Color meanings in the status column
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

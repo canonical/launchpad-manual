@@ -9,7 +9,9 @@ Monitoring bugs in other bug trackers
 
 .. include:: /includes/important_not_revised_help.rst
 
-Look at the "Assigned To" column for `bug #86103 <https://launchpad.net/bugs/86103>`_ again:
+Look at the "Assigned To" column for `bug #86103 <https://launchpad.net/bugs/86103>`_ :
+
+.. image:: ../../images/multi-project-bugs.png
 
 The top two rows don't have a "person" assigned to fix them. Instead,
 because they refer to instances of the bug in external communities, they

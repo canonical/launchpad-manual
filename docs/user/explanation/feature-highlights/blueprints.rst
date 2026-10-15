@@ -34,7 +34,6 @@ blueprints, in various states of completion or discussion:
 
 https://blueprints.launchpad.net/ubuntu
 
-At the time of writing, the most "important" of these blueprints were:
 
 Blueprint status and priority
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

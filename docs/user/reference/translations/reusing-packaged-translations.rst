@@ -15,7 +15,7 @@ projects, Launchpad leaves the responsibility with the translator to
 make sure they are not infringing on copyright terms.
 
 The guide here should help you decide if you can legally reuse a
-suggestion you are seeing marked with a legal warning icon ().
+suggestion you are seeing marked with a legal warning icon (⚠️).
 
 When can you simply reuse a translation?
 ----------------------------------------

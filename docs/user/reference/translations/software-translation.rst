@@ -36,15 +36,17 @@ When software is ready to be translated, it results in one or more
 template has been translated very easily. For example, here is the
 status of the Gnome Terminal translation in Ubuntu's 6.06 LTS release:
 
-    https://translations.launchpad.net/ubuntu/dapper/+source/gnome-terminal/+pots/gnome-terminal
+https://translations.launchpad.net/ubuntu/dapper/+source/gnome-terminal/+pots/gnome-terminal
 
 And part of that page, at the time of writing looked like this:
 
+.. image:: ../../images/translation-status.png
+
 You can immediately tell which languages are well-translated (green) and
-which are not. The purple bars represent new translations, added to this
-system since the package itself was built. It's also possible to see
-when someone last added to the translation of this template in any
-particular language, and who that person was.
+which are not. New translations added to this system after the package itself
+was built will be represented by purple bars. It's also possible to see when
+someone last added to the translation of this template in any particular
+language, and who that person was.
 
 Contributing translations
 -------------------------
@@ -54,6 +56,8 @@ translation is presented as a web form, with the English and current
 translation as well as suggestions based on other known translations
 prominently displayed. Here's an example of the form to translate a
 single message in an application (Gnome Terminal again):
+
+.. image:: ../../images/translation-example.png
 
 Notice that the translator has included the relevant HTML display
 markup. The translation is substituted in the interface for the English
@@ -83,15 +87,12 @@ This mean that some translators can focus on expanding the translation
 coverage of your stable release, while others work on the cutting edge.
 
 For example, here you can see the work being done to translate
-Wengo``Phone. By default, the "trunk" is shown because the Wengo``Phone
+``WengoPhone``. By default, the ``2.2`` series is shown because the ``WengoPhone``
 developers have identified that as the most important series to be
 translated, at the time of writing. But it is also possible to translate
-Wengo``Phone 2.1:
+``WengoPhone 2.1``:
 
- https://translations.launchpad.net/wengophone/
-
-And here's a snapshot of the relevant part of the page, at the time of
-writing:
+https://translations.launchpad.net/wengophone/
 
 Translation groups
 ------------------
@@ -102,9 +103,11 @@ teams that work on Ubuntu. Of course, other people can contribute
 translations, but these are the formal teams who have the most direct
 access.
 
-    https://launchpad.net/translations/groups/ubuntu-translators
+https://launchpad.net/translations/groups/ubuntu-translators
 
 At the time of translation, the list started with these teams:
+
+.. image:: ../../images/translation-teams.png
 
 Note that each "translator" in this case is a team. They can also be
 individuals, but in our experience it is useful to create teams as soon

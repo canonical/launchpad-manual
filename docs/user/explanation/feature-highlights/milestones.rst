@@ -37,9 +37,7 @@ we get closer to that date".
 
 Here's an example, the 1.0 milestone of Inkscape:
 
-    https://launchpad.net/inkscape/+milestone/1.0
-
-At the time of writing, it looked something like this:
+https://launchpad.net/inkscape/+milestone/1.0
 
 Milestones are useful as a quick way to focus attention on a subset of
 bugs or blueprints which are important over the next week or month,

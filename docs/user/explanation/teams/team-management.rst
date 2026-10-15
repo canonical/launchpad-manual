@@ -16,9 +16,8 @@ initiatives.
 
 Let's look at a team:
 
-    https://launchpad.net/~launchpad-beta-testers/
+https://launchpad.net/~launchpad-beta-testers/
 
-Here's a snapshot of part of the page at the time of writing:
 
 Subscription policies
 ---------------------
@@ -54,18 +53,13 @@ same permissions and access to all the same goodies. Technically they
 are "indirect" members of Team B, but that makes no difference, they are
 treated exactly the same as people who joined Team B directly.
 
-Let's look at another team:
+A live example of this is the `MOTU (Masters of the Universe) <https://launchpad.net/~motu>`_
+team. This is a very important team in Ubuntu because it's the one that looks
+after the largest collection of packages. It is also where most developers
+first get recognized as full contributors to Ubuntu.
 
-    https://launchpad.net/~motu/
-
-Here is the relevant part of the screen:
-
-MOTU ("Masters of the Universe") is a very important team in Ubuntu
-because it's the one that looks after the largest collection of
-packages. It is also where most developers first get recognized as full
-contributors to Ubuntu.
-
-As a result, the MOTU team is a member of several other teams.
+As a result, the MOTU team is a member of several other teams (see the
+:guilabel:`Subteam of` section on the team page).
 Structuring things that way means that "all new Ubuntu developers"
 become members of those other teams too.
 
