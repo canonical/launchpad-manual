@@ -97,8 +97,8 @@ access that report, go to your Launchpad home page and click on the
 in the action menu.
 
 This report lists all the questions on which you provided an answer or a
-request for more information that received a reply. To read the reply, you will
-need to visit the question's page.
+request for more information that received a reply.
+To read the reply, you will need to visit the question's page.
 
 Registering as an answer contact
 --------------------------------
