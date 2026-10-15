@@ -34,8 +34,8 @@ bugs natural and effortless.
 At the top of each bug report in Launchpad is a table that shows you
 which communities are tracking that bug.
 
-To tell Launchpad that the bug also affects your project, use the link
-directly below the table. It's a simple as that.
+If another project or distribution/package is also affected by a bug, use the
+links below the table on the bug report page to tell Launchpad.
 
 As soon as Launchpad knows that you also want to track that bug, the
 report shows up just like any other bug reported against your project.
