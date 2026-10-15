@@ -53,8 +53,8 @@ our code which may need further attention.
 Principles
 ----------
 
-- Each XXX is an indicator of tech debt (not the debt itself)
-- We must strive to eliminate tech debt
+- Each XXX is an indicator of technical debt (not the debt itself)
+- We must strive to eliminate technical debt
 - Marking existing code that ought to be cleaned with an XXX is good
 - Actually cleaning up code is best
 
