@@ -37,7 +37,7 @@ Community infrastructure
    ideas for sanely naming daily builds so users can easily find your
    software
 -  `Adopt-an-Upstream
-   program <http://wiki.ubuntu.com/Upstream/Adopt>`__: Ubuntu users and
+   program <https://web.archive.org/web/20260517155438/http://wiki.ubuntu.com/Upstream/Adopt>`__: Ubuntu users and
    developers who particularly care about one upstream project
 
 Packaging

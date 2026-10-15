@@ -24,7 +24,7 @@ encounter an error with an OOPS message, see :ref:`Understanding OOPSes <what-is
 Login issues
 ------------
 
-Trouble logging into Launchpad? `Get help for the Ubuntu Single Sign-on service <https://help.ubuntu.com/community/SSO/FAQs>`_, 
+Trouble logging into Launchpad? `Get help for the Ubuntu Single Sign-on service <https://web.archive.org/web/20251101182226/https://help.ubuntu.com/community/SSO/FAQs>`_, 
 which provides the Launchpad login service.
 
 You can also check the system `status page on Mastodon <https://ubuntu.social/@launchpadstatus>`_ 

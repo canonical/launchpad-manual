@@ -74,9 +74,8 @@ a distribution package within Launchpad, you should talk to the upstream
 project and the relevant Ubuntu translations team to see where your help
 is most needed.
 
-If you choose to translate Ubuntu packages, you may find the Ubuntu
-community's `guide to translating
-Ubuntu <https://wiki.ubuntu.com/TranslatingUbuntu>`__ helpful.
+If you choose to translate Ubuntu packages, you may find `Ubuntu's translation related Answers <https://answers.launchpad.net/ubuntu/+questions?field.search_text=translations&field.sort=RELEVANCY&field.sort-empty-marker=1&field.actions.search=Search&field.language=en&field.language-empty-marker=1&field.status=OPEN&field.status=NEEDSINFO&field.status=ANSWERED&field.status=SOLVED&field.status-empty-marker=1>`_
+helpful.
 
 Where to start
 --------------
