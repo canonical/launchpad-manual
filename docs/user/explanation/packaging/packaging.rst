@@ -26,7 +26,7 @@ official packages and your own packages in your personal package archive
 
 -  :ref:`Prioritising package builds <prioritising-builds>`: find out how Launchpad calculates the priority of package builds (i.e. build scores)
 
--  `Official Ubuntu packages <https://web.archive.org/web/20260312043207/https://wiki.ubuntu.com/MOTU/GettingStarted>`_: find out about becoming an Ubuntu packager with the MOTU team
+-  `Official Ubuntu packages <https://ubuntu.com/project/docs/who-makes-ubuntu/developers/dmb-joining-MOTU/>`_: find out about becoming an Ubuntu packager with the MOTU team
 
 -  :ref:`package recipes <source-package-recipes>`: automatically assemble a package from git branches
 
