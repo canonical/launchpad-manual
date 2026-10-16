@@ -26,11 +26,11 @@ official packages and your own packages in your personal package archive
 
 -  :ref:`Prioritising package builds <prioritising-builds>`: find out how Launchpad calculates the priority of package builds (i.e. build scores)
 
--  `Official Ubuntu packages <https://wiki.ubuntu.com/MOTU/GettingStarted>`_: find out about becoming an Ubuntu packager with the MOTU team
+-  `Official Ubuntu packages <https://ubuntu.com/project/docs/who-makes-ubuntu/developers/dmb-joining-MOTU/>`_: find out about becoming an Ubuntu packager with the MOTU team
 
 -  :ref:`package recipes <source-package-recipes>`: automatically assemble a package from git branches
 
--  `Packaging binaries <https://wiki.ubuntu.com/MOTU/School/PackagingWithoutCompiling>`_: how to go about packaging software which is only available as a binary.
+-  `Packaging binaries <https://web.archive.org/web/20251109102612/https://wiki.ubuntu.com/MOTU/School/PackagingWithoutCompiling>`_: how to go about packaging software which is only available as a binary.
 
 To get started with your own source package recipes, you'll need source code in Launchpad,
 packaging information and a recipe that brings them all together.

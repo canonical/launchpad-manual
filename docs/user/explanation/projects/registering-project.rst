@@ -24,9 +24,7 @@ Types of projects you can register
 ----------------------------------
 
 You can register any free software project in Launchpad free of charge.
-To find out what we mean by "free software", take a look at our
-`licensing
-policy <http://www.ubuntu.com/community/ubuntustory/licensing>`__.
+To find out what we mean by "free software", see :ref:`project licenses <project-licenses>`.
 
 Canonical `formerly sold commercial
 subscriptions <https://answers.launchpad.net/launchpad/+faq/208>`__

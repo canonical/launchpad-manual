@@ -40,9 +40,10 @@ Help for translators
   for all legalese aspects of using the translations. 
 * Learn about :ref:`plural forms information <plural-forms-information-for-languages>`.
 * Look at the list of `Launchpad Translations FAQs in Launchpad Answers <https://answers.launchpad.net/rosetta/+faqs>`_
-* If you want to `translate Ubuntu <https://wiki.ubuntu.com/Translations/>`_\ , you can also have a look at the list of
-  `Ubuntu Translations FAQs <https://answers.launchpad.net/ubuntu-translations/+faqs>`_ in the Answers section of the
-  `Ubuntu Translations project <https://launchpad.net/ubuntu-translations>`_
+* If you want to `translate Ubuntu <https://ubuntu.com/community/docs/contribute/translation-localisation>`_ ,
+  you can also have a look at the list of
+  `Ubuntu Translations FAQs <https://answers.launchpad.net/ubuntu-translations/+faqs>`_
+  in the Answers section of the `Ubuntu Translations project <https://launchpad.net/ubuntu-translations>`_
 
 Help for projects
 -----------------

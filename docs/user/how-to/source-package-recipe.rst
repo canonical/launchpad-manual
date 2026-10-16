@@ -147,7 +147,7 @@ running the Ubuntu version that you want to test against.
 
 .. note:: 
    
-   if you want to test a specific version, see the `Ubuntu guide <http://wiki.ubuntu.com/UsingDevelopmentReleases>`_.
+   if you want to test a specific version, see the `Ubuntu guide <https://web.archive.org/web/20260520200700/https://wiki.ubuntu.com/QATeam/Testdrive>`_.
 
 Let's try it out in your terminal:
 
