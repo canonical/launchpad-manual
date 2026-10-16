@@ -39,6 +39,7 @@ code review roles, and Live Filesystems.
 - :ref:`Translation options <ref-translations>`
 - :ref:`PPAs and Builders <ref-packaging>`
 - :ref:`Roles in code reviews <roles-in-code-review>`
+- :ref:`Merge proposal workflow parameters <merge-proposal-workflow-parameters>`
 - :ref:`Live Filesystems <live-file-systems>`
 
 Bugs
@@ -85,6 +86,7 @@ and how whitespace is addressed.
    launchpadlib API compatibility <launchpadlib-api-compatibility>
    Live-file-systems <live-file-systems>
    Loggerhead <loggerhead>
+   Merge proposal workflow parameters <merge-proposal-workflow-parameters>
    Packaging <packaging/index>
    Privacy and confidentiality <privacy-and-confidentiality>
    Project groups <project-groups>
