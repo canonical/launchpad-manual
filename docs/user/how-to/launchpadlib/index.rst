@@ -21,6 +21,7 @@ knowing a lot about HTTP client programming.
    :maxdepth: 1
 
    using-launchpadlib
+   use-hardware-bound-api-tokens
    python-api
    auth-text-browser
    integrate-website
