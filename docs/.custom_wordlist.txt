@@ -252,6 +252,7 @@ ETags
 Exaile
 ExceptionGuidelines
 executables
+exfiltrate
 facetted
 faq
 fastdowntime
@@ -324,6 +325,7 @@ http
 https
 HTTPError
 hugdaylist
+hwbat
 IBranchMergeProposal
 IBranchTarget
 ICanonicalUrlData
@@ -381,6 +383,7 @@ Juju
 kcachegrind
 KCacheGrind
 keyring
+keyrings
 keypair
 kiko
 kompare
@@ -669,6 +672,7 @@ RTD
 ruleset
 runtime
 runtimes
+sandboxed
 sandboxing
 SafariWebContent
 salgado
@@ -826,6 +830,7 @@ tzinfo
 Ubuntu
 ubuntu
 ubuntustudio
+udev
 UCT
 ui
 UI

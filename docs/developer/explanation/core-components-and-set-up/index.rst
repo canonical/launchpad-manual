@@ -21,3 +21,4 @@ hosting, a bug tracker, a build farm, and a package publisher.
    running-details
    testing
    building-live-filesystems
+   hardware-bound-api-tokens
