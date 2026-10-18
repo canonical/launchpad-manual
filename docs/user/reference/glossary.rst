@@ -43,7 +43,7 @@ Glossary
 
 - **Question / Answer:** Questions and answers in Launchpad are managed by the Launchpad answer tracker that aims to track progress of a question and combine knowledge that is scattered across Launchpad.
 
-- **Rosetta:** A web-interface translation tool managed by canonical.
+- **Rosetta:** A web-interface translation tool managed by Canonical.
 
 - **Series:** Series are major lines of development that usually result in one or more releases. For example: Firefox 3 and Firefox 2. In Launchpad, they can have independent translations,how to review the commit history in a git rep bug reports, code and more. In a distribution, such as Ubuntu, it would be releases such as Jaunty, Intrepid, Hardy and so on.
 
@@ -59,7 +59,7 @@ Glossary
 
 - **Team owner:** The owner can change the team’s description and membership rules, and appoint team admins. The owner is also an administrator by default, but can choose to leave the team.
 
-- **Triage / Triaged:** Bugs are sorted into different categories based on important they are (similar to patients in a hospital's emergency department). This process of sorting is called triage.
+- **Triage / Triaged:** Bugs are sorted into different categories based on how important they are (similar to patients in a hospital's emergency department). This process of sorting is called triage.
 
 Request a definition
 --------------------
