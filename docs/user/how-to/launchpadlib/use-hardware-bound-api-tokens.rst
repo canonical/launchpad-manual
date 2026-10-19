@@ -77,7 +77,7 @@ client:
 
     grant = launchpad.issue_hardware_bound_oauth_token(
         consumer_key="hardware-client",
-        authenticator_id=authenticator.id,
+        authenticator=authenticator,
         permission="Change Anything",
     )
 
