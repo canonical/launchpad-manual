@@ -9,8 +9,7 @@ Hardware-bound API tokens
 
 **Hardware-bound API tokens** tie a user's Launchpad API access to a USB FIDO2
 security key. This page explains the design, the cryptographic flow, and the
-threat model. Internally this feature is sometimes called *hwbat*; this page
-uses the full name.
+threat model.
 
 Why hardware binding
 --------------------
@@ -34,11 +33,11 @@ The feature is built from three separate steps:
 #. **Registration** associates the FIDO2 security key with a Launchpad account.
    This is a WebAuthn registration ceremony, exposed as
    ``beginWebAuthnRegistration`` and ``completeWebAuthnRegistration`` on the
-   person, and available from both the website and launchpadlib's
+   person, and available from both the Launchpad API and launchpadlib's
    ``register_hardware_key``.
 #. **Grant issuance** mints a long-lived refresh grant bound to a registered
-   key, through ``issueHardwareBoundOAuthToken``. The grant is limited to 365
-   days.
+   key, through ``issueHardwareBoundOAuthToken``. The grant is by default
+   limited to 365 days, and can be adjusted by the user.
 #. **Minting** exchanges the grant for a short-lived access token, which
    requires a WebAuthn assertion from the bound key.
 
@@ -48,13 +47,6 @@ The challenge-response flow
 Token minting is a WebAuthn assertion ceremony. The client proves possession of
 the key by signing a Launchpad-issued challenge; Launchpad verifies the
 signature against the public key registered for that authenticator.
-
-.. note::
-
-   The original specification described the proof as a SHA-256 signature of the
-   challenge and the refresh token. The implemented design instead uses a
-   standard WebAuthn assertion, so that it can reuse the same FIDO2 machinery as
-   registration and benefit from the browser-tested security model.
 
 Assuming the user has registered a key and issued a grant:
 

@@ -10,10 +10,10 @@ Use hardware-bound API tokens
 **Hardware-bound API tokens** let you tie your Launchpad API access to a USB
 FIDO2 security key, such as a YubiKey. Instead of storing a usable secret on
 disk or in your keyring, launchpadlib stores a long-lived OAuth *refresh grant*
-that is useless on its own: it has to be signed by your registered security key
-to mint a short-lived access token. This protects your stored credentials
-against opportunistic theft, for example by supply-chain scanners or malware
-that reads files and keyrings.
+that is useless on its own: exchanging it for a short-lived access token
+requires a WebAuthn assertion from your registered security key. This protects
+your stored credentials against opportunistic theft, for example by
+supply-chain scanners or malware that reads files and keyrings.
 
 .. note::
 
@@ -156,7 +156,7 @@ Where grants are stored
 Grants are stored in the system keyring by default, and only in memory under
 ``sudo``. To store the grant in a file instead, pass ``credentials_file`` or set
 the ``LP_HARDWARE_CREDENTIALS_FILE`` environment variable. The file is written
-atomically and holds the grant's secret, so protect it like a password.
+atomically and holds the grant's secret.
 
 The stored record never contains access tokens, challenges, assertions or PINs,
 and the private key never leaves the security key.
@@ -167,7 +167,9 @@ Day-to-day use
 An access token is reused until it is close to expiry, so ordinary requests do
 not each need a key touch. launchpadlib renews the token while signing a
 request, shortly before it expires, which is when you are prompted to touch the
-key again. This keeps long-running and frequently invoked scripts usable.
+key again. This lets a long-running process make multiple requests between key
+touches. Access tokens are not persisted beyond the process lifetime, so each
+new invocation needs a key touch to obtain its access token.
 
 Revoke a grant or key
 ---------------------
@@ -176,7 +178,7 @@ To revoke a grant:
 
 .. code-block:: python
 
-    launchpad.revoke_hardware_bound_oauth_token(grant["oauth_token"])
+    authenticator.revoke()
 
 This also expires access tokens already minted from the grant. Revoking on the
 server does not remove a stored copy of the grant; logins using it are
@@ -186,10 +188,11 @@ To revoke the key itself:
 
 .. code-block:: python
 
-    launchpad.revoke_hardware_key(authenticator.id)
+    authenticator.revoke()
 
-Grants bound to a revoked key can no longer mint access tokens. Access tokens
-already minted stay valid until they expire.
+Revoking a key prevents its grants from minting new access tokens, but does not
+revoke tokens already minted from those grants; they stay valid until they
+expire. To expire them immediately, revoke the grant.
 
 Troubleshooting
 ---------------

@@ -325,7 +325,6 @@ http
 https
 HTTPError
 hugdaylist
-hwbat
 IBranchMergeProposal
 IBranchTarget
 ICanonicalUrlData
