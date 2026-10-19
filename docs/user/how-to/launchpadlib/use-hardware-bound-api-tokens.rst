@@ -123,6 +123,33 @@ store:
 If no grant is stored, ``HardwareTokenError`` is raised; there is no fallback to
 browser authorization.
 
+Remove the classic bootstrap token
+----------------------------------
+
+Registering a key and issuing a grant both need an authenticated client created
+with the classic ``Launchpad.login_with``. That bootstrap step stores an
+ordinary, long-lived OAuth access token in your keyring (or credentials file) --
+exactly the kind of credential that hardware binding is meant to protect you
+from. It keeps working even after you switch to ``login_with_hardware_token``,
+so once you have confirmed that hardware-bound login works, remove it:
+
+#. Revoke it server-side. Visit your `list of authorized applications
+   <https://launchpad.net/people/+me/+oauth-tokens>`_, find the authorization
+   for the consumer you bootstrapped with (for example
+   ``hardware-key-registration``), and click **Revoke authorization**. This
+   stops the token from being used even if a copy of it remains on disk.
+#. Remove the stored copy so launchpadlib does not keep a now-useless secret
+   around. If launchpadlib used the keyring, delete its entry for that consumer;
+   if you passed ``credentials_file``, delete that file.
+
+.. note::
+
+   Use a consumer name for the bootstrap login that is different from your
+   hardware-bound ``consumer_name`` (as in the examples above,
+   ``hardware-key-registration`` versus ``hardware-client``). The classic token
+   and the hardware-bound grant are then stored separately, so revoking the
+   classic token does not affect the grant.
+
 Where grants are stored
 -----------------------
 
