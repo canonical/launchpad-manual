@@ -29,9 +29,9 @@ Glossary
 
 - **OOPS:** An error report that Launchpad records when an unexpected error, such as a timeout, stops it from doing what you asked. It has an ID that starts with ``OOPS-``. See :ref:`what-is-an-oops` for more details.
 
-- **Pocket:** A release pocket is group of packages related to a particular distro series (i.e. a release such as Ubuntu 9.04/Jaunty), such as *security*, *updates* or *back-ports*.
+- **Pocket:** A release pocket is a group of packages related to a particular distro series (i.e. a release such as Ubuntu 26.04/Resolute), such as *security*, *updates* or *back-ports*.
 
-- **Project:** A piece of software developed or tracked in Launchpad. It can have features such as code repositories, bug reports, release milestones, and translations. **Example:** ``firefox``.
+- **Project:** A piece of software developed or tracked in Launchpad. It can have features such as code repositories, bug reports, release milestones, and translations. **Example:** ``firefox`` in `<https://launchpad.net/firefox>`_.
 
 - **Project group:** Project groups allow you to gather several Launchpad projects together. Each project within a group inherits the group's preferences regarding bug tracking, translation and security policy. An example project group is Mozilla, with Firefox and Thunderbird as projects within the group.
 
