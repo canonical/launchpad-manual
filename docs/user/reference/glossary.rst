@@ -9,7 +9,7 @@ Glossary
 
 .. include:: /includes/important_not_revised_help.rst
 
-- **Affects:** A bug in your program can cause problems in other programs that use your code. In this case your bug is said to "affect" other programs. 
+- **Affects:** The affects mechanism allows us to track all the projects, distributions, package and/or PPAs that are affected by a bug. Every instance of the "affect" has it's own status, importance, assignee.
 
 - **Bug heat:** A score that tells you the significance of a bug. It's calculated from the security level of a bug and the amount of attention it's getting from users.
 
@@ -29,35 +29,31 @@ Glossary
 
 - **Launchpad name (username):** A short unique name serving as a user's unique identifier on launchpad.
 
-- **Malone:** A unified bug tracker managed by Launchpad designed to work in collaboration with 
+- **Malone:** A unified bug tracker managed by Launchpad designed to ease collaboration between upstream and downstream projects registered with Launchpad. For example, a bug fix found by downstream can easily be viewed and integerated by upstream.
 
 - **Name (project):** This is the unique short name that Launchpad uses to identify a project. It is used in URLs and when registering a bug against a project. **Example:** ``blueprint`` in `<https://launchpad.net/blueprint>`_ for Launchpad's Blueprint Tracker.
 
 - **OpenID:** OpenID is an open standard and decentralized authentication protocol used to log into websites that accept OpenID authentication using an OpenID identity provider. Launchpad serves as one of many OpenID identity providers.
 
-- **OpenPGP key:** A cryptographic public-private key pair used to sign documents and confirm identities. Launchpad requires you to use your OpenPGP key when signing the Ubuntu Code of Conduct or using the Bug Tracker's email interface.
-
-- **Pocket:** A release pocket is group of packages related to a particular distro series (i.e. a release such as Ubuntu 9.04/Jaunty), such as *security*, *updates* or *back-ports*.
+- **OpenPGP key:** A cryptographic public-private key pair used to sign documents and confirm identities. Launchpad requires you to use your OpenPGP key when signing the Ubuntu Code of Conduct, using the Bug Tracker's email interface and software packaging.
 
 - **Project group:** Project groups allow you to gather several Launchpad projects together. Each project within a group inherits the group's preferences regarding bug tracking, translation and security policy. An example project group is Mozilla, with Firefox and Thunderbird as projects within the group.
 
-- **Question / Answer:** Questions and answers in Launchpad are managed by the Launchpad answer tracker that aims to track progress of a question and combine knowledge that is scattered across Launchpad.
+- **Question / Answer:** Questions and answers in Launchpad are managed by the Launchpad answer tracker, which tracks progress of user questions regarding specific projects, distributions, or packages.
 
-- **Rosetta:** A web-interface translation tool managed by Canonical.
+- **Rosetta:** A web-interface translation tool managed by Launchpad.
 
-- **Series:** Series are major lines of development that usually result in one or more releases. For example: Firefox 3 and Firefox 2. In Launchpad, they can have independent translations,how to review the commit history in a git rep bug reports, code and more. In a distribution, such as Ubuntu, it would be releases such as Jaunty, Intrepid, Hardy and so on.
-
-- **SSH key:** SSH key's are used on Launchpad 
+- **SSH key:** SSH keys are used on Launchpad to authenticate your identity when you push code to repositories or upload packages to Personal Package Archives (PPAs).
 
 - **Suite:** The combination of a distro *series* and a *pocket* is called a suite: e.g. Hardy backports.
 
-- **Team:** A team on Launchpad is a group consisting of  people involved in a common task.A team can be the maintainer of a project, the assignee of a bug, or the editor of a package for a particular language.
+- **Team:** A team on Launchpad is a group consisting of  people involved in a common task.A team can be a maintainer of a project, an assignee of a bug, or an editor of a package for a particular language.
 
 - **Team admin:** The team admin is a team member with administrative privileges. The team admin can add, approve or reject members. They can subscribe the team to bugs, branches, and blueprints.
 
 - **Team member:** A team member has upload rights to all of the team’s code branches. They can upload and build Ubuntu packages in the team’s PPA, and access confidential information shared with the team. 
 
-- **Indirect team member:** An indirect team member 
+- **Indirect team member:** If Team A joins Team B, all of Team A’s members are now indirect members of Team B.
 
 - **Team owner:** The owner can change the team’s description and membership rules, and appoint team admins. The owner is also an administrator by default.
 
