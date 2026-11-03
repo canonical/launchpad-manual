@@ -65,7 +65,7 @@ Glossary
 
 - **Team:** A group consisting of  people involved in a common task.A team can be a maintainer of a project, an assignee of a bug, or an editor of a package for a particular language.
 
-- **Team admin:**A team member with administrative privileges. The team admin can add, approve or reject members. They can subscribe the team to bugs, branches, and blueprints.
+- **Team admin:** A team member with administrative privileges. The team admin can add, approve or reject members. They can subscribe the team to bugs, branches, and blueprints.
 
 - **Team member:** A team member has upload rights to all of the team’s code branches. They can upload and build Ubuntu packages in the team’s PPA, and access confidential information shared with the team. 
 
