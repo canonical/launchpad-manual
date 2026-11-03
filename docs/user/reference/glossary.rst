@@ -29,7 +29,7 @@ Glossary
 
 - **Launchpad name (username):** A short unique name serving as a user's unique identifier on launchpad.
 
-- **Malone:** A unified bug tracker managed by Launchpad designed to ease collaboration between upstream and downstream projects registered with Launchpad. For example, a bug fix found by downstream can easily be viewed and integerated by upstream.
+- **Malone:** A unified bug tracker managed by Launchpad designed to ease collaboration between upstream and downstream projects registered with Launchpad. For example, a bug fix found by downstream can easily be viewed and integrated by upstream.
 
 - **Name (project):** This is the unique short name that Launchpad uses to identify a project. It is used in URLs and when registering a bug against a project. **Example:** ``blueprint`` in `<https://launchpad.net/blueprint>`_ for Launchpad's Blueprint Tracker.
 
