@@ -39,6 +39,7 @@ helps you navigate the codebase, and design and test your changes.
 - :ref:`Launchpad installation details <launchpad-installation-details>`
 - :ref:`Testing <testing-launchpad-changes>`
 - :ref:`Building live filesystems <building-live-filesystems>`
+- :ref:`Hardware-bound API tokens <hardware-bound-api-tokens-explanation>`
 
 
 Database

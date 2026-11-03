@@ -23,19 +23,33 @@ Glossary
 
 - **Display name:** Projects, teams and individuals in Launchpad are usually referred to by their display name. This is distinct from the ``Name``, which is mostly used in URLs. Example: Mark Shuttleworth's display name is ``Mark Shuttleworth``, whereas his Launchpad name is ``sabdfl``.
 
+- **Distribution:** A complete operating system made of software packages. Unlike a project, which is one piece of software, a distribution brings together software from many developers, e.g., Ubuntu. Launchpad can build a distribution's packages or track bugs for a distribution built elsewhere.
+
 - **FTBFS:** a source package failed to build.
+
+- **Indirect team member:** If Team A joins Team B, all of Team A’s members are now indirect members of Team B.
 
 - **Karma:** Karma is a score that gives a rough idea of a person's current level of work in Launchpad. See our guide to :ref:`karma <your-account-karma>` for more.
 
 - **Launchpad name (username):** A short unique name serving as a user's unique identifier on launchpad.
 
+- **launchpadlib:** A Python client library that talks to the Launchpad web service. Developers and maintainers use it to write scripts that automate Launchpad tasks, such as looking up bugs, instead of clicking through the website. See :ref:`the launchpadlib explanation <launchpadlib>` for more details.
+
+- **Launchpad web service:** This is Launchpad's API which lets users and applications read and change Launchpad data without visiting the website. See :ref:`the web service explanation <launchpad-web-service>` for more details.
+
 - **Malone:** A unified bug tracker managed by Launchpad designed to ease collaboration between upstream and downstream projects registered with Launchpad. For example, a bug fix found by downstream can easily be viewed and integrated by upstream.
 
 - **Name (project):** This is the unique short name that Launchpad uses to identify a project. It is used in URLs and when registering a bug against a project. **Example:** ``blueprint`` in `<https://launchpad.net/blueprint>`_ for Launchpad's Blueprint Tracker.
 
+- **OOPS:** An error report that Launchpad records when an unexpected error, such as a timeout, stops it from doing what you asked. It has an ID that starts with ``OOPS-``. See :ref:`what-is-an-oops` for more details.
+
 - **OpenID:** OpenID is an open standard and decentralized authentication protocol used to log into websites that accept OpenID authentication using an OpenID identity provider. Launchpad serves as one of many OpenID identity providers.
 
 - **OpenPGP key:** A cryptographic public-private key pair used to sign documents and confirm identities. Launchpad requires you to use your OpenPGP key when signing the Ubuntu Code of Conduct, using the Bug Tracker's email interface and software packaging.
+
+- **Pocket:** A release pocket is a group of packages related to a particular distro series (i.e. a release such as Ubuntu 26.04/Resolute), such as *security*, *updates* or *back-ports*.
+
+- **Project:** A piece of software developed or tracked in Launchpad. It can have features such as code repositories, bug reports, release milestones, and translations. **Example:** ``firefox`` in `<https://launchpad.net/firefox>`_.
 
 - **Project group:** Project groups allow you to gather several Launchpad projects together. Each project within a group inherits the group's preferences regarding bug tracking, translation and security policy. An example project group is Mozilla, with Firefox and Thunderbird as projects within the group.
 
@@ -45,6 +59,8 @@ Glossary
 
 - **SSH key:** SSH keys are used on Launchpad to authenticate your identity when you push code to repositories or upload packages to Personal Package Archives (PPAs).
 
+- **Staging:** A test copy of Launchpad that starts from a snapshot of real Launchpad data. Changes you make there are not kept, so you can test scripts without affecting real projects or users. Staging runs at ``https://staging.launchpad.net``.
+
 - **Suite:** The combination of a distro *series* and a *pocket* is called a suite: e.g. Hardy backports.
 
 - **Team:** A group consisting of  people involved in a common task.A team can be a maintainer of a project, an assignee of a bug, or an editor of a package for a particular language.
@@ -53,11 +69,12 @@ Glossary
 
 - **Team member:** A team member has upload rights to all of the team’s code branches. They can upload and build Ubuntu packages in the team’s PPA, and access confidential information shared with the team. 
 
-- **Indirect team member:** If Team A joins Team B, all of Team A’s members are now indirect members of Team B.
-
 - **Team owner:** The owner can change the team’s description and membership rules, and appoint team admins. The owner is also an administrator by default.
 
 - **Triage:** This is the process of sorting bugs based on the progress that has been made to address them. This could be a confirmation that the bug can be replicated, or the status of a proposed fix. 
+
+- **Webhook:** An HTTP request that Launchpad sends to your server when something changes, such as a Git push or a new bug comment. With the Launchpad web service, your program has to ask for data. With a webhook, Launchpad tells your program about changes without being asked. See :ref:`webhooks` for more details.
+
 
 Request a definition
 --------------------

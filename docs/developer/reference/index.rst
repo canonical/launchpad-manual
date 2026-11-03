@@ -52,6 +52,13 @@ accessible.
 
 - :ref:`Launchpad public mailing lists archives <mailing-lists-archives>`
 
+Authentication
+--------------
+
+Mechanisms for authenticating to Launchpad's API.
+
+- :ref:`Hardware-bound API tokens <hardware-bound-api-tokens-reference>`
+
 Code conventions
 ----------------
 
@@ -67,6 +74,7 @@ tagging. These standards are enforced during code review.
 .. toctree::
    :hidden:
 
+   hardware-bound-api-tokens
    python
    tests
    css
