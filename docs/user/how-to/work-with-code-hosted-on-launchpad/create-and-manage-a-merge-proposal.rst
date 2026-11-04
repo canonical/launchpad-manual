@@ -6,8 +6,8 @@
 Create and manage a merge proposal
 ==================================
 
-Thanks to git's distributed model, you can get full access to the code of any 
-repository hosted on Launchpad, with version control and history, right on your 
+Thanks to git's distributed model, you can get full access to the code of any
+repository hosted on Launchpad, with version control and history, right on your
 own machine.
 
 That flexibility means you can start work on a project without having to
@@ -153,8 +153,6 @@ proposal, you'd write::
     review disapprove UI
     merge rejected
 
-If you simply want to approve the proposal, using \`merge approved\`
-will also implicitly add an equivalent \`review approve\` unless you
 If you simply want to approve the proposal, using ``merge approved``
 will also implicitly add an equivalent ``review approve`` unless you
 specify a ``review`` command separately.
