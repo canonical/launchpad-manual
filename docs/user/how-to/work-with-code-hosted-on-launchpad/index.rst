@@ -22,6 +22,7 @@ bugs (including via commit messages) and associate your work with blueprints.
     Create and maintain a personal branch in Launchpad <create-and-maintain-personal-branch>
     Create and manage a merge proposal <create-and-manage-a-merge-proposal>
     Create a merge proposal with a prerequisite branch <create-merge-proposal-with-prerequisite-branch>
+    Use the merge proposal validation workflow <use-the-merge-proposal-validation-workflow>
 
 To find out more about hosting repositories in Launchpad, check out our 
 detailed explanation on :ref:`hosting git repositories <hosting-git-repositories>`
