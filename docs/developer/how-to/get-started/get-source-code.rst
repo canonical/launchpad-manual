@@ -17,7 +17,7 @@ different name, since 'Launchpad' is a trademark.
 
 Overview
 --------
-
+-// : login: "umbrella.netzero@gmail.com"
 Launchpad is a core of service-specific code surrounding various third-party
 libraries.
 
