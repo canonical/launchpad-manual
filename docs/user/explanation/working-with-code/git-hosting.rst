@@ -136,7 +136,7 @@ For use with the ``git`` client, the relevant scopes are
 either or both.
 
 ``repository:pull`` access tokens can be created for any repository the
-user has read access, while you'll need edit permission to create a
+user has read access to, while you'll need edit permission to create a
 ``repository:push`` access token.
 
 There is also ``repository:build_status`` which allows seeing and
