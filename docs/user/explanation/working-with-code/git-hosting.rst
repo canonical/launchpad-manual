@@ -135,6 +135,10 @@ For use with the ``git`` client, the relevant scopes are
 ``repository:push`` to allow pushing the repository; you may select
 either or both.
 
+``repository:pull`` access tokens can be created for any repository the
+user has read access, while you'll need edit permission to create a
+``repository:push`` access token.
+
 There is also ``repository:build_status`` which allows seeing and
 updating the build status for all commits in a repository.
 
