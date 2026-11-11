@@ -7,6 +7,13 @@
 Release Notes
 =============
 
+November 2026
++++++++++++++
+
+11 November
+
+- Launchpad UI allows to create read access tokens for all the repositories/projects a user has read access to.
+
 October 2026
 ++++++++++++++
 
