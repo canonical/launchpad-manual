@@ -19,5 +19,6 @@ and the tools available for managing your project's source code.
     Code imports <code-imports>
     Git hosting <git-hosting>
     Launchpad CI <launchpad-ci>
+    Merge proposal overview bot <merge-proposal-overview-bot>
     Namespaces <namespaces>
 
